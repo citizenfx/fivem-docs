@@ -1,0 +1,3 @@
+{{ $name := .Get 0 }}
+{{ $hash := (index $.Site.Data.natives $name) }}
+{{ (print "[" $name "](https://runtime.fivem.net/doc/reference.html#_" $hash ")") | markdownify }}
