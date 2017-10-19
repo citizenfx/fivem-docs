@@ -5,7 +5,7 @@ title: "Scripting in JavaScript"
 Getting started
 ---------------
 
-Make a script file in your [resource folder]({{<ref "/resources/">}}) ending with `.js` extension, and reference it in your [resource manifest]({{<ref "/resources/manifest.md">}}) as follows:
+Make a script file in your [resource folder]({{<relref "/resources/_index.md">}}) ending with `.js` extension, and reference it in your [resource manifest]({{<ref "/resources/manifest.md">}}) as follows:
 
 ```lua
 client_script 'example.js'

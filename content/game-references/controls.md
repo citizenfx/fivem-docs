@@ -16,13 +16,11 @@ end
 ### C\#
 
 ``` csharp
-/*
- * checks if INPUT_CONTEXT has just been released
- * Game.IsControlJustReleased( INPUT GROUP, CONTROL INDEX )
- */
-if(Game.IsControlJustReleased(1, 51))
+// checks if INPUT_CONTEXT has just been released
+// assumes `using static CitizenFX.Core.API;`
+if(IsControlJustReleased(1, 51))
 {
-   // Run code here
+   // run code here
 }
 ```
 

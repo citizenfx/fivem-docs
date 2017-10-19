@@ -4,7 +4,7 @@ date: 2017-08-15T23:07:44+02:00
 draft: false
 ---
 
-The **resource manifest** is a file named `__resource.lua`, placed in a [resource folder]({{<ref "/resources/#resource-directories">}}) on the server.
+The **resource manifest** is a file named `__resource.lua`, placed in a [resource folder]({{<relref "/resources/_index.md">}}#resource-directories) on the server.
 
 It is a Lua file, ran in a separate runtime from the usual Lua scripts, using a special setup so that a semi-declarative syntax can be used for defining metadata.
 

@@ -31,6 +31,41 @@ Components list
 | 15  | RANK\_TEXT              |
 | 16  | MP\_TYPING              |
 
+Simple usage
+------------
+### Lua
+For a more complete example, see the stock `playernames` resource included in the server package, or the documentation for the resource.
+
+``` lua
+local mpGamerTags = {}
+
+for i = 0, 255 do
+  if NetworkIsPlayerActive(i) and i ~= PlayerId() then
+    local ped = GetPlayerPed(i)
+
+    -- change the ped, because changing player models may recreate the ped
+    if not mpGamerTags[i] or mpGamerTags[i].ped ~= ped then
+      local nameTag = ('%s [%d]'):format(GetPlayerName(i), GetPlayerServerId(i))
+
+      if mpGamerTags[i] then
+        RemoveMpGamerTag(mpGamerTags[i])
+      end
+
+      mpGamerTags[i] = {
+        tag = CreateMpGamerTag(GetPlayerPed(i), nameTag, false, false, '', 0),
+        ped = ped
+      }
+    end
+
+    SetMpGamerTagVisibility(mpGamerTags[i].tag, 4, NetworkIsPlayerTalking(i))
+  else
+    RemoveMpGamerTag(mpGamerTags[i])
+
+    mpGamerTags[i] = nil
+  end
+end
+```
+
 Example
 -------
 
@@ -52,13 +87,13 @@ local gamerTagId = CreateMpGamerTag(
 
 ``` csharp
 // Create gamer info
-int gamerTagId = Function.Call<int>(
-  Hash._CREATE_HEAD_DISPLAY,
-  (Ped)ped, // Ped to which gamer info will be assigned
-  (string)"User name", // String to display for flag ""
-  (bool)false, // pointedClanTag
-  (bool)false, // Is R* clan
-  (string)clanTag,
+// assuming using static CitizenFX.Core.API;
+int gamerTagId = CreateMpGamerTag(
+  ped.Handle, // Ped to which gamer info will be assigned
+  "User name", // String to display for flag ""
+  false, // pointedClanTag
+  false, // Is R* clan
+  clanTag,
   0 // Unknown
 );
 ```
@@ -83,11 +118,10 @@ SetMpGamerTagVisibility(
 
 ``` csharp
 // Toggle flags
-Function.Call(
-  Hash._SET_HEAD_DISPLAY_FLAG,
-  (int)gamerTagId,
-  (int)component,
-  (bool)toggle
+SetMpGamerTagVisibility(
+  gamerTagId,
+  component,
+  toggle
 );
 ```
 
