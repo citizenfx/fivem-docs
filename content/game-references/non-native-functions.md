@@ -1,8 +1,8 @@
 ---
-title: "Non-Native Functions (shared)"
+title: "Non-Native Functions (Shared)"
 ---
 
-Here is a list of some of the functions that you can use in **server** and **client** side lua scripts. These functions are **not** documented in the [FiveM Native Reference List](https://runtime.fivem.net/doc/reference.html).
+Here is a list of some of the functions that you can use in **server** and **client** side lua scripts. Server or client specific functions have been left out of this list, those can be found on their own pages ([client]({{< ref "game-references/non-native-functions3.md" >}}) and [server]({{< ref "game-references/non-native-functions2.md" >}})). These functions are **not** documented in the [FiveM Native Reference List](https://runtime.fivem.net/doc/reference.html).
 
 
 - **`Citizen.CreateThread(function)`**
