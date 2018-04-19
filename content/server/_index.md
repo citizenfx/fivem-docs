@@ -49,11 +49,21 @@ start fivem
 start hardcap
 start rconlog
 start scoreboard
+start playernames
 
 sv_scriptHookAllowed 1
 
 # change this
 #rcon_password yay
+
+# a comma-separated list of tags for your server
+# for example: sets tags "drifting, cars, racing" or sets tags "roleplay, military, tanks"
+sets tags "default"
+
+# set an optional server info and connecting banner image url.
+# size doesn't matter, any banner sized image will be fine.
+#sets banner_detail "http://url.to/image.png"
+#sets banner_connecting "http://url.to/image.png"
 
 sv_hostname "My new FXServer!"
 
@@ -66,11 +76,10 @@ sv_hostname "My new FXServer!"
 # convars for use from script
 set temp_convar "hey world!"
 
-# disable announcing? clear out the master by uncommenting this
-# this is not related to your server not showing up if the # is still there
+# disable announcing? clear out the master by uncommenting this (your server will not be listed in the serverlist if you uncomment this!)
 #sv_master1 ""
 
-# want to only allow players authenticated with a more permanent identifier?
+# want to only allow players authenticated with a third-party provider like Steam (don't forget, Social Club is a third party probvider too!)?
 #sv_authMaxVariance 1
 #sv_authMinTrust 5
 
@@ -79,11 +88,14 @@ add_ace group.admin command allow # allow all commands
 add_ace group.admin command.quit deny # but don't allow quit
 add_principal identifier.steam:110000112345678 group.admin # add the admin to the group
 
-# hide player endpoints in external log output
-#sv_endpointprivacy true
+# remove the # to hide player endpoints in external log output
+sv_endpointprivacy true
 
-# server slots limit (default to 24)
-sv_maxclients 8
+# server slots limit (must be between 1 and 31)
+sv_maxclients 30
+
+# license key for server (https://keymaster.fivem.net)
+sv_licenseKey changeme
 ```
 
 For more commands/variables, check `cmdlist` over rcon. Most commands/set functions can be executed over the command line too, similar to Quake.
