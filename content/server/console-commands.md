@@ -1,6 +1,7 @@
 ---
 title: "Console Commands"
 ---
+
 Console commands
 -----------------------
 
@@ -8,7 +9,7 @@ Console commands can be executed either using an RCon tool, directly from the se
 
 Adding a custom RCon command can be done using the [RegisterCommand]({{<native "REGISTER_COMMAND">}}) function on the server, or the (legacy) `rconCommand` event.
 
-### start
+### `start <resourceName>`
 
 Starts the resource specified in the argument, if it was stopped.
 
@@ -16,7 +17,7 @@ Example:
 
     start lambda-menu
 
-### stop
+### `stop <resourceName>`
 
 Stops the resource specified in the argument, if it was started.
 
@@ -24,7 +25,7 @@ Example:
 
     stop mymode
 
-### restart
+### `restart <resourceName>`
 
 Restarts the resource specified in the argument, if it was started.
 
@@ -32,7 +33,7 @@ Example:
 
     restart lambda-menu
 
-### refresh
+### `refresh`
 
 Rescans the *resources* folder and loads all \_\_resource.lua files in them, making new resources available to start using [start](#start "wikilink").
 
@@ -41,7 +42,7 @@ Example:
     refresh
 
 
-### status
+### `status`
 
 {{% alert theme="info" %}}This is provided by the **rconlog** resource. {{% /alert %}}
 
@@ -51,19 +52,19 @@ Example:
 
     status
 
-### sv_maxClients
+### `sv_maxClients [newValue]`
 
 A console variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 32.
 
-### sv_endpointPrivacy
+### `sv_endpointPrivacy [newValue]`
 
 A boolean variable that, if true, hides player IP addresses from public reports output by the server.
 
-### sv_hostname
+### `sv_hostname [newValue]`
 
 A string variable that contains the server host name.
 
-### clientkick
+### `clientkick <id> <reason>`
 
 Kicks the client with the specified server ID (as seen in [status](#status "wikilink")) from the server, for the stated reason.
 
@@ -71,7 +72,7 @@ Example:
 
     clientkick 43 You're a superstitious idiot!
 
-### say
+### `say <message>`
 
 Sends a message in the chat as *console*.
 
@@ -79,15 +80,8 @@ Example:
 
     say Hi, everybody!
 
-### tell
 
-Sends a message in the chat to player with the specified server ID.
-
-Example:
-
-    tell 4 Hi, Dr. Nick!
-
-### load\_server\_icon
+### `load_server_icon <fileName.png>`
 
 Loads a specfied icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
 
@@ -97,7 +91,7 @@ Example:
 load_server_icon "my-server.png"
 ```
 
-### add_ace
+### `add_ace <principal> <ace_name> <allow|deny>`
 
 Adds an access control entry to the server's access control list.
 
@@ -108,7 +102,7 @@ add_ace group.admin command.potato allow
 add_ace identifier.steam:110000112345678 command.apple deny
 ```
 
-### add_principal
+### `add_principal <child_principal> <parent_principal>`
 
 Sets a principal to inherit from another principal.
 
@@ -118,7 +112,7 @@ Example:
 add_principal identifier.steam:110000112345678 group.admin
 ```
 
-### remove_ace
+### `remove_ace <principal> <ace_name> <allow|deny>`
 
 Removes a specified ACE from the server's access control list.
 
@@ -128,7 +122,7 @@ Example:
 remove_ace identifier.steam:110000112345678 command.apple deny
 ```
 
-### remove_principal
+### `remove_principal <child_principal> <parent_principal>
 
 Removes a specified principal inheritance entry.
 
