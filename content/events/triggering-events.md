@@ -29,6 +29,7 @@ TriggerServerEvent("eventName", eventParam1, eventParam2);
 ```
 
 ----------
+
 ### Triggering client events
 To trigger a client event from within a client script, use the `TriggerEvent()` native, just like the first server side example above.
 
