@@ -2,3 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "FiveM Documentation"
 theme = "docdock"
+pygmentsCodeFences = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]

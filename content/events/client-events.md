@@ -32,7 +32,7 @@ These events are available without using any stock cfx-data resources.
       - `(Hash) model` - The ped model hash the player spawned as.
       
     ##### **Example**
-    ```
+    ```json
     {
         "z":111.5291,
         "y":197.7201,
@@ -102,7 +102,7 @@ These events are available without using any stock cfx-data resources.
     
     Triggering this event allows you to send a chat message to this client.<br>
     Message object structure:
-    ```
+    ```lua
     message = {
       color = color,
       multiline = true,
