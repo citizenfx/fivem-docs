@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://docs.fivem.net/"
 languageCode = "en-us"
 title = "FiveM Documentation"
 theme = "docdock"
