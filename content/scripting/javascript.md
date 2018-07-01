@@ -42,9 +42,9 @@ FiveM implements a global `window` object, which is an alias for the global scop
 
 ### on(eventName: string, callback: Function): void
 
-*Alias: addEventListener*
+*Alias: addEventListener, AddEventHandler*
 
-Registers a listener for `eventName` triggered from the client.
+Registers a listener for `eventName` triggered locally.
 
 Example:
 
@@ -56,7 +56,7 @@ on('onClientMapStart', resourceName => console.log('Client map started! Resource
 
 *Alias: addNetEventListener*
 
-Registers listener for `eventName` triggered from the server.
+Registers listener for `eventName` triggered from the remote. (server if on client, client if on server)
 
 Example:
 
@@ -66,9 +66,21 @@ onNet('chatMessage', (name, color, message) => {
 });
 ```
 
+### RegisterNetEvent(eventName: string): void
+
+*Alias: RegisterServerEvent*
+
+Adds a specific event name to be whitelisted for remote usage. This is not needed if using `onNet`.
+
+Example:
+
+``` js
+RegisterNetEvent('myEvent');
+```
+
 ### emit(eventName: string, ...args: any\[\]): void
 
-Triggers a client event named `eventName` with a payload of `...args`
+Triggers a local event named `eventName` with a payload of `...args`
 
 Example:
 
@@ -78,12 +90,26 @@ emit('loadout', GetPlayerPed(-1), 'pistol_mk2');
 
 ### emitNet(eventName: string, ...args: any\[\]): void
 
-Triggers a server event named `eventName` with a payload of `...args`
+*Alias: TriggerServerEvent*
+
+**On the client**: triggers a server event named `eventName` with a payload of `...args`
 
 Example:
 
 ``` js
 emitNet('storePosition', GetEntityCoords(GetPlayerPed(-1), true));
+```
+
+### emitNet(eventName: string, source: number|string, ...args: any\[\]): void
+
+*Alias: TriggerClientEvent*
+
+**On the server**: triggers a client event named `eventName` with a payload of `...args` on the client identified by `source`
+
+Example:
+
+``` js
+emitNet('sendPosition', source, [ 400.0, 0.0, 15.0 ]]);
 ```
 
 ### addRawEventListener(eventName: string, callback: Function): void
@@ -107,5 +133,39 @@ setTick(() => {
   BeginTextCommandDisplayText('STRING');
   AddTextComponentSubstringPlayerName('You monster');
   EndTextCommandDisplayText(0.5, 0.5);
+});
+```
+
+### exports
+
+A proxy object for handling exports. Exports can be called using `exports.resourceName.exportName` (or array syntax of `exports['resourceName']['exportName']`), exports can be added using `exports('func', () => 42)`.
+
+Example:
+
+``` js
+exports('myFunc', (arg) => {
+  console.log(arg);
+});
+```
+
+```js
+on('onClientGameTypeStart', () => {
+  exports.spawnmanager.setAutoSpawnCallback(() => {
+    exports.spawnmanager.spawnPlayer({
+      x = 686.245,
+      y = 577.950,
+      z = 130.461,
+      model = 'a_m_m_skater_01'
+    }, () => {
+      emit('chat:addMessage', {
+        args: [
+          'Hi, there!'
+        ]
+      })
+    });
+  });
+
+  exports.spawnmanager.setAutoSpawn(true)
+  exports.spawnmanager.forceRespawn()
 });
 ```
