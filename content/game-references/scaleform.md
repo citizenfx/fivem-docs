@@ -20,7 +20,6 @@ Scaleform doesn't implement some features from Flash:
 -   No blur filter for text either. *Can be faked with a glow filter*.
 -   No masking. *Will be discussed later on this page*.
 -   No embedded raster graphics. *Will be discussed later on this page*.
--   No embedded gradients. *Can be faked with textures*.
 
 Interfacing
 -----------
