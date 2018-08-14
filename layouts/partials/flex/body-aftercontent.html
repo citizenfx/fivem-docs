@@ -1,0 +1,22 @@
+    <div class="chevrons">
+      {{ partial "next-prev-page.html" . }}
+    </div>
+  </section>
+</article>
+
+<footer>
+  <div>
+    {{ $footer := print "_footer." .Lang }}
+    {{ range where .Site.Pages "Source.BaseFileName" $footer }}
+      {{ .Content }}
+    {{ else }}
+      {{ if .Site.GetPage "page" "_footer.md" }}
+        {{ (.Site.GetPage "page" "_footer.md").Content }}
+      {{else}}
+        {{ T "create-footer-md" }}
+      {{ end }}
+    {{ end }}
+  </div>
+</footer>
+
+{{ partial "flex/scripts.html" . }}
