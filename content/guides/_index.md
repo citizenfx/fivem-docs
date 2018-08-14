@@ -3,8 +3,8 @@ title: Guides
 weight: 200
 ---
 
-- [Resource manifest]({{ rel "/guides/resource-manifest" }})
-- [Listening for events]({{ rel "/guides/listening-for-events" }})
-- [Triggering events]({{ rel "/guides/triggering-events" }})
-- [Using Scaleform]({{ rel "/guides/using-scaleform" }})
-- [Scripting in JavaScript]({{ rel "/guides/scripting-in-javascript" }})
+- [Resource manifest]({{< relref "/guides/resource-manifest.md" >}})
+- [Listening for events]({{< relref "/guides/listening-for-events" >}})
+- [Triggering events]({{< relref "/guides/triggering-events" >}})
+- [Using Scaleform]({{< relref "/guides/using-scaleform" >}})
+- [Scripting in JavaScript]({{< relref "/guides/scripting-in-javascript" >}})

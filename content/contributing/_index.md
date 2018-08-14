@@ -3,4 +3,4 @@ title: Contributing
 weight: 700
 ---
 
-- [Script runtimes]({{ ref "/contributing/script-runtimes" }})
+- [Script runtimes]({{< relref "/contributing/script-runtimes" >}})
