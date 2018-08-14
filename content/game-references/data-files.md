@@ -1,8 +1,9 @@
 ---
-title: "Data files"
+title: Data files
+weight: 530
 ---
 
-A **data file** is an entry in the [resource manifest]({{< ref "resources/manifest.md" >}}) that references a file to load in the game extra content mounting system.
+A **data file** is an entry in the [resource manifest](/getting-started/creating-resources) that references a file to load in the game extra content mounting system.
 
 Data file types
 ---------------
@@ -98,4 +99,3 @@ Data file types
 | <span id="FIVEM_LOVES_YOU_A9E8B9F6EEB35186">`FIVEM_LOVES_YOU_A9E8B9F6EEB35186`</span> |                                                                              |                            | ScenarioPointMounter                   |                                                                    |
 | <span id="FIVEM_LOVES_YOU_DB4D236636684A3F">`FIVEM_LOVES_YOU_DB4D236636684A3F`</span> |                                                                              |                            | ScenarioPointMounter                   |                                                                    |
 | <span id="FIVEM_LOVES_YOU_C508455D878B77D5">`FIVEM_LOVES_YOU_C508455D878B77D5`</span> |                                                                              |                            | audMetadataDataFileMounter             |                                                                    |
-

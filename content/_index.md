@@ -1,14 +1,15 @@
 ---
-title: "Home"
-date: 2017-08-15T23:05:13+02:00
+title: Home
 ---
 
 # FiveM documentation
 
-Welcome to the new home for documentation for the [FiveM](https://fivem.net/) multiplayer modification.
+Welcome to the new home for documentation for the [FiveM][home] multiplayer modification. <br/>
+If you just want to _play_ FiveM, download the client from the [website][home].
 
-## Getting started
+For any questions or problems related to your server or scripting, feel free to
+get in touch with us on our [forums][forum] or on [Discord][discord].
 
-If you want to get started _playing_ FiveM, download the client from the website.
-
-If you rather want to develop for FiveM, or run a server, take a gander at the documentation here. A good starting point would be to [understand resources](/resources/).
+[home]: https://fivem.net/
+[forum]: https://forum.fivem.net/
+[discord]: https://discord.gg/GtvkUsc
