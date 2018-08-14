@@ -4,4 +4,7 @@ theme = "docdock"
 pygmentsCodeFences = true
 
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+disableHomeIcon = true
