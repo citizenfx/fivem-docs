@@ -8,3 +8,33 @@ home = ["HTML", "RSS", "JSON"]
 
 [params]
 disableHomeIcon = true
+
+[[menu.shortcuts]]
+name = "<label>Forum</label>"
+url = "https://forum.fivem.net/"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<label>Discord</label>"
+url = "https://discord.gg/GtvkUsc"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<label>Servers</label>"
+url = "https://servers.fivem.net/"
+weight = 30
+
+[[menu.shortcuts]]
+name = "<label>Github</label>"
+url = "https://github.com/citizenfx/fivem"
+weight = 40
+
+[[menu.shortcuts]]
+name = "<label>Terms of Service</label>"
+url = "https://fivem.net/terms"
+weight = 50
+
+[[menu.shortcuts]]
+name = "<svg style='height: 16px; width: 16px;'><use xlink:href='#patreon-logo'></use></svg>"
+url = "https://patreon.com/fivem"
+weight = 60
