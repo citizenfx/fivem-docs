@@ -10,7 +10,7 @@ Installing
 
 Running into trouble? Read the [client issues manual][client-issues].
 
-- Disable antivirus if you have any before you download FiveM. Some antivirus vendors like Avast, AVG, and others are
+- Disable your antivirus (if you have any) before you download FiveM. Some antivirus vendors like Avast, AVG, and others are
   known to block FiveM procedures, so make sure your antivirus is fully turned off. Once FiveM is installed, add FiveM
   to the whitelist/exclusions of your antivirus. [See here how][antivirus-help]. We're working on a solution.
 - Make sure you have installed and updated [GTA V][where-to-buy].
