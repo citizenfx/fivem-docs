@@ -141,7 +141,7 @@ What's next?
 [winrar]: https://www.rarlab.com/download.htm
 [7zip]: https://www.7-zip.org/download.html
 
-[server-issues]: /troubleshooting/server-issues
+[server-issues]: /support/server-issues
 [server-commands]: /server-administration/server-commands
 [scripting-introduction]: /getting-started/scripting-introduction
 [creating-resources]: /getting-started/creating-resources
