@@ -9,7 +9,7 @@ FiveM to run by adding FiveM to its exclusions list. We are aware of the situati
   - If you installed FiveM in an empty folder, that's where you installed FiveM.
   - Otherwise:
     - Press `WinKey+R` on your keyboard
-    - Type `%localappdata%/FiveM` in the dialog that opens
+    - Type `%localappdata%\FiveM` in the dialog that opens
     - Hit enter
 - Copy the path to your FiveM folder.
 - Add it to your antivirus exclusions. For the common antivirus vendors:
