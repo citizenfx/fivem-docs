@@ -9,6 +9,9 @@ home = ["HTML", "RSS", "JSON"]
 [params]
 disableHomeIcon = true
 
+[blackfriday]
+hrefTargetBlank = true
+
 [[menu.shortcuts]]
 name = "<label>Forum</label>"
 url = "https://forum.fivem.net/"

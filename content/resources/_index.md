@@ -1,7 +1,8 @@
 ---
 title: Resources
-weight: 600
 draft: true
 ---
 
-TODO
+list of resources
+
+If you are looking for community resources, take a look at the forums!

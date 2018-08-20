@@ -1,5 +1,7 @@
 ---
 title: Disabling antivirus
+categories:
+- guides
 ---
 
 Some antivirus vendors like Avast, AVG and others are known to block FiveM procedures. Make sure your antivirus allows

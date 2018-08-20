@@ -2,15 +2,16 @@
 title: Installing FiveM
 ---
 
-Installing FiveM is pretty straightforward. It's usually a matter of [downloading FiveM][home], and simply running the
+Installing FiveM is pretty straightforward. It's usually a matter of [downloading FiveM][home], then simply running the
 downloaded file. For those who'd like a bit more detail, read below.
 
 Installing
 ----------
 
-Running into trouble? Read the [client issues manual][client-issues].
+Running into trouble? Make sure your system meets the [minimum requirements][system-requirements] and
+read the [client issues manual][client-issues].
 
-- Disable your antivirus (if you have any) before you download FiveM. Some antivirus vendors like Avast, AVG, and others are
+- Disable any antivirus before you download FiveM. Some antivirus vendors like Avast, AVG, and others are
   known to block FiveM procedures, so make sure your antivirus is fully turned off. Once FiveM is installed, add FiveM
   to the whitelist/exclusions of your antivirus. [See here how][antivirus-help]. We're working on a solution.
 - Make sure you have installed and updated [GTA V][where-to-buy].
@@ -32,6 +33,7 @@ Uninstalling
 - Run FiveM.exe again if you want to reinstall FiveM.
 
 [home]: https://fivem.net
+[system-requirements]: /support/system-requirements
 [client-issues]: /support/client-issues
 [antivirus-help]: /guides/disabling-antivirus
 [where-to-buy]: /guides/where-to-buy-gtav

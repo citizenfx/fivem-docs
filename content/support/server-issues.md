@@ -1,6 +1,5 @@
 ---
 title: Server issues
-weight: 820
 ---
 
 Could not load sessionmanager
