@@ -7,7 +7,7 @@ A **resource** is a collection of files - such as client scripts, server scripts
 Resource directories
 --------------------
 
-In the server, resources are loaded from a folder called `resources/` in the server data directory. Any folder in the `resources/` folder is parsed as a resource, except folders between `[brackets]` which are categories, which can contain multiple resource folders. Each resource folder also has to contain a [resource manifest](/guides/resource-manifest) called `__resource.lua` to be parsed as a resource.
+In the server, resources are loaded from a folder called `resources/` in the server data directory. Any folder in the `resources/` folder is parsed as a resource, except folders between `[brackets]` which are categories, which can contain multiple resource folders. Each resource folder also has to contain a [resource manifest](/scripting-reference/resource-manifest/) called `__resource.lua` to be parsed as a resource.
 
 See this example tree:
 

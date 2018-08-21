@@ -130,7 +130,7 @@ What's next?
 
 - [Using server commands][server-commands]
 - [Start scripting][scripting-introduction]
-- [Create a resource][creating-resources]
+<!--- [Create a resource][creating-resources]--> <!-- seems bit redundant, if we already have the link above? -->
 
 [windows-artifacts]: https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/
 [linux-artifacts]: https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
@@ -142,5 +142,5 @@ What's next?
 
 [server-issues]: /support/server-issues
 [server-commands]: /server-administration/server-commands
-[scripting-introduction]: /getting-started/scripting-introduction
+[scripting-introduction]: /guides/scripting-introduction/
 [creating-resources]: /getting-started/creating-resources
