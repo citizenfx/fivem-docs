@@ -120,7 +120,7 @@ Example:
 remove_ace identifier.steam:110000112345678 command.apple deny
 ```
 
-### `remove_principal <child_principal> <parent_principal>
+### `remove_principal <child_principal> <parent_principal>`
 
 Removes a specified principal inheritance entry.
 
