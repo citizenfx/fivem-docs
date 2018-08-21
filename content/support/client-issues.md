@@ -3,7 +3,7 @@ title: Client issues
 ---
 
 Getting game crashes? Can't launch FiveM? Or maybe running into some more
-obscure issue? Find it here.
+obscure issue? Find the most common issues here.
 
 I crash when playing on a server
 --------------------------------
@@ -20,10 +20,12 @@ I've been globally banned from FiveM
 ------------------------------------
 That's unfortunate, don't cheat.
 If you believe you've been falsely banned, please reach out to us on [pr@fivem.net][email].
+<br>**Please note that FiveM forum moderators or staff in the FiveM discord, can <u>not</u> assist you with this ban.**
 
 Could not find game executable
 ------------------------------
 <!-- https://media.discordapp.net/attachments/455024366091108352/479263072276578324/unknown.png -->
+<!--<img src="/static/could-not-find-game-exec-error.png">-->
 Locate the `CitizenFX.ini` file within your [FiveM application data][where-is-fivem-installed] and make sure it is
 pointing to the correct path. Open the file with a text editor like Notepad and edit the path to your GTA V installation
 if necessary.
@@ -72,6 +74,12 @@ Help! I can't find my issue here!
 We are more than happy to help you out! If you're running into crashes or freezes, please post your issue
 on our [forums][forum]. Provide as much detail as you can, that will make it easier for everyone to help you.
 For all other issues, you are more than welcome to join our [Discord][discord] and have a chat with us.
+
+"FiveM uninstalls itself after running the exe!"
+----------------------------------------------
+This is most likely your anti virus software removing FiveM. Unfortunately some anti virus software accidentally flag FiveM, 
+and remove (some or even all) FiveM files as a precaution. You can safely ignore any warnings about this.
+<br>Click [here](/guides/disabling-antivirus/) for more info on how to disable your anti virus.
 
 
 [where-is-fivem-installed]: /support/client-faq#where-is-fivem-installed
