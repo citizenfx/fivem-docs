@@ -19,8 +19,8 @@ falsely banned from a server, contact the server owners. FiveM cannot, and will 
 I've been globally banned from FiveM
 ------------------------------------
 That's unfortunate, don't cheat.
-If you believe you've been falsely banned, please reach out to us on [pr@fivem.net][email].
-<br>**Please note that FiveM forum moderators or staff in the FiveM discord, can <u>not</u> assist you with this ban.**
+If you believe you've been falsely banned, please reach out to us on [pr@fivem.net][email]. <br />
+**Please note that FiveM forum moderators or staff in the FiveM discord, can _not_ assist you with this ban.**
 
 Could not find game executable
 ------------------------------
