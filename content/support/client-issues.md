@@ -60,6 +60,10 @@ Stuck on 'We're getting there and it will be worth the wait'
 <!-- https://prnt.sc/kj02oo -->
 Often caused by aggressive antivirus settings. [Disable your antivirus][disabling-antivirus] and try again.
 
+Stuck on a rotating splash screen
+---------------------------------
+Delete `%appdata%\citizenfx\ros_id.dat` and `%localappdata%\digitalentitlements`.
+
 Stuck on a black screen
 -----------------------
 This is a common issue with Nvidia drivers. Stay patient, it takes a minute to load. This happens to other games too.
@@ -77,7 +81,7 @@ For all other issues, you are more than welcome to join our [Discord][discord] a
 
 "FiveM uninstalls itself after running the exe!"
 ----------------------------------------------
-This is most likely your anti virus software removing FiveM. Unfortunately some anti virus software accidentally flag FiveM, 
+This is most likely your anti virus software removing FiveM. Unfortunately some anti virus software accidentally flag FiveM,
 and remove (some or even all) FiveM files as a precaution. You can safely ignore any warnings about this.
 <br>Click [here](/guides/disabling-antivirus/) for more info on how to disable your anti virus.
 
