@@ -73,18 +73,17 @@ Stuck on a colored background but no menu
 This happens on specific older AMD laptop GPUs. Unfortunately, this is caused by CEF and not by FiveM. Once the issue
 has been fixed in CEF, FiveM will be updated too.
 
+FiveM uninstalls itself after running it!
+-----------------------------------------
+This is most likely your antivirus software removing FiveM. Unfortunately some antivirus vendors falsely flag FiveM,
+and remove some (or even all) FiveM files as a precaution. You can safely ignore any warnings about this.<br />
+[Click here][disabling-antivirus] for more info on how to disable your antivirus.
+
 Help! I can't find my issue here!
 ---------------------------------
 We are more than happy to help you out! If you're running into crashes or freezes, please post your issue
 on our [forums][forum]. Provide as much detail as you can, that will make it easier for everyone to help you.
 For all other issues, you are more than welcome to join our [Discord][discord] and have a chat with us.
-
-"FiveM uninstalls itself after running the exe!"
-----------------------------------------------
-This is most likely your anti virus software removing FiveM. Unfortunately some anti virus software accidentally flag FiveM,
-and remove (some or even all) FiveM files as a precaution. You can safely ignore any warnings about this.
-<br>Click [here](/guides/disabling-antivirus/) for more info on how to disable your anti virus.
-
 
 [where-is-fivem-installed]: /support/client-faq#where-is-fivem-installed
 [disabling-antivirus]: /guides/disabling-antivirus
