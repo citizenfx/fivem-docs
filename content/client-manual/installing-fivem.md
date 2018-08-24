@@ -33,7 +33,7 @@ Uninstalling
 - Run FiveM.exe again if you want to reinstall FiveM.
 
 [home]: https://fivem.net
-[system-requirements]: /support/system-requirements
+[system-requirements]: /client-manual/system-requirements
 [client-issues]: /support/client-issues
-[antivirus-help]: /guides/disabling-antivirus
-[where-to-buy]: /guides/where-to-buy-gtav
+[antivirus-help]: /client-manual/disabling-antivirus
+[where-to-buy]: /client-manual/where-to-buy-gtav
