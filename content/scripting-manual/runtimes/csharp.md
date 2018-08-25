@@ -1,11 +1,11 @@
 ---
-title: Creating a c# resource
+title: Scripting in C#
 draft: true
 ---
 
 *(WIP)*
 
-# Setting up our environment 
+# Setting up our environment
 Before we can create our first C# resource, we need to install [Visual Studio 2017](https://visualstudio.microsoft.com/vs/) (the community/free version will work just fine).
 
 
@@ -13,7 +13,7 @@ Before we can create our first C# resource, we need to install [Visual Studio 20
 1. Open Visual Studio, and click `File > New > Project`. A window should pop up that looks something like the window below:
 ![screenshot-1](/csharp-tut-1.png)
 <!--<img src="about:blank">--> <!-- TODO: replace this with a local image!!! -->
-2. Make sure you select **Visual C#** in the panel on the left, then choose **Class Library (.NET Framework)**. 
+2. Make sure you select **Visual C#** in the panel on the left, then choose **Class Library (.NET Framework)**.
 <br>It's very important that you select the correct project type otherwise your resource will **not** run.
 3. After selecting the project type, make sure you set the Framework version to **.NET Framework 4.5.2** (somewhere at the bottom of the window, see the highlighted areas in the screenshot above). Yes, this is **not** the latest version, but this specific version is required for your resource to work correctly.
 4. Once you've selected all these things and specified the correct framework version, it's time to enter a name for this project.

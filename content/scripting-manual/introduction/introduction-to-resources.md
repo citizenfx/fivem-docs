@@ -1,5 +1,5 @@
 ---
-title: Understanding resources
+title: Introduction to resources
 ---
 
 A **resource** is a collection of files - such as client scripts, server scripts, and streaming assets - that can be started, stopped and restarted at any time.
