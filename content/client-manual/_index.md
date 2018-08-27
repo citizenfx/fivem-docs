@@ -25,11 +25,13 @@ Beware:
 - Use at your own risk. Some plugins are outdated and/or not compatible with FiveM and potentially crash your game.
   FiveM is not responsible for any such event and will not provide support to the use of plugins.
 
+<!--
 Server Browser
---------------
+
 The server browser allows for some neat searching tricks:
 
 - Type `~foo ~bar` to exclude servers running foo or bar
+-->
 
 Troubleshooting issues
 ----------------------
