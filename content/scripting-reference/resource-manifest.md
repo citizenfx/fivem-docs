@@ -150,6 +150,14 @@ Marks this resource as being a GTA map, and reloads the map storage when the res
 this_is_a_map 'yes' -- can be any value
 ```
 
+### server_only
+
+Marks the resource as being server-only. This stops clients from downloading anything of this resource.
+
+``` lua
+server_only 'yes' -- can be any value
+```
+
 ### loadscreen
 
 Sets the HTML file specified as the game loading screen.
