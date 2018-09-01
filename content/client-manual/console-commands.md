@@ -76,6 +76,9 @@ The default value is 50, minimum is 1 and maximum is 200 per second.
 
 Usage: `net_maxPackets <number_of_packets>`
 
+### net_showCommands
+Internal dev tool. Not of use to a regular user.
+
 ### net_statsFile
 The `net_statsFile` is a command to store the metrics of the network usage/behaviour of the FiveM client.
 
@@ -114,7 +117,7 @@ Usage: `netobjviewer <true|false>`
 Running the `quit` command will force the FiveM client to close immediately.
 
 ### r_disableRendering
-Used internally. Not of use to a regular user.
+Internal dev tool. Not of use to a regular user.
 
 ### resmon
 The resmon command will open the resource monitor. The resource monitor monitors the CPU usage and memory usage for each
@@ -123,7 +126,7 @@ resource and shows this in a nice overview. Comes in handy when you encounter pe
 Usage: `resmon <true|false>`
 
 ### save_gta_cache
-Used internally. Not of use to a regular user.
+Internal dev tool. Not of use to a regular user.
 
 ### se_debug
 The `se_debug` command enable verbose logging for security features (like the ACL).
