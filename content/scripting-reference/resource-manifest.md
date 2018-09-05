@@ -58,14 +58,14 @@ Defines a global function to be exported by a client script. In Lua, this will e
 
 ##### Lua
 
-``` lua
+```lua
 exports {
     'setWidget',
     'getWidget'
 }
 ```
 
-``` lua
+```lua
 local lastWidget
 
 function setWidget(widget)
@@ -81,13 +81,13 @@ end
 
 ##### Lua
 
-``` lua
+```lua
 exports.myresource:setWidget(50)
 ```
 
 ##### C\#
 
-``` csharp
+```csharp
 int widget = Exports["myresource"].getWidget();
 ```
 
@@ -101,7 +101,7 @@ Defines a global function to be [exported](#export "wikilink") by a server scrip
 
 Sets the resource's [NUI](NUI "wikilink") page to the defined file. This file (along with its dependencies) has to be referenced using [files](#file "wikilink").
 
-``` lua
+```lua
 ui_page 'html/index.html'
 file 'html/index.html'
 ```
@@ -122,7 +122,7 @@ Loads the specified level meta in the resource after the primary level meta.
 
 Replaces the <abbr title="CDataFileMgr__ContentsOfDataFileXml">level meta</abbr> (usually `common:/data/levels/gta5/gta5.meta`) with the specified file in the resource. This has to be referenced using [files](#file "wikilink").
 
-``` lua
+```lua
 replace_level_meta 'mymap'
 files {
     'mymap.meta'
@@ -133,7 +133,7 @@ files {
 
 Adds a [data file]({{< ref "/game-references/data-files.md" >}}) of a specified type to the game extra content system.
 
-``` lua
+```lua
 files {
     'audio/mywaves/stupidcar.awc',
     'myvehicles.meta'
@@ -147,7 +147,7 @@ data_file 'VEHICLE_METADATA_FILE' 'myvehicles.meta'
 
 Marks this resource as being a GTA map, and reloads the map storage when the resource gets loaded.
 
-``` lua
+```lua
 this_is_a_map 'yes' -- can be any value
 ```
 
@@ -155,7 +155,7 @@ this_is_a_map 'yes' -- can be any value
 
 Marks the resource as being server-only. This stops clients from downloading anything of this resource.
 
-``` lua
+```lua
 server_only 'yes' -- can be any value
 ```
 
@@ -163,7 +163,7 @@ server_only 'yes' -- can be any value
 
 Sets the HTML file specified as the game loading screen.
 
-``` lua
+```lua
 loadscreen 'html/loadscreen.html'
 file 'html/loadscreen.html'
 ```
@@ -172,7 +172,7 @@ file 'html/loadscreen.html'
 
 Adds the specified file to the resource packfile, to be downloaded by clients upon loading the resource.
 
-``` lua
+```lua
 file 'main.net.dll.mdb'
 ```
 
@@ -180,7 +180,7 @@ file 'main.net.dll.mdb'
 
 Requires the specified resource to load before the current resource.
 
-``` lua
+```lua
 dependency 'myresource-base'
 ```
 
@@ -188,11 +188,26 @@ dependency 'myresource-base'
 
 Alias for [dependency](#dependency "wikilink"). This is not a typo, but rather an intentional alias specifically for pluralization.
 
-``` lua
+```lua
 dependencies {
     'myresource-base',
     'utility-resource'
 }
+```
+
+### disable_lazy_natives
+
+{{% notice info %}}
+Lazy loading of natives currently only happens in Lua.
+{{% /notice %}}
+
+By default, lazy loading of native functions is enabled to drastically reduce resource memory usage.
+While not recommended, you can set this option to any value to disable lazy loading.
+
+<!-- TODO: Link to lazy loading section in Lua runtime manual. -->
+
+```lua
+disable_lazy_natives 'yes'
 ```
 
 Manifest versions

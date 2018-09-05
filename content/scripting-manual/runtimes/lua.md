@@ -103,6 +103,8 @@ The scheduler
 Citzen.CreateThread, Citizen.Wait, threaded events, etc
 -->
 
+<!-- TODO:  Perhaps tell something about lazy loading of natives? -->
+
 External libraries
 ------------------
 The Lua runtime exposes some libraries on the global scope which you can use.
