@@ -1,5 +1,6 @@
 ---
 title: Where to buy GTA V
+weight: 210
 ---
 
 FiveM requires a fully updated installation of GTA V. If you do not own GTA V yet, you can buy it from any of the

@@ -1,1 +1,4 @@
-wrong place, link back to client functions or server functions
+---
+title: List of functions in JavaScript
+hidden: true
+---

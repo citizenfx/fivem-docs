@@ -1,5 +1,6 @@
 ---
 title: Listening for events
+weight: 431
 ---
 
 To use existing events in your resources, you need to listen for them. This is the same for client/server side scripts.

@@ -1,5 +1,6 @@
 ---
 title: Client issues
+weight: 830
 ---
 
 Getting game crashes? Can't launch FiveM? Or maybe running into some more

@@ -1,5 +1,6 @@
 ---
 title: Controls
+weight: 710
 ---
 
 Example

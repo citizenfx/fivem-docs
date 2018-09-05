@@ -1,8 +1,6 @@
 ---
 title: Resources
-draft: true
+weight: 600
 ---
-
-list of resources
 
 If you are looking for community resources, take a look at the forums!

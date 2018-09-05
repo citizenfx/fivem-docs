@@ -1,5 +1,6 @@
 ---
 title: Setting up a server
+weight: 310
 ---
 
 Running FXServer

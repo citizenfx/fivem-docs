@@ -1,6 +1,6 @@
 ---
 title: Scripting in C#
-draft: true
+weight: 423
 ---
 
 *(WIP)*

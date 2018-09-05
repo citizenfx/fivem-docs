@@ -1,5 +1,6 @@
 ---
 title: Resource manifest
+weight: 510
 ---
 
 The **resource manifest** is a file named `__resource.lua`, placed in a [resource folder](/getting-started/understanding-resources.md) on the server.

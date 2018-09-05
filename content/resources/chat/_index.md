@@ -1,5 +1,5 @@
 ---
-title: chat resource
+title: chat
 ---
 
 The chat resource provides custom chat functionality for FiveM using a NUI-based interface.

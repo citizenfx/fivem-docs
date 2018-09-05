@@ -1,6 +1,6 @@
 ---
 title: Migrating from CitizenMP.Server
-weight: 320
+weight: 360
 ---
 
 ### Loading Scripts

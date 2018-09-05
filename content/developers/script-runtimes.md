@@ -1,5 +1,6 @@
 ---
 title: Script runtimes
+weight: 930
 ---
 
 CitizenFX supports pluggable scripting runtimes. These runtimes are implemented as CitizenFX components (`code/components/`) implementing `fxOM` (CitizenFX Object Model) interfaces defined in `fxScripting.idl`.

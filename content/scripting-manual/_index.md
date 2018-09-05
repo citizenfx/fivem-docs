@@ -1,5 +1,6 @@
 ---
 title: Scripting manual
+weight: 400
 ---
 
 - [Scripting introduction](/scripting-manual/introduction)

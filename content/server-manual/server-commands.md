@@ -1,6 +1,6 @@
 ---
 title: Server Commands
-weight: 310
+weight: 330
 ---
 
 Console commands can be executed either using an RCon tool, directly from the server console GUI, or (if a resource is allowed by ACE) the [ExecuteCommand]({{<native "EXECUTE_COMMAND">}}) function.

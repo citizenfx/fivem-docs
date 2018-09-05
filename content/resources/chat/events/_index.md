@@ -1,5 +1,3 @@
 ---
-title: chat resource events
+hidden: true
 ---
-
-TODO: list events

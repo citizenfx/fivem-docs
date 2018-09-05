@@ -1,5 +1,6 @@
 ---
 title: Client manual
+weight: 200
 ---
 
 Basics
@@ -22,8 +23,8 @@ Beware:
 
 - Servers have the option to disallow the use of plugins. Therefor, you might not be able to use your plugins at all
   servers you play on.
-- Use at your own risk. Some plugins are outdated and/or not compatible with FiveM and potentially crash your game.
-  FiveM is not responsible for any such event and will not provide support to the use of plugins.
+- Use at your own risk. Some plugins are outdated and/or not compatible with FiveM and may crash your game.
+  FiveM is not responsible for any such event and will not provide support for the use of plugins.
 
 <!--
 Server Browser

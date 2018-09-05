@@ -1,5 +1,6 @@
 ---
 title: Scripting in lua
+weight: 421
 ---
 
 FiveM supports the general purpose programming language Lua as one of its scripting languages. Lua is a very easy

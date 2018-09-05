@@ -1,5 +1,6 @@
 ---
 title: Client events
+weight: 550
 ---
 
 **A list of client side events you can use in your scripts.**
