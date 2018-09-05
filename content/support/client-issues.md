@@ -87,7 +87,7 @@ on our [forums][forum]. Provide as much detail as you can, that will make it eas
 For all other issues, you are more than welcome to join our [Discord][discord] and have a chat with us.
 
 [where-is-fivem-installed]: /support/client-faq#where-is-fivem-installed
-[disabling-antivirus]: /guides/disabling-antivirus
+[disabling-antivirus]: /client-manual/disabling-antivirus
 [email]: mailto:pr@fivem.net
 [forum]: https://forum.fivem.net/
 [discord]: https://discord.gg/GtvkUsc

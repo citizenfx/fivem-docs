@@ -3,7 +3,7 @@ title: Resource manifest
 weight: 510
 ---
 
-The **resource manifest** is a file named `__resource.lua`, placed in a [resource folder](/getting-started/understanding-resources.md) on the server.
+The **resource manifest** is a file named `__resource.lua`, placed in a [resource folder](/scripting-manual/introduction/introduction-to-resources) on the server.
 
 It is a Lua file, ran in a separate runtime from the usual Lua scripts, using a special setup so that a semi-declarative syntax can be used for defining metadata.
 

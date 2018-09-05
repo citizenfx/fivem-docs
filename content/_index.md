@@ -29,20 +29,20 @@ get in touch with us on our [forums][forum] or on [Discord][discord].
         <li><a href="/server-manual/setting-up-a-server">Getting started</a></li>
         <li><a href="/scripting-manual/introduction">Writing scripts</a></li>
         <li><a href="/support/server-issues">Troubleshooting issues</a></li>
-        <li><a href="/server-administration/migrating-from-citmp">Migrating from Citizen.MP</a></li>
+        <li><a href="/server-manual/migrating-from-citmp">Migrating from Citizen.MP</a></li>
       </ul>
     </div>
     <div style="border: 1px solid lightgray; padding: 15px; margin-bottom: 5px;">
-      <h4>Guides</h4>
+      <h4>Scripting manual</h4>
       <ul>
-        <li><a href="/scripting-manual/understanding-resources">Understanding resources</a></li>
-        <li><a href="/scripting-manual/debugging-scripts">Debugging your scripts</a></li>
-        <li><a href="/scripting-manual/creating-a-custom-loadscreen">Creating a custom loadscreen</a></li>
+        <li><a href="/scripting-manual/introduction/introduction-to-resources">Introduction to resources</a></li>
+        <!-- <li><a href="/scripting-manual/debugging-scripts">Debugging your scripts</a></li> -->
+        <!-- <li><a href="/scripting-manual/creating-a-custom-loadscreen">Creating a custom loadscreen</a></li> -->
         <li><a href="/scripting-manual/working-with-events">Working with events</a></li>
-        <li><a href="/scripting-manual/using-nui">Using NUI</a></li>
-        <li><a href="/scripting-manual/using-dui">Using DUI</a></li>
+        <!-- <li><a href="/scripting-manual/using-nui">Using NUI</a></li> -->
+        <!-- <li><a href="/scripting-manual/using-dui">Using DUI</a></li> -->
         <li><a href="/scripting-manual/using-scaleform">Using Scaleform</a></li>
-        <li><a href="/scripting-manual">Full scripting manual</a></li>
+        <li><a href="/scripting-manual">Read the full manual</a></li>
       </ul>
     </div>
     <div style="border: 1px solid lightgray; padding: 15px; margin-bottom: 5px;">
@@ -71,7 +71,7 @@ get in touch with us on our [forums][forum] or on [Discord][discord].
         <li><a href="https://runtime.fivem.net/doc/reference.html" target="_blank">Native functions reference</a></li>
         <li><a href="/scripting-reference/client-functions">Client functions</a></li>
         <li><a href="/scripting-reference/server-functions">Server functions</a></li>
-        <li><a href="/scripting-reference/useful-functions">Useful functions</a></li>
+        <!-- <li><a href="/scripting-reference/useful-functions">Useful functions</a></li> -->
         <li><a href="/scripting-reference/client-events">Client events</a></li>
         <li><a href="/scripting-reference/server-events">Server events</a></li>
       </ul>

@@ -12,7 +12,9 @@ weight: 400
     - [Scripting in JavaScript](/scripting-manual/runtimes/javascript)
     - [Scripting in C#](/scripting-manual/runtimes/csharp)
 - [Working with events](/scripting-manual/working-with-events)
-    - [Using events](/scripting-manual/working-with-events/using-events)
-    - [Creating new events](/scripting-manual/working-with-event/creating-new-events)
-    - [Server-client communication](/scripting-manual/working-with-event/server-client-communication)
+  - [Listening for events](/scripting-manual/working-with-events/listening-for-events)
+  - [Triggering events](/scripting-manual/working-with-events/triggering-events)
+<!--    - [Using events](/scripting-manual/working-with-events/using-events) -->
+<!--    - [Creating new events](/scripting-manual/working-with-event/creating-new-events) -->
+<!--    - [Server-client communication](/scripting-manual/working-with-event/server-client-communication) -->
 - [Using Scaleform](/scripting-manual/using-scaleform)

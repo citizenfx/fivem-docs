@@ -39,16 +39,16 @@ sessionmanager events
 ---------------------
 These events are part of the [sessionmanager](/resources/sessionmanager) resource.
 
-- [playerActivated](/resources/baseevents/events/playerActivated)
-- [sessionInitialized](/resources/baseevents/events/sessionInitialized)
+- [playerActivated](/resources/sessionmanager/events/playerActivated)
+- [sessionInitialized](/resources/sessionmanager/events/sessionInitialized)
 
 chat events
 -----------
 These events are part of the [chat](/resources/chat) resource.
 
 - [chatMessage](/resources/chat/events/chatMessage)
-- [chat:addMessage](/resources/chat/events/chat:addMessage)
-- [chat:addTemplate](/resources/chat/events/chat:addTemplate)
-- [chat:addSuggestion](/resources/chat/events/chat:addSuggestion)
-- [chat:removeSuggestion](/resources/chat/events/chat:removeSuggestion)
-- [chat:clear](/resources/chat/events/chat:clear)
+- [chat:addMessage](/resources/chat/events/chat-addMessage)
+- [chat:addTemplate](/resources/chat/events/chat-addTemplate)
+- [chat:addSuggestion](/resources/chat/events/chat-addSuggestion)
+- [chat:removeSuggestion](/resources/chat/events/chat-removeSuggestion)
+- [chat:clear](/resources/chat/events/chat-clear)

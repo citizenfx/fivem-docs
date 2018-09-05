@@ -13,8 +13,8 @@ Client events can only be listened for on a client script, but they can be trigg
 script. Server events can only be listened for on a server side script, but they can be triggered from a client script
 and a server side script.
 
-- [Listening for events](/guides/listening-for-events/)
-- [Triggering events](/guides/triggering-events/)
+- [Listening for events](/scripting-manual/working-with-events/listening-for-events)
+- [Triggering events](/scripting-manual/working-with-events/triggering-events)
 
 <!-- TODO
 - [Using events](/scripting-manual/working-with-events/using-events)

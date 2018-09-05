@@ -3,4 +3,4 @@ title: Contributing
 hidden: true
 ---
 
-- [Script runtimes](/contributing/script-runtimes)
+- [How you can help](/contributing/how-you-can-help)
