@@ -13,7 +13,7 @@ the `resources/` folder is parsed as a resource, except folders between `[bracke
 contain multiple resource folders.
 
 Each resource folder also has to contain a [resource manifest reference][manifest-reference] called `__resource.lua` to
-be parsed as a resource.
+be correctly parsed as a resource.
 
 See this example directory tree:
 
