@@ -1,19 +1,36 @@
 ---
-title: onPlayerDied
+title: onPlayerKilled
 ---
+
+Name
+----------
+```
+baseevents:onPlayerKilled
+```
 
 Parameters
 ----------
 
 ```
-player deadPlayer, player killer, string deathReason
+player killerID, array deathData
 ```
 
-- **deadPlayer**: The client ID of the player who died.
-- **killer**: The client ID of the player who killed the deadPlayer player.
-- **deathReason**: A string containing the reason why the player died.
+- **killerID**: The Client ID of the player who killed the player.
+- **deathData**: An array containing the following things:
+    - **(int) killerType**: The pedType of the ped who killed the player. (see screenshot below for the possible pedType values.)
+    - **(hash) weaponHash**: The hash of the weapon which was used to kill the player.
+    - **(bool) killerInVeh**: A boolean indicating if the killer was in a vehicle.
+    - **(int) killerVehSeat**: The seat number in which the killer is sitting.
+    - **(string) killerVehName**: The display name of the vehicle the killer is in (eg: 'Adder').
+    - **(array) deathCoords**: An array containing the x, y, z coordinates of where the player died.
+
+##### Ped types
+![](/ped_types.png)
 
 Examples
 --------
 
 TODO
+
+
+<!-- TriggerEvent('baseevents:onPlayerKilled', killerid, {killertype=killertype, weaponhash = killerweapon, killerinveh=killerinvehicle, killervehseat=killervehicleseat, killervehname=killervehiclename, killerpos=table.unpack(GetEntityCoords(ped))}) -->

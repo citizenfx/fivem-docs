@@ -2,15 +2,25 @@
 title: onPlayerDied
 ---
 
+Name
+----------
+```
+baseevents:onPlayerDied
+```
+
 Parameters
 ----------
 
 ```
-player deadPlayer, string deathReason
+int killerType, array deathCoords
 ```
 
-- **deadPlayer**: The client ID of the player who died.
-- **deathReason**: A string containing the reason why the player died.
+- **killerType**: The pedType of the ped that killed this player. (View the screenshot below for available pedTypes)
+- **deathCoords**: An array containing the x, y, z coordinates of where the player died.
+
+
+##### Ped types
+![](/ped_types.png)
 
 Examples
 --------
