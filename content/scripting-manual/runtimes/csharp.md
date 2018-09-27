@@ -3,7 +3,7 @@ title: Scripting in C#
 weight: 423
 ---
 
-*(WIP)*
+_This page is still a <b>work in progress</b> so this guide is not completed yet!_
 
 # Setting up our environment
 Before we can create our first C# resource, we need to install [Visual Studio 2017](https://visualstudio.microsoft.com/vs/) (the community/free version will work just fine).
@@ -60,6 +60,6 @@ NuGet should take care of the rest for you. After the dependency has been added,
 
 # Let's write some code
 **It's finally time to actually start writing some code! 🎉**
-```c#
-// TODO
+```cpp
+// Sorry, this guide is still a WIP. it will be finished soon!
 ```
