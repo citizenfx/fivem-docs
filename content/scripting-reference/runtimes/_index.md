@@ -1,7 +1,6 @@
 ---
 title: Runtime references
-weight: 570
-hidden: true
+weight: 506
 ---
 
 - [Functions in Lua](/scripting-reference/runtimes/lua)

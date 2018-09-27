@@ -1,5 +1,6 @@
 ---
 title: gameEventTriggered
+weight: 544
 ---
 
 This event is fired after low-level game events take place, such as `CEventNetworkEntityDamage`. A full list of

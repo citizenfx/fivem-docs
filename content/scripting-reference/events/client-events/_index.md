@@ -1,6 +1,6 @@
 ---
 title: Client events
-weight: 550
+weight: 541
 ---
 
 **A list of client side events you can use in your scripts.**
@@ -9,8 +9,8 @@ Core events
 -----------
 These events are part of FiveM and do not require any resource.
 
-- [onClientResourceStart](/scripting-reference/events/onClientResourceStart)
-- [onClientResourceStop](/scripting-reference/events/onClientResourceStop)
+- [onClientResourceStart](../list/onClientResourceStart)
+- [onClientResourceStop](../list/onClientResourceStop)
 
 spawnmanager events
 -------------------

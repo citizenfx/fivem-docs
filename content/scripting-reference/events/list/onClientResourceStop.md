@@ -1,5 +1,6 @@
 ---
 title: onClientResourceStop
+weight: 546
 ---
 
 Called when a resource stops.

@@ -1,4 +1,6 @@
 ---
 title: Client-side functions in C#
-weight: 31
+weight: 508
 ---
+
+*Coming soon*
