@@ -3,7 +3,7 @@ title: System requirements
 weight: 220
 ---
 
-To [run FiveM][installing], make sure your system meets the [minimum requirements of the original game][gtav-system-specs].
+To [run FiveM][installing] your system must meet the [minimum requirements of the original game][gtav-system-specs].
 
 FiveM requires a _fully_ updated version of Windows 7, Windows 8.1 or Windows 10. An outdated operating system may not
 work. It is generally advised to upgrade to Windows 10 when you can as this provides the best experience.
@@ -24,5 +24,5 @@ _Notes:_
 2. 72GB for the original game + additional FiveM cache.
 
 [installing]: /client-manual/installing-fivem
-[client-issues-gpu]: /support/client-issues#colored-background-but-no-menu
+[client-issues-gpu]: /support/client-issues#stuck-on-a-colored-background-but-no-menu
 [gtav-system-specs]: https://support.rockstargames.com/hc/en-us/articles/203428177
