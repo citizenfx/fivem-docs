@@ -2,7 +2,13 @@
 title: chat:addTemplate
 ---
 
+## About
 Triggering this event allows you to add a template to be used with [chat:addMessage][addmessage].
+
+## Name
+```
+chat:addTemplate
+```
 
 Parameters
 ----------
@@ -19,7 +25,8 @@ TriggerEvent('chat:addTemplate', 'tweet', "<img src='data:image/svg+xml;base64,P
 
 TriggerEvent('chat:addMessage', { templateId = 'tweet', multiline = true, args = { 'Blu', 'tianshee was mean to me today 🙁' } })
 ```
-Results in: ![](https://w.wew.wtf/kxjiue.png)
+### Example Result:
+![](/chat-template.png)
 
 
 [addmessage]: /resources/chat/events/chat-addMessage

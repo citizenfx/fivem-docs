@@ -2,7 +2,13 @@
 title: chat:addSuggestion
 ---
 
+## About
 Triggering this event allows you to add command suggestions to your chat.
+
+## Name
+```
+chat:addSuggestion
+```
 
 Parameters
 ----------
