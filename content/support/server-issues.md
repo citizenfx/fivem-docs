@@ -17,6 +17,39 @@ When this happens, make sure other people can connect to your server using
 direct connect. This issue usually is a result of bad port forwarding or some
 firewall issue. Make sure your network configuration is correct.
 
+Server configuration is also important.
+
+Your server is listed in the server list if you use the default server.cfg example.
+
+It's possible that you have removed the `#` in front of the following line in your server.cfg.
+
+```yaml
+#sv_master1 ""
+```
+
+Please make sure to add the `#` in front of that line like shown in the example above. 
+
+If this `#` is already added in front of the line, then try the following steps.
+
+1. Make sure your server is running
+2. Go to [canyouseeme.org](http://canyouseeme.org)
+3. Fill in your port (default: 30120)
+4. Check your port
+
+**Could it see the service?**
+
+- A server can take up to 8 minutes to be shown in the serverlist after booting it up. Please be patient.
+- In very rare cases, there might be an issue with the serverlist services, please be patient, chances are very high that the collectives are already hard at work trying to resolve this issue.
+
+**Could it NOT see your service?**
+
+There could be a lot of different problems, most likely it has something to do with one (or both) of the following:
+
+- Your ports aren't properly forwarded.
+- You have a firewall (or AV) that blocks (external) connections.
+
+
+
 Help! I can't find my issue here!
 ---------------------------------
 
