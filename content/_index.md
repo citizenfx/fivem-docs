@@ -29,7 +29,7 @@ get in touch with us on our [forums][forum] or on [Discord][discord].
         <li><a href="/server-manual/setting-up-a-server">Getting started</a></li>
         <li><a href="/scripting-manual/introduction">Writing scripts</a></li>
         <li><a href="/support/server-issues">Troubleshooting issues</a></li>
-        <li><a href="/server-manual/migrating-from-citmp">Migrating from Citizen.MP</a></li>
+        <li><a href="/server-manual/migrating-from-citmp">Migrating from CitizenMP.Server</a></li>
       </ul>
     </div>
     <div style="border: 1px solid lightgray; padding: 15px; margin-bottom: 5px;">

@@ -8,26 +8,27 @@ obscure issue? Find the most common issues here.
 
 I crash when playing on a server
 --------------------------------
-More often than not are crashes related to a server specific issue. To make sure your crash isn't related to a specific
-server, it is advised to join the [vanilla FiveM server][vanilla-server]. If that server works without issue, we
-recommend you to contact the server owners of the server where you're experiencing crashes on. Otherwise read on.
+Crashes are fairly often related to a server-specific issue. To make sure your crash isn't related to a specific
+server, it is advised to join the [vanilla FiveM server][vanilla-server]. If that server works without your issue, we
+recommend you to contact the server owners of the server where you're experiencing crashes on. Otherwise, read on.
 
 I've been banned on a server
 ----------------------------
 FiveM is not responsible for what you do on servers, or what server admins do to you. If you believe you've been
-falsely banned from a server, contact the server owners. FiveM cannot, and will not provide support for this matter.
+falsely banned from a server, contact the server owners. FiveM can and will not provide support for this matter.
 
 I've been globally banned from FiveM
 ------------------------------------
 That's unfortunate, don't cheat.
-If you believe you've been falsely banned, please reach out to us on [pr@fivem.net][email]. <br />
-**Please note that FiveM forum moderators or staff in the FiveM discord, can _not_ assist you with this ban.**
+If you believe you've been falsely banned, please reach out to us on [pr@fivem.net][email] with potential reasons
+that you might have been incorrectly banned. <br />
+**Please note that FiveM forum moderators or staff in the FiveM discord can _not_ assist you with this ban.**
 
 Could not find game executable
 ------------------------------
 <!-- https://media.discordapp.net/attachments/455024366091108352/479263072276578324/unknown.png -->
 <!--<img src="/static/could-not-find-game-exec-error.png">-->
-Locate the `CitizenFX.ini` file within your [FiveM application data][where-is-fivem-installed] and make sure it is
+Locate the `CitizenFX.ini` file within your [FiveM Application Data][where-is-fivem-installed] and make sure it is
 pointing to the correct path. Open the file with a text editor like Notepad and edit the path to your GTA V installation
 if necessary.
 
@@ -35,7 +36,9 @@ FiveM is already installed
 --------------------------
 <!-- https://media.discordapp.net/attachments/455024366091108352/479267390836834306/unknown.png -->
 After you installed FiveM, you don't need to use the same FiveM.exe file anymore. Use the shortcut from your Windows
-start menu. Press the start button on your task bar and look for FiveM there.
+start menu. Press the Start button on your taskbar and look for FiveM there.
+
+If you uninstalled FiveM by deleting the shortcut, you might have to [uninstall][uninstalling] FiveM properly.
 
 Game cache outdated
 -------------------
@@ -67,7 +70,8 @@ Delete `%appdata%\citizenfx\ros_id.dat` and `%localappdata%\digitalentitlements`
 
 Stuck on a black screen
 -----------------------
-This is a common issue with Nvidia drivers. Stay patient, it takes a minute to load. This happens to other games too.
+This is a common issue with certain NVIDIA drivers. Stay patient, it takes a minute to load. This often
+happens to other games too.
 
 Stuck on a colored background but no menu
 ------------------------------
@@ -92,3 +96,4 @@ For all other issues, you are more than welcome to join our [Discord][discord] a
 [forum]: https://forum.fivem.net/
 [discord]: https://discord.gg/GtvkUsc
 [vanilla-server]: https://servers.fivem.net/#/servers/detail/198.27.79.239:45454
+[uninstalling]: /client-manual/installing-fivem#uninstalling

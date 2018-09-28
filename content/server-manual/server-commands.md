@@ -3,9 +3,13 @@ title: Server Commands
 weight: 330
 ---
 
-Console commands can be executed either using an RCon tool, directly from the server console GUI, or (if a resource is allowed by ACE) the [ExecuteCommand]({{<native "EXECUTE_COMMAND">}}) function.
+<!-- TODO: format this like client commands? -->
 
-Adding a custom RCon command can be done using the [RegisterCommand]({{<native "REGISTER_COMMAND">}}) function on the server, or the (legacy) `rconCommand` event.
+Console commands can be executed either using an RCon tool, directly from the server console GUI, a server configuration
+file, or (if a resource is allowed by ACE) the [ExecuteCommand]({{<native "EXECUTE_COMMAND">}}) function.
+
+Adding a custom RCon command can be done using the [RegisterCommand]({{<native "REGISTER_COMMAND">}}) function on the
+server, or the (legacy) `rconCommand` event.
 
 ### `start <resourceName>`
 
@@ -89,7 +93,7 @@ Example:
 load_server_icon "my-server.png"
 ```
 
-### `add_ace <principal> <ace_name> <allow|deny>`
+### `add_ace <principal> <object> <allow|deny>`
 
 Adds an access control entry to the server's access control list.
 
@@ -110,7 +114,7 @@ Example:
 add_principal identifier.steam:110000112345678 group.admin
 ```
 
-### `remove_ace <principal> <ace_name> <allow|deny>`
+### `remove_ace <principal> <object> <allow|deny>`
 
 Removes a specified ACE from the server's access control list.
 
@@ -128,3 +132,8 @@ Example:
 ```
 remove_principal identifier.steam:110000112345678 group.admin
 ```
+
+### `test_ace <principal> <object>`
+Tests if a principal is allowed or denied access to a given object.
+
+Example: `test_ace group.admin command.adminstuff`

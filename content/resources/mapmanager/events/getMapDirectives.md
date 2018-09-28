@@ -9,7 +9,7 @@ Parameters
 function add
 ```
 
-- **add**: A function used to add things like spawnpoints and vehicle generators.
+- **add**: A function used to add a specific map directive.
 
 Examples
 --------

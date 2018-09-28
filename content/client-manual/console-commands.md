@@ -29,7 +29,7 @@ Usage: `developer <true|false>`
 `disconnect` will disconnect you from the current server you are connected to and return to the main menu.
 
 ### doshit
-Used interally, to test some experimental features. Not of use to a regular user.
+Used internally, to test some experimental features. Not of use to a regular user.
 
 ### invoke-levelload
 An alias for `loadlevel`, see the [loadlevel](#loadlevel) command for details.
@@ -37,17 +37,17 @@ An alias for `loadlevel`, see the [loadlevel](#loadlevel) command for details.
 ### list_aces
 <!-- TODO: probably needs a reference to an explanation for ACL stuff -->
 Lists all the aces (access control entries) in the console. It creates a list of the relationship between an principal
-and identifier and if it's allowed or not allowed to use it. Example output:
+and object and if they're allowed or not allowed to use it. Example output:
 
 ```
 builtin.everyone -> command.freecam = ALLOW
-groups.admin -> command.testbed = DENY
+group.admin -> command.testbed = DENY
 <rest of the aces...>
 ```
 
 ### list_principals
 <!-- TODO: probably needs a reference to an explanation for ACL stuff -->
-Lists all the principals in the system, it will print out a list of which principals belong into which ace. Example
+Lists all the principals in the system, it will print out a list of which principals are inherited by others. Example
 output:
 
 ```
@@ -70,7 +70,7 @@ Allows you to load in TXDs and drawables via an graphical interface.
 Usage: `modelviewer <true|false>`
 
 ### net_maxPackets
-A configuration flag to tell the client how many packets it can receive per second.
+A configuration flag to tell the client how many packets it should send at minimum per second.
 
 The default value is 50, minimum is 1 and maximum is 200 per second.
 
@@ -109,7 +109,7 @@ The graph represents how many packets have been sent or received.
 Usage: `netgraph <true|false>`
 
 ### netobjviewer
-Shows a list of current nodes being synchronized over the network.
+Shows a list of current nodes being synchronized over the network, when OneSync is enabled.
 
 Usage: `netobjviewer <true|false>`
 
@@ -117,7 +117,7 @@ Usage: `netobjviewer <true|false>`
 Running the `quit` command will force the FiveM client to close immediately.
 
 ### r_disableRendering
-Internal dev tool. Not of use to a regular user.
+Internal dev tool. Not of use to a regular user, and can not be toggled at runtime.
 
 ### resmon
 The resmon command will open the resource monitor. The resource monitor monitors the CPU usage and memory usage for each
@@ -126,10 +126,14 @@ resource and shows this in a nice overview. Comes in handy when you encounter pe
 Usage: `resmon <true|false>`
 
 ### save_gta_cache
-Internal dev tool. Not of use to a regular user.
+<!-- TODO: reference a guide on GTA cache and using it in a resource -->
+Saves cache data for a specified resource to the CitizenFX directory in AppData. This is to be used for resources with a
+significant amount of collision or map files, to speed up initial loading for players.
+
+Usage: `save_gta_cache <resource name>`
 
 ### se_debug
-The `se_debug` command enable verbose logging for security features (like the ACL).
+The `se_debug` command enables verbose logging for security features (like the ACL).
 
 Usage: `se_debug <true|false>`
 
@@ -155,7 +159,7 @@ animal
 ```
 
 ### seta
-Set a archived variable on the client.
+Set an archived variable on the client. Currently, archiving is not implemented.
 
 Usage: `seta <key> <value>`
 
@@ -170,21 +174,20 @@ food
 ```
 
 ### strdbg
-`strdbg` can be used to see what is currently being streamed to the client, to potentially spot any issues with
-streaming certain items.
+`strdbg` can be used to see what is currently being loaded in the GTA streamer, to potentially spot any issues with
+streaming certain items, for example when the world stops loading.
 
 Usage: `strdbg <true|false>`
 
 ### strlist
-`strlist` is a graphical interface showing what is streamed to the client and additional information about those
-streamed items.
+`strlist` is a graphical interface showing the entries registered in the GTA streamer, and their current status.
 
 Usage `strlist <true|false>`
 
 ### test_ace
-Tests if a principal is allowed or denied for a given identifier.
+Tests if a principal is allowed or denied access to a given object.
 
-Usage: `test_ace <principal> <identifier>`
+Usage: `test_ace <principal> <object>`
 
 Example: `test_ace group.admin command.adminstuff`
 

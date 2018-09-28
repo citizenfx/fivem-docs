@@ -20,7 +20,7 @@ Documentation
 -------------
 
 Documentation is an ever-ongoing piece of work. If you see any room for improvement on these docs, you can do so by
-submitting a pull request on our docs repository.
+submitting a pull request on our docs repository once it is finalized.
 
 Patreon
 -------

@@ -14,7 +14,7 @@ My server does not show up in the server list
 ---------------------------------------------
 
 When this happens, make sure other people can connect to your server using
-direct connect. This issue usually is a result of bad portforwarding or some
+direct connect. This issue usually is a result of bad port forwarding or some
 firewall issue. Make sure your network configuration is correct.
 
 Help! I can't find my issue here!

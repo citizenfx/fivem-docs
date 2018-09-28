@@ -18,7 +18,7 @@ read the [client issues manual][client-issues].
 - Make sure you have installed and updated [GTA V][where-to-buy].
 - [Download FiveM][home] off the website.
 - Run FiveM.exe. If you run the installer in an empty folder, FiveM will install there. Otherwise, it will install
-  at `%localappdata%\FiveM`.
+  in `%localappdata%\FiveM`.
 - Start FiveM from your Windows start menu.
 
 Uninstalling
@@ -28,7 +28,7 @@ Uninstalling
 - Otherwise:
     - Press `WinKey+R` on your keyboard
     - Type `%localappdata%` in the dialog that opens
-    - Hit enter
+    - Hit Enter
     - Delete the FiveM folder
 - That is all you need to do!
 - Run FiveM.exe again if you want to reinstall FiveM.

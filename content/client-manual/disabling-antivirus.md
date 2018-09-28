@@ -4,7 +4,8 @@ weight: 230
 ---
 
 Some antivirus vendors like Avast, AVG and others are known to block FiveM procedures. Make sure your antivirus allows
-FiveM to run by adding FiveM to its exclusions list. We are aware of the situation and continue to work on a solution.
+FiveM to run by adding FiveM to its exclusions list. We are aware of the situation and are intending to work on a
+solution for these issues.
 
 - First, locate where FiveM is installed.
     - If you installed FiveM in an empty folder, that's where you installed FiveM.

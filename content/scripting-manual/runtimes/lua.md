@@ -6,7 +6,7 @@ weight: 421
 FiveM supports the general purpose programming language Lua as one of its scripting languages. Lua is a very easy
 language to learn, simple to use and fast to write. To use Lua, just use `.lua` in your scripts file extensions.
 
-A modified version of [Lua 5.3][luadocs] is used in FiveM, called _CfxLua_. This version is includes some of the
+A modified version of [Lua 5.3][luadocs] is used in FiveM, called _CfxLua_. This version includes some of the
 modifications the [Grit game engine][grit] introduced:
 
 - [Support for relative path literals](#relative-path-literals)

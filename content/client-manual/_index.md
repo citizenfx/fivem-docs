@@ -10,18 +10,19 @@ Basics
 
 FiveM singleplayer
 ------------------
-FiveM also ships with a special singleplayer mode. This brings the FiveM experience to singleplayer. For this to work,
-you do need to have a valid savegame from the original game. Save your game at least once before starting FiveM SP.
+FiveM also ships with a customized singleplayer mode. This brings the FiveM experience to singleplayer. For this to
+work, you currently need to have a valid savegame from the original game. Save your game at least once before starting
+FiveM SP, and copy it into the FiveM profile directory in Documents\Rockstar Games\GTA V (the one with a fivem_set.bin).
 
 Using plugins
 -------------
 FiveM allows the use of certain plugins. You can install these by going to your plugins folder within FiveM's
 application data folder. If you have no such folder yet, you can create it. Within this folder you can place
-the same type of .asi scripts you always used.
+many types of .asi scripts you would typically use in singleplayer.
 
 Beware:
 
-- Servers have the option to disallow the use of plugins. Therefor, you might not be able to use your plugins at all
+- Servers have the option to disallow the use of plugins. Therefore, you might not be able to use your plugins at all
   servers you play on.
 - Use at your own risk. Some plugins are outdated and/or not compatible with FiveM and may crash your game.
   FiveM is not responsible for any such event and will not provide support for the use of plugins.

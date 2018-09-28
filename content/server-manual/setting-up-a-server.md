@@ -18,14 +18,14 @@ Windows
 - Create a new folder (for example `D:\FXServer`).
 - Download the latest `master` branch build for Windows from the [artifacts server][windows-artifacts].
 - Extract the build.
-- * Use any archiving tool (such as WinRAR or 7-Zip).
+  - Use any archiving tool (such as WinRAR or 7-Zip).
 - Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
-- * `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
+  - `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
 - Make a **server.cfg** in your `server-data` folder. You need to copy the example cfg below into the file.
 - Generate a license code on <https://keymaster.fivem.net> using your forum account.
 - Use the license code in your `server.cfg`.
 - Run the server from the `server-data` folder. (`cd /d D:\FXServer\server-data`)
-- * `D:\FXServer\run.cmd +exec server.cfg` (from a new cmd window)
+  - `D:\FXServer\run.cmd +exec server.cfg` (from a new cmd window)
 
 Linux
 -----
@@ -33,12 +33,12 @@ Linux
 - Download the latest `master` branch build for Linux from the [artifacts server][linux-artifacts](copy the URL for the latest server version and use `wget <url>` to download it).
 - Extract the build using `cd path/to/server/folder && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).
 - Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
-- * For example `git clone https://github.com/citizenfx/cfx-server-data.git /home/username/server-data`
+  - For example `git clone https://github.com/citizenfx/cfx-server-data.git /home/username/server-data`
 - Make a **server.cfg** file in your `server-data` folder (copy the example server.cfg file below into that file).
 - Generate a license code on <https://keymaster.fivem.net> using your forum account.
 - Use the license code in your `server.cfg`.
 - Run the server from the `server-data` folder.
-- * `bash /home/username/server/run.sh +exec server.cfg`
+  - `bash /home/username/server/run.sh +exec server.cfg`
 
 Common issues
 ---------------
