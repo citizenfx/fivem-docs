@@ -8,6 +8,7 @@ weight: 514
 - [Citizen.Await](/scripting-reference/runtimes/lua/functions/Citizen.Await)
 - [Citizen.Wait](/scripting-reference/runtimes/lua/functions/Citizen.Wait)
 - [Citizen.CreateThread](/scripting-reference/runtimes/lua/functions/Citizen.CreateThread)
+- [Citizen.SetTimeout](/scripting-reference/runtimes/lua/functions/Citizen.SetTimeout)
 - [Citizen.Trace](/scripting-reference/runtimes/lua/functions/Citizen.Trace)
 - [RegisterNetEvent](/scripting-reference/runtimes/lua/functions/RegisterNetEvent)
 - [RegisterNUICallback](/scripting-reference/runtimes/lua/functions/RegisterNUICallback)
