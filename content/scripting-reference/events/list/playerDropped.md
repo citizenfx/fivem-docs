@@ -7,10 +7,10 @@ Parameters
 ----------
 
 ```
-int player, string reason
+string reason
 ```
 
-- **player**: The source/player that disconnected.
+- **source**: The player that has disconnected.
 - **reason**: The reason why the player has disconnected.
 
 Examples
