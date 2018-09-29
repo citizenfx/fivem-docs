@@ -9,7 +9,7 @@ To use JavaScript, just use `.js` in your script filename.
 FiveM has the ES2017 standard library built in. FiveM also implements a WHATWG compliant `console` API (some
 rarely-used methods are not yet implemented).
 
-**Note that FiveM doesn't include any browser or Node.JS-specific API's, such
+**Note that FiveM (on the client) doesn't include any browser or Node.js-specific API's, such
 as DOM, localStorage, IndexedDB, WebGL, etc.**
 
 Using natives
@@ -23,6 +23,16 @@ Example:
 // The native command GET_PLAYER_PED translates to the following:
 GetPlayerPed(-1);
 ```
+
+Using Node.js APIs
+------------------
+
+FiveM includes a [customized version][nodejs] of Node.js 8.x **on the server**. You can simply use `require` in server
+scripts, and it'll resolve the package either from Node.js built-ins, or the `node_modules/` folder in your resource
+directory.
+
+To automatically install and update a `package.json` with Yarn on launch, make sure the `yarn` resource is running
+before starting your resource, or preferably add it as a `dependency` in your [resource manifest][deplink].
 
 Using exports
 -------------
@@ -71,7 +81,37 @@ Gotchas
 -------
 
 ### Thread affinity
-Explain this: https://discordapp.com/channels/192358910387159041/433008322732490778/479361371147075585
+In the Node.js runtime, any callbacks that are triggered by Node.js will _run on a separate thread_ hosting the libuv
+event loop. Since CitizenFX server natives can only be called on the main game thread, trying to invoke any will likely
+lead to an error saying 'No current resource manager'.
+
+To resolve this, use `setImmediate` to schedule a callback to be executed on the main thread if you're intending to call
+any server natives.
+
+For example:
+
+```js
+const root = GetResourcePath(GetCurrentResourceName());
+
+// wrong
+fs.readFile(`${root}/test.txt`, { encoding: 'utf8' }, (err, data) => {
+  emit('chat:addMessage', { // this call will error out due to thread affinity
+    args = [ data ]
+  });
+});
+
+// right
+fs.readFile(`${root}/test.txt`, { encoding: 'utf8' }, (err, data) => {
+  setImmediate(() => { // the callback will be called next game tick
+    emit('chat:addMessage', {
+      args = [ data ]
+    });
+  });
+});
+```
+
+Note that when nesting Node.js callbacks and _not_ using natives in between, you don't need to schedule the code back to
+the main thread, and it is recommended that you don't do so for the sake of performance.
 
 Functions in JavaScript
 -----------------------
@@ -84,3 +124,6 @@ Functions in JavaScript
 - addRawEventListener (alias: addRawEventHandler)
 - removeEventListener
 - setTick
+
+[deplink]: /scripting-reference/resource-manifest/resource-manifest#dependency
+[nodejs]: https://github.com/citizenfx/node
