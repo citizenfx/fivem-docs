@@ -38,8 +38,13 @@ If this `#` is already added in front of the line, then try the following steps.
 
 **Could it see the service?**
 
-- A server can take up to 8 minutes to be shown in the serverlist after booting it up. Please be patient.
-- In very rare cases, there might be an issue with the serverlist services, please be patient, chances are very high that the collectives are already hard at work trying to resolve this issue.
+- A server can take up to 8 minutes to be shown in the server list after initially launching, if no other heartbeats are
+  sent. Please be patient.
+- In very rare cases, there might be an issue with the server listing services, please be patient, chances are very high
+  that our team is already hard at work trying to resolve this issue.
+- You might using a NAT/gateway that masks UDP source ports. Here's a few guides on resolving this issue for certain
+  firewall applications:
+  - [pfSense][pfsensenat]
 
 **Could it NOT see your service?**
 
@@ -59,3 +64,4 @@ You can also join our [Discord][discord] and have a chat with us.
 
 [forum]: https://forum.fivem.net/
 [discord]: https://discord.gg/GtvkUsc
+[pfsensenat]: https://www.netgate.com/docs/pfsense/nat/static-port.html
