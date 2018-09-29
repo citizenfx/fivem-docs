@@ -42,7 +42,7 @@ If this `#` is already added in front of the line, then try the following steps.
   sent. Please be patient.
 - In very rare cases, there might be an issue with the server listing services, please be patient, chances are very high
   that our team is already hard at work trying to resolve this issue.
-- You might using a NAT/gateway that masks UDP source ports. Here's a few guides on resolving this issue for certain
+- You might be using a NAT/gateway that masks UDP source ports. Here's a few guides on resolving this issue for certain
   firewall applications:
   - [pfSense][pfsensenat]
 
