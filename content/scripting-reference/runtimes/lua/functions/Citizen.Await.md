@@ -6,5 +6,5 @@ Syntax
 ------
 
 ```lua
-Citizen.Await(delay)
+Citizen.Await(awaitable)
 ```
