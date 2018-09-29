@@ -62,11 +62,21 @@ For usage and examples see their respective docs:
 Using exports
 -------------
 
-Unline JavaScript and C#, Lua does not have a `Export` function to create exports. Instead, you define an `export` or
-`server_export` entry in your [resource manifest][resource-manifest]. Functions need to be global to be exported.
-For example:
+You can define exports by calling the global `exports` object:
 
 hello.lua:
+```lua
+exports('SayHello', function(str)
+  print('Hello, ' .. tostring(str) .. '!')
+end)
+```
+
+You can also define an `export` or `server_export` entry in your [resource manifest][resource-manifest]. Functions need
+to be global to be 'explicitly' exported. Note that these exports will only be available after the first scheduler tick.
+
+For example:
+
+hello_explicit.lua:
 ```lua
 function SayHello(str)
   print('Hello, ' .. tostring(str) .. '!')
