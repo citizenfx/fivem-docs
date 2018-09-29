@@ -14,7 +14,7 @@ _This resource does not have any export functions._
 ## Events
 
 ### Client
-- [chatMessage](./events/chatMessage) (depreciated, use chat:addMessage instead)
+- [chatMessage](./events/chatMessage) (deprecated, use chat:addMessage instead)
 - [chat:addMessage](./events/chat-addMessage)
 - [chat:addSuggestion](./events/chat-addSuggestion)
 - [chat:addSuggestions](./events/chat-addSuggestions)
