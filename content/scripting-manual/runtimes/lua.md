@@ -1,5 +1,5 @@
 ---
-title: Scripting in lua
+title: Scripting in Lua
 weight: 421
 ---
 
