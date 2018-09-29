@@ -6,6 +6,9 @@ weight: 551
 Parameters
 ----------
 
+{{% alert theme="warning" %}}This event is deprecated. Please use [REGISTER_COMMAND]({{<native "REGISTER_COMMAND">}})
+instead, and use the `restricted` flag.{{% /alert %}}
+
 ```
 string command, table/array arguments
 ```
