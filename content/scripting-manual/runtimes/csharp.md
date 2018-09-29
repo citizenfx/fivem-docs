@@ -50,6 +50,9 @@ In that window, click on "Browse..." and go to your project folder. Find the Cit
 
 Congratulations, you've now added the client dependency to the project. Only one more step before we can actually start coding. If you have a server sided project, then also checkout the next step. Otherwise skip the next step and go straight to the "Let's write some code" section.
 
+<!--
+FIXME: this isn't correct - the NuGet package is an (old) client version
+
 #### Server dependency
 The server project dependency is slightly different compared to the client dependency because we're not going to be taking the file and copying it inside our folder manually. We'll use **NuGet** for this. NuGet allows you to browse and install dependencies with just a few clicks, and it even notifies you whenever there's an update available.
 
@@ -57,6 +60,7 @@ To add this NuGet dependency, go to your server project in the Solution Explorer
 In the top left corner, click "Browse" and a search bar will appear below the "Browse" button. In there, type `CitizenFX` and press ENTER. Find the green iconic snail dependency in that list, and click the ⬇ icon on the right ![screenshot-5](/csharp-tut-5.png)
 
 NuGet should take care of the rest for you. After the dependency has been added, you can close the NuGet window and return to your Class1.cs where we'll start coding in the next section of this guide.
+-->
 
 # Let's write some code
 **It's finally time to actually start writing some code! 🎉**
