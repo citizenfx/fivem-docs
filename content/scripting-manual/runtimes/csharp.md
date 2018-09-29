@@ -50,17 +50,23 @@ In that window, click on "Browse..." and go to your project folder. Find the Cit
 
 Congratulations, you've now added the client dependency to the project. Only one more step before we can actually start coding. If you have a server sided project, then also checkout the next step. Otherwise skip the next step and go straight to the "Let's write some code" section.
 
-<!--
-FIXME: this isn't correct - the NuGet package is an (old) client version
 
 #### Server dependency
-The server project dependency is slightly different compared to the client dependency because we're not going to be taking the file and copying it inside our folder manually. We'll use **NuGet** for this. NuGet allows you to browse and install dependencies with just a few clicks, and it even notifies you whenever there's an update available.
+The server project dependency is very similar to the client one. One major change is the location where you get the dependency from. Instead of getting it from your client files, you actually need to grab it from your server files.
 
-To add this NuGet dependency, go to your server project in the Solution Explorer, and right click your project. Click "Manage NuGet packages..." and this window should appear: ![screenshot-4](/csharp-tut-4.png)
-In the top left corner, click "Browse" and a search bar will appear below the "Browse" button. In there, type `CitizenFX` and press ENTER. Find the green iconic snail dependency in that list, and click the ⬇ icon on the right ![screenshot-5](/csharp-tut-5.png)
+Go to the following folder in your server files:
+```ini
+citizen\clr2\lib\mono\4.5\
+```
+Once you're in there, copy the `CitizenFX.Core.dll` file and paste it in your C# server project folder.
 
-NuGet should take care of the rest for you. After the dependency has been added, you can close the NuGet window and return to your Class1.cs where we'll start coding in the next section of this guide.
--->
+Now, go back into visual studio and go to your project in the Solution Explorer on the right. Right click on your (server) project, and click "Add > Reference".
+The following window should appear: ![screenshot-3](/csharp-tut-3.png)
+
+In that window, click on "Browse..." and go to your server project folder. Find the CitizenFX.Core.dll file and select that (and press Add). You should now see that the dll has been added to the "Browse > Recent" list. Make sure that the checkmark in front of the reference **is checked**, and click "OK" in the bottom right.
+
+Congratulations, you've now added the server dependency to the project.
+
 
 # Let's write some code
 **It's finally time to actually start writing some code! 🎉**
