@@ -57,4 +57,4 @@ these resources provide useful functionality to your server.
 More information about the standard resources can be found in the [resource catalog][resource-catalog].
 
 [manifest-reference]: /scripting-reference/resource-manifest/
-[resource-catelog]: /resources
+[resource-catalog]: /resources
