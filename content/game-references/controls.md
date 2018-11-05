@@ -413,7 +413,7 @@ Controls
 | 341   | INPUT\_VEH\_HYDRAULICS\_CONTROL\_DOWN            | LEFT CTRL      |
 | 342   | INPUT\_VEH\_HYDRAULICS\_CONTROL\_UD              | D              |
 | 343   | INPUT\_VEH\_HYDRAULICS\_CONTROL\_LR              | LEFT CTRL      |
-| 344   | INPUT\_SWITCH\_VISOR                             | ?              |
+| 344   | INPUT\_SWITCH\_VISOR                             | F11            |
 | 345   | INPUT\_VEH\_MELEE\_HOLD                          | X              |
 | 346   | INPUT\_VEH\_MELEE\_LEFT                          | LEFT MOUSE BUTTON |
 | 347   | INPUT\_VEH\_MELEE\_RIGHT                         | RIGHT MOUSE BUTTON |
