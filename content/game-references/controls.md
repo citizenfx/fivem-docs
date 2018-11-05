@@ -413,5 +413,17 @@ Controls
 | 341   | INPUT\_VEH\_HYDRAULICS\_CONTROL\_DOWN            | LEFT CTRL      |
 | 342   | INPUT\_VEH\_HYDRAULICS\_CONTROL\_UD              | D              |
 | 343   | INPUT\_VEH\_HYDRAULICS\_CONTROL\_LR              | LEFT CTRL      |
-| 344   | INPUT\_MAP\_POI                                  | F11            |
-| 345   | INPUT\_REPLAY\_SNAPMATIC\_PHOTO                  | X              |
+| 344   | INPUT\_SWITCH\_VISOR                             | ?              |
+| 345   | INPUT\_VEH\_MELEE\_HOLD                          | X              |
+| 346   | INPUT\_VEH\_MELEE\_LEFT                          | LEFT MOUSE BUTTON |
+| 347   | INPUT\_VEH\_MELEE\_RIGHT                         | RIGHT MOUSE BUTTON |
+| 348   | INPUT\_MAP\_POI                                  | SCROLLWHEEL BUTTON (PRESS) |
+| 349   | INPUT\_REPLAY\_SNAPMATIC\_PHOTO                  | TAB            |
+| 350   | INPUT\_VEH\_CAR\_JUMP                            | E              |
+| 351   | ?                                                | E              |
+| 352   | INPUT\_VEH\_ROCKET\_BOOST                        | LEFT SHIFT     |
+| 353   | INPUT\_VEH\_PARACHUTE                            | SPACEBAR       |
+| 354   | INPUT\_VEH\_BIKE\_WINGS                          | X              |
+| 355   | INPUT\_VEH\_FLY\_BOMB\_BAY                       | E              |
+| 356   | INPUT\_VEH\_FLY\_COUNTER                         | E              |
+| 357   | INPUT\_VEH\_TRANSFORM                            | X              |
