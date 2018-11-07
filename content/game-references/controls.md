@@ -421,7 +421,7 @@ Controls
 | 349   | INPUT\_REPLAY\_SNAPMATIC\_PHOTO                  | TAB            |
 | 350   | INPUT\_VEH\_CAR\_JUMP                            | E              |
 | 351   | INPUT\_VEH\_ROCKET\_BOOST                        | E              |
-| 352   | ?                                                | LEFT SHIFT     |
+| 352   | INPUT\_VEH\_FLY\_BOOST                           | LEFT SHIFT     |
 | 353   | INPUT\_VEH\_PARACHUTE                            | SPACEBAR       |
 | 354   | INPUT\_VEH\_BIKE\_WINGS                          | X              |
 | 355   | INPUT\_VEH\_FLY\_BOMB\_BAY                       | E              |
