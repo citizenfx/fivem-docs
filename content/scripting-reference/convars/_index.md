@@ -103,9 +103,13 @@ SetConvarServerInfo("convar_name", "Convar Value")
 ```
 
 
+## List of convar functions
 
+Here's a list of all CFX API set functions that you can use to get or set convars.
 
-
-
-
+- [`GetConvar`](https://runtime.fivem.net/doc/natives/#_0x6CCD2564)
+- [`GetConvarInt`](https://runtime.fivem.net/doc/natives/#_0x935C0AB2)
+- [`SetConvar`](https://runtime.fivem.net/doc/natives/#_0x341B16D2)
+- [`SetConvarReplicated`](https://runtime.fivem.net/doc/natives/#_0xF292858C)
+- [`SetConvarServerInfo`](https://runtime.fivem.net/doc/natives/#_0x9338D547)
 
