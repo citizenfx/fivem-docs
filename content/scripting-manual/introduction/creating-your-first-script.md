@@ -33,6 +33,8 @@ Finally, the `client_script` indicates to the scripting runtime that the client 
 
 Finally, we should make a file called `mymode_client.lua` in the `mymode` resource folder thing.
 
+To learn more about resource manifest files, take a look at the [resource manifest reference][manifest-reference].
+
 ### Writing code
 
 In this file, let's put the following content:
@@ -270,3 +272,6 @@ In your server console, `refresh; restart mymode` (yeah you can split stuff with
 
 ## Server scripts
 You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
+
+
+[manifest-reference]: /scripting-reference/resource-manifest/resource-manifest/
