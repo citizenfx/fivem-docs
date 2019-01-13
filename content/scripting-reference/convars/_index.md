@@ -97,6 +97,10 @@ sets Discord "Your discord link here"
 This will look something like this on the server info page:
 ![](https://i.imgur.com/bBi2K43.png)
 
+### Using resources
+```lua
+SetConvarServerInfo("convar_name", "Convar Value")
+```
 
 
 
