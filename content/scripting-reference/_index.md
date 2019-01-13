@@ -10,3 +10,4 @@ weight: 500
 <!-- TODO: - [Useful functions](/scripting-reference/useful-functions)-->
 - [Client events](/scripting-reference/client-events)
 - [Server events](/scripting-reference/server-events)
+- [Convars](/scripting-reference/convars)
