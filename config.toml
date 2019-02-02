@@ -3,12 +3,14 @@ title = "FiveM Documentation"
 theme = "docdock"
 pygmentsCodeFences = true
 disablePathToLower = true
+enableGitInfo = true
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
 [params]
 disableHomeIcon = true
+editURL = "https://github.com/citizenfx/fivem-docs/edit/master/content/"
 
 [blackfriday]
 hrefTargetBlank = true
