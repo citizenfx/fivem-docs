@@ -308,8 +308,8 @@ Controls
 | 236   | INPUT\_SCRIPT\_SELECT                            | V                                         |                |
 | 237   | INPUT\_CURSOR\_ACCEPT                            | LEFT MOUSE BUTTON                         |                |
 | 238   | INPUT\_CURSOR\_CANCEL                            | RIGHT MOUSE BUTTON                        |                |
-| 239   | INPUT\_CURSOR\_X                                 | (not a key, counts as being pressed if the mouse is on the right side of the screen) |                |
-| 240   | INPUT\_CURSOR\_Y                                 | (not a key, counts as being pressed if the mouse is on the left side of the screen) |                |
+| 239   | INPUT\_CURSOR\_X                                 | (NONE)                                    |                |
+| 240   | INPUT\_CURSOR\_Y                                 | (NONE)                                    |                |
 | 241   | INPUT\_CURSOR\_SCROLL\_UP                        | SCROLLWHEEL UP                            |                |
 | 242   | INPUT\_CURSOR\_SCROLL\_DOWN                      | SCROLLWHEEL DOWN                          |                |
 | 243   | INPUT\_ENTER\_CHEAT\_CODE                        | ~ / \`                                    |                |
