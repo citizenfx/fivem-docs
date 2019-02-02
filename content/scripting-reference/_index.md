@@ -8,6 +8,6 @@ weight: 500
 - [Client functions](/scripting-reference/client-functions)
 - [Server functions](/scripting-reference/server-functions)
 <!-- TODO: - [Useful functions](/scripting-reference/useful-functions)-->
-- [Client events](/scripting-reference/client-events)
-- [Server events](/scripting-reference/server-events)
+- [Client events](/scripting-reference/events/client-events)
+- [Server events](/scripting-reference/events/server-events)
 - [Convars](/scripting-reference/convars)

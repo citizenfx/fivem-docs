@@ -1,5 +1,5 @@
 ---
-title: Creating your first script
+title: Creating your first script in Lua
 weight: 412
 ---
 
