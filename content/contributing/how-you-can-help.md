@@ -20,7 +20,8 @@ Documentation
 -------------
 
 Documentation is an ever-ongoing piece of work. If you see any room for improvement on these docs, you can do so by
-submitting a pull request on our docs repository once it is finalized.
+submitting a pull request on our [docs repository][docs-rep], or clicking the "Improve this page" link at the bottom of
+a page.
 
 Patreon
 -------
