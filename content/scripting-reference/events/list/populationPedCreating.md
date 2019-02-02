@@ -3,8 +3,11 @@ title: populationPedCreating
 weight: 551
 ---
 
-This event is fired after population creation and allows manipulating population from script. 
-You can use setPosition and setModel.
+This event is fired before creating a population ped and allows manipulating population from script.
+You can also cancel this event with CancelEvent().
+Setters contains two function:
+- setPosition to set the position where the ped is going to spawn at.
+- setModel to set the model that the ped is going to spawn as.
 
 Parameters
 ----------
@@ -13,11 +16,11 @@ Parameters
 int posX, int posY, int posZ, string model, object setters
 ```
 
-- **posX**: X spawn position.
-- **posY**: Y spawn position.
-- **posZ**: Z spawn position.
-- **model**: Spawn model.
-- **setters**: The source object of the ped, that can be used with a limited set of functions only.
+- **posX**: The X position the ped is going to spawn at.
+- **posY**: The Y position the ped is going to spawn at.
+- **posZ**: The Z position the ped is going to spawn at.
+- **model**: The model the ped is going to spawn as.
+- **setters**: Object to override what the ped spawns as.
 
 Examples
 --------
