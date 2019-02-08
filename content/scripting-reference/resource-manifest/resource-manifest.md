@@ -240,4 +240,4 @@ By default, no manifest version is used, which is equivalent to manifest GUID `0
 ### Manifest version 05cfa83c-a124-4cfa-a768-c24a5811d8f9 (2017-06-04)
 
 -   Scripts will now be registered as a game network script. This is required for networking entities.
--   [CREATE\_VEHICLE](n:AF35D0D2583051B0 "wikilink") and similar functions behave differently when passing `true, true` as network object flags. See [network objects](network_objects "wikilink") for more information.
+-   [CREATE\_VEHICLE](https://runtime.fivem.net/doc/natives/#_0xAF35D0D2583051B0) and similar functions behave differently when passing `true, true` as network object flags. See [network objects](network_objects "wikilink") for more information.
