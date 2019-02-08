@@ -3,7 +3,7 @@ title: Scripting reference
 weight: 500
 ---
 
-- [Resource manifest](/scripting-reference/resource-manifest)
+- [Resource manifest](/scripting-reference/resource-manifest/resource-manifest)
 - [Native functions](https://runtime.fivem.net/doc/reference.html)
 - [Client functions](/scripting-reference/client-functions)
 - [Server functions](/scripting-reference/server-functions)
