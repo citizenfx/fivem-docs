@@ -25,5 +25,5 @@ local playerID = 1 -- The player ID to return identifiers for
 
 local steamID = GetPlayerIdentifiers(playerID)[1]
 
-print(steamID)
+print(steamID) -- prints `steam:110000132ca2xxx` in our example data shown above
 ```
