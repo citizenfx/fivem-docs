@@ -6,9 +6,9 @@ weight: 330
 <!-- TODO: format this like client commands? -->
 
 Console commands can be executed either using an RCon tool, directly from the server console GUI, a server configuration
-file, or (if a resource is allowed by ACE) the [ExecuteCommand]({{<native "EXECUTE_COMMAND">}}) function.
+file, or (if a resource is allowed by ACE) the [ExecuteCommand](https://runtime.fivem.net/doc/natives/#_0x561C060B) function.
 
-Adding a custom RCon command can be done using the [RegisterCommand]({{<native "REGISTER_COMMAND">}}) function on the
+Adding a custom RCon command can be done using the [RegisterCommand](https://runtime.fivem.net/doc/natives/#_0x5FA79B0F) function on the
 server, or the (legacy) `rconCommand` event.
 
 ### `start <resourceName>`
