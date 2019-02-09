@@ -19,5 +19,14 @@ string commandName
 
 Examples
 --------
+This example removes the suggestion that was creating with the example of [chat:addSuggestion](../chat-addSuggestion).
 
-TODO
+##### Lua Example:
+```lua
+TriggerEvent('chat:removeSuggestion', '/command')
+```
+
+##### C\# Example:
+```csharp
+TriggerEvent("chat:removeSuggestion", "/command");
+```
