@@ -75,8 +75,7 @@ happens to other games too.
 
 Stuck on a colored background but no menu
 ------------------------------
-This happens on specific older AMD laptop GPUs. Unfortunately, this is caused by CEF and not by FiveM. Once the issue
-has been fixed in CEF, FiveM will be updated too.
+This happens on specific older AMD laptop GPUs. Unfortunately, this is caused by CEF and not by FiveM. Once the issue has been fixed in CEF, FiveM will be updated too. A forum moderator has created a topic that could potentially rectify this issue. [Click here][discrete-gpu] for more info.  
 
 FiveM uninstalls itself after running it!
 -----------------------------------------
@@ -97,3 +96,4 @@ For all other issues, you are more than welcome to join our [Discord][discord] a
 [discord]: https://discord.gg/GtvkUsc
 [vanilla-server]: https://servers.fivem.net/#/servers/detail/198.27.79.239:45454
 [uninstalling]: /client-manual/installing-fivem#uninstalling
+[discrete-gpu]: https://forum.fivem.net/t/solution-forcing-fivem-to-use-your-discrete-gpu-infinite-loading-fix/217731
