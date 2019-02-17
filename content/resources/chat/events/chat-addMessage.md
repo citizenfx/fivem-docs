@@ -29,14 +29,14 @@ object message
 Examples
 --------
 
-This example sends a chat message to a player locally (only they will see it).
+This example sends a chat message to a player locally from a client script (only the executing client will see it).
 
 ##### Lua Example:
 ```lua
 TriggerEvent('chat:addMessage', {
   color = { 255, 0, 0},
   multiline = true,
-  args = {"Sytem", "Please be careful to not step on too many snails!"}
+  args = {"Me", "Please be careful to not step on too many snails!"}
 })
 ```
 
@@ -46,7 +46,7 @@ TriggerEvent("chat:addMessage", new
 {
     color = new[] {255, 0, 0},
     multiline = true,
-    args = new[] {"System", "Please be careful to not step on too many snails!"}
+    args = new[] {"Me", "Please be careful to not step on too many snails!"}
 });
 ```
 

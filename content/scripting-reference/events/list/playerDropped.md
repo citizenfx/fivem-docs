@@ -15,12 +15,6 @@ string reason
 - **source**: The player that has disconnected.
 - **reason**: The reason why the player has disconnected.
 
-##### List of reasons:
-* `"Exited."`
-* `"Disconnected."`
-* `"Timed out after 10 seconds."`
-* `"Connecting to another server."`
-
 Examples
 --------
 This example prints the name of the player and the reason why the player has disconnected to the server console.

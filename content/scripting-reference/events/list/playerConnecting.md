@@ -45,7 +45,7 @@ private void OnPlayerConnecting([FromSource]Player player, string playerName, dy
     // - assuming you have a List<string> that contains banned license identifiers
     if (myBanList.Contains(licenseIdentifier))
     {
-        setKickReason($"You have been kicked (Reason: [Banned])! Please contact the server administration (Identifier: [{licenseIdentifier}]).");
+        deferrals.done($"You have been kicked (Reason: [Banned])! Please contact the server administration (Identifier: [{licenseIdentifier}]).");
         CancelEvent();
     }
 

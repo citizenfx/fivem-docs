@@ -16,7 +16,7 @@ string resourceName
 
 Examples
 --------
-This example prints the name of the resource that was just started.
+This example prints the name of the resource it was in, upon start.
 
 ##### Lua Example:
 ```lua
