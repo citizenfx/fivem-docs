@@ -11,6 +11,7 @@ These events are part of FiveM and do not require any resource.
 
 - [onClientResourceStart](../list/onClientResourceStart)
 - [onClientResourceStop](../list/onClientResourceStop)
+- [populationPedCreating](../list/populationPedCreating)
 
 spawnmanager events
 -------------------

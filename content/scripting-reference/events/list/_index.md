@@ -12,4 +12,6 @@ weight: 543
 - [onResourceStop](./onResourceStop)
 - [playerConnecting](./playerConnecting)
 - [playerDropped](./playerDropped)
+- [populationPedCreating](./populationPedCreating)
+- [rconCommand](./rconCommand)
 - [rconCommand](./rconCommand)
