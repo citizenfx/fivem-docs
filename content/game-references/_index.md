@@ -10,3 +10,4 @@ Reference lists and guides for game data are in this category.
 - [Data files](/game-references/data-files)
 - [Game events](/game-references/game-events)
 - [Gamer tags](/game-references/gamer-tags)
+- [Profile Settings](/game-references/profile-settings)
