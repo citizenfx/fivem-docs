@@ -1,6 +1,6 @@
 ---
-title:   Blips
-weight:  700
+title: Blips
+weight: 705
 ---
 
 Blips
