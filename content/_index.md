@@ -48,6 +48,8 @@ get in touch with us on our [forums][forum] or on [Discord][discord].
     <div style="border: 1px solid lightgray; padding: 15px; margin-bottom: 5px;">
       <h4>Game references</h4>
       <ul>
+        <li><a href="/game-references/animations">Animations</a></li>
+        <li><a href="/game-references/blips">Blips</a></li>
         <li><a href="/game-references/controls">Controls</a></li>
         <li><a href="/game-references/data-files">Data files</a></li>
         <li><a href="/game-references/gamer-tags">Gamer tags</a></li>
