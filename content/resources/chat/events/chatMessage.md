@@ -21,4 +21,4 @@ string author, array color, string text
 Examples
 --------
 
-TODO
+This event is **deprecated**! Use [chat:addMessage](../chat-addMessage) instead.

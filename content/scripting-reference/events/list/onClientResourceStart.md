@@ -16,5 +16,29 @@ string resourceName
 
 Examples
 --------
+This example prints the name of the resource it was in, upon start.
 
-TODO
+##### Lua Example:
+```lua
+AddEventHandler('onClientResourceStart', function (resourceName)
+  if(GetCurrentResourceName() ~= resourceName) then
+    return
+  end
+  print('The resource ' .. resourceName .. ' has been started on the client.')
+end)
+```
+
+##### C\# Example:
+```csharp
+// In class constructor
+Eventhandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart);
+
+// Delegate method
+// - assuming `using static CitizenFX.Core.Native.API`
+private void OnClientResourceStart(string resourceName)
+{
+    if(GetCurrentResourceName() != resourceName) return;
+
+    Debug.WriteLine($"The resource {resourceName} has been started on the client.");
+}
+```

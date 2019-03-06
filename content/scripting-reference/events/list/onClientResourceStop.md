@@ -16,5 +16,23 @@ string resourceName
 
 Examples
 --------
+This example prints the name of a resource that was just stopped.
 
-TODO
+##### Lua Example:
+```lua
+AddEventHandler('onClientResourceStop', function (resourceName)
+  print('The resource ' .. resourceName .. ' has been stopped on the client.')
+end)
+```
+
+##### C\# Example:
+```csharp
+// In class constructor
+Eventhandlers["onClientResourceStop"] += new Action<string>(OnClientResourceStop);
+
+// Delegate method
+private void OnClientResourceStop(string resourceName)
+{
+    Debug.WriteLine($"The resource {resourceName} has been stopped on the client.");
+}
+```
