@@ -36,9 +36,20 @@ This is a very important step, if you do not add `.net` at the end of the Assemb
 
 ## Setting up the required dependencies
 Once you've set that all up, it's time to get our dependencies for our resource.
-<br>Depending on the type of resource you want to create, we'll either need the server CitizenFX.Core.dll dependency (for resources that need to run on the server side), or the client CitizenFX.Core.dll dependency (for resources that need to run on the client). If you want to be able to run your script both on the server and the client, you'll need to get both of those dependencies, and we'll make 2 separate projects in our resource solution.
+<br>Depending on the type of resource you want to create, we'll either need the server CitizenFX.Core.dll dependency (for resources that need to run on the server side), or the client CitizenFX.Core.dll dependency (for resources that need to run on the client). If you want to be able to run your script both on the server and the client, you'll need to get both of those dependencies, and we'll make 2 separate projects in our resource solution. There is two methods; one is to use Nuget (newer method) and the other is known as the older way and requires you to retrive these dependinces and ensure they stay updated! 
 
-#### Client dependency
+#### Updated way to gather FiveM Dependencies
+Getting both Client & Server Dependencies, is very easy now thanks to FiveM uploading their resources to nuget (C# - Package Manager). Simply go down to the Refrences section, right click then a menu should appear with a number of options; click "Manage Nuget Packages..".
+The location can be shown as it was described above:![screenshot-nugetManager](http://prntscr.com/mxzsnw)
+The following window should appear: ![nugetManagerFullScreen](http://prntscr.com/mxztlv)
+In that window, the search field you can type "CitizenFX.Core" - the following results that come up should/might differ slightly. The box in red is the Client Dependency meaning it should be installed to the Client Project (If Applicable). The box in blue is the Server Dependency and should be installed to the Server Project (If Applicable). 
+![nugetManagerAddResource](http://prntscr.com/mxzv3k)
+
+Congratulations, now with a few clicks you should now be able to require these Dependencies from their respective scripts! If you are questions if the Nuget package you installed is valid you can visit these links to find the correct most up to date Nuget Packages.
+Nuget Client Dependency Link: https://www.nuget.org/packages/CitizenFX.Core.Client
+Nuget Server Dependency Link: https://www.nuget.org/packages/CitizenFX.Core.Server
+
+#### Old Client Dependency Method
 Getting the client dependency is very easy. Simply go to your local installation folder of FiveM, and follow the following path and copy the CitizenFX.Core.dll file. Then go to the folder where you saved your  Visual Studio project, and paste the DLL file in that folder.
 ```ini
 FiveM Application Data\citizen\clr2\lib\mono\4.5\CitizenFX.Core.dll
@@ -50,7 +61,7 @@ In that window, click on "Browse..." and go to your project folder. Find the Cit
 Congratulations, you've now added the client dependency to your project. Only one more step before we can actually start coding. If you have a server sided project, also follow the next step. Otherwise, skip the next step and continue to the "Let's write some code" section.
 
 
-#### Server dependency
+#### Old Server Dependency Method
 The server project dependency is very similar to the client one. One major change is the location where you get the dependency from. Instead of getting it from your client files, you actually need to grab it from your server files.
 
 Go to the following folder in your server files:
