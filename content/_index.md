@@ -67,13 +67,13 @@ get in touch with us on our [forums][forum] or on [Discord][discord].
       <h4>Scripting reference</h4>
       <ul>
         <li><a href="/scripting-manual/introduction">Introduction</a></li>
-        <li><a href="/scripting-reference/resource-manifest">Resource manifest</a></li>
+        <li><a href="/scripting-reference/resource-manifest/resource-manifest">Resource manifest</a></li>
         <li><a href="https://runtime.fivem.net/doc/reference.html" target="_blank">Native functions reference</a></li>
         <li><a href="/scripting-reference/client-functions">Client functions</a></li>
         <li><a href="/scripting-reference/server-functions">Server functions</a></li>
         <!-- <li><a href="/scripting-reference/useful-functions">Useful functions</a></li> -->
-        <li><a href="/scripting-reference/client-events">Client events</a></li>
-        <li><a href="/scripting-reference/server-events">Server events</a></li>
+        <li><a href="/scripting-reference/events/client-events">Client events</a></li>
+        <li><a href="/scripting-reference/events/server-events">Server events</a></li>
       </ul>
     </div>
     <div style="border: 1px solid lightgray; padding: 15px; margin-bottom: 5px;">
