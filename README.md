@@ -6,7 +6,7 @@ Source of [docs.fivem.net][docs].
 Development
 -----------
 
-Install [Hugo][gohugo], then run:
+Install [Hugo][gohugo] *0.49*, then run:
 
 ```sh
 git submodule init
