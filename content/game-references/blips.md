@@ -668,9 +668,16 @@ Blip colors
 <div class="blip"><div class="blip_color" style="background-color: #fefefe" ></div><span><strong>0</strong><br>White</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #e03232" ></div><span><strong>1</strong><br>Red</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #71cb71" ></div><span><strong>2</strong><br>Green</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #e03232" ></div><span><strong>2 (enemy)</strong><br>Red</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #5db6e5" ></div><span><strong>2 (friendly)</strong><br>Blue</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #5db6e5" ></div><span><strong>3</strong><br>Blue</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #e03232" ></div><span><strong>3 (enemy)</strong><br>Red</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #fefefe" ></div><span><strong>4</strong><br>White</span></div>
-<div class="blip"><div class="blip_color" style="background-color: #eec64e" ></div><span><strong>5</strong><br>Taxi Yellow</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #e03232" ></div><span><strong>4 (enemy)</strong><br>Red</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #5db6e5" ></div><span><strong>4 (friendly)</strong><br>Blue</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #eec64e" ></div><span><strong>5</strong><br>Yellow</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #e03232" ></div><span><strong>5 (enemy)</strong><br>Red</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #5db6e5" ></div><span><strong>5 (friendly)</strong><br>Blue</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #c25050" ></div><span><strong>6</strong><br>Light Red</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #9c6eaf" ></div><span><strong>7</strong><br>Violet</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #fe7ac3" ></div><span><strong>8</strong><br>Pink</span></div>
@@ -715,6 +722,7 @@ Blip colors
 <div class="blip"><div class="blip_color" style="background-color: #FF9A18" ></div><span><strong>47</strong><br>Orange</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #F644A5" ></div><span><strong>48</strong><br>Brilliant Rose</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #E03A3A" ></div><span><strong>49</strong><br>Red</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #5db6e5" ></div><span><strong>49 (friendly)</strong><br>Blue</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #8A6DE3" ></div><span><strong>50</strong><br>Medium Purple</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #FF8B5C" ></div><span><strong>51</strong><br>Salmon</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #416C41" ></div><span><strong>52</strong><br>Dark Green</span></div>
@@ -732,9 +740,15 @@ Blip colors
 <div class="blip"><div class="blip_color" style="background-color: #D87B1B" ></div><span><strong>64</strong><br>Dark Orange</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #8E8393" ></div><span><strong>65</strong><br>Mamba</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #F0CB57" ></div><span><strong>66</strong><br>Yellow Orange</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #e03232" ></div><span><strong>66 (enemy)</strong><br>Red</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #5db6e5" ></div><span><strong>66 (friendly)</strong><br>Blue</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #65B9E7" ></div><span><strong>67</strong><br>Blue</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #e03232" ></div><span><strong>67 (enemy)</strong><br>Red</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #65B9E7" ></div><span><strong>68</strong><br>Blue</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #e03232" ></div><span><strong>68 (enemy)</strong><br>Red</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #79CD79" ></div><span><strong>69</strong><br>Green</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #e03232" ></div><span><strong>69 (enemy)</strong><br>Red</span></div>
+<div class="blip"><div class="blip_color" style="background-color: #5db6e5" ></div><span><strong>69 (friendly)</strong><br>Blue</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #EFCA57" ></div><span><strong>70</strong><br>Yellow Orange</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #EFCA57" ></div><span><strong>71</strong><br>Yellow Orange</span></div>
 <div class="blip"><div class="blip_color" style="background-color: #3D3D3D" ></div><span><strong>72</strong><br>Transparent Black</span></div>
