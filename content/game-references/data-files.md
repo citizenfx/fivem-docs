@@ -1,6 +1,6 @@
 ---
 title: Data files
-weight: 720
+weight: 740
 ---
 
 A **data file** is an entry in the [resource manifest](/scripting-manual/introduction/introduction-to-resources#the-resource-manifest) that references a file to load in the game extra content mounting system.

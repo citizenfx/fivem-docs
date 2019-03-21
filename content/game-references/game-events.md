@@ -1,6 +1,6 @@
 ---
 title: Game events
-weight: 730
+weight: 750
 ---
 
 This is a list of low-level game events. That means, these are the events that come straight from GTA V's core
