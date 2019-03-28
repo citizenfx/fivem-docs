@@ -8,8 +8,11 @@ Syntax
 ------
 
 ```lua
-GetPlayerIdentifiers()
+GetPlayerIdentifiers(Player player)
 ```
+
+### Required arguments
+- **player**: The ID of the player to get the identifiers from.
 
 Examples
 --------
