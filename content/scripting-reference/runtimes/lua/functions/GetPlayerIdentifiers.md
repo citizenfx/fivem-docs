@@ -8,7 +8,7 @@ Syntax
 ------
 
 ```lua
-GetPlayerIdentifiers(player)
+GetPlayerIdentifiers(Player player)
 ```
 
 ### Required arguments
