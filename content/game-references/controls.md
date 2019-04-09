@@ -13,6 +13,14 @@ Example
 if IsControlJustReleased(1--[[input group]],  51--[[control index]]) then
     -- run code here
 end
+
+-- continously check if [JUMP] is pressed
+while true do
+    Citizen.Wait(500)
+    if IsControlPressed(0, 22) then
+        print("The jump key is pressed!")
+    end
+end
 ```
 
 ### C\#
@@ -427,3 +435,26 @@ Controls
 | 355   | INPUT\_VEH\_FLY\_BOMB\_BAY                       | E                                         | DPAD RIGHT      |
 | 356   | INPUT\_VEH\_FLY\_COUNTER                         | E                                         | DPAD RIGHT      |
 | 357   | INPUT\_VEH\_TRANSFORM                            | X                                         | A               |
+
+Related functions from FiveM's Native Reference
+-----------------------------------------------
+```
+DISABLE_ALL_CONTROL_ACTIONS(int inputGroup)
+DISABLE_CONTROL_ACTION(int inputGroup, int control, BOOL disable)
+ENABLE_ALL_CONTROL_ACTIONS(int inputGroup)
+ENABLE_CONTROL_ACTION(int inputGroup, int control, BOOL enable)
+GET_CONTROL_INSTRUCTIONAL_BUTTON(int inputGroup, int control, Player p2)
+GET_CONTROL_NORMAL(int inputGroup, int control)
+GET_CONTROL_VALUE(int inputGroup, int control)
+GET_DISABLED_CONTROL_NORMAL(int inputGroup, int control)
+IS_CONTROL_ENABLED(int inputGroup, int control)
+IS_CONTROL_JUST_PRESSED(int inputGroup, int control)
+IS_CONTROL_JUST_RELEASED(int inputGroup, int control)
+IS_CONTROL_PRESSED(int inputGroup, int control)
+IS_CONTROL_RELEASED(int inputGroup, int control)
+IS_DISABLED_CONTROL_JUST_PRESSED(int inputGroup, int control)
+IS_DISABLED_CONTROL_JUST_RELEASED(int inputGroup, int control)
+IS_DISABLED_CONTROL_PRESSED(int inputGroup, int control)
+```
+
+Consider checking [this wiki](https://wiki.gtanet.work/index.php?title=Client_Scripting_Functions#Controls) more more datails.
