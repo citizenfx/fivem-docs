@@ -28,4 +28,4 @@ More info on that [here][check-dead-links].
 [docs]: https://docs.fivem.net
 [gohugo]: https://gohugo.io
 [wget]: http://www.gnu.org/software/wget/
-[check-dead-links]: https://www.createdbypete.com/articles/simple-way-to-find-broken-links-with-wget/
+[check-dead-links]: http://n390.com/blog/find-broken-links-using-wget
