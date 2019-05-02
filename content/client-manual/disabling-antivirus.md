@@ -17,3 +17,7 @@ solution for these issues.
 - Add it to your antivirus exclusions. For the common antivirus vendors:
     - [Avast](https://support.avast.com/en-eu/article/Antivirus-scan-exclusions)
     - [AVG](https://support.avg.com/SupportArticleView?urlname=How-to-exclude-file-folder-or-website-from-AVG-scanning)
+    
+    also you may experience some sort of sam issues with windows defender so beeter option is adding folder also in winows defender exception list 
+    
+    also you can check google for how to disable other ones like : norton, eset, baidu......
