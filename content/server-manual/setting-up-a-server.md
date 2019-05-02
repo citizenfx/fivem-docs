@@ -49,6 +49,7 @@ Common issues
 - If no resources get started, and you can't connect, you didn't add +exec.
 - Mono errors _on startup_ (SIGSEGV, exception stack trace) are perfectly fine, and don't signify any error condition.
 - If you get 'Couldn't load resource sessionmanager', then type `restart sessionmanager` into the console input. This is a temporary workaround, and only happens after the cache was initially generated.
+- You cannot start your server from the included 'run' files, you must create a .bat or use command line to start the server with parameters.
 
 server.cfg
 ----------
