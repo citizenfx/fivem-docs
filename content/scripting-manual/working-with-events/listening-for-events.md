@@ -77,3 +77,24 @@ onNet('eventName', (eventParam1, eventParam2) => {
 ```
 
 _You only need to register events when using Lua or JS -- C# does not require you to do this manually, though you might want to protect your server events with own code._
+
+#### Determining the source of a server event
+When we register an event on the server side, and make it available over network with RegisterServerEvent, it is useful to determine the client that **called** that event.  We can do this by using the built in SOURCE argument, that is passed whenever a Server Event is triggered.  Source is the client which triggered the event, and while completely invisible at first glance, it is always passed.
+
+**Example**
+```lua
+Client.lua
+TriggerServerEvent("eventName")
+
+Server.lua
+
+RegisterServerEvent("eventName")
+AddEventHandler("eventName", function()
+print(source) -- will print the ID of the client which called the event
+end)
+```
+
+
+#### Note about event security
+
+Keep in mind that while events can be extremely powerful and useful over the network, some general security practices should be acknowledged.  When you register a networked server event, you are effectively allowing **anyone** to call it.  By anyone, I mean any server or client resource - however, should an exploiter have access to a lua executor they can trigger these too.  Be cautious as to how you allow server events to be executed.  For instance - implementing permissions checks on the server side within the event, instead of checking only on the client script would be a good security practice.
