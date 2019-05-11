@@ -17,4 +17,4 @@ solution for these issues.
 - Add it to your antivirus exclusions. For the common antivirus vendors:
     - [Avast](https://support.avast.com/en-eu/article/Antivirus-scan-exclusions)
     - [AVG](https://support.avg.com/SupportArticleView?urlname=How-to-exclude-file-folder-or-website-from-AVG-scanning)
-    - [windows defender](https://www.wikihow.com/Turn-Off-Windows-Defender-in-Windows-10)
+    - [Windows Defender](https://www.wikihow.com/Turn-Off-Windows-Defender-in-Windows-10)
