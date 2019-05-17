@@ -39,5 +39,15 @@ TriggerEvent("chat:addSuggestion", "/command", "help text", new[]
 });
 ```
 
+##### JS Example:
+```js
+setImmediate(() => {
+  emit('chat:addSuggestion', '/command', 'help text', [
+    {name:"paramName1", help:"param description 1"},
+    {name:"paramName1", help:"param description 2"}
+  ]);
+});
+```
+
 ## Example Result:
 ![screenshot-1](/chat_addSuggestion.png)
