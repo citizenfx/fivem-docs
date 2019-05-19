@@ -25,10 +25,12 @@ Windows
 4. Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
   <br>4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
 5. Make a **server.cfg** in your `server-data` folder. You need to copy the example cfg below into the file.
-6. Generate a license code on <https://keymaster.fivem.net> using your forum account.
-7. Use the license code in your `server.cfg`.
-8. Run the server from the `server-data` folder. (`cd /d D:\FXServer\server-data`)
+6. Generate a license key at <https://keymaster.fivem.net>.
+7. Set the license key in your server config using `sv_licenseKey "licenseKeyGoesHere"`.
+8. Run the server from the `server-data` folder. (`cd /d D:\FXServer\server-data`) Note: The `/d` flag is only needed when switching drives.
   <br>8b. `D:\FXServer\run.cmd +exec server.cfg` (from a new cmd window)
+
+---
 
 Linux
 -----
@@ -38,7 +40,7 @@ Linux
 4. Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
   <br>4b. For example `git clone https://github.com/citizenfx/cfx-server-data.git /home/username/server-data`
 5. Make a **server.cfg** file in your `server-data` folder (copy the example server.cfg file below into that file).
-6. Generate a license code on <https://keymaster.fivem.net> using your forum account.
+6. Generate a license key at <https://keymaster.fivem.net>.
 7. Use the license code in your `server.cfg`.
 8. Run the server from the `server-data` folder.
   <br>8b. `bash /home/username/server/run.sh +exec server.cfg`
