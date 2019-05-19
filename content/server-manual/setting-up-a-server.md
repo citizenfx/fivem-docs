@@ -13,6 +13,10 @@ Having trouble running your server? See [server issues][server-issues] for help,
 Windows
 -------
 
+#### Prerequisites
+1. [Visual C++ Redistributable 2017][vcredist] or newer.
+2. [Git][git-scm] to assure a correct installation.
+
 - Make sure you have installed [Visual C++ redistributable 2017][vcredist] or newer.
 - Create a new folder (for example `D:\FXServer`).
 - Download the latest `master` branch build for Windows from the [artifacts server][windows-artifacts].
@@ -138,6 +142,7 @@ What's next?
 [vcredist]: https://go.microsoft.com/fwlink/?LinkId=746572
 [winrar]: https://www.rarlab.com/download.htm
 [7zip]: https://www.7-zip.org/download.html
+[git-scm]: https://git-scm.com/download/win
 
 [server-issues]: /support/server-issues
 [server-commands]: /server-manual/server-commands
