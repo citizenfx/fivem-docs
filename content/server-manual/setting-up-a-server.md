@@ -8,7 +8,7 @@ Running FXServer
 
 FXServer is the name of the current CitizenFX server version. This page shows you how to run it.
 
-Having trouble running your server? See [server issues][server-issues] for help, use the Discord [#fxserver-support][fxserver-support] channel or create a topic in the [Server Discussion][fxserver-support-category] sub-category on the forum.
+Having trouble running your server? Visit [server issues][server-issues], use the Discord [#fxserver-support][fxserver-support] channel or create a topic in the [Server Discussion][fxserver-support-category] sub-category on the forum.
 
 Windows
 -------
