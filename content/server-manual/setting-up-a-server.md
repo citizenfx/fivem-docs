@@ -17,18 +17,18 @@ Windows
 1. [Visual C++ Redistributable 2017][vcredist] or newer.
 2. [Git][git-scm] to assure a correct installation.
 
-- Make sure you have installed [Visual C++ redistributable 2017][vcredist] or newer.
-- Create a new folder (for example `D:\FXServer`).
-- Download the latest `master` branch build for Windows from the [artifacts server][windows-artifacts].
-- Extract the build.
-  - Use any archiving tool (such as WinRAR or 7-Zip).
-- Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
-  - `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
-- Make a **server.cfg** in your `server-data` folder. You need to copy the example cfg below into the file.
-- Generate a license code on <https://keymaster.fivem.net> using your forum account.
-- Use the license code in your `server.cfg`.
-- Run the server from the `server-data` folder. (`cd /d D:\FXServer\server-data`)
-  - `D:\FXServer\run.cmd +exec server.cfg` (from a new cmd window)
+#### Installation
+1. Create a new folder (for example `D:\FXServer`).
+2. Download the latest `master` branch build for Windows from the [artifacts server][windows-artifacts].
+3. Extract the build.
+  <br>3b. Use any archiving tool (such as WinRAR or 7-Zip).
+4. Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
+  <br>4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
+5. Make a **server.cfg** in your `server-data` folder. You need to copy the example cfg below into the file.
+6. Generate a license code on <https://keymaster.fivem.net> using your forum account.
+7. Use the license code in your `server.cfg`.
+8. Run the server from the `server-data` folder. (`cd /d D:\FXServer\server-data`)
+  <br>8b. `D:\FXServer\run.cmd +exec server.cfg` (from a new cmd window)
 
 Linux
 -----
