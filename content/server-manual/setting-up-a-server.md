@@ -32,16 +32,16 @@ Windows
 
 Linux
 -----
-- Create a new folder (for example `mkdir /home/username/server`).
-- Download the latest `master` branch build for Linux from the [artifacts server][linux-artifacts](copy the URL for the latest server version and use `wget <url>` to download it).
-- Extract the build using `cd path/to/server/folder && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).
-- Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
-  - For example `git clone https://github.com/citizenfx/cfx-server-data.git /home/username/server-data`
-- Make a **server.cfg** file in your `server-data` folder (copy the example server.cfg file below into that file).
-- Generate a license code on <https://keymaster.fivem.net> using your forum account.
-- Use the license code in your `server.cfg`.
-- Run the server from the `server-data` folder.
-  - `bash /home/username/server/run.sh +exec server.cfg`
+1. Create a new folder (for example `mkdir /home/username/server`).
+2. Download the latest `master` branch build for Linux from the [artifacts server][linux-artifacts](copy the URL for the latest server version and use `wget <url>` to download it).
+3. Extract the build using `cd path/to/server/folder && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).
+4. Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
+  <br>4b. For example `git clone https://github.com/citizenfx/cfx-server-data.git /home/username/server-data`
+5. Make a **server.cfg** file in your `server-data` folder (copy the example server.cfg file below into that file).
+6. Generate a license code on <https://keymaster.fivem.net> using your forum account.
+7. Use the license code in your `server.cfg`.
+8. Run the server from the `server-data` folder.
+  <br>8b. `bash /home/username/server/run.sh +exec server.cfg`
 
 Common issues
 ---------------
