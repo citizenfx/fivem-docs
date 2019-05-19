@@ -6,10 +6,9 @@ weight: 310
 Running FXServer
 ================
 
-FXServer is the name of the current CitizenFX server version. This page shows
-you how to run it.
+FXServer is the name of the current CitizenFX server version. This page shows you how to run it.
 
-Having trouble running your server? See [server issues][server-issues] for help.
+Having trouble running your server? See [server issues][server-issues] for help, use the Discord [#fxserver-support][fxserver-support] channel or create a topic in the [Server Discussion][fxserver-support-category] sub-category on the forum.
 
 Windows
 -------
@@ -143,3 +142,6 @@ What's next?
 [server-issues]: /support/server-issues
 [server-commands]: /server-manual/server-commands
 [scripting-introduction]: /scripting-manual/introduction
+
+[fxserver-support]: https://discord.gg/UwvVgsJ
+[fxserver-support-category]: https://forum.fivem.net/c/server-development/server-discussion
