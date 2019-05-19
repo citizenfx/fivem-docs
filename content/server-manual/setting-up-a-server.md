@@ -27,7 +27,7 @@ Windows
 5. Make a **server.cfg** in your `server-data` folder. You need to copy the example cfg below into the file.
 6. Generate a license key at <https://keymaster.fivem.net>.
 7. Set the license key in your server config using `sv_licenseKey "licenseKeyGoesHere"`.
-8. Run the server from the `server-data` folder. (`cd /d D:\FXServer\server-data`) Note: The `/d` flag is only needed when switching drives.
+8. Run the server from the `server-data` folder. (`cd /d D:\FXServer\server-data`) Note: The `/d` flag is only needed when changing directory to somewhere on a different drive.
   <br>8b. `D:\FXServer\run.cmd +exec server.cfg` (from a new cmd window)
 
 ---
