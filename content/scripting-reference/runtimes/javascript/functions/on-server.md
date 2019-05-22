@@ -3,7 +3,7 @@ title: On - server
 ---
 
 Use `on` function when you want to listen from server only.\
-This declare an event which get triggered with [emit](/scripting-reference/runtimes/javascript/functions/emit-server) from the server.
+This declares an event which gets triggered with [emit](/scripting-reference/runtimes/javascript/functions/emit-server) from the server.
 
 ## Signature
 

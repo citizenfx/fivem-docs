@@ -3,7 +3,7 @@ title: On - client
 ---
 
 Use `on` function when you want to listen from client only.\
-This declare an event which get triggered with [emit](/scripting-reference/runtimes/javascript/functions/emit-client) from the client.
+This declares an event which gets triggered with [emit](/scripting-reference/runtimes/javascript/functions/emit-client) from the client.
 
 ## Signature
 

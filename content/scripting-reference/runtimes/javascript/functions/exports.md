@@ -3,7 +3,7 @@ title: Exports
 ---
 
 Use this to export functions so they can be called from other resources.\
-Read more on [exports](http://localhost:1313/scripting-reference/resource-manifest/resource-manifest/#export)
+Read more on [exports](https://docs.fivem.net/scripting-manual/runtimes/javascript/#using-exports)
 
 ## Signature
 
