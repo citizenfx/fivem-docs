@@ -6,39 +6,44 @@ weight: 310
 Running FXServer
 ================
 
-FXServer is the name of the current CitizenFX server version. This page shows
-you how to run it.
+FXServer is the name of the current CitizenFX server version. This page shows you how to run it.
 
-Having trouble running your server? See [server issues][server-issues] for help.
+Having trouble running your server? Visit [server issues][server-issues], use the Discord [#fxserver-support][fxserver-support] channel or create a topic in the [Server Discussion][fxserver-support-category] sub-category on the forum.
 
 Windows
 -------
 
-- Make sure you have installed [Visual C++ redistributable 2017][vcredist] or newer.
-- Create a new folder (for example `D:\FXServer`).
-- Download the latest `master` branch build for Windows from the [artifacts server][windows-artifacts].
-- Extract the build.
-  - Use any archiving tool (such as WinRAR or 7-Zip).
-- Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
-  - `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
-- Make a **server.cfg** in your `server-data` folder. You need to copy the example cfg below into the file.
-- Generate a license code on <https://keymaster.fivem.net> using your forum account.
-- Use the license code in your `server.cfg`.
-- Run the server from the `server-data` folder. (`cd /d D:\FXServer\server-data`)
-  - `D:\FXServer\run.cmd +exec server.cfg` (from a new cmd window)
+#### Prerequisites
+1. [Visual C++ Redistributable 2017][vcredist] or newer.
+2. [Git][git-scm] to assure a correct installation.
+
+#### Installation
+1. Create a new folder (for example `D:\FXServer`).
+2. Download the latest `master` branch build for Windows from the [artifacts server][windows-artifacts].
+3. Extract the build.
+  <br>3b. Use any archiving tool (such as WinRAR or 7-Zip).
+4. Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
+  <br>4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
+5. Make a **server.cfg** in your `server-data` folder. You need to copy the example cfg below into the file.
+6. Generate a license key at <https://keymaster.fivem.net>.
+7. Set the license key in your server.cfg using `sv_licenseKey "licenseKeyGoesHere"`.
+8. Run the server from the `server-data` folder. (`cd /d D:\FXServer\server-data`) Note: The `/d` flag is only needed when changing directory to somewhere on a different drive.
+  <br>8b. `D:\FXServer\run.cmd +exec server.cfg` (from a new cmd window)
+
+---
 
 Linux
 -----
-- Create a new folder (for example `mkdir /home/username/server`).
-- Download the latest `master` branch build for Linux from the [artifacts server][linux-artifacts](copy the URL for the latest server version and use `wget <url>` to download it).
-- Extract the build using `cd path/to/server/folder && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).
-- Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
-  - For example `git clone https://github.com/citizenfx/cfx-server-data.git /home/username/server-data`
-- Make a **server.cfg** file in your `server-data` folder (copy the example server.cfg file below into that file).
-- Generate a license code on <https://keymaster.fivem.net> using your forum account.
-- Use the license code in your `server.cfg`.
-- Run the server from the `server-data` folder.
-  - `bash /home/username/server/run.sh +exec server.cfg`
+1. Create a new folder (for example `mkdir /home/username/server`).
+2. Download the latest `master` branch build for Linux from the [artifacts server][linux-artifacts](copy the URL for the latest server version and use `wget <url>` to download it).
+3. Extract the build using `cd path/to/server/folder && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).
+4. Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
+  <br>4b. For example `git clone https://github.com/citizenfx/cfx-server-data.git /home/username/server-data`
+5. Make a **server.cfg** file in your `server-data` folder (copy the example server.cfg file below into that file).
+6. Generate a license key at <https://keymaster.fivem.net>.
+7. Set the license key in your `server.cfg` using `sv_licenseKey "licenseKeyGoesHere"`.
+8. Run the server from the `server-data` folder.
+  <br>8b. `bash /home/username/server/run.sh +exec server.cfg`
 
 Common issues
 ---------------
@@ -139,7 +144,11 @@ What's next?
 [vcredist]: https://go.microsoft.com/fwlink/?LinkId=746572
 [winrar]: https://www.rarlab.com/download.htm
 [7zip]: https://www.7-zip.org/download.html
+[git-scm]: https://git-scm.com/download/win
 
 [server-issues]: /support/server-issues
 [server-commands]: /server-manual/server-commands
 [scripting-introduction]: /scripting-manual/introduction
+
+[fxserver-support]: https://discord.gg/UwvVgsJ
+[fxserver-support-category]: https://forum.fivem.net/c/server-development/server-discussion
