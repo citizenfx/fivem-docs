@@ -66,6 +66,18 @@ A boolean variable that, if true, hides player IP addresses from public reports 
 
 A string variable that contains the server host name.
 
+### `sv_authMaxVariance [newValue]`
+
+**Variance** is how likely the user's id will change for a given provider (i.e. 'steam', 'ip', or 'ros').
+
+A console variable as an integer from 1-5 (default 1); from least to most likely to change.
+
+### `sv_authMinTrust [newValue]`
+
+**Trust** is how _unlikely_ it is for the user's identity to be spoofed by a malicious client.
+
+A console variable as an integer from 1-5 (default 5); from least to most trustworthy (5 being a method such as external three-way authentication).
+
 ### `clientkick <id> <reason>`
 
 Kicks the client with the specified server ID (as seen in [status](#status "wikilink")) from the server, for the stated reason.
