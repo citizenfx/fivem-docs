@@ -27,6 +27,14 @@ Example:
 
     stop mymode
 
+### `ensure <resourceName>`
+
+Restarts the resource specified in the argument, if it was started. If it wasn't, starts the resource specified in the argument.
+
+Example:
+
+    ensure my-testing-resource
+
 ### `restart <resourceName>`
 
 Restarts the resource specified in the argument, if it was started.
@@ -56,7 +64,7 @@ Example:
 
 ### `sv_maxClients [newValue]`
 
-A console variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 32.
+A console variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 64.
 
 ### `sv_endpointPrivacy [newValue]`
 
@@ -80,6 +88,8 @@ A console variable as an integer from 1-5 (default 5); from least to most trustw
 
 ### `clientkick <id> <reason>`
 
+{{% alert theme="info" %}}This is provided by the **rconlog** resource. {{% /alert %}}
+
 Kicks the client with the specified server ID (as seen in [status](#status "wikilink")) from the server, for the stated reason.
 
 Example:
@@ -87,6 +97,8 @@ Example:
     clientkick 43 You're a superstitious idiot!
 
 ### `say <message>`
+
+{{% alert theme="info" %}}This is provided by the **chat** resource. {{% /alert %}}
 
 Sends a message in the chat as *console*.
 
