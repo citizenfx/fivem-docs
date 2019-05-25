@@ -14,7 +14,7 @@ Windows
 -------
 
 #### Prerequisites
-1. [Visual C++ Redistributable 2017][vcredist] or newer.
+1. [Visual C++ Redistributable 2019][vcredist] or newer.
 2. [Git][git-scm] to assure a correct installation.
 
 #### Installation
@@ -22,13 +22,18 @@ Windows
 2. Download the latest `master` branch build for Windows from the [artifacts server][windows-artifacts].
 3. Extract the build.
   <br>3b. Use any archiving tool (such as WinRAR or 7-Zip).
-4. Clone [cfx-server-data][server-data] in a new folder (other than your FXServer folder).
+4. Clone [cfx-server-data][server-data] in a new folder (outside of your FXServer folder).
   <br>4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
 5. Make a **server.cfg** in your `server-data` folder. You need to copy the example cfg below into the file.
 6. Generate a license key at <https://keymaster.fivem.net>.
 7. Set the license key in your server.cfg using `sv_licenseKey "licenseKeyGoesHere"`.
-8. Run the server from the `server-data` folder. (`cd /d D:\FXServer\server-data`) Note: The `/d` flag is only needed when changing directory to somewhere on a different drive.
-  <br>8b. `D:\FXServer\run.cmd +exec server.cfg` (from a new cmd window)
+8. Run the server from the `server-data` folder. For example, in a plain Windows command prompt (cmd.exe) window: 
+    ```dos
+    cd /d D:\FXServer\server-data
+    D:\FXServer\server\run.cmd +exec server.cfg
+    ```
+
+    (the `/d` flag is only needed when changing directory to somewhere on a different drive)
 
 ---
 
@@ -52,8 +57,7 @@ Common issues
 - If you get a lot of errors about citizen:/scripting/, you didn't use run.cmd.
 - If nothing happens at all except 'sending heartbeat', you didn't use run.cmd **and** failed to cd to the folder.
 - If no resources get started, and you can't connect, you didn't add +exec.
-- Mono errors _on startup_ (SIGSEGV, exception stack trace) are perfectly fine, and don't signify any error condition.
-- If you get 'Couldn't load resource sessionmanager', then type `restart sessionmanager` into the console input. This is a temporary workaround, and only happens after the cache was initially generated.
+- If you get 'no license key was specified', one of the above things applies.
 
 server.cfg
 ----------
@@ -61,28 +65,26 @@ server.cfg
 An example server.cfg follows.
 
 ```sh
-# You probably don't want to change these!
-# Only change them if you're using a server with multiple network interfaces.
+# Only change the IP if you're using a server with multiple network interfaces, otherwise change the port only.
 endpoint_add_tcp "0.0.0.0:30120"
 endpoint_add_udp "0.0.0.0:30120"
 
 # These resources will start by default.
-start mapmanager
-start chat
-start spawnmanager
-start sessionmanager
-start fivem
-start hardcap
-start rconlog
-start scoreboard
-start playernames
+ensure mapmanager
+ensure chat
+ensure spawnmanager
+ensure sessionmanager
+ensure fivem
+ensure hardcap
+ensure rconlog
+ensure scoreboard
 
-# This allows players to use scripthook based plugins such as lambda menu.
-# Set this to 0 to disallow scripthook.
-sv_scriptHookAllowed 1
+# This allows players to use scripthook-based plugins such as the legacy Lambda Menu.
+# Set this to 1 to allow scripthook. Do note that this does _not_ guarantee players won't be able to use external plugins.
+sv_scriptHookAllowed 0
 
-# Uncomment this to enable RCON. Make sure to change the password.
-#rcon_password changeme
+# Uncomment this and set a password to enable RCON. Make sure to change the password - it should look like rcon_password "YOURPASSWORD"
+#rcon_password ""
 
 # A comma-separated list of tags for your server.
 # For example:
@@ -93,11 +95,11 @@ sets tags "default"
 
 # Set an optional server info and connecting banner image url.
 # Size doesn't matter, any banner sized image will be fine.
-#sets banner_detail "http://url.to/image.png"
-#sets banner_connecting "http://url.to/image.png"
+#sets banner_detail "https://url.to/image.png"
+#sets banner_connecting "https://url.to/image.png"
 
 # Set your server's hostname
-sv_hostname "My new FXServer!"
+sv_hostname "FXServer, but unconfigured"
 
 # Nested configs!
 #exec server_internal.cfg
@@ -109,22 +111,18 @@ sv_hostname "My new FXServer!"
 set temp_convar "hey world!"
 
 # Uncomment this line if you do not want your server to be listed in the server browser.
+# Do not edit it if you *do* want your server listed.
 #sv_master1 ""
-
-# Want to only allow players authenticated with a third-party provider like Steam?
-# Don't forget Social Club is a third party provider too!
-#sv_authMaxVariance 1
-#sv_authMinTrust 5
 
 # Add system admins
 add_ace group.admin command allow # allow all commands
 add_ace group.admin command.quit deny # but don't allow quit
-add_principal identifier.steam:110000112345678 group.admin # add the admin to the group
+add_principal identifier.steam:110000100000000 group.admin # add the admin to the group
 
 # Hide player endpoints in external log output.
 sv_endpointprivacy true
 
-# Server player slot limit (must be between 1 and 32)
+# Server player slot limit (must be between 1 and 32, unless using OneSync)
 sv_maxclients 32
 
 # License key for your server (https://keymaster.fivem.net)
@@ -141,7 +139,7 @@ What's next?
 [linux-artifacts]: https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
 [server-data]: https://github.com/citizenfx/cfx-server-data
 
-[vcredist]: https://go.microsoft.com/fwlink/?LinkId=746572
+[vcredist]: https://aka.ms/vs/16/release/VC_redist.x64.exe
 [winrar]: https://www.rarlab.com/download.htm
 [7zip]: https://www.7-zip.org/download.html
 [git-scm]: https://git-scm.com/download/win
