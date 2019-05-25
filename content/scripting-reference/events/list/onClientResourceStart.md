@@ -42,3 +42,13 @@ private void OnClientResourceStart(string resourceName)
     Debug.WriteLine($"The resource {resourceName} has been started on the client.");
 }
 ```
+
+##### JS Example:
+```js
+on("onClientResourceStart", (resourceName) => {
+  if(GetCurrentResourceName() != resourceName) {
+    return;
+  }
+  console.log('The resource ' + resourceName + ' has been started on the client.')
+});
+```
