@@ -14,7 +14,7 @@ TriggerEvent("chatMessage", GetPlayerName(PlayerId()), {255, 255, 255}, "Hello, 
 ```
 
 ## `chat:addMessage` (The recommended method)
-This event has an object parameter which consists of 3 properties (`color`[array], `multiline`[boolean], `args`[array])
+This event has an object parameter which consists of 3 properties (`color`[array], `multiline`[boolean] and `args`[array])
 
 ### Example
 ```lua
