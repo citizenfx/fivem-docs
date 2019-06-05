@@ -18,3 +18,5 @@ weight: 400
 <!--    - [Creating new events](/scripting-manual/working-with-event/creating-new-events) -->
 <!--    - [Server-client communication](/scripting-manual/working-with-event/server-client-communication) -->
 - [Using Scaleform](/scripting-manual/using-scaleform)
+- [Migrating from deprecated methods](/scripting-manual/migrating-from-deprecated)
+  - [Chat Messages](/scripting-manual/migrating-from-deprecated/chat-messages)
