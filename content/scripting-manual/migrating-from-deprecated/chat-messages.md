@@ -24,3 +24,5 @@ TriggerEvent("chat:addMessage", {
     args = { GetPlayerName(PlayerId()), "Hello, this is the message that will show in chat" }
 })
 ```
+
+For further documentation of this event, see the [`chat:addMessage` section](../../../resources/chat/events/chat-addMessage).
