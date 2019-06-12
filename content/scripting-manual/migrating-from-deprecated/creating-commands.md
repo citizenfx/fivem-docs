@@ -3,7 +3,7 @@ title: Creating commands
 weight: 432
 ---
 
-## The `chatMessage` method
+## The `chatMessage` method (deprecated)
 In the past, people have used the `chatMessage` event to detect when a chat message is being sent. After that, they would use a string split method to see if the first argument in that table (of split strings) contained a command.
 
 ### Example
@@ -32,7 +32,7 @@ end
 ```
 
 ## The [`RegisterCommand()`](https://runtime.fivem.net/doc/natives/#_0x5FA79B0F) -- which you should always be using
-This is a somewhat recent addition to the CFX natives, it is recommended to use this as it allow for the use of the integrated ace permissions system. This native consists of 3 parameters (`commandName`[string], `handler`[func] and `restricted`[boolean]).
+This is a somewhat recent addition to the CFX natives, it is recommended to use this as it allows for the use of the integrated ACE permissions system. This native consists of 3 parameters (`commandName`[string], `handler`[func] and `restricted`[boolean]).
 
 ### Example
 ```lua
