@@ -8,6 +8,7 @@ Message object structure:
 
 ```lua
 message = {
+  template = template,
   color = color,
   multiline = true,
   args = {author, otherArgs...}
