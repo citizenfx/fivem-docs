@@ -15,7 +15,7 @@ recommend you to contact the server owners of the server where you're experienci
 I've been banned on a server
 ----------------------------
 FiveM is not responsible for what you do on servers, or what server admins do to you. If you believe you've been
-falsely banned from a server, contact the server owners. FiveM can and will not provide support for this matter.
+falsely banned from a server, contact the server owners. FiveM can not and will not provide support for this matter.
 
 I've been globally banned from FiveM
 ------------------------------------
