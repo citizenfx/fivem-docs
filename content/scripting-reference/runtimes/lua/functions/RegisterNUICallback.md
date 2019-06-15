@@ -8,7 +8,7 @@ Syntax
 ------
 
 ```lua
-RegisterNUICallback(string callbackName, function callback[, any data, string cb])
+RegisterNUICallback(string callbackName, function callback[, any data, any cb])
 ```
 
 ### Required arguments
@@ -16,7 +16,7 @@ RegisterNUICallback(string callbackName, function callback[, any data, string cb
 
 ### Optional arguments
 - **data**: The data sent from the NUI.
-- **cb**: A string of data to send with the request.
+- **cb**: A string/table of data to send back to the NUI.
 
 Examples
 --------
