@@ -25,7 +25,7 @@ RegisterNUICallback('callbackName', function( data, cb )
   -- The data sent from the NUI is now accessible in the client file
   print( data )
   
-  -- This will send the data back to the NUI
+  -- This will send the string "sendThisBack" back to the NUI
   cb( 'sendThisBack' )  
 end)
 ```
