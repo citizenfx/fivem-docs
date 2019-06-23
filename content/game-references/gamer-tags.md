@@ -12,25 +12,38 @@ For each component you can: show/hide, change opacity, change colour.
 Components list
 ---------------
 
-| ID  | Name                    |
-|-----|-------------------------|
-| 0   | GAMER\_NAME             |
-| 1   | CREW\_TAG               |
-| 2   | healthArmour            |
-| 3   | BIG\_TEXT               |
-| 4   | AUDIO\_ICON             |
-| 5   | MP\_USING\_MENU         |
-| 6   | MP\_PASSIVE\_MODE       |
-| 7   | WANTED\_STARS           |
-| 8   | MP\_DRIVER              |
-| 9   | MP\_CO\_DRIVER          |
-| 10  | MP\_TAGGED              |
-| 11  | GAMER\_NAME\_NEARBY     |
-| 12  | ARROW                   |
-| 13  | MP\_PACKAGES            |
-| 14  | INV\_IF\_PED\_FOLLOWING |
-| 15  | RANK\_TEXT              |
-| 16  | MP\_TYPING              |
+| ID  | Name                      |
+|-----|---------------------------|
+| 0   | GAMER\_NAME               |
+| 1   | CREW\_TAG                 |
+| 2   | healthArmour              |
+| 3   | BIG\_TEXT                 |
+| 4   | AUDIO\_ICON               |
+| 5   | MP\_USING\_MENU           |
+| 6   | MP\_PASSIVE\_MODE         |
+| 7   | WANTED\_STARS             |
+| 8   | MP\_DRIVER                |
+| 9   | MP\_CO\_DRIVER            |
+| 10  | MP\_TAGGED                |
+| 11  | GAMER\_NAME\_NEARBY       |
+| 12  | ARROW                     |
+| 13  | MP\_PACKAGES              |
+| 14  | INV\_IF\_PED\_FOLLOWING   |
+| 15  | RANK\_TEXT                |
+| 16  | MP\_TYPING                |
+| 17  | MP\_BAG\_LARGE            |
+| 18  | MP\_TAG\_ARROW            |
+| 19  | MP\_GANG\_CEO             |
+| 20  | MP\_GANG\_BIKER           |
+| 21  | BIKER\_ARROW              |
+| 22  | MC\_ROLE\_PRESIDENT       |
+| 23  | MC\_ROLE\_VICE\_PRESIDENT |
+| 24  | MC\_ROLE\_ROAD\_CAPTAIN   |
+| 25  | MC\_ROLE\_SARGEANT        |
+| 26  | MC\_ROLE\_ENFORCER        |
+| 27  | MC\_ROLE\_PROSPECT        |
+| 28  | MP\_TRANSMITTER           |
+| 29  | MP\_BOMB                  |
 
 Simple usage
 ------------
