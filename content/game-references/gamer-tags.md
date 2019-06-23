@@ -66,7 +66,7 @@ for i = 0, 255 do
       end
 
       mpGamerTags[i] = {
-        tag = CreateMpGamerTag(GetPlayerPed(i), nameTag, false, false, '', 0),
+        tag = CreateMpGamerTagForNetPlayer(i, nameTag, false, false, '', 0, 0, 0, 0),
         ped = ped
       }
     end
@@ -87,13 +87,16 @@ Example
 
 ``` lua
 -- Create gamer info
-local gamerTagId = CreateMpGamerTag(
+local gamerTagId = CreateMpGamerTagForNetPlayer(
   ped, -- Ped to which gamer info will be assigned
   "User name", -- String to display for flag ""
   false, -- pointedClanTag
   false, -- Is R* clan
   "", -- Clantag
-  0 -- Unknown
+  0, -- Clantag flags
+  0, -- red
+  0, -- green
+  0 -- blue
 )
 ```
 
@@ -102,13 +105,16 @@ local gamerTagId = CreateMpGamerTag(
 ``` csharp
 // Create gamer info
 // assuming using static CitizenFX.Core.API;
-int gamerTagId = CreateMpGamerTag(
+int gamerTagId = CreateMpGamerTagForNetPlayer(
   ped.Handle, // Ped to which gamer info will be assigned
   "User name", // String to display for flag ""
   false, // pointedClanTag
   false, // Is R* clan
   clanTag,
-  0 // Unknown
+  0, // Clantag flags
+  0, // red
+  0, // green
+  0  // blue
 );
 ```
 
