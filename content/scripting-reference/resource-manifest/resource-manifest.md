@@ -184,7 +184,7 @@ Requires the specified resource to load before the current resource.
 dependency 'myresource-base'
 ```
 
-### dependencies
+### dependencie
 
 Alias for [dependency](#dependency "wikilink"). This is not a typo, but rather an intentional alias specifically for pluralization.
 
