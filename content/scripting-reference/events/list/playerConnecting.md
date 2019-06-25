@@ -80,7 +80,7 @@ AddEventHandler("playerConnecting", OnPlayerConnecting)
 ##### JavaScript Example:
 ```js
 
-function OnPlayerConnecting(name, setKickReason, deferrals) {
+on('playerConnecting', (name, setKickReason, deferrals) => {
     deferrals.defer()
     deferrals.update(`Hello ${name}. Your steam id is being checked.`)
 
@@ -100,7 +100,4 @@ function OnPlayerConnecting(name, setKickReason, deferrals) {
         deferrals.done()
     }
 }
-
-on('playerConnecting', OnPlayerConnecting);
-
 ```
