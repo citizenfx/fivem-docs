@@ -49,6 +49,6 @@ on("onClientResourceStart", (resourceName) => {
   if(GetCurrentResourceName() != resourceName) {
     return;
   }
-  console.log('The resource ' + resourceName + ' has been started on the client.')
+  console.log(`The resource ${resourceName} has been started on the client.`)
 });
 ```

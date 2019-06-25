@@ -24,6 +24,6 @@ on("onResourceStart", (resourceName) => {
     return;
   }
 
-  console.log('The resource ' + resourceName + ' has been started.')
+  console.log(`The resource ${resourceName} has been started.`)
 });
 ```

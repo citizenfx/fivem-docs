@@ -24,6 +24,6 @@ on("onResourceStop", (resourceName) => {
     return;
   }
 
-  console.log('The resource ' + resourceName + ' has been stopped.')
+  console.log(`The resource ${resourceName} has been stopped.`)
 });
 ```
