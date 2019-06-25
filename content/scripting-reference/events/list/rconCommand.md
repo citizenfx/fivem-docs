@@ -19,4 +19,10 @@ string command, table/array arguments
 Examples
 --------
 
-TODO
+##### JavaScript Example:
+
+```js
+on('rconCommand', (command, args) => {
+    console.log(`${command} called over RCON with ${args}`)
+});
+```
