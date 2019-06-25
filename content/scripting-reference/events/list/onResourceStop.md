@@ -17,4 +17,13 @@ string resourceName
 Examples
 --------
 
-TODO
+##### JavaScript Example:
+```js
+on("onResourceStop", (resourceName) => {
+  if(GetCurrentResourceName() != resourceName) {
+    return;
+  }
+
+  console.log('The resource ' + resourceName + ' has been stopped.')
+});
+```
