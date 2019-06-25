@@ -77,7 +77,7 @@ end
 AddEventHandler("playerConnecting", OnPlayerConnecting)
 ```
 
-##### Javascript Example:
+##### JavaScript Example:
 ```js
 
 function OnPlayerConnecting(name, setKickReason, deferrals) {

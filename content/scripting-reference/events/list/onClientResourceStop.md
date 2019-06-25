@@ -36,3 +36,14 @@ private void OnClientResourceStop(string resourceName)
     Debug.WriteLine($"The resource {resourceName} has been stopped on the client.");
 }
 ```
+
+##### JavaScript Example:
+```js
+on("onClientResourceStop", (resourceName) => {
+  if(GetCurrentResourceName() != resourceName) {
+    return;
+  }
+
+  console.log('The resource ' + resourceName + ' has been stopped on the client.')
+});
+```
