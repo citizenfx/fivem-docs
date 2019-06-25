@@ -43,7 +43,7 @@ private void OnClientResourceStart(string resourceName)
 }
 ```
 
-##### JS Example:
+##### JavaScript Example:
 ```js
 on("onClientResourceStart", (resourceName) => {
   if(GetCurrentResourceName() != resourceName) {

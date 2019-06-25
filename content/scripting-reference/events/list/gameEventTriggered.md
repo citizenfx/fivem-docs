@@ -40,4 +40,11 @@ private void OnGameEventTriggered(string name, List<dynamic> args)
 }
 ``` 
 
+##### JavaScript Example:
+```js
+on("gameEventTriggered", (name, args) => {
+    console.log(`Game event ${name} ${args.join(', ')}`)
+});
+```
+
 [game-events]: /game-references/game-events
