@@ -44,7 +44,7 @@ namespace MyResourceNameClient
     {
         public Class1()
         {
-            EventHandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart));
+            EventHandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart);
         }
 
         private void OnClientResourceStart(string resourceName)
