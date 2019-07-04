@@ -49,7 +49,7 @@ for i = 0, 255 do
       local nameTag = ('%s [%d]'):format(GetPlayerName(i), GetPlayerServerId(i))
 
       if mpGamerTags[i] then
-        RemoveMpGamerTag(mpGamerTags[i])
+        RemoveMpGamerTag(mpGamerTags[i].tag)
       end
 
       mpGamerTags[i] = {
@@ -59,8 +59,8 @@ for i = 0, 255 do
     end
 
     SetMpGamerTagVisibility(mpGamerTags[i].tag, 4, NetworkIsPlayerTalking(i))
-  else
-    RemoveMpGamerTag(mpGamerTags[i])
+  elseif mpGamerTags[i] then
+    RemoveMpGamerTag(mpGamerTags[i].tag)
 
     mpGamerTags[i] = nil
   end
