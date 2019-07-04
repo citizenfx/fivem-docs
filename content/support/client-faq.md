@@ -8,6 +8,11 @@ Will FiveM run on Xbox or Playstation?
 
 No. FiveM is developed exclusively for the PC version of GTA V. There are no plans to support consoles.
 
+Will FiveM run on Linux?
+------------------------
+
+The FiveM client cannot run on Linux due to [no support](https://github.com/doitsujin/dxvk/issues/899) for shared resources in DXVK. You can run a FiveM server on Linux.
+
 Where is FiveM installed?
 -------------------------
 
