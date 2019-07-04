@@ -124,6 +124,10 @@ Functions in JavaScript
 - addRawEventListener (alias: addRawEventHandler)
 - removeEventListener
 - setTick
+- clearTick
 
+See [Scripting reference][scriptreflink] for example usage of these functions.
+
+[scriptreflink]: /scripting-reference/runtimes/javascript
 [deplink]: /scripting-reference/resource-manifest/resource-manifest#dependency
 [nodejs]: https://github.com/citizenfx/node
