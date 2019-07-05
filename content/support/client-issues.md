@@ -20,7 +20,7 @@ falsely banned from a server, contact the server owners. FiveM can not and will 
 I've been globally banned from FiveM
 ------------------------------------
 That's unfortunate, don't cheat.
-If you believe you've been falsely banned, please reach out to us on [pr@fivem.net][email] with potential reasons
+If you believe you've been falsely banned, please reach out to us on [support@fivem.net][email] with potential reasons
 that you might have been incorrectly banned. <br />
 **Please note that FiveM forum moderators or staff in the FiveM discord can _not_ assist you with this ban.**
 
@@ -57,7 +57,23 @@ Certain antivirus vendors are known to block FiveM for unknown reasons.
 Error loading component xyz.dll
 -------------------------------
 Delete caches.xml from your [FiveM application data][where-is-fivem-installed] folder.
-If there is no such file, delete the entire application data folder and run FiveM again.
+If there is no such file, delete the entire application data folder and run FiveM again. For `adhesive.dll` also see below.
+
+Error loading component adhesive.dll
+-------------------------------
+Your Windows 10 installation is outdated. Please update it to at least version 1703. To check your current version, open command prompt and type `winver`.
+
+Opening database (privcache:/) failed: IO error: could not lock file
+------------------------------
+Your privcache got corrupted. Please remove the "priv" folder from the cache folder located in your [FiveM application data][where-is-fivem-installed].
+
+Entry Point Not Found
+------------------------------
+Delete `v8.dll`, `v8_libbase.dll`, `v8_libplatform.dll` if available in your `C:\Windows\system32` directory. These are (leftover) files from other applications that incorrectly use `system32` to place these files. FiveM loads dll's from `system32` first, resulting in these incorrect dll's being loaded.
+
+Moving of xyz.exe failed (err = 32)
+------------------------------
+First check your taskmanager for existing fivem processes if you see them close them, if that doesn’t fix the issue try [disabling your antivirus][disabling-antivirus].
 
 Stuck on 'We're getting there and it will be worth the wait'
 ------------------------------------------------------------
@@ -75,7 +91,7 @@ happens to other games too.
 
 Stuck on a colored background but no menu
 ------------------------------
-This happens on specific older AMD laptop GPUs. Unfortunately, this is caused by CEF and not by FiveM. Once the issue has been fixed in CEF, FiveM will be updated too. A forum moderator has created a topic that could potentially rectify this issue. [Click here][discrete-gpu] for more info.  
+This happens on specific older AMD laptop GPUs. Unfortunately, this is caused by CEF and not by FiveM. Once the issue has been fixed in CEF, FiveM will be updated too. A forum moderator has created a topic that could potentially rectify this issue. [Click here][discrete-gpu] for more info.
 
 FiveM uninstalls itself after running it!
 -----------------------------------------
@@ -91,9 +107,9 @@ For all other issues, you are more than welcome to join our [Discord][discord] a
 
 [where-is-fivem-installed]: /support/client-faq#where-is-fivem-installed
 [disabling-antivirus]: /client-manual/disabling-antivirus
-[email]: mailto:pr@fivem.net
+[email]: mailto:support@fivem.net
 [forum]: https://forum.fivem.net/
 [discord]: https://discord.gg/GtvkUsc
-[vanilla-server]: https://servers.fivem.net/#/servers/detail/198.27.79.239:45454
+[vanilla-server]: https://servers.fivem.net/#/servers/detail/198.27.79.239:30120
 [uninstalling]: /client-manual/installing-fivem#uninstalling
 [discrete-gpu]: https://forum.fivem.net/t/solution-forcing-fivem-to-use-your-discrete-gpu-infinite-loading-fix/217731
