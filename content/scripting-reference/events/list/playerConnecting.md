@@ -76,3 +76,28 @@ end
 
 AddEventHandler("playerConnecting", OnPlayerConnecting)
 ```
+
+##### JavaScript Example:
+```js
+
+on('playerConnecting', (name, setKickReason, deferrals) => {
+    deferrals.defer()
+    deferrals.update(`Hello ${name}. Your steam id is being checked.`)
+
+    let player = global.source;
+    let steamIdentifier = null;
+
+    for (let i = 0; i < GetNumPlayerIdentifiers(player); i++) {
+        let identifier = GetPlayerIdentifier(player, i);
+        if(identifier.includes('steam:')) {
+            steamIdentifier = indentifier;
+        }
+    }
+
+    if(steamIdentifier === null) {
+        deferrals.done("You are not connected to steam.")
+    } else {
+        deferrals.done()
+    }
+}
+```

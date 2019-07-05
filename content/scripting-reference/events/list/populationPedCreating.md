@@ -27,6 +27,7 @@ Examples
 
 This example illustrates how you can intercept population:
 
+##### Lua Example:
 ```lua
 CreateThread(function()
     RequestModel('s_m_y_cop_01')
@@ -40,4 +41,18 @@ AddEventHandler('populationPedCreating', function(x, y, z, model, setters)
 
     -- you can also CancelEvent() to skip creating the ped
 end)
+```
+
+##### JavaScript Example:
+```js
+setImmediate(() => {
+  RequestModel('s_m_y_cop_01')
+})
+
+on('populationPedCreating', (x, y, z, model, setters) => {
+    console.log(`Making cop at ${x} ${y} ${z} plus a bit (${model})`);
+    setters.setModel('s_m_y_cop_01') // you can use a hash as well
+    setters.setPosition(x, y, z + 5.5)
+})
+
 ```
