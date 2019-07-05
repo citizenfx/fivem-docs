@@ -88,8 +88,8 @@ on('playerConnecting', (name, setKickReason, deferrals) => {
     let steamIdentifier = null;
 
     for (let i = 0; i < GetNumPlayerIdentifiers(player); i++) {
-        let indentifier = GetPlayerIdentifier(player, i);
-        if(indentifier.includes('steam:')) {
+        let identifier = GetPlayerIdentifier(player, i);
+        if(identifier.includes('steam:')) {
             steamIdentifier = indentifier;
         }
     }

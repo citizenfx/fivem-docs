@@ -45,11 +45,14 @@ end)
 
 ##### JavaScript Example:
 ```js
+setImmediate(() => {
+  RequestModel('s_m_y_cop_01')
+})
+
 on('populationPedCreating', (x, y, z, model, setters) => {
     console.log(`Making cop at ${x} ${y} ${z} plus a bit (${model})`);
     setters.setModel('s_m_y_cop_01') // you can use a hash as well
     setters.setPosition(x, y, z + 5.5)
 })
 
-RequestModel('s_m_y_cop_01')
 ```

@@ -42,6 +42,6 @@ private void OnPlayerDropped([FromSource]Player player, string reason)
 ##### JavaScript Example:
 ```js
 on("playerDropped", (reason) => {
-    console.log(` Player ${GetPlayerName(global.source)} dropped (Reason: ${reason}).`)
+    console.log(`Player ${GetPlayerName(global.source)} dropped (Reason: ${reason}).`)
 });
 ```
