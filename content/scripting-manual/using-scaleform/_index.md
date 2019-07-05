@@ -25,7 +25,7 @@ Scaleform doesn't implement some features from Flash:
 Interfacing
 -----------
 
-You can interface with scaleforms by performing native calls from the [GRAPHICS namespace](https://runtime.fivem.net/doc/reference.html#_n_GRAPHICS) with `scaleform` in their name.
+You can interface with scaleforms by performing native calls from the [GRAPHICS namespace](https://runtime.fivem.net/doc/natives/#n_GRAPHICS) with `scaleform` in their name.
 
 {{% alert theme="warning" %}}The game expects a .gfx to have a `TIMELINE` variable in the global scope. {{% /alert %}}
 
@@ -39,24 +39,24 @@ It'd be pretty time consuming to explain in details how to bootstrap your first 
 
 ### Loading
 
-1. Use {{<native_link "REQUEST_SCALEFORM_MOVIE">}}) with the name of the desired gfx (without file extension), for example `mp_car_stats`.
-2. Use {{<native_link "HAS_SCALEFORM_MOVIE_LOADED">}}) in a loop, to prevent using a non-loaded Scaleform asset.
+1. Use {{<native_link "REQUEST_SCALEFORM_MOVIE">}} with the name of the desired gfx (without file extension), for example `mp_car_stats`.
+2. Use {{<native_link "HAS_SCALEFORM_MOVIE_LOADED">}} in a loop, to prevent using a non-loaded Scaleform asset.
 
 ### Invoking functions in GFx
 
 Please note that this is a low-level api, the C\# runtime has an [easy-to-use high-level abstraction](https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/Scaleform.cs); and even if you don't know C\# you can use it as a reference usage of function calling natives.
 
-**&gt;** Call {{<native_link "_PUSH_SCALEFORM_MOVIE_FUNCTION">}} to initialize the function call, pass it the `handle` of the GFx, and a function name string, which **should be a member of the global TIMELINE variable** in ActionScript.
+**&gt;** Call {{<native_link "BEGIN_SCALEFORM_MOVIE_METHOD">}} to initialize the function call, pass it the `handle` of the GFx, and a function name string, which **should be a member of the global TIMELINE variable** in ActionScript.
 
 **&gt;** Define arguments, using one of the following functions depending on what type of argument you want to pass:
 
--   {{<native_link "_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_INT">}}
--   {{<native_link "_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_FLOAT">}}
--   {{<native_link "_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_BOOL">}}
--   {{<native_link "_PUSH_SCALEFORM_MOVIE_FUNCTION_PARAMETER_STRING">}} **(only use for short strings like texture names)**
+-   {{<native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT">}}
+-   {{<native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT">}}
+-   {{<native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL">}}
+-   {{<native_link "_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_STRING">}} **(only use for short strings like texture names)**
 -   A pair of {{<native_link "BEGIN_TEXT_COMMAND_SCALEFORM_STRING">}}, {{<native_link "ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME">}}, and {{<native_link "END_TEXT_COMMAND_SCALEFORM_STRING">}} for normal strings
 
-**&gt;** Call {{<native_link "_POP_SCALEFORM_MOVIE_FUNCTION_VOID">}} to finish function call.
+**&gt;** Call {{<native_link "END_SCALEFORM_MOVIE_METHOD">}} to finish function call.
 
 ### Drawing
 
@@ -78,9 +78,59 @@ Using textures
 
 In normal Flash you can simply load an image into MovieClip (see MovieClipLoader class in AS2 docs) using its (http\[s\]) url, however in-game you need the `img` protocol.
 
-Example of correct image url: `img://mpcarhud/albany`, where `mpcarhud` is the name of a [texture dictionary](Glossary#File_types "wikilink"), and `albany` is the texture name in said TXD.
+Example of correct image url: `img://mpcarhud/albany`, where `mpcarhud` is the name of a texture dictionary and `albany` is the texture name in said TXD.
 
 Useful links
 ------------
 
 -   [Official AS2 reference](http://help.adobe.com/en_US/AS2LCR/Flash_10.0/help.html?content=Part2_AS2_LangRef_1.html)
+-   [Extra Scaleform documentation](https://forum.fivem.net/t/scaleforms/99874)
+
+Extra Information
+------------
+
+Some scaleforms also allow the use of certain html elements, such as `<b>` and `<br>`. You can also set certain fonts for some using `<FONT FACE='$[fontName]'>` for example, `<FONT FACE='$Font2'>`. Here's a list of usable fonts (Not all work for every scaleform):
+```
+$Font2
+$Font2_cond
+$Font2_cond_NOT_GAMERNAME
+$Font5
+$Machine
+$Stencil
+$Lubalin
+$Bookman
+$Stenberg
+$Mistral
+$HelveticaBLK
+$HelveticaBLKI
+$Times
+$TradeGothic
+$AnnaSC
+$EngraversOldEnglish
+$Bauhaus
+$Redemption
+```
+Image and size can also be set, with size being `<FONT SIZE='[fontSize]'>` and image being `<img src='img://txd/tn'>`
+
+Example
+------------
+
+```lua
+Citizen.CreateThread(function()
+  local ScaleformHandle = RequestScaleformMovie("mp_big_message_freemode") -- The scaleform you want to use
+  while not HasScaleformMovieLoaded(scaleform) do -- Ensure the scaleform is actually loaded before using
+    Citizen.Wait(0)
+  end
+
+  BeginScaleformMovieMethod(scaleform, "SHOW_SHARD_WASTED_MP_MESSAGE") -- The function you want to call from the AS file
+  PushScaleformMovieMethodParameterString("Big Text") -- bigTxt
+  PushScaleformMovieMethodParameterString("Smaller Text") -- msgText
+  PushScaleformMovieMethodParameterInt(5) -- colId
+  EndScaleformMovieMethod() -- Finish off the scaleform, it returns no data, so doesnt need "EndScaleformMovieMethodReturn"
+  
+  while true do -- Draw the scaleform every frame
+    Citizen.Wait(0)
+    DrawScaleformMovieFullscreen(ScaleformHandle, 255, 255, 255, 255) -- Draw the scaleform fullscreen
+  end
+end)
+```
