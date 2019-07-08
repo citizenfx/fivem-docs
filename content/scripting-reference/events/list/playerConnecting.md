@@ -90,7 +90,7 @@ on('playerConnecting', (name, setKickReason, deferrals) => {
     for (let i = 0; i < GetNumPlayerIdentifiers(player); i++) {
         let identifier = GetPlayerIdentifier(player, i);
         if(identifier.includes('steam:')) {
-            steamIdentifier = indentifier;
+            steamIdentifier = identifier;
         }
     }
 
@@ -99,5 +99,5 @@ on('playerConnecting', (name, setKickReason, deferrals) => {
     } else {
         deferrals.done()
     }
-}
+})
 ```
