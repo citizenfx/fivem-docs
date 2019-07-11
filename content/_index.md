@@ -53,6 +53,7 @@ get in touch with us on our [forums][forum] or on [Discord][discord].
         <li><a href="/game-references/data-files">Data files</a></li>
         <li><a href="/game-references/gamer-tags">Gamer tags</a></li>
         <li><a href="/game-references/markers">Markers</a></li>
+        <li><a href="/game-references/ped-models">Ped models</a></li>
         <li><a href="/game-references">Browse all</a></li>
       </ul>
     </div>
