@@ -25,7 +25,7 @@ If you encounter a crash, set up your environment to capture the next time it ha
 
 6) Go back to your command prompt and type in: `procdump64.exe -accepteula -e 1 -h -ma pidhere`
 
-where `pidhere` is the number you found from step 4. If you get an error, reopen command prompt as administrator and try again.
+where `pidhere` is the number you found from step 5. If you get an error, reopen command prompt as administrator and try again.
 
 7) Wait for server to crash. When it does, it will write a large .dmp file to the procdump folder. Zip up this file and upload to google drive/dropbox and supply to the #server-bugs channel on [Discord](https://discord.gg/GtvkUsc) or where it was requested. You can also submit a bug report on our [Forums](https://forum.fivem.net/c/general-discussion/bug-reports) with as much detail as possible.
 
