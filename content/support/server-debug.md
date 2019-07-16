@@ -27,6 +27,8 @@ If you encounter a crash, set up your environment to capture the next time it ha
 
 where `pidhere` is the number you found from step 4. If you get an error, reopen command prompt as administrator and try again.
 
-7) Wait for server to crash. When it does, it will write a large .dmp file to the procdump folder. Zip up this file and upload to google drive/dropbox and supply to #server-bugs or where it was requested.
+7) Wait for server to crash. When it does, it will write a large .dmp file to the procdump folder. Zip up this file and upload to google drive/dropbox and supply to the #server-bugs channel on [Discord](https://discord.gg/GtvkUsc) or where it was requested. You can also submit a bug report on our [Forums](https://forum.fivem.net/c/general-discussion/bug-reports) with as much detail as possible.
+
+   **Note:** Using OneSync? There's a [place for those reports](https://forum.fivem.net/c/general-discussion/1s-reports) too!
 
 8) Run the following in your command prompt to unregister the debugger when you are done: `procdump64.exe -accepteula -u`
