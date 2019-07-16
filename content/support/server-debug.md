@@ -1,5 +1,5 @@
 ---
-title: Server Debugging
+title: server debugging
 weight: 840
 ---
 
