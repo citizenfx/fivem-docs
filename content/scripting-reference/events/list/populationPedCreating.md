@@ -13,7 +13,7 @@ Parameters
 ----------
 
 ```
-int posX, int posY, int posZ, string model, object setters
+float posX, float posY, float posZ, uint model, object setters
 ```
 
 - **posX**: The X position the ped is going to spawn at.
@@ -21,6 +21,8 @@ int posX, int posY, int posZ, string model, object setters
 - **posZ**: The Z position the ped is going to spawn at.
 - **model**: The model the ped is going to spawn as.
 - **setters**: Object to override what the ped spawns as.
+  - **setModel(string model)** - Sets the model of the ped created.
+  - **setPosition(float x, float y, float z)** - Adjusts the position of the ped.
 
 Examples
 --------
@@ -54,5 +56,19 @@ on('populationPedCreating', (x, y, z, model, setters) => {
     setters.setModel('s_m_y_cop_01') // you can use a hash as well
     setters.setPosition(x, y, z + 5.5)
 })
+
+```
+
+##### C# Example:
+```cs
+const string replacement = "s_m_y_cop_01";
+new Model(replacement).Request();
+
+EventHandlers["populationPedCreating"] += new Action<float, float, float, uint, dynamic>(
+        ( x, y, z, model, setters ) => {
+            Debug.WriteLine( $"Making cop at {x}, {y}, {z} plus a bit ({(PedHash)model})" );
+            setters.setModel( replacement );
+            setters.setPosition( x, y, z + 5.5f );
+        });
 
 ```
