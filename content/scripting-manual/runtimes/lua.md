@@ -18,28 +18,24 @@ Using Lua
 ---------
 To use Lua in your scripts, simply use the `.lua` file extension. No additional configuration is required.
 
-Relative path literals
+Compile-time hashes
 ----------------------
-As is the case in Grit, CfxLua provides support for relative path literals using backticks. This allows you to express a
-relative file path in your code, which can sometimes be more convenient than absolute file paths. Relative path literals
-will be resolved from their current file and cannot descend below the root of your resource.
+Because you might often have to deal with 'Jenkins one-at-a-time' hashes in GTA/RAGE, the Lua runtime has been extended
+to have support for compile-time generation of hash keys, similar to {{<native_link "GET_HASH_KEY">}}, however with zero
+runtime overhead.
 
+For example:
 ```lua
-print(`foo`)
-print(`/dir/foo`)
-print(`../foo`)
-print(`.`)
-```
+-- getting
+RequestModel(`adder`)
 
-Strings within backticks are assumed to be a path. If the path starts with a `/`, it will behave as an absolute path,
-not any different from a normal string. Any other path is assumed to be relative, and will be resolved using the
-directory of the currently executing Lua file. Descending below the root of your resource will raise an error.
+-- comparing
+if GetEntityModel(vehicle) == `buzzard` then
+  print("Indeed, it's a Buzzard.")
+end
 
-```lua
-assert(`foo/../bar` == `bar`)
-assert(`foo/../bar/.` == `bar`)
-assert(`./foo/../bar` == `bar`)
-assert(`/.` == `/`)
+-- printing
+print(`a_m_y_skater_01`)
 ```
 
 Vectors & quaternions

@@ -1,0 +1,24 @@
+{{ $apiset := .Get 0 }}
+{{ $natives := getJSON "https://runtime.fivem.net/doc/natives.json" }}
+{{ range $key, $value := $natives }}
+{{ $list := "" }}
+{{ $named := slice }}
+{{ range $value }}
+{{ $name := .name }}
+{{ $sortName := .name }}
+{{ if not $name }}
+{{ $name = .hash }}
+{{ $sortName = print "zzzz" .hash }}
+{{ end }}
+{{ $named = $named | append (dict "native" . "name" $name "sortName" $sortName )}}
+{{ end }}
+{{ range sort ($named) "sortName" }}
+{{ if or (not $apiset) (or (eq .native.apiset "shared") (or (eq .native.apiset $apiset) (and (eq $apiset "client") (not .native.apiset)))) }}
+{{ $list = print $list "* [" .name "](https://runtime.fivem.net/doc/natives/#_" .native.hash ")\n" }}
+{{ end }}
+{{ end }}
+{{ if ne $list "" }}
+{{ print "#### " $key | markdownify }}
+{{ print $list | markdownify }}
+{{ end }}
+{{ end }}

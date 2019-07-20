@@ -1,2 +1,14 @@
 {{ $name := .Get 0 }}
-https://runtime.fivem.net/doc/reference.html#_{{ index $.Site.Data.natives $name }}
+{{ $natives := getJSON "https://runtime.fivem.net/doc/natives.json" }}
+{{ $native := 0 }}
+{{ range $natives }}
+{{ range . }}
+{{ if (eq .name $name) }}
+{{ $native = . }}
+{{ end }}
+{{ if (in .aliases $name) }}
+{{ $native = . }}
+{{ end }}
+{{ end }}
+{{ end }}
+https://runtime.fivem.net/doc/natives/#_{{ $native.hash }}

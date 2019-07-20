@@ -3,6 +3,7 @@ title: Creating commands
 weight: 432
 ---
 
+<!--
 ## The `chatMessage` method (deprecated)
 In the past, people have used the `chatMessage` event to detect when a chat message is being sent. After that, they would use a string split method to see if the first argument in that table (of split strings) contained a command.
 
@@ -30,19 +31,20 @@ function stringsplit(inputstr, sep)
     return t
 end
 ```
+-->
 
-## The [`RegisterCommand()`](https://runtime.fivem.net/doc/natives/#_0x5FA79B0F) -- which you should always be using
-This is a somewhat recent addition to the CFX natives, it is recommended to use this as it allows for the use of the integrated ACE permissions system. This native consists of 3 parameters (`commandName`[string], `handler`[func] and `restricted`[boolean]).
+## RegisterCommand
+It is recommended to **always** use this (and not `chatMessage`!) as it allows for the use of the integrated ACL system, and other core functionality (automatic completion, console usage, ...). This native consists of 3 parameters (`commandName`[string], `handler`[func] and `restricted`[boolean]).
 
 ### Example
 ```lua
-RegisterCommand("commandName", function(source --[[ this is the player ID: a number ]], args --[[ this is a table of the arguments provided ]], rawCommand --[[ this is what the user entered]])
+RegisterCommand("commandName", function(source --[[ this is the player ID (on the server): a number ]], args --[[ this is a table of the arguments provided ]], rawCommand --[[ this is what the user entered ]])
     if source > 0 then
         print("You are not console.")
     else
         print("This is console!")
     end
-end, true) -- this true bool means that the user cannot execute the command unless they have the 'command.commandName' ace allowed to one of their identifiers.
+end, true) -- this true bool means that the user cannot execute the command unless they have the 'command.commandName' ACL object allowed to one of their identifiers.
 ```
 
 Further examples can be found at the respective [Lua](../../introduction/creating-your-first-script) and [C#](../../introduction/creating-your-first-script-csharp) introductions.

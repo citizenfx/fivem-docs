@@ -1,3 +1,14 @@
 {{ $name := .Get 0 }}
-{{ $hash := (index $.Site.Data.natives $name) }}
-{{ (print "[" $name "](https://runtime.fivem.net/doc/reference.html#_" $hash ")") | markdownify }}
+{{ $natives := getJSON "https://runtime.fivem.net/doc/natives.json" }}
+{{ $native := 0 }}
+{{ range $natives }}
+{{ range . }}
+{{ if (eq .name $name) }}
+{{ $native = . }}
+{{ end }}
+{{ if (in .aliases $name) }}
+{{ $native = . }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ (print "[" $name "](https://runtime.fivem.net/doc/natives/#_" $native.hash ")") | markdownify }}
