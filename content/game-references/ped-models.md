@@ -5,18 +5,18 @@ weight: 760
 
 List of all working ped models in GTA V as of July 23, 2019.
 
-- [Ambient female](#Ambient-female)
-- [Ambient male](#Ambient-male)
-- [Animals](#Animals)
-- [Cutscene](#Cutscene)
-- [Gang female](#Gang-female)
-- [Gang male](#Gang-male)
-- [Multiplayer](#Multiplayer)
-- [Scenario female](#Scenario-female)
-- [Scenario male](#Scenario-male)
-- [Story](#Story)
-- [Story scenario female](#Story-scenario-female)
-- [Story scenario male](#Story-scenario-male)
+- [Ambient female](#ambient-female)
+- [Ambient male](#ambient-male)
+- [Animals](#animals)
+- [Cutscene](#cutscene)
+- [Gang female](#gang-female)
+- [Gang male](#gang-male)
+- [Multiplayer](#multiplayer)
+- [Scenario female](#scenario-female)
+- [Scenario male](#scenario-male)
+- [Story](#story)
+- [Story scenario female](#story-scenario-female)
+- [Story scenario male](#story-scenario-male)
 
 <style type="text/css">
 	.models {
