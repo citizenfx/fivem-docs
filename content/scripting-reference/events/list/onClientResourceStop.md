@@ -16,7 +16,7 @@ string resourceName
 
 Examples
 --------
-This example prints the name of a resource that was just stopped.
+This example prints the name of the resource that was just stopped.
 
 ##### Lua Example:
 ```lua
@@ -28,7 +28,7 @@ end)
 ##### C\# Example:
 ```csharp
 // In class constructor
-Eventhandlers["onClientResourceStop"] += new Action<string>(OnClientResourceStop);
+EventHandlers["onClientResourceStop"] += new Action<string>(OnClientResourceStop);
 
 // Delegate method
 private void OnClientResourceStop(string resourceName)
