@@ -29,7 +29,7 @@ This example checks a connecting player's license identifier against a ban list.
 ##### C\# Example:
 ```csharp
 // In class constructor
-Eventhandlers["playerConnecting"] += new Action<Player, string, dynamic, dynamic>(OnPlayerConnecting);
+EventHandlers["playerConnecting"] += new Action<Player, string, dynamic, dynamic>(OnPlayerConnecting);
 
 // Delegate method
 private void OnPlayerConnecting([FromSource]Player player, string playerName, dynamic setKickReason, dynamic deferrals)

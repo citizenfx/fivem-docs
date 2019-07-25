@@ -31,7 +31,7 @@ end)
 ##### C\# Example:
 ```csharp
 // In class constructor
-Eventhandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart);
+EventHandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart);
 
 // Delegate method
 // - assuming `using static CitizenFX.Core.Native.API`
