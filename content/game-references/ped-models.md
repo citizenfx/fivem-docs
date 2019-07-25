@@ -3,20 +3,20 @@ title: Ped models
 weight: 760
 ---
 
-List of all working ped models in GTA V as of July 11, 2019.
+List of all working ped models in GTA V as of July 23, 2019.
 
-- [Ambient female](#Ambient-female)
-- [Ambient male](#Ambient-male)
-- [Animals](#Animals)
-- [Cutscene](#Cutscene)
-- [Gang female](#Gang-female)
-- [Gang male](#Gang-male)
-- [Multiplayer](#Multiplayer)
-- [Scenario female](#Scenario-female)
-- [Scenario male](#Scenario-male)
-- [Story](#Story)
-- [Story scenario female](#Story-scenario-female)
-- [Story scenario male](#Story-scenario-male)
+- [Ambient female](#ambient-female)
+- [Ambient male](#ambient-male)
+- [Animals](#animals)
+- [Cutscene](#cutscene)
+- [Gang female](#gang-female)
+- [Gang male](#gang-male)
+- [Multiplayer](#multiplayer)
+- [Scenario female](#scenario-female)
+- [Scenario male](#scenario-male)
+- [Story](#story)
+- [Story scenario female](#story-scenario-female)
+- [Story scenario male](#story-scenario-male)
 
 <style type="text/css">
 	.models {
@@ -125,6 +125,8 @@ Ambient female
 	<div class="model"><span><img src="/peds/a_f_y_vinewood_03.png" alt="a_f_y_vinewood_03"><strong>a_f_y_vinewood_03</strong><br>2 props<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/a_f_y_vinewood_04.png" alt="a_f_y_vinewood_04"><strong>a_f_y_vinewood_04</strong><br>3 props<br>4 components</span></div>
 	<div class="model"><span><img src="/peds/a_f_y_yoga_01.png" alt="a_f_y_yoga_01"><strong>a_f_y_yoga_01</strong><br>1 prop<br>4 components</span></div>
+	<div class="model"><span><img src="/peds/a_f_y_gencaspat_01.png" alt="a_f_y_gencaspat_01"><strong>a_f_y_gencaspat_01</strong><br>2 props<br>5 components</span></div>
+	<div class="model"><span><img src="/peds/a_f_y_smartcaspat_01.png" alt="a_f_y_smartcaspat_01"><strong>a_f_y_smartcaspat_01</strong><br>3 props<br>5 components</span></div>
 </div>
 
 Ambient male
@@ -257,6 +259,9 @@ Ambient male
 	<div class="model"><span><img src="/peds/a_m_y_vinewood_03.png" alt="a_m_y_vinewood_03"><strong>a_m_y_vinewood_03</strong><br>2 props<br>4 components</span></div>
 	<div class="model"><span><img src="/peds/a_m_y_vinewood_04.png" alt="a_m_y_vinewood_04"><strong>a_m_y_vinewood_04</strong><br>2 props<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/a_m_y_yoga_01.png" alt="a_m_y_yoga_01"><strong>a_m_y_yoga_01</strong><br>2 props<br>3 components</span></div>
+	<div class="model"><span><img src="/peds/a_m_m_mlcrisis_01.png" alt="a_m_m_mlcrisis_01"><strong>a_m_m_mlcrisis_01</strong><br>2 props<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/a_m_y_gencaspat_01.png" alt="a_m_y_gencaspat_01"><strong>a_m_y_gencaspat_01</strong><br>3 props<br>4 components</span></div>
+	<div class="model"><span><img src="/peds/a_m_y_smartcaspat_01.png" alt="a_m_y_smartcaspat_01"><strong>a_m_y_smartcaspat_01</strong><br>2 props<br>5 components</span></div>
 </div>
 
 Animals
@@ -444,6 +449,12 @@ Cutscene
 	<div class="model"><span><img src="/peds/csb_trafficwarden.png" alt="csb_trafficwarden"><strong>csb_trafficwarden</strong><br>1 prop<br>4 components</span></div>
 	<div class="model"><span><img src="/peds/csb_undercover.png" alt="csb_undercover"><strong>csb_undercover</strong><br>1 prop<br>9 components</span></div>
 	<div class="model"><span><img src="/peds/csb_vagspeak.png" alt="csb_vagspeak"><strong>csb_vagspeak</strong><br>1 prop<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/csb_agatha.png" alt="csb_agatha"><strong>csb_agatha</strong><br>0 prop<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/csb_avery.png" alt="csb_avery"><strong>csb_avery</strong><br>1 prop<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/csb_brucie2.png" alt="csb_brucie2"><strong>csb_brucie2</strong><br>0 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/csb_thornton.png" alt="csb_thornton"><strong>csb_thornton</strong><br>1 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/csb_tomcasino.png" alt="csb_tomcasino"><strong>csb_tomcasino</strong><br>1 prop<br>9 components</span></div>
+	<div class="model"><span><img src="/peds/csb_vincent.png" alt="csb_vincent"><strong>csb_vincent</strong><br>0 prop<br>9 components</span></div>
 </div>
 
 Gang female
@@ -500,6 +511,7 @@ Gang male
 	<div class="model"><span><img src="/peds/g_m_y_salvagoon_03.png" alt="g_m_y_salvagoon_03"><strong>g_m_y_salvagoon_03</strong><br>1 prop<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/g_m_y_strpunk_01.png" alt="g_m_y_strpunk_01"><strong>g_m_y_strpunk_01</strong><br>2 props<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/g_m_y_strpunk_02.png" alt="g_m_y_strpunk_02"><strong>g_m_y_strpunk_02</strong><br>2 props<br>4 components</span></div>
+	<div class="model"><span><img src="/peds/g_m_m_casrn_01.png" alt="g_m_m_casrn_01"><strong>g_m_m_casrn_01</strong><br>2 props<br>8 components</span></div>
 </div>
 
 Multiplayer
@@ -576,6 +588,7 @@ Scenario female
 	<div class="model"><span><img src="/peds/s_f_y_stripper_02.png" alt="s_f_y_stripper_02"><strong>s_f_y_stripper_02</strong><br>0 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/s_f_y_stripperlite.png" alt="s_f_y_stripperlite"><strong>s_f_y_stripperlite</strong><br>0 prop<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/s_f_y_sweatshop_01.png" alt="s_f_y_sweatshop_01"><strong>s_f_y_sweatshop_01</strong><br>1 prop<br>4 components</span></div>
+	<div class="model"><span><img src="/peds/s_f_y_casino_01.png" alt="s_f_y_casino_01"><strong>s_f_y_casino_01</strong><br>1 prop<br>9 components</span></div>
 </div>
 
 Scenario male
@@ -679,6 +692,8 @@ Scenario male
 	<div class="model"><span><img src="/peds/s_m_y_winclean_01.png" alt="s_m_y_winclean_01"><strong>s_m_y_winclean_01</strong><br>2 props<br>4 components</span></div>
 	<div class="model"><span><img src="/peds/s_m_y_xmech_01.png" alt="s_m_y_xmech_01"><strong>s_m_y_xmech_01</strong><br>2 props<br>3 components</span></div>
 	<div class="model"><span><img src="/peds/s_m_y_xmech_02.png" alt="s_m_y_xmech_02"><strong>s_m_y_xmech_02</strong><br>0 prop<br>6 components</span></div>
+	<div class="model"><span><img src="/peds/s_m_y_casino_01.png" alt="s_m_y_casino_01"><strong>s_m_y_casino_01</strong><br>1 prop<br>10 components</span></div>
+	<div class="model"><span><img src="/peds/s_m_y_westsec_01.png" alt="s_m_y_westsec_01"><strong>s_m_y_westsec_01</strong><br>2 props<br>9 components</span></div>
 </div>
 
 Story
@@ -825,6 +840,12 @@ Story
 	<div class="model"><span><img src="/peds/player_one.png" alt="player_one"><strong>player_one</strong><br>3 props<br>12 components</span></div>
 	<div class="model"><span><img src="/peds/player_two.png" alt="player_two"><strong>player_two</strong><br>3 props<br>11 components</span></div>
 	<div class="model"><span><img src="/peds/player_zero.png" alt="player_zero"><strong>player_zero</strong><br>3 props<br>12 components</span></div>
+	<div class="model"><span><img src="/peds/ig_agatha.png" alt="ig_agatha"><strong>ig_agatha</strong><br>0 prop<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/ig_avery.png" alt="ig_avery"><strong>ig_avery</strong><br>1 prop<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/ig_brucie2.png" alt="ig_brucie2"><strong>ig_brucie2</strong><br>0 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/ig_thornton.png" alt="ig_thornton"><strong>ig_thornton</strong><br>1 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/ig_tomcasino.png" alt="ig_tomcasino"><strong>ig_tomcasino</strong><br>1 prop<br>9 components</span></div>
+	<div class="model"><span><img src="/peds/ig_vincent.png" alt="ig_vincent"><strong>ig_vincent</strong><br>0 prop<br>9 components</span></div>
 </div>
 
 Story scenario female
@@ -851,6 +872,14 @@ Story scenario female
 	<div class="model"><span><img src="/peds/u_f_y_poppymich_02.png" alt="u_f_y_poppymich_02"><strong>u_f_y_poppymich_02</strong><br>0 prop<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/u_f_y_princess.png" alt="u_f_y_princess"><strong>u_f_y_princess</strong><br>1 prop<br>4 components</span></div>
 	<div class="model"><span><img src="/peds/u_f_y_spyactress.png" alt="u_f_y_spyactress"><strong>u_f_y_spyactress</strong><br>0 prop<br>4 components</span></div>
+	<div class="model"><span><img src="/peds/u_f_m_casinocash_01.png" alt="u_f_m_casinocash_01"><strong>u_f_m_casinocash_01</strong><br>0 prop<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/u_f_m_casinoshop_01.png" alt="u_f_m_casinoshop_01"><strong>u_f_m_casinoshop_01</strong><br>2 props<br>9 components</span></div>
+	<div class="model"><span><img src="/peds/u_f_m_debbie_01.png" alt="u_f_m_debbie_01"><strong>u_f_m_debbie_01</strong><br>1 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/u_f_o_carol.png" alt="u_f_o_carol"><strong>u_f_o_carol</strong><br>2 props<br>6 components</span></div>
+	<div class="model"><span><img src="/peds/u_f_o_eileen.png" alt="u_f_o_eileen"><strong>u_f_o_eileen</strong><br>2 props<br>9 components</span></div>
+	<div class="model"><span><img src="/peds/u_f_y_beth.png" alt="u_f_y_beth"><strong>u_f_y_beth</strong><br>1 prop<br>6 components</span></div>
+	<div class="model"><span><img src="/peds/u_f_y_lauren.png" alt="u_f_y_lauren"><strong>u_f_y_lauren</strong><br>2 props<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/u_f_y_taylor.png" alt="u_f_y_taylor"><strong>u_f_y_taylor</strong><br>2 props<br>8 components</span></div>
 </div>
 
 Story scenario male
@@ -912,5 +941,13 @@ Story scenario male
 	<div class="model"><span><img src="/peds/u_m_y_staggrm_01.png" alt="u_m_y_staggrm_01"><strong>u_m_y_staggrm_01</strong><br>0 prop<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/u_m_y_tattoo_01.png" alt="u_m_y_tattoo_01"><strong>u_m_y_tattoo_01</strong><br>1 prop<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/u_m_y_zombie_01.png" alt="u_m_y_zombie_01"><strong>u_m_y_zombie_01</strong><br>0 prop<br>4 components</span></div>
+	<div class="model"><span><img src="/peds/u_m_m_blane.png" alt="u_m_m_blane"><strong>u_m_m_blane</strong><br>2 props<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/u_m_m_curtis.png" alt="u_m_m_curtis"><strong>u_m_m_curtis</strong><br>2 props<br>6 components</span></div>
+	<div class="model"><span><img src="/peds/u_m_m_vince.png" alt="u_m_m_vince"><strong>u_m_m_vince</strong><br>0 prop<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/u_m_o_dean.png" alt="u_m_o_dean"><strong>u_m_o_dean</strong><br>1 prop<br>6 components</span></div>
+	<div class="model"><span><img src="/peds/u_m_y_caleb.png" alt="u_m_y_caleb"><strong>u_m_y_caleb</strong><br>0 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/u_m_y_croupthief_01.png" alt="u_m_y_croupthief_01"><strong>u_m_y_croupthief_01</strong><br>1 prop<br>4 components</span></div>
+	<div class="model"><span><img src="/peds/u_m_y_gabriel.png" alt="u_m_y_gabriel"><strong>u_m_y_gabriel</strong><br>3 props<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/u_m_y_ushi.png" alt="u_m_y_ushi"><strong>u_m_y_ushi</strong><br>1 prop<br>8 components</span></div>
 </div>
 
