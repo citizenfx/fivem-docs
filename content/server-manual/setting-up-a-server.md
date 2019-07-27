@@ -18,11 +18,11 @@ Windows
 2. [Git][git-scm] to assure a correct installation.
 
 #### Installation
-1. Create a new folder (for example `D:\FXServer`).
+1. Create a new directory (for example `D:\FXServer\server`), this will be used for the server binaries.
 2. Download the latest `master` branch build for Windows from the [artifacts server][windows-artifacts].
-3. Extract the build.
+3. Extract the build into the directory previously created.
   <br>3b. Use any archiving tool (such as WinRAR or 7-Zip).
-4. Clone [cfx-server-data][server-data] in a new folder (outside of your FXServer folder).
+4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder, for example, `D:\FXServer\server-data`.
   <br>4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
 5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfgexample) file below into that file).
 6. Generate a license key at <https://keymaster.fivem.net>.
