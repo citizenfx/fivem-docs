@@ -530,7 +530,7 @@ Multiplayer
 	<div class="model"><span><img src="/peds/mp_f_forgery_01.png" alt="mp_f_forgery_01"><strong>mp_f_forgery_01</strong><br>1 prop<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/mp_f_freemode_01.png" alt="mp_f_freemode_01"><strong>mp_f_freemode_01</strong><br>5 props<br>12 components</span></div>
 	<div class="model"><span><img src="/peds/mp_f_helistaff_01.png" alt="mp_f_helistaff_01"><strong>mp_f_helistaff_01</strong><br>1 prop<br>5 components</span></div>
-	<div class="model"><span><img src="/peds/mp_f_meth_01 .png" alt="mp_f_meth_01 "><strong>mp_f_meth_01 </strong><br>0 prop<br>0 component</span></div>
+	<div class="model"><span><img src="/peds/mp_f_meth_01.png" alt="mp_f_meth_01"><strong>mp_f_meth_01</strong><br>0 prop<br>0 component</span></div>
 	<div class="model"><span><img src="/peds/mp_f_misty_01.png" alt="mp_f_misty_01"><strong>mp_f_misty_01</strong><br>0 prop<br>4 components</span></div>
 	<div class="model"><span><img src="/peds/mp_f_stripperlite.png" alt="mp_f_stripperlite"><strong>mp_f_stripperlite</strong><br>0 prop<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/mp_f_weed_01.png" alt="mp_f_weed_01"><strong>mp_f_weed_01</strong><br>0 prop<br>5 components</span></div>

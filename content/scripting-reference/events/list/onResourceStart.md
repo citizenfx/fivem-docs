@@ -40,6 +40,7 @@ private void OnResourceStart(string resourceName)
 
   Debug.WriteLine($"The resource {resourceName} has been started.");
 }
+```
 
 ##### JavaScript Example:
 ```js

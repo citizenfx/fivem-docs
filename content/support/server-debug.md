@@ -1,34 +1,41 @@
 ---
-title: server debugging
+title: Server debugging
 weight: 840
 ---
 
-This section will explain how to create useful debugging dumps (called .dmp files) in order to assist with troubleshooting.
+Creating Full Dumps
+-------
 
-**NOTE**: This page is for Windows servers only. Linux does not have the same debugging tools.
+This section will explain how to create useful debugging dumps (called .dmp files) in order to assist with troubleshooting. If you encounter a crash, set up your environment to capture the next time it happens.
 
-If you encounter a crash, set up your environment to capture the next time it happens.
+**NOTE**: Creating full dumps is for Windows servers only. This method is currently not supported on Linux.
 
-# Creating Full Dumps
+#### Prerequisites
+1. [ProcDump v9.0][procdump] or newer.
 
-1) Download and extract: https://download.sysinternals.com/files/Procdump.zip
-
-2) Start your server.
-
-3) Open a command prompt where you extracted procdump to. **Use an ELEVATED command prompt** for this (should say "Administrator" in the title bar).
-
-4) Type in the following command: `procdump64.exe -accepteula -i`
-
+#### Usage
+1. Make sure your server is running.
+2. Open a command prompt where you extracted procdump to. **Use an ELEVATED command prompt** for this (should say "Administrator" in the title bar).
+3. Type in the following command:
+    ```dos
+    procdump64.exe -accepteula -i
+    ```
     This registers procdump as a debugger to capture certain crashes.
+4. Open task manager, click `"Details"`. Locate `FXServer.exe`. There should be a `"PID"` column. Note down the number.
+5. Go back to your command prompt and type in:
+    ```dos
+    procdump64.exe -accepteula -e 1 -h -ma pidhere
+    ```
+    where `pidhere` is the number you noted down previously. If you get an error, make sure your `PID` is correct.
+6. Wait for the server to crash. When it does, it will write a large .dmp file to the procdump folder.
+7. Compress this file (e.g. `.zip`) and upload it to [DropMeFiles][dropmefiles] or equivalent.
+8. Run the following in your command prompt to unregister the debugger when you are done:
+    ```dos
+    procdump64.exe -accepteula -u
+    ```
 
-5) Open task manager, click "Details". Locate FXServer.exe. There should be a "PID" column. Note down the number.
+You can now analyze the dump file or supply it to whomever requested it. If you are certain you have found a bug, report it on our [forum](https://forum.fivem.net/c/general-discussion/bug-reports) or in the Discord [#server-bugs][discord] channel with as much detail as possible. Using OneSync? Please report OneSync bugs [here](https://forum.fivem.net/c/general-discussion/1s-reports).
 
-6) Go back to your command prompt and type in: `procdump64.exe -accepteula -e 1 -h -ma pidhere`
-
-where `pidhere` is the number you found from step 5. If you get an error, reopen command prompt as administrator and try again.
-
-7) Wait for server to crash. When it does, it will write a large .dmp file to the procdump folder. Zip up this file and upload to google drive/dropbox and supply to the #server-bugs channel on [Discord](https://discord.gg/GtvkUsc) or where it was requested. You can also submit a bug report on our [Forums](https://forum.fivem.net/c/general-discussion/bug-reports) with as much detail as possible.
-
-   **Note:** Using OneSync? There's a [place for those reports](https://forum.fivem.net/c/general-discussion/1s-reports) too!
-
-8) Run the following in your command prompt to unregister the debugger when you are done: `procdump64.exe -accepteula -u`
+[procdump]: https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
+[discord]: https://discord.gg/GtvkUsc
+[dropmefiles]: https://dropmefiles.com.ua/

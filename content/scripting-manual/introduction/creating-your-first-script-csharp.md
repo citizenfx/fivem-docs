@@ -68,7 +68,7 @@ namespace MyResourceNameClient
 You might be overwhelmed at this point, but don't worry. We will go through everything bit by bit.
 
 ```csharp
-EventHandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart));
+EventHandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart);
 ```
 In the constructor we've added an event handler for the [onClientResourceStart](/scripting-reference/events/list/onClientResourceStart/) event. It takes one argument; a string with the name of the resource that was started. It also has a delegate method `OnClientResourceStart`, which we defined beneath the constructor. Once the resource has started, FiveM will trigger this event and invoke the method.
 
