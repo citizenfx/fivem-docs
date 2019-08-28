@@ -20,19 +20,23 @@ Windows
 #### Installation
 1. Create a new folder (for example `D:\FXServer`).
 2. Download the latest `master` branch build for Windows from the [artifacts server][windows-artifacts].
-3. Extract the build.
+3. Extract the build (for example `D:\FXServer\server`).
   <br>3b. Use any archiving tool (such as WinRAR or 7-Zip).
-4. Clone [cfx-server-data][server-data] in a new folder (outside of your FXServer folder).
+4. Clone [cfx-server-data][server-data] in a new folder (outside of the server folder you created in the last step).
   <br>4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
 5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfgexample) file below into that file).
 6. Generate a license key at <https://keymaster.fivem.net>.
 7. Set the license key in your server.cfg using `sv_licenseKey "licenseKeyGoesHere"`.
-8. Run the server from the `server-data` folder. For example, in a plain Windows command prompt (cmd.exe) window: 
+8. If you have followed the steps you can now run the server from the `server-data` folder. For example, in a plain Windows command prompt (cmd.exe) window: 
+    ```dos
+    call ..\server\run.cmd +exec server.cfg
+    ```
+    or if running the command from another directory other than the `server-data` folder;
+    
     ```dos
     cd /d D:\FXServer\server-data
     D:\FXServer\server\run.cmd +exec server.cfg
     ```
-
     (the `/d` flag is only needed when changing directory to somewhere on a different drive)
 
 ---
