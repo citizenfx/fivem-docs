@@ -93,6 +93,11 @@ sv_scriptHookAllowed 0
 # - sets tags "roleplay, military, tanks"
 sets tags "default"
 
+# A valid locale identifier for your server's primary language.
+# For example "en-US", "fr-CA", "nl-NL", "de-DE", "en-GB", "pt-BR"
+sets locale "root-AQ" 
+# please DO replace root-AQ on the line ABOVE with a real language! :)
+
 # Set an optional server info and connecting banner image url.
 # Size doesn't matter, any banner sized image will be fine.
 #sets banner_detail "https://url.to/image.png"
