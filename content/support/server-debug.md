@@ -24,7 +24,7 @@ This section will explain how to create useful debugging dumps (called .dmp file
 4. Open task manager, click `"Details"`. Locate `FXServer.exe`. There should be a `"PID"` column. Note down the number.
 5. Go back to your command prompt and type in:
     ```dos
-    procdump64.exe -accepteula -e 1 -h -ma pidhere
+    procdump64.exe -accepteula -e -h -ma pidhere
     ```
     where `pidhere` is the number you noted down previously. If you get an error, make sure your `PID` is correct.
 6. Wait for the server to crash. When it does, it will write a large .dmp file to the procdump folder.
