@@ -122,13 +122,17 @@ set temp_convar "hey world!"
 # Add system admins
 add_ace group.admin command allow # allow all commands
 add_ace group.admin command.quit deny # but don't allow quit
-add_principal identifier.steam:110000100000000 group.admin # add the admin to the group
+add_principal identifier.fivem:1 group.admin # add the admin to the group
 
 # Hide player endpoints in external log output.
 sv_endpointprivacy true
 
 # Server player slot limit (must be between 1 and 32, unless using OneSync)
 sv_maxclients 32
+
+# Steam Web API key, if you want to use Steam authentication (https://steamcommunity.com/dev/apikey)
+# -> replace "" with the key
+set steam_webApiKey ""
 
 # License key for your server (https://keymaster.fivem.net)
 sv_licenseKey changeme
