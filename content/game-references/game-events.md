@@ -279,5 +279,5 @@ useful information to share, please [add it to this doc][contributing]. Any help
 | CEventVehicleOnFire                                |             |
 | CEventWrithe                                       |             |
 
-[event-ref]: /scripting-reference/events/gameEventTriggered
+[event-ref]: /scripting-reference/events/list/gameEventTriggered
 [contributing]: /contributing
