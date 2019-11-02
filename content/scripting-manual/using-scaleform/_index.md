@@ -83,8 +83,9 @@ Example of correct image url: `img://mpcarhud/albany`, where `mpcarhud` is the n
 Useful links
 ------------
 
--   [Official AS2 reference](http://help.adobe.com/en_US/AS2LCR/Flash_10.0/help.html?content=Part2_AS2_LangRef_1.html)
--   [Extra Scaleform documentation](https://forum.fivem.net/t/scaleforms/99874)
+- ~~[Official AS2 reference](http://help.adobe.com/en_US/AS2LCR/Flash_10.0/help.html?content=Part2_AS2_LangRef_1.html)~~
+- [AS2 reference](http://demo.ligams.free.fr/AS2LR/)
+- [Extra Scaleform documentation](https://forum.fivem.net/t/scaleforms/99874)
 
 Extra Information
 ------------
