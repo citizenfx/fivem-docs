@@ -21,10 +21,10 @@ This section will explain how to create useful debugging dumps (called .dmp file
     procdump64.exe -accepteula -i
     ```
     This registers procdump as a debugger to capture certain crashes.
-4. Open task manager, click `"Details"`. Locate `FXServer.exe`. There should be a `"PID"` column. Note down the number.
+4. Open task manager, click `"Details"`. Locate the *largest* `FXServer.exe`. There should be a `"PID"` column. Note down the number.
 5. Go back to your command prompt and type in:
     ```dos
-    procdump64.exe -accepteula -e 1 -h -ma pidhere
+    procdump64.exe -accepteula -e -h -mp pidhere
     ```
     where `pidhere` is the number you noted down previously. If you get an error, make sure your `PID` is correct.
 6. Wait for the server to crash. When it does, it will write a large .dmp file to the procdump folder.
@@ -34,8 +34,9 @@ This section will explain how to create useful debugging dumps (called .dmp file
     procdump64.exe -accepteula -u
     ```
 
-You can now analyze the dump file or supply it to whomever requested it. If you are certain you have found a bug, report it on our [forum](https://forum.fivem.net/c/general-discussion/bug-reports) or in the Discord [#server-bugs][discord] channel with as much detail as possible. Using OneSync? Please report OneSync bugs [here](https://forum.fivem.net/c/general-discussion/1s-reports).
+You can now analyze the dump file (using VS2019+, click 'Debug with Native Only' and load [symbols][symbols]) or supply it to whomever requested it. If you are certain you have found a bug, report it on our [forum](https://forum.fivem.net/c/general-discussion/bug-reports) or in the Discord [#server-bugs][discord] channel with as much detail as possible. Using OneSync? Please report OneSync bugs [here](https://forum.fivem.net/c/general-discussion/1s-reports).
 
 [procdump]: https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
 [discord]: https://discord.gg/GtvkUsc
-[dropmefiles]: https://dropmefiles.com.ua/
+[dropmefiles]: https://dropmefiles.com/
+[symbols]: https://runtime.fivem.net/client/symbols/
