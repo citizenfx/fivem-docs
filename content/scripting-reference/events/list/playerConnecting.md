@@ -19,8 +19,7 @@ string playerName, function setKickReason, object deferrals
 
 Deferring connections
 ---------------------
-
-TODO
+When using multiple resources that rely on playerConnecting and deferrals, make sure that there's a tick in between the deferral call and update/done. Otherwise, they might cancel each other out.
 
 Examples
 --------
