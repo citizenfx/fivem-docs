@@ -20,21 +20,52 @@ string playerName, function setKickReason, object deferrals
 Deferring connections
 ---------------------
 
-TODO
+Using deferrals allows you to make a connection request complete at a later time, for example when you have to wait for
+an asynchronous task to complete beforehand, such as a database or web API query.
+
+The `deferrals` object contains the following members to achieve such:
+
+#### defer(): void
+
+`deferrals.defer` will initialize deferrals for the current resource. It is required to wait for at least a tick after 
+calling `defer` before calling `update`, `presentCard` or `done`.
+
+#### update(message: string): void
+
+`deferrals.update` will send a progress message to the connecting client.
+
+#### presentCard(card: object | string, cb?: (data: object, rawData: string) => void): void
+
+`deferrals.presentCard` will send an [Adaptive Card](https://adaptivecards.io/) to the client.
+
+`card` can be an object containing card data, or a serialized JSON string with the card information.
+`cb`, if present, will be invoked on an `Action.Submit` event from the Adaptive Card.
+
+#### done(failureReason?: string): void
+
+`deferrals.done` finalizes a deferral. It is required to wait for at least a tick before calling `done` after calling a
+prior deferral method.
+
+If `failureReason` is specified, the connection will be refused, and the user will see the specified message as a result.
+If this is not specified, the user will be allowed to connect.
 
 Examples
 --------
 This example checks a connecting player's license identifier against a ban list. If the player is in the ban list, they get kicked, otherwise they are allowed to connect.
 
-##### C\# Example:
+##### C\# example:
 ```csharp
 // In class constructor
 EventHandlers["playerConnecting"] += new Action<Player, string, dynamic, dynamic>(OnPlayerConnecting);
 
 // Delegate method
-private void OnPlayerConnecting([FromSource]Player player, string playerName, dynamic setKickReason, dynamic deferrals)
+private async void OnPlayerConnecting([FromSource]Player player, string playerName, dynamic setKickReason, dynamic deferrals)
 {
     deferrals.defer();
+
+    // mandatory wait!
+    await Delay(0);
+
     var licenseIdentifier = player.Identifiers["license"];
 
     Debug.WriteLine($"A player with the name {playerName} (Identifier: [{licenseIdentifier}]) is connecting to the server.");
@@ -42,8 +73,9 @@ private void OnPlayerConnecting([FromSource]Player player, string playerName, dy
     deferrals.update($"Hello {playerName}, your license [{licenseIdentifier}] is being checked");
 
     // Checking ban list
-    // - assuming you have a List<string> that contains banned license identifiers
-    if (myBanList.Contains(licenseIdentifier))
+    // - assuming you have a function called IsBanned of type Task<bool>
+    // - normally you'd do a database query here, which might take some time
+    if (await IsBanned(licenseIdentifier))
     {
         deferrals.done($"You have been kicked (Reason: [Banned])! Please contact the server administration (Identifier: [{licenseIdentifier}]).");
     }
@@ -52,13 +84,48 @@ private void OnPlayerConnecting([FromSource]Player player, string playerName, dy
 }
 ```
 
-##### Lua Example:
+These examples check (badly) if Steam is present.
+
+##### Lua example:
 ```lua
 local function OnPlayerConnecting(name, setKickReason, deferrals)
-    local identifiers, steamIdentifier = GetPlayerIdentifiers(source)
+    local player = source
+    local steamIdentifier
+    local identifiers = GetPlayerIdentifiers(player)
     deferrals.defer()
 
-    deferrals.update(string.format("Hello %s. Your steam id is being checked.", name))
+    -- mandatory wait!
+    Wait(0)
+
+    deferrals.update(string.format("Hello %s. Your Steam ID is being checked.", name))
+
+    for _, v in pairs(identifiers) do
+        if string.find(v, "steam") then
+            steamIdentifier = v
+            break
+        end
+    end
+
+    -- mandatory wait!
+    Wait(0)
+
+    if not steamIdentifier then
+        deferrals.done("You are not connected to Steam.")
+    else
+        deferrals.done()
+    end
+end
+
+AddEventHandler("playerConnecting", OnPlayerConnecting)
+```
+
+Non-deferral version (which *can't* wait):
+
+```lua
+local function OnPlayerConnecting(name, setKickReason, deferrals)
+    local player = source
+    local steamIdentifier
+    local identifiers = GetPlayerIdentifiers(player)
 
     for _, v in pairs(identifiers) do
         if string.find(v, "steam") then
@@ -68,36 +135,43 @@ local function OnPlayerConnecting(name, setKickReason, deferrals)
     end
 
     if not steamIdentifier then
-        deferrals.done("You are not connected to steam.")
-    else
-        deferrals.done()
+        CancelEvent()
+        setKickReason("You are not connected to Steam.")
     end
 end
 
 AddEventHandler("playerConnecting", OnPlayerConnecting)
 ```
 
-##### JavaScript Example:
+##### JavaScript example:
 ```js
 
 on('playerConnecting', (name, setKickReason, deferrals) => {
     deferrals.defer()
-    deferrals.update(`Hello ${name}. Your steam id is being checked.`)
 
-    let player = global.source;
-    let steamIdentifier = null;
+    setTimeout(() => {
+        deferrals.update(`Hello ${name}. Your steam ID is being checked.`)
 
-    for (let i = 0; i < GetNumPlayerIdentifiers(player); i++) {
-        let identifier = GetPlayerIdentifier(player, i);
-        if(identifier.includes('steam:')) {
-            steamIdentifier = identifier;
+        const player = global.source;
+        let steamIdentifier = null;
+
+        for (let i = 0; i < GetNumPlayerIdentifiers(player); i++) {
+            const identifier = GetPlayerIdentifier(player, i);
+
+            if (identifier.includes('steam:')) {
+                steamIdentifier = identifier;
+            }
         }
-    }
 
-    if(steamIdentifier === null) {
-        deferrals.done("You are not connected to steam.")
-    } else {
-        deferrals.done()
-    }
+        // pretend to be a wait
+        setTimeout(() => {
+            if (steamIdentifier === null) {
+                deferrals.done("You are not connected to Steam.")
+            } else {
+                deferrals.done()
+            }
+        }, 0)
+    }, 0)
 })
 ```
+
