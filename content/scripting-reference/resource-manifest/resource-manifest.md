@@ -3,7 +3,7 @@ title: Resource manifest
 weight: 505
 ---
 
-The **resource manifest** is a file named `__resource.lua`, placed in a [resource folder](/scripting-manual/introduction/introduction-to-resources) on the server.
+The **resource manifest** is a file named `fxmanifest.lua` (or previously, `__resource.lua`), placed in a [resource folder](/docs/scripting-manual/introduction/introduction-to-resources) on the server.
 
 It is a Lua file, ran in a separate runtime from the usual Lua scripts, using a special setup so that a semi-declarative syntax can be used for defining metadata.
 
@@ -16,27 +16,45 @@ An example resource manifest for a hypothetical resource looks as follows:
 
 Internally, this creates the following metadata entries:
 
--   **resource\_manifest\_version**: {{< rmv >}}
--   **client\_script**: client.lua
--   **client\_script**: client\_two.lua
--   **server\_script**: server.lua
--   **my\_data**: one
--   **my\_data**: three
--   **my\_data**: nine
--   **my\_data\_extra**: `{"two":42}` (as JSON)
--   **my\_data\_extra**: `{"four":69}`
--   **my\_data\_extra**: `{"ninety":"nein"}`
+-   **fx_version**: {{< rmv2 >}}
+-   **game**: gta5
+-   **game**: rdr3
+-   **client_script**: client.lua
+-   **client_script**: client_two.lua
+-   **server_script**: server.lua
+-   **my_data**: one
+-   **my_data**: three
+-   **my_data**: nine
+-   **my_data_extra**: `{"two":42}` (as JSON)
+-   **my_data_extra**: `{"four":69}`
+-   **my_data_extra**: `{"ninety":"nein"}`
 
 Resource manifest entries
 -------------------------
 
 A list of built-in resource manifest entries follows. A resource can also contain custom metadata entries, which can be obtained using [GetNumResourceMetadata](GetNumResourceMetadata "wikilink") and [GetResourceMetadata](GetResourceMetadata "wikilink").
 
-### resource\_manifest\_version
+### fx_version
+
+Defines the supported functionality for the resource. This has to be one of a specific set of words. Each entry inherits properties from the previous one. The current FXv2 resource version is **{{< rmv2 >}}**.
+
+### game
+
+Defines the supported game API sets for the resource.
+
+|  Name  |                                   Meaning                                    |
+| ------ | ---------------------------------------------------------------------------- |
+| common | Runs on any game, but can't access game-specific APIs - only CitizenFX APIs. |
+| gta5   | Runs on FiveM.                                                               |
+| rdr3   | Runs on RedM.                                                                |
+
+### resource_manifest_version
+
+{{% alert color="warning" title="Deprecated" %}}You should be using `fxmanifest.lua` and `fx_version` instead.{{% /alert %}}
 
 Defines the supported functionality for the resource. This has to be one of a specific set of GUIDs. Each GUID inherits properties from the previous one. The current resource manifest version is **{{< rmv >}}**.
 
-### client\_script
+### client_script
 
 Defines a script to be loaded on the client, and implicitly adds the [file](#file "wikilink") to the resource packfile. The extension determines which script loader will handle the file:
 
@@ -46,9 +64,9 @@ Defines a script to be loaded on the client, and implicitly adds the [file](#fil
 | **.net.dll** | `citizen:scripting:mono` | .NET assembly referencing [CitizenFX.Core](https://nuget.org/packages/CitizenFX.Core) |
 | **.js**      | `citizen:scripting:v8`   | JavaScript source code (client only)                                                  |
 
-### server\_script
+### server_script
 
-Defines a script to be loaded on the server. The extension determines which script loader will handle the file, as with [client\_script](#client-script "wikilink").
+Defines a script to be loaded on the server. The extension determines which script loader will handle the file, as with [client_script](#client-script "wikilink").
 
 ### export
 
@@ -93,11 +111,11 @@ int widget = Exports["myresource"].getWidget();
 
 </tab> </tabs>
 
-### server\_export
+### server_export
 
 Defines a global function to be [exported](#export "wikilink") by a server script.
 
-### ui\_page
+### ui_page
 
 Sets the resource's [NUI](NUI "wikilink") page to the defined file. This file (along with its dependencies) has to be referenced using [files](#file "wikilink").
 
@@ -106,19 +124,19 @@ ui_page 'html/index.html'
 file 'html/index.html'
 ```
 
-### before\_level\_meta
+### before_level_meta
 
 Loads the specified level meta in the resource before the primary level meta.
 
-{{% alert theme="warning" %}}**Deprecated**: wherever possible you should use data files. {{% /alert %}}
+{{% alert color="warning" title="Deprecated" %}}Wherever possible you should use data files. {{% /alert %}}
 
-### after\_level\_meta
+### after_level_meta
 
 Loads the specified level meta in the resource after the primary level meta.
 
-{{% alert theme="warning" %}}**Deprecated**: wherever possible you should use data files. {{% /alert %}}
+{{% alert color="warning" title="Deprecated" %}}Wherever possible you should use data files. {{% /alert %}}
 
-### replace\_level\_meta
+### replace_level_meta
 
 Replaces the <abbr title="CDataFileMgr__ContentsOfDataFileXml">level meta</abbr> (usually `common:/data/levels/gta5/gta5.meta`) with the specified file in the resource. This has to be referenced using [files](#file "wikilink").
 
@@ -129,9 +147,9 @@ files {
 }
 ```
 
-### data\_file
+### data_file
 
-Adds a [data file]({{< ref "/game-references/data-files.md" >}}) of a specified type to the game extra content system.
+Adds a [data file]({{< ref "/docs/game-references/data-files.md" >}}) of a specified type to the game extra content system.
 
 ```lua
 files {
@@ -143,7 +161,7 @@ data_file 'AUDIO_WAVEPACK' 'audio/mywaves'
 data_file 'VEHICLE_METADATA_FILE' 'myvehicles.meta'
 ```
 
-### this\_is\_a\_map
+### this_is_a_map
 
 Marks this resource as being a GTA map, and reloads the map storage when the resource gets loaded.
 
@@ -210,8 +228,18 @@ While not recommended, you can set this option to any value to disable lazy load
 disable_lazy_natives 'yes'
 ```
 
-Manifest versions
-=================
+## FXv2 versions
+
+The resource manifest has to specify a particular FXv2 version for the resource to adhere to. A list of version names and features they are associated with is shown on this page.
+
+Each manifest version includes all features from manifest versions above, except where they would overrule one another, in which case the latest version is used.
+
+### FX version `adamant` (2019-12)
+
+-   Equivalent to 44febabe-d386-4d18-afbe-5e627f4af937 in FXv1.
+-   Requires a `game` to be specified, and is mandatory for RedM.
+
+## Manifest versions
 
 The resource manifest has to specify a particular version for the resource to adhere to. A list of version GUIDs and features they are associated with is shown on this page.
 
@@ -240,4 +268,4 @@ By default, no manifest version is used, which is equivalent to manifest GUID `0
 ### Manifest version 05cfa83c-a124-4cfa-a768-c24a5811d8f9 (2017-06-04)
 
 -   Scripts will now be registered as a game network script. This is required for networking entities.
--   [CREATE\_VEHICLE](n:AF35D0D2583051B0 "wikilink") and similar functions behave differently when passing `true, true` as network object flags. See [network objects](network_objects "wikilink") for more information.
+-   [CREATE_VEHICLE](n:AF35D0D2583051B0 "wikilink") and similar functions behave differently when passing `true, true` as network object flags. See [network objects](network_objects "wikilink") for more information.

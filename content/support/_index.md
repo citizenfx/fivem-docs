@@ -1,9 +1,10 @@
 ---
 title: Support
 weight: 800
+layout: single
 ---
 
-- [Client FAQ](/support/client-faq)
-- [Client issues](/support/client-issues)
-- [Server issues](/support/server-issues)
-- [Server debugging](/support/server-debug)
+- [Client FAQ](/docs/support/client-faq)
+- [Client issues](/docs/support/client-issues)
+- [Server issues](/docs/support/server-issues)
+- [Server debugging](/docs/support/server-debug)

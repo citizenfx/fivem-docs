@@ -105,11 +105,11 @@ We are more than happy to help you out! If you're running into crashes or freeze
 on our [forums][forum]. Provide as much detail as you can, that will make it easier for everyone to help you.
 For all other issues, you are more than welcome to join our [Discord][discord] and have a chat with us.
 
-[where-is-fivem-installed]: /support/client-faq#where-is-fivem-installed
-[disabling-antivirus]: /client-manual/disabling-antivirus
+[where-is-fivem-installed]: /docs/support/client-faq#where-is-fivem-installed
+[disabling-antivirus]: /docs/client-manual/disabling-antivirus
 [email]: mailto:support@fivem.net
 [forum]: https://forum.fivem.net/
 [discord]: https://discord.gg/GtvkUsc
 [vanilla-server]: https://servers.fivem.net/#/servers/detail/198.27.79.239:30120
-[uninstalling]: /client-manual/installing-fivem#uninstalling
+[uninstalling]: /docs/client-manual/installing-fivem#uninstalling
 [discrete-gpu]: https://forum.fivem.net/t/solution-forcing-fivem-to-use-your-discrete-gpu-infinite-loading-fix/217731

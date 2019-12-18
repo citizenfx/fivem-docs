@@ -4,9 +4,9 @@ weight: 511
 ---
 
 
-- [emit](/scripting-reference/runtimes/javascript/functions/emit-client)
-- [emitNet](/scripting-reference/runtimes/javascript/functions/emitNet-client)
-- [onNet](/scripting-reference/runtimes/javascript/functions/onNet-client)
-- [on](/scripting-reference/runtimes/javascript/functions/on-client)
-- [setTick](/scripting-reference/runtimes/javascript/functions/setTick)
-- [clearTick](/scripting-reference/runtimes/javascript/functions/clearTick)
+- [emit](/docs/scripting-reference/runtimes/javascript/functions/emit-client)
+- [emitNet](/docs/scripting-reference/runtimes/javascript/functions/emitNet-client)
+- [onNet](/docs/scripting-reference/runtimes/javascript/functions/onNet-client)
+- [on](/docs/scripting-reference/runtimes/javascript/functions/on-client)
+- [setTick](/docs/scripting-reference/runtimes/javascript/functions/setTick)
+- [clearTick](/docs/scripting-reference/runtimes/javascript/functions/clearTick)

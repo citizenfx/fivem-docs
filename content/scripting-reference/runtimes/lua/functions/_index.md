@@ -1,4 +1,5 @@
 ---
 title: List of functions in Lua
-hidden: true
+toc_hide: true
+layout: single
 ---

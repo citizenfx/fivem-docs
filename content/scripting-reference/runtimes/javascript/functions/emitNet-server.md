@@ -3,7 +3,7 @@ title: EmitNet - server
 ---
 
 Use `emitNet` function when you want to trigger an event from the server to a client or to all clients.\
-You need to declare the event on the client with [onNet](/scripting-reference/runtimes/javascript/functions/onNet-client) first.
+You need to declare the event on the client with [onNet](/docs/scripting-reference/runtimes/javascript/functions/onNet-client) first.
 
 ## Signature
 

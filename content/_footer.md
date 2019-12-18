@@ -1,1 +1,0 @@
-FiveM is developed by the CitizenFX Collective.

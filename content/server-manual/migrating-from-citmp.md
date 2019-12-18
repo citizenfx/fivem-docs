@@ -1,6 +1,8 @@
 ---
 title: Migrating from CitizenMP.Server
 weight: 360
+description: >
+  Got some ancient server? This is a guide on migrating.
 ---
 
 ### Loading Scripts

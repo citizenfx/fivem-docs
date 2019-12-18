@@ -1,13 +1,14 @@
 ---
 title: Scripting reference
 weight: 500
+layout: single
 ---
 
-- [Resource manifest](/scripting-reference/resource-manifest/resource-manifest)
+- [Resource manifest](/docs/scripting-reference/resource-manifest/resource-manifest)
 - [Native functions](https://runtime.fivem.net/doc/reference.html)
-- [Client functions](/scripting-reference/client-functions)
-- [Server functions](/scripting-reference/server-functions)
-<!-- TODO: - [Useful functions](/scripting-reference/useful-functions)-->
-- [Client events](/scripting-reference/events/client-events)
-- [Server events](/scripting-reference/events/server-events)
-- [Convars](/scripting-reference/convars)
+- [Client functions](/docs/scripting-reference/client-functions)
+- [Server functions](/docs/scripting-reference/server-functions)
+<!-- TODO: - [Useful functions](/docs/scripting-reference/useful-functions)-->
+- [Client events](/docs/scripting-reference/events/client-events)
+- [Server events](/docs/scripting-reference/events/server-events)
+- [Convars](/docs/scripting-reference/convars)

@@ -27,8 +27,10 @@ files {
 ```
 
 ## Referencing other assets
-{{% alert theme="warning" %}}Note that absolute NUI asset references **require** your resource name to be lowercased!
-This is due to DNS name restrictions.{{% /alert %}}
+{{% alert title="Warning" color="warning" %}}
+Note that absolute NUI asset references **require** your resource name to be lowercased! This is due to DNS name
+restrictions.
+{{% /alert %}}
 
 The NUI system registers a `nui://` protocol scope for resource files. Therefore, you can reference a file in a resource
 as follows:
@@ -95,5 +97,5 @@ window.addEventListener('message', (event) => {
 ```
 
 [mdn-messages]: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage#The_dispatched_event
-[send-nui-message]: /scripting-reference/runtimes/lua/functions/SendNUIMessage
-[resource-manifest]: /scripting-reference/resource-manifest/resource-manifest
+[send-nui-message]: /docs/scripting-reference/runtimes/lua/functions/SendNUIMessage
+[resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest

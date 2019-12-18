@@ -8,8 +8,8 @@ Getting started with scripting for FiveM might be a tad overwhelming, given the 
 ## Prerequisites
 Before creating your first script with C#, there are a couple of things you will need to set up and understand.
 
-* [Creating a C# project and setup your environment](/scripting-manual/runtimes/csharp)
-* [Understanding of resources and manifest files](/scripting-reference/resource-manifest/resource-manifest)
+* [Creating a C# project and setup your environment](/docs/scripting-manual/runtimes/csharp)
+* [Understanding of resources and manifest files](/docs/scripting-reference/resource-manifest/resource-manifest)
 
 ### Writing code
 Now that you have set up your C# project and environment, you will have two projects; `MyResourceNameClient` and `MyResourceNameServer`.
@@ -70,7 +70,7 @@ You might be overwhelmed at this point, but don't worry. We will go through ever
 ```csharp
 EventHandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart);
 ```
-In the constructor we've added an event handler for the [onClientResourceStart](/scripting-reference/events/list/onClientResourceStart/) event. It takes one argument; a string with the name of the resource that was started. It also has a delegate method `OnClientResourceStart`, which we defined beneath the constructor. Once the resource has started, FiveM will trigger this event and invoke the method.
+In the constructor we've added an event handler for the [onClientResourceStart](/docs/scripting-reference/events/list/onClientResourceStart/) event. It takes one argument; a string with the name of the resource that was started. It also has a delegate method `OnClientResourceStart`, which we defined beneath the constructor. Once the resource has started, FiveM will trigger this event and invoke the method.
 
 ```csharp
 if (GetCurrentResourceName() != resourceName) return;
@@ -104,7 +104,7 @@ As you can see, the first argument is the **command name**. The second argument 
 
 The function itself gets an argument that is the `source`, which only really matters if you're running on the server (it'll be the client ID of the player that entered the command, a really useful thing to have), and a List of `args` which are basically what you enter after the command like `/car zentorno` making `args` end up being `new List<object>{ "zentorno" }` or `/car zentorno unused` being `new List<object>{ "zentorno", "unused" }`.
 
-But what about `TriggerEvent()`? That's also defined by _us_. It's used to call the event `chat:addMessage`, which is part of the [chat](/resources/chat/events/chat-addMessage/) resource. In our written example, we send the author name `[CarSpawner]` in red and a message as arguments.
+But what about `TriggerEvent()`? That's also defined by _us_. It's used to call the event `chat:addMessage`, which is part of the [chat](/docs/resources/chat/events/chat-addMessage/) resource. In our written example, we send the author name `[CarSpawner]` in red and a message as arguments.
 
 At this point, you can build your client project, add/move it to your resource and run it. When typing `/car` in the chat box, you will see our command returning the chat message we defined. ![screenshot-1](/csharp-tut-6.png)
 

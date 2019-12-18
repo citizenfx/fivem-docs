@@ -191,5 +191,5 @@ Usage: `test_ace <principal> <object>`
 
 Example: `test_ace group.admin command.adminstuff`
 
-[faq-data]: /support/client-faq#where-is-fivem-installed
+[faq-data]: /docs/support/client-faq#where-is-fivem-installed
 [vconsole]: https://forum.fivem.net/t/fivem-update-may-16th-2017/20005

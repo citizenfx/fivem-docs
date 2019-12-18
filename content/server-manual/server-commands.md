@@ -1,6 +1,8 @@
 ---
 title: Server Commands
 weight: 330
+description: >
+  A list of commands to run in the server console.
 ---
 
 <!-- TODO: format this like client commands? -->
@@ -11,7 +13,7 @@ file, or (if a resource is allowed by ACE) the [ExecuteCommand]({{<native "EXECU
 Adding a custom RCon command can be done using the [RegisterCommand]({{<native "REGISTER_COMMAND">}}) function on the
 server, or the (legacy) `rconCommand` event.
 
-### `start <resourceName>`
+### `start [resourceName]`
 
 Starts the resource specified in the argument, if it was stopped.
 
@@ -19,7 +21,7 @@ Example:
 
     start lambda-menu
 
-### `stop <resourceName>`
+### `stop [resourceName]`
 
 Stops the resource specified in the argument, if it was started.
 
@@ -27,7 +29,7 @@ Example:
 
     stop mymode
 
-### `ensure <resourceName>`
+### `ensure [resourceName]`
 
 Restarts the resource specified in the argument, if it was started. If it wasn't, starts the resource specified in the argument.
 
@@ -35,7 +37,7 @@ Example:
 
     ensure my-testing-resource
 
-### `restart <resourceName>`
+### `restart [resourceName]`
 
 Restarts the resource specified in the argument, if it was started.
 
@@ -86,7 +88,7 @@ A console variable as an integer from 1-5 (default 1); from least to most likely
 
 A console variable as an integer from 1-5 (default 5); from least to most trustworthy (5 being a method such as external three-way authentication).
 
-### `clientkick <id> <reason>`
+### `clientkick [id] [reason]`
 
 {{% alert theme="info" %}}This is provided by the **rconlog** resource. {{% /alert %}}
 
@@ -96,7 +98,7 @@ Example:
 
     clientkick 43 You're a superstitious idiot!
 
-### `say <message>`
+### `say [message]`
 
 {{% alert theme="info" %}}This is provided by the **chat** resource. {{% /alert %}}
 
@@ -107,7 +109,7 @@ Example:
     say Hi, everybody!
 
 
-### `load_server_icon <fileName.png>`
+### `load_server_icon [fileName.png]`
 
 Loads a specfied icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
 
@@ -117,7 +119,7 @@ Example:
 load_server_icon "my-server.png"
 ```
 
-### `add_ace <principal> <object> <allow|deny>`
+### `add_ace [principal] [object] [allow|deny]`
 
 Adds an access control entry to the server's access control list.
 
@@ -128,7 +130,7 @@ add_ace group.admin command.potato allow
 add_ace identifier.steam:110000112345678 command.apple deny
 ```
 
-### `add_principal <child_principal> <parent_principal>`
+### `add_principal [child_principal] [parent_principal]`
 
 Sets a principal to inherit from another principal.
 
@@ -138,7 +140,7 @@ Example:
 add_principal identifier.steam:110000112345678 group.admin
 ```
 
-### `remove_ace <principal> <object> <allow|deny>`
+### `remove_ace [principal] [object] [allow|deny]`
 
 Removes a specified ACE from the server's access control list.
 
@@ -148,7 +150,7 @@ Example:
 remove_ace identifier.steam:110000112345678 command.apple deny
 ```
 
-### `remove_principal <child_principal> <parent_principal>`
+### `remove_principal [child_principal] [parent_principal]`
 
 Removes a specified principal inheritance entry.
 
@@ -157,7 +159,7 @@ Example:
 remove_principal identifier.steam:110000112345678 group.admin
 ```
 
-### `test_ace <principal> <object>`
+### `test_ace [principal] [object]`
 Tests if a principal is allowed or denied access to a given object.
 
 Example: `test_ace group.admin command.adminstuff`

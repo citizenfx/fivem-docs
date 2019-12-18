@@ -3,7 +3,7 @@ title: onNet - client
 ---
 
 Use `onNet` function when you want to listen from client **AND** from server.\
-This declares an event which gets triggered with [emit](/scripting-reference/runtimes/javascript/functions/emit-client) (from client) or [emitNet](/scripting-reference/runtimes/javascript/functions/emitNet-server) (from server).
+This declares an event which gets triggered with [emit](/docs/scripting-reference/runtimes/javascript/functions/emit-client) (from client) or [emitNet](/docs/scripting-reference/runtimes/javascript/functions/emitNet-server) (from server).
 
 ## Signature
 

@@ -1,6 +1,6 @@
 ---
 title: Resource Template
-hidden: true
+toc_hide: true
 draft: true
 ---
 

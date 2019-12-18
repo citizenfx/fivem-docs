@@ -1,6 +1,6 @@
 ---
 title: Contributing
-hidden: true
+toc_hide: true
 ---
 
-- [How you can help](/contributing/how-you-can-help)
+- [How you can help](/docs/contributing/how-you-can-help)

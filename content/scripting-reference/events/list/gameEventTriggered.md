@@ -47,4 +47,4 @@ on("gameEventTriggered", (name, args) => {
 });
 ```
 
-[game-events]: /game-references/game-events
+[game-events]: /docs/game-references/game-events

@@ -34,4 +34,4 @@ end)
 print("Can you see me?")
 ```
 
-[wait]: /scripting-reference/runtimes/lua/functions/Citizen.Wait
+[wait]: /docs/scripting-reference/runtimes/lua/functions/Citizen.Wait

@@ -1,3 +1,6 @@
 [submodule "themes/docdock"]
 	path = themes/docdock
 	url = https://github.com/vjeantet/hugo-theme-docdock.git
+[submodule "themes/docsy"]
+	path = themes/docsy
+	url = https://github.com/google/docsy.git

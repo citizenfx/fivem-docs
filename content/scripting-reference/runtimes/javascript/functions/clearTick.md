@@ -31,4 +31,4 @@ setTimeout(() => {
 
 ```
 
-[setTick]: /scripting-reference/runtimes/javascript/functions/setTick
+[setTick]: /docs/scripting-reference/runtimes/javascript/functions/setTick

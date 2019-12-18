@@ -1,9 +1,9 @@
 ---
 title: onResourceStop
-weight: 548
+weight: 549
 ---
 
-Called when a resource stops.
+Called while a resource stops.
 
 Parameters
 ----------

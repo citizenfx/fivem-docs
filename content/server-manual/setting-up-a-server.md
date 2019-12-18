@@ -1,6 +1,8 @@
 ---
 title: Setting up a server
 weight: 310
+description: >
+  A step-by-step guide on setting up FXServer.
 ---
 
 Running FXServer
@@ -153,9 +155,9 @@ What's next?
 [7zip]: https://www.7-zip.org/download.html
 [git-scm]: https://git-scm.com/download/win
 
-[server-issues]: /support/server-issues
-[server-commands]: /server-manual/server-commands
-[scripting-introduction]: /scripting-manual/introduction
+[server-issues]: /docs/support/server-issues
+[server-commands]: /docs/server-manual/server-commands
+[scripting-introduction]: /docs/scripting-manual/introduction
 
 [fxserver-support]: https://discord.gg/UwvVgsJ
 [fxserver-support-category]: https://forum.fivem.net/c/server-development/server-discussion

@@ -128,6 +128,6 @@ Functions in JavaScript
 
 See [Scripting reference][scriptreflink] for example usage of these functions.
 
-[scriptreflink]: /scripting-reference/runtimes/javascript
-[deplink]: /scripting-reference/resource-manifest/resource-manifest#dependency
+[scriptreflink]: /docs/scripting-reference/runtimes/javascript
+[deplink]: /docs/scripting-reference/resource-manifest/resource-manifest#dependency
 [nodejs]: https://github.com/citizenfx/node

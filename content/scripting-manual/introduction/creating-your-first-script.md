@@ -274,4 +274,4 @@ In your server console, `refresh; restart mymode` (yeah you can split stuff with
 You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
 
 
-[manifest-reference]: /scripting-reference/resource-manifest/resource-manifest/
+[manifest-reference]: /docs/scripting-reference/resource-manifest/resource-manifest/

@@ -33,4 +33,4 @@ When doing so, the following natives become available once scripts start (after 
 This can be used to, say, add a custom fade-out effect from the loading screen to an in-game view, or integrate NUI events
 with early-game spawn selection UI.
 
-[resource-manifest]: /scripting-reference/resource-manifest/resource-manifest
+[resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest

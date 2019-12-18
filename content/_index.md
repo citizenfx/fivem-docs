@@ -1,5 +1,10 @@
 ---
 title: Home
+layout: single
+linkTitle: "Documentation"
+menu:
+  main:
+    weight: 20
 ---
 
 FiveM documentation
@@ -16,9 +21,9 @@ get in touch with us on our [forums][forum] or on [Discord][discord].
     <div style="border: 1px solid lightgray; padding: 15px; margin-bottom: 5px;">
       <h4>Play FiveM</h4>
       <ul>
-        <li><a href="/client-manual/installing-fivem">Installing FiveM</a></li>
-        <li><a href="/client-manual/where-to-buy-gtav">Where to buy GTA V</a></li>
-        <li><a href="/client-manual">Client manual</a></li>
+        <li><a href="/docs/client-manual/installing-fivem">Installing FiveM</a></li>
+        <li><a href="/docs/client-manual/where-to-buy-gtav">Where to buy GTA V</a></li>
+        <li><a href="/docs/client-manual">Client manual</a></li>
         <li><a href="/support/client-faq">Frequently asked questions</a></li>
         <li><a href="/support/client-issues">Troubleshooting issues</a></li>
       </ul>

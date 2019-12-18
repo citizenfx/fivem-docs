@@ -31,5 +31,5 @@ I'm running into issues, what can I do?
 
 It's never fun to run into problems. Read the [client issues manual][client-issues] for help.
 
-[installing-fivem]: /client-manual/installing-fivem
-[client-issues]: /support/client-issues
+[installing-fivem]: /docs/client-manual/installing-fivem
+[client-issues]: /docs/support/client-issues

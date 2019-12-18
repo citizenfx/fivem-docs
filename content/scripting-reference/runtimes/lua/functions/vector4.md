@@ -85,4 +85,4 @@ print(v.yxyx) -- prints `vector4(2, 1, 2, 1)`
 print(v.zxwy) -- prints `vector4(3, 1, 1, 2)`
 ```
 
-[lua-runtime]: /scripting-manual/runtimes/lua
+[lua-runtime]: /docs/scripting-manual/runtimes/lua

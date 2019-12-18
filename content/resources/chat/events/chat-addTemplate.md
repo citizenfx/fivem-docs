@@ -39,4 +39,4 @@ TriggerEvent("chat:addMessage", new { templateId = "tweet", multiline = true, ar
 ![](/chat-template.png)
 
 
-[addmessage]: /resources/chat/events/chat-addMessage
+[addmessage]: /docs/resources/chat/events/chat-addMessage

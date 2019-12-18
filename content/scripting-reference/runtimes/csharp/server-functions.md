@@ -1,6 +1,7 @@
 ---
 title: Server-side functions in C#
 weight: 509
+layout: single
 ---
 
 There's a few ways to easily tell what functions exist in C# pending manual documentation:

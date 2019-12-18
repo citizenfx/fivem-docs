@@ -23,6 +23,6 @@ _Notes:_
 1. May not work with some older AMD laptop GPUs. More on that [here][client-issues-gpu].
 2. 72GB for the original game + additional FiveM cache.
 
-[installing]: /client-manual/installing-fivem
-[client-issues-gpu]: /support/client-issues#stuck-on-a-colored-background-but-no-menu
+[installing]: /docs/client-manual/installing-fivem
+[client-issues-gpu]: /docs/support/client-issues#stuck-on-a-colored-background-but-no-menu
 [gtav-system-specs]: https://support.rockstargames.com/hc/en-us/articles/203428177

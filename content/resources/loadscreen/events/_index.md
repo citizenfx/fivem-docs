@@ -1,4 +1,4 @@
 ---
 title: a
-hidden: true
+toc_hide: true
 ---

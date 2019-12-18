@@ -1,12 +1,13 @@
 ---
 title: Client manual
 weight: 200
+layout: single
 ---
 
 Basics
 ------
-- [Installing FiveM](/client-manual/installing-fivem)
-- [Console commands](/client-manual/console-commands)
+- [Installing FiveM](/docs/client-manual/installing-fivem)
+- [Console commands](/docs/client-manual/console-commands)
 
 FiveM singleplayer
 ------------------
@@ -37,4 +38,4 @@ The server browser allows for some neat searching tricks:
 
 Troubleshooting issues
 ----------------------
-Are you running into issues? Read the dedicated [troubleshooting manual](/support/client-issues).
+Are you running into issues? Read the dedicated [troubleshooting manual](/docs/support/client-issues).

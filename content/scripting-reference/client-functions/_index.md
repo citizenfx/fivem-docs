@@ -10,9 +10,9 @@ Runtime specific functions
 Some functions are exclusive to the scripting runtime you're using, and are **not** documented
 in the [FiveM Native Reference List](https://runtime.fivem.net/doc/reference.html). Refer to their docs for more detail.
 
-- [Client-side functions in Lua](/scripting-reference/runtimes/lua/client-functions)
-- [Client-side functions in JavaScript](/scripting-reference/runtimes/javascript/client-functions)
-- [Client-side functions in C#](/scripting-reference/runtimes/csharp/client-functions)
+- [Client-side functions in Lua](/docs/scripting-reference/runtimes/lua/client-functions)
+- [Client-side functions in JavaScript](/docs/scripting-reference/runtimes/javascript/client-functions)
+- [Client-side functions in C#](/docs/scripting-reference/runtimes/csharp/client-functions)
 
 Native functions
 ----------------

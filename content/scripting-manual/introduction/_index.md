@@ -1,9 +1,10 @@
 ---
 title: Scripting introduction
 weight: 410
+layout: single
 ---
 
-- [Introduction to resources](/scripting-manual/introduction/introduction-to-resources)
-- [Creating your first script in Lua](/scripting-manual/introduction/creating-your-first-script)
-- [Creating your first script in C#](/scripting-manual/introduction/creating-your-first-script-csharp)
-- [About native functions](/scripting-manual/introduction/about-native-functions)
+- [Introduction to resources](/docs/scripting-manual/introduction/introduction-to-resources)
+- [Creating your first script in Lua](/docs/scripting-manual/introduction/creating-your-first-script)
+- [Creating your first script in C#](/docs/scripting-manual/introduction/creating-your-first-script-csharp)
+- [About native functions](/docs/scripting-manual/introduction/about-native-functions)

@@ -104,5 +104,5 @@ local newPosition = (forwardVector * 5) + position
 SetEntityCoords(vehicle, newPosition)
 ```
 
-[lua-runtime]: /scripting-manual/runtimes/lua
-[natives-manual]: /scripting-manual/introduction/about-native-functions
+[lua-runtime]: /docs/scripting-manual/runtimes/lua
+[natives-manual]: /docs/scripting-manual/introduction/about-native-functions

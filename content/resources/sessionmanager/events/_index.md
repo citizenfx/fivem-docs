@@ -1,3 +1,3 @@
 ---
-hidden: true
+toc_hide: true
 ---

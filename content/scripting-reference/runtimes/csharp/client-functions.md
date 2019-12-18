@@ -1,6 +1,7 @@
 ---
 title: Client-side functions in C#
 weight: 508
+layout: single
 ---
 
 There's a few ways to easily tell what functions exist in C# pending manual documentation:

@@ -27,4 +27,4 @@ TriggerEvent("someEvent")
 RemoveEventHandler(eventA)
 ```
 
-[AddEventHandler]: /scripting-reference/runtimes/lua/functions/AddEventHandler
+[AddEventHandler]: /docs/scripting-reference/runtimes/lua/functions/AddEventHandler

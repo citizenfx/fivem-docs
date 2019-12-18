@@ -3,7 +3,7 @@ title: onClientResourceStart
 weight: 545
 ---
 
-Called when a resource starts.
+Called after a resource starts.
 
 Parameters
 ----------

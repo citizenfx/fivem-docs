@@ -1,6 +1,6 @@
 ---
 title: loadscreen
-hidden: true
+toc_hide: true
 draft: true
 ---
 

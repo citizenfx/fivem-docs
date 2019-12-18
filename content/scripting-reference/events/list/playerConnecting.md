@@ -1,6 +1,6 @@
 ---
 title: playerConnecting
-weight: 549
+weight: 550
 ---
 
 Called when a player is connecting to the server.

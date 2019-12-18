@@ -83,6 +83,6 @@ You can also join our [Discord][discord] and have a chat with us.
 [forum]: https://forum.fivem.net/
 [discord]: https://discord.gg/GtvkUsc
 [pfsensenat]: https://www.netgate.com/docs/pfsense/nat/static-port.html
-[servercfg]: /server-manual/setting-up-a-server/#a-name-servercfgexample-a-server-cfg
+[servercfg]: /docs/server-manual/setting-up-a-server/#a-name-servercfgexample-a-server-cfg
 [chat-formatting]: https://forum.fivem.net/t/chat-formatting-colors-bold-underline/67641
-[setting-up-server]: /server-manual/setting-up-a-server
+[setting-up-server]: /docs/server-manual/setting-up-a-server
