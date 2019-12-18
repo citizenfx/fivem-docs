@@ -8,7 +8,7 @@
 	{{else}}
 		{{$.Scratch.Add "filesName" (printf "%s.files" .Page.File.BaseFileName)}}
 	{{end}}
-	{{ range (readDir (printf "./root/%s%s" .Page.File.Dir ($.Scratch.Get "filesName")) ) }}
+	{{ range (readDir (printf "./content/%s%s" .Page.File.Dir ($.Scratch.Get "filesName")) ) }}
 		{{ $fileDir := replace $.Page.File.Dir "\\" "/" }}
 		{{if ($.Get "pattern")}}
 			{{if (findRE ($.Get "pattern") .Name)}}
