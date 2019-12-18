@@ -4,6 +4,7 @@ theme = "docsy"
 contentDir = "content"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
+baseURL = "/"
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
