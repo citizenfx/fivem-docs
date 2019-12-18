@@ -37,7 +37,7 @@ as follows:
 <script type="text/javascript" src="nui://my-resource/production.js" async></script>
 ```
 
-This also means you can use the Chromium developer tools to, say, fetch _any_ packages resource file (including client
+This also means you can use the Chromium developer tools to, say, fetch _any_ packaged resource file (including client
 scripts) simply using `fetch('nui://spawnmanager/fxmanifest.lua')` or similar in the developer console. Open source for
 everyone! Anyone trying to sell you ways to 'dump assets' has basically been scamming you.
 
@@ -59,7 +59,7 @@ as full-screen iframes: that means there's no click-through across resources.
 
 ## NUI messages
 You can send a [message][mdn-messages] to the current resource's NUI page using the {{<native_link "SEND_NUI_MESSAGE">}}
-native, or if using LUa, the convenience wrapper [SendNUIMessage][send-nui-message] which encodes a JSON string for you.
+native, or if using Lua, the convenience wrapper [SendNUIMessage][send-nui-message] which encodes a JSON string for you.
 
 For example:
 
