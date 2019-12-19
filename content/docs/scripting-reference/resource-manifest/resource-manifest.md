@@ -29,6 +29,21 @@ Internally, this creates the following metadata entries:
 -   **my_data_extra**: `{"four":69}`
 -   **my_data_extra**: `{"ninety":"nein"}`
 
+Globbing
+--------
+
+Some entry types may support 'globbing' for multiple files. These take a pattern syntax as follows:
+
+|    Example    |                    Matches                    |
+| ------------- | --------------------------------------------- |
+| `*.lua`       | `a.lua`, `b.lua` (non-recursively)            |
+| `dir/*.dll`   | `dir/a.dll`, `b.dll` (non-recursively)        |
+| `**/*.lua`    | `dir1/a.lua`, `dir2/b.lua`, `dir1/dir2/f.lua` |
+| `**.lua`      | same as above                                 |
+| `**/cl_*.lua` | `dir1/cl_hi.lua`, etc.                        |
+
+Support for globbing is specified under each entry type.
+
 Resource manifest entries
 -------------------------
 
@@ -56,6 +71,8 @@ Defines the supported functionality for the resource. This has to be one of a sp
 
 ### client_script
 
+{{% alert color="success" title="Note" %}}This directive supports globbing.{{% /alert %}}
+
 Defines a script to be loaded on the client, and implicitly adds the [file](#file "wikilink") to the resource packfile. The extension determines which script loader will handle the file:
 
 |  Extension   |       File handler       |                                        Meaning                                        |
@@ -66,7 +83,15 @@ Defines a script to be loaded on the client, and implicitly adds the [file](#fil
 
 ### server_script
 
+{{% alert color="success" title="Note" %}}This directive supports globbing.{{% /alert %}}
+
 Defines a script to be loaded on the server. The extension determines which script loader will handle the file, as with [client_script](#client-script "wikilink").
+
+### shared_script
+
+{{% alert color="success" title="Note" %}}This directive supports globbing.{{% /alert %}}
+
+Defines a script to be loaded on both sides, and adds the file to the resource packfile. The extension determines which script loader will handle the file, as with [client_script](#client-script "wikilink").
 
 ### export
 
@@ -149,16 +174,20 @@ files {
 
 ### data_file
 
+{{% alert color="success" title="Note" %}}This directive supports globbing in the filename field.{{% /alert %}}
+
 Adds a [data file]({{< ref "/docs/game-references/data-files.md" >}}) of a specified type to the game extra content system.
 
 ```lua
 files {
     'audio/mywaves/stupidcar.awc',
-    'myvehicles.meta'
+    'myvehicles.meta',
+    'metas/*_handling.meta',
 }
 
 data_file 'AUDIO_WAVEPACK' 'audio/mywaves'
 data_file 'VEHICLE_METADATA_FILE' 'myvehicles.meta'
+data_file 'HANDLING_FILE' 'metas/*_handling.meta'
 ```
 
 ### this_is_a_map
@@ -213,6 +242,14 @@ dependencies {
 }
 ```
 
+### provide
+
+Marks the current resource as a replacement for the specified resource. This means it'll start instead of the specified resource, if another resource requires it, and will act as if it is said resource if started.
+
+```lua
+provide 'mysql-async'
+```
+
 ### disable_lazy_natives
 
 {{% notice info %}}
@@ -226,6 +263,14 @@ While not recommended, you can set this option to any value to disable lazy load
 
 ```lua
 disable_lazy_natives 'yes'
+```
+
+### clr_disable_task_scheduler
+
+When present, disables the custom C# task scheduler on the server. This will increase compatibility with third-party libraries using the .NET TPL, but make it more likely you'll have to `await Delay(0);` to end up back on the main thread.
+
+```lua
+clr_disable_task_scheduler 'yes'
 ```
 
 ## FXv2 versions
