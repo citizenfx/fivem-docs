@@ -158,7 +158,7 @@ We started with checking the model. We set it to `adder`. If there are any argum
 
 Then, we check if the vehicle is in the CD image using {{<native_link "IS_MODEL_IN_CDIMAGE">}}. This basically means 'is this registered with the game'. We also check if it's a vehicle using {{<native_link "IS_MODEL_A_VEHICLE">}}. If either check fails, we tell the player and return from the command.
 
-There may be C# wrapper here, but it's important to reify the use of natives as you will use them a lot when scripting. Make sure you have the `using static CitizenFX.Core.Native.API;` directive in your class.
+There may be C# wrapper here, but it's important to verify the use of natives as you will use them a lot when scripting. Make sure you have the `using static CitizenFX.Core.Native.API;` directive in your class.
 
 #### Step 2: Creating the vehicle
 Using the client side C# wrapper class `World`, we call the `CreateVehicle` method which takes a model, `Vector3` position, and `float` heading as arguments. This is the great thing about C#. You have access to a method supplied by _us_ such that you don't have to request and load a model like you would in Lua. This method returns us a `Vehicle` object. If you have experience with *ScriptHookV.NET* you may recognize these classes. The C# wrapper of FiveM is very similar.
