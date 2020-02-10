@@ -12,7 +12,7 @@ Example
 
 An example resource manifest for a hypothetical resource looks as follows:
 
-{{< code file="/static/examples/manifest/__resource.lua" language="lua" >}}
+{{< code file="/static/examples/manifest/fxmanifest.lua" language="lua" >}}
 
 Internally, this creates the following metadata entries:
 
