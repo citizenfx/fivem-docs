@@ -15,17 +15,19 @@ That means you'll need to have a folder like this by now, assuming a Windows dev
 ### Manifest files
 A resource folder (you know, this `mymode` you made above) will need a manifest to be detected by FiveM. Since this is a game type, it'll need some extra information as well to teach `mapmanager` about the fact that this is a game type.
 
-Make a file called `__resource.lua` (this is _always_ Lua, even if you'll be writing scripts in C#/JS later on) in your `mymode` folder. In it, put the following text using your favorite text editor:
+Make a file called `fxmanifest.lua` (this is _always_ Lua, even if you'll be writing scripts in C#/JS later on) in your `mymode` folder. In it, put the following text using your favorite text editor:
 
 ```lua
-resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
+fx_version 'adamant'
+games { 'rdr3', 'gta5' }
 
 resource_type 'gametype' { name = 'My awesome game type!' }
 
 client_script 'mymode_client.lua'
 ```
 
-Any new resource you make will probably want the latest game features. This is what the `resource_manifest_version` is for. You can read up on it elsewhere on this documentation site, if you ever feel the need to know more.
+Any new resource you make will probably want the latest game features. This is what the `fx_version` is for. You can read up on it elsewhere on this documentation site, if you ever feel the need to know more.
+To specify if this resource is for gta5, rdr3, or both, you must use the `game` variable.
 
 The `resource_type`, on the other hand, tells `mapmanager` that this, in fact, is a game type, and that it's called **"My awesome game type!"**. If you're just making a 'standalone' add-on resource, you probably don't want to include a `resource_type` line.
 
@@ -112,7 +114,7 @@ Since spawning a player is pretty much entirely game interaction, this happens o
 
 You're probably hoping to be able to run this little example - well, hopefully you already have a running FXServer instance - if not, follow the guide for that.
 
-Once you've started FXServer, execute the `refresh` command in the console. This'll reread every single `__resource.lua` file for every resource you have installed, since you probably just started the server this isn't _really_ needed but if you had the server running already this is just A Good Idea™ to do.
+Once you've started FXServer, execute the `refresh` command in the console. This'll reread every single `fxmanifest.lua` file for every resource you have installed, since you probably just started the server this isn't _really_ needed but if you had the server running already this is just A Good Idea™ to do.
 
 Finally, execute `start mymode` in the console, and connect to your server using the FiveM client's handy `localhost` button in developer mode (or just enter `localhost` on the direct connect tab, or if you used the default port click [this useful link](fivem://connect/localhost:30120) on the PC you have FiveM installed on).
 
