@@ -9,8 +9,7 @@ Development
 Install [Hugo][gohugo], then run:
 
 ```sh
-git submodule init
-git submodule update
+git submodule update --init --recursive
 hugo server -D
 ```
 
