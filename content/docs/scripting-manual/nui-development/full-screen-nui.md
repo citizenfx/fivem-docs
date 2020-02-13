@@ -22,7 +22,7 @@ ui_page 'main.html'
 
 -- every client-side file still needs to be added to the resource packfile!
 files {
-    'main.html
+    'main.html'
 }
 ```
 
