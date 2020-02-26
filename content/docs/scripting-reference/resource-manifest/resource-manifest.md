@@ -21,7 +21,9 @@ Internally, this creates the following metadata entries:
 -   **game**: rdr3
 -   **client_script**: client.lua
 -   **client_script**: client_two.lua
+-   **client_scripts**: { client.lua, client_two.lua }
 -   **server_script**: server.lua
+-   **server_scripts**: { server.lua, server_two.lua }
 -   **my_data**: one
 -   **my_data**: three
 -   **my_data**: nine
