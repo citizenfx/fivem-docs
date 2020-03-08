@@ -90,6 +90,10 @@ Usage: `net_statsFile <file_name>`
 Example: `net_statsFile metrics.csv` - this will create a CSV file called `metrics.csv` in your
 FiveM [application data directory][faq-data].
 
+### cl_drawfps
+The `cl_drawfps` command will show reliably the frames per second.
+Usage: `cl_drawfps <true|false>`
+
 ### netgraph
 The `netgraph` command will give you real time metrics about the FiveM client network usage.
 The netgraph consists of a graph and basic information about the network:
