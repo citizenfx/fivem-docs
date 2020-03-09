@@ -281,6 +281,11 @@ The resource manifest has to specify a particular FXv2 version for the resource 
 
 Each manifest version includes all features from manifest versions above, except where they would overrule one another, in which case the latest version is used.
 
+### FX version `bodacious` (2020-02)
+
+-   Implies `clr_disable_task_scheduler` being specified for server library compatibility.
+-   Does not define `window` in JS contexts for library compatibility.
+
 ### FX version `adamant` (2019-12)
 
 -   Equivalent to 44febabe-d386-4d18-afbe-5e627f4af937 in FXv1.

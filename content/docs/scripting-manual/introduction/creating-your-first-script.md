@@ -18,8 +18,8 @@ A resource folder (you know, this `mymode` you made above) will need a manifest 
 Make a file called `fxmanifest.lua` (this is _always_ Lua, even if you'll be writing scripts in C#/JS later on) in your `mymode` folder. In it, put the following text using your favorite text editor:
 
 ```lua
-fx_version 'adamant'
-games { 'rdr3', 'gta5' }
+fx_version '{{< rmv2 >}}'
+game 'gta5'
 
 resource_type 'gametype' { name = 'My awesome game type!' }
 
@@ -27,7 +27,7 @@ client_script 'mymode_client.lua'
 ```
 
 Any new resource you make will probably want the latest game features. This is what the `fx_version` is for. You can read up on it elsewhere on this documentation site, if you ever feel the need to know more.
-To specify if this resource is for gta5, rdr3, or both, you must use the `game` variable.
+To specify if this resource is for gta5, rdr3, or `common`, you should use the `game` variable.
 
 The `resource_type`, on the other hand, tells `mapmanager` that this, in fact, is a game type, and that it's called **"My awesome game type!"**. If you're just making a 'standalone' add-on resource, you probably don't want to include a `resource_type` line.
 
