@@ -49,7 +49,7 @@ everyone! Anyone trying to sell you ways to 'dump assets' has basically been sca
 CEF remote debugging tools are exposed on [http://localhost:13172/](http://localhost:13172/) as long as the game is
 running. You can use any Chromium-based browser to easily access these tools.
 
-<!-- #GAMETODO: support this natively using a pop-up window/console shortcut? -->
+Alternately, it can be opened using the `nui_devTools` command in the game's <kbd>F8</kbd> console.
 
 ## NUI focus
 There's a limited focus stack for NUI resources, you can set focus to the **current** resource using the
