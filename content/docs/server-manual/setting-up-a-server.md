@@ -129,6 +129,9 @@ add_principal identifier.fivem:1 group.admin # add the admin to the group
 # Hide player endpoints in external log output.
 sv_endpointprivacy true
 
+# enable OneSync with default configuration (required for server-side state awareness)
+onesync_enabled true
+
 # Server player slot limit (must be between 1 and 32, unless using OneSync)
 sv_maxclients 32
 
