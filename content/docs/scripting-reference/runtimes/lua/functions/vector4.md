@@ -64,6 +64,10 @@ print(-v) -- prints `vector4(-1, -2, -3, -4)`
 local v = vector4(1, 2, 3, 4)
 print(#v) -- prints `5.477`
 
+-- Vectors can be normalized:
+local v = vector3(1, 2, 3, 4)
+print(norm(v)) -- prints `vector3(0.18, 0.37, 0.55, 0.73)`
+
 -- Unpacking works:
 local v = vector4(1, 2, 3, 4)
 local x, y, z, w = table.unpack(v)

@@ -63,6 +63,10 @@ print(-v) -- prints `vector2(-1, -2)`
 local v = vector2(1, 2)
 print(#v) -- prints `2.236`
 
+-- Vectors can be normalized:
+local v = vector2(1, 2)
+print(norm(v)) -- prints `vector2(0.45, 0.89)`
+
 -- Unpacking works:
 local v = vector2(1, 2)
 local x, y = table.unpack(v)
