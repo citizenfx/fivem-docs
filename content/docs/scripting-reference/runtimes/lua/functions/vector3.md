@@ -70,6 +70,10 @@ print(-v) -- prints `vector3(-1, -2, -3)`
 local v = vector3(1, 2, 3)
 print(#v) -- prints `3.742`
 
+-- Vectors can be normalized:
+local v = vector3(1, 2, 3)
+print(norm(v)) -- prints `vector3(0.27, 0.53, 0.80)`
+
 -- Unpacking works:
 local v = vector3(1, 2, 3)
 local x, y, z = table.unpack(v)
