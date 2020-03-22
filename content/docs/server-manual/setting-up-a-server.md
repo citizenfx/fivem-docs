@@ -32,7 +32,7 @@ Windows
 8. Run the server from the `server-data` folder. For example, in a plain Windows command prompt (cmd.exe) window: 
     ```dos
     cd /d D:\FXServer\server-data
-    D:\FXServer\server\run.cmd +exec server.cfg
+    D:\FXServer\server\FXServer.exe +exec server.cfg
     ```
 
     (the `/d` flag is only needed when changing directory to somewhere on a different drive)
@@ -56,8 +56,6 @@ Common issues
 ---------------
 
 - If you don't get any 'resources found', and it says 'Failed to start resource', you didn't 'cd' to the right folder.
-- If you get a lot of errors about citizen:/scripting/, you didn't use run.cmd.
-- If nothing happens at all except 'sending heartbeat', you didn't use run.cmd **and** failed to cd to the folder.
 - If no resources get started, and you can't connect, you didn't add +exec.
 - If you get 'no license key was specified', one of the above things applies.
 
