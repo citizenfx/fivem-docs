@@ -51,5 +51,14 @@ TriggerEvent("chat:addMessage", new
 });
 ```
 
+##### JavaScript Example:
+```javascript
+emit('chat:addMessage', {
+    color: [255, 0, 0],
+    multiline: true,
+    args: ['Me', 'Please be careful to not step on too many snails!']
+});
+```
+
 ### Example Result:
 ![screenshot-1](/chat_addMessage.png)
