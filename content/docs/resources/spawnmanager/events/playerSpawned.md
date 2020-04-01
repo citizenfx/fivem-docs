@@ -16,6 +16,7 @@ object spawnInfo
     - **(float) heading**: The heading that the player is facing when spawned.
     - **(int) idx**: The spawnpoint index.
     - **(Hash) model**: The ped model hash the player spawned as.
+    - **(bool) skipFade**: Whether the fade was skipped when the player spawned.
 
 Examples
 --------
