@@ -2,25 +2,25 @@
 title: spawnmanager
 ---
 
-##### TODO
-
-<!--
 ## About
-_Todo._
+The spawnmanager is a base resource that handles the spawning of the player. It allows you to choose when and where to spawn the player and also control how they respawn.
+
+Spawnmanager is included and maintained at the [cfx-server-data](https://github.com/citizenfx/cfx-server-data) repository.
+
+Map resources for [mapmanager](../mapmanager) will have their spawnpoints loaded and usable in spawnmanager, as long as they are started *after* spawnmanager. 
 
 ## Exports
 
 ### Client
-- todo
-
-### Server
-- todo
+- [spawnPlayer](./functions/spawnPlayer)
+- [addSpawnPoint](./functions/addSpawnPoint)
+- [removeSpawnPoint](./functions/removeSpawnPoint)
+- [loadSpawns](./functions/loadSpawns)
+- [setAutoSpawn](./functions/setAutoSpawn)
+- [setAutoSpawnCallback](./functions/setAutoSpawnCallback)
+- [forceRespawn](./functions/forceRespawn)
 
 ## Events
 
 ### Client
-- todo
-
-### Server
-- todo
--->
+- [playerSpawned](./events/playerSpawned)
