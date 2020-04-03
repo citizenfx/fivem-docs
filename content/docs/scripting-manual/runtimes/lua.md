@@ -72,14 +72,14 @@ to be global to be 'explicitly' exported. Note that these exports will only be a
 
 For example:
 
-hello_explicit.lua:
+Inside hello_explicit.lua:
 ```lua
 function SayHello(str)
   print('Hello, ' .. tostring(str) .. '!')
 end
 ```
 
-\_\_resource.lua:
+Inside fxmanifest.lua:
 ```lua
 -- Client:
 client_script 'hello.lua'

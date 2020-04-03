@@ -21,6 +21,10 @@ Make a file called `fxmanifest.lua` (this is _always_ Lua, even if you'll be wri
 fx_version '{{< rmv2 >}}'
 game 'gta5'
 
+author 'An awesome dude'
+description 'An awesome, but short, description'
+version '1.0.0'
+
 resource_type 'gametype' { name = 'My awesome game type!' }
 
 client_script 'mymode_client.lua'
