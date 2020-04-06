@@ -49,7 +49,7 @@ Support for globbing is specified under each entry type.
 Resource manifest entries
 -------------------------
 
-A list of built-in resource manifest entries follows. A resource can also contain custom metadata entries, which can be obtained using [GetNumResourceMetadata](GetNumResourceMetadata "wikilink") and [GetResourceMetadata](GetResourceMetadata "wikilink").
+A list of built-in resource manifest entries follows. A resource can also contain custom metadata entries, which can be obtained using [GetNumResourceMetadata](https://runtime.fivem.net/doc/natives/?_0x776E864) and [GetResourceMetadata](https://runtime.fivem.net/doc/natives/?_0x964BAB1D).
 
 ### fx_version
 
