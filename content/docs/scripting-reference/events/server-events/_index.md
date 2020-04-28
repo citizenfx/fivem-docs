@@ -14,3 +14,10 @@ These events are part of FiveM and do not require any resource.
 - [rconCommand](../list/rconCommand)
 - [playerDropped](../list/playerDropped)
 - [playerConnecting](../list/playerConnecting)
+
+
+Onesync events
+-----------
+- [weaponDamageEvent](../list/weaponDamageEvent)
+- [vehicleComponentControlEvent](../list/vehicleComponentControlEvent)
+- [respawnPlayerPedEvent](../list/respawnPlayerPedEvent)
