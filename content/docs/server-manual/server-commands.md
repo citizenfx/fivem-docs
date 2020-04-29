@@ -47,7 +47,7 @@ Example:
 
 ### `refresh`
 
-Rescans the *resources* folder and loads all \_\_resource.lua files in them, making new resources available to start using [start](#start "wikilink").
+Rescans the *resources* folder and loads all \_\_resource.lua files in them, making new resources available to start using [start](#start-resourcename "wikilink").
 
 Example:
 

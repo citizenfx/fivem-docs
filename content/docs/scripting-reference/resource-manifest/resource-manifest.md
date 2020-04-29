@@ -80,12 +80,12 @@ Defines a script to be loaded on the client, and implicitly adds the [file](#fil
 |  Extension   |       File handler       |                                        Meaning                                        |
 | ------------ | ------------------------ | ------------------------------------------------------------------------------------- |
 | **.lua**     | `citizen:scripting:lua`  | Lua source code                                                                       |
-| **.net.dll** | `citizen:scripting:mono` | .NET assembly referencing [CitizenFX.Core](https://nuget.org/packages/CitizenFX.Core) |
+| **.net.dll** | `citizen:scripting:mono` | .NET assembly referencing [CitizenFX.Core.Client](https://nuget.org/packages/CitizenFX.Core.Client) |
 | **.js**      | `citizen:scripting:v8`   | JavaScript source code (client only)                                                  |
 
 ### server_script
 
-{{% alert color="success" title="Note" %}}This directive supports globbing.{{% /alert %}}
+{{% alert color="success" title="Note" %}}This directive supports globbing. Reference [CitizenFX.Core.Server](https://nuget.org/packages/CitizenFX.Core.Server) for a .NET assembly.{{% /alert %}}
 
 Defines a script to be loaded on the server. The extension determines which script loader will handle the file, as with [client_script](#client-script "wikilink").
 
@@ -144,7 +144,7 @@ Defines a global function to be [exported](#export "wikilink") by a server scrip
 
 ### ui_page
 
-Sets the resource's [NUI](NUI "wikilink") page to the defined file. This file (along with its dependencies) has to be referenced using [files](#file "wikilink").
+Sets the resource's [NUI]({{< ref "/docs/scripting-manual/nui-development/full-screen-nui.md" >}}) page to the defined file. This file (along with its dependencies) has to be referenced using [files](#file "wikilink").
 
 ```lua
 ui_page 'html/index.html'
@@ -320,4 +320,4 @@ By default, no manifest version is used, which is equivalent to manifest GUID `0
 ### Manifest version 05cfa83c-a124-4cfa-a768-c24a5811d8f9 (2017-06-04)
 
 -   Scripts will now be registered as a game network script. This is required for networking entities.
--   [CREATE_VEHICLE](n:AF35D0D2583051B0 "wikilink") and similar functions behave differently when passing `true, true` as network object flags. See [network objects](network_objects "wikilink") for more information.
+-   {{<native_link "CREATE_VEHICLE">}} and similar functions behave differently when passing `true, true` as network object flags. See [network objects](network_objects "wikilink") for more information.
