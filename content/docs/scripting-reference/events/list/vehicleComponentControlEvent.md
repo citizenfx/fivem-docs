@@ -3,7 +3,7 @@ title: vehicleComponentControlEvent
 weight: 551
 ---
 
-Called when a player takes control of a vehicle's component.
+This native is a server side native which requires [Onesync](https://forum.cfx.re/t/the-onesync-eap-and-you/165931) enabled to run it. It gets triggered when a ped takes control of a vehicle's component.
 
 Parameters
 ----------
