@@ -122,5 +122,5 @@ get in touch with us on our [forums][forum] or on [Discord][discord].
 </div>
 
 [home]: https://fivem.net/
-[forum]: https://forum.fivem.net/
-[discord]: https://discord.gg/GtvkUsc
+[forum]: https://forum.cfx.re
+[discord]: https://discord.gg/fivem
