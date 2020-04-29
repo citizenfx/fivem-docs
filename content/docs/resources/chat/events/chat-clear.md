@@ -34,3 +34,10 @@ RegisterCommand("clear", new Action<int, List<object>, string>(source, args, raw
     TriggerEvent("chat:clear")
 }, false);
 ```
+
+##### JavaScript Example:
+```javascript
+RegisterCommand('clear', (source, args) => {
+    emit('chat:clear');
+}, false);
+```
