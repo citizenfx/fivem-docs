@@ -21,3 +21,6 @@ Onesync events
 - [weaponDamageEvent](../list/weaponDamageEvent)
 - [vehicleComponentControlEvent](../list/vehicleComponentControlEvent)
 - [respawnPlayerPedEvent](../list/respawnPlayerPedEvent)
+- [explosionEvent](../list/explosionEvent)
+- [entityCreated](../list/entityCreated)
+- [entityCreating](../list/entityCreating)
