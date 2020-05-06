@@ -97,6 +97,17 @@ sets Discord "Your discord link here"
 This will look something like this on the server info page:
 ![](https://i.imgur.com/bBi2K43.png)
 
+Another example is the new feed section in servers list. You can now use:
+```yaml
+sets activitypubFeed REPLACE_THIS_WITH_YOUR_USER_NAME@mstdn.social
+```
+at server.cfg to link your mastodon.social account with your fivem server. This will allow you to stay in touch with your community via the feed section (it should look like this):
+![](https://i.imgur.com/g3J0iP9.png)
+
+As well as it will show all of your posts to the players who previously joined your server on their fivem main menu (it should look like this):
+![](https://i.imgur.com/UUUxheD.png)
+
+
 ### Using resources
 ```lua
 SetConvarServerInfo("convar_name", "Convar Value")
