@@ -24,3 +24,9 @@ Onesync events
 - [explosionEvent](../list/explosionEvent)
 - [entityCreated](../list/entityCreated)
 - [entityCreating](../list/entityCreating)
+
+
+Onesync Bigmode/infinity events
+-----------
+- [playerEnteredScope](../list/playerEnteredScope)
+- [playerLeftScope](../list/playerLeftScope)
