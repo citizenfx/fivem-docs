@@ -18,7 +18,7 @@ string spawnString
 
 ### Required Arguments
 
-- **spawnString** A normal *spawn* object in JSON format
+- **spawnString** An array of *spawn* objects in JSON format
 
 ##### Example
 
