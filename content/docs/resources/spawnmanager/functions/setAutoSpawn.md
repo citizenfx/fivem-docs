@@ -5,9 +5,11 @@ title: setAutoSpawn
 ## About
 This export allows you to change the auto-spawning flag. 
 
-When this is enabled, players will be automatically spawned after the loading screen. They will also be automatically respawned with a 2 second cooldown. To instantly and forcefully respawn the player without the cooldown, use [forceRespawn](./functions/forceRespawn).
+When this is enabled, players will be automatically spawned upon joining the server at a random spawnpoint. After dying, they will also be respawned after 2 seconds. To instantly and forcefully respawn the player without the cooldown, use [forceRespawn](./functions/forceRespawn).
 
-If the auto-spawning flag is disabled, you will have to manually spawn players when they first log in and also manually respawn players when they die, could be useful in an environment where you don't want instant respawn. 
+To determine which spawn point to use in auto-spawning, use [setAutoSpawnCallback](./functions/setAutoSpawnCallback).
+
+If auto-spawning is disabled, you have to manually call [spawnPlayer](./functions/spawnPlayer).
 
 ## Name
 ```
