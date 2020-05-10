@@ -31,7 +31,6 @@ local mySpawnPoint = exports.spawnmanager:addSpawnPoint({
     y = 197.7201,
     x = 466.8401,
     heading = 291.71,
-    idx = 6,
     model = 1631478380
 })
 
