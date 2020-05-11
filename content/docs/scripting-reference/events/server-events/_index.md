@@ -14,7 +14,7 @@ These events are part of FiveM and do not require any resource.
 - [rconCommand](../list/rconCommand)
 - [playerDropped](../list/playerDropped)
 - [playerConnecting](../list/playerConnecting)
-
+- [onResourceListRefresh](../list/onResourceListRefresh)
 
 Onesync events
 -----------
@@ -24,6 +24,7 @@ Onesync events
 - [explosionEvent](../list/explosionEvent)
 - [entityCreated](../list/entityCreated)
 - [entityCreating](../list/entityCreating)
+- [entityRemoved](../list/entityRemoved)
 
 
 Onesync Bigmode/infinity events
