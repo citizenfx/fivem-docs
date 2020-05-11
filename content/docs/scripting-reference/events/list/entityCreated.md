@@ -18,7 +18,7 @@ int entity
 Examples
 --------
 ##### Lua Example:
-This example triggers a message once an entity gets triggered saying by who it was created/requested.
+This example triggers a message once an entity gets created saying by who it was created/requested.
 ```lua
 AddEventHandler("entityCreated",  function(entity)
   local owner = NetworkGetEntityOwner(entity)
