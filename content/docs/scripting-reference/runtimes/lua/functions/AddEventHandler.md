@@ -25,7 +25,7 @@ Don't forget to [RegisterNetEvent][]!
 AddEventHandler('eventName', function(text)
   print(('I just received %s from %i'):format(text, source)) -- I just received Hello world! from (player id)
   -- source is a global variable (Player's id)
-end
+end)
 ```
 -- CLIENT
 ```lua
