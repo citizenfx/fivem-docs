@@ -20,6 +20,11 @@ RegisterNetEvent(string eventName)
 Examples
 --------
 
-TODO
+```lua
+RegisterNetEvent('eventName')
+AddEventHandler('eventName', function(...)
+  print('Event fired')
+end)
+```
 
 [AddEventHandler]: /docs/scripting-reference/runtimes/lua/functions/AddEventHandler
