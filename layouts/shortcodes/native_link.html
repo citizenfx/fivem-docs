@@ -1,14 +1,14 @@
 {{ $name := .Get 0 }}
 {{ $natives := getJSON "https://runtime.fivem.net/doc/natives.json" }}
-{{ $native := 0 }}
+{{ $nativeHash := 0 }}
 {{ range $natives }}
 {{ range . }}
 {{ if (eq .name $name) }}
-{{ $native = . }}
+{{ $nativeHash = .hash }}
 {{ end }}
 {{ if (in .aliases $name) }}
-{{ $native = . }}
+{{ $nativeHash = .hash }}
 {{ end }}
 {{ end }}
 {{ end }}
-{{ (print "[" $name "](https://runtime.fivem.net/doc/natives/#_" $native.hash ")") | markdownify }}
+{{ (print "[" $name "](https://runtime.fivem.net/doc/natives/?_" $nativeHash ")") | markdownify }}
