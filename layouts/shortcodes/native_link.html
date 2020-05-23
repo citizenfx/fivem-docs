@@ -1,14 +1,31 @@
 {{ $name := .Get 0 }}
 {{ $natives := getJSON "https://runtime.fivem.net/doc/natives.json" }}
-{{ $native := 0 }}
+{{ $cfxNatives := getJSON "https://runtime.fivem.net/doc/natives_cfx.json" }}
+{{ $nativeHash := 0 }}
 {{ range $natives }}
-{{ range . }}
-{{ if (eq .name $name) }}
-{{ $native = . }}
+    {{ range . }}
+        {{ if (eq .name $name) }}
+            {{ $nativeHash = .hash }}
+        {{ end }}
+
+        {{ if (in .aliases $name) }}
+            {{ $nativeHash = .hash }}
+        {{ end }}
+    {{ end }}
 {{ end }}
-{{ if (in .aliases $name) }}
-{{ $native = . }}
+
+{{ if eq $nativeHash 0 }}
+    {{ range $cfxNatives }}
+        {{ range . }}
+            {{ if (eq .name $name) }}
+                {{ $nativeHash = .hash }}
+            {{ end }}
+
+            {{ if (in .aliases $name) }}
+                {{ $nativeHash = .hash }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
 {{ end }}
-{{ end }}
-{{ end }}
-{{ (print "[" $name "](https://runtime.fivem.net/doc/natives/#_" $native.hash ")") | markdownify }}
+
+{{ (print "[" $name "](https://runtime.fivem.net/doc/natives/?_" $nativeHash ")") | markdownify }}
