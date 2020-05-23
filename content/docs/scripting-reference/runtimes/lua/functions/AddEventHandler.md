@@ -18,6 +18,18 @@ AddEventHandler(string eventName, function callback)
 Examples
 --------
 
-TODO
+-- SERVER
 
-[listening-for-events]: /guides/listening-for-events
+Don't forget to [RegisterNetEvent][]!
+```lua
+AddEventHandler('eventName', function(text)
+  print(('I just received %s from %i'):format(text, source)) -- I just received Hello world! from (player id)
+  -- source is a global variable (Player's id)
+end)
+```
+-- CLIENT
+```lua
+TriggerServerEvent('eventName', 'Hello world!')
+```
+[listening-for-events]: /docs/scripting-manual/working-with-events/listening-for-events/
+[RegisterNetEvent]: /docs/scripting-reference/runtimes/lua/functions/RegisterNetEvent/
