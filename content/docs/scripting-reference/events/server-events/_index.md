@@ -18,6 +18,7 @@ These events are part of FiveM and do not require any resource.
 
 OneSync events
 -----------
+
 - [weaponDamageEvent](../list/weaponDamageEvent)
 - [vehicleComponentControlEvent](../list/vehicleComponentControlEvent)
 - [respawnPlayerPedEvent](../list/respawnPlayerPedEvent)
@@ -26,8 +27,8 @@ OneSync events
 - [entityCreating](../list/entityCreating)
 - [entityRemoved](../list/entityRemoved)
 
-
 OneSync Bigmode/infinity events
 -----------
+
 - [playerEnteredScope](../list/playerEnteredScope)
 - [playerLeftScope](../list/playerLeftScope)
