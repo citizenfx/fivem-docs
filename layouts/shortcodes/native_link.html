@@ -7,6 +7,7 @@
         {{ if (eq .name $name) }}
             {{ $nativeHash = .hash }}
         {{ end }}
+
         {{ if (in .aliases $name) }}
             {{ $nativeHash = .hash }}
         {{ end }}
