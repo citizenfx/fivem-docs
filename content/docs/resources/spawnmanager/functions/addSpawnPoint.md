@@ -32,9 +32,9 @@ Examples
 ##### Lua Example:
 ```lua
 local mySpawnPoint = exports.spawnmanager:addSpawnPoint({
-    z = 111.5291,
-    y = 197.7201,
     x = 466.8401,
+    y = 197.7201,
+    z = 466.8401,
     heading = 291.71,
     model = GetHashKey('a_m_m_farmer_01'),
     skipFade = false
