@@ -21,4 +21,16 @@ TriggerClientEvent(string eventName, int playerId[, ...])
 Examples
 --------
 
-TODO
+-- CLIENT
+
+Don't forget to [RegisterNetEvent][]!
+```lua
+AddEventHandler('eventName', function(text)
+  print(('I just received %s from the server'):format(text)) -- I just received Hello world! from the server
+end)
+```
+-- SERVER
+```lua
+TriggerClientEvent('eventName', playerId, 'Hello world!')
+```
+[RegisterNetEvent]: /docs/scripting-reference/runtimes/lua/functions/RegisterNetEvent/
