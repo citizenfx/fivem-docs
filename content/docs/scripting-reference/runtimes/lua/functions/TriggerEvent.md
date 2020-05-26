@@ -26,7 +26,6 @@ TriggerEvent('eventName', 'Hello world!')
 ```
 Server
 ```lua
-RegisterNetEvent('eventName')
 AddEventHandler('eventName', function(text)
   print(('I just received %s'):format(text)) -- I just received Hello world!
 end)
