@@ -4,6 +4,22 @@ title: GetPlayerIdentifiers
 
 Returns a table containing all of the player’s identifiers.
 
+**Never try to get identifiers based on their index. Identifier positions MAY vary!!!!**
+
+Table structure & all possible identifiers
+------
+```
+{
+    'fivem:<id>',
+    'license:<license>',
+    'steam:<hex steam id>',
+    'ip:<ip>',
+    'live:<id>',
+    'xbl:<id>',
+    'discord:<id>',
+}
+```
+
 Syntax
 ------
 
@@ -17,32 +33,23 @@ GetPlayerIdentifiers(Player player)
 Examples
 --------
 
-Check for all possible identifiers using this method;  works well when triggered by playerConnecting event.
+Function that iterates user's current identifiers from GetPlayerIdentifiers() and return's them in usable table.
+If an identifier is not present it will not be in the returned table. You can also check if user is missing any identifier by doing
+`if  not GetAllIdentifiers(source).discord then`
 
 ```lua
-    local steamid  = false
-    local license  = false
-    local discord  = false
-    local xbl      = false
-    local liveid   = false
-    local ip       = false
+function GetAllIdentifiers(player)
+    local identifiers = {}
+    for i = 0, GetNumPlayerIdentifiers(player) - 1 do
+        local raw = GetPlayerIdentifier(player, i)
+        local source, value = raw:match("^([^:]+):(.+)$")
+        if source and value then
+            identifiers[source] = value
+        end
+    end
+    return identifiers
+end
 
-  for k,v in pairs(GetPlayerIdentifiers(source))do
-    print(v)
-        
-      if string.sub(v, 1, string.len("steam:")) == "steam:" then
-        steamid = v
-      elseif string.sub(v, 1, string.len("license:")) == "license:" then
-        license = v
-      elseif string.sub(v, 1, string.len("xbl:")) == "xbl:" then
-        xbl  = v
-      elseif string.sub(v, 1, string.len("ip:")) == "ip:" then
-        ip = v
-      elseif string.sub(v, 1, string.len("discord:")) == "discord:" then
-        discord = v
-      elseif string.sub(v, 1, string.len("live:")) == "live:" then
-        liveid = v
-      end
-    
-  end
+local identifiers = GetAllIdentifiers(player)
+print(identifiers.discord) -- Will print the discord id for example (511108466056626188), if player doesn't have the discord identifier it will print nil
 ```
