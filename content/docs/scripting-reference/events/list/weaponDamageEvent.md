@@ -76,11 +76,11 @@ Examples
 ##### Lua Example:
 ```lua
 AddEventHandler("weaponDamageEvent",  function(source, weapondamage)
-    print(weaponDamage["weaponType"]) --[[the index is equal to the parameter you want to get.]]
+    print(weapondamage["weaponType"]) --[[the index is equal to the parameter you want to get.]]
 end)
 -- another example to get the weapon damage
 AddEventHandler("weaponDamageEvent",  function(source, weapondamage)
-    print(weaponDamage["weaponDamage"]) --[[prints integer]]
+    print(weapondamage["weaponDamage"]) --[[prints integer]]
 end)
 
 ```
