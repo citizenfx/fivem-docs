@@ -30,7 +30,7 @@ string spawnString
             y: 197.7201,
             z: 111.5291,
             heading: 291.71,
-            model: 1631478380
+            model: 'a_m_m_farmer_01'
         }
     ]
 }

@@ -36,7 +36,7 @@ local mySpawnPoint = exports.spawnmanager:addSpawnPoint({
     y = 197.7201,
     z = 466.8401,
     heading = 291.71,
-    model = GetHashKey('a_m_m_farmer_01'),
+    model = 'a_m_m_farmer_01',
     skipFade = false
 })
 
