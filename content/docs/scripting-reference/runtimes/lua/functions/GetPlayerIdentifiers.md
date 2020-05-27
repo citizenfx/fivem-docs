@@ -4,7 +4,7 @@ title: GetPlayerIdentifiers
 
 Returns a table containing all of the player’s identifiers.
 
-**Never try to get identifiers based on their index. Identifier positions MAY vary!!!!**
+**Never try to get identifiers based on their index. Identifier positions WILL vary!!!!**
 
 Table structure & all possible identifiers
 ------
