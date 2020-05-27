@@ -5,7 +5,7 @@ weight: 551
 
 This native is a server side native which requires [OneSync](https://forum.cfx.re/t/the-onesync-eap-and-you/165931) enabled to run it. It gets triggered when damage occurs between two entity using a weapon.
 
-Parameters
+c
 ----------
 
 ```
@@ -75,5 +75,13 @@ Examples
 --------
 ##### Lua Example:
 ```lua
--- TO DO
+AddEventHandler("weaponDamageEvent",  function(source, weapondamage)
+    print(weaponDamage["weaponType"]) --[[the index is equal to the parameter you want to get.]]
+end)
+-- another example to get the weapon damage
+AddEventHandler("weaponDamageEvent",  function(source, weapondamage)
+    print(weaponDamage["weaponDamage"]) --[[prints integer]]
+end)
+
 ```
+Another point to add is that the event is triggered twice. once for the person who dealt the damage, and once for the person who took the damage. The person who did the damage is the one you want
