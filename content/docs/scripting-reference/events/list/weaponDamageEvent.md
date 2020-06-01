@@ -74,14 +74,16 @@ tyreIndex = 0 to 4 on normal vehicles
 Examples
 --------
 ##### Lua Example:
+To get the parameter from the weapon damage we index the weapondamage table with the parameter we want to get.
+For example if I wanted to get the damage given I would do:
 ```lua
 AddEventHandler("weaponDamageEvent",  function(source, weapondamage)
-    print(weapondamage["weaponType"]) --[[the index is equal to the parameter you want to get.]]
+    print(weapondamage["weaponDamage"]) --[[prints integer of the damage given]]
 end)
--- another example to get the weapon damage
-AddEventHandler("weaponDamageEvent",  function(source, weapondamage)
-    print(weapondamage["weaponDamage"]) --[[prints integer]]
-end)
-
 ```
-Another point to add is that the event is triggered twice. once for the person who dealt the damage, and once for the person who took the damage. The person who did the damage is the one you want
+Another example to get the weaponType:
+```lua
+AddEventHandler("weaponDamageEvent",  function(source, weapondamage)
+    print(weapondamage["weaponType"])
+end)
+```
