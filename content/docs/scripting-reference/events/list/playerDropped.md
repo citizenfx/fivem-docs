@@ -22,7 +22,7 @@ This example prints the name of the player and the reason why the player has dis
 ```lua
 -- source is global here, don't add to function
 AddEventHandler('playerDropped', function (reason)
-  print('Player ' .. GetPlayerName(source) .. ' dropped (Reason: ' .. reason .. '')
+  print('Player ' .. GetPlayerName(source) .. ' dropped (Reason: ' .. reason .. ')')
 end)
 ```
 
