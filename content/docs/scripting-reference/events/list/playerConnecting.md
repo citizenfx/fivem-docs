@@ -149,10 +149,11 @@ AddEventHandler("playerConnecting", OnPlayerConnecting)
 on('playerConnecting', (name, setKickReason, deferrals) => {
     deferrals.defer()
 
+    const player = global.source;
+
     setTimeout(() => {
         deferrals.update(`Hello ${name}. Your steam ID is being checked.`)
 
-        const player = global.source;
         let steamIdentifier = null;
 
         for (let i = 0; i < GetNumPlayerIdentifiers(player); i++) {
