@@ -121,6 +121,6 @@ get in touch with us on our [forums][forum] or on [Discord][discord].
   </div>
 </div>
 
-[home]: https://fivem.net/
+[home]: https://fivem.net
 [forum]: https://forum.cfx.re
 [discord]: https://discord.gg/fivem

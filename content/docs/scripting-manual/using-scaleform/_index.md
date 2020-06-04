@@ -85,7 +85,7 @@ Useful links
 
 - ~~[Official AS2 reference](http://help.adobe.com/en_US/AS2LCR/Flash_10.0/help.html?content=Part2_AS2_LangRef_1.html)~~
 - [AS2 reference](http://demo.ligams.free.fr/AS2LR/)
-- [Extra Scaleform documentation](https://forum.fivem.net/t/scaleforms/99874)
+- [Extra Scaleform documentation](https://forum.cfx.re/t/99874)
 
 Extra Information
 ------------

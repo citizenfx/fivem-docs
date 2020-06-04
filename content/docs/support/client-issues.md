@@ -107,8 +107,8 @@ For all other issues, you are more than welcome to join our [Discord][discord] a
 [where-is-fivem-installed]: /docs/support/client-faq#where-is-fivem-installed
 [disabling-antivirus]: /docs/client-manual/disabling-antivirus
 [email]: mailto:support@fivem.net
-[forum]: https://forum.fivem.net/
-[discord]: https://discord.gg/GtvkUsc
+[forum]: https://forum.cfx.re
+[discord]: https://discord.gg/fivem
 [vanilla-server]: https://servers.fivem.net/#/servers/detail/198.27.79.239:30120
 [uninstalling]: /docs/client-manual/installing-fivem#uninstalling
-[discrete-gpu]: https://forum.fivem.net/t/solution-forcing-fivem-to-use-your-discrete-gpu-infinite-loading-fix/217731
+[discrete-gpu]: https://forum.cfx.re/t/217731
