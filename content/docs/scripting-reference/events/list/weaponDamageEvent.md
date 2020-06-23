@@ -74,6 +74,10 @@ tyreIndex = 0 to 4 on normal vehicles
 Examples
 --------
 ##### Lua Example:
+
+Exemple to print damage source and weapon hash used to cause damage
 ```lua
--- TO DO
+AddEventHandler("weaponDamageEvent", function(source, table)
+  print(source, table.weaponType)
+end)
 ```
