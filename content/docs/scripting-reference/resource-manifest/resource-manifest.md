@@ -281,6 +281,10 @@ The resource manifest has to specify a particular FXv2 version for the resource 
 
 Each manifest version includes all features from manifest versions above, except where they would overrule one another, in which case the latest version is used.
 
+### FX version `cerulean` (2020-05)
+
+-   Requires `https://` callbacks but supporting WASM and fetch
+
 ### FX version `bodacious` (2020-02)
 
 -   Implies `clr_disable_task_scheduler` being specified for server library compatibility.
