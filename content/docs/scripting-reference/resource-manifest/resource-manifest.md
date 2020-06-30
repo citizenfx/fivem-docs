@@ -283,7 +283,7 @@ Each manifest version includes all features from manifest versions above, except
 
 ### FX version `cerulean` (2020-05)
 
--   Requires `https://` callbacks but supporting WASM and fetch
+-   Requires `https://` callbacks but supporting WASM and fetch.
 
 ### FX version `bodacious` (2020-02)
 
