@@ -1,0 +1,18 @@
+{{ $id := .Get 0 }}
+{{ $topic := getJSON (printf "https://forum.cfx.re/t/%s.json" $id) }}
+{{ $pid := ((index $topic.post_stream.posts 0).id | int) }}
+{{ $post := getJSON (printf "https://forum.cfx.re/posts/%v.json" $pid) }}
+
+<em>A <a href="https://forum.cfx.re/p/{{$pid}}">community post</a> by <a href="https://forum.cfx.re/u/{{$post.username}}"><img src="https://forum.cfx.re{{replace $post.avatar_template "{size}" "32"}}" class="inline" width="22" height="22" style="border-radius: 50%;vertical-align:middle; display: inline-block;">{{ $post.username }}</a>, last updated on {{ dateFormat "January 2, 2006" $post.updated_at }}</em>
+
+<hr>
+
+<div class="forumPost">
+{{ (replace $post.cooked "<details" "<details open ") | safeHTML }}
+</div>
+
+<style type="text/css">
+    .forumPost .meta {
+        display: none;
+    }
+</style>
