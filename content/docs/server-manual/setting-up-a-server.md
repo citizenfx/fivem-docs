@@ -12,6 +12,8 @@ FXServer is the name of the current CitizenFX server version. This page shows yo
 
 Having trouble running your server? Visit [server issues][server-issues], use the Discord [#fxserver-support][fxserver-support] channel or create a topic in the [Server Discussion][fxserver-support-category] sub-category on the forum.
 
+You have the choice to **rent a pre-built server** with an administration web interface from our partner ZAP-Hosting at <https://zap-hosting.com/fivem2> and support the project or install it on your computer or a **VPS/dedicated server of any hosting provider**, follow the steps below:
+
 Windows
 -------
 
