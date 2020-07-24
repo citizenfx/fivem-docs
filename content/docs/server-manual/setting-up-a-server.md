@@ -23,7 +23,7 @@ Windows
 1. Create a new directory (for example `D:\FXServer\server`), this will be used for the server binaries.
 2. Download the latest `master` branch build for Windows from the [artifacts server][windows-artifacts].
 3. Extract the build into the directory previously created.
-  <br>3b. Use any archiving tool (such as WinRAR or 7-Zip).
+  <br>3b. Use any archiving tool (such as WinRAR or 7-Zip or PowerShell's Expand-Archive cmdlet).
 4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder, for example, `D:\FXServer\server-data`.
   <br>4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
 5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfgexample) file below into that file).
