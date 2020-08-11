@@ -39,7 +39,7 @@ int damageType, int weaponType, bool overrideDefaultDamage, bool hitEntityWeapon
 - **f116**: Unknown.
 - **f104**: Unknown.
 - **weaponDamage**: damage caused by the weapon.
-- **f135**: Unknown.
+- **f135**: parentGlobalId is the attacker (?).
 - **f48**: Unknown.
 - **f52**: Unknown.
 - **f56**: Unknown.
@@ -75,5 +75,13 @@ Examples
 --------
 ##### Lua Example:
 ```lua
--- TO DO
+AddEventHandler("weaponDamageEvent", function(...)
+	local args = {...}
+	local sourceIsAttacker = args.f135
+	if sourceIsAttacker and args.willKill then
+		local attacker = args.parentGlobalId
+		local victim = args.hitGlobalId
+		TriggerClientEvent("chatMessage", -1, {color = {255, 255, 255}, args = GetPlayerName(attacker).." killed "..GetPlayerName(victim)})
+	end
+end)
 ```
