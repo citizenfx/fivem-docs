@@ -10,6 +10,7 @@ weight: 514
 - [Citizen.CreateThread](/docs/scripting-reference/runtimes/lua/functions/Citizen.CreateThread)
 - [Citizen.SetTimeout](/docs/scripting-reference/runtimes/lua/functions/Citizen.SetTimeout)
 - [Citizen.Trace](/docs/scripting-reference/runtimes/lua/functions/Citizen.Trace)
+- [quat](/docs/scripting-reference/runtimes/lua/functions/quat)
 - [RegisterNetEvent](/docs/scripting-reference/runtimes/lua/functions/RegisterNetEvent)
 - [RegisterNUICallback](/docs/scripting-reference/runtimes/lua/functions/RegisterNUICallback)
 - [RemoveEventHandler](/docs/scripting-reference/runtimes/lua/functions/RemoveEventHandler)
