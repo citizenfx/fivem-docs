@@ -15,7 +15,10 @@ as DOM, localStorage, IndexedDB, WebGL, etc.**
 Using natives
 -------------
 Native commands are mapped to global JavaScript functions with names similar to the Lua natives mapping. Definitions for
-them are located at `path\to\fivem\FiveM.app\citizen\scripting\v8\natives_universal.d.ts`
+them are located at `path\to\fivem\FiveM.app\citizen\scripting\v8\natives_universal.d.ts`.
+
+For automatic completion of the FiveM API methods and mapped native functions we recommend using the official NPM packages
+[@citizenfx/client][npmclient] and [@citizenfx/server][npmserver], respectively.
 
 Example:
 
@@ -77,6 +80,9 @@ Definitions for the FiveM JavaScript API are available as TypeScript definition 
 found at `path\to\fivem\FiveM.app\citizen\scripting\v8\natives_universal.d.ts`, which will allow your
 editor to provide automatic completion of the FiveM API methods and mapped native functions.
 
+For typings use the official NPM packages [@citizenfx/client][npmclient] and [@citizenfx/server][npmserver].
+These packages are also recommended for automatic completion.
+
 Gotchas
 -------
 
@@ -131,3 +137,5 @@ See [Scripting reference][scriptreflink] for example usage of these functions.
 [scriptreflink]: /docs/scripting-reference/runtimes/javascript
 [deplink]: /docs/scripting-reference/resource-manifest/resource-manifest#dependency
 [nodejs]: https://github.com/citizenfx/node
+[npmclient]: https://www.npmjs.com/package/@citizenfx/client
+[npmserver]: https://www.npmjs.com/package/@citizenfx/server
