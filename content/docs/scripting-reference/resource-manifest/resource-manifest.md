@@ -49,7 +49,7 @@ Support for globbing is specified under each entry type.
 Resource manifest entries
 -------------------------
 
-A list of built-in resource manifest entries follows. A resource can also contain custom metadata entries, which can be obtained using [GetNumResourceMetadata](https://runtime.fivem.net/doc/natives/?_0x776E864) and [GetResourceMetadata](https://runtime.fivem.net/doc/natives/?_0x964BAB1D).
+A list of built-in resource manifest entries follows. A resource can also contain custom metadata entries, which can be obtained using [GetNumResourceMetadata]({{<native "GET_NUM_RESOURCE_METADATA">}}) and [GetResourceMetadata]({{<native "GET_RESOURCE_METADATA">}}).
 
 ### fx_version
 
@@ -75,25 +75,25 @@ Defines the supported functionality for the resource. This has to be one of a sp
 
 {{% alert color="success" title="Note" %}}This directive supports globbing.{{% /alert %}}
 
-Defines a script to be loaded on the client, and implicitly adds the [file](#file "wikilink") to the resource packfile. The extension determines which script loader will handle the file:
+Defines a script to be loaded on the client, and implicitly adds the file to the resource packfile. The extension determines which script loader will handle the file:
 
 |  Extension   |       File handler       |                                        Meaning                                        |
 | ------------ | ------------------------ | ------------------------------------------------------------------------------------- |
 | **.lua**     | `citizen:scripting:lua`  | Lua source code                                                                       |
-| **.net.dll** | `citizen:scripting:mono` | .NET assembly referencing [CitizenFX.Core](https://nuget.org/packages/CitizenFX.Core) |
+| **.net.dll** | `citizen:scripting:mono` | .NET assembly referencing [CitizenFX.Core.Client](https://nuget.org/packages/CitizenFX.Core.Client) |
 | **.js**      | `citizen:scripting:v8`   | JavaScript source code (client only)                                                  |
 
 ### server_script
 
-{{% alert color="success" title="Note" %}}This directive supports globbing.{{% /alert %}}
+{{% alert color="success" title="Note" %}}This directive supports globbing. Reference [CitizenFX.Core.Server](https://nuget.org/packages/CitizenFX.Core.Server) for a .NET assembly.{{% /alert %}}
 
-Defines a script to be loaded on the server. The extension determines which script loader will handle the file, as with [client_script](#client-script "wikilink").
+Defines a script to be loaded on the server. The extension determines which script loader will handle the file, as with [client_script](/docs/scripting-reference/resource-manifest/resource-manifest/#client-script).
 
 ### shared_script
 
 {{% alert color="success" title="Note" %}}This directive supports globbing.{{% /alert %}}
 
-Defines a script to be loaded on both sides, and adds the file to the resource packfile. The extension determines which script loader will handle the file, as with [client_script](#client-script "wikilink").
+Defines a script to be loaded on both sides, and adds the file to the resource packfile. The extension determines which script loader will handle the file, as with [client_script](/docs/scripting-reference/resource-manifest/resource-manifest/#client-script).
 
 ### export
 
@@ -140,11 +140,11 @@ int widget = Exports["myresource"].getWidget();
 
 ### server_export
 
-Defines a global function to be [exported](#export "wikilink") by a server script.
+Defines a global function to be [exported](/docs/scripting-reference/resource-manifest/resource-manifest/#export) by a server script.
 
 ### ui_page
 
-Sets the resource's [NUI](NUI "wikilink") page to the defined file. This file (along with its dependencies) has to be referenced using [files](#file "wikilink").
+Sets the resource's [NUI]({{< ref "/docs/scripting-manual/nui-development/full-screen-nui.md" >}}) page to the defined file. This file (along with its dependencies) has to be referenced using [files](/docs/scripting-reference/resource-manifest/resource-manifest/#file).
 
 ```lua
 ui_page 'html/index.html'
@@ -165,7 +165,7 @@ Loads the specified level meta in the resource after the primary level meta.
 
 ### replace_level_meta
 
-Replaces the <abbr title="CDataFileMgr__ContentsOfDataFileXml">level meta</abbr> (usually `common:/data/levels/gta5/gta5.meta`) with the specified file in the resource. This has to be referenced using [files](#file "wikilink").
+Replaces the <abbr title="CDataFileMgr__ContentsOfDataFileXml">level meta</abbr> (usually `common:/data/levels/gta5/gta5.meta`) with the specified file in the resource. This has to be referenced using [files](/docs/scripting-reference/resource-manifest/resource-manifest/#file).
 
 ```lua
 replace_level_meta 'mymap'
@@ -233,9 +233,9 @@ Requires the specified resource to load before the current resource.
 dependency 'myresource-base'
 ```
 
-### dependencie
+### dependencies
 
-Alias for [dependency](#dependency "wikilink"). This is not a typo, but rather an intentional alias specifically for pluralization.
+Alias for [dependency](/docs/scripting-reference/resource-manifest/resource-manifest/#dependency). This is not a typo, but rather an intentional alias specifically for pluralization.
 
 ```lua
 dependencies {
@@ -281,6 +281,10 @@ The resource manifest has to specify a particular FXv2 version for the resource 
 
 Each manifest version includes all features from manifest versions above, except where they would overrule one another, in which case the latest version is used.
 
+### FX version `cerulean` (2020-05)
+
+-   Requires `https://` callbacks but supporting WASM and fetch.
+
 ### FX version `bodacious` (2020-02)
 
 -   Implies `clr_disable_task_scheduler` being specified for server library compatibility.
@@ -320,4 +324,4 @@ By default, no manifest version is used, which is equivalent to manifest GUID `0
 ### Manifest version 05cfa83c-a124-4cfa-a768-c24a5811d8f9 (2017-06-04)
 
 -   Scripts will now be registered as a game network script. This is required for networking entities.
--   [CREATE_VEHICLE](n:AF35D0D2583051B0 "wikilink") and similar functions behave differently when passing `true, true` as network object flags. See [network objects](network_objects "wikilink") for more information.
+-   {{<native_link "CREATE_VEHICLE">}} and similar functions behave differently when passing `true, true` as network object flags.
