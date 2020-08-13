@@ -30,3 +30,8 @@ TriggerEvent('chat:removeSuggestion', '/command')
 ```csharp
 TriggerEvent("chat:removeSuggestion", "/command");
 ```
+
+##### JavaScript Example:
+```javascript
+emit('chat:removeSuggestion', '/command');
+```

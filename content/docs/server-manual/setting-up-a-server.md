@@ -86,4 +86,4 @@ What's next?
 [scripting-introduction]: /docs/scripting-manual/introduction
 
 [fxserver-support]: https://discord.gg/UwvVgsJ
-[fxserver-support-category]: https://forum.fivem.net/c/server-development/server-discussion
+[fxserver-support-category]: https://forum.cfx.re/c/server-development/server-discussion

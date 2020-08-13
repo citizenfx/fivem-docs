@@ -80,9 +80,9 @@ Please post a topic on the [forums][forum] so we can take a look at your issue.
 You can also join our [Discord][discord] and have a chat with us.
 
 [patreon]: https://patreon.com/fivem
-[forum]: https://forum.fivem.net/
-[discord]: https://discord.gg/GtvkUsc
+[forum]: https://forum.cfx.re/
+[discord]: https://discord.gg/fivem
 [pfsensenat]: https://www.netgate.com/docs/pfsense/nat/static-port.html
 [servercfg]: /docs/server-manual/setting-up-a-server/#a-name-servercfgexample-a-server-cfg
-[chat-formatting]: https://forum.fivem.net/t/chat-formatting-colors-bold-underline/67641
+[chat-formatting]: https://forum.cfx.re/t/67641
 [setting-up-server]: /docs/server-manual/setting-up-a-server

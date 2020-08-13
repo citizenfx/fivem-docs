@@ -29,7 +29,7 @@ Patreon
 Looking for another way to support our work? Find us on [Patreon][patreon].
 
 [developer-docs]: /docs/developers
-[discord]: https://discord.gg/GtvkUsc
+[discord]: https://discord.gg/fivem
 [server-data]: https://github.com/citizenfx/cfx-server-data
 [docs-rep]: https://github.com/citizenfx/fivem-docs
 [patreon]: https://patreon.com/fivem

@@ -6,6 +6,9 @@ layout: single
 
 **A list of all non-resource-specific events.**
 
+Core events
+-----------
+
 - [gameEventTriggered](./gameEventTriggered)
 - [onClientResourceStart](./onClientResourceStart)
 - [onClientResourceStop](./onClientResourceStop)
@@ -16,4 +19,20 @@ layout: single
 - [playerDropped](./playerDropped)
 - [populationPedCreating](./populationPedCreating)
 - [rconCommand](./rconCommand)
-- [rconCommand](./rconCommand)
+
+OneSync events
+-----------
+
+- [weaponDamageEvent](../list/weaponDamageEvent)
+- [vehicleComponentControlEvent](../list/vehicleComponentControlEvent)
+- [respawnPlayerPedEvent](../list/respawnPlayerPedEvent)
+- [explosionEvent](../list/explosionEvent)
+- [entityCreated](../list/entityCreated)
+- [entityCreating](../list/entityCreating)
+- [entityRemoved](../list/entityRemoved)
+
+OneSync Bigmode/infinity events
+-----------
+
+- [playerEnteredScope](../list/playerEnteredScope)
+- [playerLeftScope](../list/playerLeftScope)

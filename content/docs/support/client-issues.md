@@ -20,9 +20,8 @@ falsely banned from a server, contact the server owners. FiveM can not and will 
 I've been globally banned from FiveM
 ------------------------------------
 That's unfortunate, don't cheat.
-If you believe you've been falsely banned, please reach out to us on [support@fivem.net][email] with potential reasons
-that you might have been incorrectly banned. <br />
-**Please note that FiveM forum moderators or staff in the FiveM discord can _not_ assist you with this ban.**
+If you believe you've been falsely banned, you can fill out the ban report at https://forum.cfx.re/w/ban-report. This is **not a ban appeal**, but this data is used for structured collection of potential 'false positive' bans.<br />
+**Please note that you may not get a response and that FiveM forum/Discord moderators can _not_ assist you with your ban.**
 
 Could not find game executable
 ------------------------------
@@ -108,8 +107,8 @@ For all other issues, you are more than welcome to join our [Discord][discord] a
 [where-is-fivem-installed]: /docs/support/client-faq#where-is-fivem-installed
 [disabling-antivirus]: /docs/client-manual/disabling-antivirus
 [email]: mailto:support@fivem.net
-[forum]: https://forum.fivem.net/
-[discord]: https://discord.gg/GtvkUsc
+[forum]: https://forum.cfx.re
+[discord]: https://discord.gg/fivem
 [vanilla-server]: https://servers.fivem.net/#/servers/detail/198.27.79.239:30120
 [uninstalling]: /docs/client-manual/installing-fivem#uninstalling
-[discrete-gpu]: https://forum.fivem.net/t/solution-forcing-fivem-to-use-your-discrete-gpu-infinite-loading-fix/217731
+[discrete-gpu]: https://forum.cfx.re/t/217731

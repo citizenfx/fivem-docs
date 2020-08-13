@@ -56,7 +56,7 @@ on('__cfx_nui:getItemInfo', (data, cb) => {
 RegisterNuiCallbackType("getItemInfo"); // register the type
 
 // register the event handler with manual marshaling
-EventHandlers["__cfx_nui:getItemInfo"] += new Action<IDictionary<string, object>, Action<object>>((data, cb) =>
+EventHandlers["__cfx_nui:getItemInfo"] += new Action<IDictionary<string, object>, CallbackDelegate>((data, cb) =>
 {
     // get itemId from the object
     // alternately you could use `dynamic` and rely on the DLR
