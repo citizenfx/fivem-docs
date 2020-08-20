@@ -32,7 +32,7 @@ Windows
 8. Run the server from the `server-data` folder. For example, in a plain Windows command prompt (cmd.exe) window: 
     ```dos
     cd /d D:\FXServer\server-data
-    D:\FXServer\server\FXServer.exe +exec server.cfg
+    D:\FXServer\server\FXServer.exe
     ```
 
     (the `/d` flag is only needed when changing directory to somewhere on a different drive)
@@ -50,7 +50,7 @@ Linux
 6. Generate a license key at <https://keymaster.fivem.net>.
 7. Set the license key in your `server.cfg` using `sv_licenseKey "licenseKeyGoesHere"`.
 8. Run the server from the `server-data` folder.
-  <br>8b. `bash /home/username/FXServer/server/run.sh +exec server.cfg`
+  <br>8b. `bash /home/username/FXServer/server/run.sh`
 
 Common issues
 ---------------
