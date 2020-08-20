@@ -163,7 +163,8 @@ animal
 ```
 
 ### seta
-Set an archived variable on the client. Currently, archiving is not implemented.
+Set an archived variable on the client.  
+The variables are saved in `%AppData%\CitizenFX\fivem.cfg` and `%AppData%\CitizenFX\redm.cfg`.
 
 Usage: `seta <key> <value>`
 
