@@ -92,7 +92,22 @@ FiveM [application data directory][faq-data].
 
 ### cl_drawfps
 The `cl_drawfps` command will show reliably the frames per second.
+
 Usage: `cl_drawfps <true|false>`
+
+### cl_drawperf
+The `cl_drawperf` command will show the following performance metrics:
+
+| Name (Units)  | Description                                                            |
+|---------------|------------------------------------------------------------------------|
+| FPS           | *Frames Per Second:* How many frames are drawn on screen each second.  |
+| Ping (ms)     | How long it takes to get a response from the server (round trip time). |
+| PL (%)        | *Packet Loss:* How many packets failed to reach their destination.     |
+| CPU Usage (%) | How much of the CPU's computing power is being utilized.               |
+| GPU Usage (%) | How much of the GPU Engine's computing power is being utilized.        |
+| GPU Temp (°C) | The temperature of the GPU in Celsius.                                 |
+
+Usage: `cl_drawperf <true|false>`
 
 ### netgraph
 The `netgraph` command will give you real time metrics about the FiveM client network usage.
@@ -163,7 +178,8 @@ animal
 ```
 
 ### seta
-Set an archived variable on the client. Currently, archiving is not implemented.
+Set an archived variable on the client.  
+The variables are saved in `%AppData%\CitizenFX\fivem.cfg` and `%AppData%\CitizenFX\redm.cfg`.
 
 Usage: `seta <key> <value>`
 
