@@ -59,7 +59,7 @@ example:
 
 {{% alert color="warning" %}}
 **Note for txAdmin**<br />
-If you set the command on the command line, it will overwrite the state that txAdmin is setting the OneSync to.
+If you set the command on the command line, it will overwrite the state that txAdmin is setting the OneSync ConVar to.
 {{% /alert %}}
 
 **Windows**
