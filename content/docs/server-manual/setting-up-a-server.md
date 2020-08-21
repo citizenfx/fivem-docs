@@ -57,6 +57,11 @@ OneSync
 If you wish to run OneSync on your server, you will need to set the `onesync` ConVar on the command-line. To do so, simply append `+set onesync on` to your command-line, 
 example:
 
+{{% alert color="warning" %}}
+**Note for txAdmin**<br />
+If you set the command on the command line, it will overwrite the state that txAdmin is setting the OneSync to.
+{{% /alert %}}
+
 **Windows**
 ```dos
 FXServer.exe +exec server.cfg +set onesync on
@@ -64,7 +69,7 @@ FXServer.exe +exec server.cfg +set onesync on
 
 **Linux**
 ```sh
-run.sh +exer server.cfg +set onesync on
+run.sh +exec server.cfg +set onesync on
 ```
 
 Common issues
