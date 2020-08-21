@@ -52,6 +52,21 @@ Linux
 8. Run the server from the `server-data` folder.
   <br>8b. `bash /home/username/FXServer/server/run.sh +exec server.cfg`
 
+OneSync
+---------------
+If you wish to run OneSync on your server, you will need to set the `onesync` ConVar on the command-line. To do so, simply append `+set onesync on` to your command-line, 
+example:
+
+**Windows**
+```dos
+FXServer.exe +exec server.cfg +set onesync on
+```
+
+**Linux**
+```sh
+run.sh +exer server.cfg +set onesync on
+```
+
 Common issues
 ---------------
 
