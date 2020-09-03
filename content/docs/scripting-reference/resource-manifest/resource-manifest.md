@@ -49,7 +49,7 @@ Support for globbing is specified under each entry type.
 Resource manifest entries
 -------------------------
 
-A list of built-in resource manifest entries follows. A resource can also contain custom metadata entries, which can be obtained using [GetNumResourceMetadata](GetNumResourceMetadata "wikilink") and [GetResourceMetadata](GetResourceMetadata "wikilink").
+A list of built-in resource manifest entries follows. A resource can also contain custom metadata entries, which can be obtained using [GetNumResourceMetadata]({{<native "GET_NUM_RESOURCE_METADATA">}}) and [GetResourceMetadata]({{<native "GET_RESOURCE_METADATA">}}).
 
 ### fx_version
 
@@ -75,7 +75,7 @@ Defines the supported functionality for the resource. This has to be one of a sp
 
 {{% alert color="success" title="Note" %}}This directive supports globbing.{{% /alert %}}
 
-Defines a script to be loaded on the client, and implicitly adds the [file](#file "wikilink") to the resource packfile. The extension determines which script loader will handle the file:
+Defines a script to be loaded on the client, and implicitly adds the file to the resource packfile. The extension determines which script loader will handle the file:
 
 |  Extension   |       File handler       |                                        Meaning                                        |
 | ------------ | ------------------------ | ------------------------------------------------------------------------------------- |
@@ -324,4 +324,4 @@ By default, no manifest version is used, which is equivalent to manifest GUID `0
 ### Manifest version 05cfa83c-a124-4cfa-a768-c24a5811d8f9 (2017-06-04)
 
 -   Scripts will now be registered as a game network script. This is required for networking entities.
--   {{<native_link "CREATE_VEHICLE">}} and similar functions behave differently when passing `true, true` as network object flags. See [network objects](network_objects "wikilink") for more information.
+-   {{<native_link "CREATE_VEHICLE">}} and similar functions behave differently when passing `true, true` as network object flags.
