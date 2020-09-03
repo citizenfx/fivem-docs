@@ -26,10 +26,10 @@ That depends on how you installed it in the first place.
 
 More about installing FiveM [here][installing-fivem].
 
-How do I switch back and forth between playing on FiveM servers and regular Rockstar GTA:O play? Do I have to choose one or the other? Is FiveM counted by R* as a mod? Will I get banned from GTA:O for playing FiveM?
+Will I get banned from GTA:Online for playing FiveM?
 ---------------------------------------
 
-Nope! [In case you missed it](https://fivem.net/#no-bans), FiveM does not interact with the Rockstar Online Services other than to validate your game copy the first time you launch it. This validation emulates the game's interaction, and can not be detected by Rockstar. It also doesn't modify your game files at all, even when downloading server assets, so you don't have to do anything to move between FiveM or GTA:O.
+Nope! [As mentioned on fivem.net](https://fivem.net/#no-bans), FiveM does not interact with the Rockstar Online Services other than to validate your game copy the first time you launch it. This validation emulates the game's interaction, and can not be detected by Rockstar. It also doesn't modify your game files at all, even when downloading server assets, so you don't have to do anything to move between FiveM or GTA:O.
 
 I'm running into issues, what can I do?
 ---------------------------------------
