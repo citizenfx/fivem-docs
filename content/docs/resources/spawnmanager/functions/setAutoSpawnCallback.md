@@ -3,7 +3,7 @@ title: setAutoSpawnCallback
 ---
 
 ## About
-This export allows you to choose your own callback for autospawning, instead of using spawnmanager's 'native' [spawnPlayer](https://github.com/citizenfx/cfx-server-data/blob/2bde7889b4593d842e911827a33294211f40de93/resources/%5Bmanagers%5D/spawnmanager/spawnmanager.lua#L207) function. 
+This export allows you to choose your own callback for autospawning.
 
 ## Name
 ```
@@ -22,7 +22,32 @@ function callback
 
 ##### Lua Example:
 ```lua
+local firstSpawn = true
 exports.spawnmanager:setAutoSpawnCallback(function()
-    -- todo fancy spawning stuff
+    if firstSpawn then
+        -- Spawn them at the spawnpoint
+        exports.spawnmanager:spawnPlayer({
+            x = 466.8401,
+            y = 197.7201,
+            z = 111.5291,
+            heading = 291.71,
+            model = 'a_m_m_farmer_01',
+            skipFade = false
+        })
+        firstSpawn = false
+    else
+        -- Respawn them at the hospital
+        exports.spawnmanager:spawnPlayer({
+            x = 354.09,
+            y = -603.54,
+            z = 28.78,
+            heading = 260.0,
+            skipFade = false
+             -- 'model' is left out here so that their ped model is preserved
+        }, function(spawn)
+            ClearPedBloodDamage(PlayerPedId())
+        end)
+    end
 end)
+exports.spawnmanager:setAutoSpawn(true)
 ```

@@ -18,7 +18,7 @@ string spawnString
 
 ### Required Arguments
 
-- **spawnString** A normal *spawn* object in JSON format
+- **spawnString** An array of *spawn* objects in JSON format
 
 ##### Example
 
@@ -26,12 +26,11 @@ string spawnString
 {
     'spawns': [
         {
-            z: 111.5291,
-            y: 197.7201,
             x: 466.8401,
+            y: 197.7201,
+            z: 111.5291,
             heading: 291.71,
-            idx: 6,
-            model: 1631478380
+            model: 'a_m_m_farmer_01'
         }
     ]
 }
