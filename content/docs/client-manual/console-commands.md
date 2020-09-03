@@ -13,6 +13,24 @@ tools if preferred, like [VConsole2][vconsole]. This allows you to use the clien
 The `cmdlist` command will list all the commands that are registered on the client (or server). It will also output the
 variables that have been set by using the `set`, `sets` and `seta` commands.
 
+### con_miniconChannels
+You can use the `con_miniconChannels` to display console messages on screen without needing to open the client console.
+
+A channel name is the text inside the colored box next to a console message.
+The message filter performs a *full match* of the pattern against the channel name, meaning it must match without any extra characters at the beginning or the end.  
+An asterisk (`*`) can be used to specify a partial channel name, as a placeholder for 0-or-more characters.  
+Multiple patterns can be combined using either a space or a plus sign (`+`).  
+
+Usage: `con_miniconChannels <pattern>`
+
+Default: `minicon:*`
+
+Example patterns:
+- All messages: `*`
+- Messages originating from any resource: `script:*`
+- Messages originating from both `banking` and `racing` resources: `script:banking script:racing`
+
+
 ### connect
 You can use the `connect` to connect to a server using a given IP address and port.
 
