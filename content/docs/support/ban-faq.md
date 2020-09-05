@@ -5,10 +5,8 @@ weight: 845
 
 Global Bans
 -----------
-Our anticheat system is a robust trip-wire style system in which is automated in nature. The system detects the use of external of programs in which attempt to inject themselves into the FiveM client.
-The message will display upon the attempt to join a server and will indicate that you are Globally Banned and a timer in which displays the time remaining on your ban which is automatically set to expire
-after 13 days of detection.
-- **Important**: Graphic and sound packs or modifications **do not cause the global bans.**
+Our anticheat system is a robust trip-wire style system in which is automated in nature. The system detects the use of external of programs in which attempt to inject themselves into the FiveM client. The message will display upon the attempt to join a server and will indicate that you are Globally Banned as well as a timer in which displays the time remaining on your ban which is automatically set to expire after 13 days of detection.
+- **Important**: Graphic and sound packs or modifications **do not cause global bans.**
 
 <br/>
 
@@ -26,7 +24,7 @@ Our anti-cheat relies on a checks and balances system which means that there are
 
 False Bans
 ----------
-The anticheat system has been vigerously tested to ensure that there is an incredibly limited amount of false positives. So what do you do if you think that your ban is a mistake? Take a look
+The anticheat system has been vigorously tested to ensure that there is an incredibly limited amount of false positives. So what do you do if you think that your ban is a mistake? Take a look
 at the files you have been running in conjunction with the FiveM client. If you still feel that it has been done by mistake, please fill out [this form](https://forum.cfx.re/w/ban-report), however, it is important to
 note that this data is used as a structure collection of potential false positives. **This is NOT a ban appeal and you are likely NOT going to get a response.**
 
