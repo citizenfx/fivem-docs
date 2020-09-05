@@ -244,6 +244,14 @@ dependencies {
 }
 ```
 
+### lua54
+
+Enabled Lua 5.4. You can read more about Lua 5.4 at https://www.lua.org/manual/5.4/readme.html
+
+```lua
+lua54 true
+```
+
 ### provide
 
 Marks the current resource as a replacement for the specified resource. This means it'll start instead of the specified resource, if another resource requires it, and will act as if it is said resource if started.
