@@ -246,7 +246,7 @@ dependencies {
 
 ### lua54
 
-Enabled Lua 5.4. You can read more about Lua 5.4 at https://www.lua.org/manual/5.4/readme.html
+Enabled Lua 5.4. You can read more about Lua 5.4 at http://www.lua.org/manual/5.4/manual.html
 
 ```lua
 lua54 true
