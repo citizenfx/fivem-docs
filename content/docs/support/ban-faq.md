@@ -5,7 +5,7 @@ weight: 845
 
 Global Bans
 -----------
-Our anticheat system is a robust trip-wire style system in which is automated in nature. The system detects the use of external of programs in which attempt to inject themselves into the FiveM client. The message will display upon the attempt to join a server and will indicate that you are Globally Banned as well as a timer in which displays the time remaining on your ban which is automatically set to expire after 13 days of detection.
+Our anticheat system is a robust trip-wire style system in which is automated in nature. The system detects the use of external of programs in which attempt to inject themselves into the FiveM client. The message will display upon the attempt to join a server and will indicate that you are Globally Banned as well as a timer in which displays the time remaining on your ban which is automatically set to expire after 14 days of detection.
 - **Important**: Graphic and sound packs or modifications **do not cause global bans.**
 
 <br/>
