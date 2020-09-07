@@ -249,7 +249,7 @@ dependencies {
 Enables Lua 5.4. You can read more about Lua 5.4 at http://www.lua.org/manual/5.4/manual.html
 
 ```lua
-lua54 true
+lua54 'yes'
 ```
 
 ### provide
