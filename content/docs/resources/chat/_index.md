@@ -22,6 +22,7 @@ _This resource does not have any export functions._
 - [chat:removeSuggestion](./events/chat-removeSuggestion)
 - [chat:addTemplate](./events/chat-addTemplate)
 - [chat:clear](./events/chat-clear)
+- [chat:validationFailed](./events/chat-validationFailed)
 
 ### Server
 - [chatMessage](./events/chatMessage)
