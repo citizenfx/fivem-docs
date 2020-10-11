@@ -277,7 +277,83 @@ Finally, we tell the player to enjoy their new vehicle.
 In your server console, `refresh; restart mymode` (yeah you can split stuff with semicolons), and try `/car voltic2` in the game client (which should by now be really bored of respawning). You'll now have your very own Rocket Voltic!
 
 ## Server scripts
-You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
+Server scripts are scripts, that run on the hosting server, not on the connected client, coming from this, they are more safe (they can't be tampered by clients)
+(This example is written in LUA, but the server <-> client relationship is the same on all runtimes)
+
+# Client -> Server
+
+Clients can communicate with the server through events, and the server can communicate with clients by the same way.
+When making a networked event (going from client to server or vice versa), we need to register the event, A.K.A mark it safe for network usage.
+We do this by: `RegisterNetEvent('eventname')`, but those events need to have some sort of functionality, that's where handlers come in:
+
+``` lua
+AddEventHandler('eventname', function()
+--code goes here
+
+end)
+```
+
+We can use as many arguments as we want
+So now our server code looks like this:
+
+``` lua
+RegisterNetEvent('savePlayer')
+AddEventHandler('savePlayer', function(playerData)
+--code goes here
+end)
+```
+<br>
+# Triggering events
+
+But how do we invoke this event?
+This is where triggers come into play:
+`TriggerServerEvent('eventname', arg1, arg2)` [Client -> Server]
+`TriggerEvent('eventname', arg1, arg2)` [Client -> Client or Server -> Server]
+`TriggerClientEvent('eventname', target, arg1, arg2)` [Server -> Client]
+
+We need to send as many arguments as we specified in the handler.
+The `target` argument in the `TriggerClientEvent` can be a littlebit scary, so let me explain it:
+Because there are usually more clients, we need to tell the server about our target player, by specifing a target.
+The target is always a server id, or `-1` if we want it to trigger on all players.
+
+# Server tricks
+
+On server, we can also **get** the event's invoker (coming from the client) by accessing the `source` arg
+**YOU DON'T NEED TO ADD SOURCE AS AN ARGUMENT, IT'S AUTOMATICALLY THERE**
+For example:
+
+``` lua
+RegisterNetEvent('GetPlayerName)
+AddEventHandler('GetPlayerName', function()
+local src = source --saving it is recommended
+print(GetPlayerName(src)) --will print the invoking player's username
+end)
+```
+
+On server, the usual *Citizen* functions are working just as good as on client (`CreateThread` or `Wait` etc).
+Moreover, there are some very useful functions on the server, like [`GetPlayers()`](https://docs.fivem.net/docs/scripting-reference/runtimes/lua/functions/GetPlayers/)
+
+# MANIFEST
+
+We of course need to add this to our `fxmanifest.lua`, we do this by the `server_script(s)` directive
+For example:
+
+``` lua
+server_scripts {
+  'server.lua',
+  'server2.lua'
+  }
+```
+or if we just want one file, we can do:
+```lua
+server_script 'server.lua'
+```
+# SHARED SCRIPTS
+In the manifest file, you can use the `shared_scripts` directive, this is a pretty useful directive for creating shared function, or config files that both sides can access (please not that they don't share runtime values, so they can't be used as an event replacement)
+
+# ONESYNC
+
+You've probably heard about *OneSync* too, TODO (server checks etc)
 
 
 [manifest-reference]: /docs/scripting-reference/resource-manifest/resource-manifest/
