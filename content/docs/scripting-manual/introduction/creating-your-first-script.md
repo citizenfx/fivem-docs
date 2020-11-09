@@ -277,7 +277,96 @@ Finally, we tell the player to enjoy their new vehicle.
 In your server console, `refresh; restart mymode` (yeah you can split stuff with semicolons), and try `/car voltic2` in the game client (which should by now be really bored of respawning). You'll now have your very own Rocket Voltic!
 
 ## Server scripts
-You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
+You'll probably also want to write scripts that interact with the server.
 
+### Manifest File
+Assuming you have read the above information, and how to create a _Manifest_ file. We are going to create one which includes a server file.
+
+_You can also read a more detailed page on Manifest files here_
+https://docs.fivem.net/docs/scripting-reference/resource-manifest/resource-manifest/
+
+```lua
+fx_version '{{< rmv2 >}}'
+game 'gta5'
+
+author 'Your Name'
+description 'A resource that does something.'
+version '1.0.0'
+
+server_script 'server_example.lua' -- Common naming practise is also cl_resourcename.lua
+```
+
+We're now going to create two files named **server_example.lua**
+
+Inside **server_example.lua** we'll put this code snippet.
+
+_Useful Links_
+https://docs.fivem.net/docs/scripting-reference/runtimes/lua/functions/GetPlayers/
+https://docs.fivem.net/docs/resources/chat/events/chat-addMessage/
+https://docs.fivem.net/docs/scripting-manual/migrating-from-deprecated/creating-commands/
+
+```lua
+-- RegisterCommand(commandName, handler, restricted)
+RegisterCommand("playercount", function(source)
+    -- Get the number # of players.
+    local playerCount = #GetPlayers()
+
+    -- Here we check if whoever ran the command is a player, or if it was ran from the console.
+    if source > 0 then
+        -- Ran by a player
+
+        TriggerEvent('chat:addMessage', {
+            color = {0, 255, 0}, -- Red, Gree, Blue / We choose Green.
+            multiline = true,
+            args = {"Player Count", playerCount .. " online!"} -- Example output will be, "Player Count: 2 online!"
+        })
+    else
+        -- Ran by the console
+
+        print("Player Count: %i online!"):format(playerCount) -- Example output will be, "Player Count: 2 online!" except printed in the server console.
+    end
+end, false)
+
+RegisterCommand("playerlist", function(source)
+    -- Initialize a couple of variables that we'll be using.
+    local playerList = ""
+    local playerCount = #GetPlayers()
+
+    -- Lets loop through the player list and prepare a String with all of the player's names.
+    -- For more detailed information on looping ipairs and pairs refer to Lua documentation.
+    for key, playerId in ipairs(GetPlayers()) do
+        -- Get the name of the player.
+        local name = GetPlayerName(playerId)
+
+        -- Lets check if the playerList string we made is empty, and if it is we'll start off the list.
+        if playerList == "" then
+            playerList = name .. ", "
+        elseif key < playerCount then -- If the number key we are at in the table is less than the number of players we'll add a comma at the end
+            playerList = playerList .. name .. ", "
+        else -- If we've reached the end of the table we want to put a dot in the end for a cleaner look ex. Players: PlayerOne, PlayerTwo, PlayerThree.
+            playerList = playerList .. name .. "."
+        end
+    end
+
+    -- Here we check if whoever ran the command is a player, or if it was ran from the console, like we did in the command above.
+    if source > 0 then
+        -- Ran by a player
+
+        TriggerEvent('chat:addMessage', {
+            color = {255, 0, 0}, -- Red, Gree, Blue / We choose Red.
+            multiline = true,
+            args = {"Players", playerList} -- Example output will be, "Players: SnailOne, SnailTwo."
+        })
+    else
+        -- Ran by the console
+
+        print("Players: " .. playerList) -- Example output will be the same as above, but printed in the server console.
+    end
+end, false)
+```
+
+Once you've setup this script in a resource, you'll be able to go into your FXServer and type **/playercount** and **/playerlist** and it'll print out the respective in chat, or if ran from the console it'll print in the console.
+
+You want to make sure you have fully read all the information above in order to understand how you can run this snippet. Make sure you read the annotations
 
 [manifest-reference]: /docs/scripting-reference/resource-manifest/resource-manifest/
