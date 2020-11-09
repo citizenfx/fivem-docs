@@ -283,7 +283,8 @@ You'll probably also want to write scripts that interact with the server.
 Assuming you have read the above information, and how to create a _Manifest_ file. We are going to create one which includes a server file.
 
 _You can also read a more detailed page on Manifest files here_
-https://docs.fivem.net/docs/scripting-reference/resource-manifest/resource-manifest/
+
+[Creating a Manifest](https://docs.fivem.net/docs/scripting-reference/resource-manifest/resource-manifest/)
 
 ```lua
 fx_version '{{< rmv2 >}}'
@@ -301,9 +302,13 @@ We're now going to create two files named **server_example.lua**
 Inside **server_example.lua** we'll put this code snippet.
 
 _Useful Links_
-https://docs.fivem.net/docs/scripting-reference/runtimes/lua/functions/GetPlayers/
-https://docs.fivem.net/docs/resources/chat/events/chat-addMessage/
-https://docs.fivem.net/docs/scripting-manual/migrating-from-deprecated/creating-commands/
+
+[GetPlayers function](https://docs.fivem.net/docs/scripting-reference/runtimes/lua/functions/GetPlayers/)
+
+[chat:addMessage event](https://docs.fivem.net/docs/resources/chat/events/chat-addMessage/)
+
+[Creating Commands](https://docs.fivem.net/docs/scripting-manual/migrating-from-deprecated/creating-commands/)
+
 
 ```lua
 -- RegisterCommand(commandName, handler, restricted)
