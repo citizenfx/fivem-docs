@@ -30,13 +30,25 @@ Windows
 6. Generate a license key at <https://keymaster.fivem.net>.
 7. Set the license key in your server.cfg using `sv_licenseKey "licenseKeyGoesHere"`.
 8. Run the server from the `server-data` folder. For example, in a plain Windows command prompt (cmd.exe) window: 
+
+    8a.
+    
     ```dos
     cd /d D:\FXServer\server-data
     D:\FXServer\server\FXServer.exe +exec server.cfg
     ```
-
+    
+    8b.
+    
+    _Starting a server with **[OneSync Infinity][onesync-thread]** enabled. (Allowing up to 1024 slots & more up-to-date features)_
+    
+    ```dos
+    cd /d D:\FXServer\server-data
+    D:\FXServer\server\FXServer.exe +exec server.cfg +set onesync on
+    ```
+    (To enable ped population with OneSync Infinity you can add `+set onesync_population true` after `+set onesync on`)
+    
     (the `/d` flag is only needed when changing directory to somewhere on a different drive)
-
 ---
 
 Linux
@@ -50,7 +62,20 @@ Linux
 6. Generate a license key at <https://keymaster.fivem.net>.
 7. Set the license key in your `server.cfg` using `sv_licenseKey "licenseKeyGoesHere"`.
 8. Run the server from the `server-data` folder.
-  <br>8b. `bash /home/username/FXServer/server/run.sh +exec server.cfg`
+
+    8a. 
+    
+    ```bash
+    bash /home/username/FXServer/server/run.sh +exec server.cfg
+    ```
+    
+    8b. 
+    
+    _Starting a server with **[OneSync Infinity][onesync-thread]** enabled. (Allowing up to 1024 slots & more up-to-date features)_
+    ```bash
+    bash /home/username/FXServer/server/run.sh +exec server.cfg +set onesync on
+    ```
+    (To enable ped population with OneSync Infinity you can add `+set onesync_population true` after `+set onesync on`)
 
 Common issues
 ---------------
@@ -84,6 +109,8 @@ What's next?
 [server-issues]: /docs/support/server-issues
 [server-commands]: /docs/server-manual/server-commands
 [scripting-introduction]: /docs/scripting-manual/introduction
+
+[onesync-thread]: https://forum.cfx.re/t/onesync-infinity-how-to-use-it/996612
 
 [fxserver-support]: https://discord.gg/UwvVgsJ
 [fxserver-support-category]: https://forum.cfx.re/c/server-development/server-discussion
