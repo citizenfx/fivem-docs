@@ -97,6 +97,13 @@ Usage: `net_maxPackets <number_of_packets>`
 ### net_showCommands
 Internal dev tool. Not of use to a regular user.
 
+### neteventlog
+The `neteventlog` is a command to show you all of the network event traffic.
+
+This command will show any incoming / outgoing event traffic. It shows the direction of the event (ex. Server -> Client), the event name, and the size of the data sent (ex. 2 bytes).
+
+Usage: `neteventlog <true|false>`
+
 ### net_statsFile
 The `net_statsFile` is a command to store the metrics of the network usage/behaviour of the FiveM client.
 
