@@ -3,7 +3,7 @@ title: Client-side functions in Lua
 weight: 514
 ---
 
-
+## Runtime-specific functions
 - [AddEventHandler](/docs/scripting-reference/runtimes/lua/functions/AddEventHandler)
 - [Citizen.Await](/docs/scripting-reference/runtimes/lua/functions/Citizen.Await)
 - [Citizen.Wait](/docs/scripting-reference/runtimes/lua/functions/Citizen.Wait)
@@ -22,4 +22,7 @@ weight: 514
 - [vector3](/docs/scripting-reference/runtimes/lua/functions/vector3)
 - [vector4](/docs/scripting-reference/runtimes/lua/functions/vector4)
 
-<!-- more coming soon -->
+## Native functions
+These links will redirect to the native reference page for each function.
+
+{{<native_list "client" "lua">}}

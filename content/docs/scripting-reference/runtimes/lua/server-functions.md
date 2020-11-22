@@ -3,7 +3,7 @@ title: Server-side functions in Lua
 weight: 515
 ---
 
-
+## Runtime-specific functions
 - [AddEventHandler](/docs/scripting-reference/runtimes/lua/functions/AddEventHandler)
 - [Citizen.Await](/docs/scripting-reference/runtimes/lua/functions/Citizen.Await)
 - [Citizen.CreateThread](/docs/scripting-reference/runtimes/lua/functions/Citizen.CreateThread)
@@ -18,4 +18,7 @@ weight: 515
 - [TriggerClientEvent](/docs/scripting-reference/runtimes/lua/functions/TriggerClientEvent)
 - [TriggerEvent](/docs/scripting-reference/runtimes/lua/functions/TriggerEvent)
 
-<!-- more coming soon -->
+## Native functions
+These links will redirect to the native reference page for each function.
+
+{{<native_list "server" "lua">}}
