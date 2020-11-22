@@ -7,23 +7,26 @@ description: >
 
 <!-- TODO: format this like client commands? -->
 
-Console commands can be executed either using an RCon tool, directly from the server console GUI, a server configuration
-file, or (if a resource is allowed by ACE) the [ExecuteCommand]({{<native "EXECUTE_COMMAND">}}) function.
+Console commands can be executed either using an RCon tool, directly from the server console interface, a server configuration
+file, the server command line, or (if a resource is allowed by the ACL) the [ExecuteCommand]({{<native "EXECUTE_COMMAND">}}) function.
 
 Adding a custom RCon command can be done using the [RegisterCommand]({{<native "REGISTER_COMMAND">}}) function on the
 server, or the (legacy) `rconCommand` event.
 
+## Resource commands
+
 ### `start [resourceName]`
 
-Starts the resource specified in the argument, if it was stopped.
+Starts the resource specified in the argument, if it was stopped. It is also possible to specify a category name, such as `start [cars]`.
 
 Example:
 
     start lambda-menu
+    start [cars]
 
 ### `stop [resourceName]`
 
-Stops the resource specified in the argument, if it was started.
+Stops the resource specified in the argument, if it was started. As with `start`, one can also specify a category name.
 
 Example:
 
@@ -33,13 +36,15 @@ Example:
 
 Restarts the resource specified in the argument, if it was started. If it wasn't, starts the resource specified in the argument.
 
+As with `start` and `stop`, one can also specify a category name.
+
 Example:
 
     ensure my-testing-resource
 
 ### `restart [resourceName]`
 
-Restarts the resource specified in the argument, if it was started.
+Restarts the resource specified in the argument, if it was started. Also supports category names.
 
 Example:
 
@@ -47,12 +52,23 @@ Example:
 
 ### `refresh`
 
-Rescans the *resources* folder and loads all \_\_resource.lua files in them, making new resources available to start using [start](#start-resourcename "wikilink").
+Rescans the *resources* folder and loads all resource manifests in them, also making new resources available to start using [start](#start-resourcename "wikilink").
 
 Example:
 
     refresh
 
+## Global commands
+
+### `exec [filename]`
+
+Runs the commands specified in the filename. Commonly seen as `FXServer.exe +exec server.cfg`.
+
+Example:
+
+    exec server_nested.cfg
+
+## Management commands
 
 ### `status`
 
@@ -63,30 +79,6 @@ Shows a list of players with their primary identifier, server ID, name, endpoint
 Example:
 
     status
-
-### `sv_maxClients [newValue]`
-
-A console variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 64.
-
-### `sv_endpointPrivacy [newValue]`
-
-A boolean variable that, if true, hides player IP addresses from public reports output by the server.
-
-### `sv_hostname [newValue]`
-
-A string variable that contains the server host name.
-
-### `sv_authMaxVariance [newValue]`
-
-**Variance** is how likely the user's id will change for a given provider (i.e. 'steam', 'ip', or 'ros').
-
-A console variable as an integer from 1-5 (default 1); from least to most likely to change.
-
-### `sv_authMinTrust [newValue]`
-
-**Trust** is how _unlikely_ it is for the user's identity to be spoofed by a malicious client.
-
-A console variable as an integer from 1-5 (default 5); from least to most trustworthy (5 being a method such as external three-way authentication).
 
 ### `clientkick [id] [reason]`
 
@@ -108,16 +100,55 @@ Example:
 
     say Hi, everybody!
 
+### `svgui`
+
+Opens or closes the server debug GUI.
+
+## Configuration variables
+
+### `sv_maxClients [newValue]`
+
+A console variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 1024.
+
+### `sv_endpointPrivacy [newValue]`
+
+A boolean variable that, if true, hides player IP addresses from public reports output by the server.
+
+### `sv_hostname [newValue]`
+
+A string variable that contains the server host name.
+
+### `sv_authMaxVariance [newValue]`
+
+**Variance** is how likely the user's id will change for a given provider (i.e. 'steam', 'ip', or 'license').
+
+A console variable as an integer from 1-5 (default 1); from least to most likely to change.
+
+### `sv_authMinTrust [newValue]`
+
+**Trust** is how _unlikely_ it is for the user's identity to be spoofed by a malicious client.
+
+A console variable as an integer from 1-5 (default 5); from least to most trustworthy (5 being a method such as external three-way authentication).
 
 ### `load_server_icon [fileName.png]`
 
-Loads a specfied icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
+A console command which loads a specfied icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
 
 Example:
 
 ```toml
 load_server_icon "my-server.png"
 ```
+
+### `rcon_password [password]`
+
+Sets the RCon password. This being unset means RCon is disabled.
+
+### `steam_webApiKey [key]`
+
+Sets a [Steam Web API key](https://steamcommunity.com/dev/apikey), which is required to allow for Steam identifiers to be returned by the server.
+
+## Access control commands
 
 ### `add_ace [principal] [object] [allow|deny]`
 
