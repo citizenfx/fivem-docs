@@ -1,0 +1,8 @@
+tasks:
+  - init: >
+      curl -Lo /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.78.2/hugo_extended_0.78.2_Linux-64bit.tar.gz &&
+      mkdir -p ~/bin || true;
+      tar -xvf /tmp/hugo.tar.gz -C ~/bin;
+      yarn
+    command: >
+      ~/bin/hugo serve
