@@ -106,9 +106,19 @@ Opens or closes the server debug GUI.
 
 ## Configuration variables
 
+### `onesync [on/off/legacy]`
+
+Defines which mode of state awareness to use.
+
+* **Off**: No state awareness at all, clients will use the standard GTA/RAGE P2P networking model, and the server will only function as a relay.
+* **On**: Full state awareness and server-determined entity routing.
+* **Legacy**: Compatibility mode for scripts that expect all players to exist on each client. Not recommended due to performance reasons and graphical glitches.
+
 ### `sv_maxClients [newValue]`
 
 A console variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 1024.
+
+Values starting at 32 will require `onesync` to be set to `on` or `legacy`, and values above 64 will require `onesync` to be set to `on`.
 
 ### `sv_endpointPrivacy [newValue]`
 
