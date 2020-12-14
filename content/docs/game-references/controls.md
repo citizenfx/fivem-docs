@@ -49,8 +49,8 @@ Controls
 | 7     | INPUT\_CINEMATIC\_SLOWMO                         | (NONE)                                | R3              |
 | 8     | INPUT\_SCRIPTED\_FLY\_UD                         | S                                     | LEFT STICK      |
 | 9     | INPUT\_SCRIPTED\_FLY\_LR                         | D                                     | LEFT STICK      |
-| 10    | INPUT\_SCRIPTED\_FLY\_ZUP                        | PAGEUP                                | LT              |
-| 11    | INPUT\_SCRIPTED\_FLY\_ZDOWN                      | PAGEDOWN                              | RT              |
+| 10    | INPUT\_SCRIPTED\_FLY\_ZUP                        | PAGEUP                                |                 |
+| 11    | INPUT\_SCRIPTED\_FLY\_ZDOWN                      | PAGEDOWN                              |                 |
 | 12    | INPUT\_WEAPON\_WHEEL\_UD                         | MOUSE DOWN                            | RIGHT STICK     |
 | 13    | INPUT\_WEAPON\_WHEEL\_LR                         | MOUSE RIGHT                           | RIGHT STICK     |
 | 14    | INPUT\_WEAPON\_WHEEL\_NEXT                       | SCROLLWHEEL DOWN                      | DPAD RIGHT      |
