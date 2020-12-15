@@ -219,6 +219,8 @@ file 'html/loadscreen.html'
 
 ### file
 
+{{% alert color="success" title="Note" %}}This directive supports globbing.{{% /alert %}}
+
 Adds the specified file to the resource packfile, to be downloaded by clients upon loading the resource.
 
 ```lua
