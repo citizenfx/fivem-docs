@@ -15,7 +15,7 @@ if IsControlJustReleased(0--[[control type]],  51--[[control index]]) then
 end
 ```
 
-### C\#
+### C#
 
 ``` csharp
 // checks if INPUT_CONTEXT has just been released
