@@ -101,7 +101,7 @@ const root = GetResourcePath(GetCurrentResourceName());
 
 // wrong
 fs.readFile(`${root}/test.txt`, { encoding: 'utf8' }, (err, data) => {
-  emit('chat:addMessage', { // this call will error out due to thread affinity
+  emitNet('chat:addMessage', -1, { // this call will error out due to thread affinity
     args: [ data ]
   });
 });
@@ -109,7 +109,7 @@ fs.readFile(`${root}/test.txt`, { encoding: 'utf8' }, (err, data) => {
 // right
 fs.readFile(`${root}/test.txt`, { encoding: 'utf8' }, (err, data) => {
   setImmediate(() => { // the callback will be called next game tick
-    emit('chat:addMessage', {
+    emitNet('chat:addMessage', -1, {
       args: [ data ]
     });
   });
