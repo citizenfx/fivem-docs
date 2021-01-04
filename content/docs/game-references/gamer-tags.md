@@ -72,10 +72,6 @@ for _, i in ipairs(GetActivePlayers()) do
         end
 
         SetMpGamerTagVisibility(mpGamerTags[i].tag, 4, NetworkIsPlayerTalking(i))
-    elseif mpGamerTags[i] then
-        RemoveMpGamerTag(mpGamerTags[i].tag)
-
-        mpGamerTags[i] = nil
     end
 end
 ```
