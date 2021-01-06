@@ -13,7 +13,7 @@ references in codegen.
 name restrictions.{{% /alert %}}
 
 Generally, you'll use the [RegisterNUICallback][registernuicallback] function in Lua, and the
-{{<native_link "REGISTER_NUI_CALLBACK_TYPE">}} native along with an event handler in other languages.
+{{% native_link "REGISTER_NUI_CALLBACK_TYPE" %}} native along with an event handler in other languages.
 
 Both work very similarly, and we'll describe both below:
 

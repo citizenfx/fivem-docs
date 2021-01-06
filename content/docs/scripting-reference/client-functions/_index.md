@@ -22,4 +22,4 @@ and examples for using the native.
 
 These natives are usable in **all** runtimes.
 
-{{<native_list "client">}}
+{{% native_list "client" %}}

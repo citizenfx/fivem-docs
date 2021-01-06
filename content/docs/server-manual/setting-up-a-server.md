@@ -66,7 +66,7 @@ If you're experiencing any issues, you're more likely to see them fixed if you u
 
 An example server.cfg follows.
 
-{{< code file="/static/examples/config/server.cfg" language="sh" >}}
+{{%  code file="/static/examples/config/server.cfg" language="sh"  %}}
 
 What's next?
 ------------

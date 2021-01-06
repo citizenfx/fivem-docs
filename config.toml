@@ -24,6 +24,8 @@ enableGitInfo = true
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+page = ["HTML", "JSON"]
+section = ["HTML", "JSON"]
 
 [params]
 disableHomeIcon = true

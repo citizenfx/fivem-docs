@@ -26,7 +26,7 @@ A resource folder (you know, this `mymode` you made above) will need a manifest 
 Make a file called `fxmanifest.lua` (this is _always_ Lua, even though you'll be writing a JS script) in your `mymode` folder. In it, put the following text using your favorite text editor:
 
 ```lua
-fx_version '{{< rmv2 >}}'
+fx_version '{{%  rmv2  %}}'
 game 'gta5'
 
 author 'An awesome dude'
@@ -177,7 +177,7 @@ RegisterCommand('car', (source, args, raw) => {
 
 Starting already, we see a call to a function. We did not define that function. Well, _we_ (as in, the FiveM team) did, but not when guiding you, the reader, through this wondrously written marvel of a guide. That means it must come from somewhere else!
 
-And, guess what, it's actually {{<native_link "REGISTER_COMMAND">}}! Click that link, and you'll be led to the documentation for this native. It looks a bit like this:
+And, guess what, it's actually {{% native_link "REGISTER_COMMAND" %}}! Click that link, and you'll be led to the documentation for this native. It looks a bit like this:
 
 ```c
 // 0x5fa79b0f
@@ -268,31 +268,31 @@ This uses a LOT of natives. We'll link a few of them and explain the hard parts.
 #### Step 1: Validation
 We started with checking the vehicle name. If it's not given (this is, no arguments for the command), we'll default to the `adder`. Either way, it's stored in a variable.
 
-We want the hash key from this vehicle to work with the game engine, so we call {{<native_link "GET_HASH_KEY">}} and store the returned `number` in the variable `hash`. Then, we check if the vehicle is in the CD image using {{<native_link "IS_MODEL_IN_CDIMAGE">}}. This basically means 'is this registered with the game'. We also check if it's a vehicle using {{<native_link "IS_MODEL_A_VEHICLE">}}. If either check fails, we tell the player and return from the command.
+We want the hash key from this vehicle to work with the game engine, so we call {{% native_link "GET_HASH_KEY" %}} and store the returned `number` in the variable `hash`. Then, we check if the vehicle is in the CD image using {{% native_link "IS_MODEL_IN_CDIMAGE" %}}. This basically means 'is this registered with the game'. We also check if it's a vehicle using {{% native_link "IS_MODEL_A_VEHICLE" %}}. If either check fails, we tell the player and return from the command.
 
 #### Step 2: Loading the model
-Now, we call {{<native_link "REQUEST_MODEL">}} to load the actual vehicle model using the hash we have from step 1.
+Now, we call {{% native_link "REQUEST_MODEL" %}} to load the actual vehicle model using the hash we have from step 1.
 
 #### Step 3: Waiting for the model to be loaded
-We loop calls to {{<native_link "HAS_MODEL_LOADED">}} to check if loading succeeded. Since this is a loop and we're cooperatively multitasked, you'll have to give the game time to run as well - otherwise it'll never even finish loading and the game will unfortunately freeze. Unlike Lua and C#, we do not have a built-in `Wait` or `Delay` call, so we need to create our own. We defined the function `Delay` in the global scope of our script. It waits for the specified amount of milliseconds, then returns a Promise right back into the script.
+We loop calls to {{% native_link "HAS_MODEL_LOADED" %}} to check if loading succeeded. Since this is a loop and we're cooperatively multitasked, you'll have to give the game time to run as well - otherwise it'll never even finish loading and the game will unfortunately freeze. Unlike Lua and C#, we do not have a built-in `Wait` or `Delay` call, so we need to create our own. We defined the function `Delay` in the global scope of our script. It waits for the specified amount of milliseconds, then returns a Promise right back into the script.
 
 Once the model's loaded, we'll continue.
 
 #### Step 4: Getting the player's position
-Players' physical incarnations are identified by their `ped`, which is short for 'pedestrian'. This is a GTA term, and it usually means 'anything that lives and has legs'. We use {{<native_link "PLAYER_PED_ID">}} to get the local (basically, whoever is executing this command) player's ped.
+Players' physical incarnations are identified by their `ped`, which is short for 'pedestrian'. This is a GTA term, and it usually means 'anything that lives and has legs'. We use {{% native_link "PLAYER_PED_ID" %}} to get the local (basically, whoever is executing this command) player's ped.
 
-After we have the ped and store it in a variable, we get the position of the player ped using {{<native_link "GET_ENTITY_COORDS">}}. Since a ped is an entity (the same goes for vehicles and a few other things), this native is used for getting their position. This native, returns an array `number[]`.
+After we have the ped and store it in a variable, we get the position of the player ped using {{% native_link "GET_ENTITY_COORDS" %}}. Since a ped is an entity (the same goes for vehicles and a few other things), this native is used for getting their position. This native, returns an array `number[]`.
 
 #### Step 5: Creating the vehicle
-We use {{<native_link "CREATE_VEHICLE">}} to, well, create a vehicle. In the meanwhile, we snuck in a call to get the player's heading using {{<native_link "GET_ENTITY_HEADING">}}, which makes the car spawn facing the same direction as the player.
+We use {{% native_link "CREATE_VEHICLE" %}} to, well, create a vehicle. In the meanwhile, we snuck in a call to get the player's heading using {{% native_link "GET_ENTITY_HEADING" %}}, which makes the car spawn facing the same direction as the player.
 
 The `true, false` is a convention in entity creation natives to create the vehicle with a network object (`true`), but not make it a mission object (`false`). You usually want the former, or nobody else will see the vehicle - and you won't want the latter, since you're not writing a full R* mission script.
 
 #### Step 6: Setting the player into the vehicle
-Since we have a ped and a vehicle now, we can use {{<native_link "SET_PED_INTO_VEHICLE">}} to place the ped into the vehicle. As the documentation happens to say, `-1` is the driver seat of the vehicle.
+Since we have a ped and a vehicle now, we can use {{% native_link "SET_PED_INTO_VEHICLE" %}} to place the ped into the vehicle. As the documentation happens to say, `-1` is the driver seat of the vehicle.
 
 #### Step 7: Cleaning up
-The game likes it when you clean up after yourself, and as we're not doing anything with the vehicle or the model anymore in this script, we'll let the game manage it. This is what we use {{<native_link "SET_ENTITY_AS_NO_LONGER_NEEDED">}} and {{<native_link "SET_MODEL_AS_NO_LONGER_NEEDED">}} for.
+The game likes it when you clean up after yourself, and as we're not doing anything with the vehicle or the model anymore in this script, we'll let the game manage it. This is what we use {{% native_link "SET_ENTITY_AS_NO_LONGER_NEEDED" %}} and {{% native_link "SET_MODEL_AS_NO_LONGER_NEEDED" %}} for.
 
 Finally, we tell the player to enjoy their new vehicle.
 

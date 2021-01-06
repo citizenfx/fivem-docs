@@ -1,6 +1,7 @@
 ---
 title: Scripting in JavaScript
 weight: 422
+languages: ['js']
 ---
 
 FiveM supports JavaScript as scripting language.

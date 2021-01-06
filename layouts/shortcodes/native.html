@@ -1,30 +1,31 @@
-{{ $name := .Get 0 }}
-{{ $natives := getJSON "https://runtime.fivem.net/doc/natives.json" }}
-{{ $cfxNatives := getJSON "https://runtime.fivem.net/doc/natives_cfx.json" }}
-{{ $nativeHash := 0 }}
-{{ range $natives }}
-    {{ range . }}
-        {{ if (eq .name $name) }}
-            {{ $nativeHash = .hash }}
-        {{ end }}
+{{- $name := .Get 0 -}}
+{{- $natives := getJSON "https://runtime.fivem.net/doc/natives.json" -}}
+{{- $cfxNatives := getJSON "https://runtime.fivem.net/doc/natives_cfx.json" -}}
+{{- $nativeHash := 0 -}}
+{{- range $natives -}}
+    {{- range . -}}
+        {{- if (eq .name $name) -}}
+            {{- $nativeHash = .hash -}}
+        {{- end -}}
 
-        {{ if (in .aliases $name) }}
-            {{ $nativeHash = .hash }}
-        {{ end }}
-    {{ end }}
-{{ end }}
+        {{- if (in .aliases $name) -}}
+            {{- $nativeHash = .hash -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
 
-{{ if eq $nativeHash 0 }}
-    {{ range $cfxNatives }}
-        {{ range . }}
-            {{ if (eq .name $name) }}
-                {{ $nativeHash = .hash }}
-            {{ end }}
+{{- if eq $nativeHash 0 -}}
+    {{- range $cfxNatives -}}
+        {{- range . -}}
+            {{- if (eq .name $name) -}}
+                {{ $nativeHash = .hash -}}
+            {{- end -}}
 
-            {{ if (in .aliases $name) }}
-                {{ $nativeHash = .hash }}
-            {{ end }}
-        {{ end }}
-    {{ end }}
-{{ end }}
+            {{- if (in .aliases $name) -}}
+                {{- $nativeHash = .hash -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
 https://runtime.fivem.net/doc/natives/?_{{ $nativeHash }}

@@ -25,4 +25,4 @@ weight: 514
 ## Native functions
 These links will redirect to the native reference page for each function.
 
-{{<native_list "client" "lua">}}
+{{% native_list "client" "lua" %}}

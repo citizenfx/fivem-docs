@@ -734,7 +734,7 @@ Blips
 Blip colors
 -----
 
-{{<native_link "SET_BLIP_AS_FRIENDLY">}} is the native used to toggle friendly and enemy flags.
+{{% native_link "SET_BLIP_AS_FRIENDLY" %}} is the native used to toggle friendly and enemy flags.
 Used in decompiled scripts with friendly and enemy peds.
 
 <div class="blips blip-colors">

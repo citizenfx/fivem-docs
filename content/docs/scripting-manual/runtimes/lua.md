@@ -1,6 +1,7 @@
 ---
 title: Scripting in Lua
 weight: 421
+languages: ['lua']
 ---
 
 FiveM supports the general purpose programming language Lua as one of its scripting languages. Lua is a very easy
@@ -21,7 +22,7 @@ To use Lua in your scripts, simply use the `.lua` file extension. No additional 
 Compile-time hashes
 ----------------------
 Because you might often have to deal with 'Jenkins one-at-a-time' hashes in GTA/RAGE, the Lua runtime has been extended
-to have support for compile-time generation of hash keys, similar to {{<native_link "GET_HASH_KEY">}}, however with zero
+to have support for compile-time generation of hash keys, similar to {{% native_link "GET_HASH_KEY" %}}, however with zero
 runtime overhead.
 
 For example:

@@ -7,7 +7,7 @@ Parameters
 ----------
 
 {{% alert color="warning" %}}
-This event is deprecated. Please use {{<native_link "REGISTER_COMMAND">}} instead, and use the `restricted` flag.
+This event is deprecated. Please use {{% native_link "REGISTER_COMMAND" %}} instead, and use the `restricted` flag.
 {{% /alert %}}
 
 ```

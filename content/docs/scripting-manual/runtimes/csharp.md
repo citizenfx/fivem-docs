@@ -1,6 +1,7 @@
 ---
 title: Scripting in C#
 weight: 423
+languages: ['cs']
 ---
 
 _This page is still a <b>work in progress</b> so this guide is not completed yet!_

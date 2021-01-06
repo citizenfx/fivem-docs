@@ -39,37 +39,37 @@ It'd be pretty time consuming to explain in details how to bootstrap your first 
 
 ### Loading
 
-1. Use {{<native_link "REQUEST_SCALEFORM_MOVIE">}} with the name of the desired gfx (without file extension), for example `mp_car_stats`.
-2. Use {{<native_link "HAS_SCALEFORM_MOVIE_LOADED">}} in a loop, to prevent using a non-loaded Scaleform asset.
+1. Use {{% native_link "REQUEST_SCALEFORM_MOVIE" %}} with the name of the desired gfx (without file extension), for example `mp_car_stats`.
+2. Use {{% native_link "HAS_SCALEFORM_MOVIE_LOADED" %}} in a loop, to prevent using a non-loaded Scaleform asset.
 
 ### Invoking functions in GFx
 
 Please note that this is a low-level api, the C\# runtime has an [easy-to-use high-level abstraction](https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/Scaleform.cs); and even if you don't know C\# you can use it as a reference usage of function calling natives.
 
-**&gt;** Call {{<native_link "BEGIN_SCALEFORM_MOVIE_METHOD">}} to initialize the function call, pass it the `handle` of the GFx, and a function name string, which **should be a member of the global TIMELINE variable** in ActionScript.
+**&gt;** Call {{% native_link "BEGIN_SCALEFORM_MOVIE_METHOD" %}} to initialize the function call, pass it the `handle` of the GFx, and a function name string, which **should be a member of the global TIMELINE variable** in ActionScript.
 
 **&gt;** Define arguments, using one of the following functions depending on what type of argument you want to pass:
 
--   {{<native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT">}}
--   {{<native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT">}}
--   {{<native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL">}}
--   {{<native_link "_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_STRING">}} **(only use for short strings like texture names)**
--   A pair of {{<native_link "BEGIN_TEXT_COMMAND_SCALEFORM_STRING">}}, {{<native_link "ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME">}}, and {{<native_link "END_TEXT_COMMAND_SCALEFORM_STRING">}} for normal strings
+-   {{% native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT" %}}
+-   {{% native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT" %}}
+-   {{% native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL" %}}
+-   {{% native_link "_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_STRING" %}} **(only use for short strings like texture names)**
+-   A pair of {{% native_link "BEGIN_TEXT_COMMAND_SCALEFORM_STRING" %}}, {{% native_link "ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME" %}}, and {{% native_link "END_TEXT_COMMAND_SCALEFORM_STRING" %}} for normal strings
 
-**&gt;** Call {{<native_link "END_SCALEFORM_MOVIE_METHOD">}} to finish function call.
+**&gt;** Call {{% native_link "END_SCALEFORM_MOVIE_METHOD" %}} to finish function call.
 
 ### Drawing
 
 You can draw scaleform using one of these comamnds, **red, green, blue, alpha and unk parameters can be omitted as they don't affect anything**:
 
--   {{<native_link "DRAW_SCALEFORM_MOVIE">}} for drawing gfx in 2D on a specific position
--   {{<native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN">}} also draws gfx in 2D, however in fullscreen
--   {{<native_link "DRAW_SCALEFORM_MOVIE_3D">}} **do note that if you have blackout enabled this will be drawn with “solarized” and shifted to yellow colours**.
+-   {{% native_link "DRAW_SCALEFORM_MOVIE" %}} for drawing gfx in 2D on a specific position
+-   {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN" %}} also draws gfx in 2D, however in fullscreen
+-   {{% native_link "DRAW_SCALEFORM_MOVIE_3D" %}} **do note that if you have blackout enabled this will be drawn with “solarized” and shifted to yellow colours**.
 
 Masking
 -------
 
-Can be faked using the function {{<native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN_MASKED">}}, where the first gfx is what you want to render, and the second gfx is a mask for it.
+Can be faked using the function {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN_MASKED" %}}, where the first gfx is what you want to render, and the second gfx is a mask for it.
 
 This masking has no antialising, it doesn't perform “smooth” masking, if a particular pixel of masking gfx is not fully transparent, then the underlying pixel will be fully shown.
 

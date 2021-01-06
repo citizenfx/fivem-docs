@@ -167,11 +167,11 @@ Returns the name of the parent resource.
 
 #### GetNumResourceMetaData
 
-This function should not be used, instead the native {{<native_link "GET_NUM_RESOURCE_METADATA">}} should be used.
+This function should not be used, instead the native {{% native_link "GET_NUM_RESOURCE_METADATA" %}} should be used.
 
 #### GetResourceMetaData
 
-This function should not be used, instead the native {{<native_link "GET_RESOURCE_METADATA">}} should be used.
+This function should not be used, instead the native {{% native_link "GET_RESOURCE_METADATA" %}} should be used.
 
 ### IScriptHostWithManifest
 

@@ -21,4 +21,4 @@ reference, where you can see syntax per language, a description, and examples fo
 
 These natives are usable in **all** runtimes.
 
-{{<native_list "server">}}
+{{% native_list "server" %}}

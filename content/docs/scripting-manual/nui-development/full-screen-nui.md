@@ -9,8 +9,8 @@ support.
 
 The following natives are related to using full-screen NUI:
 
-* {{<native_link "SEND_NUI_MESSAGE">}}
-* {{<native_link "SET_NUI_FOCUS">}}
+* {{% native_link "SEND_NUI_MESSAGE" %}}
+* {{% native_link "SET_NUI_FOCUS" %}}
 
 ## Setting up a fullscreen NUI page
 To assign a full-screen NUI page to a resource, currently you need to specify a single `ui_page` in the
@@ -39,12 +39,6 @@ as follows:
 <script type="text/javascript" src="nui://my-resource/production.js" async></script>
 ```
 
-This also means you can use the Chromium developer tools to, say, fetch _any_ packaged resource file (including client
-scripts) simply using `fetch('nui://spawnmanager/fxmanifest.lua')` or similar in the developer console. Open source for
-everyone! Anyone trying to sell you ways to 'dump assets' has basically been scamming you.
-
-<!-- #GAMETODO: block this? but then we'll get NUI bypasses.. eww -->
-
 ## Developer tools
 CEF remote debugging tools are exposed on [http://localhost:13172/](http://localhost:13172/) as long as the game is
 running. You can use any Chromium-based browser to easily access these tools.
@@ -53,17 +47,20 @@ Alternately, it can be opened using the `nui_devTools` command in the game's <kb
 
 ## NUI focus
 There's a limited focus stack for NUI resources, you can set focus to the **current** resource using the
-{{<native_link "SET_NUI_FOCUS">}} native, which will set keyboard focus and/or mouse cursor focus depending on the
+{{% native_link "SET_NUI_FOCUS" %}} native, which will set keyboard focus and/or mouse cursor focus depending on the
 provided arguments.
 
 The most recently focused resource will be ordered on top of the focus stack, and resources are currently implemented
 as full-screen iframes: that means there's no click-through across resources.
 
 ## NUI messages
-You can send a [message][mdn-messages] to the current resource's NUI page using the {{<native_link "SEND_NUI_MESSAGE">}}
-native, or if using Lua, the convenience wrapper [SendNUIMessage][send-nui-message] which encodes a JSON string for you.
+You can send a [message][mdn-messages] to the current resource's NUI page using <span class="l-no-lua">the {{% native_link "SEND_NUI_MESSAGE" %}}
+native</span><span class="l-raw">, or if using Lua, </span><span class="l-lua">the convenience wrapper
+[SendNUIMessage][send-nui-message] which encodes a JSON string for you.</span><span class="l-no-raw l-no-lua">.</span>
 
 For example:
+
+<div class="l-lua">
 
 ```lua
 -- Lua
@@ -72,12 +69,20 @@ SendNUIMessage({
 })
 ```
 
+</div>
+
+<div class="l-js">
+
 ```js
 // JS
 SendNuiMessage(JSON.stringify({
     type: 'open'
 }))
 ```
+
+</div>
+
+<div class="l-cs">
 
 ```csharp
 // C#, assumes Newtonsoft.Json PCL version is referenced
@@ -86,6 +91,8 @@ SendNuiMessage(JsonConvert.SerializeObject(new
     type = "open"
 }));
 ```
+
+</div>
 
 ```js
 // browser side

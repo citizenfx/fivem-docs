@@ -90,7 +90,7 @@ RegisterCommand("car", new Action<int, List<object>, string>((source, args, raw)
 ```
 To start, we see a call to a function. We did not define that function. Well, _we_ (as in, the FiveM team) did, but not when guiding you, the reader, through this wondrously written marvel of a guide. That means it must come from somewhere else!
 
-And, guess what, it's actually {{<native_link "REGISTER_COMMAND">}}! Click that link, and you'll be led to the documentation for this native. It looks a bit like this:
+And, guess what, it's actually {{% native_link "REGISTER_COMMAND" %}}! Click that link, and you'll be led to the documentation for this native. It looks a bit like this:
 
 ```c
 // 0x5fa79b0f
@@ -156,7 +156,7 @@ This uses some natives and C# wrapper methods. We'll link a few of them and expl
 #### Step 1: Validation
 We started with checking the model. We set it to `adder`. If there are any arguments, we set the model to the first argument and cast it to a string.
 
-Then, we check if the vehicle is in the CD image using {{<native_link "IS_MODEL_IN_CDIMAGE">}}. This basically means 'is this registered with the game'. We also check if it's a vehicle using {{<native_link "IS_MODEL_A_VEHICLE">}}. If either check fails, we tell the player and return from the command.
+Then, we check if the vehicle is in the CD image using {{% native_link "IS_MODEL_IN_CDIMAGE" %}}. This basically means 'is this registered with the game'. We also check if it's a vehicle using {{% native_link "IS_MODEL_A_VEHICLE" %}}. If either check fails, we tell the player and return from the command.
 
 There may be C# wrapper here, but it's important to reify the use of natives as you will use them a lot when scripting. Make sure you have the `using static CitizenFX.Core.Native.API;` directive in your class.
 

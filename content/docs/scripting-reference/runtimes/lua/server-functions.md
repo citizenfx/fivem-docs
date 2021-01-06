@@ -21,4 +21,4 @@ weight: 515
 ## Native functions
 These links will redirect to the native reference page for each function.
 
-{{<native_list "server" "lua">}}
+{{% native_list "server" "lua" %}}

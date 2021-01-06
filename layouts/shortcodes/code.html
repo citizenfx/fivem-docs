@@ -1,4 +1,4 @@
 {{ $file := .Get "file" | readFile | chomp }}
 {{ $lang := .Get "language" }}
 {{ $rmv := "/static/resource_manifest_version.txt" | readFile }}
-{{ (replace (print "```" $lang "\n" $file "\n```") "{{RMV}}" $rmv) | markdownify }}
+{{ (replace (print "```" $lang "\n" $file "\n```") "{{RMV}}" $rmv) }}

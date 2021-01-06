@@ -4,7 +4,7 @@ weight: 770
 ---
 
 
-GTA V profile setting values can be obtained using this native: [`GetProfileSetting(int id)`]({{<native "GET_PROFILE_SETTING">}}).
+GTA V profile setting values can be obtained using this native: [`GetProfileSetting(int id)`]({{% native "GET_PROFILE_SETTING" %}}).
 
 
 |    ID | Settings Category       | Profile Setting Description                           |

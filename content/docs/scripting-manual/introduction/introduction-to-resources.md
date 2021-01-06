@@ -43,7 +43,7 @@ The resource manifest
 Every resource is required to contain a resource manifest by the name of `fxmanifest.lua` defining what files/scripts
 are used by the resource. A quick example manifest follows:
 
-{{< code file="/static/examples/manifest/fxmanifest.lua" language="lua" >}}
+{{%  code file="/static/examples/manifest/fxmanifest.lua" language="lua"  %}}
 
 See the [resource manifest reference][manifest-reference] for more details.
 

@@ -107,9 +107,9 @@ SetConvarServerInfo("convar_name", "Convar Value")
 
 Here's a list of all CFX API set functions that you can use to get or set convars.
 
-- {{<native_link "GET_CONVAR">}}
-- {{<native_link "GET_CONVAR_INT">}}
-- {{<native_link "SET_CONVAR">}}
-- {{<native_link "SET_CONVAR_REPLICATED">}}
-- {{<native_link "SET_CONVAR_SERVER_INFO">}}
+- {{% native_link "GET_CONVAR" %}}
+- {{% native_link "GET_CONVAR_INT" %}}
+- {{% native_link "SET_CONVAR" %}}
+- {{% native_link "SET_CONVAR_REPLICATED" %}}
+- {{% native_link "SET_CONVAR_SERVER_INFO" %}}
 

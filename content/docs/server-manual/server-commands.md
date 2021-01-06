@@ -8,9 +8,9 @@ description: >
 <!-- TODO: format this like client commands? -->
 
 Console commands can be executed either using an RCon tool, directly from the server console interface, a server configuration
-file, the server command line, or (if a resource is allowed by the ACL) the [ExecuteCommand]({{<native "EXECUTE_COMMAND">}}) function.
+file, the server command line, or (if a resource is allowed by the ACL) the [ExecuteCommand]({{% native "EXECUTE_COMMAND" %}}) function.
 
-Adding a custom RCon command can be done using the [RegisterCommand]({{<native "REGISTER_COMMAND">}}) function on the
+Adding a custom RCon command can be done using the [RegisterCommand]({{% native "REGISTER_COMMAND" %}}) function on the
 server, or the (legacy) `rconCommand` event.
 
 ## Resource commands
@@ -112,7 +112,7 @@ Defines which mode of state awareness to use.
 
 * **Off**: No state awareness at all, clients will use the standard GTA/RAGE P2P networking model, and the server will only function as a relay.
 * **On**: Full state awareness and server-determined entity routing.
-* **Legacy**: Compatibility mode for scripts that expect all players to exist on each client. Not recommended due to performance reasons and graphical glitches.
+* **Legacy**: Compatibility mode for scripts that expect all players to exist on each client. Not recommended due to performance issues and graphical glitches.
 
 ### `sv_maxClients [newValue]`
 
