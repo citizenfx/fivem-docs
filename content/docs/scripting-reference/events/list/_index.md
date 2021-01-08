@@ -27,9 +27,9 @@ OneSync events
 - [vehicleComponentControlEvent](../list/vehicleComponentControlEvent)
 - [respawnPlayerPedEvent](../list/respawnPlayerPedEvent)
 - [explosionEvent](../list/explosionEvent)
-- [entityCreated](../list/entityCreated)
-- [entityCreating](../list/entityCreating)
-- [entityRemoved](../list/entityRemoved)
+- [entityCreated](https://runtime.fivem.net/doc/events/server/index.html#entitycreated)
+- [entityCreating](https://runtime.fivem.net/doc/events/server/index.html#entitycreating)
+- [entityRemoved](https://runtime.fivem.net/doc/events/server/index.html#entityremoved)
 
 OneSync Bigmode/infinity events
 -----------
