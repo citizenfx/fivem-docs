@@ -5,7 +5,7 @@ weight: 220
 
 To [run FiveM][installing] your system must meet the [minimum requirements of the original game][gtav-system-specs].
 
-FiveM requires a _fully_ updated version of Windows 7, Windows 8.1 or Windows 10. An outdated operating system may not
+FiveM requires a _fully_ updated version of Windows 10. An outdated operating system may not
 work. It is generally advised to upgrade to Windows 10 when you can as this provides the best experience.
 
 Additional details:
