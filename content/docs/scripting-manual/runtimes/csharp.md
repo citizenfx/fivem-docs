@@ -4,69 +4,98 @@ weight: 423
 languages: ['cs']
 ---
 
-_This page is still a <b>work in progress</b> so this guide is not completed yet!_
-
 # Setting up our environment
-Before you can create your first C# resource, you'll need to install [Visual Studio 2017](https://visualstudio.microsoft.com/vs/) (the community/free version will work just fine).
+Before you can create your first C# resource, you'll need to install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/). The Community (free) edition will work just fine.
 
+## Creating our project
+1. Open Visual Studio 2019. A window similar to the one below will pop up:
+<br>
+![screenshot-1](/csharp-setup-1.png)
 
-## Creating your project
-1. Open Visual Studio, and click `File > New > Project`. A window should pop up that looks something like the window below:
-![screenshot-1](/csharp-tut-1.png)
-2. Make sure you select **Visual C#** in the panel on the left, then choose **Class Library (.NET Framework)**.
-<br>It's very important that you select the correct project type, as otherwise your resource will **not** run.
-3. After selecting the project type, make sure you set the Framework version to **.NET Framework 4.5.2** (somewhere at the bottom of the window, see the highlighted areas in the screenshot above). Yes, this is **not** the latest version, but this specific version is required for your resource to work correctly.
-4. Once you've selected all these things and specified the correct framework version, it's time to enter a name for this project.
-  - If this is going to be a client script, name it something like `MyResourceNameClient`.
-  - If it's going to be a server script, name it something like `MyResourceNameServer`.
-  - If it's going to be a script for both the server and the client, we'll consider this a Client script for now because we will create the Server project for this resource later.
-<br><br>{{% alert theme="info" %}}You might want to change the "Solution name:" to something simpler. Instead of **MyResourceName[Server/Client]** you probably want to change it to just **MyResourceName**.<br>However, this is completely up to you.{{% /alert %}}
-5. After choosing a proper name, click "Browse..." to choose a folder where you want to save this project, or click "OK" if you want to save it in the default location.
-### Additional project
-**You can skip these steps if you only created a server or client side project, however continue reading if you need both a client and a server sided project.**
-6. So, you've just created a client side project, but you also need a server side project. To add this to the solution, right-click on the "Solution '<solution name>' (1 project)" item in the Solution Explorer on the right side of your screen, and click "Add > New Project". All the settings should be the same as you used for the client project. This time, change the name to "MyResourceNameServer" and click "OK".
-7. You should now have 2 projects inside your "Solution 'MyResourceName'" solution (again, you can view this in the Solution Explorer on the right).
+2. Select "Create a new project". The following window will pop up:
+<br>
+![screenshot-2](/csharp-setup-2.png)
 
+3. Choose **Class Library (.NET Framework)** (C#) and click "next".
+<br>
+It's very important that you select the correct project type, as otherwise your resource will **not** run.
+<br>
+The following window will appear:
+<br>
+![screenshot-3](/csharp-setup-3.png)
 
-## Configuring some project settings
-To be able to build these projects and prepare them for FXServer, we'll need to change some settings in the project settings (change these settings in both projects if you're using multiple projects for the client/server).
+4. Choose a name for your new resource project. 
+<br>
+    - If this is going to be a client resource, name it something like `MyResourceNameClient`.
+    - If it's going to be a server resource, name it something like `MyResourceNameServer`.
+    - If it's going to be a resource containing both a server and a client project, we'll consider this a client project for now, because we will create the server project for this resource later. In this case, we recommend changing the solution name to just `MyResourceName` (see the image above), however, it's completely up to you.
+<br>
+
+5. Before proceeding to the next step, make sure you set the Framework version to **.NET Framework 4.5.2** (somewhere at the bottom of the window, see the highlighted areas in the screenshot above). 
+<br>
+Yes, this is **not** the latest version, but this specific version is required for your client resource to work correctly. In case of a server resource, it's possible to target up to **.NET Framework 4.6.1**.
+<br>
+Click "Create", and the full IDE will finally appear.
+
+## Creating additional projects
+{{% alert theme="info" %}}You can skip these steps if you only created a server or client side project, however continue reading if you need both a client and a server side project.{{% /alert %}}
+<br>
+1. So, you've just created a client-side project, but you also need a server-side project. Right-click on *"Solution 'MyResourceName' (1 of 1 projects)"* in the Solution Explorer, and click "Add > New Project".
+<br>
+![screenshot-4](/csharp-setup-4.png)
+
+2. Configure your project like we did before and click "Create".
+<br>
+![screenshot-5](/csharp-setup-5.png)
+
+## Sharing code between projects
+If you have multiple projects in your solution, and you want to share code among them, it's a good idea to create a shared project.
+<br>
+1. Follow the same steps to create a new project, but select the "Shared project" template.
+<br>
+![screenshot-6](/csharp-setup-6.png)
+
+2. After naming your shared project, you need to reference it in all of your projects. Right click on the "References" item of your project and select "Add reference", then tick the Shared project and click "OK".
+<br>
+![screenshot-7](/csharp-setup-7.png)
+
+Any classes you add to the shared project will be available in all of your projects where you referenced it. This is particularly useful for your data model classes.
+
+## Required project settings
+To make these projects work with FXServer, we'll need to change some settings.
 
 1. In the solution explorer on the right, right-click on your **project** (not the solution), and select "Properties".
-2. Then go to the "Application" tab on the left, and in there add `.net` at the end of the "Assembly name". Now press CTRL + S to save this change. ![screenshot-2](/csharp-tut-2.png)
-This is a very important step, if you do not add `.net` at the end of the Assembly name, your resource will **NOT** run (as it won't be suffixed with `.net.dll` in the output - renaming it will work but you probably won't want to do this).
+<br>
+![screenshot-8](/csharp-setup-8.png)
+
+2. In the "Application" tab on the left, modify the "Assembly name" and add `.net` to your project's name. Now press CTRL + S to save this change.
+<br>
+This is a very important step; if you do not add `.net` at the end of the Assembly name, your resource will **NOT** run (as it won't be suffixed with `.net.dll` in the output - renaming it will work but you probably won't want to do this manually every single time you compile your scripts).
+<br>
+![screenshot-9](/csharp-setup-9.png)
+
+Repeat the above steps for all of your projects (except shared projects).
+
+Optionally, you may want to add a build event to automatically copy your output files to your resource folder. To do this, navigate to the "Build Events" tab, copy the following code and paste it in the "Post-build event command line" field:
+```
+if $(ConfigurationName) == Release (
+    copy /y "$(TargetDir)$(TargetName).dll" "C:\path\to\your\resource\folder\$(TargetName).dll"
+)
+```
+Remember to set your solution's configuration to "Release".
 
 ## Setting up the required dependencies
-Once you've set that all up, it's time to get our dependencies for our resource.
-<br>Depending on the type of resource you want to create, we'll either need the server CitizenFX.Core.dll dependency (for resources that need to run on the server side), or the client CitizenFX.Core.dll dependency (for resources that need to run on the client). If you want to be able to run your script both on the server and the client, you'll need to get both of those dependencies, and we'll make 2 separate projects in our resource solution.
+To build script resources for FiveM in C#, you need to reference the appropriate packages. The best and easiest way to reference those packages and to keep them up to date, is to use the NuGet package manager, included in Visual Studio 2019.
 
-#### Client dependency
-Getting the client dependency is very easy. Simply go to your local installation folder of FiveM, and follow the following path and copy the CitizenFX.Core.dll file. Then go to the folder where you saved your  Visual Studio project, and paste the DLL file in that folder.
-```ini
-FiveM Application Data\citizen\clr2\lib\mono\4.5\CitizenFX.Core.dll
-```
-Now, go back into Visual Studio and go to your project in the Solution Explorer on the right. Right click on your (client) project, and click "Add > Reference".
-The following window should appear: ![screenshot-3](/csharp-tut-3.png)
-In that window, click on "Browse..." and go to your project folder. Find the CitizenFX.Core.dll file, select it, and press Add. You should now see that the DLL has been added to the "Browse > Recent" list. Make sure that the checkbox in front of the reference **is** checked, and click "OK" in the bottom right.
+1. Right click on your project and select "Manage NuGet Packages...".
+<br>
+![screenshot-10](/csharp-setup-10.png)
 
-Congratulations, you've now added the client dependency to your project. Only one more step before we can actually start coding. If you have a server sided project, also follow the next step. Otherwise, skip the next step and continue to the "Let's write some code" section.
-
-
-#### Server dependency
-The server project dependency is very similar to the client one. One major change is the location where you get the dependency from. Instead of getting it from your client files, you actually need to grab it from your server files.
-
-Go to the following folder in your server files:
-```ini
-citizen\clr2\lib\mono\4.5\
-```
-Once you're in there, copy the `CitizenFX.Core.dll` file and paste it in your C# server project folder.
-
-Now, go back into Visual Studio and go to your project in the Solution Explorer on the right. Right click on your (server) project, and click "Add > Reference".
-The same window shown in the above section should appear.
-
-In that window, click on "Browse..." and go to your server project folder. Find the CitizenFX.Core.dll file, select it, and press Add. You should now see that the DLL has been added to the "Browse > Recent" list. Make sure that the checkbox in front of the reference **is** checked, and click "OK" in the bottom right.
-
-Congratulations, you've now added the server dependency to your project.
-
+2. In the "browse" tab, search for "CitizenFX". In case you are installing the dependency for a client project, select `CitizenFX.Core.Client`, otherwise, if it's for a server project, select `CitizenFX.Core.Server`, then click "Install".
+<br>
+Be very careful to not install other CitizenFX NuGet packages because they are outdated.
+<br>
+![screenshot-11](/csharp-setup-11.png)
 
 # Let's write some code
-**[It's finally time to actually start writing some code! 🎉](/docs/scripting-manual/introduction/creating-your-first-script-csharp)**
+**[It's finally time to actually start writing some code! ??](/docs/scripting-manual/introduction/creating-your-first-script-csharp)**
