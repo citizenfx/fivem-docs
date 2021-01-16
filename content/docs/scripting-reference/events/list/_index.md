@@ -2,6 +2,7 @@
 title: List of events
 weight: 543
 layout: single
+hidden: true
 ---
 
 **A list of all non-resource-specific events.**
@@ -30,9 +31,3 @@ OneSync events
 - [entityCreated](../list/entityCreated)
 - [entityCreating](../list/entityCreating)
 - [entityRemoved](../list/entityRemoved)
-
-OneSync Bigmode/infinity events
------------
-
-- [playerEnteredScope](../list/playerEnteredScope)
-- [playerLeftScope](../list/playerLeftScope)

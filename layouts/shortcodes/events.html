@@ -1,0 +1,3 @@
+{{ $kind := .Get 0 }}
+{{- $events := getJSON (printf "https://runtime.fivem.net/doc/events/%s.html.json" $kind) -}}
+{{ $events.content }}
