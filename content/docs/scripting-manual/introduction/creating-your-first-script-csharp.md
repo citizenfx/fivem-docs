@@ -155,7 +155,7 @@ There may be C# wrappers here, but it's important to reify the use of natives as
 #### Step 2: Creating the vehicle
 Using the client side C# wrapper class `World`, we call the `CreateVehicle` method which takes a model, `Vector3` position, and `float` heading as arguments. This is the great thing about C#. You have access to a method supplied by _us_ such that you don't have to request and load a model like you would in Lua. This method returns us a `Vehicle` object. If you have experience with *ScriptHookV.NET* you may recognize these classes. The C# wrapper of FiveM is very similar.
 
-An important thing to notice is that the `CreateVehicle` method is [asnychronous](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/); this means that the wrapping method, in our case `CarCommand` must be `async` too, since we want to wait for our vehicle to be created before proceeding.
+An important thing to notice is that the `CreateVehicle` method is [asynchronous](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/); this means that the wrapping method, in our case `CarCommand` must be `async` too, since we want to wait for our vehicle to be created before proceeding.
 
 #### Step 3: Setting the player into the vehicle
 Since we have our ped and a vehicle now, using the C# wrapper with the `Game.PlayerPed` object, we can set ourselves into the vehicle's driver seat.
