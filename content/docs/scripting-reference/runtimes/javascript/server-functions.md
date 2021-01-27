@@ -11,6 +11,8 @@ weight: 512
 - [on](/docs/scripting-reference/runtimes/javascript/functions/on-server)
 - [setTick](/docs/scripting-reference/runtimes/javascript/functions/setTick)
 - [clearTick](/docs/scripting-reference/runtimes/javascript/functions/clearTick)
+- [getPlayers](/docs/scripting-reference/runtimes/javascript/functions/getPlayers)
+- [getPlayerIdentifiers](/docs/scripting-reference/runtimes/javascript/functions/getPlayerIdentifiers)
 
 ## Native functions
 These links will redirect to the native reference page for each function.
