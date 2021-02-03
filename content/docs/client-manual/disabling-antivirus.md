@@ -17,3 +17,6 @@ solution for these issues.
 - Add it to your antivirus exclusions. For the common antivirus vendors:
     - [Avast](https://support.avast.com/en-eu/article/Antivirus-scan-exclusions)
     - [AVG](https://support.avg.com/SupportArticleView?urlname=How-to-exclude-file-folder-or-website-from-AVG-scanning)
+    - [Bitdefender](https://www.bitdefender.com/consumer/support/answer/13427/)
+    - [Kaspersky](https://usa.kaspersky.com/blog/kaspersky-add-exclusion/11075/)
+    - [McAfee](https://service.mcafee.com/webcenter/portal/oracle/webcenter/page/scopedMD/s55728c97_466d_4ddb_952d_05484ea932c6/Page29.jspx?articleId=TS102056)
