@@ -10,7 +10,15 @@ It is included and maintained at the cfx-server-data repository.
 
 
 ## Exports
-_This resource does not have any export functions._
+
+### Client
+ - [addMessage](./exports/addMessagecl)
+ - [addSuggestion](./exports/addSuggestion)
+
+### Server
+ - [addMessage](./exports/addMessagesv)
+ - [registerMessageHook](./exports/registerMessageHook)
+ - [registerMode](./exports/registerMode)
 
 ## Events
 
