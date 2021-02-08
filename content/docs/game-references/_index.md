@@ -7,6 +7,7 @@ layout: single
 Reference lists and guides for game data are in this category.
 
 - [Controls](/docs/game-references/controls)
+- [Input mapper/parameter IDs](/docs/game-references/input-mapper-parameter-ids)
 - [Blips](/docs/game-references/blips)
 - [Markers](/docs/game-references/markers)
 - [Data files](/docs/game-references/data-files)
