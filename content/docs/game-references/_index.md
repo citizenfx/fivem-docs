@@ -8,6 +8,7 @@ Reference lists and guides for game data are in this category.
 
 - [Controls](/docs/game-references/controls)
 - [Blips](/docs/game-references/blips)
+- [Checkpoints](/docs/game-references/checkpoints)
 - [Markers](/docs/game-references/markers)
 - [Data files](/docs/game-references/data-files)
 - [Game events](/docs/game-references/game-events)
