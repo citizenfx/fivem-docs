@@ -16,15 +16,16 @@ Make sure you have registered a license key on the [Cfx.re Keymaster](https://ke
 ![pic](/server-setup/header.png)
 ### Windows
 #### Download the server
-1. Go to the [artifacts server][windows-artifacts].
-2. Download the latest recommended build.<br>
+1. Download and install [Visual C++ Redistributable 2019][vcredist] or newer.
+2. Go to the [artifacts server][windows-artifacts].
+3. Download the latest recommended build.<br>
    ![pic](/server-setup/windows-step-2.png)
-3. Open the `server.zip` you just downloaded.<br>
+4. Open the `server.zip` you just downloaded.<br>
    ![pic](/server-setup/windows-step-3.png)
-4. Extract it somewhere you want to store it. We'll pick `C:\FXServer\artifact`.<br>
+5. Extract it somewhere you want to store it. We'll pick `C:\FXServer\artifact`.<br>
    ![pic](/server-setup/windows-step-4a.png)<br>
    ![pic](/server-setup/windows-step-4b.png)
-5. Open the folder you just extracted it to. It should look a little like this:<br>
+6. Open the folder you just extracted it to. It should look a little like this:<br>
    ![pic](/server-setup/windows-step-5.png)
 
 #### Start the server
