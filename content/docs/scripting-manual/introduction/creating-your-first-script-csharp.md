@@ -22,10 +22,7 @@ namespace MyResourceNameClient
 {
     public class Class1 : BaseScript
     {
-        public Class1()
-        {
-
-        }
+    
     }
 }
 ```
@@ -42,24 +39,15 @@ namespace MyResourceNameClient
 {
     public class Class1 : BaseScript
     {
-        public Class1()
+        [Command("car", Restricted = false)]
+        private async Task SpawnCar(string[] args)
         {
-            EventHandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart);
-        }
-
-        private void OnClientResourceStart(string resourceName)
-        {
-            if (GetCurrentResourceName() != resourceName) return;
-
-            RegisterCommand("car", new Action<int, List<object>, string>((source, args, raw) =>
+            // TODO: Make a vehicle! FUN!
+            TriggerEvent("chat:addMessage", new
             {
-                // TODO: make a vehicle! fun!
-                TriggerEvent("chat:addMessage", new
-                {
-                    color = new[] {255, 0, 0},
-                    args = new[] {"[CarSpawner]", $"I wish I could spawn this {(args.Count > 0 ? $"{args[0]} or" : "")} adder but my owner was too lazy. :("}
-                });
-            }), false);
+                color = new[] {255, 0, 0},
+                args = new[] {"[CarSpawner]", $"I wish I could spawn this {(args.Count > 0 ? $"{args[0]} or" : "")} adder but my owner was too lazy. :("}
+            });
         }
     }
 }
@@ -68,43 +56,26 @@ namespace MyResourceNameClient
 You might be overwhelmed at this point, but don't worry. We will go through everything bit by bit.
 
 ```csharp
-EventHandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart);
+[Command("car", Restricted = false)]
 ```
-In the constructor we've added an event handler for the [onClientResourceStart](/docs/scripting-reference/events/list/onClientResourceStart/) event. It takes one argument; a string with the name of the resource that was started. It also has a delegate method `OnClientResourceStart`, which we defined beneath the constructor. Once the resource has started, FiveM will trigger this event and invoke the method.
+
+We can place the `Command` above any method with one of the following types: `void` or `async Task`. Placing this above a method will automatically register it as a command. By setting the `Restricted` parameter to false, we allow all players to use this command. Setting it to `true` requires the player to have the `command.[command name]` ace permission. This native internally calls the {{% native_link "REGISTER_COMMAND" %}} native.
 
 ```csharp
-if (GetCurrentResourceName() != resourceName) return;
+private async Task SpawnCar(string[] args)
 ```
-This if statement makes use of the native `GetCurrentResourceName()`. In short, _natives_, which has nothing to do with indigenous people, is actually a R* label for 'game-defined script functions'. We can access these natives through the `CitizenFX.Core.Native.API` class. You will be using other natives later when spawning a vehicle. In this snippet, `GetCurrentResourceName()` returns the name of the resource that our script is running. We compare this to the `resourceName` argument to make sure that we only call the rest of the method once. If we don't do this check, the rest of the method will run every time any resource has started.
+
+This is the method we will use to spawn the car. The beatiful `Command` attribute automatically pushes the `string[] args` parameter. The `args` are basically what you enter after the command like `/car zentorno` making `args` end up being `new string[1] { "zentorno" }` or `/car zentorno unused` being `new string[2]{ "zentorno", "unused" }`.
+
 
 ```csharp
-RegisterCommand("car", new Action<int, List<object>, string>((source, args, raw) =>
+TriggerEvent("chat:addMessage", new
 {
-    // TODO: make a vehicle! fun!
-    TriggerEvent("chat:addMessage", new
-    {
-        color = new[] {255, 0, 0},
-        args = new[] {"[CarSpawner]", $"I wish I could spawn this {(args.Count > 0 ? $"{args[0]} or" : "")} adder but my owner was too lazy. :("}
-    });
-}), false);
+    color = new[] {255, 0, 0},
+    args = new[] {"[CarSpawner]", $"I wish I could spawn this {(args.Count > 0 ? $"{args[0]} or" : "")} adder but my owner was too lazy. :("}
+});
 ```
-To start, we see a call to a function. We did not define that function. Well, _we_ (as in, the FiveM team) did, but not when guiding you, the reader, through this wondrously written marvel of a guide. That means it must come from somewhere else!
-
-And, guess what, it's actually {{% native_link "REGISTER_COMMAND" %}}! Click that link, and you'll be led to the documentation for this native. It looks a bit like this:
-
-```c
-// 0x5fa79b0f
-// RegisterCommand
-void REGISTER_COMMAND(char* commandName, func handler, BOOL restricted);
-```
-
-We'll mainly care about the name on the second line (`RegisterCommand`, as used in the C# code above), and the arguments.
-
-As you can see, the first argument is the **command name**. The second argument is a **function** (represented by the Action delegate in our example) that is the command handler, and the third argument is a **boolean** that specifies whether or not it should be a restricted command.
-
-The function itself gets an argument that is the `source`, which only really matters if you're running on the server (it'll be the client ID of the player that entered the command, a really useful thing to have), and a List of `args` which are basically what you enter after the command like `/car zentorno` making `args` end up being `new List<object>{ "zentorno" }` or `/car zentorno unused` being `new List<object>{ "zentorno", "unused" }`.
-
-But what about `TriggerEvent()`? That's also defined by _us_. It's used to call the event `chat:addMessage`, which is part of the [chat](/docs/resources/chat/events/chat-addMessage/) resource. In our written example, we send the author name `[CarSpawner]` in red and a message as arguments.
+But what about `TriggerEvent()`? It's used to call the event `chat:addMessage`, which is part of the [chat](/docs/resources/chat/events/chat-addMessage/) resource. In our written example, we send the author name `[CarSpawner]` in red and a message as arguments.
 
 At this point, you can build your client project, add/move it to your resource and run it. When typing `/car` in the chat box, you will see our command returning the chat message we defined. ![screenshot-1](/csharp-tut-6.png)
 
@@ -114,41 +85,33 @@ Hey! It's complaining in the chat box that you were too lazy to implement this. 
 You may have followed the Lua tutorial on creating your first script and remember that there was a lot of boilerplate code that might looked overwhelming. Fear not, FiveM provides an easy to use C# wrapper that will allow us to reduce the code.
 
 ```csharp
-RegisterCommand("car", new Action<int, List<object>, string>(async (source, args, raw) =>
+[Command("car", Restricted = false)]
+private async Task SpawnCar(string[] args)
 {
-    // account for the argument not being passed
-    var model = "adder";
-    if (args.Count > 0)
-    {
-        model = args[0].ToString();
-    }
+    string model = "adder";
+    if (args.Length > 0)
+        model = args[0];
 
-    // check if the model actually exists
-    // assumes the directive `using static CitizenFX.Core.Native.API;`
-    var hash = (uint) GetHashKey(model);
+    uint hash = (uint) GetHashKey(model);
     if (!IsModelInCdimage(hash) || !IsModelAVehicle(hash))
     {
-        TriggerEvent("chat:addMessage", new 
+        TriggerEvent("chat:addMessage", new
         {
             color = new[] { 255, 0, 0 },
             args = new[] { "[CarSpawner]", $"It might have been a good thing that you tried to spawn a {model}. Who even wants their spawning to actually ^*succeed?" }
         });
+
         return;
     }
 
-    // create the vehicle
-    var vehicle = await World.CreateVehicle(model, Game.PlayerPed.Position, Game.PlayerPed.Heading);
-    
-    // set the player ped into the vehicle and driver seat
+    Vehicle vehicle = await World.CreateVehicle(model, Game.PlayerPed.Position, Game.PlayerPed.Heading);
     Game.PlayerPed.SetIntoVehicle(vehicle, VehicleSeat.Driver);
 
-    // tell the player
-    TriggerEvent("chat:addMessage", new 
-    {
-        color = new[] {255, 0, 0},
-        args = new[] {"[CarSpawner]", $"Woohoo! Enjoy your new ^*{model}!"}
+    TriggerEvent("chat:addMessage", new {
+        color = new[] { 255, 0, 0 },
+        args = new[] { "[CarSpawner]", $"Woohoo! Enjoy your new ^*{model}!" }
     });
-}), false);
+}
 ```
 
 This uses some natives and C# wrapper methods. We'll link a few of them and explain the hard parts.
