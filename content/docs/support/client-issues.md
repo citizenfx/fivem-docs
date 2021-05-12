@@ -9,7 +9,7 @@ obscure issue? Find the most common issues here.
 I crash when playing on a server
 --------------------------------
 Crashes are fairly often related to a server-specific issue. To make sure your crash isn't related to a specific
-server, it is advised to join the [vanilla FiveM server][vanilla-server]. If that server works without your issue, we
+server, it is advised to join the [FiveM.net testing server][testing-server]. If that server works without your issue, we
 recommend you to contact the server owners of the server where you're experiencing crashes on. Otherwise, read on.
 
 I've been banned on a server
@@ -109,6 +109,6 @@ For all other issues, you are more than welcome to join our [Discord][discord] a
 [email]: mailto:support@fivem.net
 [forum]: https://forum.cfx.re
 [discord]: https://discord.gg/fivem
-[vanilla-server]: https://servers.fivem.net/#/servers/detail/198.27.79.239:30120
+[testing-server]: https://cfx.re/join/jm85gm
 [uninstalling]: /docs/client-manual/installing-fivem#uninstalling
 [discrete-gpu]: https://forum.cfx.re/t/217731
