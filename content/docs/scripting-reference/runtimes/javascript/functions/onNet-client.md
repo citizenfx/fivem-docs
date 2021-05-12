@@ -22,7 +22,7 @@ function onNet(eventName: string, fn: Function) => void
 let myNameIs = "Carl";
 
 onNet("foo:serverCalledYou", (newName: string) => {
-    myNameId = newName;
+    myNameIs = newName;
     console.warn(`Someone change your name to ${newName}`);
 
     if (newName.toLowerCase() === "idiot") {
