@@ -92,7 +92,7 @@ If you're experiencing any issues, you're more likely to see them fixed if you u
 2. Download the current recommended `master` branch build for Linux from the [artifacts server][linux-artifacts](copy the URL for the latest server version and use `wget <url>` to download it).
 3. Extract the build to the directory that was previously created, using `cd /home/username/FXServer/server && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).
 4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder.
-  <br>4b. For example `git clone https://github.com/citizenfx/cfx-server-data.git /home/username/FXServer/server-data`
+  <br>4b. For example `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
 5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfgexample) file below into that file).
 6. Set the license key in your `server.cfg` using `sv_licenseKey "licenseKeyGoesHere"`.
 7. Run the server from the `server-data` folder.
