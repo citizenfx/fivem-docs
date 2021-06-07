@@ -60,3 +60,14 @@ ConVar usage **example** for different port and profile:
 # Linux
 ./run.sh +set serverProfile dev_server +set txAdminPort 40125
 ```
+
+### Don't want to active txAdmin
+If you don't want to start txAdmin, and if you want to use a server.cfg, put this in your console when starting up:
+```bash
+# Windows
+./FXServer.exe +exec server.cfg
+
+# Linux
+./run.sh +exec server.cfg
+```
+If you use +exec after your run.sh or FXServer.exe, you won't start txAdmin. 
