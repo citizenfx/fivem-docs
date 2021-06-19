@@ -26,6 +26,11 @@ files {
 }
 ```
 
+```lua
+-- a page can also be hosted externally
+ui_page 'https://ui-frontend.cfx.example.com/b20210501/index.html'
+```
+
 ## Referencing other assets
 {{% alert title="Warning" color="warning" %}}
 Note that absolute NUI asset references **require** your resource name to be lowercased! This is due to DNS name

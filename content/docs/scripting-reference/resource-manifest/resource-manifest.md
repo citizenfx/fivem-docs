@@ -144,11 +144,16 @@ Defines a global function to be [exported](#export "wikilink") by a server scrip
 
 ### ui_page
 
-Sets the resource's [NUI]({{%  ref "/docs/scripting-manual/nui-development/full-screen-nui.md"  %}}) page to the defined file. This file (along with its dependencies) has to be referenced using [files](#file "wikilink").
+Sets the resource's [NUI]({{%  ref "/docs/scripting-manual/nui-development/full-screen-nui.md"  %}}) page to the defined file or URL. If specifying a a file, the file (along with its dependencies) has to be referenced using [files](#file "wikilink").
 
 ```lua
 ui_page 'html/index.html'
 file 'html/index.html'
+```
+
+```lua
+-- this also supports absolute URLs
+ui_page 'https://ui-frontend.cfx.example.com/b20210501/index.html'
 ```
 
 ### before_level_meta
