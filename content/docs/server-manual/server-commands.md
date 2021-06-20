@@ -68,6 +68,18 @@ Example:
 
     exec server_nested.cfg
 
+### `quit`
+
+Exits the server, sending a default quit message to all connected players.
+
+### `quit [reason]`
+
+Exits the server, also sending the specified reason to all connected players.
+
+Example:
+
+    quit "Restarting - will be back soon!"
+
 ## Management commands
 
 ### `status`
