@@ -160,6 +160,9 @@ Usage: `netobjviewer <true|false>`
 ### quit
 Running the `quit` command will force the FiveM client to close immediately.
 
+### quit [reason]
+The quit command can also specify a reason which'll be passed to a server drop event.
+
 ### r_disableRendering
 Internal dev tool. Not of use to a regular user, and can not be toggled at runtime.
 
