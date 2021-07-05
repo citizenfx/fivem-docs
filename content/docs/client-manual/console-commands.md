@@ -170,6 +170,8 @@ Internal dev tool. Not of use to a regular user, and can not be toggled at runti
 The resmon command will open the resource monitor. The resource monitor monitors the CPU usage and memory usage for each
 resource and shows this in a nice overview. Comes in handy when you encounter performance issues during gameplay.
 
+Note: to use `resmon` you have to either be running a Canary build or add `+set moo 31337` to your FiveM shortcut.
+
 Usage: `resmon <true|false>`
 
 ### save_gta_cache
