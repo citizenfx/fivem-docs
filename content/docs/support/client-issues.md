@@ -86,7 +86,7 @@ Delete `%appdata%\citizenfx\ros_id.dat` and `%localappdata%\digitalentitlements`
 Stuck on a black screen
 -----------------------
 This is a common issue with certain NVIDIA drivers. Stay patient, it takes a minute to load. This often
-happens to other games too.
+happens to other games too. Make sure your drivers are up-to-date.
 
 Stuck on a colored background but no menu
 ------------------------------
