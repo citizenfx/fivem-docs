@@ -9,6 +9,84 @@ may be added by resources; these are just the standard FiveM commands.
 These commands can be used with the client console, which you can open by pressing F8. You can also install additional
 tools if preferred, like [VConsole2][vconsole]. This allows you to use the client console outside of the game.
 
+## User commands
+
+User commands can be used in the client console by anyone, and don't require additional developer mode settings to be enabled or usable.
+
+### connect \<server\>
+Connects to a server using a given IP address and port, or URL.
+
+Example: `connect 127.0.0.1:30120`, `connect "https://fivem.net/"`, `connect cfx.re/join/e23ywr`
+
+
+### disconnect
+Disconnect you from the server you are connected to and returns to the main menu.
+
+### bind
+Lists all configured bindings.
+
+### bind \<mapper> \<input> \<command>
+Binds an [input](/docs/game-references/input-mapper-parameter-ids/) to execute the specified command when pressed in-game.
+
+Example: `bind keyboard F9 "say hi; wait 250; say bye"`
+
+### rbind \<resource> \<mapper> \<input> \<command>
+Equal to `bind` above, but will only run if the specified resource is in use on a server.
+
+### unbind \<mapper> \<input>
+Unbinds all commands bound to the specified input.
+
+Example: `unbind keyboard F9`
+
+### cl_drawfps \<bool\>
+Enables or disables the client frames-per-second counter in the screen corner.
+
+Usage: `cl_drawfps <true|false>`
+
+### cl_drawperf \<bool\>
+Enables or disables showing performance metrics in the screen corner:
+
+| Name (Units)  |                                Description                                 |
+| ------------- | -------------------------------------------------------------------------- |
+| FPS           | *Frames Per Second:* How many frames are drawn on screen each second.      |
+| Ping (ms)     | How long it takes to get a response from the server (round trip time).     |
+| PL (%)        | *Packet Loss:* How many packets failed to reach their destination in time. |
+| CPU Usage (%) | How much of the CPU's computing power is being utilized.                   |
+| GPU Usage (%) | How much of the GPU Engine's computing power is being utilized.            |
+| GPU Temp (°C) | The temperature of the GPU in Celsius.                                     |
+
+Usage: `cl_drawperf <true|false>`
+
+### quit
+Will force the client to close immediately.
+
+### quit [reason]
+Will force the client to close immediately, specifying a quit reason to the server.
+
+### loadlevel \<level_name>
+<!-- TODO: Needs an reference on how to use and/or setup the loadlevel command -->
+Starts a local game loading a level (or commonly known as a map) from the name supplied.
+
+Example: `loadlevel gta5`, `loadlevel rdr3`, `loadlevel blank-map`.
+
+### storymode
+Starts FiveM story mode.
+
+### profile_sfxVolume \<0-10+>
+Sets the SFX volume for the game. This value has no upper limit, however the lower limit is 0, and 100% volume maps to 10.
+
+### profile_musicVolume \<0-10+>
+Sets the music volume for the game when in single-player modes.
+
+### profile_musicVolumeInMp \<0-10+>
+Sets the music volume for the game when connected to a network game.
+
+## Developer commands
+
+Developer commands require the client to run in a special developer mode, or they'll show an error like `Access denied for command resmon`.
+
+This developer mode can be enabled by launching the FiveM/RedM client using the `+set moo 31337` argument (for example, by adding it to a shortcut), and is automatically enabled when running the client on a non-production build (such as Canary).
+
 ### cmdlist
 The `cmdlist` command will list all the commands that are registered on the client (or server). It will also output the
 variables that have been set by using the `set`, `sets` and `seta` commands.
@@ -30,24 +108,20 @@ Example patterns:
 - Messages originating from any resource: `script:*`
 - Messages originating from both `banking` and `racing` resources: `script:banking script:racing`
 
-
-### connect
-You can use the `connect` to connect to a server using a given IP address and port.
-
-Usage: `connect <ip:port>`
-
-Example: `connect 127.0.0.1:30120`
-
 ### developer
 Enables some additional logging for developers. Typically not of use to a regular user.
 
 Usage: `developer <true|false>`
 
-### disconnect
-`disconnect` will disconnect you from the current server you are connected to and return to the main menu.
+### devgui_cmd \<path> \<command>
+Adds a command to the developer GUI shown above the console.
 
-### doshit
-Used internally, to test some experimental features. Not of use to a regular user.
+Example: `devgui_cmd "Launch/MP/Disconnect" "disconnect"`
+
+### devgui_convar \<path> \<variable>
+Adds a convar to the developer GUI shown above the console.
+
+Example: `devgui_convar "Game/SFX Volume" profile_sfxVolume`
 
 ### invoke-levelload
 An alias for `loadlevel`, see the [loadlevel](#loadlevel) command for details.
@@ -76,11 +150,12 @@ identifier.steam:110000111111112 <- group.moderator
 
 On the left is the child node that belongs to the parent node on the right side.
 
-### loadlevel
-<!-- TODO: Needs an reference on how to use and/or setup the loadlevel command -->
-Loads a level (or commonly known as a map) from the name supplied.
+### localGame \<name>
+<!-- DOCTODO: document this concept -->
+Loads a local resource from `usermaps:/resources/[name]` in a single-player game.
 
-Usage: `loadlevel <level_name>`
+### localRestart
+Restarts the localGame resource.
 
 ### modelviewer
 Allows you to load in TXDs and drawables via an graphical interface.
@@ -94,13 +169,22 @@ The default value is 50, minimum is 1 and maximum is 200 per second.
 
 Usage: `net_maxPackets <number_of_packets>`
 
+### net_printOwner \<objectID>
+Prints the owner of a network object ID.
+
 ### net_showCommands
-Internal dev tool. Not of use to a regular user.
+Internal dev tool. Not of use to a regular user unless asked to run.
 
-### neteventlog
-The `neteventlog` is a command to show you all of the network event traffic.
+### net_showDrilldown
+Internal dev tool. Not of use to a regular user unless asked to run.
 
-This command will show any incoming / outgoing event traffic. It shows the direction of the event (ex. Server -> Client), the event name, and the size of the data sent (ex. 2 bytes).
+### net_showTime
+Internal dev tool. Not of use to a regular user unless logging state-awareness data.
+
+### netEventLog
+Enables a tool displaying all network event traffic.
+
+This command will show any incoming/outgoing event traffic. It shows the direction of the event (e.g. Server -> Client), the event name, and the size of the data sent (e.g. 2 bytes).
 
 Usage: `neteventlog <true|false>`
 
@@ -115,56 +199,42 @@ Usage: `net_statsFile <file_name>`
 Example: `net_statsFile metrics.csv` - this will create a CSV file called `metrics.csv` in your
 FiveM [application data directory][faq-data].
 
-### cl_drawfps
-The `cl_drawfps` command will show reliably the frames per second.
-
-Usage: `cl_drawfps <true|false>`
-
-### cl_drawperf
-The `cl_drawperf` command will show the following performance metrics:
-
-| Name (Units)  | Description                                                            |
-|---------------|------------------------------------------------------------------------|
-| FPS           | *Frames Per Second:* How many frames are drawn on screen each second.  |
-| Ping (ms)     | How long it takes to get a response from the server (round trip time). |
-| PL (%)        | *Packet Loss:* How many packets failed to reach their destination.     |
-| CPU Usage (%) | How much of the CPU's computing power is being utilized.               |
-| GPU Usage (%) | How much of the GPU Engine's computing power is being utilized.        |
-| GPU Temp (°C) | The temperature of the GPU in Celsius.                                 |
-
-Usage: `cl_drawperf <true|false>`
-
 ### netgraph
 The `netgraph` command will give you real time metrics about the FiveM client network usage.
 The netgraph consists of a graph and basic information about the network:
 
-| Field Name  | Description                                                           |
-|-------------|-----------------------------------------------------------------------|
+| Field Name  |                              Description                              |
+| ----------- | --------------------------------------------------------------------- |
 | ping        | How long it takes to get a response from the server (round trip time) |
 | in          | How many packets we received per second.                              |
 | in (bytes)  | How many bytes we received per second.                                |
 | out         | How much packets we have sent per second.                             |
 | out (bytes) | How much bytes we have sent per second.                               |
-| rt          | How many routing packets we have received.                            |
-| rd          | How many routing packets we have sent.                                |
+| rt          | Routing packets received/sent.                                        |
+| rd          | Routing packet **delay**.                                             |
 
-The graph represents how many packets have been sent or received.
+The graph represents how many packets have been sent or received of a certain kind.
 
 Usage: `netgraph <true|false>`
 
 ### netobjviewer
-Shows a list of current nodes being synchronized over the network, when OneSync is enabled.
+Shows a list of current objects and nodes being synchronized over the network, when game state awareness is enabled.
 
 Usage: `netobjviewer <true|false>`
 
-### quit
-Running the `quit` command will force the FiveM client to close immediately.
+### netobjviewer_syncLog
+Used when diagnosing discrepancies in written game state. Not of use to a regular user.
 
-### quit [reason]
-The quit command can also specify a reason which'll be passed to a server drop event.
+### nui_devtools
+Opens the NUI dev tools window from the game process.
+
+### onesync_logFile \<filename>
+Used to save client-side logs from the game state awareness subsystem. These files get large, so this command should be used sparingly.
+
+Example: `onesync_logFile "1s_today.log"; wait 5000; onesync_logfile ""`
 
 ### r_disableRendering
-Internal dev tool. Not of use to a regular user, and can not be toggled at runtime.
+Used for supporting internal tooling. Not of use to a regular user, and can not be toggled at runtime.
 
 ### resmon
 The resmon command will open the resource monitor. The resource monitor monitors the CPU usage and memory usage for each
@@ -231,6 +301,11 @@ Usage: `strdbg <true|false>`
 `strlist` is a graphical interface showing the entries registered in the GTA streamer, and their current status.
 
 Usage `strlist <true|false>`
+
+### strmem
+Shows a listing of streaming memory used by specific streaming assets, as well as a global overview.
+
+Usage: `strmem <true|false>`
 
 ### test_ace
 Tests if a principal is allowed or denied access to a given object.
