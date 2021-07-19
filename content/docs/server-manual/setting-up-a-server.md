@@ -16,15 +16,16 @@ Make sure you have registered a license key on the [Cfx.re Keymaster](https://ke
 ![pic](/server-setup/header.png)
 ### Windows
 #### Download the server
-1. Go to the [artifacts server][windows-artifacts].
-2. Download the latest recommended build.<br>
+1. Download and install [Visual C++ Redistributable 2019][vcredist] or newer.
+2. Go to the [artifacts server][windows-artifacts].
+3. Download the latest recommended build.<br>
    ![pic](/server-setup/windows-step-2.png)
-3. Open the `server.zip` you just downloaded.<br>
+4. Open the `server.zip` you just downloaded.<br>
    ![pic](/server-setup/windows-step-3.png)
-4. Extract it somewhere you want to store it. We'll pick `C:\FXServer\artifact`.<br>
+5. Extract it somewhere you want to store it. We'll pick `C:\FXServer\artifact`.<br>
    ![pic](/server-setup/windows-step-4a.png)<br>
    ![pic](/server-setup/windows-step-4b.png)
-5. Open the folder you just extracted it to. It should look a little like this:<br>
+6. Open the folder you just extracted it to. It should look a little like this:<br>
    ![pic](/server-setup/windows-step-5.png)
 
 #### Start the server
@@ -70,7 +71,7 @@ Make sure you have registered a license key on the [Cfx.re Keymaster](https://ke
   <br>3b. Use any archiving tool (such as WinRAR or 7-Zip).
 4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder, for example, `D:\FXServer\server-data`.
   <br>4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
-5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfgexample) file below into that file).
+5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfg) file below into that file).
 6. Set the license key in your server.cfg using `sv_licenseKey "licenseKeyGoesHere"`.
 7. Run the server from the `server-data` folder. For example, in a plain Windows command prompt (cmd.exe) window: 
     ```dos
@@ -92,7 +93,7 @@ If you're experiencing any issues, you're more likely to see them fixed if you u
 3. Extract the build to the directory that was previously created, using `cd /home/username/FXServer/server && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).
 4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder.
   <br>4b. For example `git clone https://github.com/citizenfx/cfx-server-data.git /home/username/FXServer/server-data`
-5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfgexample) file below into that file).
+5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfg) file below into that file).
 6. Set the license key in your `server.cfg` using `sv_licenseKey "licenseKeyGoesHere"`.
 7. Run the server from the `server-data` folder.
   <br>7b. `bash /home/username/FXServer/server/run.sh +exec server.cfg`
