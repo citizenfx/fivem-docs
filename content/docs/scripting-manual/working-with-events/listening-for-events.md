@@ -28,6 +28,15 @@ private void TargetFunction(string param1, bool param2)
 {
     // Code that gets executed once the event is triggered goes here.
 }
+
+// -----------------------------------------------------------------------------
+
+// Or using EventHandlers Attribute
+[EventHandlers("eventName")]
+private void TargetFunction(string param1, bool param2)
+{
+    // Code that gets executed once the event is triggered goes here.
+}
 ```
 
 Using **source** (on the server) works as follows:
@@ -38,6 +47,16 @@ EventHandlers["netEventName"] += new Action<Player, string, bool>(TargetFunction
 
 
 // Create a function to handle the event somewhere else in your code, or use a lambda.
+private void TargetFunction([FromSource] Player source, string param1, bool param2)
+{
+    // Code that gets executed once the event is triggered goes here.
+    // The variable 'source' contains a reference to the player that triggered the event.
+}
+
+// -----------------------------------------------------------------------------
+
+// Or using EventHandlers Attribute
+[EventHandlers("netEventName")]
 private void TargetFunction([FromSource] Player source, string param1, bool param2)
 {
     // Code that gets executed once the event is triggered goes here.
