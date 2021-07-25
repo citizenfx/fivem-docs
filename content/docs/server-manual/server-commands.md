@@ -126,6 +126,36 @@ Defines which mode of state awareness to use.
 * **On**: Full state awareness and server-determined entity routing.
 * **Legacy**: Compatibility mode for scripts that expect all players to exist on each client. Not recommended due to performance issues and graphical glitches.
 
+### `sv_enforceGameBuild [build]`
+
+Selects a game build for clients to use. This can only be specified at startup, and can not be changed at runtime.
+
+Example:
+
+    sv_enforceGameBuild h4
+    sv_enforceGameBuild mptuner
+    sv_enforceGameBuild 1355
+
+Every build includes all content and changes from the builds before.
+
+**FiveM builds**
+
+| Number |               Aliases                |       Marketing name        |
+| ------ | ------------------------------------ | --------------------------- |
+| 1604   | xm18, christmas2018, mpchristmas2018 | Arena War                   |
+| -      | -                                    | The Diamond Casino & Resort |
+| -      | -                                    | Diamond Casino Heist        |
+| 2060   | sum, mpsum                           | Los Santos Summer Special   |
+| 2189   | h4, heist4, mpheist4                 | Cayo Perico Heist           |
+| 2372   | tuner, mptuner                       | Los Santos Tuners           |
+
+**RedM builds**
+
+| Number |                               Notes                               |
+| ------ | ----------------------------------------------------------------- |
+| 1311   | Mid 2020 update, not compatible with Red Dead Online licenses.    |
+| 1355   | December 2020 update, works with newer game editions such as RDO. |
+
 ### `sv_maxClients [newValue]`
 
 A console variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 1024.
