@@ -103,6 +103,7 @@ If you're experiencing any issues, you're more likely to see them fixed if you u
 - If you don't get any 'resources found', and it says 'Failed to start resource', you didn't 'cd' to the right folder.
 - If no resources get started, and you can't connect, you didn't add +exec.
 - If you get 'no license key was specified', one of the above things applies.
+- If your server doesn't show up on the server list, make sure that you have port forwarded, and that you are using `sets sv_projectName` and `sv_projectDesc` instead of `sv_hostname`.
 
 <a name="servercfgexample"></a>
 
