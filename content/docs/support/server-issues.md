@@ -11,6 +11,7 @@ direct connect. This issue usually is a result of bad port forwarding or some
 firewall issue. Make sure your network configuration is correct.
 
 Server configuration is also important. Your server is listed in the server list if you use the [default server.cfg example][servercfg]. It's possible that you have removed the `#` in front of the following line in your server.cfg.
+Also make sure that you use `sets sv_projectName` and `sets sv_projectDesc` instead of `sv_hostname` when setting your server name.
 
 ```yaml
 #sv_master1 ""
