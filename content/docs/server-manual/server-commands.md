@@ -155,6 +155,7 @@ Every build includes all content and changes from the builds before.
 | ------ | ----------------------------------------------------------------- |
 | 1311   | Mid 2020 update, not compatible with Red Dead Online licenses.    |
 | 1355   | December 2020 update, works with newer game editions such as RDO. |
+| 1436   | July 2021 update, includes new content from Blood Money DLC.      |
 
 ### `sv_maxClients [newValue]`
 
