@@ -9,9 +9,6 @@ references in codegen.
 
 <!-- #GAMETODO: actually fix that? -->
 
-{{% alert theme="warning" %}}Note that NUI callbacks **require** your resource name to be lowercased! This is due to DNS
-name restrictions.{{% /alert %}}
-
 Generally, you'll use the [RegisterNUICallback][registernuicallback] function in Lua, and the
 {{% native_link "REGISTER_NUI_CALLBACK_TYPE" %}} native along with an event handler in other languages.
 

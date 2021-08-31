@@ -4,7 +4,7 @@ weight: 441
 ---
 
 The most common use case of NUI is a full-screen 'UI page', which is overlaid on top of the game and may or may not have
-input focus. These are supported on both FiveM and RedM at this time, and are part of basic CitizenFX framework level
+input focus. These are supported on both FiveM and RedM at this time, and are part of basic Citizen framework level
 support.
 
 The following natives are related to using full-screen NUI:
@@ -22,7 +22,8 @@ ui_page 'main.html'
 
 -- every client-side file still needs to be added to the resource packfile!
 files {
-    'main.html'
+    'main.html',
+    'build/main.js',
 }
 ```
 
@@ -32,23 +33,21 @@ ui_page 'https://ui-frontend.cfx.example.com/b20210501/index.html'
 ```
 
 ## Referencing other assets
-{{% alert title="Warning" color="warning" %}}
-Note that absolute NUI asset references **require** your resource name to be lowercased! This is due to DNS name
-restrictions.
-{{% /alert %}}
-
-The NUI system registers a `nui://` protocol scope for resource files. Therefore, you can reference a file in a resource
+The NUI system registers a `https://cfx-nui-` protocol scope for resource files. Therefore, you can reference a file in a resource
 as follows:
 
 ```html
-<script type="text/javascript" src="nui://my-resource/production.js" async></script>
+<script type="text/javascript" src="https://cfx-nui-my-resource/production.js" async></script>
 ```
+
+This formerly was known as `nui://`, but this is no longer a secure context in newer browser versions.
 
 ## Developer tools
 CEF remote debugging tools are exposed on [http://localhost:13172/](http://localhost:13172/) as long as the game is
 running. You can use any Chromium-based browser to easily access these tools.
 
-Alternately, it can be opened using the `nui_devTools` command in the game's <kbd>F8</kbd> console.
+Alternately, it can be opened using the `nui_devTools` command in the game's <kbd>F8</kbd> console, assuming the 
+developer mode is enabled.
 
 ## NUI focus
 There's a limited focus stack for NUI resources, you can set focus to the **current** resource using the

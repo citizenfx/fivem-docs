@@ -22,7 +22,7 @@ The native documentation contains information for each of these, but here are so
 
 * Rendering in 2D space using {{% native_link "DRAW_SPRITE" %}}
 * Rendering to a game render target object using similar natives.
-* Rendering arbitrarily in world space using a specialized Scaleform.
-  [Forum topic](https://forum.cfx.re/t/131208)
+* Rendering arbitrarily in world space using a specialized Scaleform, like in this 
+  [forum topic](https://forum.cfx.re/t/131208).
 
 This can be used to make cinema screens, asynchronous in-game hint overlays, etc. fairly trivially.
