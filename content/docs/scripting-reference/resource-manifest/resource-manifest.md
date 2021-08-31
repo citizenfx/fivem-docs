@@ -5,7 +5,7 @@ weight: 505
 
 The **resource manifest** is a file named `fxmanifest.lua` (or previously, `__resource.lua`), placed in a [resource folder](/docs/scripting-manual/introduction/introduction-to-resources) on the server.
 
-It is a Lua file, ran in a separate runtime from the usual Lua scripts, using a special setup so that a semi-declarative syntax can be used for defining metadata.
+It is a Lua file, ran in a separate runtime from any Lua scripts in the resource, set up with a semi-declarative syntax to be used for defining metadata.
 
 Example
 -------
@@ -62,6 +62,7 @@ Defines the supported game API sets for the resource.
 |  Name  |                                   Meaning                                    |
 | ------ | ---------------------------------------------------------------------------- |
 | common | Runs on any game, but can't access game-specific APIs - only CitizenFX APIs. |
+| gta4   | Runs on LibertyM.                                                            |
 | gta5   | Runs on FiveM.                                                               |
 | rdr3   | Runs on RedM.                                                                |
 
@@ -97,7 +98,9 @@ Defines a script to be loaded on both sides, and adds the file to the resource p
 
 ### export
 
-Defines a global function to be exported by a client script. In Lua, this will export `_G[exportName]` as `exportName`. In C\#, this'll do absolutely nothing at this time.
+Defines a global function to be exported by a client script for Lua/JS. In Lua, this will export `_G[exportName]` as `exportName`.
+
+Instead of using this, try using the `exports('name', ..)` or `Exports.Add` functions.
 
 #### Defining an export
 
@@ -236,18 +239,37 @@ Requires the specified resource to load before the current resource.
 
 ```lua
 dependency 'myresource-base'
-```
 
-### dependencies
-
-Alias for [dependency](#dependency "wikilink"). This is not a typo, but rather an intentional alias specifically for pluralization.
-
-```lua
 dependencies {
     'myresource-base',
     'utility-resource'
 }
 ```
+
+#### Runtime constraints
+The `dependency` field can also be used to specify requirements for the resource to run, such as a minimum server version,
+a server policy value, or a game build. These are specified using the following syntax:
+
+```lua
+dependencies {
+    '/server:4500',                -- requires at least server build 4500
+    '/policy:subdir_file_mapping', -- requires the server key to have 'subdir_file_mapping' granted
+    '/onesync',                    -- requires state awareness to be enabled
+    '/gameBuild:h4',               -- requires at least game build 2189
+    '/native:0xE27C97A0',          -- requires native 0xE27C97A0 to be supported
+}
+```
+
+The valid constraint types are as follows:
+
+|   Type    |                     Requirement                     |                      Values                      |
+| --------- | --------------------------------------------------- | ------------------------------------------------ |
+| server    | A minimum server version (build >= [arg])           | Any number.                                      |
+| policy    | A specific policy being granted.                    | subdir_file_mapping ('clothing support'), others |
+| onesync   | State awareness not being disabled.                 | No value.                                        |
+| gameBuild | Game build being set to at least this build.        | The same values as sv_enforceGameBuild.          |
+| native    | The specified native being supported on the server. | Any server-side native hash.                     |
+
 
 ### lua54
 
@@ -265,24 +287,11 @@ Marks the current resource as a replacement for the specified resource. This mea
 provide 'mysql-async'
 ```
 
-### disable_lazy_natives
-
-{{% notice info %}}
-Lazy loading of natives currently only happens in Lua.
-{{% /notice %}}
-
-By default, lazy loading of native functions is enabled to drastically reduce resource memory usage.
-While not recommended, you can set this option to any value to disable lazy loading.
-
-<!-- TODO: Link to lazy loading section in Lua runtime manual. -->
-
-```lua
-disable_lazy_natives 'yes'
-```
-
 ### clr_disable_task_scheduler
 
 When present, disables the custom C# task scheduler on the server. This will increase compatibility with third-party libraries using the .NET TPL, but make it more likely you'll have to `await Delay(0);` to end up back on the main thread.
+
+This is already enabled by default if using `fx_version` of `bodacious` or higher.
 
 ```lua
 clr_disable_task_scheduler 'yes'
@@ -296,7 +305,7 @@ Each manifest version includes all features from manifest versions above, except
 
 ### FX version `cerulean` (2020-05)
 
--   Requires `https://` callbacks but supporting WASM and fetch.
+-   Loads NUI resources in a 'secure context' to support WASM and fetch APIs, but requires callbacks to be changed to `https://` instead of `http://`.
 
 ### FX version `bodacious` (2020-02)
 
