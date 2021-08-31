@@ -19,6 +19,16 @@ file 'load.html'
 loadscreen 'https://my-server.example.com/loadscreen/'
 ```
 
+## Cursor/input
+The loading screen will always be focused for both mouse and keyboard input, however the cursor is not shown by default
+for legacy reasons.
+
+The NUI cursor can be enabled by adding a `loadscreen_cursor` entry to the resource manifest that contains the loading screen:
+
+```lua
+loadscreen_cursor 'yes'
+```
+
 ## Handover data
 Server scripts can specify data pairs to send to the client loading screen using the `handover` function in the playerConnecting
 event. This data will be passed to the loading screen in the `window.nuiHandoverData` property.
