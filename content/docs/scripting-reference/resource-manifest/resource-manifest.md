@@ -19,17 +19,21 @@ Internally, this creates the following metadata entries:
 -   **fx_version**: {{%  rmv2  %}}
 -   **game**: gta5
 -   **game**: rdr3
+-   **author**: John Doe \<j.doe@example.com\>
+-   **description**: Example resource
+-   **version**: 1.0.0
 -   **client_script**: client.lua
--   **client_script**: client_two.lua
--   **client_scripts**: { client.lua, client_two.lua }
+-   **client_script**: client_two.lua (note the `s` table being expanded)
 -   **server_script**: server.lua
--   **server_scripts**: { server.lua, server_two.lua }
 -   **my_data**: one
 -   **my_data**: three
 -   **my_data**: nine
 -   **my_data_extra**: `{"two":42}` (as JSON)
 -   **my_data_extra**: `{"four":69}`
 -   **my_data_extra**: `{"ninety":"nein"}`
+-   **pizza_topping**: pineapple
+
+You can also obtain this metadata from scripts using [GetNumResourceMetadata]({{% native "GET_NUM_RESOURCE_METADATA" %}}) and [GetResourceMetadata]({{% native "GET_RESOURCE_METADATA" %}}).
 
 Globbing
 --------
@@ -49,7 +53,7 @@ Support for globbing is specified under each entry type.
 Resource manifest entries
 -------------------------
 
-A list of built-in resource manifest entries follows. A resource can also contain custom metadata entries, which can be obtained using [GetNumResourceMetadata]({{% native "GET_NUM_RESOURCE_METADATA" %}}) and [GetResourceMetadata]({{% native "GET_RESOURCE_METADATA" %}}).
+A list of built-in resource manifest entries follows. A resource can also contain custom metadata entries, which can be useful for script.
 
 ### fx_version
 
