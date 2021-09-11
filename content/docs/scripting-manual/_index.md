@@ -26,4 +26,4 @@ layout: single
   - [NUI callbacks](/docs/scripting-manual/nui-development/nui-callbacks)
   - [Loading screens](/docs/scripting-manual/nui-development/loading-screens)
 - [Using Scaleform](/docs/scripting-manual/using-scaleform)
-
+- [Debugging](/docs/scripting-manual/debugging)
