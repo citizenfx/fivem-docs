@@ -12,6 +12,10 @@ These events are part of FiveM and do not require any resource.
 
 {{% events "client" %}}
 
+Stock resources events
+-----------
+These events require the respective [stock resources](docs/resources/) (which can be downloaded [here](https://github.com/citizenfx/cfx-server-data)) in order to be used.
+
 spawnmanager events
 -------------------
 These events are part of the [spawnmanager](/docs/resources/spawnmanager) resource.
@@ -32,8 +36,13 @@ baseevents events
 -----------------
 These events are part of the [baseevents](/docs/resources/baseevents) resource.
 
-- [onPlayerDied](/docs/resources/baseevents/events/onPlayerDied)
-- [onPlayerKilled](/docs/resources/baseevents/events/onPlayerKilled)
+- [baseevents:onPlayerDied](/docs/resources/baseevents/events/onPlayerDied)
+- [baseevents:onPlayerKilled](/docs/resources/baseevents/events/onPlayerKilled)
+- [baseevents:onPlayerWasted](/docs/resources/baseevents/events/onPlayerWasted)
+- [baseevents:enteringVehicle](/docs/resources/baseevents/events/enteringVehicle)
+- [baseevents:enteringAborted](/docs/resources/baseevents/events/enteringAborted)
+- [baseevents:enteredVehicle](/docs/resources/baseevents/events/enteredVehicle)
+- [baseevents:leftVehicle](/docs/resources/baseevents/events/leftVehicle)
 
 sessionmanager events
 ---------------------
