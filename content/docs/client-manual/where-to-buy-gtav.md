@@ -12,7 +12,7 @@ the authors, buy the game.
 
 - [Steam](https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/)
 - [Epic Games Store](https://www.epicgames.com/store/product/grand-theft-auto-v)
-- [Rockstar Warehouse](https://www.rockstargames.com/V/order)
+- [Rockstar](https://www.rockstargames.com/V/order)
 - [Amazon](https://www.amazon.com/Grand-Theft-Auto-V-PC/dp/B00KVXB5YQ)
 - [Newegg](https://www.newegg.com/rockstar-games-grand-theft-auto-v-with-gta-online-pc/p/N82E16832137064)
 
