@@ -2,7 +2,7 @@
 fx_version 'cerulean'
 games { 'rdr3', 'gta5' }
 
-author 'Jon Doe'
+author 'John Doe <j.doe@example.com>'
 description 'Example resource'
 version '1.0.0'
 
@@ -19,3 +19,6 @@ my_data 'three' { four = 69 }
 
 -- due to Lua syntax, the following works too:
 my_data('nine')({ninety = "nein"})
+
+-- metadata keys can be arbitrary
+pizza_topping 'pineapple'

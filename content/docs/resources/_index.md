@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: Stock resources
 weight: 600
 ---
 

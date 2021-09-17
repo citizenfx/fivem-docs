@@ -62,11 +62,14 @@ Example:
 
 ### `exec [filename]`
 
-Runs the commands specified in the filename. Commonly seen as `FXServer.exe +exec server.cfg`.
+Runs the commands specified in the filename, relative to the server data directory, or any resource name specified with `@`.
+
+Commonly seen as `FXServer.exe +exec server.cfg`.
 
 Example:
 
     exec server_nested.cfg
+    exec @vMenu/config/permissions.cfg
 
 ### `quit`
 
@@ -118,6 +121,21 @@ Opens or closes the server debug GUI.
 
 ## Configuration variables
 
+### `gamename [game]`
+
+Defines the game to run the server for.
+
+Example:
+
+    FXServer.exe +set gamename rdr3
+
+#### Supported games
+| Name |   Marketing name    |
+| ---- | ------------------- |
+| gta4 | LibertyM for GTA:NY |
+| gta5 | FiveM for GTA:Five  |
+| rdr3 | RedM for RDR3       |
+
 ### `onesync [on/off/legacy]`
 
 Defines which mode of state awareness to use.
@@ -155,10 +173,11 @@ Every build includes all content and changes from the builds before.
 | ------ | ----------------------------------------------------------------- |
 | 1311   | Mid 2020 update, not compatible with Red Dead Online licenses.    |
 | 1355   | December 2020 update, works with newer game editions such as RDO. |
+| 1436   | July 2021 update, includes new content from Blood Money DLC.      |
 
 ### `sv_maxClients [newValue]`
 
-A console variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 1024.
+A variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 1024.
 
 Values starting at 32 will require `onesync` to be set to `on` or `legacy`, and values above 64 will require `onesync` to be set to `on`.
 
@@ -168,7 +187,7 @@ A boolean variable that, if true, hides player IP addresses from public reports 
 
 ### `sv_hostname [newValue]`
 
-A string variable that contains the server host name.
+A string variable that contains the old-style server-specific host name.
 
 ### `sv_authMaxVariance [newValue]`
 

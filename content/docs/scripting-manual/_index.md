@@ -1,5 +1,5 @@
 ---
-title: Scripting manual
+title: Guides for scripting
 weight: 400
 layout: single
 ---
