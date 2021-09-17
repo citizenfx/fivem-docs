@@ -131,5 +131,5 @@ What's next?
 [server-commands]: /docs/server-manual/server-commands
 [scripting-introduction]: /docs/scripting-manual/introduction
 
-[fxserver-support]: https://discord.gg/UwvVgsJ
+[fxserver-support]: https://discord.gg/fivem
 [fxserver-support-category]: https://forum.cfx.re/c/server-development/server-discussion
