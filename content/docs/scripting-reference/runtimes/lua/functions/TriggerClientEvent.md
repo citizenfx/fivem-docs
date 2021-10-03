@@ -22,10 +22,8 @@ Examples
 --------
 
 -- CLIENT
-
-Don't forget to [RegisterNetEvent][]!
 ```lua
-AddEventHandler('eventName', function(text)
+RegisterNetEvent('eventName', function(text)
   print(('I just received %s from the server'):format(text)) -- I just received Hello world! from the server
 end)
 ```
