@@ -185,9 +185,36 @@ Values starting at 32 will require `onesync` to be set to `on` or `legacy`, and 
 
 A boolean variable that, if true, hides player IP addresses from public reports output by the server.
 
+### `sets sv_projectName "project name"`
+
+A string variable containing the name of your 'project', which would for example be the server's community. This should
+be a name, not a list, nor should it contain tags.
+
+Any non-compliant name will be cut off in the server list. <!-- Use our tool to check your name. -->
+
+Example:
+
+```bash
+sets sv_projectName "Citizen Gaming"
+
+# or if you are using a premium key, it can contain one color
+sets sv_projectName "^6Citizen Gaming"
+```
+
+### `sets sv_projectDesc "project description"`
+
+A string variable containing the description of your project. This should be written as a sentence.
+
+Example:
+
+```bash
+sets sv_projectDesc "Your favorite drug deal simulation community!"
+```
+
 ### `sv_hostname [newValue]`
 
-A string variable that contains the old-style server-specific host name.
+A string variable that contains the server-specific host name. In addition to this, you may want to set `sv_projectName`
+and `sv_projectDesc`.
 
 ### `sv_authMaxVariance [newValue]`
 
