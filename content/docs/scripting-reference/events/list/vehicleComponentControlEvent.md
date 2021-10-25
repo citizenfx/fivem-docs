@@ -23,5 +23,7 @@ Examples
 --------
 ##### Lua Example:
 ```lua
--- TO DO
+AddEventHandler("vehicleComponentControlEvent", function(source, event)
+	print(source, json.encode(event))
+end)
 ```
