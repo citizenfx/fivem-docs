@@ -20,7 +20,7 @@ end)
 **C#**
 ```csharp
 // Usually in the constructor of a class that inherits BaseScript, but can be done anywhere in a BaseScript.
-EventHandlers["eventName"] += new Action<string, bool>(TargetFunction);
+EventHandler["eventName"] += new Action<string, bool>(TargetFunction);
 
 
 // Create a function to handle the event somewhere else in your code, or use a lambda.
@@ -31,8 +31,8 @@ private void TargetFunction(string param1, bool param2)
 
 // -----------------------------------------------------------------------------
 
-// Or using EventHandlers Attribute
-[EventHandlers("eventName")]
+// Or using EventHandler Attribute
+[EventHandler("eventName")]
 private void TargetFunction(string param1, bool param2)
 {
     // Code that gets executed once the event is triggered goes here.
@@ -55,8 +55,8 @@ private void TargetFunction([FromSource] Player source, string param1, bool para
 
 // -----------------------------------------------------------------------------
 
-// Or using EventHandlers Attribute
-[EventHandlers("netEventName")]
+// Or using EventHandler Attribute
+[EventHandler("netEventName")]
 private void TargetFunction([FromSource] Player source, string param1, bool param2)
 {
     // Code that gets executed once the event is triggered goes here.
