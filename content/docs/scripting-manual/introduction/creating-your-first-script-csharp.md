@@ -14,7 +14,7 @@ Before creating your first script with C#, there are a couple of things you will
 ### Writing code
 Now that you have set up your C# project and environment, you will have two projects; `MyResourceNameClient` and `MyResourceNameServer`.
 
-Any C# class that handles FiveM scripting-related events must inherit from the `BaseScript` class. Lets do this by going to `Class1.cs` in your client project. At the same time, we will also define a constructor, which we will use further on. Make sure you have a using directive to `CitizenFX.Core`.
+Any C# class that handles FiveM scripting-related events must inherit from the `BaseScript` class (Starting from artifact 3395, you can use specific inheritance class `ClientScript` for client and `ServerScript` for server). Lets do this by going to `Class1.cs` in your client project. At the same time, we will also define a constructor, which we will use further on. Make sure you have a using directive to `CitizenFX.Core`.
 ```csharp
 using CitizenFX.Core;
 
