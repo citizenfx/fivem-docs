@@ -44,6 +44,8 @@ Getting the client dependency is very easy. Simply go to your local installation
 ```ini
 FiveM Application Data\citizen\clr2\lib\mono\4.5\CitizenFX.Core.dll
 ```
+<br><br>{{% alert theme="info" %}}If you are working on machine where FiveM is not installed, you can obtain the dependency via NuGet Package: https://www.nuget.org/packages/CitizenFX.Core/ {{% /alert %}}
+  
 Now, go back into Visual Studio and go to your project in the Solution Explorer on the right. Right click on your (client) project, and click "Add > Reference".
 The following window should appear: ![screenshot-3](/csharp-tut-3.png)
 In that window, click on "Browse..." and go to your project folder. Find the CitizenFX.Core.dll file, select it, and press Add. You should now see that the DLL has been added to the "Browse > Recent" list. Make sure that the checkbox in front of the reference **is** checked, and click "OK" in the bottom right.
