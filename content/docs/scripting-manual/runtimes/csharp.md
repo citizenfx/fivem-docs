@@ -20,7 +20,9 @@ Before you can create your first C# resource, you'll need to install [Visual Stu
   - If this is going to be a client script, name it something like `MyResourceNameClient`.
   - If it's going to be a server script, name it something like `MyResourceNameServer`.
   - If it's going to be a script for both the server and the client, we'll consider this a Client script for now because we will create the Server project for this resource later.
-<br><br>{{% alert theme="info" %}}You might want to change the "Solution name:" to something simpler. Instead of **MyResourceName[Server/Client]** you probably want to change it to just **MyResourceName**.<br>However, this is completely up to you.{{% /alert %}}
+
+<br>{{% alert theme="info" %}}You might want to change the "Solution name:" to something simpler. Instead of **MyResourceName[Server/Client]** you probably want to change it to just **MyResourceName**.<br>However, this is completely up to you.{{% /alert %}}<br>
+
 5. After choosing a proper name, click "Browse..." to choose a folder where you want to save this project, or click "OK" if you want to save it in the default location.
 ### Additional project
 **You can skip these steps if you only created a server or client side project, however continue reading if you need both a client and a server sided project.**
