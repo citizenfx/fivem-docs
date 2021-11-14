@@ -31,7 +31,7 @@ GetPlayerPed(-1);
 Using Node.js APIs
 ------------------
 
-FiveM includes a [customized version][nodejs] of Node.js 12.x **on the server**. You can simply use `require` in server
+FiveM includes a [customized version][nodejs] of Node.js 16.x **on the server** with builds greater than 4800 and Node.js 12.x on older server builds. You can simply use `require` in server
 scripts, and it'll resolve the package either from Node.js built-ins, or the `node_modules/` folder in your resource
 directory.
 
