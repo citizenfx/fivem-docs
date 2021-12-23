@@ -3,7 +3,7 @@ title: FxDK
 weight: 900
 ---
 
-Cfx.re Development Kit, FxDK for short, is an integrated development environment aimed to provide smooth developer experience for FiveM.
+The Cfx.re Development Kit, FxDK for short, is an integrated development environment designed to provide a smooth developer experience for FiveM.
 
 Detailed documentation links:
 
@@ -14,24 +14,24 @@ Detailed documentation links:
 # Highlights
 
 ## Live code editing experience
-No more switching to server, restarting resource, switching to game to see changes effect, all automated in FxDK [resources](/docs/fxdk/resources).
+With FxDK you no longer have to switch between your server console and game to restart resources. FxDK detects changes in your [resources](/docs/fxdk/resources) and will restart them automatically.
 
 ![live edit showcase](/fxdk/live-edit.webp)
 
 ## Integrated essentials
-Game console, server console, combined resource monitor, all in one place.
+A game console, server console and combined resource monitor, all in one place.
 
 ![combined resource monitor showcase](/fxdk/resource-monitor.png)
 
 ![consoles showcase](/fxdk/consoles.png)
 
 ## Excellent coding experience
-Thanks to amazing Microsoft's Code - OSS, we're able to integrate cutting edge coding experience in a form of [FXCode](/docs/fxdk/fxcode).
+Thanks to the amazing the open source code editor by Microsoft, we're able to integrate a cutting edge coding experience appropriately named [FXCode](/docs/fxdk/fxcode).
 
 ![fxcode showcase](/fxdk/code.png)
 
 ## Code editor extensions
-In FxDK, you can use all your favorite extensions that you normally use in VSCode.
+In FxDK, you can use all of your favorite extensions that you normally use in VSCode.
 
 ![fxcode extensions](/fxdk/extensions.png)
 
