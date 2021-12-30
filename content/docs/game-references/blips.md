@@ -6,10 +6,12 @@ weight: 720
 Blips
 -----
 
-A list of all game blips as of build 2372 is shown below.
+A list of all game blips as of build 2545 is shown below.
 
-<!-- check down for updated snippet -->
-<!-- _loc1_.map((name, idx) => `<div class="blip"><span><img src="/blips/${name}.png" alt="${name}"> ${idx}<br>${name}</div>`).join('\n') -->
+<!-- check down for more recent HTML -->
+<!-- _loc1_ = []; -->
+<!-- /* paste AS snippet */ -->
+<!-- _loc1_.map((name, idx) => `<div class="blip"><div><div><img src="/blips/${name}.png" alt="${name}"></div></div><span><strong>${idx}</strong><br>${name}</span></div>`).join('\n') -->
 
 
 <style type="text/css">
@@ -879,7 +881,30 @@ A list of all game blips as of build 2372 is shown below.
 <div class="blip"><div><div><img src="/blips/radar_crusader.png" alt="radar_crusader"></div></div><span><strong>800</strong><br>radar_crusader</span></div>
 <div class="blip"><div><div><img src="/blips/radar_construction_outfit.png" alt="radar_construction_outfit"></div></div><span><strong>801</strong><br>radar_construction_outfit</span></div>
 <div class="blip"><div><div><img src="/blips/radar_overlay_jammed.png" alt="radar_overlay_jammed"></div></div><span><strong>802</strong><br>radar_overlay_jammed</span></div>
-
+<div class="blip"><div><div><img src="/blips/radar_heist_island_unavailable.png" alt="radar_heist_island_unavailable"></div></div><span><strong>803</strong><br>radar_heist_island_unavailable</span></div>
+<div class="blip"><div><div><img src="/blips/radar_heist_diamond_unavailable.png" alt="radar_heist_diamond_unavailable"></div></div><span><strong>804</strong><br>radar_heist_diamond_unavailable</span></div>
+<div class="blip"><div><div><img src="/blips/radar_heist_doomsday_unavailable.png" alt="radar_heist_doomsday_unavailable"></div></div><span><strong>805</strong><br>radar_heist_doomsday_unavailable</span></div>
+<div class="blip"><div><div><img src="/blips/radar_placeholder_7.png" alt="radar_placeholder_7"></div></div><span><strong>806</strong><br>radar_placeholder_7</span></div>
+<div class="blip"><div><div><img src="/blips/radar_placeholder_8.png" alt="radar_placeholder_8"></div></div><span><strong>807</strong><br>radar_placeholder_8</span></div>
+<div class="blip"><div><div><img src="/blips/radar_placeholder_9.png" alt="radar_placeholder_9"></div></div><span><strong>808</strong><br>radar_placeholder_9</span></div>
+<div class="blip"><div><div><img src="/blips/radar_featured_series.png" alt="radar_featured_series"></div></div><span><strong>809</strong><br>radar_featured_series</span></div>
+<div class="blip"><div><div><img src="/blips/radar_vehicle_for_sale.png" alt="radar_vehicle_for_sale"></div></div><span><strong>810</strong><br>radar_vehicle_for_sale</span></div>
+<div class="blip"><div><div><img src="/blips/radar_van_keys.png" alt="radar_van_keys"></div></div><span><strong>811</strong><br>radar_van_keys</span></div>
+<div class="blip"><div><div><img src="/blips/radar_suv_service.png" alt="radar_suv_service"></div></div><span><strong>812</strong><br>radar_suv_service</span></div>
+<div class="blip"><div><div><img src="/blips/radar_security_contract.png" alt="radar_security_contract"></div></div><span><strong>813</strong><br>radar_security_contract</span></div>
+<div class="blip"><div><div><img src="/blips/radar_safe.png" alt="radar_safe"></div></div><span><strong>814</strong><br>radar_safe</span></div>
+<div class="blip"><div><div><img src="/blips/radar_ped_r.png" alt="radar_ped_r"></div></div><span><strong>815</strong><br>radar_ped_r</span></div>
+<div class="blip"><div><div><img src="/blips/radar_ped_e.png" alt="radar_ped_e"></div></div><span><strong>816</strong><br>radar_ped_e</span></div>
+<div class="blip"><div><div><img src="/blips/radar_payphone.png" alt="radar_payphone"></div></div><span><strong>817</strong><br>radar_payphone</span></div>
+<div class="blip"><div><div><img src="/blips/radar_patriot3.png" alt="radar_patriot3"></div></div><span><strong>818</strong><br>radar_patriot3</span></div>
+<div class="blip"><div><div><img src="/blips/radar_music_studio.png" alt="radar_music_studio"></div></div><span><strong>819</strong><br>radar_music_studio</span></div>
+<div class="blip"><div><div><img src="/blips/radar_jubilee.png" alt="radar_jubilee"></div></div><span><strong>820</strong><br>radar_jubilee</span></div>
+<div class="blip"><div><div><img src="/blips/radar_granger2.png" alt="radar_granger2"></div></div><span><strong>821</strong><br>radar_granger2</span></div>
+<div class="blip"><div><div><img src="/blips/radar_explosive_charge.png" alt="radar_explosive_charge"></div></div><span><strong>822</strong><br>radar_explosive_charge</span></div>
+<div class="blip"><div><div><img src="/blips/radar_deity.png" alt="radar_deity"></div></div><span><strong>823</strong><br>radar_deity</span></div>
+<div class="blip"><div><div><img src="/blips/radar_d_champion.png" alt="radar_d_champion"></div></div><span><strong>824</strong><br>radar_d_champion</span></div>
+<div class="blip"><div><div><img src="/blips/radar_buffalo4.png" alt="radar_buffalo4"></div></div><span><strong>825</strong><br>radar_buffalo4</span></div>
+<div class="blip"><div><div><img src="/blips/radar_agency.png" alt="radar_agency"></div></div><span><strong>826</strong><br>radar_agency</span></div>
 </div>
 
 ---
