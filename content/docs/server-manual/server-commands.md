@@ -166,6 +166,7 @@ Every build includes all content and changes from the builds before.
 | 2060   | sum, mpsum                           | Los Santos Summer Special   |
 | 2189   | h4, heist4, mpheist4                 | Cayo Perico Heist           |
 | 2372   | tuner, mptuner                       | Los Santos Tuners           |
+| 2545   | security, mpsecurity                 | The Contract                |
 
 **RedM builds**
 
