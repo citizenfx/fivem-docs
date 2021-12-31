@@ -20,7 +20,7 @@ end)
 **C#**
 ```csharp
 // Usually in the constructor of a class that inherits BaseScript, but can be done anywhere in a BaseScript.
-EventHandler["eventName"] += new Action<string, bool>(TargetFunction);
+EventHandlers["eventName"] += new Action<string, bool>(TargetFunction);
 
 
 // Create a function to handle the event somewhere else in your code, or use a lambda.
