@@ -33,7 +33,7 @@ Press ~INPUT_CONTEXT~ when near the ~r~enemies.
 <tr>
 <td>&nbsp;</td>
 <td><code>~HUD_COLOUR_...~</code></td>
-<td>References an existing <a href="./hud-colors">HUD color</a>.</td>
+<td>References an existing <a href="../hud-colors">HUD color</a>.</td>
 <td><code>Find the ~HUD_COLOUR_FREEMODE~freemode ped!</code></td>
 </tr>
 <tr>
@@ -57,19 +57,19 @@ Press ~INPUT_CONTEXT~ when near the ~r~enemies.
 <tr>
 <td>&nbsp;</td>
 <td><code>~v~</code></td>
-<td><a href="./hud-colors#hud_colour_script_variable">HUD_COLOUR_SCRIPT_VARIABLE</a><br>This is a placeholder for the color set with <a href="/natives/?_0xD68A5FF8A3A89874">SET_SCRIPT_VARIABLE_HUD_COLOUR</a>.</td>
+<td><a href="../hud-colors#hud_colour_script_variable">HUD_COLOUR_SCRIPT_VARIABLE</a><br>This is a placeholder for the color set with <a href="/natives/?_0xD68A5FF8A3A89874">SET_SCRIPT_VARIABLE_HUD_COLOUR</a>.</td>
 <td><code>Wait for your ~v~team~s~ to lose the Cops.</code></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td><code>~u~</code></td>
-<td><a href="./hud-colors#hud_colour_script_variable_2">HUD_COLOUR_SCRIPT_VARIABLE_2</a><br>This is a placeholder for the color set with <a href="/natives/?_0x16A304E6CB2BFAB9">_SET_SCRIPT_VARIABLE_2_HUD_COLOUR</a>.</td>
+<td><a href="../hud-colors#hud_colour_script_variable_2">HUD_COLOUR_SCRIPT_VARIABLE_2</a><br>This is a placeholder for the color set with <a href="/natives/?_0x16A304E6CB2BFAB9">_SET_SCRIPT_VARIABLE_2_HUD_COLOUR</a>.</td>
 <td><code>Take out ~v~~a~~s~ & defend ~u~~a~~s~.</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(240, 240, 240, 1)">&nbsp;</td>
 <td><code>~w~</code></td>
-<td><a href="./hud-colors#hud_colour_white">HUD_COLOUR_WHITE</a><br>Used together with ~s~ to reset text color.</td>
+<td><a href="../hud-colors#hud_colour_white">HUD_COLOUR_WHITE</a><br>Used together with ~s~ to reset text color.</td>
 <td><code>Swoop on over to ~b~foreclosures.maze-bank.com~w~~s~ today</code></td>
 </tr>
 <tr>
@@ -81,79 +81,79 @@ Press ~INPUT_CONTEXT~ when near the ~r~enemies.
 <tr>
 <td style="background-color: rgba(224, 50, 50, 1)">&nbsp;</td>
 <td><code>~r~</code></td>
-<td><a href="./hud-colors#hud_colour_red">HUD_COLOUR_RED</a><br>Used for enemy characters or vehicles.</td>
+<td><a href="../hud-colors#hud_colour_red">HUD_COLOUR_RED</a><br>Used for enemy characters or vehicles.</td>
 <td><code>Kill all the ~r~Vagos.</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(114, 204, 114, 1)">&nbsp;</td>
 <td><code>~g~</code></td>
-<td><a href="./hud-colors#hud_colour_green">HUD_COLOUR_GREEN</a><br>Used for pickup-type objectives.</td>
+<td><a href="../hud-colors#hud_colour_green">HUD_COLOUR_GREEN</a><br>Used for pickup-type objectives.</td>
 <td><code>Pick up the ~g~flash drive.</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(93, 182, 229, 1)">&nbsp;</td>
 <td><code>~b~</code></td>
-<td><a href="./hud-colors#hud_colour_blue">HUD_COLOUR_BLUE</a><br>Used for friendly characters or vehicles.</td>
+<td><a href="../hud-colors#hud_colour_blue">HUD_COLOUR_BLUE</a><br>Used for friendly characters or vehicles.</td>
 <td><code>Defend ~b~Lamar.</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(93, 182, 229, 1)">&nbsp;</td>
 <td><code>~f~</code></td>
-<td><a href="./hud-colors#hud_colour_friendly">HUD_COLOUR_FRIENDLY</a><br>An alternate (rare) version for friendly objectives.</td>
+<td><a href="../hud-colors#hud_colour_friendly">HUD_COLOUR_FRIENDLY</a><br>An alternate (rare) version for friendly objectives.</td>
 <td><code>Vehicle health can be restored by waiting in the ~f~pit stop area~s~.</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(240, 200, 80, 1)">&nbsp;</td>
 <td><code>~y~</code></td>
-<td><a href="./hud-colors#hud_colour_yellow">HUD_COLOUR_YELLOW</a><br>Destination names.</td>
+<td><a href="../hud-colors#hud_colour_yellow">HUD_COLOUR_YELLOW</a><br>Destination names.</td>
 <td><code>Deliver the Special Cargo to the ~y~restricted area.</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(140, 140, 140, 1)">&nbsp;</td>
 <td><code>~c~</code></td>
-<td><a href="./hud-colors#hud_colour_menu_grey">HUD_COLOUR_MENU_GREY</a><br>De-emphasized text used in subtitles, to indicate a character out of view.</td>
+<td><a href="../hud-colors#hud_colour_menu_grey">HUD_COLOUR_MENU_GREY</a><br>De-emphasized text used in subtitles, to indicate a character out of view.</td>
 <td><code>~z~He's a bum! ~c~~n~Oh my God!</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(140, 140, 140, 1)">&nbsp;</td>
 <td><code>~t~</code></td>
-<td><a href="./hud-colors#hud_colour_menu_grey">HUD_COLOUR_MENU_GREY</a><br>De-emphasized text used in subtitles, to indicate text spoken in a different language.</td>
+<td><a href="../hud-colors#hud_colour_menu_grey">HUD_COLOUR_MENU_GREY</a><br>De-emphasized text used in subtitles, to indicate text spoken in a different language.</td>
 <td><code>~z~those ~t~idiots.</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(255, 133, 85, 1)">&nbsp;</td>
 <td><code>~o~</code></td>
-<td><a href="./hud-colors#hud_colour_orange">HUD_COLOUR_ORANGE</a><br>A team color indicator.</td>
+<td><a href="../hud-colors#hud_colour_orange">HUD_COLOUR_ORANGE</a><br>A team color indicator.</td>
 <td><code>~o~The Cocks~s~ are mad.</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(132, 102, 226, 1)">&nbsp;</td>
 <td><code>~p~</code></td>
-<td><a href="./hud-colors#hud_colour_purple">HUD_COLOUR_PURPLE</a><br>A team color indicator.</td>
+<td><a href="../hud-colors#hud_colour_purple">HUD_COLOUR_PURPLE</a><br>A team color indicator.</td>
 <td><code>~p~The Boars~s~ are off the radar.</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(203, 54, 148, 1)">&nbsp;</td>
 <td><code>~q~</code></td>
-<td><a href="./hud-colors#hud_colour_pink">HUD_COLOUR_PINK</a><br>Used for Arena War.</td>
+<td><a href="../hud-colors#hud_colour_pink">HUD_COLOUR_PINK</a><br>Used for Arena War.</td>
 <td><code>You are the active contender on your ~q~team~s~.</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(100, 100, 100, 1)">&nbsp;</td>
 <td><code>~m~</code></td>
-<td><a href="./hud-colors#hud_colour_mid_grey_mp">HUD_COLOUR_MID_GREY_MP</a><br>Medium gray to de-emphasize or use for 'Silver'.</td>
+<td><a href="../hud-colors#hud_colour_mid_grey_mp">HUD_COLOUR_MID_GREY_MP</a><br>Medium gray to de-emphasize or use for 'Silver'.</td>
 <td><code>~m~Display Mini Map.</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(0, 0, 0, 1)">&nbsp;</td>
 <td><code>~l~</code></td>
-<td><a href="./hud-colors#hud_colour_black">HUD_COLOUR_BLACK</a><br>Used when unable to set a color any other way to specify black.</td>
+<td><a href="../hud-colors#hud_colour_black">HUD_COLOUR_BLACK</a><br>Used when unable to set a color any other way to specify black.</td>
 <td><code>~l~PLAYERS</code></td>
 </tr>
 <tr>
 <td style="background-color: rgba(47, 92, 115, 1)">&nbsp;</td>
 <td><code>~d~</code></td>
-<td><a href="./hud-colors#hud_colour_bluedark">HUD_COLOUR_BLUEDARK</a><br>Used to specify a team objective occupied by a player.</td>
+<td><a href="../hud-colors#hud_colour_bluedark">HUD_COLOUR_BLUEDARK</a><br>Used to specify a team objective occupied by a player.</td>
 <td><code>Help your team deliver a ~d~vehicle ~s~to your ~b~base.</code></td>
 </tr>
 </tbody>
@@ -217,7 +217,7 @@ Press ~INPUT_CONTEXT~ when near the ~r~enemies.
 </tr>
 <tr>
 <td><code>~BLIP_...~</code></td>
-<td>In help messages and other supported contexts, shows the <a href="./blips">blip</a> with the specified name.</td>
+<td>In help messages and other supported contexts, shows the <a href="../blips">blip</a> with the specified name.</td>
 <td><code>Benny's Original Motor Works is now available at ~HUD_COLOUR_YELLOW~~BLIP_BENNYS~~s~.</code></td>
 </tr>
 </tbody>
@@ -280,7 +280,7 @@ Press ~INPUT_CONTEXT~ when near the ~r~enemies.
 <tbody>
 <tr>
 <td><code>~INPUT_...~</code></td>
-<td>In help messages and other supported contexts, shows the current key for a specified <a href="./controls">control</a>.</td>
+<td>In help messages and other supported contexts, shows the current key for a specified <a href="../controls">control</a>.</td>
 <td><code>Press ~INPUT_CONTEXT~ to stand up.</code></td>
 </tr>
 <tr>
