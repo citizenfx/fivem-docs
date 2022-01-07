@@ -20,15 +20,16 @@ Examples
 Check for all possible identifiers using this method;  works well when triggered by playerConnecting event.
 
 ```lua
-    local steamid  = false
-    local license  = false
-    local discord  = false
-    local xbl      = false
-    local liveid   = false
-    local ip       = false
+  local steamid  = false
+  local license  = false
+  local discord  = false
+  local xbl      = false
+  local liveid   = false
+  local ip       = false
+  local fivem    = false
 
   for k,v in pairs(GetPlayerIdentifiers(source))do
-    print(v)
+      print(v)
         
       if string.sub(v, 1, string.len("steam:")) == "steam:" then
         steamid = v
@@ -42,6 +43,8 @@ Check for all possible identifiers using this method;  works well when triggered
         discord = v
       elseif string.sub(v, 1, string.len("live:")) == "live:" then
         liveid = v
+      elseif string.sub(v, 1, string.len("fivem:")) == "fivem:" then
+        fivem = v
       end
     
   end
