@@ -19,9 +19,7 @@ falsely banned from a server, contact the server owners. FiveM can not and will 
 
 I've been globally banned from FiveM
 ------------------------------------
-That's unfortunate, don't cheat.
-If you believe you've been falsely banned, you can fill out the ban report at https://forum.cfx.re/w/ban-report. This is **not a ban appeal**, but this data is used for structured collection of potential 'false positive' bans.<br />
-**Please note that you may not get a response and that FiveM forum/Discord moderators can _not_ assist you with your ban.**
+Please see [the following article](/docs/support/ban-faq).
 
 Could not find game executable
 ------------------------------
