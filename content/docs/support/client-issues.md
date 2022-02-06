@@ -96,6 +96,21 @@ This is most likely your antivirus software removing FiveM. Unfortunately some a
 and remove some (or even all) FiveM files as a precaution. You can safely ignore any warnings about this.<br />
 [Click here][disabling-antivirus] for more info on how to disable your antivirus.
 
+I have an NVIDIA GPU and FiveM hanged
+-----------------------------------------
+FiveM hangs when using NVIDIA GPUs as of recently are not uncommon (especially on most recent drivers), efforts were made, trying to contact NVIDIA, but no clear response was given. As of now, we're trying to figure out a way to resolve hangs for this specific GPU vendor, but we need your help on this, and here's how you can help us:
+
+Once the NVIDIA 'crash' dialog is shown, follow these steps:
+1. Hold `WinKey + R` and type `taskmgr` followed by enter, it's important that you don't close the process while following this guide.
+2. Once `Task Manager` opens, go into the `Details` tab.
+3. Find `FiveM_GTAProcess.exe`, right click it and click on `Create dump file`.
+4. Wait until the process is dumped, it will be created in the following directory: `C:\Users\xxxx\AppData\Local\Temp\FiveM_GTAProcess.DMP`
+5. Click `Open File Location` and zip up the following file: `FiveM_GTAProcess.DMP`, you can zip up a file by right clicking it, followed by clicking `Send To -> Compressed (zipped) folder` on the context menu.
+6. Contact [CFX Support][email] or one of the elements on our [Discord][discord] once you have the process dump ready to send.
+
+Additionally, you may still enjoy FiveM by rolling back to older drivers such as 471, but we encourage you to send these reports, prior to doing this!
+    
+
 Help! I can't find my issue here!
 ---------------------------------
 We are more than happy to help you out! If you're running into crashes or freezes, please post your issue
