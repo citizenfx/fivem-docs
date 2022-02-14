@@ -5,27 +5,28 @@ description: >
   A step-by-step guide on setting up FXServer.
 ---
 
-FXServer is the name of the Cfx.re platform server. This page shows you how to run it.
+This page shows you how to run the Cfx.re platform server (also often named 'FXServer') on Windows or Linux.
 
-Having trouble running your server? Visit [server issues][server-issues], use the Discord [#fxserver-support][fxserver-support] channel or create a topic in the [Server Discussion][fxserver-support-category] sub-category on the forum.
+Having trouble running your server? Check the [server issue FAQ][server-issues], use the Discord [#server-talk][fxserver-support] channel ,or create a topic in the [Server Discussion][fxserver-support-category] sub-category on the forum.
 
 ## Before you begin
-Make sure you have registered a license key on the [Cfx.re Keymaster](https://keymaster.fivem.net/) service. You need to have the IP match the *public* IP on which you're going to *first* use the key. Afterwards, the key can be used on any IP, but only on one server at a time.
+If you haven't done so yet, register a free license key on the [Cfx.re Keymaster](https://keymaster.fivem.net/).
+
+When asked for an IP, the IP should be the *public* IP on which you're going to *first* use the key. Afterwards, the key can be used for a single server instance on any IP.
 
 ## Ultimate easy setup guide
 ![pic](/server-setup/header.png)
 ### Windows
 #### Download the server
-1. Download and install [Visual C++ Redistributable 2019][vcredist] or newer.
-2. Go to the [artifacts server][windows-artifacts].
-3. Download the latest recommended build.<br>
+1. Go to the [Windows server build listing][windows-artifacts] ('artifacts' listing, as in 'build artifacts').
+2. Download the latest recommended build.<br>
    ![pic](/server-setup/windows-step-2.png)
-4. Open the `server.zip` you just downloaded.<br>
+3. Open the `server.zip` you just downloaded.<br>
    ![pic](/server-setup/windows-step-3.png)
-5. Extract it somewhere you want to store it. We'll pick `C:\FXServer\artifact`.<br>
+4. Extract it somewhere you want to store it. We'll pick `C:\FXServer\server`.<br>
    ![pic](/server-setup/windows-step-4a.png)<br>
    ![pic](/server-setup/windows-step-4b.png)
-6. Open the folder you just extracted it to. It should look a little like this:<br>
+5. Open the folder you just extracted it to. It should look a little like this:<br>
    ![pic](/server-setup/windows-step-5.png)
 
 #### Start the server
@@ -61,14 +62,13 @@ Make sure you have registered a license key on the [Cfx.re Keymaster](https://ke
 ### Windows
 
 #### Prerequisites
-1. [Visual C++ Redistributable 2019][vcredist] or newer.
-2. [Git][git-scm] to assure a correct installation.
+1. [Git][git-scm] if you want to follow the recommended way of _cloning_ the base server data.
 
 #### Installation
 1. Create a new directory (for example `D:\FXServer\server`), this will be used for the server binaries.
-2. Download the current recommended `master` branch build for Windows from the [artifacts server][windows-artifacts].
+2. Download the current recommended `master` branch build for Windows from the [Windows server build listing][windows-artifacts].
 3. Extract the build into the directory previously created.
-  <br>3b. Use any archiving tool (such as WinRAR or 7-Zip).
+  <br>3b. Use any third-party archiving tool (such as WinRAR or 7-Zip) to open the `.7z` file.
 4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder, for example, `D:\FXServer\server-data`.
   <br>4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
 5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfg) file below into that file).
@@ -88,21 +88,21 @@ Make sure you have registered a license key on the [Cfx.re Keymaster](https://ke
 If you're experiencing any issues, you're more likely to see them fixed if you use the Windows version.
 {{% /alert %}}
 
-1. Create a new folder (for example `mkdir -p /home/username/FXServer/server`), this will be used for the server binaries.
-2. Download the current recommended `master` branch build for Linux from the [artifacts server][linux-artifacts](copy the URL for the latest server version and use `wget <url>` to download it).
-3. Extract the build to the directory that was previously created, using `cd /home/username/FXServer/server && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).
-4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder.
-  <br>4b. For example `git clone https://github.com/citizenfx/cfx-server-data.git /home/username/FXServer/server-data`
+1. Create a new folder (for example `mkdir -p ~/FXServer/server`), this will be used for the server binaries.
+2. Download the current recommended `master` branch build for Linux from the [Linux server build listing][linux-artifacts] (copy the URL for the recommended server version and use `wget <url>` to download it).
+3. Extract the build to the directory that was previously created, using `cd ~/FXServer/server && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).
+4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder.<br>
+   For example: `git clone https://github.com/citizenfx/cfx-server-data.git ~/FXServer/server-data`
 5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfg) file below into that file).
 6. Set the license key in your `server.cfg` using `sv_licenseKey "licenseKeyGoesHere"`.
-7. Run the server from the `server-data` folder.
-  <br>7b. `bash /home/username/FXServer/server/run.sh +exec server.cfg`
+7. Run the server from the `server-data` folder.<br>
+   `cd ~/FXServer/server-data && bash ~/FXServer/server/run.sh +exec server.cfg`
 
 ### Common issues
 
 - If you don't get any 'resources found', and it says 'Failed to start resource', you didn't 'cd' to the right folder.
-- If no resources get started, and you can't connect, you didn't add +exec.
-- If you get 'no license key was specified', one of the above things applies.
+- If no resources get started, and you also can't connect (i.e. 'timed out'/'connection refused'), you didn't add +exec.
+- If you get 'no license key was specified', one of the above two mistakes may apply.
 
 <a name="servercfgexample"></a>
 
