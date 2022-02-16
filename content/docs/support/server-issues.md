@@ -83,6 +83,6 @@ You can also join our [Discord][discord] and have a chat with us.
 [forum]: https://forum.cfx.re/
 [discord]: https://discord.gg/fivem
 [pfsensenat]: https://www.netgate.com/docs/pfsense/nat/static-port.html
-[servercfg]: /docs/server-manual/setting-up-a-server/#a-name-servercfgexample-a-server-cfg
+[servercfg]: /docs/server-manual/setting-up-a-server-vanilla/#a-name-servercfgexample-a-server-cfg
 [chat-formatting]: https://forum.cfx.re/t/67641
 [setting-up-server]: /docs/server-manual/setting-up-a-server

@@ -11,14 +11,13 @@ description: >
 ### Windows
 
 #### Prerequisites
-1. [Visual C++ Redistributable 2019][vcredist] or newer.
-2. [Git][git-scm] to assure a correct installation.
+1. [Git][git-scm] if you want to follow the recommended way of _cloning_ the base server data.
 
 #### Installation
 1. Create a new directory (for example `C:\FXServer\server`), this will be used for the server binaries.
-2. Download the current recommended `master` branch build for Windows from the [artifacts server][windows-artifacts].
+2. Download the current recommended `master` branch build for Windows from the [Windows server build listing][windows-artifacts].
 3. Extract the build into the directory previously created.
-  <br>3b. Use any archiving tool (such as WinRAR or 7-Zip).
+  <br>3b. Use any third-party archiving tool (such as WinRAR or 7-Zip) to open the `.7z` file.
 4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder, for example, `C:\FXServer\server-data`. 
 <br>4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data`
     - To type this command you need to open a command prompt, press `Win + R`, once the run dialog shows type `cmd` and hit enter, remember to switch directories to the directory you plan to clone to by typing `cd C:\FXServer`.
@@ -41,19 +40,19 @@ If you're experiencing any issues, you're more likely to see them fixed if you u
 {{% /alert %}}
 
 #### Prerequisites
-1. [Git][git-scm] to assure a correct installation.
+1. [Git][git-scm] if you want to follow the recommended way of _cloning_ the base server data.
 2. `xz` or `xz-utils` package. 
 
 #### Installation
-1. Create a new folder (for example `mkdir -p /home/username/FXServer/server`), this will be used for the server binaries.
-2. Download the current recommended `master` branch build for Linux from the [artifacts server][linux-artifacts] (copy the URL for the latest server version and use `wget <url>` to download it).
-3. Extract the build to the directory that was previously created, using `cd /home/username/FXServer/server && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).
-4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder.
-  <br>4b. For example `git clone https://github.com/citizenfx/cfx-server-data.git /home/username/FXServer/server-data`
+1. Create a new folder (for example `mkdir -p ~/FXServer/server`), this will be used for the server binaries.
+2. Download the current recommended `master` branch build for Linux from the [Linux server build listing][linux-artifacts] (copy the URL for the recommended server version and use `wget <url>` to download it).
+3. Extract the build to the directory that was previously created, using `cd ~/FXServer/server && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).
+4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder.<br>
+   For example: `git clone https://github.com/citizenfx/cfx-server-data.git ~/FXServer/server-data`
 5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfg) file below into that file).
 6. Set the license key in your `server.cfg` using `sv_licenseKey "licenseKeyGoesHere"`.
-7. Run the server from the `server-data` folder.
-  <br>7b. `bash /home/username/FXServer/server/run.sh +exec server.cfg`
+7. Run the server from the `server-data` folder.<br>
+   `cd ~/FXServer/server-data && bash ~/FXServer/server/run.sh +exec server.cfg`
 
 ---
 
@@ -70,8 +69,8 @@ An example server.cfg follows.
 ### Common issues
 
 - If you don't get any 'resources found', and it says 'Failed to start resource', you didn't 'cd' to the right folder.
-- If no resources get started, and you can't connect, you didn't add +exec.
-- If you get 'no license key was specified', one of the above things applies.
+- If no resources get started, and you also can't connect (i.e. 'timed out'/'connection refused'), you didn't add +exec.
+- If you get 'no license key was specified', one of the above two mistakes may apply.
 
 [windows-artifacts]: https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/
 [linux-artifacts]: https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
