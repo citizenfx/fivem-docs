@@ -5,6 +5,7 @@ layout: single
 ---
 
 - [Introduction to resources](/docs/scripting-manual/introduction/introduction-to-resources)
+- [Choosing a programming language](/docs/scripting-manual/introduction/choosing-a-programming-language)
 - [Creating your first script in Lua](/docs/scripting-manual/introduction/creating-your-first-script)
 - [Creating your first script in C#](/docs/scripting-manual/introduction/creating-your-first-script-csharp)
 - [Creating your first script in JavaScript](/docs/scripting-manual/introduction/creating-your-first-script-javascript)
