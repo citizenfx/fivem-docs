@@ -11,10 +11,10 @@ It's worth mentioning that OneSync is free up to 48 slots, after such, you shoul
 from [Patreon](https://www.patreon.com/join/fivem) starting from `FiveM Element Club Argentum 💿`.
 
 # What is OneSync: Infinity?
-- A mode allowing (up to) 2048 players since the recent [commit](https://github.com/citizenfx/fivem/commit/a03eb34c80571ac37cf8d74ca87fa4e646f2e499). We have only tested 600-ish in load tests since we couldn’t get any more players, but it held up quite well in the end (on a server with minimal resources)
+- A mode allowing (up to) 2048 players since the recent [commit](https://github.com/citizenfx/fivem/commit/a03eb34c80571ac37cf8d74ca87fa4e646f2e499). There are servers handling 1000+ concurrent players.
 - To accomplish this, it uses the following technological changes:
-    - Removal of population to save object ID pool space. You can still create (some) synced/networked peds using script, however.
-    - Player ped/vehicle culling. No entities will be created on clients outside a ‘focus zone’, which currently is hardcoded to 300 units around a player. We’re still looking for a better algorithm.
+    - Extension of object id length from 8192 (`1 << 13`) to 65535 (`(1 << 16) - 1`), from the following [commit](https://github.com/citizenfx/fivem/commit/e1b1d58dcb3e9147f2b95daf4518ea16593c5631).
+    - Player ped/vehicle culling. No entities will be created on clients outside a ‘focus zone’, which currently is hardcoded to 424 units around a player.
     - Player culling. No players will be created/deleted locally outside of the focus zone too. This means that all player iteration will have to happen server-side.
 - It also has a bit better performance than ‘plain’ OneSync at this time due to player ped culling, and works around the so-called ‘head blend bug’.
 
@@ -22,9 +22,11 @@ from [Patreon](https://www.patreon.com/join/fivem) starting from `FiveM Element 
 Most of the sync data is handled through player `31`, game events are handled through this player as well, this is a player reserved for every individual client, and it's used to write sync data to the server to later on be analyzed through sync-nodes for parsing.
 
 # What are sync nodes and how do I interpret them?
-Sync nodes are synchronization data nodes, networked entities depend on these to transmit data to other clients/players on the server. The most simple one we can find is `CSectorPositionDataNode`.
+Sync nodes are synchronization data nodes, networked entities depend on these to transmit data to other clients/players on the server. The most simple one we can find is `CSectorPositionDataNode`. 
 
-This synchronization data node is used to share sector position data to other clients about a specific entity, parsing is shown below. It's worth mentioning that the `Parse` code written down below is written by reverse-engineering game code (more or so by reading `NodeCommonDataOperations<class CSectorPositionDataNode, class IProximityMigrateableNodeDataAccessor>` first's VMT method which is the `read` method, which would be offset 8 from the VMT) so it requires a bit of know-how if one were to attempt to contribute to the repo and create a PR.
+{{% alert theme="warning" %}}We'll have to warn you that what lies ahead is a little bit technical and is just presented as is for educational purposes on how to analyze game-code and create a PR (pull request) if you would like to contribute to the [code-base][fivem-codebase]. {{% /alert %}}
+
+This synchronization data node is used to share sector position data to other clients about a specific entity, parsing is shown below. It's worth mentioning that the `Parse` code written down below is written by reverse-engineering game code (more or so by reading `NodeCommonDataOperations<class CSectorPositionDataNode, class IProximityMigrateableNodeDataAccessor>` first's VMT ([Virtual Method Table][vmturl]) method which is the `read` method, which would be offset 8 from the VMT).
 
 *The game's VMT:*</br>
 ![Image](https://i.imgur.com/9Til977.png)
@@ -91,9 +93,9 @@ virtual void GetPosition(float* posOut) override
 }
 ```
 # What's culling?
-Culling is used to avoid sending a lot of synchronization data to the server (such as population among others), thus reducing server load, it's what allows OneSync to handle a lot of clients. Culling has a range for each specific player, and entities are culled to players within this radius. You could say that in a way, it 'conceals' entities. There's natives such as `SetEntityDistanceCullingRadius` and `SetPlayerCullingRadius` to change the default culling radius.
+Culling is used to avoid sending a lot of synchronization data to the server (such as population among others), thus reducing server load, it's what allows OneSync to handle a lot of clients. Culling has a range for each specific player, and entities are culled to players within this radius. It was introduced in the following [commit](https://github.com/citizenfx/fivem/commit/d98e16354141e50c77b56b2dc672fe4834dccfd6), and had several iterations. You could say that in a way, it 'conceals' entities. There's natives such as [SetEntityDistanceCullingRadius](https://docs.fivem.net/natives/?_0xD3A183A3) and [SetPlayerCullingRadius](https://docs.fivem.net/natives/?_0x8A2FBAD4) to change the default culling radius.
 
-When an entity goes out of range, it's no longer controlled by their original owner. This means that any entity that would be out of scope will be culled and migrated/disowned.
+When an entity goes out of range, it's no longer controlled by their original owner. This means that any entity that would be out of scope will be culled and migrated/disowned. By default, the culling radius is set to `424 units` around the entity.
 
 # Best practices
 
@@ -120,12 +122,25 @@ local vehicle = CreateVehicle(GetHashKey("blista"), 2204.795, -887.9213, 1461.22
 
 -- Essentially, we set the routing bucket at id 1 to 'strict' and then we set other entities to this as well as the player bucket so they can't create entities client-side.
 SetRoutingBucketEntityLockdownMode(1, "strict")
-SetPlayerRoutingBucket(source, 1)
-SetEntityRoutingBucket(vehicle, 1)
+SetPlayerRoutingBucket(source, 1) -- Now the given player (source) won't be able to create entities client-side
+SetEntityRoutingBucket(vehicle, 1) -- Set the routing bucket of this vehicle to the same bucket the player is in
+SetRoutingBucketPopulationEnabled(1, false) -- Let's disable population for everything inside this bucket!
 ```
 
-## What's a bucket?
-Think of a bucket as a container, but you have multiple of them, if you put objects inside these containers (say you have bucket 1 and bucket 2), you separate them and they don't have access to each other, but they are still population-aware. Each container can have different rules, these are named 'lockdown modes' and they are described down below:
+## Buckets and why you should use them
+Server versions from pipeline ID 3245 and above have added a ‘routing bucket’ functionality, which is similar in concept to the ‘dimension’ or ‘virtual world’ functionality seen in prior non-Rockstar GTA network implementations.
+
+One can assign a player or entity to a routing bucket, and they will only see entities (and players) that belong to the same routing bucket. In addition to that, each routing bucket will have its own ‘world grid’ for determining population owners, so even if you have population enabled, you’ll notice nothing unusual at all when using routing buckets.
+
+Example use cases include:
+
+- Multi-mode servers where you want to have different games go on without affecting other games
+- Session/party systems
+- ‘Character screen’ being instanced differently from gameplay going on
+
+Example use cases do explicitly not include interiors. Interiors should be using the traditional ‘conceal’ native functions, or the future support for 3D-scoped routing policy, which will also allow specifying any ‘instanced’ zone for MMO-style servers so a server can have a map area ‘dedicated’ to a player/party on a mission but still be able to see everything going on outside that zone. [[source]](https://cookbook.fivem.net/2020/11/27/routing-buckets-split-game-state/)
+
+Each bucket can have different rules, these are named 'lockdown modes' and they are described down below:
 
 | Mode       | Meaning                                                    |
 | ---------- | ---------------------------------------------------------- |
@@ -133,5 +148,28 @@ Think of a bucket as a container, but you have multiple of them, if you put obje
 | `relaxed`  | Only script-owned entities created by clients are blocked. |
 | `inactive` | Clients can create any entity they want.                   |
 
+**There are different kind of natives for routing buckets (you can click on them to read their docs):**
+
+| Native     |
+| ---------- |
+| **[GET_ENTITY_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0xED4B0486)** |
+| **[GET_PLAYER_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0x52441C34)** | 
+| **[SET_ENTITY_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0x635E5289)** |
+| **[SET_PLAYER_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0x6504EB38)** |
+| **[SET_ROUTING_BUCKET_ENTITY_LOCKDOWN_MODE](https://docs.fivem.net/natives/?_0xA0F2201F)** |
+| **[SET_ROUTING_BUCKET_POPULATION_ENABLED](https://docs.fivem.net/natives/?_0xCE51AC2C)** |
+
+**A rough example:**
+
+```lua
+SetRoutingBucketEntityLockdownMode(1, "strict") -- Set the lockdown mode to strict
+SetRoutingBucketPopulationEnabled(1, false) -- Let's disable population for everything inside this bucket!
+SetPlayerRoutingBucket(source, 1) -- Now the given player (source) won't be able to create entities client-side
+```
+
 ## Use state bags
 State bags allow you to set attributes to entities and allow other clients to access those, you can read more about state bags [here](/docs/scripting-manual/networking/state-bags).
+
+
+[vmturl]: https://en.wikipedia.org/wiki/Virtual_method_table
+[fivem-codebase]: https://github.com/citizenfx/fivem
