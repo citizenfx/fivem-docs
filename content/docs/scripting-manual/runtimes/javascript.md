@@ -127,7 +127,7 @@ Functions in JavaScript
 - onNet (alias: addNetEventListener)
 - RegisterNetEvent (alias: RegisterServerEvent)
 - emit
-- emitNet (alias: TriggerClientEvent, TriggerClientEvent)
+- emitNet (alias: TriggerClientEvent, TriggerServerEvent)
 - addRawEventListener (alias: addRawEventHandler)
 - removeEventListener
 - setTick
