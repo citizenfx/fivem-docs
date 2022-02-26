@@ -1,19 +1,19 @@
 ---
-title: Setting up a server using Zap Hosting
-weight: 310
+title: Setting up a server using ZAP-Hosting
+weight: 311
 description: >
-  A step-by-step guide on setting up a Zap Hosting FXServer.
+  A step-by-step guide on setting up a ZAP-Hosting FXServer.
 ---
 
-## Zap Hosting setup steps
+## ZAP-Hosting setup steps
 
-1. Access the [Zap Hosting website][zap-hosting-website] and login into to your account or sign-up if you don't have one.
+1. Access the [ZAP-Hosting website][zap-hosting-website] and login into to your account or sign-up if you don't have one.
 2. Click on [Rent a server][zap-rent-a-server] on the top left of the screen (navigation bar)
 3. A dialog will show where you can `Choose your product`. We will be using a Cloud Gameserver, so click `Gameserver` followed by `Cloud Gameserver`.
 4. A new page will show, scroll down until you find `Search for games`, enter `FiveM`. We will be using `FIVE: FiveM Mod (Windows)`, so make sure to click on it. Optionally, you can [click this link][zap-rent-a-windows-server].
 5. Pick the server location, we're going to be using a server located in Germany for this example.
 6. Scroll down and customize your server to your liking, remember that to use more than 48 slots, you will need OneSync, which can be obtained from Patreon, starting from [FiveM Element Club Argentum 💿][patreon-join]. 
-    - If you plan to use a OneSync premium plan, you should register your server with the same email address as the one used for your patreon membership, so it's then automatically configured by Zap.
+    - If you plan to use a OneSync premium plan, you should register your server with the same email address as the one used for your patreon membership, so it's then automatically configured by ZAP-Hosting.
 7. Choose your preferred payment method and agree to the terms, remember to be logged in as detailed on `Step 1`.
 8. Once you confirm the order, the server will be up. Once the server is up an `Initial installation will be required` dialog should be shown, click on `Install`.
 9. You should now be able to access your game-panel where an IP address will be shown, copy it to access your game-server.

@@ -1,8 +1,8 @@
 ---
-title: Setting up a server using txadmin
-weight: 310
+title: Setting up a server using txAdmin
+weight: 312
 description: >
-  A step-by-step guide on setting up a TxAdmin FXServer.
+  A step-by-step guide on setting up a txAdmin FXServer.
 ---
 
 ## Ultimate easy setup guide
