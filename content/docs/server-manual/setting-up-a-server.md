@@ -5,7 +5,7 @@ description: >
   A step-by-step guide on setting up FXServer.
 ---
 
-This page shows you how to run the Cfx.re platform server (also often named 'FXServer') on Windows, Linux, TxAdmin and there's even a Zap Hosting guide! They can all be found down below under *[Available guides][setting-up-a-server-guides]*.
+This page shows you how to run the Cfx.re platform server (also often named 'FXServer') on Windows, Linux, txAdmin and there's even a ZAP-Hosting guide! They can all be found down below under *[Available guides][setting-up-a-server-guides]*.
 
 Having trouble running your server? Check the [server issue FAQ][server-issues], use the Discord [#server-talk][fxserver-support] channel, or create a topic in the [Server Discussion][fxserver-support-category] sub-category on the forum.
 
@@ -15,8 +15,8 @@ If you haven't done so yet, register a free license key on the [Cfx.re Keymaster
 When asked for an IP, the IP should be the *public* IP on which you're going to *first* use the key. Afterwards, the key can be used for a single server instance on any IP.
 
 ## Available guides
-- [Zap Hosting setup guide][setting-up-a-server-zap]
-- [Ultimate easy setup guide (txadmin)][setting-up-a-server-txadmin]
+- [ZAP-Hosting setup guide][setting-up-a-server-zap]
+- [Ultimate easy setup guide (txAdmin)][setting-up-a-server-txadmin]
 - [Windows setup guide (Vanilla)][setting-up-a-server-vanilla-windows]
 - [Linux setup guide (Vanilla)][setting-up-a-server-vanilla-linux]
 
