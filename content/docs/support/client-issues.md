@@ -96,6 +96,31 @@ This is most likely your antivirus software removing FiveM. Unfortunately some a
 and remove some (or even all) FiveM files as a precaution. You can safely ignore any warnings about this.<br />
 [Click here][disabling-antivirus] for more info on how to disable your antivirus.
 
+My game is dropping frames and I have decent hardware
+----------------------------
+If you believe your game is dropping frames for whatever reason, you may want to take what's called
+a 'trace'. A trace can be used to capture game function calls and allows developers to see where an application is taking longer than expected to execute, causing performance drops.
+
+ETW can be downloaded from here:
+https://github.com/google/UIforETW/releases
+
+Download the `etwpackage` zip file from the `Assets` section and extract it, optionally, you can click [here](https://github.com/google/UIforETW/releases/download/v1.56/etwpackage1.56.zip) to download it. Make sure you are downloading the zip file that contains the binaries and not the source code.
+
+After extracting the zip file:
+- Navigate to the etwpackage folder
+- Navigate to the bin folder
+- Execute `UIforETW.exe` by double clicking it.
+
+You will see a couple options there (to the right, in the checkbox section), leave them as is and follow the next steps: 
+- Wait for the game/application to drop frames. 
+- Once your game begins to drop frames click on ‘Start Tracing’. 
+- Let it run for a minute.
+- Click on `Save Trace Buffers` after that. Remember to upload the trace afterwards.
+
+Traces will most likely end up saved under `C:\Users\xxxx\Documents\etwtraces`. In UI For ETW's window there's a list of saved traces, you can click on. Click on the trace with the most recent date and proceed by clicking on 'Browse Folder' afterwards.
+
+You can use services such as Google drive to upload your trace.
+
 I have an NVIDIA GPU and FiveM hanged
 -----------------------------------------
 FiveM hangs when using NVIDIA GPUs as of recently are not uncommon (especially on most recent drivers), efforts were made, trying to contact NVIDIA, but no clear response was given. As of now, we're trying to figure out a way to resolve hangs for this specific GPU vendor, but we need your help on this, and here's how you can help us:
@@ -109,7 +134,6 @@ Once the NVIDIA 'crash' dialog is shown, follow these steps:
 6. Contact [CFX Support][email] or one of the elements on our [Discord][discord] once you have the process dump ready to send.
 
 Additionally, you may still enjoy FiveM by rolling back to older drivers such as 471, but we encourage you to send these reports, prior to doing this!
-    
 
 Help! I can't find my issue here!
 ---------------------------------
