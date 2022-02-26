@@ -71,8 +71,8 @@ General schema for convar entry:
     'Convar title',
 
  -- Convar name to use when calling convar natives
- -- prepend name with $ for `information`
- -- or # for `replicated`
+ -- prepend name with # for `information`
+ -- or $ for `replicated`
  --
  -- It is important that you namespace your convar names
  -- this will help eliminating convar conflicts with other resources
@@ -93,8 +93,8 @@ General schema for convar entry:
 Convar of any kind can be of 3 types:
 
  - [`Server only`](/docs/scripting-reference/convars/#standard-convars)
- - [`Information`](/docs/scripting-reference/convars/#server-information-convars) - name starts with `$` symbol, `$my_resource_info` convar from example above.
-  - [`Replicated`](/docs/scripting-reference/convars/#server-information-convars) - name starts with `#` symbol, `#my_resource_repl` convar from example above.
+ - [`Information`](/docs/scripting-reference/convars/#server-information-convars) - name starts with `#` symbol, `#my_resource_info` convar from example above.
+ - [`Replicated`](/docs/scripting-reference/convars/#server-replicated-convars) - name starts with `$` symbol, `$my_resource_repl` convar from example above.
 
 
 ### Kinds
