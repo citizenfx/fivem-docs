@@ -82,11 +82,11 @@ print(v.w) -- prints `4`
 -- Vectors support arbitrary swizzling:
 local v = vector4(1, 2, 3, 4)
 print(v.yx)   -- prints `vector2(2, 1)`
-print(v.wz)   -- prints `vector2(3, 1)`
+print(v.wz)   -- prints `vector2(4, 3)`
 print(v.xyx)  -- prints `vector3(1, 2, 1)`
-print(v.ywz)  -- prints `vector3(1, 2, 1)`
+print(v.ywz)  -- prints `vector3(2, 4, 3)`
 print(v.yxyx) -- prints `vector4(2, 1, 2, 1)`
-print(v.zxwy) -- prints `vector4(3, 1, 1, 2)`
+print(v.zxwy) -- prints `vector4(3, 1, 4, 2)`
 ```
 
 [lua-runtime]: /docs/scripting-manual/runtimes/lua
