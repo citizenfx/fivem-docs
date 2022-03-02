@@ -11,6 +11,7 @@ Welcome to the documentation for the [FiveM][home] modification framework. Use t
 
 ## Server owners
 * 🤩 Find out how to [start a server][server-manual] on FiveM.
+* 🧩 Download or buy fancy [resources](./server-manual/finding-resources) for your server, or discover a [🔩 framework](./server-manual/frameworks) to use.
 
 ## Asset developers
 * 🧐 Get started developing assets for FiveM using our [🧰 Cfx.re Development Kit](./fxdk),
