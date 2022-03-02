@@ -11,14 +11,17 @@ Before you can create your first C# resource, you'll need to install [Visual Stu
 
 ## Creating your project
 1. Open a command window by pressing `Win + R`, you should have a console like the one below:
+
 ![screenshot-1](/csharp-tut-1.png)
+
 2. Once that window shows up we're going to be following the [FiveM's Cookbook modern guide](https://cookbook.fivem.net/2020/02/24/try-the-new-citizenfx-c-templates-for-fivem/) to setup our scripting environment, so make sure you enter the following commands in the console window:
-    ```dos
-    dotnet new -i CitizenFX.Templates
-    mkdir MyResource
-    cd MyResource`
-    dotnet new cfx-resource
-    ```
+
+```
+dotnet new -i CitizenFX.Templates
+mkdir MyResource
+cd MyResource
+dotnet new cfx-resource
+```
 
 3. If everything went right, you should get a folder named `MyResource` with a solution file named `MyResource.sln`. This is the solution file to manage your projects.
 4. To build the project, you can click on `build.cmd`, which will build a release server and client dll for you, both targetting the correct `.NET Framework` needed for FiveM.
@@ -32,7 +35,8 @@ cd /d [PATH TO THIS RESOURCE]
 ```
 
 **Make a symbolic link. For more information about `mklink`, visit the following [article](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/mklink)** by Microsoft.
-```dos
+
+```
 mklink /d X:\cfx-server-data\resources\[local]\MyResource dist
 ```
 
