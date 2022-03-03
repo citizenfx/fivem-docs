@@ -84,30 +84,6 @@ For runtime hashing, the `joaat` function is included in the base library:
 2491553369
 ```
 
-## Short Function Notation or Shorthand lambdas (5.4.2)
-
-Syntactic sugar for writing concise anonymous functions of the form `|a, b,
-...| expr`. Where `expr` is any expression equivalent to `function(a, b, ...)
-return expr end`. 
-
-For example:
-
-```lua
-> f = |x| x^2 - 1 -- function(x) return x^2+1 end
-
-> f(2)
-3.0
-
-> f(vec3(1, 2, 3))
-vec3(0.000000, 3.000000, 8.000000)
-
--- 'hexadump' from lua-MessagePack.lua
-> hexadump = |s| s:gsub('.', |c| string.format('%02X ', c:byte()))
-
-> hexadump("\221\255\255\255\255Z")
-DD FF FF FF FF 5A
-```
-
 ## \_\_ipairs
 
 Reintroduce compatibility for the ``__ipairs`` metamethod that was deprecated
@@ -175,6 +151,27 @@ _blob = string.blob_pack(blob, pos --[[ optional ]], fmt, v1, v2, ···)
 ... = string.blob_unpack(blob, pos --[[ optional ]], fmt)
 ```
 
+With included C API functions:
+
+```c
+/*
+** Creates a string blob of at least "len" bytes, pushing the zero-terminated
+** blob onto the stack. Returning a pointer to that blob inside the Lua state.
+*/
+const char *lua_pushblob(lua_State *L, size_t len);
+
+/*
+** Converts the (explicit) string at the given index to a blob. If the string
+** value is not already a blob, then lua_tostringblob changes the actual value
+** in the stack to a blob (same lua_tolstring caveats apply).
+*/
+const char *lua_tostringblob(lua_State *L, int idx, size_t *len);
+```
+
+A [DataView](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) API that interfaces with Lua's built in facilities, e.g., `string.pack`, `string.unpack`, and `table.concat`, is located [here](https://github.com/citizenfx/lua/blob/2927a4be425e85b911764c90636c4c67fed9e640/libs/scripts/examples/dataview.lua).
+
+The intent is to allow byte data to still be beholden to the garbage collector while not requiring the allocation of intermediate data when going to and from the Lua API (unsafe caveats apply).
+
 
 ## Extended API
 
@@ -230,51 +227,19 @@ result = utf8.strcmputf8i(stringLH, stringRH)
 
 ```
 
-## Readonly
+## Nanosecond resolution timers
+Enable nanosecond resolution timers (high resolution timers) and x86 rdtsc (Read Time-Stamp Counter) sampling in `loslib.c`.
 
-Introduce the ability to make a table read-only and prohibit any modifications
-to the table.
+This enables lua functions such as:
 
 ```lua
--- Mark a table as readonly.
---
--- This behavior is 'shallow', i.e., non-frozen tables stored within 't' are
--- still mutable.
---
--- Frozen tables respect the '__newindex' metamethod. However, any attempt to
--- modify the table by that method (e.g., __newindex = rawset) will lead to an
--- error being thrown.
---
--- Finally, tables with 'protected' metatables, i.e., a '__metatable' field,
--- cannot be frozen.
-t = table.freeze(t)
-
--- Return true if the provided table is configured as readonly; false otherwise.
-result = table.isfrozen(t)
+end_time, start_time = 2000, 1000
+dt = os.deltatime(end_time, start_time)
+mt = os.microtime()
+nt = os.nanotime()
+print("dt: " .. dt .. " mt: " .. mt .. " nt: " .. nt)
+-- dt: 1000 mt: 263860441973 nt: 72001719953
 ```
-
-## Save/restore readline history (5.4.2)
-
-    Save/restore the history to/from a file (LUA_HISTORY env variable). 
-
-
-## Advanced readline support (5.4, 5.3, 5.2, 5.1, 5.0)
-
-  This patch adds the following features to the existing readline support in Lua 5.x:
-
-  - Completion of keywords and global variable names.
-  - Recursive and metatable-aware completion of variable names.
-  - Context sensitive delimiter completion.
-  - Save/restore the history to/from a file (`LUA_HISTORY` env variable).
-  - Set a limit for the size of the history (`LUA_HISTSIZE` env variable).
-  - Set the app name to allow for `$if lua ... $endif` in ~/.inputrc.
-
-  After applying the patch start Lua and try these (replace ~ with the TAB key):
-
-    ~~
-    fu~foo() ret~fa~end<CR>
-    io~~~s~~~o~~~w~"foo\n")<CR>
-
 
 ## Better signal handling in the interpreter on POSIX systems (5.4.2, 5.3.5, 5.2.3, 5.1.5)
 

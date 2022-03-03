@@ -23,7 +23,7 @@ To use Lua in your scripts, simply use the `.lua` file extension. No additional 
 
 Using Lua 5.4
 ---------
-If you would rather use [Lua 5.4][luadocs54] in your scripts, you should add `lua54 'yep'` to your resource manifest file.
+If you would rather use [Lua 5.4][luadocs54] in your scripts, you should add `lua54 'yes'` to your resource manifest file.
 
 Compile-time hashes
 ----------------------
