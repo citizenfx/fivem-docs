@@ -207,8 +207,8 @@ Press ~INPUT_CONTEXT~ when near the ~r~enemies.
 </tr>
 <tr>
 <td><code>~nrt~</code></td>
-<td>Unknown.</td>
-<td></td>
+<td>Creates a new line. Similar to <code>\n</code></td>
+<td><code>This is line 1 ~nrt~ This the line 2</code></td>
 </tr>
 <tr>
 <td><code>~EX_R*~</code></td>
