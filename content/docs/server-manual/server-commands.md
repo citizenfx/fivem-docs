@@ -217,6 +217,16 @@ sets sv_projectDesc "Your favorite drug deal simulation community!"
 A string variable that contains the server-specific host name. In addition to this, you may want to set `sv_projectName`
 and `sv_projectDesc`.
 
+### `sv_master1 [newValue]`
+
+A string variable that can be used to set the server as "private", making it not possible to join by using the server browser UI (the server connect button will be disabled). In the past, this specific string variable dictated where heartbeats were sent and servers weren't listed if the address didn't point to FiveM's ingress address, this is no longer the case, the server will always post to the default server ingress on startup. In other words, this string variable **cannot be used to de-list a server from the master list.**
+
+Example: 
+
+```toml
+sv_master1 ""
+```
+
 ### `sv_authMaxVariance [newValue]`
 
 **Variance** is how likely the user's id will change for a given provider (i.e. 'steam', 'ip', or 'license').
