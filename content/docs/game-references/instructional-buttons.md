@@ -41,9 +41,8 @@ Simple non-clickable buttons example
 	end
 
 	SetScaleformMovieAsNoLongerNeeded(ButtonsHandle) -- Unload the scaleform movie after enter has been pressed
-
-	-- Code result: https://i.imgur.com/b0NsTkC.png
 ```
+![Code Result](https://i.imgur.com/b0NsTkC.png)
 
 Simple clickable buttons example
 ------------
@@ -91,9 +90,8 @@ Simple clickable buttons example
 
 	CallScaleformMovieMethod(ButtonsHandle, 'TOGGLE_MOUSE_BUTTONS', 0) -- Disable mouse buttons so they don't bug out for other scripts
 	SetScaleformMovieAsNoLongerNeeded(ButtonsHandle) -- Unload the scaleform movie after enter has been pressed
-
-	-- Code result: https://i.imgur.com/0Ol9zxA.png
 ```
+![Code Result](https://i.imgur.com/0Ol9zxA.png)
 
 Simple buttons with icons example
 ------------
@@ -131,8 +129,8 @@ Simple buttons with icons example
 	end
 
 	SetScaleformMovieAsNoLongerNeeded(ButtonsHandle) -- Unload the scaleform movie after enter has been pressed
-	-- Code result: https://i.imgur.com/8XVLFXD.png
 ```
+![Code Result](https://i.imgur.com/8XVLFXD.png)
 
 Icon list
 ---------------
