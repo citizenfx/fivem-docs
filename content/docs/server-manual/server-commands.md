@@ -229,6 +229,31 @@ A console variable as an integer from 1-5 (default 1); from least to most likely
 
 A console variable as an integer from 1-5 (default 5); from least to most trustworthy (5 being a method such as external three-way authentication).
 
+### `sv_filterRequestControl [mode]`
+
+A console variable used to block `REQUEST_CONTROL_EVENT` routing based on a configurable policy.<br>
+Supported modes for this variable are as follows:
+
+- -1: Default, equivalent to 2 at this time, but will also warn in console.
+- 0: Off. Also disables the routing bucket/entity lockdown-based policy.
+- 1: Blocks control requests to entities controlled by players (currently, occupied vehicles only) that have existed for more than `sv_filterRequestControlSettleTimer` milliseconds (default `30000`) - hereafter referred to as 'settled'.
+- 2: Blocks control requests to all entities controlled by players.
+- 3: Blocks control requests to all entities controlled by players, and any 'settled' non-player entities.
+- 4: Does not route `REQUEST_CONTROL_EVENT` whatsoever.
+
+In addition, any mode but 'off' will have some additional checks as well:
+
+- Control request events can't be routed across routing buckets.
+- Control request events will always be blocked if the sender is in 'strict' entity lockdown mode, either by the global mode setting, or their routing bucket being set to such.
+
+### `sv_filterRequestControlSettleTimer [time]`
+
+A console variable (default `30000` milliseconds) that allows you to set after how long (based on entity creation time in milliseconds) an entity should be blocked from a `REQUEST_CONTROL_EVENT`. This will only apply to filter request control modes [1 and 3](#svfilterrequestcontrol-mode), which are detailed under `sv_filterRequestControl` in this page.<br>
+
+{{% alert color="warning" %}}
+The **time** argument must be provided in milliseconds for this to work correctly.
+{{% /alert %}}
+
 ### `load_server_icon [fileName.png]`
 
 A console command which loads a specfied icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
