@@ -41,7 +41,7 @@ description: >
    ![pic](/server-setup/windows-step2-10.png)
 11. Click 'Next' once you're sure the recipe looks fine. It should be fine the way it comes.<br>
   ![pic](/server-setup/windows-step2-11.png)
-12. Create a key in the [Keymaster](https://keymaster.fivem.net), enter it here in the 'Before you begin' step, and click 'Run Recipe'.<br>
+12. Create a key in the [Keymaster](https://keymaster.fivem.net), enter it in the 'Before you begin' step (shown below), and click 'Run Recipe'.<br>
    ![pic](/server-setup/windows-step2-12.png)
 13. If everything's correct, you can click 'Next' again.<br>
    ![pic](/server-setup/windows-step2-13.png)
