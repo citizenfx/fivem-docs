@@ -3,14 +3,14 @@ title: Server issues
 weight: 840
 ---
 
-My server does not show up in the server list
+My server does not show up in the server list, or it shows up as "private"
 ---------------------------------------------
 
 When this happens, make sure other people can connect to your server using
 direct connect. This issue usually is a result of bad port forwarding or some
 firewall issue. Make sure your network configuration is correct.
 
-Server configuration is also important. Your server is listed in the server list if you use the [default server.cfg example][servercfg]. It's possible that you have removed the `#` in front of the following line in your server.cfg.
+Server configuration is also important. Your server is listed in the server list if you use the [default server.cfg example][servercfg]. It's possible that you have removed the `#` in front of the following line in your server.cfg, doing so will make your server show up as private and users won't be able to join it by using the server browser (the connect button will be disabled), but they will still be able to see your server.
 
 ```yaml
 #sv_master1 ""
@@ -29,6 +29,21 @@ Alternatively, use [canyouseeme.org](http://canyouseeme.org). Only works if you'
 1. In your browser, visit [canyouseeme.org](http://canyouseeme.org)
 2. Fill in your server port (default: 30120)
 3. Check your port
+
+If the server still doesn't show up on the list, make sure the following vars are set (they should be, assuming you used the [default server.cfg example][servercfg]):
+
+- `sv_projectName`
+- `sv_projectDesc`
+
+```yaml
+# Set your server's Project Name
+sets sv_projectName "My FXServer Project"
+
+# Set your server's Project Description
+sets sv_projectDesc "Default FXServer requiring configuration"
+```
+
+The server will display an error upon startup if they aren't set.
 
 ##### Could it see the service?
 
@@ -83,6 +98,6 @@ You can also join our [Discord][discord] and have a chat with us.
 [forum]: https://forum.cfx.re/
 [discord]: https://discord.gg/fivem
 [pfsensenat]: https://docs.netgate.com/pfsense/en/latest/nat/outbound.html#static-port
-[servercfg]: /docs/server-manual/setting-up-a-server/#a-name-servercfgexample-a-server-cfg
+[servercfg]: /docs/server-manual/setting-up-a-server-vanilla/#servercfg
 [chat-formatting]: https://forum.cfx.re/t/67641
 [setting-up-server]: /docs/server-manual/setting-up-a-server
