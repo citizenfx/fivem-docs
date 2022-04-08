@@ -12,3 +12,4 @@ layout: single
 - [Client events](/docs/scripting-reference/events/client-events)
 - [Server events](/docs/scripting-reference/events/server-events)
 - [Convars](/docs/scripting-reference/convars)
+- [OneSync](/docs/scripting-reference/onesync)
