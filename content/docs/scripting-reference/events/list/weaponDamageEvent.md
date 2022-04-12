@@ -75,5 +75,9 @@ Examples
 --------
 ##### Lua Example:
 ```lua
--- TO DO
+AddEventHandler('weaponDamageEvent', function(source, data)
+    if data.weaponType == `WEAPON_SNOWBALL` or data.weaponType == `AMMO_SNOWBALL` then 
+        print('Weapon: Snowball')
+    end
+end)
 ```
