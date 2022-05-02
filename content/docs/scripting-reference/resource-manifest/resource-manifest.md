@@ -137,6 +137,12 @@ end
 exports.myresource:setWidget(50)
 ```
 
+##### JS
+
+```javascript
+global.exports["myresource"].getWidget();
+```
+
 ##### C\#
 
 ```csharp
