@@ -9,15 +9,17 @@ Parameters
 ----------
 
 ```
-int vehicleGlobalId, int pedGlobalId, int componentIndex, bool request, bool componentIsSeat, int pedInSeat
+string sender, table data
 ```
 
-- **vehicleGlobalId**: Vehicle's ID
-- **pedGlobalId**: Ped's ID
-- **componentIndex**: Component's ID.
-- **request**: Whether the request was accepted or not (not sure...)
-- **componentIsSeat**: Is the vehicle's component a seat.
-- **pedInSeat**: Ped's seat ID.
+- **sender**: *number* <p>The ID of the player that triggered the event.</p>
+- **data**: *table*
+  - **vehicleGlobalId**: *number* <p>Vehicle's ID</p>
+  - **pedGlobalId**: *number* <p>Ped's ID</p>
+  - **componentIndex**: *number* <p>Component's ID.</p>
+  - **request**: *boolean* <p>Whether the request was accepted or not (not sure...)</p>
+  - **componentIsSeat**: *boolean* <p>Is the vehicle's component a seat.</p>
+  - **pedInSeat**: *number* <p>Ped's seat ID.</p>
 
 Examples
 --------
