@@ -18,17 +18,17 @@ Provides access to both game console (the one you'd open with F8 hotkey) and ser
 
 ## Resource monitor
 
-Combines game and server resource monitors in one place providing quick access to vital information about system resources consumption.
+Combines game and server resource monitors in one place, providing quick access to vital information about system resources consumption.
 
 
 ## JS/TS support
 
-We extend JS/TS languages support by automatically loading code completions of this scripting runtimes, although it is not very smart and fine-grained yet, like so that ti won't limit natives suggestions based on whether current script is server-sided or client-sided.
+We extend JS/TS language support by automatically loading code completions of these scripting runtimes, although it is not very smart and fine-grained yet, like so that it won't limit native suggestions based on whether the current script is server-sided or client-sided.
 
 
 ## C#/CLR support
 
-This is expected to behave as it'd in normal Microsoft's VSCode, we automatically install needed extension.
+This is expected to behave as it'd in normal Microsoft's VSCode, we automatically install the needed extension.
 
 
 ## Lua support
