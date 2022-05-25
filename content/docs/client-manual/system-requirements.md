@@ -15,7 +15,7 @@ Additional details:
 | CPU             | Intel Core 2 Q6600 @ 2.40GHz / AMD Phenom 9850 @ 2.5GHz | Intel Core i5 3470 @ 3.2GHz / AMD X8 FX-8350 @ 4GHz |
 | GPU<sup>1</sup> | NVIDIA 9800 GT 1GB / AMD HD 4870 1GB / Intel HD GT2     | NVIDIA GTX 660 2GB / AMD HD7870 2GB                 |
 | RAM             | 8GB (4 may work)                                        | 16GB                                                |
-| HDD<sup>2</sup> | 105GB + ~4GB                                             | 105GB + 8GB                                          |
+| HDD<sup>2</sup> | 105GB + ~4GB                                            | 105GB + 8GB                                         |
 
 
 _Notes:_
