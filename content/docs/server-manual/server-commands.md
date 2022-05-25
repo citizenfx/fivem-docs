@@ -231,13 +231,13 @@ sv_master1 ""
 
 **Variance** is how likely the user's id will change for a given provider (i.e. 'steam', 'ip', or 'license').
 
-A console variable as an integer from 1-5 (default 1); from least to most likely to change.
+A console variable as an integer from 1-5 (default 5); from least to most likely to change.
 
 ### `sv_authMinTrust [newValue]`
 
 **Trust** is how _unlikely_ it is for the user's identity to be spoofed by a malicious client.
 
-A console variable as an integer from 1-5 (default 5); from least to most trustworthy (5 being a method such as external three-way authentication).
+A console variable as an integer from 1-5 (default 1); from least to most trustworthy (5 being a method such as external three-way authentication).
 
 ### `load_server_icon [fileName.png]`
 
