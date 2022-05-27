@@ -10,7 +10,7 @@ Before you can create your first C# resource, you'll need to install [Visual Stu
 
 
 ## Creating your project
-1. Open a command window by pressing `Win + R`, you should have a console like the one below:
+1. Open a command window by pressing `Win + R` and enter `cmd`, you should have a console like the one below:
 
 ![screenshot-1](/csharp-tut-1.png)
 
