@@ -265,6 +265,15 @@ A console variable (default `30000` milliseconds) that allows you to set after h
 The **time** argument must be provided in milliseconds for this to work correctly.
 {{% /alert %}}
 
+### `sv_pureLevel [level]`
+
+A console variable used to prevent users from using modified client files. There currently are two pure mode levels (1 and 2), an explanation for these levels can be found below:
+
+- 1: Will block all modified client files except audio files and known graphics mods.
+- 2: Will block all modified client files.
+
+If modified files are installed in the FiveM folder, they will be ignored - if users however modified base game files, they will receive an error message telling them what file is modified.
+
 ### `load_server_icon [fileName.png]`
 
 A console command which loads a specfied icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
