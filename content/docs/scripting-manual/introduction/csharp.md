@@ -63,8 +63,8 @@ This sounds much more difficult than it actually is, but it's really not hard!
    Ok, there's quite a bit in here. So let me explain how events are hooked.
    Events are triggered either by a script or by the server when certain conditions are met or triggered. These events come with special parameters, like this one! So let's explain the parameters!
   1. `Player` is a special class that has a massive amount of information about an individual user. We are going to be using this a lot.
-  2. `string` is going to contain the name of the player in **this** instance.
-  3. `dynamic`'s are two very special types we will be working with here. The first dynamic contains a reason for kicking the player, and the second is our deferral. 
+  2. `string` is going to contain the name of the player and a reason for kicking them(if applicable!) in **this** instance.
+  3. `dynamic` is a special type we will be working with here. The dynamic here is our deferral that we will use to delay the players connection if necessary.. 
   It's important to explain what a dynamic is, before we proceed. Dynamics can be pretty much anything, this is because the type of the dynamic is only checked at runtime, not by your compiler.
   ```csharp
   dynamic number = 123; // This can be a dynamic
@@ -74,17 +74,17 @@ This sounds much more difficult than it actually is, but it's really not hard!
 Now, that's the parameters explained. So let's move onto the event target. The event target is the function you trigger when an event with the name and parameters you have set is recieved. Here, we are using `OnPlayerConnecting`. So let's start using this event!
 
 ```csharp
-void OnPlayerConnecting([FromSource] Player player,  string playerName,  dynamic kickReason,  dynamic defer)  
+void OnPlayerConnecting([FromSource] Player player,  string playerName,  string kickReason,  dynamic defer)  
 { 
 } 
 ```
 There's not much to digest right away, however, I need to talk to you about a really useful tool, `[FromSource] Player`.
 Every event that is coming from a Client can use this. This effectively gives you a `Player` class to use in your code! How useful!
-This can be used in *any* event via adding the parameter `[Fromsource] Player variableName`
+This can be used in *any* event via adding the parameter `[FromSource] Player variableName`
 
 Now it's time to write some real code.
 ```csharp
-        void OnPlayerConnecting([FromSource] Player player, string playerName, dynamic kickReason, dynamic defer)
+        void OnPlayerConnecting([FromSource] Player player, string playerName, string kickReason, dynamic defer)
         {
         //Remember how dynamics can be anything? Here they are using functions that won't appear in your editor! These will each be explained.
             defer.defer(); // defer() will hold the connection to the server before allowing the player to load in. This is commonly used when you have extensive checks that will take some time to perform.
