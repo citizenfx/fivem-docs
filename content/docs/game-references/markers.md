@@ -78,7 +78,7 @@ Markers
 <div class="marker"><span><img src="/markers/38.png" alt="38"><br><strong>38</strong><br>MarkerTypeBikeSymbol</span></div>
 <div class="marker"><span><img src="/markers/39.png" alt="39"><br><strong>39</strong><br>MarkerTypeTruckSymbol</span></div>
 <div class="marker"><span><img src="/markers/40.png" alt="40"><br><strong>40</strong><br>MarkerTypeParachuteSymbol</span></div>
-<div class="marker"><span><img src="/markers/41.png" alt="41"><br><strong>41</strong><br>?</span></div>
+<div class="marker"><span><img src="/markers/41.png" alt="41"><br><strong>41</strong><br>MarkerTypeJetpackSymbol</span></div>
 <div class="marker"><span><img src="/markers/42.png" alt="42"><br><strong>42</strong><br>MarkerTypeSawbladeSymbol</span></div>
-<div class="marker"><span><img src="/markers/43.png" alt="43"><br><strong>43</strong><br>?</span></div>
+<div class="marker"><span><img src="/markers/43.png" alt="43"><br><strong>43</strong><br>MarkerTypeCube</span></div>
 </div>
