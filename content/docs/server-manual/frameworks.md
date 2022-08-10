@@ -9,5 +9,5 @@ A framework can be utilized to easily make resources for your FiveM server. It p
 
 # Frameworks (Lua) (Alphabetical Order)
 - [esx](https://github.com/esx-framework/esx-legacy) ([Docs](https://docs.esx-framework.org/legacy/installation))
-- [QBCore](https://github.com/qbcore-framework/qb-core) ([Docs](https://qbcore-framework.github.io/qb-docs/))
+- [QBCore](https://github.com/qbcore-framework/qb-core) ([Docs](https://docs.qbcore.org/qbcore-documentation/))
 - [vRP](https://github.com/vRP-framework/vRP) ([Docs](https://vrp-framework.github.io/vRP/))
