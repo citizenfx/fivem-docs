@@ -168,6 +168,7 @@ Every build includes all content and changes from the builds before.
 | 2372   | tuner, mptuner                       | Los Santos Tuners           |
 | 2545   | security, mpsecurity                 | The Contract                |
 | 2612   | mpg9ec                               | -                           |
+| 2699   | mpsum2                               | The Criminal Enterprises    |
 
 **RedM builds**
 
