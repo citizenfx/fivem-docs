@@ -83,13 +83,14 @@ Sets the music volume for the game when connected to a network game.
 
 ## Developer commands
 
-Developer commands require the client to run in a developer mode, or they'll show an error like `Access denied for command resmon`.
+Developer commands require the client to run in a developer mode, or they'll show an error like `Access denied for command resmon` or `Command strdbg is disabled in production mode`.
 
 This type of developer mode can be enabled in a few ways:
 
 1. On any update channel, by launching the FiveM/RedM client using the `+set moo 31337` argument,
    for example, by adding it to a shortcut.
-2. Running the client on a non-production update channel (such as Beta or Latest).
+2. Running the client on a non-production update channel (such as Beta or Latest). Note that other update channels may
+   be unstable and lead to issues including the game being unable to launch.
 
 ### cmdlist
 The `cmdlist` command will list all the commands that are registered on the client (or server). It will also output the
