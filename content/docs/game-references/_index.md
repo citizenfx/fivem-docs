@@ -16,3 +16,4 @@ Reference lists and guides for game data are in this category.
 - [Gamer tags](/docs/game-references/gamer-tags)
 - [Profile Settings](/docs/game-references/profile-settings)
 - [Ped models](/docs/game-references/ped-models)
+- [Vehicle models](/docs/game-references/vehicle-models)
