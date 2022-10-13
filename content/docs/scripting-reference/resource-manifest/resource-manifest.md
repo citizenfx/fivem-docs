@@ -229,6 +229,14 @@ loadscreen 'html/loadscreen.html'
 file 'html/loadscreen.html'
 ```
 
+### loadscreen_manual_shutdown
+
+Replacement for unsupported `SET_MANUAL_SHUTDOWN_LOADING_SCREEN_NUI` native.
+
+```lua
+loadscreen_manual_shutdown 'yes'
+```
+
 ### file
 
 Adds the specified file to the resource packfile, to be downloaded by clients upon loading the resource.
