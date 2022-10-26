@@ -13,7 +13,7 @@ The crosshair mimics the one seen in CS:GO, hence any existing CS:GO crosshair c
 cl_customcrosshair 1;cl_crosshairstyle 5;cl_crosshairsize 3.5;cl_crosshair_drawoutline 1;cl_crosshairthickness 1;cl_crosshair_outlinethickness 0.4;cl_crosshairdot 0;cl_crosshairgap -1
 ```
 
-*Existing dococumentation for CS:GO:* https://counterstrike.fandom.com/wiki/Crosshair
+*Existing documentation for CS:GO:* https://counterstrike.fandom.com/wiki/Crosshair
 
 # Console Variables:
 

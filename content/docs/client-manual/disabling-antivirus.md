@@ -20,6 +20,6 @@ solution for these issues.
     - [Avira](https://support.avira.com/hc/en-us/articles/360000834465-How-do-I-setup-exceptions-for-files-folders-and-processes-)
     - [Bitdefender](https://www.bitdefender.com/consumer/support/answer/13427/)
     - [Kaspersky](https://usa.kaspersky.com/blog/kaspersky-add-exclusion/11075/)
-    - [Malawarebytes](https://support.malwarebytes.com/hc/en-us/articles/360039024133-Exclude-detections-in-Malwarebytes-for-Windows-v3)
+    - [Malwarebytes](https://support.malwarebytes.com/hc/en-us/articles/360039024133-Exclude-detections-in-Malwarebytes-for-Windows-v3)
     - [McAfee](https://service.mcafee.com/webcenter/portal/oracle/webcenter/page/scopedMD/s55728c97_466d_4ddb_952d_05484ea932c6/Page29.jspx?articleId=TS102056)
     - [Microsoft Defender](https://support.microsoft.com/en-us/windows/add-an-exclusion-to-windows-security-811816c0-4dfd-af4a-47e4-c301afe13b26)

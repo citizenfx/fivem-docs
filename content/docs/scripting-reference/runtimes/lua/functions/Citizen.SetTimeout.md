@@ -2,7 +2,7 @@
 title: Citizen.SetTimeout
 ---
 
-This will execute the specified function after the specified amount of miliseconds.
+This will execute the specified function after the specified amount of milliseconds.
 
 Syntax
 ------
