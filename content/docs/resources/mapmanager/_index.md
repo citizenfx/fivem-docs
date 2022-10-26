@@ -4,7 +4,7 @@ title: mapmanager
 
 Mapmanager
 ------
-Mapmanager is an included citizenfx resource that handles map changes, game types, and compatability between gametypes and maps.
+Mapmanager is an included citizenfx resource that handles map changes, game types, and compatibility between gametypes and maps.
 
 
 
