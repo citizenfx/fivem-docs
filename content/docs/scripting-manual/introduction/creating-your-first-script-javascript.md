@@ -78,7 +78,7 @@ on('onClientGameTypeStart', () => {
 });
 ```
 
-You might have seen this in the [JavaScript runtime][javascript-runtime] documentation. This is a tough one, especially if you're not used to the concept of first-class functions. You could also write it differently, using global/local functions - but that's just a bit odd.
+You might have seen this in the [JavaScript runtime][runtime-javascript] documentation. This is a tough one, especially if you're not used to the concept of first-class functions. You could also write it differently, using global/local functions - but that's just a bit odd.
 
 Let's go through this bit by bit, with an annotated version.
 
