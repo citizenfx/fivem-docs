@@ -68,7 +68,7 @@ FxDK provides system resources automatically, you just enable what you need in p
 
 
 # Limitations
-FxDK was designed as a local-only development environment for a single user. Whilst we are aware of the demand, due to technical difficulties, other users are cannot join your session.
+FxDK was designed as a local-only development environment for a single user. Whilst we are aware of the demand, due to technical difficulties, other users cannot join your session.
 
 This implies many steps need to be taken to make multi-user experience work as you'd expect. We have plans to make it easier, but it is a long-term concern and you should not expect it anytime soon.
 
