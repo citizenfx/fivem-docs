@@ -56,6 +56,32 @@ For usage and examples see their respective docs:
 - [vector3](/docs/scripting-reference/runtimes/lua/functions/vector3)
 - [vector4](/docs/scripting-reference/runtimes/lua/functions/vector4)
 
+Meta Fields - Pointer Handling
+---------------------
+
+The Lua runtime allows specifying pointer or result types with native execution via Meta Fields found in the `Citizen` namespace:
+
+- PointerValueInt
+-	PointerValueFloat
+-	PointerValueVector
+-	ReturnResultAnyway
+-	ResultAsInteger
+-	ResultAsLong
+-	ResultAsFloat
+-	ResultAsString
+-	ResultAsVector
+-	ResultAsObject
+-	Max
+
+Example:
+
+```lua
+local found, groundZ = GetGroundZFor_3dCoord(GetEntityCoords(PlayerPedId()), Citizen.PointerValueFloat(), true)
+if found then
+    print(groundZ)
+end
+```
+
 Using exports
 -------------
 
