@@ -156,8 +156,11 @@ identifier.steam:110000111111112 <- group.moderator
 On the left is the child node that belongs to the parent node on the right side.
 
 ### localGame \<name>
-<!-- DOCTODO: document this concept -->
-Loads a local resource from `usermaps:/resources/[name]` in a single-player game.
+Loads a local resource from `usermaps:/resources/[name]` in a single-player game. Running this command will stop any existing open game (including story-mode) and will start a new single player environment from the game's prologue mission.
+
+In order for this to work, you will need to create a `usermaps\resources\[resource-name]` directory from your FiveM main folder, where `[resource-name]` can be `hello-world`, i.e. `path\to\fivem\FiveM.app\usermaps\resources\hello-world`.
+
+You will also need an [fxmanifest.lua][manifest-reference] file for the resource to work.
 
 ### localRestart
 Restarts the localGame resource.
@@ -321,3 +324,4 @@ Example: `test_ace group.admin command.adminstuff`
 
 [faq-data]: /docs/support/client-faq#where-is-fivem-installed
 [vconsole]: https://forum.cfx.re/t/20005
+[manifest-reference]: /docs/scripting-reference/resource-manifest/resource-manifest/
