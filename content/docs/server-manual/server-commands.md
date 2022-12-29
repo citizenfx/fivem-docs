@@ -258,6 +258,55 @@ In addition, any mode but 'off' will have some additional checks as well:
 - Control request events can't be routed across routing buckets.
 - Control request events will always be blocked if the sender is in 'strict' entity lockdown mode, either by the global mode setting, or their routing bucket being set to such.
 
+### `con_channelFilters`
+The `con_channelFilters` command will list any active channel filters set to the end user.
+
+A channel is the prefix of a console message, for example: `citizen-server-impl`, this channel will be displayed in brackets in the console followed by a message, i.e.
+
+```
+[citizen-server-impl] Found 44 resources.
+```
+
+Filters can be used to alter console output behavior.
+
+Different actions exist to alter this behavior:
+
+| Action  | Description |
+| ------  | ---------------------------------------------------------- |
+| noprint | Will stop anything from being printed at a trace listener level. |
+| drop    | Will cause the output to be dropped at `Printfv`, so it won't reach any print listeners. |
+| devonly | Will apply `drop` action behavior and will only drop the output if the [developer](/docs/client-manual/console-commands/#developer) command is set to `false`. |
+
+Example output:
+```
+[cmd] forward:*/*: noprint
+```
+
+### `con_addChannelFilter [filter] [action]`
+The `con_addChannelFilter` command will add a channel filter which can be used to filter console channel output. 
+
+[Regex](https://en.wikipedia.org/wiki/Regular_expression) can be used for channel filters, this can be set through the `filter` command parameter.
+
+Available actions are explained up [above](#con_channelFilters) (con_channelFilters command).
+
+The example down below would stop any channel output coming from script names matching the given pattern.
+
+So the following wouldn't show on the console: 
+
+```
+[script:gamemodePrefix-turfs]: Hello world!
+[script:gamemodePrefix-derby]: This is a test.
+```
+
+Example: `con_addChannelFilter script:gamemodePrefix-* noprint`
+
+### `con_removeChannelFilter [filter] [action]`
+The `con_removeChannelFilter` command can be used to remove a channel filter, thus removing any previously applied actions (those applied via [con_addChannelFilter](#con_addChannelFilter)).
+
+You can use [con_channelFilters](#con_channelFilters) to check for any active filters.
+
+Example: `con_removeChannelFilter script:gamemodePrefix-* noprint`
+
 ### `sv_filterRequestControlSettleTimer [time]`
 
 A console variable (default `30000` milliseconds) that allows you to set after how long (based on entity creation time in milliseconds) an entity should be blocked from a `REQUEST_CONTROL_EVENT`. This will only apply to filter request control modes [1 and 3](#svfilterrequestcontrol-mode), which are detailed under `sv_filterRequestControl` in this page.<br>
