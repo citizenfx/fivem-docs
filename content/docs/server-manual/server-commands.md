@@ -169,6 +169,7 @@ Every build includes all content and changes from the builds before.
 | 2545   | security, mpsecurity                 | The Contract                |
 | 2612   | mpg9ec                               | -                           |
 | 2699   | mpsum2                               | The Criminal Enterprises    |
+| 2802   | mpchristmas3                         | Los Santos Drug Wars        |
 
 **RedM builds**
 
