@@ -66,7 +66,7 @@ print(#v) -- prints `5.477`
 
 -- Vectors can be normalized:
 local v = vector4(1, 2, 3, 4)
-print(norm(v)) -- prints `vector4(0.18, 0.37, 0.55, 0.73)`
+print(norm(v)) -- prints `vector4(0.1825742, 0.3651484, 0.5477225, 0.7302967)`
 
 -- Unpacking works:
 local v = vector4(1, 2, 3, 4)
