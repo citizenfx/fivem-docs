@@ -23,7 +23,8 @@ emit("eventName", eventParam1, eventParam2);
 ```
 
 ### Triggering server events
-To trigger a server event from inside a **client** script, use the `TriggerServerEvent()` (or for JS, `emitNet()`) function.
+There are currently two different ways to trigger a server event from inside a **client** script.
+For smaller transactions the you should use `TriggerServerEvent`, while for larger transactions (which contain more data) `TriggerLatentServerEvent` would be more optimal.
 #### Example
 **Lua**
 ```lua
@@ -40,15 +41,37 @@ TriggerServerEvent("eventName", eventParam1, eventParam2);
 emitNet("eventName", eventParam1, eventParam2);
 ```
 
-----------
+#### Triggering latent server events
+Latent events should be used when needing to transfer a large amount of data from client -> server, as latent events **do not** block the entire network channel, unlike `TriggerServerEvent`. 
 
-### Triggering client events
-To trigger a client event from a server-side script however, use the `TriggerClientEvent()` native if you're using Lua, the C# method below, or the JS method.
+Latent events take an extra paramater 'bps' which stands for 'bytes per second', this defines how fast it should send data to the server.
 
 **Lua**
 ```lua
-TriggerClientEvent("eventName", targetPlayer, eventParam1, eventParam2)
+TriggerLatentServerEvent("eventName", bps, eventParam1, eventParam2)
+```
+
+**C#**
+```csharp
+TriggerLatentServerEvent("eventName", bps, eventParam1, eventParam2);
+```
+
+**JS**
+```js
+TriggerLatentServerEvent("eventName", bps, eventParam1, eventParam2);
+```
+
+----------
+
+### Triggering client events
+The same is applicable for triggering client events.
+
+Client events use `TriggerClientEvent` and `TriggerLatentClientEvent` respectively, unlike server events you have to specify which users you want to send them to, or `-1` for all connected users. 
+
+**Lua**
+```lua
 -- Use -1 for "targetPlayer" if you want the event to trigger on all connected clients.
+TriggerClientEvent("eventName", targetPlayer, eventParam1, eventParam2)
 ```
 
 **C#**
@@ -57,7 +80,8 @@ TriggerClientEvent("eventName", targetPlayer, eventParam1, eventParam2)
 player.TriggerEvent("eventName", eventParam1, eventParam2);
 
 // Method two. Trigger an event for everyone on the server.
-TriggerClientEvent("eventName", eventParam1, eventParam2); // Note you do not need to specify a target of -1.
+// Note you do not need to specify a target of -1 for C#.
+TriggerClientEvent("eventName", eventParam1, eventParam2);
 
 // Method three. Again, triggering an event directly on a client source (like method one),
 // but using the TriggerClientEvent native function instead.
@@ -66,5 +90,39 @@ TriggerClientEvent(player, "eventName", eventParam1, eventParam2);
 
 **JS**
 ```js
+// Use -1 for "targetPlayer" if you want the event to trigger on all connected clients.
 emitNet("eventName", targetPlayer, eventParam1, eventParam2);
+```
+
+
+#### Triggering latent client events
+Latent events should be used when needing to transfer a large amount of data from server -> client, as latent events **do not** block the clients entire network channel, unlike `TriggerClientEvent`.
+
+This is important for timeout functionality, as sending a large amount of data blocks the network for the client, and if blocked for too long, will result in the client timing out. 
+
+Latent events take an extra paramater 'bps' which stands for 'bytes per second', this defines how fast it should send data to the client.
+
+**Lua**
+```lua
+-- Use -1 for "targetPlayer" if you want the event to trigger on all connected clients.
+TriggerLatentClientEvent("eventName", targetPlayer, bps, eventParam1, eventParam2)
+```
+
+**C#**
+```csharp
+// Method one. Trigger an event directly on a client source.
+player.TriggerLatentEvent("eventName", bps, eventParam1, eventParam2);
+
+// Method two. Trigger an event for everyone on the server.
+TriggerLatentClientEvent("eventName", bps, eventParam1, eventParam2); // Note you do not need to specify a target of -1.
+
+// Method three. Again, triggering an event directly on a client source (like method one),
+// but using the TriggerLatentClientEvent function instead.
+TriggerLatentClientEvent(player, "eventName", bps, eventParam1, eventParam2);
+```
+
+**JS**
+```js
+// Use -1 for "targetPlayer" if you want the event to trigger on all connected clients.
+TriggerLatentClientEvent("eventName", targetPlayer, bps, eventParam1, eventParam2);
 ```
