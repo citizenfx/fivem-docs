@@ -12,7 +12,7 @@ description: >
 1. Go to the [Windows server build listing][windows-artifacts] ('artifacts' listing, as in 'build artifacts').
 2. Download the latest recommended build.<br>
    ![pic](/server-setup/windows-step-2.png)
-3. Open the `server.zip` you just downloaded.<br>
+3. Open the `server.7z` you just downloaded. Use any third-party archiving tool (such as [7-Zip][7zip] or [WinRAR][winrar]) to open the `.7z` file. <br>
    ![pic](/server-setup/windows-step-3.png)
 4. Extract it somewhere you want to store it. We'll pick `C:\FXServer\server`.<br>
    ![pic](/server-setup/windows-step-4a.png)<br>
@@ -32,7 +32,7 @@ description: >
 5. Click 'Next'.<br>
    ![pic](/server-setup/windows-step2-5.png)
 6. Type a name for your server and click 'Next'.
-7. Select to use a 'Popular Template'.<br>
+7. Select 'Popular Recipes'.<br>
    ![pic](/server-setup/windows-step2-7.png)
 8. Pick the 'CFX Default' template for now. Other templates may exist, but some will require a database server.<br>
    ![pic](/server-setup/windows-step2-8.png)
@@ -53,3 +53,6 @@ description: >
 [server-data]: https://github.com/citizenfx/cfx-server-data
 
 [vcredist]: https://aka.ms/vs/16/release/VC_redist.x64.exe
+
+[winrar]: https://www.rarlab.com/download.htm
+[7zip]: https://www.7-zip.org/download.html
