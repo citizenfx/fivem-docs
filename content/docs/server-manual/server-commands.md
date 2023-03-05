@@ -252,7 +252,9 @@ Levels:
   - 1: Block any IPs sending requests containing a 'Via' header.
   - 2: Block any IPs sending requests containing a 'Upgrade-Insecure-Requests' header. This includes all browser-based attempts at requesting .json endpoints, so use          with care.
   - 3: Also close the socket the requests have been submitted on.
-  
+ 
+If set to level 2 greater, all requests made to [info.json](https://github.com/citizenfx/fivem/blob/65bf224097b1107c10f84f5dfc25ee8e4bddc95d/code/components/citizen-server-impl/src/InfoHttpHandler.cpp#L276), [dynamic.json](https://github.com/citizenfx/fivem/blob/65bf224097b1107c10f84f5dfc25ee8e4bddc95d/code/components/citizen-server-impl/src/InfoHttpHandler.cpp#L317) and [players.json](https://github.com/citizenfx/fivem/blob/65bf224097b1107c10f84f5dfc25ee8e4bddc95d/code/components/citizen-server-impl/src/InfoHttpHandler.cpp#L331) related endpoints will return "Nope."
+ 
 A console variable as an integer from 0-3 (default 0);
 
 ### `sv_filterRequestControl [mode]`
