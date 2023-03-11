@@ -118,7 +118,7 @@ Example
 
 ```lua
 Citizen.CreateThread(function()
-  local ScaleformHandle = RequestScaleformMovie("mp_big_message_freemode") -- The scaleform you want to use
+  local scaleform = RequestScaleformMovie("mp_big_message_freemode") -- The scaleform you want to use
   while not HasScaleformMovieLoaded(scaleform) do -- Ensure the scaleform is actually loaded before using
     Citizen.Wait(0)
   end
@@ -131,7 +131,7 @@ Citizen.CreateThread(function()
   
   while true do -- Draw the scaleform every frame
     Citizen.Wait(0)
-    DrawScaleformMovieFullscreen(ScaleformHandle, 255, 255, 255, 255) -- Draw the scaleform fullscreen
+    DrawScaleformMovieFullscreen(scaleform, 255, 255, 255, 255) -- Draw the scaleform fullscreen
   end
 end)
 ```
