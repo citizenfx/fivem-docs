@@ -13,7 +13,7 @@ The crosshair mimics the one seen in CS:GO, hence any existing CS:GO crosshair c
 cl_customcrosshair 1;cl_crosshairstyle 5;cl_crosshairsize 3.5;cl_crosshair_drawoutline 1;cl_crosshairthickness 1;cl_crosshair_outlinethickness 0.4;cl_crosshairdot 0;cl_crosshairgap -1
 ```
 
-*Existing dococumentation for CS:GO:* https://counterstrike.fandom.com/wiki/Crosshair
+*Existing documentation for CS:GO:* https://counterstrike.fandom.com/wiki/Crosshair
 
 # Console Variables:
 
@@ -116,3 +116,12 @@ Usage: `cl_crosshair_dynamic_splitalpha_outermod 0.5`
 Unused, controls how long the inner and outer part of the crosshair's lines are when moving or shooting.
 
 Usage: `cl_crosshair_dynamic_maxdist_splitratio 0.35`
+
+# Disabling the crosshair
+The crosshair can be disabled from the server by entering the following line in your `server.cfg` file:
+
+```
+setr cl_customCrosshair false
+```
+
+Entering said line will set the [convar](https://docs.fivem.net/docs/scripting-reference/convars/#standard-convars) (console variable) as a [replicated variable](https://docs.fivem.net/docs/scripting-reference/convars/#using-commands-1) set to `false`.
