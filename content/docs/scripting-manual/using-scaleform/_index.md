@@ -60,7 +60,7 @@ Please note that this is a low-level api, the C\# runtime has an [easy-to-use hi
 
 ### Drawing
 
-You can draw scaleform using one of these comamnds, **red, green, blue, alpha and unk parameters can be omitted as they don't affect anything**:
+You can draw scaleform using one of these commands, **red, green, blue, alpha and unk parameters can be omitted as they don't affect anything**:
 
 -   {{% native_link "DRAW_SCALEFORM_MOVIE" %}} for drawing gfx in 2D on a specific position
 -   {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN" %}} also draws gfx in 2D, however in fullscreen
@@ -71,7 +71,7 @@ Masking
 
 Can be faked using the function {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN_MASKED" %}}, where the first gfx is what you want to render, and the second gfx is a mask for it.
 
-This masking has no antialising, it doesn't perform “smooth” masking, if a particular pixel of masking gfx is not fully transparent, then the underlying pixel will be fully shown.
+This masking has no antialiasing, it doesn't perform “smooth” masking, if a particular pixel of masking gfx is not fully transparent, then the underlying pixel will be fully shown.
 
 Using textures
 --------------
@@ -127,7 +127,7 @@ Citizen.CreateThread(function()
   PushScaleformMovieMethodParameterString("Big Text") -- bigTxt
   PushScaleformMovieMethodParameterString("Smaller Text") -- msgText
   PushScaleformMovieMethodParameterInt(5) -- colId
-  EndScaleformMovieMethod() -- Finish off the scaleform, it returns no data, so doesnt need "EndScaleformMovieMethodReturn"
+  EndScaleformMovieMethod() -- Finish off the scaleform, it returns no data, so doesn't need "EndScaleformMovieMethodReturn"
   
   while true do -- Draw the scaleform every frame
     Citizen.Wait(0)

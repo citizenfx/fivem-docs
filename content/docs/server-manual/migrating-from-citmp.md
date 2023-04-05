@@ -33,7 +33,7 @@ end
 
 ### String Splitting
 
-`str:Split` does not exist anymore, you should use the proper Lua functions for this. For the commonly copy-pasted `stringsplit` function, this'd be:
+`str:Split` does not exist anymore, you should use the proper Lua functions for this. For the commonly copy-pasted `stringsplit` function, this would be:
 
 ``` lua
 function stringsplit(inputstr, sep)

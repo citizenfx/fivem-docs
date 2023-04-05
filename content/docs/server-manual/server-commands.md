@@ -342,7 +342,7 @@ If modified files are installed in the FiveM folder, they will be ignored - if u
 
 ### `load_server_icon [fileName.png]`
 
-A console command which loads a specfied icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
+A console command which loads a specified icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
 
 Example:
 
