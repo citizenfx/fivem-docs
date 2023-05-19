@@ -315,6 +315,38 @@ Shows a listing of streaming memory used by specific streaming assets, as well a
 
 Usage: `strmem <true|false>`
 
+### game_enableScaleformDebugLog
+The `game_enableScaleformDebugLog` command will show all debug log messages related to scaleform (which is used by the game's main UI components), there's different types that are displayed, but the most commonly shown type is `HUD_TYPE`. This is a **FiveM** only command at this time, it's **not supported** on **RedM**.
+
+Below you can find an example log and all related types:
+
+Example Log:
+
+```
+[HUD_TYPE] Removing Stream Component: 0,6
+[HUD_TYPE] SHOW_NEXT_STATIC_LOADINGSCREEN()
+[HUD_TYPE] fadeInBlackOverlay(): 1
+[HUD_TYPE] Creating Stream Component: 0,~BLIP_INFO_ICON~ If you're strapped for cash, why not visit one of the many gas stations, liquor stores or 24/7 supermarkets around Los Santos?,false,6
+[HUD_TYPE] SET_STREAM_COMPONENT creation time: 0
+```
+
+Types:
+
+- GENERIC_TYPE
+- SCRIPT_TYPE
+- HUD_TYPE
+- MINIMAP_TYPE
+- WEB_TYPE
+- CUTSCENE_TYPE
+- PAUSE_TYPE
+- STORE
+- GAMESTREAM
+- SF_BASE_CLASS_VIDEO_EDITOR
+- SF_BASE_CLASS_MOUSE
+- SF_BASE_CLASS_TEXT_INPUT
+
+Usage: `game_enableScaleformDebugLog <true|false>`
+
 ### test_ace
 Tests if a principal is allowed or denied access to a given object.
 
