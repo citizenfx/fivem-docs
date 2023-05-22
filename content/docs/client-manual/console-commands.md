@@ -347,6 +347,24 @@ Types:
 
 Usage: `game_enableScaleformDebugLog <true|false>`
 
+### game_enableFlyThroughWindscreen
+The `game_enableFlyThroughWindscreen` command will toggle a boolean variable to determine whether the ped should fly through the windscreen upon a crash.
+
+Usage: `game_enableFlyThroughWindscreen <true|false>`  
+Note: This variable can be replicated from the server via `setr` usage.
+
+### game_enablePlayerJumpRagdollControl
+The `game_enablePlayerJumpRagdollControl` command will toggle a boolean variable to determine whether the ped should activate ragdoll on jump like in single player (Jump Key + R).
+
+Usage: `game_enablePlayerJumpRagdollControl <true|false>`  
+Note: This variable can be replicated from the server via `setr` usage.
+
+### game_enablePlayerRagdollOnCollision
+The `game_enablePlayerRagdollOnCollision` command will toggle a boolean variable to determine whether the ped should activate native ragdoll on collision game logic.
+
+Usage: `game_enablePlayerRagdollOnCollision <true|false>`  
+Note: This variable can be replicated from the server via `setr` usage.
+
 ### test_ace
 Tests if a principal is allowed or denied access to a given object.
 
