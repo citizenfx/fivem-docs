@@ -342,9 +342,9 @@ If modified files are installed in the FiveM folder, they will be ignored - if u
 
 ### `sv_enableNetworkedSounds [true|false]`
 
-A console variable that can be used to prevent users from routing `NETWORK_PLAY_SOUND_EVENT` through the server, which is commonly used by malicious actors.
+A boolean console variable that can be used to prevent users from routing `NETWORK_PLAY_SOUND_EVENT` through the server, which is commonly used by malicious actors.
 
-This is default set to true (allow routing)
+This is set to true by default (allow routing)
 
 ### `load_server_icon [fileName.png]`
 
