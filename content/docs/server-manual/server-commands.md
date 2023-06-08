@@ -340,6 +340,12 @@ A console variable used to prevent users from using modified client files. There
 
 If modified files are installed in the FiveM folder, they will be ignored - if users however modified base game files, they will receive an error message telling them what file is modified.
 
+### `sv_enableNetworkedSounds [true|false]`
+
+A boolean console variable that can be used to prevent users from routing `NETWORK_PLAY_SOUND_EVENT` through the server, which is commonly used by malicious actors.
+
+This is set to true by default (allow routing)
+
 ### `load_server_icon [fileName.png]`
 
 A console command which loads a specfied icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
