@@ -170,6 +170,7 @@ Every build includes all content and changes from the builds before.
 | 2612   | mpg9ec                               | -                           |
 | 2699   | mpsum2                               | The Criminal Enterprises    |
 | 2802   | mpchristmas3                         | Los Santos Drug Wars        |
+| 2944   | mp2023_01                            | San Andreas Mercenaries     |
 
 **RedM builds**
 
