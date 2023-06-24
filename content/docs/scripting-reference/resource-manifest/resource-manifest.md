@@ -290,7 +290,7 @@ clr_disable_task_scheduler 'yes'
 
 ### convar_category
 
-When present adds the specified convars to the 'Project Settings' page in FXDK.
+When present adds the specified convars to the 'Project Settings' page in FxDK.
 
 #### Convar types:
 
