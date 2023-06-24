@@ -301,6 +301,58 @@ This is already enabled by default if using `fx_version` of `bodacious` or highe
 clr_disable_task_scheduler 'yes'
 ```
 
+### convar_category
+
+When present adds the specified convars to the 'Project Settings' page in FxDK.
+
+#### Convar types:
+
+`CV_STRING`: Normal text input.
+`title, convar_name, "CV_STRING", default`
+
+`CV_BOOL`: True / False input in the form of a checkbox.
+`title, convar_name, "CV_BOOL", default[, "label"]`
+
+`CV_INT`: Manual number input with optional minimum and maximum.
+`title, convar_name, "CV_INT", default[, min, max]`
+
+`CV_SLIDER`: Slider number input.
+`title, convar_name, "CV_SLIDER", default, min, max`
+
+`CV_COMBI`: Number input with slider and manual input.
+`title, convar_name, "CV_COMBI", default, min, max`
+
+`CV_PASSWORD`: Masked text input.
+`title, convar_name, "CV_SLIDER", default`
+
+`CV_MULTI`: A drop-down selection menu, the first entry in Items is the default value.
+`title, convar_name, "CV_MULTI", items[{name, value}]`
+
+If your convars are replacted (`setr`) you will need to prepend `$` to the convar name:
+`{ "foo", "$my_convar", "CV_STRING", "bar" }`
+
+If your convars are server info (`sets`) you will need to prepend `#` to the convar name:
+`{ "Discord", "#my_convar", "CV_STRING", "discord.gg/fivem" }`
+
+Example:
+```lua
+convar_category 'MySQL' {
+    "GHMattiMySQL Configuration Options",
+    {
+        { "Connection String", "mysql_connection_string", "CV_STRING", "" },
+        { "Debug Mode", "mysql_debug", "CV_MULTI", {
+            { "None", "None" },
+            { "Console", "Console" },
+            { "File", "File"},
+            { "FileAndConsole", "FileAndConsole" }
+        }},
+        { "Slow Query Warning", "mysql_slow_query_warning", "CV_COMBI", 100, 0, 5000 },
+        { "Log Level", "mysql_log_level", "CV_INT", 15, 1, 15 },
+        { "Log File Format", "mysql_log_file_format", "CV_STRING", "%s-%d.log" },
+    }
+}
+```
+
 ## FXv2 versions
 
 The resource manifest has to specify a particular FXv2 version for the resource to adhere to. A list of version names and features they are associated with is shown on this page.
