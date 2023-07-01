@@ -120,7 +120,7 @@ Example
 Citizen.CreateThread(function()
   local scaleformHandle = RequestScaleformMovie("mp_big_message_freemode") -- The scaleform you want to use
   while not HasScaleformMovieLoaded(scaleformHandle) do -- Ensure the scaleform is actually loaded before using
-      Citizen.Wait(0)
+    Citizen.Wait(0)
   end
 
   BeginScaleformMovieMethod(scaleformHandle, "SHOW_SHARD_WASTED_MP_MESSAGE") -- The function you want to call from the AS file
@@ -130,8 +130,8 @@ Citizen.CreateThread(function()
   EndScaleformMovieMethod() -- Finish off the scaleform, it returns no data, so doesnt need "EndScaleformMovieMethodReturn"
 
   while true do -- Draw the scaleform every frame
-      Citizen.Wait(0)
-      DrawScaleformMovieFullscreen(scaleformHandle, 255, 255, 255, 255) -- Draw the scaleform fullscreen
+    Citizen.Wait(0)
+    DrawScaleformMovieFullscreen(scaleformHandle, 255, 255, 255, 255) -- Draw the scaleform fullscreen
   end
 end)
 ```
