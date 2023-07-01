@@ -118,20 +118,20 @@ Example
 
 ```lua
 Citizen.CreateThread(function()
-  local scaleform = RequestScaleformMovie("mp_big_message_freemode") -- The scaleform you want to use
-  while not HasScaleformMovieLoaded(scaleform) do -- Ensure the scaleform is actually loaded before using
-    Citizen.Wait(0)
+  local scaleformHandle = RequestScaleformMovie("mp_big_message_freemode") -- The scaleform you want to use
+  while not HasScaleformMovieLoaded(scaleformHandle) do -- Ensure the scaleform is actually loaded before using
+      Citizen.Wait(0)
   end
 
-  BeginScaleformMovieMethod(scaleform, "SHOW_SHARD_WASTED_MP_MESSAGE") -- The function you want to call from the AS file
+  BeginScaleformMovieMethod(scaleformHandle, "SHOW_SHARD_WASTED_MP_MESSAGE") -- The function you want to call from the AS file
   PushScaleformMovieMethodParameterString("Big Text") -- bigTxt
   PushScaleformMovieMethodParameterString("Smaller Text") -- msgText
   PushScaleformMovieMethodParameterInt(5) -- colId
   EndScaleformMovieMethod() -- Finish off the scaleform, it returns no data, so doesnt need "EndScaleformMovieMethodReturn"
-  
+
   while true do -- Draw the scaleform every frame
-    Citizen.Wait(0)
-    DrawScaleformMovieFullscreen(scaleform, 255, 255, 255, 255) -- Draw the scaleform fullscreen
+      Citizen.Wait(0)
+      DrawScaleformMovieFullscreen(scaleformHandle, 255, 255, 255, 255) -- Draw the scaleform fullscreen
   end
 end)
 ```
