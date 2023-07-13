@@ -183,7 +183,7 @@ Every build includes all content and changes from the builds before.
 
 ### `sv_maxClients [newValue]`
 
-A variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 1024.
+A variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 2048.
 
 Values starting at 32 will require `onesync` to be set to `on` or `legacy`, and values above 64 will require `onesync` to be set to `on`.
 
