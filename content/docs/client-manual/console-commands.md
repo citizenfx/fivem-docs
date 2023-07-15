@@ -251,9 +251,27 @@ resource and shows this in a nice overview. Comes in handy when you encounter pe
 Usage: `resmon <true|false>`
 
 ### save_gta_cache
-<!-- TODO: reference a guide on GTA cache and using it in a resource -->
-Saves cache data for a specified resource to the CitizenFX directory in AppData. This is to be used for resources with a
+Saves cache data for a specified resource to the CitizenFX directory in AppData (`%AppData%\CitizenFX`). This is to be used for resources with a
 significant amount of collision or map files, to speed up initial loading for players.
+
+In order for players to load this file, it needs to be stored in the server's root folder of the resource you decided to save the map's cache for (not in a subdirectory) and added to your resource manifest.
+
+In your resource manifest, `fxmanifest.lua` (or previously, `__resource.lua`):
+
+```
+files {
+  'your_resource_name_cache_y.dat'
+}
+```
+
+*Make sure the cache file name matches the one you saved and copied to your root resource directory, don't copy/paste the example as is.*
+
+If you followed the steps correctly, you should see something like the following in your game log:
+
+```
+MainThrd/ loading CFX_PSEUDO_CACHE your_resource_name.
+MainThrd/ done loading your_resource_name in data file mounter class CfxCacheMounter.
+```
 
 Usage: `save_gta_cache <resource name>`
 
