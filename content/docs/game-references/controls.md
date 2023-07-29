@@ -99,7 +99,7 @@ Controls
 | 57    | INPUT\_DROP\_AMMO                                | F10                                   | B               |
 | 58    | INPUT\_THROW\_GRENADE                            | G                                     | DPAD LEFT       |
 | 59    | INPUT\_VEH\_MOVE\_LR                             | D                                     | LEFT STICK      |
-| 60    | INPUT\_VEH\_MOVE\_UD                             | LEFT CTRL                             | LEFT STICK      |
+| 60    | INPUT\_VEH\_MOVE\_UD                             | A                                     | LEFT STICK      |
 | 61    | INPUT\_VEH\_MOVE\_UP\_ONLY                       | LEFT SHIFT                            | LEFT STICK      |
 | 62    | INPUT\_VEH\_MOVE\_DOWN\_ONLY                     | LEFT CTRL                             | LEFT STICK      |
 | 63    | INPUT\_VEH\_MOVE\_LEFT\_ONLY                     | A                                     | LEFT STICK      |
