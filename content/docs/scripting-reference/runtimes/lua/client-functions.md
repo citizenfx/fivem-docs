@@ -23,4 +23,4 @@ weight: 514
 - [vector4](/docs/scripting-reference/runtimes/lua/functions/vector4)
 
 ## Native functions
-Refer to the [FiveM Native Reference](/docs/natives) for game functions.
+Refer to the [FiveM Native Reference](/natives) for game functions.

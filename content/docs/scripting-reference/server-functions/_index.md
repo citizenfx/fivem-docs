@@ -7,7 +7,7 @@ Here is a list of some of the functions that you can use specifically in **serve
 
 Native functions
 ----------------
-Server-side native functions are provided by the Citizen framework. Refer to the [FiveM Native Reference](/docs/natives), where you can see syntax per language, a description, and examples for each native.
+Server-side native functions are provided by the Citizen framework. Refer to the [FiveM Native Reference](/natives), where you can see syntax per language, a description, and examples for each native.
 
 These natives are usable in **all** runtimes.
 

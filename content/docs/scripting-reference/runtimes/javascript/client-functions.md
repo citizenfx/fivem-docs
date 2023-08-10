@@ -12,4 +12,4 @@ weight: 511
 - [clearTick](/docs/scripting-reference/runtimes/javascript/functions/clearTick)
 
 ## Native functions
-Refer to the [FiveM Native Reference](/docs/natives) for game functions.
+Refer to the [FiveM Native Reference](/natives) for game functions.
