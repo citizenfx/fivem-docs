@@ -48,8 +48,7 @@ the correct GTA V installation. You can find that file within your [FiveM applic
 Error generating ROS entitlement token
 --------------------------------------
 <!-- https://i.imgur.com/IAobS5M.png -->
-Certain antivirus vendors are known to block FiveM for unknown reasons.
-[Disable your antivirus][disabling-antivirus] and try again.
+Certain antivirus vendors are known to block FiveM for unknown reasons. Please submit a [support ticket][antivirus-ticket] if this occurs.
 
 Error loading component xyz.dll
 -------------------------------
@@ -70,12 +69,12 @@ Delete `v8.dll`, `v8_libbase.dll`, `v8_libplatform.dll` if available in your `C:
 
 Moving of xyz.exe failed (err = 32)
 ------------------------------
-First check your taskmanager for existing fivem processes if you see them close them, if that doesn’t fix the issue try [disabling your antivirus][disabling-antivirus].
+First check your task manager for existing FiveM related processes; if you see them, close them. If that doesn't fix the issue, you may want to submit a [support ticket][antivirus-ticket] regarding your antivirus.
 
 Stuck on 'We're getting there and it will be worth the wait'
 ------------------------------------------------------------
 <!-- https://prnt.sc/kj02oo -->
-Often caused by aggressive antivirus settings. [Disable your antivirus][disabling-antivirus] and try again.
+If this occurs, it is often caused by aggressive antivirus settings. You may want to submit a [support ticket][antivirus-ticket] regarding your antivirus.
 
 Stuck on a rotating splash screen
 ---------------------------------
@@ -93,8 +92,8 @@ This happens on specific older AMD laptop GPUs. Unfortunately, this is caused by
 FiveM uninstalls itself after running it!
 -----------------------------------------
 This is most likely your antivirus software removing FiveM. Unfortunately some antivirus vendors falsely flag FiveM,
-and remove some (or even all) FiveM files as a precaution. You can safely ignore any warnings about this.<br />
-[Click here][disabling-antivirus] for more info on how to disable your antivirus.
+and remove some (or even all) FiveM files as a precaution. You can safely ignore any warnings about this.  
+If this becomes an issue, you may want to submit a support ticket regarding your antivirus [here][antivirus-ticket].
 
 My game is dropping frames and I have decent hardware
 ----------------------------
@@ -142,7 +141,7 @@ on our [forums][forum]. Provide as much detail as you can, that will make it eas
 For all other issues, you are more than welcome to join our [Discord][discord] and have a chat with us.
 
 [where-is-fivem-installed]: /docs/support/client-faq#where-is-fivem-installed
-[disabling-antivirus]: /docs/client-manual/disabling-antivirus
+[antivirus-ticket]: https://support.cfx.re/hc/en-us/requests/new
 [email]: mailto:support@fivem.net
 [forum]: https://forum.cfx.re
 [discord]: https://discord.gg/fivem
