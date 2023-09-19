@@ -26,7 +26,7 @@ A game console, server console and combined resource monitor, all in one place.
 ![consoles showcase](/fxdk/consoles.png)
 
 ## Excellent coding experience
-Thanks to the amazing the open source code editor by Microsoft, we're able to integrate a cutting edge coding experience appropriately named [FXCode](/docs/fxdk/fxcode).
+Thanks to the amazing open source code editor by Microsoft, we are able to integrate a cutting edge coding experience appropriately named [FXCode](/docs/fxdk/fxcode).
 
 ![fxcode showcase](/fxdk/code.png)
 
@@ -41,7 +41,7 @@ No more handcrafted scripts to place objects on a map, [World Editor](/docs/fxdk
 ![world editor showcase](/fxdk/world-editor.jpg)
 
 ## Ready-to-deploy server builds
-In FxDK, [building](/docs/fxdk/project-building) deploy-ready server is as easy as clicking on a button, batteries included.
+In FxDK, [building](/docs/fxdk/project-building) deploy-ready server is as easy as clicking a button, batteries included.
 
 ![project building modal showcase](/fxdk/project-building.png)
 
@@ -68,9 +68,9 @@ FxDK provides system resources automatically, you just enable what you need in p
 
 
 # Limitations
-FxDK was designed as a local-only development environment for a single user, however, many people have asked us about that it would be useful to let other users to join you on a dev session, and we understand this demand, however, there're some technical difficulties wrapping this problem.
+FxDK was designed as a local-only development environment for a single user. Whilst we are aware of the demand, due to technical difficulties, other users cannot join your session.
 
-This implies a lot of things needs to be done to make it work as you'd expect, we have some plans about it, but it's a long-term concern and you should not expect multi-user experience soon.
+This implies many steps need to be taken to make multi-user experience work as you'd expect. We have plans to make it easier, but it is a long-term concern and you should not expect it anytime soon.
 
 
 # Contributing

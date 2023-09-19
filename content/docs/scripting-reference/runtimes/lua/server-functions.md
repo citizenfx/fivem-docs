@@ -19,6 +19,4 @@ weight: 515
 - [TriggerEvent](/docs/scripting-reference/runtimes/lua/functions/TriggerEvent)
 
 ## Native functions
-These links will redirect to the native reference page for each function.
-
-{{% native_list "server" "lua" %}}
+Refer to the [FiveM Native Reference](/natives) for game functions.

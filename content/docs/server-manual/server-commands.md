@@ -170,6 +170,7 @@ Every build includes all content and changes from the builds before.
 | 2612   | mpg9ec                               | -                           |
 | 2699   | mpsum2                               | The Criminal Enterprises    |
 | 2802   | mpchristmas3                         | Los Santos Drug Wars        |
+| 2944   | mp2023_01                            | San Andreas Mercenaries     |
 
 **RedM builds**
 
@@ -182,7 +183,7 @@ Every build includes all content and changes from the builds before.
 
 ### `sv_maxClients [newValue]`
 
-A variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 1024.
+A variable that specifies the maximum amount of clients that the server can normally have, as an integer from 1 to 2048.
 
 Values starting at 32 will require `onesync` to be set to `on` or `legacy`, and values above 64 will require `onesync` to be set to `on`.
 
@@ -339,6 +340,12 @@ A console variable used to prevent users from using modified client files. There
 - 2: Will block all modified client files.
 
 If modified files are installed in the FiveM folder, they will be ignored - if users however modified base game files, they will receive an error message telling them what file is modified.
+
+### `sv_enableNetworkedSounds [true|false]`
+
+A boolean console variable that can be used to prevent users from routing `NETWORK_PLAY_SOUND_EVENT` through the server, which is commonly used by malicious actors.
+
+This is set to true by default (allow routing)
 
 ### `load_server_icon [fileName.png]`
 

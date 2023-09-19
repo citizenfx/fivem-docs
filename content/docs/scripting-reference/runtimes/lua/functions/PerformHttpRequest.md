@@ -24,9 +24,10 @@ Examples
 --------
 
 ```lua
-PerformHttpRequest("http://some-cool-url.here/some-important-document.txt", function (errorCode, resultData, resultHeaders)
+PerformHttpRequest("http://some-cool-url.here/some-important-document.txt", function (errorCode, resultData, resultHeaders, errorData)
   print("Returned error code:" .. tostring(errorCode))
   print("Returned data:" .. tostring(resultData))
   print("Returned result Headers:" .. tostring(resultHeaders))
+  print("Returned error data:" .. tostring(errorData))
 end)
 ```

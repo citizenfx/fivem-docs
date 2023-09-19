@@ -12,6 +12,4 @@ weight: 511
 - [clearTick](/docs/scripting-reference/runtimes/javascript/functions/clearTick)
 
 ## Native functions
-These links will redirect to the native reference page for each function.
-
-{{% native_list "client" "lua" %}}
+Refer to the [FiveM Native Reference](/natives) for game functions.
