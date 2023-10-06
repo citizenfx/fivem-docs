@@ -19,7 +19,7 @@ vehicle currentVehicle, int currentSeat, string vehicleDisplayName, int vehicleN
 - **currentVehicle**: The handle of the vehicle the player just left.
 - **currentSeat**: The seat number (-1 is drivers seat, 0 = passenger right front, etc.) in which the player was previously sitting.
 - **vehicleDisplayName**: A string containing the display name of the vehicle the player just left.
-- **vehicleNetId**: The netId of the vehicle. Can be used with NetToVeh() to get the vehicle client side.
+- **vehicleNetId**: The Network ID of the vehicle. Can be used with NetToVeh() to get the vehicle client side.
 
 Examples
 --------
