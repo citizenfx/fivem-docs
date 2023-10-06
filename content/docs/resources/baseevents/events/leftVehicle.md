@@ -22,8 +22,6 @@ vehicle currentVehicle, int currentSeat, string vehicleDisplayName, int vehicleN
 
 Examples
 --------
-
-TODO
 Server.lua 
 ```
 RegisterNetEvent("baseevents:leftVehicle", function(currentVehicle, currentSeat, vehicleDisplayName, netId)
