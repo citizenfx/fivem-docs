@@ -4,6 +4,7 @@ title: leftVehicle
 
 Name
 ----------
+
 ```
 baseevents:leftVehicle
 ```
@@ -22,12 +23,14 @@ vehicle currentVehicle, int currentSeat, string vehicleDisplayName, int vehicleN
 
 Examples
 --------
+
 Server.lua 
 ```
 RegisterNetEvent("baseevents:leftVehicle", function(currentVehicle, currentSeat, vehicleDisplayName, netId)
     TriggerClientEvent("example:leftVeh", -1, netId)
 end)
 ```
+
 Client.lua
 ```
 RegisterNetEvent("example:leftVeh", function(NetId)
