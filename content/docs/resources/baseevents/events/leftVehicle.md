@@ -26,8 +26,8 @@ Examples
 
 Server.lua 
 ```
-RegisterNetEvent("baseevents:leftVehicle", function(currentVehicle, currentSeat, vehicleDisplayName, netId)
-    TriggerClientEvent("example:leftVeh", -1, netId)
+RegisterNetEvent("baseevents:leftVehicle", function(currentVehicle, currentSeat, vehicleDisplayName, vehicleNetId)
+    TriggerClientEvent("example:leftVeh", -1, vehicleNetId)
 end)
 ```
 
@@ -35,6 +35,6 @@ Client.lua
 ```
 RegisterNetEvent("example:leftVeh", function(NetId)
     local veh = NetToVeh(NetId)
-    print("Somebody left the vehicle: " .. veh )
+    print("Somebody left the vehicle: " .. veh)
 end)
 ```
