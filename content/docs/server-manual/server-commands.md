@@ -347,6 +347,12 @@ A boolean console variable that can be used to prevent users from routing `NETWO
 
 This is set to true by default (allow routing)
 
+### `sv_enableNetworkedPhoneExplosions [true|false]`
+
+A boolean console variable introduced in server version 6831, that is disabled (set to `false`) by default.  
+
+Enabling it (by setting it to `true`), will allow users to route `REQUEST_PHONE_EXPLOSION_EVENT` through the server. The main drawback behind enabling this, is that it can also be used by malicious actors.
+
 ### `load_server_icon [fileName.png]`
 
 A console command which loads a specfied icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
