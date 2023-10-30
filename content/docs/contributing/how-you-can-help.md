@@ -10,6 +10,11 @@ Developing FiveM
 Want to fix a bug, create a new feature or just help us build FiveM? Read the [developer documentation][developer-docs]!
 If you need any help, join us on [Discord][discord]. We're more than happy to help you.
 
+Updating natives / docs
+------------------
+
+If working with C++ is not your thing, we're always welcoming new updates on any docs. If we see fit, we might be able to merge it!
+
 Documentation
 -------------
 
