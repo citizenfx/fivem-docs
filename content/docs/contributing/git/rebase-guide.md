@@ -3,8 +3,6 @@ title: Rebase Guide
 weight: 970
 ---
 
-### Introduction
-
 Rebase or 'rebasing' is great for updating your branch to be up-to-date with another branch, this is done by picking a new 'base' for your working branch and apply all the changes you made on top. This is ideal when you made changes, let's say, a year ago and merging those are no longer viable as a result of merge conflicts or it would no longer be called if it was actually merged. You can rebase it instead, resolve any merge conflicts, test if it still works, and update or apply for another pull-request.
 
 **To clarify:**
@@ -15,11 +13,11 @@ Rebase or 'rebasing' is great for updating your branch to be up-to-date with ano
 
 The original commit history of the master branch is preserved, and new commits from the feature branch are added (or replayed) on top of the tip of the master branch (also known as the most recent commit), creating a linear history.
 
-### Prerequisites
+# Prerequisites
  - [Git][git-download]
  - [Github Desktop][github-desktop] or [Visual Studio Code][vscode-download]
 
-### Ways to Rebase
+# Ways to Rebase
 - [Rebasing using a GUI](#rebasing-using-a-gui)
     - [Rebasing using Github Desktop](#rebasing-using-github-desktop)
     - [Rebasing using Visual Studio Code](#rebasing-using-visual-studio-code)
@@ -123,12 +121,13 @@ To transfer all the commits from the feature branch into the master branch using
 
 6. Now you may force-push your `my-feature` branch to github using `git push --force-with-lease`, that's because you may be working with other collaborators that also happen to be working in the same branch (so you don't overwrite their changes). You may use `git push -f` otherwise.
 
-## What will the changes look like?
+# What will the changes look like?
 
 Once you complete the steps (regardless of the guide you chose), all the commits from the `master` branch will be added to the `my-feature` branch, and the commit history will be linear. The original history of the `master` branch will remain intact, and it will look as if the work done in the `feature` branch was developed directly on the `master` branch.
 
-### CLI
-#### This is how the commit log would look (using oneline parameter)
+## CLI
+
+**This is how the commit log would look (using oneline parameter)**
 
 ```
 6724b52 (HEAD -> my-feature) Add more screenshots.
@@ -138,13 +137,13 @@ bad9820 My files and stuff.
 
 Commit `6724b52` indicates within parentheses that said commit was rebased from the `my-feature` branch.
 
-### Github Desktop
+## Github Desktop
 
 On Github Desktop, you can view the change history (similar to the `git log` CLI command, but with a GUI) by going to the left pane and clicking on the History tab.
 
 ![image](/contributing/git/rebase-guide/github-desktop-history-tab.png)
 
-### Visual Studio Code
+## Visual Studio Code
 
 While Visual Studio code doesn't have a way to view a detailed list of changes from its GUI, you may still view timeline changes on files by clicking 'Explorer' on the left pane at the top and clicking on a specific file under the 'TIMELINE' view.
 
@@ -152,12 +151,12 @@ While Visual Studio code doesn't have a way to view a detailed list of changes f
 
 _**Note:** Image doesn't match the previous commit history, it's mainly being used for demonstration purposes only._
 
-#### Extension: GitLens
+### Extension: GitLens
 You may also install an extension such as [GitLens][gitlens-extension] to see the commit history and access the commit log by going to `Source Control -> Commits`.
 
 ![image](/contributing/git/rebase-guide/visual-studio-code-source-control-commits-gitlens.png)
 
-#### Terminal
+### Terminal
 Last but not least, you may see the commit history by opening up the terminal and typing `git log`. You may also type `git log --oneline` to see the commits in a compact fashion. 
 
 You can open the terminal by going to the topmost menu bar, clicking on `Terminal`, proceeded by `New Terminal`. 
