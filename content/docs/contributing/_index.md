@@ -3,5 +3,5 @@ title: Contributing
 weight: 950
 ---
 
-- [Git Guides](/docs/contributing/)
+- [Git Section (Guides)](/docs/contributing/git)
 - [How you can help](/docs/contributing/how-you-can-help)

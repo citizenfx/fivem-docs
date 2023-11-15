@@ -3,9 +3,11 @@ title: Rebase Guide
 weight: 970
 ---
 
+### Introduction
+
 Rebase or 'rebasing' is great for updating your branch to be up-to-date with another branch, this is done by picking a new 'base' for your working branch and apply all the changes you made on top. This is ideal when you made changes, let's say, a year ago and merging those are no longer viable as a result of merge conflicts or it would no longer be called if it was actually merged. You can rebase it instead, resolve any merge conflicts, test if it still works, and update or apply for another pull-request.
 
-#### To clarify:
+**To clarify:**
 
 - Rebasing does not change the content of the original commits in the master branch (or the commits thereof).
 - Rebasing adds new commits on top of the master branch, effectively extending the branch's commit history with the changes from the feature branch.
