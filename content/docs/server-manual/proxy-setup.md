@@ -11,9 +11,12 @@ At times, it may be desirable to have a reverse proxy in front of your Cfx.re se
 The client->server connection process is as follows:
 
 1. Client resolves the _connect endpoint_ from the join interaction. This can be any of the following:
-   * The `connectEndPoints` field in the server listing output.
-   * The server address cached by the join URL subsystem.
-   * The raw IP, host or URL entered in a `connect` command.
+   * The `connectEndPoints` field in the server listing output, which can be configured using `sv_listingHostOverride`.
+   * The server address cached by the join URL subsystem, such as from history.
+   * An IP, host or URL entered in a `connect` command. These get processed as follows:
+     * Bare hosts/IPs: `host.example` will resolve to `http://host.example:30120/`.
+     * Hosts with port: `host.example:30121` resolve to `http://host.example:30121/`.
+     * URLs with scheme: `http://host.example/` and `https://host.example/` will be resolved as-is, using the default ports for HTTP and HTTPS (80/443).
 2. Client retrieves general server metadata via a `GET /info.json` on the connect endpoint.
 3. Client attempts an `initConnect` request to the connect endpoint's `POST /client`.
 4. If server accepts client, it'll send a connection token to client.
