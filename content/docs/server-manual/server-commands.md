@@ -171,6 +171,7 @@ Every build includes all content and changes from the builds before.
 | 2699   | mpsum2                               | The Criminal Enterprises    |
 | 2802   | mpchristmas3                         | Los Santos Drug Wars        |
 | 2944   | mp2023_01                            | San Andreas Mercenaries     |
+| 3095   | mp2023_02                            | The Chop Shop               |
 
 **RedM builds**
 
