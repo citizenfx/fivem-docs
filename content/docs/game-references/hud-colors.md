@@ -1446,6 +1446,12 @@ RGBA
         <td>HUD_COLOUR_PLACEHOLDER_10</td>
         <td><abbr title="#ffffff">rgba(255, 255, 255, 255)</abbr></td>
     </tr>
+    <tr>
+        <td class="color" style="--color: rgba(29, 237, 195, 1)" id="hud_colour_junk_energy">&nbsp;</td>
+        <td>234</td>
+        <td>HUD_COLOUR_JUNK_ENERGY</td>
+        <td><abbr title="#1dedc3">rgba(29, 237, 195, 255)</abbr></td>
+    </tr>
     </tbody>
 </table>
 
