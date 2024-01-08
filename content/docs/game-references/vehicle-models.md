@@ -6,10 +6,6 @@ weight: 760
 
 | Model Name | Display Name | Image |
 | ---------- | ------------ | ----- |
-| `bmx` | BMX | <img src="/vehicles/bmx.webp" height="50"/> |
-| `jackal` | Jackal | <img src="/vehicles/jackal.webp" height="50"/> |
-| `lurcher` | Lurcher | <img src="/vehicles/lurcher.webp" height="50"/> |
-| `vigero3` | Vigero ZX Convertible | <img src="/vehicles/vigero3.webp" height="50"/> |
 | `adder` | Adder | <img src="/vehicles/adder.webp" height="50"/> |
 | `airbus` | Airport Bus | <img src="/vehicles/airbus.webp" height="50"/> |
 | `airtug` | Airtug | <img src="/vehicles/airtug.webp" height="50"/> |
@@ -82,6 +78,7 @@ weight: 760
 | `blista` | Blista | <img src="/vehicles/blista.webp" height="50"/> |
 | `blista2` | Blista Compact | <img src="/vehicles/blista2.webp" height="50"/> |
 | `blista3` | Go Go Monkey Blista | <img src="/vehicles/blista3.webp" height="50"/> |
+| `bmx` | BMX | <img src="/vehicles/bmx.webp" height="50"/> |
 | `boattrailer` | Boat Trailer | <img src="/vehicles/boattrailer.webp" height="50"/> |
 | `boattrailer2` | Boat Trailer | <img src="/vehicles/boattrailer2.webp" height="50"/> |
 | `boattrailer3` | Boat Trailer | <img src="/vehicles/boattrailer3.webp" height="50"/> |
@@ -381,6 +378,7 @@ weight: 760
 | `italigto` | Itali GTO | <img src="/vehicles/italigto.webp" height="50"/> |
 | `italirsx` | Itali RSX | <img src="/vehicles/italirsx.webp" height="50"/> |
 | `iwagen` | I-Wagen | <img src="/vehicles/iwagen.webp" height="50"/> |
+| `jackal` | Jackal | <img src="/vehicles/jackal.webp" height="50"/> |
 | `jb700` | JB 700 | <img src="/vehicles/jb700.webp" height="50"/> |
 | `jb7002` | JB 700W | <img src="/vehicles/jb7002.webp" height="50"/> |
 | `jester` | Jester | <img src="/vehicles/jester.webp" height="50"/> |
@@ -415,6 +413,7 @@ weight: 760
 | `lm87` | LM87 | <img src="/vehicles/lm87.webp" height="50"/> |
 | `locust` | Locust | <img src="/vehicles/locust.webp" height="50"/> |
 | `longfin` | Longfin | <img src="/vehicles/longfin.webp" height="50"/> |
+| `lurcher` | Lurcher | <img src="/vehicles/lurcher.webp" height="50"/> |
 | `luxor` | Luxor | <img src="/vehicles/luxor.webp" height="50"/> |
 | `luxor2` | Luxor Deluxe | <img src="/vehicles/luxor2.webp" height="50"/> |
 | `lynx` | Lynx | <img src="/vehicles/lynx.webp" height="50"/> |
@@ -796,6 +795,7 @@ weight: 760
 | `veto2` | Veto Modern | <img src="/vehicles/veto2.webp" height="50"/> |
 | `vigero` | Vigero | <img src="/vehicles/vigero.webp" height="50"/> |
 | `vigero2` | Vigero ZX | <img src="/vehicles/vigero2.webp" height="50"/> |
+| `vigero3` | Vigero ZX Convertible | <img src="/vehicles/vigero3.webp" height="50"/> |
 | `vigilante` | Vigilante | <img src="/vehicles/vigilante.webp" height="50"/> |
 | `vindicator` | Vindicator | <img src="/vehicles/vindicator.webp" height="50"/> |
 | `virgo` | Virgo | <img src="/vehicles/virgo.webp" height="50"/> |
