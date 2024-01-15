@@ -6,7 +6,7 @@ weight: 720
 Blips
 -----
 
-A list of all game blips as of build 2545 is shown below.
+A list of all game blips as of build 3095 is shown below.
 
 <!-- check down for more recent HTML -->
 <!-- _loc1_ = []; -->
@@ -905,6 +905,63 @@ A list of all game blips as of build 2545 is shown below.
 <div class="blip"><div><div><img src="/blips/radar_d_champion.png" alt="radar_d_champion"></div></div><span><strong>824</strong><br>radar_d_champion</span></div>
 <div class="blip"><div><div><img src="/blips/radar_buffalo4.png" alt="radar_buffalo4"></div></div><span><strong>825</strong><br>radar_buffalo4</span></div>
 <div class="blip"><div><div><img src="/blips/radar_agency.png" alt="radar_agency"></div></div><span><strong>826</strong><br>radar_agency</span></div>
+<div class="blip"><div><div><img src="/blips/radar_biker_bar.png" alt="radar_biker_bar"></div></div><span><strong>827</strong><br>radar_biker_bar</span></div>
+<div class="blip"><div><div><img src="/blips/radar_simeon_overlay.png" alt="radar_simeon_overlay"></div></div><span><strong>828</strong><br>radar_simeon_overlay</span></div>
+<div class="blip"><div><div><img src="/blips/radar_junk_skydive.png" alt="radar_junk_skydive"></div></div><span><strong>829</strong><br>radar_junk_skydive</span></div>
+<div class="blip"><div><div><img src="/blips/radar_luxury_car_showroom.png" alt="radar_luxury_car_showroom"></div></div><span><strong>830</strong><br>radar_luxury_car_showroom</span></div>
+<div class="blip"><div><div><img src="/blips/radar_car_showroom.png" alt="radar_car_showroom"></div></div><span><strong>831</strong><br>radar_car_showroom</span></div>
+<div class="blip"><div><div><img src="/blips/radar_car_showroom_simeon.png" alt="radar_car_showroom_simeon"></div></div><span><strong>832</strong><br>radar_car_showroom_simeon</span></div>
+<div class="blip"><div><div><img src="/blips/radar_flaming_skull.png" alt="radar_flaming_skull"></div></div><span><strong>833</strong><br>radar_flaming_skull</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_ammo.png" alt="radar_weapon_ammo"></div></div><span><strong>834</strong><br>radar_weapon_ammo</span></div>
+<div class="blip"><div><div><img src="/blips/radar_community_series.png" alt="radar_community_series"></div></div><span><strong>835</strong><br>radar_community_series</span></div>
+<div class="blip"><div><div><img src="/blips/radar_cayo_series.png" alt="radar_cayo_series"></div></div><span><strong>836</strong><br>radar_cayo_series</span></div>
+<div class="blip"><div><div><img src="/blips/radar_clubhouse_contract.png" alt="radar_clubhouse_contract"></div></div><span><strong>837</strong><br>radar_clubhouse_contract</span></div>
+<div class="blip"><div><div><img src="/blips/radar_agent_ulp.png" alt="radar_agent_ulp"></div></div><span><strong>838</strong><br>radar_agent_ulp</span></div>
+<div class="blip"><div><div><img src="/blips/radar_acid.png" alt="radar_acid"></div></div><span><strong>839</strong><br>radar_acid</span></div>
+<div class="blip"><div><div><img src="/blips/radar_acid_lab.png" alt="radar_acid_lab"></div></div><span><strong>840</strong><br>radar_acid_lab</span></div>
+<div class="blip"><div><div><img src="/blips/radar_dax_overlay.png" alt="radar_dax_overlay"></div></div><span><strong>841</strong><br>radar_dax_overlay</span></div>
+<div class="blip"><div><div><img src="/blips/radar_dead_drop_package.png" alt="radar_dead_drop_package"></div></div><span><strong>842</strong><br>radar_dead_drop_package</span></div>
+<div class="blip"><div><div><img src="/blips/radar_downtown_cab.png" alt="radar_downtown_cab"></div></div><span><strong>843</strong><br>radar_downtown_cab</span></div>
+<div class="blip"><div><div><img src="/blips/radar_gun_van.png" alt="radar_gun_van"></div></div><span><strong>844</strong><br>radar_gun_van</span></div>
+<div class="blip"><div><div><img src="/blips/radar_stash_house.png" alt="radar_stash_house"></div></div><span><strong>845</strong><br>radar_stash_house</span></div>
+<div class="blip"><div><div><img src="/blips/radar_tractor.png" alt="radar_tractor"></div></div><span><strong>846</strong><br>radar_tractor</span></div>
+<div class="blip"><div><div><img src="/blips/radar_warehouse_juggalo.png" alt="radar_warehouse_juggalo"></div></div><span><strong>847</strong><br>radar_warehouse_juggalo</span></div>
+<div class="blip"><div><div><img src="/blips/radar_warehouse_juggalo_dax.png" alt="radar_warehouse_juggalo_dax"></div></div><span><strong>848</strong><br>radar_warehouse_juggalo_dax</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_crowbar.png" alt="radar_weapon_crowbar"></div></div><span><strong>849</strong><br>radar_weapon_crowbar</span></div>
+<div class="blip"><div><div><img src="/blips/radar_duffel_bag.png" alt="radar_duffel_bag"></div></div><span><strong>850</strong><br>radar_duffel_bag</span></div>
+<div class="blip"><div><div><img src="/blips/radar_oil_tanker.png" alt="radar_oil_tanker"></div></div><span><strong>851</strong><br>radar_oil_tanker</span></div>
+<div class="blip"><div><div><img src="/blips/radar_acid_lab_tent.png" alt="radar_acid_lab_tent"></div></div><span><strong>852</strong><br>radar_acid_lab_tent</span></div>
+<div class="blip"><div><div><img src="/blips/radar_van_burrito.png" alt="radar_van_burrito"></div></div><span><strong>853</strong><br>radar_van_burrito</span></div>
+<div class="blip"><div><div><img src="/blips/radar_acid_boost.png" alt="radar_acid_boost"></div></div><span><strong>854</strong><br>radar_acid_boost</span></div>
+<div class="blip"><div><div><img src="/blips/radar_ped_gang_leader.png" alt="radar_ped_gang_leader"></div></div><span><strong>855</strong><br>radar_ped_gang_leader</span></div>
+<div class="blip"><div><div><img src="/blips/radar_multistorey_garage.png" alt="radar_multistorey_garage"></div></div><span><strong>856</strong><br>radar_multistorey_garage</span></div>
+<div class="blip"><div><div><img src="/blips/radar_seized_asset_sales.png" alt="radar_seized_asset_sales"></div></div><span><strong>857</strong><br>radar_seized_asset_sales</span></div>
+<div class="blip"><div><div><img src="/blips/radar_cayo_attrition.png" alt="radar_cayo_attrition"></div></div><span><strong>858</strong><br>radar_cayo_attrition</span></div>
+<div class="blip"><div><div><img src="/blips/radar_bicycle.png" alt="radar_bicycle"></div></div><span><strong>859</strong><br>radar_bicycle</span></div>
+<div class="blip"><div><div><img src="/blips/radar_bicycle_trial.png" alt="radar_bicycle_trial"></div></div><span><strong>860</strong><br>radar_bicycle_trial</span></div>
+<div class="blip"><div><div><img src="/blips/radar_raiju.png" alt="radar_raiju"></div></div><span><strong>861</strong><br>radar_raiju</span></div>
+<div class="blip"><div><div><img src="/blips/radar_conada2.png" alt="radar_conada2"></div></div><span><strong>862</strong><br>radar_conada2</span></div>
+<div class="blip"><div><div><img src="/blips/radar_overlay_ready_for_sell.png" alt="radar_overlay_ready_for_sell"></div></div><span><strong>863</strong><br>radar_overlay_ready_for_sell</span></div>
+<div class="blip"><div><div><img src="/blips/radar_overlay_missing_supplies.png" alt="radar_overlay_missing_supplies"></div></div><span><strong>864</strong><br>radar_overlay_missing_supplies</span></div>
+<div class="blip"><div><div><img src="/blips/radar_streamer216.png" alt="radar_streamer216"></div></div><span><strong>865</strong><br>radar_streamer216</span></div>
+<div class="blip"><div><div><img src="/blips/radar_signal_jammer.png" alt="radar_signal_jammer"></div></div><span><strong>866</strong><br>radar_signal_jammer</span></div>
+<div class="blip"><div><div><img src="/blips/radar_salvage_yard.png" alt="radar_salvage_yard"></div></div><span><strong>867</strong><br>radar_salvage_yard</span></div>
+<div class="blip"><div><div><img src="/blips/radar_robbery_prep_equipment.png" alt="radar_robbery_prep_equipment"></div></div><span><strong>868</strong><br>radar_robbery_prep_equipment</span></div>
+<div class="blip"><div><div><img src="/blips/radar_robbery_prep_overlay.png" alt="radar_robbery_prep_overlay"></div></div><span><strong>869</strong><br>radar_robbery_prep_overlay</span></div>
+<div class="blip"><div><div><img src="/blips/radar_yusuf.png" alt="radar_yusuf"></div></div><span><strong>870</strong><br>radar_yusuf</span></div>
+<div class="blip"><div><div><img src="/blips/radar_vincent.png" alt="radar_vincent"></div></div><span><strong>871</strong><br>radar_vincent</span></div>
+<div class="blip"><div><div><img src="/blips/radar_vinewood_garage.png" alt="radar_vinewood_garage"></div></div><span><strong>872</strong><br>radar_vinewood_garage</span></div>
+<div class="blip"><div><div><img src="/blips/radar_lstb.png" alt="radar_lstb"></div></div><span><strong>873</strong><br>radar_lstb</span></div>
+<div class="blip"><div><div><img src="/blips/radar_cctv_workstation.png" alt="radar_cctv_workstation"></div></div><span><strong>874</strong><br>radar_cctv_workstation</span></div>
+<div class="blip"><div><div><img src="/blips/radar_hacking_device.png" alt="radar_hacking_device"></div></div><span><strong>875</strong><br>radar_hacking_device</span></div>
+<div class="blip"><div><div><img src="/blips/radar_race_drag.png" alt="radar_race_drag"></div></div><span><strong>876</strong><br>radar_race_drag</span></div>
+<div class="blip"><div><div><img src="/blips/radar_race_drift.png" alt="radar_race_drift"></div></div><span><strong>877</strong><br>radar_race_drift</span></div>
+<div class="blip"><div><div><img src="/blips/radar_casino_prep.png" alt="radar_casino_prep"></div></div><span><strong>878</strong><br>radar_casino_prep</span></div>
+<div class="blip"><div><div><img src="/blips/radar_planning_wall.png" alt="radar_planning_wall"></div></div><span><strong>879</strong><br>radar_planning_wall</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_crate.png" alt="radar_weapon_crate"></div></div><span><strong>880</strong><br>radar_weapon_crate</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_snowball.png" alt="radar_weapon_snowball"></div></div><span><strong>881</strong><br>radar_weapon_snowball</span></div>
+<div class="blip"><div><div><img src="/blips/radar_train_signals_green.png" alt="radar_train_signals_green"></div></div><span><strong>882</strong><br>radar_train_signals_green</span></div>
+<div class="blip"><div><div><img src="/blips/radar_train_signals_red.png" alt="radar_train_signals_red"></div></div><span><strong>883</strong><br>radar_train_signals_red</span></div>
 </div>
 
 ---
