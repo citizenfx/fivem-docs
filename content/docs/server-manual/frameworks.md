@@ -16,6 +16,7 @@ If there's a framework you'd like to see included in the list, please submit a r
 
 # Frameworks (Lua) (Alphabetical Order)
 - [esx](https://github.com/esx-framework/esx-legacy) ([Docs](https://documentation.esx-framework.org/legacy/installation))
+- [ND](https://github.com/ND-Framework/ND_Core) ([Docs](https://ndcore.dev/setup))
 - [QBCore](https://github.com/qbcore-framework/qb-core) ([Docs](https://docs.qbcore.org/qbcore-documentation/))
 - [VORP](https://github.com/VORPCORE/vorp-core-lua) ([Docs](https://vorpcore.github.io/VORP_Documentation)) (RedM)
 - [vRP](https://github.com/vRP-framework/vRP) ([Docs](https://vrp-framework.github.io/vRP/))
