@@ -256,7 +256,7 @@ significant amount of collision or map files, to speed up initial loading for pl
 
 In order for players to load this file, it needs to be stored in the server's root folder of the resource you decided to save the map's cache for (not in a subdirectory) and added to your resource manifest.
 
-In your resource manifest, `fxmanifest.lua` (or previously, `__resource.lua`):
+In your resource manifest, `fxmanifest.lua`:
 
 ```
 files {
