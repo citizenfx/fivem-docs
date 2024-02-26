@@ -28,7 +28,7 @@ License Types
 |`fivem`|CFX.re|User Id|int|
 |`ip`|IP Adress|IPv4|string|
 
-\* `licence2` - This identifier is present if the user has switched accounts
+\* `licence2` - This identifier is present if the user has switched Social Club accounts
 
 ** `license2` - This can be the same value as `license`
 
