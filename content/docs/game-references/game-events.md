@@ -10,274 +10,274 @@ See [gameEventTriggered][event-ref] for more information on how to use these eve
 Note that this list is largely undocumented and you probably won't need most of the events listed here. If you have
 useful information to share, please [add it to this doc][contributing]. Any help is greatly appreciated!
 
-| Event name                                         | Description |
-|----------------------------------------------------|-------------|
-| CEventAcquaintancePed                              |             |
-| CEventAcquaintancePedDead                          |             |
-| CEventAcquaintancePedDislike                       |             |
-| CEventAcquaintancePedHate                          |             |
-| CEventAcquaintancePedLike                          |             |
-| CEventAcquaintancePedWanted                        |             |
-| CEventAgitated                                     |             |
-| CEventAgitatedAction                               |             |
-| CEventCallForCover                                 |             |
-| CEventCarUndriveable                               |             |
-| CEventClimbLadderOnRoute                           |             |
-| CEventClimbNavMeshOnRoute                          |             |
-| CEventCombatTaunt                                  |             |
-| CEventCommunicateEvent                             |             |
-| CEventCopCarBeingStolen                            |             |
-| CEventCrimeCryForHelp                              |             |
-| CEventCrimeReported                                |             |
-| CEventDamage                                       |             |
-| CEventDataDecisionMaker                            |             |
-| CEventDataFileMounter                              |             |
-| CEventDataResponseAggressiveRubberneck             |             |
-| CEventDataResponseDeferToScenarioPointFlags        |             |
-| CEventDataResponseFriendlyAimedAt                  |             |
-| CEventDataResponseFriendlyNearMiss                 |             |
-| CEventDataResponsePlayerDeath                      |             |
-| CEventDataResponsePoliceTaskWanted                 |             |
-| CEventDataResponseSwatTaskWanted                   |             |
-| CEventDataResponseTask                             |             |
-| CEventDataResponseTaskAgitated                     |             |
-| CEventDataResponseTaskCombat                       |             |
-| CEventDataResponseTaskCower                        |             |
-| CEventDataResponseTaskCrouch                       |             |
-| CEventDataResponseTaskDuckAndCover                 |             |
-| CEventDataResponseTaskEscapeBlast                  |             |
-| CEventDataResponseTaskEvasiveStep                  |             |
-| CEventDataResponseTaskExhaustedFlee                |             |
-| CEventDataResponseTaskExplosion                    |             |
-| CEventDataResponseTaskFlee                         |             |
-| CEventDataResponseTaskFlyAway                      |             |
-| CEventDataResponseTaskGrowlAndFlee                 |             |
-| CEventDataResponseTaskGunAimedAt                   |             |
-| CEventDataResponseTaskHandsUp                      |             |
-| CEventDataResponseTaskHeadTrack                    |             |
-| CEventDataResponseTaskLeaveCarAndFlee              |             |
-| CEventDataResponseTaskScenarioFlee                 |             |
-| CEventDataResponseTaskSharkAttack                  |             |
-| CEventDataResponseTaskShockingEventBackAway        |             |
-| CEventDataResponseTaskShockingEventGoto            |             |
-| CEventDataResponseTaskShockingEventHurryAway       |             |
-| CEventDataResponseTaskShockingEventReact           |             |
-| CEventDataResponseTaskShockingEventReactToAircraft |             |
-| CEventDataResponseTaskShockingEventStopAndStare    |             |
-| CEventDataResponseTaskShockingEventThreatResponse  |             |
-| CEventDataResponseTaskShockingEventWatch           |             |
-| CEventDataResponseTaskShockingNiceCar              |             |
-| CEventDataResponseTaskShockingPoliceInvestigate    |             |
-| CEventDataResponseTaskThreat                       |             |
-| CEventDataResponseTaskTurnToFace                   |             |
-| CEventDataResponseTaskWalkAway                     |             |
-| CEventDataResponseTaskWalkRoundEntity              |             |
-| CEventDataResponseTaskWalkRoundFire                |             |
-| CEventDeadPedFound                                 |             |
-| CEventDeath                                        |             |
-| CEventDecisionMakerResponse                        |             |
-| CEventDisturbance                                  |             |
-| CEventDraggedOutCar                                |             |
-| CEventEditableResponse                             |             |
-| CEventEncroachingPed                               |             |
-| CEventEntityDamaged                                |             |
-| CEventEntityDestroyed                              |             |
-| CEventExplosion                                    |             |
-| CEventExplosionHeard                               |             |
-| CEventFireNearby                                   |             |
-| CEventFootStepHeard                                |             |
-| CEventFriendlyAimedAt                              |             |
-| CEventFriendlyFireNearMiss                         |             |
-| CEventGetOutOfWater                                |             |
-| CEventGivePedTask                                  |             |
-| CEventGroupScriptAI                                |             |
-| CEventGroupScriptNetwork                           |             |
-| CEventGunAimedAt                                   |             |
-| CEventGunShot                                      |             |
-| CEventGunShotBulletImpact                          |             |
-| CEventGunShotWhizzedBy                             |             |
-| CEventHelpAmbientFriend                            |             |
-| CEventHurtTransition                               |             |
-| CEventInAir                                        |             |
-| CEventInfo                                         |             |
-| CEventInfoBase                                     |             |
-| CEventInjuredCryForHelp                            |             |
-| CEventLeaderEnteredCarAsDriver                     |             |
-| CEventLeaderExitedCarAsDriver                      |             |
-| CEventLeaderHolsteredWeapon                        |             |
-| CEventLeaderLeftCover                              |             |
-| CEventLeaderUnholsteredWeapon                      |             |
-| CEventMeleeAction                                  |             |
-| CEventMustLeaveBoat                                |             |
-| CEventNetworkAdminInvited                          |             |
-| CEventNetworkAttemptHostMigration                  |             |
-| CEventNetworkBail                                  |             |
-| CEventNetworkCashTransactionLog                    |             |
-| CEventNetworkCheatTriggered                        |             |
-| CEventNetworkClanInviteReceived                    |             |
-| CEventNetworkClanJoined                            |             |
-| CEventNetworkClanKicked                            |             |
-| CEventNetworkClanLeft                              |             |
-| CEventNetworkClanRankChanged                       |             |
-| CEventNetworkCloudEvent                            |             |
-| CEventNetworkCloudFileResponse                     |             |
-| CEventNetworkEmailReceivedEvent                    |             |
-| CEventNetworkEndMatch                              |             |
-| CEventNetworkEndSession                            |             |
-| CEventNetworkEntityDamage                          |             |
-| CEventNetworkFindSession                           |             |
-| CEventNetworkFollowInviteReceived                  |             |
-| CEventNetworkHostMigration                         |             |
-| CEventNetworkHostSession                           |             |
-| CEventNetworkIncrementStat                         |             |
-| CEventNetworkInviteAccepted                        |             |
-| CEventNetworkInviteConfirmed                       |             |
-| CEventNetworkInviteRejected                        |             |
-| CEventNetworkJoinSession                           |             |
-| CEventNetworkJoinSessionResponse                   |             |
-| CEventNetworkOnlinePermissionsUpdated              |             |
-| CEventNetworkPedLeftBehind                         |             |
-| CEventNetworkPickupRespawned                       |             |
-| CEventNetworkPlayerArrest                          |             |
-| CEventNetworkPlayerCollectedAmbientPickup          |             |
-| CEventNetworkPlayerCollectedPickup                 |             |
-| CEventNetworkPlayerCollectedPortablePickup         |             |
-| CEventNetworkPlayerDroppedPortablePickup           |             |
-| CEventNetworkPlayerJoinScript                      |             |
-| CEventNetworkPlayerLeftScript                      |             |
-| CEventNetworkPlayerScript                          |             |
-| CEventNetworkPlayerSession                         |             |
-| CEventNetworkPlayerSpawn                           |             |
-| CEventNetworkPresenceInvite                        |             |
-| CEventNetworkPresenceInviteRemoved                 |             |
-| CEventNetworkPresenceInviteReply                   |             |
-| CEventNetworkPresenceTriggerEvent                  |             |
-| CEventNetworkPresence_StatUpdate                   |             |
-| CEventNetworkPrimaryClanChanged                    |             |
-| CEventNetworkRequestDelay                          |             |
-| CEventNetworkRosChanged                            |             |
-| CEventNetworkScAdminPlayerUpdated                  |             |
-| CEventNetworkScAdminReceivedCash                   |             |
-| CEventNetworkScriptEvent                           |             |
-| CEventNetworkSessionEvent                          |             |
-| CEventNetworkShopTransaction                       |             |
-| CEventNetworkSignInStateChanged                    |             |
-| CEventNetworkSocialClubAccountLinked               |             |
-| CEventNetworkSpectateLocal                         |             |
-| CEventNetworkStartMatch                            |             |
-| CEventNetworkStartSession                          |             |
-| CEventNetworkStorePlayerLeft                       |             |
-| CEventNetworkSummon                                |             |
-| CEventNetworkSystemServiceEvent                    |             |
-| CEventNetworkTextMessageReceived                   |             |
-| CEventNetworkTimedExplosion                        |             |
-| CEventNetworkTransitionEvent                       |             |
-| CEventNetworkTransitionGamerInstruction            |             |
-| CEventNetworkTransitionMemberJoined                |             |
-| CEventNetworkTransitionMemberLeft                  |             |
-| CEventNetworkTransitionParameterChanged            |             |
-| CEventNetworkTransitionStarted                     |             |
-| CEventNetworkTransitionStringChanged               |             |
-| CEventNetworkVehicleUndrivable                     |             |
-| CEventNetworkVoiceConnectionRequested              |             |
-| CEventNetworkVoiceConnectionResponse               |             |
-| CEventNetworkVoiceConnectionTerminated             |             |
-| CEventNetworkVoiceSessionEnded                     |             |
-| CEventNetworkVoiceSessionStarted                   |             |
-| CEventNetworkWithData                              |             |
-| CEventNetwork_InboxMsgReceived                     |             |
-| CEventNewTask                                      |             |
-| CEventObjectCollision                              |             |
-| CEventOnFire                                       |             |
-| CEventOpenDoor                                     |             |
-| CEventPedCollisionWithPed                          |             |
-| CEventPedCollisionWithPlayer                       |             |
-| CEventPedEnteredMyVehicle                          |             |
-| CEventPedJackingMyVehicle                          |             |
-| CEventPedOnCarRoof                                 |             |
-| CEventPedSeenDeadPed                               |             |
-| CEventPlayerCollisionWithPed                       |             |
-| CEventPlayerDeath                                  |             |
-| CEventPlayerUnableToEnterVehicle                   |             |
-| CEventPotentialBeWalkedInto                        |             |
-| CEventPotentialBlast                               |             |
-| CEventPotentialGetRunOver                          |             |
-| CEventPotentialWalkIntoVehicle                     |             |
-| CEventProvidingCover                               |             |
-| CEventRanOverPed                                   |             |
-| CEventReactionEnemyPed                             |             |
-| CEventReactionInvestigateDeadPed                   |             |
-| CEventReactionInvestigateThreat                    |             |
-| CEventRequestHelp                                  |             |
-| CEventRequestHelpWithConfrontation                 |             |
-| CEventRespondedToThreat                            |             |
-| CEventScanner                                      |             |
-| CEventScenarioForceAction                          |             |
-| CEventScriptCommand                                |             |
-| CEventScriptWithData                               |             |
-| CEventShocking                                     |             |
-| CEventShockingBicycleCrash                         |             |
-| CEventShockingBicycleOnPavement                    |             |
-| CEventShockingCarAlarm                             |             |
-| CEventShockingCarChase                             |             |
-| CEventShockingCarCrash                             |             |
-| CEventShockingCarOnCar                             |             |
-| CEventShockingCarPileUp                            |             |
-| CEventShockingDangerousAnimal                      |             |
-| CEventShockingDeadBody                             |             |
-| CEventShockingDrivingOnPavement                    |             |
-| CEventShockingEngineRevved                         |             |
-| CEventShockingExplosion                            |             |
-| CEventShockingFire                                 |             |
-| CEventShockingGunFight                             |             |
-| CEventShockingGunshotFired                         |             |
-| CEventShockingHelicopterOverhead                   |             |
-| CEventShockingHornSounded                          |             |
-| CEventShockingInDangerousVehicle                   |             |
-| CEventShockingInjuredPed                           |             |
-| CEventShockingMadDriver                            |             |
-| CEventShockingMadDriverBicycle                     |             |
-| CEventShockingMadDriverExtreme                     |             |
-| CEventShockingMugging                              |             |
-| CEventShockingNonViolentWeaponAimedAt              |             |
-| CEventShockingParachuterOverhead                   |             |
-| CEventShockingPedKnockedIntoByPlayer               |             |
-| CEventShockingPedRunOver                           |             |
-| CEventShockingPedShot                              |             |
-| CEventShockingPlaneFlyby                           |             |
-| CEventShockingPotentialBlast                       |             |
-| CEventShockingPropertyDamage                       |             |
-| CEventShockingRunningPed                           |             |
-| CEventShockingRunningStampede                      |             |
-| CEventShockingSeenCarStolen                        |             |
-| CEventShockingSeenConfrontation                    |             |
-| CEventShockingSeenGangFight                        |             |
-| CEventShockingSeenInsult                           |             |
-| CEventShockingSeenMeleeAction                      |             |
-| CEventShockingSeenNiceCar                          |             |
-| CEventShockingSeenPedKilled                        |             |
-| CEventShockingSiren                                |             |
-| CEventShockingStudioBomb                           |             |
-| CEventShockingVehicleTowed                         |             |
-| CEventShockingVisibleWeapon                        |             |
-| CEventShockingWeaponThreat                         |             |
-| CEventShockingWeirdPed                             |             |
-| CEventShockingWeirdPedApproaching                  |             |
-| CEventShoutBlockingLos                             |             |
-| CEventShoutTargetPosition                          |             |
-| CEventShovePed                                     |             |
-| CEventSoundBase                                    |             |
-| CEventStatChangedValue                             |             |
-| CEventStaticCountReachedMax                        |             |
-| CEventStuckInAir                                   |             |
-| CEventSuspiciousActivity                           |             |
-| CEventSwitch2NM                                    |             |
-| CEventUnidentifiedPed                              |             |
-| CEventVehicleCollision                             |             |
-| CEventVehicleDamage                                |             |
-| CEventVehicleDamageWeapon                          |             |
-| CEventVehicleOnFire                                |             |
-| CEventWrithe                                       |             |
+| Event name                                         |
+|----------------------------------------------------|
+| CEventAcquaintancePed                              |
+| CEventAcquaintancePedDead                          |
+| CEventAcquaintancePedDislike                       |
+| CEventAcquaintancePedHate                          |
+| CEventAcquaintancePedLike                          |
+| CEventAcquaintancePedWanted                        |
+| CEventAgitated                                     |
+| CEventAgitatedAction                               |
+| CEventCallForCover                                 |
+| CEventCarUndriveable                               |
+| CEventClimbLadderOnRoute                           |
+| CEventClimbNavMeshOnRoute                          |
+| CEventCombatTaunt                                  |
+| CEventCommunicateEvent                             |
+| CEventCopCarBeingStolen                            |
+| CEventCrimeCryForHelp                              |
+| CEventCrimeReported                                |
+| CEventDamage                                       |
+| CEventDataDecisionMaker                            |
+| CEventDataFileMounter                              |
+| CEventDataResponseAggressiveRubberneck             |
+| CEventDataResponseDeferToScenarioPointFlags        |
+| CEventDataResponseFriendlyAimedAt                  |
+| CEventDataResponseFriendlyNearMiss                 |
+| CEventDataResponsePlayerDeath                      |
+| CEventDataResponsePoliceTaskWanted                 |
+| CEventDataResponseSwatTaskWanted                   |
+| CEventDataResponseTask                             |
+| CEventDataResponseTaskAgitated                     |
+| CEventDataResponseTaskCombat                       |
+| CEventDataResponseTaskCower                        |
+| CEventDataResponseTaskCrouch                       |
+| CEventDataResponseTaskDuckAndCover                 |
+| CEventDataResponseTaskEscapeBlast                  |
+| CEventDataResponseTaskEvasiveStep                  |
+| CEventDataResponseTaskExhaustedFlee                |
+| CEventDataResponseTaskExplosion                    |
+| CEventDataResponseTaskFlee                         |
+| CEventDataResponseTaskFlyAway                      |
+| CEventDataResponseTaskGrowlAndFlee                 |
+| CEventDataResponseTaskGunAimedAt                   |
+| CEventDataResponseTaskHandsUp                      |
+| CEventDataResponseTaskHeadTrack                    |
+| CEventDataResponseTaskLeaveCarAndFlee              |
+| CEventDataResponseTaskScenarioFlee                 |
+| CEventDataResponseTaskSharkAttack                  |
+| CEventDataResponseTaskShockingEventBackAway        |
+| CEventDataResponseTaskShockingEventGoto            |
+| CEventDataResponseTaskShockingEventHurryAway       |
+| CEventDataResponseTaskShockingEventReact           |
+| CEventDataResponseTaskShockingEventReactToAircraft |
+| CEventDataResponseTaskShockingEventStopAndStare    |
+| CEventDataResponseTaskShockingEventThreatResponse  |
+| CEventDataResponseTaskShockingEventWatch           |
+| CEventDataResponseTaskShockingNiceCar              |
+| CEventDataResponseTaskShockingPoliceInvestigate    |
+| CEventDataResponseTaskThreat                       |
+| CEventDataResponseTaskTurnToFace                   |
+| CEventDataResponseTaskWalkAway                     |
+| CEventDataResponseTaskWalkRoundEntity              |
+| CEventDataResponseTaskWalkRoundFire                |
+| CEventDeadPedFound                                 |
+| CEventDeath                                        |
+| CEventDecisionMakerResponse                        |
+| CEventDisturbance                                  |
+| CEventDraggedOutCar                                |
+| CEventEditableResponse                             |
+| CEventEncroachingPed                               |
+| CEventEntityDamaged                                |
+| CEventEntityDestroyed                              |
+| CEventExplosion                                    |
+| CEventExplosionHeard                               |
+| CEventFireNearby                                   |
+| CEventFootStepHeard                                |
+| CEventFriendlyAimedAt                              |
+| CEventFriendlyFireNearMiss                         |
+| CEventGetOutOfWater                                |
+| CEventGivePedTask                                  |
+| CEventGroupScriptAI                                |
+| CEventGroupScriptNetwork                           |
+| CEventGunAimedAt                                   |
+| CEventGunShot                                      |
+| CEventGunShotBulletImpact                          |
+| CEventGunShotWhizzedBy                             |
+| CEventHelpAmbientFriend                            |
+| CEventHurtTransition                               |
+| CEventInAir                                        |
+| CEventInfo                                         |
+| CEventInfoBase                                     |
+| CEventInjuredCryForHelp                            |
+| CEventLeaderEnteredCarAsDriver                     |
+| CEventLeaderExitedCarAsDriver                      |
+| CEventLeaderHolsteredWeapon                        |
+| CEventLeaderLeftCover                              |
+| CEventLeaderUnholsteredWeapon                      |
+| CEventMeleeAction                                  |
+| CEventMustLeaveBoat                                |
+| CEventNetworkAdminInvited                          |
+| CEventNetworkAttemptHostMigration                  |
+| CEventNetworkBail                                  |
+| CEventNetworkCashTransactionLog                    |
+| CEventNetworkCheatTriggered                        |
+| CEventNetworkClanInviteReceived                    |
+| CEventNetworkClanJoined                            |
+| CEventNetworkClanKicked                            |
+| CEventNetworkClanLeft                              |
+| CEventNetworkClanRankChanged                       |
+| CEventNetworkCloudEvent                            |
+| CEventNetworkCloudFileResponse                     |
+| CEventNetworkEmailReceivedEvent                    |
+| CEventNetworkEndMatch                              |
+| CEventNetworkEndSession                            |
+| CEventNetworkEntityDamage                          |
+| CEventNetworkFindSession                           |
+| CEventNetworkFollowInviteReceived                  |
+| CEventNetworkHostMigration                         |
+| CEventNetworkHostSession                           |
+| CEventNetworkIncrementStat                         |
+| CEventNetworkInviteAccepted                        |
+| CEventNetworkInviteConfirmed                       |
+| CEventNetworkInviteRejected                        |
+| CEventNetworkJoinSession                           |
+| CEventNetworkJoinSessionResponse                   |
+| CEventNetworkOnlinePermissionsUpdated              |
+| CEventNetworkPedLeftBehind                         |
+| CEventNetworkPickupRespawned                       |
+| CEventNetworkPlayerArrest                          |
+| CEventNetworkPlayerCollectedAmbientPickup          |
+| CEventNetworkPlayerCollectedPickup                 |
+| CEventNetworkPlayerCollectedPortablePickup         |
+| CEventNetworkPlayerDroppedPortablePickup           |
+| CEventNetworkPlayerJoinScript                      |
+| CEventNetworkPlayerLeftScript                      |
+| CEventNetworkPlayerScript                          |
+| CEventNetworkPlayerSession                         |
+| CEventNetworkPlayerSpawn                           |
+| CEventNetworkPresenceInvite                        |
+| CEventNetworkPresenceInviteRemoved                 |
+| CEventNetworkPresenceInviteReply                   |
+| CEventNetworkPresenceTriggerEvent                  |
+| CEventNetworkPresence_StatUpdate                   |
+| CEventNetworkPrimaryClanChanged                    |
+| CEventNetworkRequestDelay                          |
+| CEventNetworkRosChanged                            |
+| CEventNetworkScAdminPlayerUpdated                  |
+| CEventNetworkScAdminReceivedCash                   |
+| CEventNetworkScriptEvent                           |
+| CEventNetworkSessionEvent                          |
+| CEventNetworkShopTransaction                       |
+| CEventNetworkSignInStateChanged                    |
+| CEventNetworkSocialClubAccountLinked               |
+| CEventNetworkSpectateLocal                         |
+| CEventNetworkStartMatch                            |
+| CEventNetworkStartSession                          |
+| CEventNetworkStorePlayerLeft                       |
+| CEventNetworkSummon                                |
+| CEventNetworkSystemServiceEvent                    |
+| CEventNetworkTextMessageReceived                   |
+| CEventNetworkTimedExplosion                        |
+| CEventNetworkTransitionEvent                       |
+| CEventNetworkTransitionGamerInstruction            |
+| CEventNetworkTransitionMemberJoined                |
+| CEventNetworkTransitionMemberLeft                  |
+| CEventNetworkTransitionParameterChanged            |
+| CEventNetworkTransitionStarted                     |
+| CEventNetworkTransitionStringChanged               |
+| CEventNetworkVehicleUndrivable                     |
+| CEventNetworkVoiceConnectionRequested              |
+| CEventNetworkVoiceConnectionResponse               |
+| CEventNetworkVoiceConnectionTerminated             |
+| CEventNetworkVoiceSessionEnded                     |
+| CEventNetworkVoiceSessionStarted                   |
+| CEventNetworkWithData                              |
+| CEventNetwork_InboxMsgReceived                     |
+| CEventNewTask                                      |
+| CEventObjectCollision                              |
+| CEventOnFire                                       |
+| CEventOpenDoor                                     |
+| CEventPedCollisionWithPed                          |
+| CEventPedCollisionWithPlayer                       |
+| CEventPedEnteredMyVehicle                          |
+| CEventPedJackingMyVehicle                          |
+| CEventPedOnCarRoof                                 |
+| CEventPedSeenDeadPed                               |
+| CEventPlayerCollisionWithPed                       |
+| CEventPlayerDeath                                  |
+| CEventPlayerUnableToEnterVehicle                   |
+| CEventPotentialBeWalkedInto                        |
+| CEventPotentialBlast                               |
+| CEventPotentialGetRunOver                          |
+| CEventPotentialWalkIntoVehicle                     |
+| CEventProvidingCover                               |
+| CEventRanOverPed                                   |
+| CEventReactionEnemyPed                             |
+| CEventReactionInvestigateDeadPed                   |
+| CEventReactionInvestigateThreat                    |
+| CEventRequestHelp                                  |
+| CEventRequestHelpWithConfrontation                 |
+| CEventRespondedToThreat                            |
+| CEventScanner                                      |
+| CEventScenarioForceAction                          |
+| CEventScriptCommand                                |
+| CEventScriptWithData                               |
+| CEventShocking                                     |
+| CEventShockingBicycleCrash                         |
+| CEventShockingBicycleOnPavement                    |
+| CEventShockingCarAlarm                             |
+| CEventShockingCarChase                             |
+| CEventShockingCarCrash                             |
+| CEventShockingCarOnCar                             |
+| CEventShockingCarPileUp                            |
+| CEventShockingDangerousAnimal                      |
+| CEventShockingDeadBody                             |
+| CEventShockingDrivingOnPavement                    |
+| CEventShockingEngineRevved                         |
+| CEventShockingExplosion                            |
+| CEventShockingFire                                 |
+| CEventShockingGunFight                             |
+| CEventShockingGunshotFired                         |
+| CEventShockingHelicopterOverhead                   |
+| CEventShockingHornSounded                          |
+| CEventShockingInDangerousVehicle                   |
+| CEventShockingInjuredPed                           |
+| CEventShockingMadDriver                            |
+| CEventShockingMadDriverBicycle                     |
+| CEventShockingMadDriverExtreme                     |
+| CEventShockingMugging                              |
+| CEventShockingNonViolentWeaponAimedAt              |
+| CEventShockingParachuterOverhead                   |
+| CEventShockingPedKnockedIntoByPlayer               |
+| CEventShockingPedRunOver                           |
+| CEventShockingPedShot                              |
+| CEventShockingPlaneFlyby                           |
+| CEventShockingPotentialBlast                       |
+| CEventShockingPropertyDamage                       |
+| CEventShockingRunningPed                           |
+| CEventShockingRunningStampede                      |
+| CEventShockingSeenCarStolen                        |
+| CEventShockingSeenConfrontation                    |
+| CEventShockingSeenGangFight                        |
+| CEventShockingSeenInsult                           |
+| CEventShockingSeenMeleeAction                      |
+| CEventShockingSeenNiceCar                          |
+| CEventShockingSeenPedKilled                        |
+| CEventShockingSiren                                |
+| CEventShockingStudioBomb                           |
+| CEventShockingVehicleTowed                         |
+| CEventShockingVisibleWeapon                        |
+| CEventShockingWeaponThreat                         |
+| CEventShockingWeirdPed                             |
+| CEventShockingWeirdPedApproaching                  |
+| CEventShoutBlockingLos                             |
+| CEventShoutTargetPosition                          |
+| CEventShovePed                                     |
+| CEventSoundBase                                    |
+| CEventStatChangedValue                             |
+| CEventStaticCountReachedMax                        |
+| CEventStuckInAir                                   |
+| CEventSuspiciousActivity                           |
+| CEventSwitch2NM                                    |
+| CEventUnidentifiedPed                              |
+| CEventVehicleCollision                             |
+| CEventVehicleDamage                                |
+| CEventVehicleDamageWeapon                          |
+| CEventVehicleOnFire                                |
+| CEventWrithe                                       |
 
 [event-ref]: /docs/scripting-reference/events/list/gameEventTriggered
 [contributing]: /contributing

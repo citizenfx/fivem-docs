@@ -47,8 +47,9 @@ Components list
 
 Simple usage
 ------------
-### Lua
+
 For a more complete example, see the stock `playernames` resource included in the server package, or the documentation for the resource.
+### Lua
 
 ``` lua
 local mpGamerTags = {}
@@ -79,6 +80,37 @@ for i = 0, 255 do
   end
 end
 ```
+### JavaScript
+
+``` javascript
+const mpGamerTags = {};
+
+for (let i = 0; i <= 255; i++) {
+  if (NetworkIsPlayerActive(i) && i !== PlayerId()) {
+    const ped = GetPlayerPed(i);
+
+    // change the ped, because changing player models may recreate the ped
+    if (!mpGamerTags[i] || mpGamerTags[i].ped !== ped) {
+      const nameTag = `${GetPlayerName(i)} [${GetPlayerServerId(i)}]`;
+
+      if (mpGamerTags[i]) {
+        RemoveMpGamerTag(mpGamerTags[i].tag);
+      }
+
+      mpGamerTags[i] = {
+        tag: CreateMpGamerTagForNetPlayer(i, nameTag, false, false, '', 0, 0, 0, 0),
+        ped: ped,
+      };
+    }
+
+    SetMpGamerTagVisibility(mpGamerTags[i].tag, 4, NetworkIsPlayerTalking(i));
+  } else if (mpGamerTags[i]) {
+    RemoveMpGamerTag(mpGamerTags[i].tag);
+
+    mpGamerTags[i] = null;
+  }
+}
+```
 
 Example
 -------
@@ -98,6 +130,23 @@ local gamerTagId = CreateMpGamerTagForNetPlayer(
   0, -- green
   0 -- blue
 )
+```
+
+### JavaScript
+
+``` javascript
+// Create gamer info
+const gamerTagId = CreateMpGamerTagForNetPlayer(
+  ped, // Ped to which gamer info will be assigned
+  "User name", // String to display for flag ""
+  false, // pointedClanTag
+  false, // Is R* clan
+  "", // Clantag
+  0, // Clantag flags
+  0, // red
+  0, // green
+  0 // blue
+);
 ```
 
 ### C\#
@@ -134,6 +183,17 @@ SetMpGamerTagVisibility(
 )
 ```
 
+### JavaScript
+
+``` javascript
+// Toggle components
+SetMpGamerTagVisibility(
+  gamerTagId,
+  component,
+  bool // Toggle
+)
+```
+
 ### C\#
 
 ``` csharp
@@ -158,6 +218,17 @@ SetMpGamerTagColour(
   gamerTagId,
   component,
   colour -- 0 - 255
+)
+```
+
+### JavaScript
+
+``` javascript
+// Change component colour
+SetMpGamerTagColour(
+  gamerTagId,
+  component,
+  colour // 0 - 255
 )
 ```
 
@@ -189,6 +260,17 @@ SetMpGamerTagAlpha(
 )
 ```
 
+### JavaScript
+
+``` javascript
+// Change component opacity
+SetMpGamerTagAlpha(
+  gamerTagId,
+  component,
+  opacity // 0 - 255
+)
+```
+
 ### C\#
 
 ``` csharp
@@ -209,11 +291,23 @@ Special flags controls
 
 For the **WantedStar** flag you can set number that will be shown inside of star icon: ### Lua
 
+### Lua
+
 ``` lua
 -- Set the number that will be set inside the wanted star icon
 SetMpGamerTagWantedLevel(
   gamerTagId,
   wantedLevel -- 0 - 5
+)
+```
+
+### JavaScript
+
+``` javascript
+// Set the number that will be set inside the wanted star icon
+SetMpGamerTagWantedLevel(
+  gamerTagId,
+  wantedLevel // 0 - 5
 )
 ```
 
@@ -239,6 +333,16 @@ Health bar has 0 opacity by default. Colour of health bar changes using it's own
 SetMpGamerTagHealthBarColor(
   gamerTagId,
   colour -- 0 - 255
+)
+```
+
+### JavaScript
+
+``` javascript
+// Change health bar colour
+SetMpGamerTagHealthBarColor(
+  gamerTagId,
+  colour // 0 - 255
 )
 ```
 

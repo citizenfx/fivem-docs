@@ -15,6 +15,15 @@ if IsControlJustReleased(0--[[control type]],  51--[[control index]]) then
 end
 ```
 
+### JavaScript
+
+``` javascript
+// checks if INPUT_CONTEXT has just been released
+if (IsControlJustReleased(0, 51)) {
+    // run code here
+}
+```
+
 ### C#
 
 ``` csharp

@@ -10,9 +10,9 @@ common ones.
 FiveM does not condone the use of pirated software and **will not work** with illegitimate versions of GTA V. Respect
 the authors, buy the game.
 
-- [Steam](https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/)
+- [Steam](https://store.steampowered.com/app/271590/Grand_Theft_Auto_V)
 - [Epic Games Store](https://www.epicgames.com/store/product/grand-theft-auto-v)
-- [Rockstar Warehouse](https://store.rockstargames.com/en/game/buy-gta-v-premium-edition)
+- [Rockstar Warehouse](https://store.rockstargames.com/en/game/buy-gta-v)
 - [Amazon](https://www.amazon.com/Grand-Theft-Auto-V-PC/dp/B00KVXB5YQ)
-- [Newegg](https://www.newegg.com/rockstar-games-grand-theft-auto-v-with-gta-online-pc/p/N82E16832137064)
+- [Newegg](https://www.newegg.com/rockstar-games-grand-theft-auto-v-and-criminal-enterprise-starter-pack-bundle/p/N82E16832137086)
 

@@ -137,10 +137,16 @@ end
 exports.myresource:setWidget(50)
 ```
 
+##### JavaScript
+
+```javascript
+global.exports["myresource"].setWidget(50);
+```
+
 ##### C\#
 
 ```csharp
-int widget = Exports["myresource"].getWidget();
+int widget = Exports["myresource"].setWidget(50);
 ```
 
 </tab> </tabs>

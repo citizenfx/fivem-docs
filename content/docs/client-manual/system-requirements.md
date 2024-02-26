@@ -25,4 +25,4 @@ _Notes:_
 
 [installing]: /docs/client-manual/installing-fivem
 [client-issues-gpu]: /docs/support/client-issues#stuck-on-a-colored-background-but-no-menu
-[gtav-system-specs]: https://support.rockstargames.com/hc/en-us/articles/203428177
+[gtav-system-specs]: https://support.rockstargames.com/articles/203428177/Grand-Theft-Auto-V-PC-System-Requirements
