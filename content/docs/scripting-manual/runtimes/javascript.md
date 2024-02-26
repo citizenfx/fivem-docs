@@ -84,6 +84,24 @@ editor to provide automatic completion of the FiveM API methods and mapped nativ
 For typings use the official NPM packages [@citizenfx/client][npmclient] and [@citizenfx/server][npmserver].
 These packages are also recommended for automatic completion.
 
+### Exports typings
+
+The FiveM JavaScript API definitions come with a generic interface for the exports called `CitizenExports`. You can extend this interface to add your own typings.
+
+From a TypeScript module file, you could do the following:
+```ts
+declare global {
+  interface CitizenExports {
+    resourceName: {
+      exportName(parameter: unknown): void;
+    }
+  }
+}
+
+// If you're not importing or exporting anything, you can turn your file into a module by exporting an empty object:
+// export {}
+```
+
 Gotchas
 -------
 
