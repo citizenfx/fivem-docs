@@ -76,4 +76,4 @@ This implies many steps need to be taken to make multi-user experience work as y
 # Contributing
 If you have any suggestions, bug reports or questions, please [file an issue on our GitHub](https://github.com/citizenfx/fivem/issues/new).
 
-For all existing FxDK related issues see [`sdk` labelled issues](https://github.com/citizenfx/fivem/issues?q=is%3Aopen+is%3Aissue+label%3Asdk).
+For all existing FxDK related issues see [`fxdk` labelled issues](https://github.com/citizenfx/fivem/issues?q=is%3Aopen+is%3Aissue+label%3Afxdk).
