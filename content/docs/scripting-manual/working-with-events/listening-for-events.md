@@ -59,10 +59,7 @@ To register an event as a network event, place this in your client/server script
 
 **Lua**
 ```lua
-RegisterNetEvent("eventName")
-
--- The event handler function follows after registering the event first.
-AddEventHandler("eventName", function(eventParam1, eventParam2)
+RegisterNetEvent("eventName", function(eventParam1, eventParam2)
     -- Code here will be executed once the event is triggered.
 end)
 ```
