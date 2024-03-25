@@ -14,4 +14,9 @@ string resourceName
 Examples
 --------
 
-TODO
+##### JavaScript Example:
+```js
+on('onClientMapStart', name => {
+   console.log('Map started: ', name);
+});
+```

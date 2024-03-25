@@ -25,4 +25,10 @@ int killerType, array deathCoords
 Examples
 --------
 
-TODO
+##### JavaScript Example:
+```js
+on('baseevents:onPlayerDied', (killerType, deathCoords) => {
+   const [x, y, z] = deathCoords;
+   console.log('died in:', { x, y, z });
+});
+```
