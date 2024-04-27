@@ -11,8 +11,9 @@ No. FiveM is developed exclusively for the PC version of GTA V. There are no pla
 Will FiveM run on Linux?
 ------------------------
 
-You can run the FiveM client on Linux with DXVK, however the anticheat is not supported so you will not be able to play on most servers. You can however make your own server, just remember to remove svadhesive so you can play on Linux. 
+You can run the FiveM client on Linux, although the anticheat is not supported so you will not be able to play on most servers. You can make your own server from which you may remove svadhesive if you want Linux users to be able to join. This makes the anticheat not required for players that join, so tread carefully!
 Running the game on Linux is not officially supported, and it may be buggy.
+Running servers on Linux is supported, anticheat included. 
 
 Where is FiveM installed?
 -------------------------
