@@ -277,7 +277,60 @@ Finally, we tell the player to enjoy their new vehicle.
 In your server console, `refresh; restart mymode` (yeah you can split stuff with semicolons), and try `/car voltic2` in the game client (which should by now be really bored of respawning). You'll now have your very own Rocket Voltic!
 
 ## Server scripts
-You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
+You'll probably also want to write scripts that interact with your server.
+
+_Useful Links_
+
+[GetPlayers function](https://docs.fivem.net/docs/scripting-reference/runtimes/lua/functions/GetPlayers/)
+
+[chat:addMessage event](https://docs.fivem.net/docs/resources/chat/events/chat-addMessage/)
+
+[Creating Commands](https://docs.fivem.net/docs/scripting-manual/migrating-from-deprecated/creating-commands/)
+
+### Manifest File
+Assuming you have read the above information, and how to create a _Manifest_ file. We are going to create one which includes a server file.
+
+_You can also read a more detailed page on Manifest files here_
+
+[Creating a Manifest](https://docs.fivem.net/docs/scripting-reference/resource-manifest/resource-manifest/)
+
+```lua
+fx_version '{{< rmv2 >}}'
+game 'gta5'
+
+author 'John Doe' -- your name
+description 'A resource that does something.'
+version '1.0.0'
+
+client_script 'main_cl.lua'
+server_script 'main_sv.lua'
+```
+
+We're now going to create two files named **main_cl.lua** and **main_sv.lua** in the root.
+
+Inside **main_sv.lua** we'll put this code:
+
+```lua
+-- This is the server file
+RegisterCommand('test', function(source) -- The "(source)" means is the first param that present the source that excute the command
+	if not source then return end -- This will check if source exist, otherwise, will stop running the code.
+	local value = 'Hello world' -- This will make the variable `value` have the information "Hello World"
+	print(value) -- This will print a text in the server console called "Hello World"
+	TriggerClientEvent('cfx:client:firstEvent', source, value) -- Better example is TriggerClientEvent(eventName, playerId, params) / This will send a event to client with some information
+end, false) -- The "false" is to make the command available for everyone
+```
+
+Inside **main_cl.lua** we'll put this code:
+
+```lua
+-- This is the client file
+RegisterServerEvent('cfx:client:firstEvent', function(information) -- The "(information)" means is the first param sended my the event 'cfx:client:firstEvent'
+	if not information then return end -- This will check if first param exist, otherwise, will stop running the code. This is a way to catch cheater since we are sure the first param is always there.
+	print(information) -- This will print a text called "Hello World" since that's what we sended in the server event param
+	-- You can repeat this action for client to server with TriggerServerEvent instead and copy the main_cl code
+end)
+```
+Once you've setup this script in a resource, you'll be able to go into your FXServer and type **/test** to print some new information.
 
 
 [manifest-reference]: /docs/scripting-reference/resource-manifest/resource-manifest/
