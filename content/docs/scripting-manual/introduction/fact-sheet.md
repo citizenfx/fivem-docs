@@ -24,6 +24,8 @@ The scripting manual can be found [here](/docs/scripting-manual/) and it feature
   - [Triggering events](/docs/scripting-manual/working-with-events/triggering-events)
 - [NUI](/docs/scripting-manual/nui-development)
 - [Using Scaleform](/docs/scripting-manual/using-scaleform)
+- [Voice](/docs/scripting-manual/voice)
+- [Using new game features](/docs/scripting-manual/using-new-game-features)
 
 You can refer to the page mentioned above to see the scripting manual in full detail.
 
