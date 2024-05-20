@@ -101,13 +101,13 @@ end
 
 function IsPlayerInVehicleAtGasStation(vehicle)
     local playerPed = PlayerPedId()
-    if not playerPed or playerPed == -1 then
+    if playerPed == 0 or playerPed == -1 then
         return false
     end
 
     -- If a player is not in a vehicle.
     local vehicle = GetVehiclePedIsIn(playerPed, false)
-    if not vehicle or not DoesEntityExist(vehicle) then
+    if vehicle == 0 or not DoesEntityExist(vehicle) then
         return false
     end
 
@@ -130,7 +130,8 @@ end
 Citizen.CreateThread(function()
     -- Main loop.
     while true do
-        Citizen.Wait(50)
+        -- Do not add sleep time since this thread is operating with controls.
+        Citizen.Wait(0)
 
         -- Only run script if fuel consumption is turned on globally.
         if GetFuelConsumptionState() then
