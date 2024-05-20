@@ -101,9 +101,6 @@ end
 
 function IsPlayerInVehicleAtGasStation(vehicle)
     local playerPed = PlayerPedId()
-    if playerPed == 0 or playerPed == -1 then
-        return false
-    end
 
     -- If a player is not in a vehicle.
     local vehicle = GetVehiclePedIsIn(playerPed, false)
