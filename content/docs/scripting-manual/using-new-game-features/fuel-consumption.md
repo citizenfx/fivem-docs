@@ -124,11 +124,11 @@ function IsPlayerInVehicleAtGasStation(vehicle)
     return false
 end
 
-Citizen.CreateThread(function()
+CreateThread(function()
     -- Main loop.
     while true do
         -- Do not add sleep time since this thread is operating with controls.
-        Citizen.Wait(0)
+        Wait(0)
 
         -- Only run script if fuel consumption is turned on globally.
         if GetFuelConsumptionState() then
