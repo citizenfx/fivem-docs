@@ -23,7 +23,7 @@ I.e. fuel is consumed faster the more revolutions engine does. This approximates
 
 Fuel is not consumed when the engine is turned off.
 
-By default, 65 litre gas tank car with average fuel consumption can stay **idle for ~16.67 hours** or run with **max RPM for ~2.5 hours**.
+By default, 65 liter gas tank car with average fuel consumption can stay **idle for ~16.67 hours** or run with **max RPM for ~2.5 hours**.
 
 #### Customize consumption speed
 
