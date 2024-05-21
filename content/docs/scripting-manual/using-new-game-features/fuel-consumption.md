@@ -99,28 +99,21 @@ function ProcessGasStationFuelPurchase(vehicle)
     SetVehicleFuelLevel(vehicle, vehicleGasTankVolume)
 end
 
-function IsPlayerInVehicleAtGasStation(vehicle)
-    local playerPed = PlayerPedId()
-
-    -- If a player is not in a vehicle.
-    local vehicle = GetVehiclePedIsIn(playerPed, false)
-    if vehicle == 0 or not DoesEntityExist(vehicle) then
-        return false
-    end
-
+-- Checks if the specified vehicle is close to a gas station.
+-- Caller must ensure that the vehicle exists.
+function IsVehicleAtGasStation(vehicle)
     -- If the vehicle doesn't use fuel (i.e. a bicycle or with infinite fuel).
     if not DoesVehicleUseFuel(vehicle) then
         return false
     end
 
     -- Get coordinates of the vehicle and check that it's close enough to any of the gas stations.
-    local vehicleCoords = GetEntityCoords(playerPed)
+    local vehicleCoords = GetEntityCoords(vehicle)
     for _, gasStation in ipairs(GasStations) do
         if IsPointInGasStation(vehicleCoords, gasStation) then
             return true
         end
     end
-
     return false
 end
 
@@ -132,15 +125,19 @@ CreateThread(function()
 
         -- Only run script if fuel consumption is turned on globally.
         if GetFuelConsumptionState() then
-            if IsPlayerInVehicleAtGasStation() then
 
-                local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+            -- Check if player is in a vehicle.
+            local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+            if DoesEntityExist(vehicle) then
 
-                ProcessGasStationEnter(vehicle)
+                if IsVehicleAtGasStation(vehicle) then
 
-                -- If G is pressed on a keyboard.
-                if IsControlPressed(0, 58) then
-                    ProcessGasStationFuelPurchase(vehicle)
+                    ProcessGasStationEnter(vehicle)
+
+                    -- If G is pressed on a keyboard.
+                    if IsControlPressed(0, 58) then
+                        ProcessGasStationFuelPurchase(vehicle)
+                    end
                 end
             end
         end
