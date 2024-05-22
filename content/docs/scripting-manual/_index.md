@@ -27,3 +27,5 @@ layout: single
   - [Loading screens](/docs/scripting-manual/nui-development/loading-screens)
 - [Using Scaleform](/docs/scripting-manual/using-scaleform)
 - [Voice](/docs/scripting-manual/voice)
+- [Using new game features](/docs/scripting-manual/using-new-game-features)
+  - [Fuel consumption](/docs/scripting-manual/using-new-game-features/fuel-consumption)
