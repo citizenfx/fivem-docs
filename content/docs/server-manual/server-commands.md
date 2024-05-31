@@ -418,3 +418,43 @@ remove_principal identifier.steam:110000112345678 group.admin
 Tests if a principal is allowed or denied access to a given object.
 
 Example: `test_ace group.admin command.adminstuff`
+
+### `endpoint_add_udp [endpoint]`
+Creates a UDP host instance, the address and port both need to be valid and not already in use in order to bind the provided endpoint.
+
+Example:
+```
+endpoint_add_udp "0.0.0.0:30120"
+```
+
+A real use-case example of this can be found in the [default server.cfg example][servercfg].
+
+### `endpoint_add_tcp [endpoint]`
+Adds and binds the provided endpoint. This will create a multiplexable TCP server instance and bind it, the new instance will then be added to the multiplex server instance list. If a primary port isn't set (see [`netPort`](#netport-port)), the one sent by the command parameter will be used.
+
+Example:
+```
+endpoint_add_tcp "0.0.0.0:30120"
+```
+
+A real use-case example of this can be found in the [default server.cfg example][servercfg].
+
+### `netPort [port]`
+The primary port, this is initialized to zero by `TcpListenManager's` default class constructor method. Used by nucleus and heartbeat methods for master list authoring.
+
+This port may also be used when registering DNS (if `sv_registerMulticastDns` isn't set to `false`) on server startup. A Windows API method named [DnsServiceConstructInstance](https://learn.microsoft.com/en-us/windows/win32/api/windns/nf-windns-dnsserviceconstructinstance) will be invoked by the server's internals (Windows Only [pre-processor macro](https://github.com/citizenfx/fivem/blob/01fb9af858badef688f93a1584fc41485c3e0e05/code/components/citizen-server-net/src/TcpListenManager.cpp#L176) compiled code, meaning this will only execute on Windows builds).
+
+Example:
+```
+netPort 30120
+```
+
+### `net_tcpConnLimit [limit]`
+Can be used to tune the concurrent connection limit per IP, its default value is `16`.
+
+Example:
+```
+net_tcpConnLimit 32
+```
+
+[servercfg]: /docs/server-manual/setting-up-a-server-vanilla/#servercfg
