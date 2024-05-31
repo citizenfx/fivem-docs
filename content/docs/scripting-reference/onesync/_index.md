@@ -29,13 +29,13 @@ Sync nodes are synchronization data nodes, networked entities depend on these to
 This synchronization data node is used to share sector position data to other clients about a specific entity, parsing is shown below. It's worth mentioning that the `Parse` code written down below is written by reverse-engineering game code (more or so by reading `NodeCommonDataOperations<class CSectorPositionDataNode, class IProximityMigrateableNodeDataAccessor>` first's VMT ([Virtual Method Table][vmturl]) method which is the `read` method, which would be offset 8 from the VMT).
 
 *The game's VMT:*</br>
-![Image](https://i.imgur.com/9Til977.png)
+![Image](/scripting-reference/onesync/games-vmt.png)
 
 *The read method:*</br>
-![Image](https://i.imgur.com/tPIzQMg.png)
+![Image](/scripting-reference/onesync/asm-read-method.png)
 
 *The game reading the position:*</br>
-![Image](https://i.imgur.com/5BX8krM.png)
+![Image](/scripting-reference/onesync/position-reading.png)
 
 *The reversed code (from [SyncTrees_Five.h](https://github.com/citizenfx/fivem/blob/master/code/components/citizen-server-impl/include/state/SyncTrees_Five.h))*:
 
@@ -94,6 +94,8 @@ virtual void GetPosition(float* posOut) override
 ```
 # What's culling?
 Culling is used to avoid sending a lot of synchronization data to the server (such as population among others), thus reducing server load, it's what allows OneSync to handle a lot of clients. Culling has a range for each specific player, and entities are culled to players within this radius. It was introduced in the following [commit](https://github.com/citizenfx/fivem/commit/d98e16354141e50c77b56b2dc672fe4834dccfd6), and had several iterations. You could say that in a way, it 'conceals' entities. There's natives such as [SetEntityDistanceCullingRadius](https://docs.fivem.net/natives/?_0xD3A183A3) and [SetPlayerCullingRadius](https://docs.fivem.net/natives/?_0x8A2FBAD4) to change the default culling radius.
+
+{{% alert theme="warning" %}}Culling natives are deprecated and have known, unfixable [issues](https://forum.cfx.re/t/issue-with-culling-radius-and-server-side-entities/4900677/4). {{% /alert %}}
 
 When an entity goes out of range, it's no longer controlled by their original owner. This means that any entity that would be out of scope will be culled and migrated/disowned. By default, the culling radius is set to `424 units` around the entity.
 
