@@ -264,8 +264,8 @@ A console variable as an integer from 0-3 (default 0);
 A console variable used to block `REQUEST_CONTROL_EVENT` routing based on a configurable policy.<br>
 Supported modes for this variable are as follows:
 
-- -1: Default, equivalent to 2 at this time, but will also warn in console.
-- 0: Off. Also disables the routing bucket/entity lockdown-based policy.
+- -1: Equivalent to 2 at this time, but will also warn in console.
+- 0: Off (Default). Also disables the routing bucket/entity lockdown-based policy.
 - 1: Blocks control requests to entities controlled by players (currently, occupied vehicles only) that have existed for more than `sv_filterRequestControlSettleTimer` milliseconds (default `30000`) - hereafter referred to as 'settled'.
 - 2: Blocks control requests to all entities controlled by players.
 - 3: Blocks control requests to all entities controlled by players, and any 'settled' non-player entities.
