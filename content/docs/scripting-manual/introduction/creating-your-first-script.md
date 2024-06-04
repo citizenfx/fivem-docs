@@ -1,283 +1,259 @@
 ---
-title: Creating your first script in Lua
-weight: 412
+title: How to create your first FiveM resource
+weight: 1280
 ---
 
-Getting started with scripting for FiveM might be a tad overwhelming, given the wide range of possibilities and the sparsely spread documentation. In this quick and simple guide, we'll try to show you how to get started with a quick resource in Lua.
+Getting started with scripting for FiveM might be a tad overwhelming, in this simple guide, we'll try to show you how to get started with a quick resource in Lua. 
 
-## Resources
-A resource is, simply said, a collection of files that can be individually started, stopped and restarted. Your server-data folder (assuming you already installed a server) should have a `resources` folder already, with a few resources in them already.
+This simple guide will show you the basics to creating your first resource. This example will teach you how to send a notification to a player.
 
-If you're working on your own resources, you'll probably want to make a `resources/[local]` directory - this one will be ignored by Git when updating the server-data root. In there, we'll make a `resources/[local]/mymode` folder, since we're making, well, a gametype using the `mapmanager` system.
+Prerequisites
+-------
 
-That means you'll need to have a folder like this by now, assuming a Windows development system: `C:\your\path\to\cfx-server-data\resources\[local]\mymode`. We'll call this folder `mymode` from now on.
+To complete this guide, you will need to have all the prerequisites. You can skip ahead to [create the folder](#create-the-folder) section if you have everything.
 
-### Manifest files
-A resource folder (you know, this `mymode` you made above) will need a manifest to be detected by FiveM. Since this is a game type, it'll need some extra information as well to teach `mapmanager` about the fact that this is a game type.
+- [FiveM client](https://docs.fivem.net/docs/client-manual/installing-fivem/)
+- [FiveM server](https://docs.fivem.net/docs/server-manual/setting-up-a-server/)
+- [Visual Studio Code](https://code.visualstudio.com/download)
 
-Make a file called `fxmanifest.lua` (this is _always_ Lua, even if you'll be writing scripts in C#/JS later on) in your `mymode` folder. In it, put the following text using your favorite text editor:
+Create the folder
+--------
+
+Let's establish our first resource within the `resources` folder of your FiveM server. We'll create a folder named `first-resource` to serve as the resource's container. Feel free to choose any name you prefer, but we'll stick with this for the sake of example.
+
+<img src="img/resource_folder.png" alt="pic" width="500">
+
+So we should have a folder called `first-resource` in `resources` folder of you FiveM server.
+
+Structure
+-------------------------
+
+To enhance the organization of our codebase, we're going to create distinct sections, each serving a specific purpose. We'll create three folders and one file to achieve this:
+- `client`: This folder will contain all client-side code, responsible for handling interactions and rendering elements visible to the player.
+- `server`: Here, we'll store all server-side logic, including data management, player authentication, and game mechanics that should be processed on the server.
+- `shared`: The shared folder will house code that needs to be accessed by both the client and server sides. This could include common functions, constants, or data structures.
+- `fxmanifest.lua`: This file is crucial for FiveM resource management. It defines metadata about the resource, such as its name, description, and dependencies.
+
+This should look like this:
+```
+resources/
+└── first-resource/
+    ├── client/
+    ├── server/
+    ├── shared/
+    └── fxmanifest.lua
+```
+## Resource manifest
+
+The resource manifest, often referred to as `fxmanifest.lua`, serves as the structure of your resource. It provides essential instructions to the server regarding what components to initiate and how they are organized. This crucial file defines the structure and composition of your resource, ensuring that the server can interpret and execute it correctly. It defines fundamental metadata about the resource, such as its name, description, version, and dependencies. You can learn more [here](/docs/scripting-reference/resource-manifest/resource-manifest).
 
 ```lua
-fx_version '{{%  rmv2  %}}'
+fx_version 'cerulean'
 game 'gta5'
 
-author 'An awesome dude'
-description 'An awesome, but short, description'
+author 'John Doe <j.doe@example.com>'
+description 'My first resource!'
 version '1.0.0'
 
-resource_type 'gametype' { name = 'My awesome game type!' }
-
-client_script 'mymode_client.lua'
+shared_script 'shared/main_sh.lua'
+client_script 'client/main_cl.lua'
+server_script 'server/main_sv.lua'
 ```
 
-Any new resource you make will probably want the latest game features. This is what the `fx_version` is for. You can read up on it elsewhere on this documentation site, if you ever feel the need to know more.
-To specify if this resource is for gta5, rdr3, or `common`, you should use the `game` variable.
+Copy this code and past it in the `fxmanifest.lua` file. It should look like this after:
 
-The `resource_type`, on the other hand, tells `mapmanager` that this, in fact, is a game type, and that it's called **"My awesome game type!"**. If you're just making a 'standalone' add-on resource, you probably don't want to include a `resource_type` line.
+<img src="img/manifest_example.png" alt="pic" width="500">
 
-Finally, the `client_script` indicates to the scripting runtime that the client should load a script, named `mymode_client.lua`. If this were a JS script, it'd say `mymode_client.js`, or if it were C#, it'd probably be `MyModeClient.net.dll`, but for now we're teaching Lua so just forget that.
+The manifest will read the following:
+- Shared script in the `shared` folder
+- Client script in the `client` folder
+- Server script in the `server` folder
 
-Finally, we should make a file called `mymode_client.lua` in the `mymode` resource folder thing.
+**Note:** You're free to name the folders/files whatever you wish. The names provided here are just common conventions.
 
-To learn more about resource manifest files, take a look at the [resource manifest reference][manifest-reference].
+## Server side
 
-### Writing code
+In order to make our first resource, we will create the file `main_sv.lua` inside `server` folder. This should look like this:
 
-In this file, let's put the following content:
+<img src="img/resource_folder_server.png" alt="pic" width="500">
 
+The server-side files, stored in the `server` folder, manage critical operations and data storage inaccessible to players.
+
+In this file, we will start by using [RegisterCommand](https://docs.fivem.net/natives/?_0x5FA79B0F) native. You can learn more about natives [here](/#natives). You can copy the following:
 ```lua
-local spawnPos = vector3(686.245, 577.950, 130.461)
-
-AddEventHandler('onClientGameTypeStart', function()
-    exports.spawnmanager:setAutoSpawnCallback(function()
-        exports.spawnmanager:spawnPlayer({
-            x = spawnPos.x,
-            y = spawnPos.y,
-            z = spawnPos.z,
-            model = 'a_m_m_skater_01'
-        }, function()
-            TriggerEvent('chat:addMessage', {
-                args = { 'Welcome to the party!~' }
-            })
-        end)
-    end)
-
-    exports.spawnmanager:setAutoSpawn(true)
-    exports.spawnmanager:forceRespawn()
-end)
-```
-
-This is a tough one, especially if you're not used to the concept of first-class functions. You could also write it differently, using global/local functions - but that's just a bit odd.
-
-Let's go through this bit by bit, with an annotated version.
-
-```lua
--- define a local variable called `spawnPos` with a coordinate somewhere on the map
--- Lua in FiveM (through CfxLua) supports first-class vectors, which in this case can be accessed using .x, .y and .z.
-local spawnPos = vector3(686.245, 577.950, 130.461)
-
--- add an event handler for the (local) event called 'onClientGameTypeStart'.
--- it takes no arguments in this case (in Lua you can omit arguments), since our resource is a game type and you can only run one at once,
--- that means this will basically run when we start ourselves on the client. nice!
-AddEventHandler('onClientGameTypeStart', function()
-    -- set an automatic spawn callback for the spawn manager.
-    -- normally, this works using hardcoded spawn points, but since this is a scripting tutorial, we'll do it this way.
-    --
-    -- the spawn manager will call this when the player is dead, or when forceRespawn is called.
-    exports.spawnmanager:setAutoSpawnCallback(function()
-        -- spawnmanager has said we should spawn, let's spawn!
-        exports.spawnmanager:spawnPlayer({
-            -- this argument is basically a table containing the spawn location...
-            x = spawnPos.x,
-            y = spawnPos.y,
-            z = spawnPos.z,
-            -- ... and the model to spawn as.
-            model = 'a_m_m_skater_01'
-        }, function()
-            -- a callback to be called once the player is spawned in and the game is visible
-            -- in this case, we just send a message to the local chat box.
-            TriggerEvent('chat:addMessage', {
-                args = { 'Welcome to the party!~' }
-            })
-        end)
-    end)
-
-    -- enable auto-spawn
-    exports.spawnmanager:setAutoSpawn(true)
-
-    -- and force respawn when the game type starts
-    exports.spawnmanager:forceRespawn()
-end)
-```
-
-A quick mention of the difference between client and server scripts: most of what you'll do in FiveM will be done using client scripts, since in current versions there's no interaction with _game_ functionality in server scripts. Server scripts should be used to have scripted actions occur _across_ clients (using client/server events), and to provide a 'source of trust' for various actions, such as storing/loading things in a persistent database.
-
-Since spawning a player is pretty much entirely game interaction, this happens on the client side. Every player that's joined will have a _local_ instance of each client script running on their PC, with no shared variables or context between them.
-
-## Running this
-
-You're probably hoping to be able to run this little example - well, hopefully you already have a running FXServer instance - if not, follow the guide for that.
-
-Once you've started FXServer, execute the `refresh` command in the console. This'll reread every single `fxmanifest.lua` file for every resource you have installed, since you probably just started the server this isn't _really_ needed but if you had the server running already this is just A Good Idea™ to do.
-
-Finally, execute `start mymode` in the console, and connect to your server using the FiveM client's handy `localhost` button in developer mode (or just enter `localhost` on the direct connect tab, or if you used the default port click [this useful link](fivem://connect/localhost:30120) on the PC you have FiveM installed on).
-
-Once the game loads, you should see yourself spawning somewhere - hopefully on a big stage!
-
-Keep the game running (and maybe set it to borderless or windowed mode in the game options) and Alt-Tab out back into your code editor - we have more work to do!
-
-### Restarting resources
-
-It's silly to close your game and server and restart them both to iterate on your resource. Of course, you can _restart_ your resource as well.
-
-Let's try some different spawn point.
-
-Replace the `spawnPos` line (the first one) in `mymode/mymode_client.lua` with the following:
-
-```lua
-local spawnPos = vector3(-275.522, 6635.835, 7.425)
-```
-
-Then, in your server console, execute the magical command `restart mymode`. You should (again) see 'Welcome to the party!~' mentioned in your chat box, and end up on a pier instead of the stage.
-
-## Expanding on this
-
-You'll probably want to do more. For this, you're going to have to learn how to _call natives_, which has nothing to do with indigenous people and actually are a R* label for 'game-defined script functions'. There's a lot of intricacies involved in calling natives properly - for a full reference, see the special section for this - but we'll start simple for now.
-
-In a stupid way of 'this trope again', we'll make a command that'll spawn a car. Locally. Because nobody cares about the server when they're starting out.
-
-At the bottom of your `mymode_client.lua`, add this code:
-
-```lua
-RegisterCommand('car', function(source, args)
-    -- TODO: make a vehicle! fun!
-    TriggerEvent('chat:addMessage', {
-        args = { 'I wish I could spawn this ' .. (args[1] or 'adder') .. ' but my owner was too lazy. :(' }
-    })
+-- Registering a command called 'selfnotif'
+RegisterCommand('selfnotif', function(source)
+    -- Ensure the command is executed by a player
+    if source == 0 then return end
+    
+    -- Define and print a local variable
+    local value = 'Hello world'
+    print(value)
+    
+    -- Trigger a client event with the value
+    TriggerClientEvent('cfx:client:firstEvent', source, value)
 end, false)
 ```
 
-Starting already, we see a call to a function. We did not define that function. Well, _we_ (as in, the FiveM team) did, but not when guiding you, the reader, through this wondrously written marvel of a guide. That means it must come from somewhere else!
-
-And, guess what, it's actually {{% native_link "REGISTER_COMMAND" %}}! Click that link, and you'll be led to the documentation for this native. It looks a bit like this:
-
-```c
-// 0x5fa79b0f
-// RegisterCommand
-void REGISTER_COMMAND(char* commandName, func handler, BOOL restricted);
-```
-
-We'll mainly care about the name on the second line (`RegisterCommand`, as used in the Lua code above), and the arguments.
-
-As you can see, the first argument is the **command name**. The second argument is a **function** that is the command handler, and the third argument is a **boolean** that specifies whether or not it should be a restricted command.
-
-The function itself gets an argument that is the `source`, which only really matters if you're running on the server (it'll be the client ID of the player that entered the command, a really useful thing to have), and an array of `args` which are basically what you enter after the command like `/car zentorno` making `args` end up being `{ 'zentorno' }` or `/car zentorno unused` being `{ 'zentorno', 'unused' }`.
-
-Since we already know how to print a message to the chat box, we'll just pretend to spawn a vehicle by printing the name of the vehicle to the console.
-
-Let's restart the resource and see what happens. Run `restart mymode`, then in the client chat box (default `T`) type `/car zentorno`. You'll see the chat box complain that you were too lazy to implement this. We'll show them that you're _absolutely not lazy_, and actually implement this now.
-
-### Implementing a car spawner
-
-This is a lot of boilerplate code, and we'll want to do this the _right_ way since lots of people will copy this example, so it might look a bit overwhelming.
-
-Basically what we'll do is:
-
-1.  Check if the passed model is valid. It's no fun trying to spawn a 'potato' when there's no vehicle with that name.
-2.  Load the model. You'll need to explicitly manage every model you're using, these are the rules originally defined by R*.
-3.  Wait for the model to be loaded. Yes, the game will continue running asynchronously.
-4.  Figure out where the player is once it loaded.
-5.  Create the vehicle! Awesome, finally you get to be creative.
-6.  Put the player into the vehicle.
-7.  Clean up, since we are tidy people and 🚮 and all.
-
-Let's get going!
-
-Replace the bit you just pasted in with this, and don't worry we'll explain it before you can say 'lazy' twice:
-
+Let's break this into parts:
+#### 1. Checking if Code is Executed by a Player:
 ```lua
-RegisterCommand('car', function(source, args)
-    -- account for the argument not being passed
-    local vehicleName = args[1] or 'adder'
+if source == 0 then return end
+```
+This line ensures that the code is executed by a player rather than the server console. If the `source` is not greater than 0 (indicating it's not a player), the function returns early.
 
-    -- check if the vehicle actually exists
-    if not IsModelInCdimage(vehicleName) or not IsModelAVehicle(vehicleName) then
-        TriggerEvent('chat:addMessage', {
-            args = { 'It might have been a good thing that you tried to spawn a ' .. vehicleName .. '. Who even wants their spawning to actually ^*succeed?' }
-        })
+#### 2. Defining a Local Variable:
+```lua
+local value = 'Hello world'
+```
+This line defines a local variable named `value` and assigns it the string 'Hello world'. In Lua, variables can be localized using the `local` keyword. It's a best practice that helps in managing the scope, efficiency and prevention of name clashes within the codebase. By defining a variable as `local`, it ensures that the variable's value is contained within a specific context and cannot be inadvertently modified from outside that context.
 
-        return
-    end
+In this example, the `local value` will be only available in the `selfnotif` register command.
 
-    -- load the model
-    RequestModel(vehicleName)
+#### 3. Printing to the Server Console:
+```lua
+print(value)
+```
+This line prints the `value` of the value variable to the server console using the `print()` function. The string 'Hello world' will be displayed in the server console when this command is executed by a player.
 
-    -- wait for the model to load
-    while not HasModelLoaded(vehicleName) do
-        Wait(500) -- often you'll also see Citizen.Wait
-    end
+#### 4. Triggering a Client Event:
+```lua
+TriggerClientEvent('cfx:client:firstEvent', source, value)
+```
+This line triggers a client event named 'cfx:client:firstEvent' and passes the `value` variable as data to clients. Client events are used to send information between the server and clients. In this case, the 'firstEvent' event is triggered for the client associated with the `source` (player) and sends the `value` variable as data.
 
-    -- get the player's position
-    local playerPed = PlayerPedId() -- get the local player ped
-    local pos = GetEntityCoords(playerPed) -- get the position of the local player ped
+For further details on the usage of events in FiveM, you can refer to [here](https://docs.fivem.net/docs/scripting-reference/events/).
 
-    -- create the vehicle
-    local vehicle = CreateVehicle(vehicleName, pos.x, pos.y, pos.z, GetEntityHeading(playerPed), true, false)
+#### Preview
+After following every steps of the server section. The code inside `main_sv` should look like this.
 
-    -- set the player ped into the vehicle's driver seat
-    SetPedIntoVehicle(playerPed, vehicle, -1)
+<img src="img/example_server_code.png" alt="pic" width="500">
 
-    -- give the vehicle back to the game (this'll make the game decide when to despawn the vehicle)
-    SetEntityAsNoLongerNeeded(vehicle)
+## Client side
 
-    -- release the model
-    SetModelAsNoLongerNeeded(vehicleName)
+To continue the guide, we will create another file `main_cl.lua` inside `client` folder. This should look like this:
 
-    -- tell the player
-    TriggerEvent('chat:addMessage', {
-		args = { 'Woohoo! Enjoy your new ^*' .. vehicleName .. '!' }
-	})
-end, false)
+<img src="img/resource_folder_client.png" alt="pic" width="500">
+
+The client-side files, located in the `client` folder, control interactions visible to players. Please be careful to never use any sensible information since they can be view by any user.
+
+In this file, we will use an [event](https://docs.fivem.net/docs/scripting-reference/events/). You can copy the following:
+```lua
+RegisterServerEvent('cfx:client:firstEvent', function(information)
+	if not information then return end
+  TriggerEvent('chat:addMessage', {
+    template = '<div class="chat-message"><b>SYSTEM</b><br>{0} has been sent to you</div>',
+    args = {information}
+  })
+end)
 ```
 
-This uses a LOT of natives. We'll link a few of them and explain the hard parts.
+Let's break this in part:
+#### 1. Checking if param is valid
+```lua
+if not information then return end
+```
+This will check if `information` is not `nil` wich could lead to create a issue.
 
-#### Step 1: Validation
-We started with checking the vehicle name. If it's `nil` (that is, not existent), we'll default to the `adder`. Either way, it's stored in a variable.
+#### 2. Trigger the chat event
+```lua
+TriggerEvent('chat:addMessage', {
+  template = '<div class="chat-message"><b>SYSTEM</b><br>{0} has been sent to you</div>',
+  args = {information}
+})
+```
+This event triggers the 'chat:addMessage' event on the client script of the `chat` resource. The message sent includes the value of the `information` parameter returned by the event, along with the string 'has been sent to you.'.
 
-Then, we check if the vehicle is in the CD image using {{% native_link "IS_MODEL_IN_CDIMAGE" %}}. This basically means 'is this registered with the game'. We also check if it's a vehicle using {{% native_link "IS_MODEL_A_VEHICLE" %}}. If either check fails, we tell the player and return from the command.
+#### Preview
+After following every step in the server section. The code inside `main_cl` should look like this.
 
-#### Step 2: Loading the model
-Now, we call {{% native_link "REQUEST_MODEL" %}} to load the actual vehicle model. This native takes a `Hash` argument, but in Lua you can also just pass a string and it'll be converted to a hash. You'll often see people use `GetHashKey` ({{% native_link "GET_HASH_KEY" %}}), but if the native is _specified_ as taking a `Hash`, you actually don't need this.
+<img src="img/example_client_code.png" alt="pic" width="500">
 
-#### Step 3: Waiting for the model to be loaded
-We loop calls to {{% native_link "HAS_MODEL_LOADED" %}} to check if loading succeeded. Since this is a loop and we're cooperatively multitasked, you'll have to give the game time to run as well - otherwise it'll never even finish loading and the game will unfortunately freeze. That's what the `Wait` call is for - it waits for the specified amount of milliseconds, then returns right back into the script.
+## Start the resource
 
-Once the model's loaded, we'll continue.
+Now that we've completed all the necessary steps in this guide, it's time to start your first script! You can go into your `server.cfg` file, which you set up [here](https://docs.fivem.net/docs/server-manual/setting-up-a-server-vanilla/#servercfg), and insert the following line at the bottom of the list of started resources:
 
-#### Step 4: Getting the player's position
-Players' physical incarnations are identified by their `ped`, which is short for 'pedestrian'. This is a GTA term, and it usually means 'anything that lives and has legs'. We use {{% native_link "PLAYER_PED_ID" %}} to get the local (basically, whoever is executing this command) player's ped.
+```cfg
+ensure first-resource
+```
 
-After we have the ped and store it in a variable, we get the position of the player ped using {{% native_link "GET_ENTITY_COORDS" %}}. Since a ped is an entity (the same goes for vehicles and a few other things), this native is used for getting their position. This native, again, returns a `Vector3`, similar to how the `spawnPos` was defined earlier.
+at the bottom of the resources started. It should look this this:
 
-#### Step 5: Creating the vehicle
-We use {{% native_link "CREATE_VEHICLE" %}} to, well, create a vehicle. In the meanwhile, we snuck in a call to get the player's heading using {{% native_link "GET_ENTITY_HEADING" %}}, which makes the car spawn facing the same direction as the player.
+<img src="img/ensure_resources.png" alt="pic" width="500">
 
-The `true, false` is a convention in entity creation natives to create the vehicle with a network object (`true`), but not make it a mission object (`false`). You usually want the former, or nobody else will see the vehicle - and you won't want the latter, since you're not writing a full R* mission script.
+### Execution Overview:
 
-#### Step 6: Setting the player into the vehicle
-Since we have a ped and a vehicle now, we can use {{% native_link "SET_PED_INTO_VEHICLE" %}} to place the ped into the vehicle. As the documentation happens to say, `-1` is the driver seat of the vehicle.
+#### 1. **Start Your Server**
+   - Ensure your FiveM server is running.
 
-#### Step 7: Cleaning up
-The game likes it when you clean up after yourself, and as we're not doing anything with the vehicle or the model anymore in this script, we'll let the game manage it. This is what we use {{% native_link "SET_ENTITY_AS_NO_LONGER_NEEDED" %}} and {{% native_link "SET_MODEL_AS_NO_LONGER_NEEDED" %}} for.
+#### 2. **Connect to the Server**
+   - Use your FiveM client to connect to your server.
 
-Finally, we tell the player to enjoy their new vehicle.
+#### 3. **User Input:**
+   - Once connected, run the command `/selfnotif` in the client chat (can be open by default with `t` or in F8 console log without `/`).
 
-### Running this
-In your server console, `refresh; restart mymode` (yeah you can split stuff with semicolons), and try `/car voltic2` in the game client (which should by now be really bored of respawning). You'll now have your very own Rocket Voltic!
+#### 4. **Server-Side Execution:**
+   - The `RegisterCommand` native is triggered.
+   - It verifies if the source is a player.
+   - Assigns the string "Hello World" to the local variable `value`.
+   - Prints the value of `value` to the server console.
+   - Sends the value of `value` to the client using the event `'cfx:client:firstEvent'`.
 
-## Server scripts
-You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
+#### 5. **Client-Side Execution:**
+   - The client script receives the `'cfx:client:firstEvent'` event.
+   - It checks the validity of the first parameter.
+   - Sends a client event on `chat` resource to execute the chat message with the parameter received.
 
+### Result:
+- You will see "Hello World has been sent to you" in the client chat.
+  
+  <img src="img/example_preview.png" alt="pic" width="200">
+- "Hello World" is displayed in the server console.
+  
+  <img src="img/example_preview_return.png" alt="pic" width="200">
 
-[manifest-reference]: /docs/scripting-reference/resource-manifest/resource-manifest/
+### Workflow:
+- **User Action:** You invoke the command in the chat.
+- **Server Processing:** The server executes the command, processes the logic, and communicates with the client.
+- **Client Interaction:** You receive the information and handles the display accordingly.
+
+### Alternative Scripting Languages
+
+While Lua is a powerful and the most used scripting language in the FiveM community, it's not the only option available. FiveM supports several other scripting languages, allowing you to choose the one that best fits your project's needs and your personal preferences. Here are some alternatives you might consider:
+
+- **JavaScript**: For developers familiar with JavaScript, FiveM supports JS scripting. This allows you to leverage the vast ecosystem of JavaScript libraries and tools.
+
+- **C#**: C# is a viable option for FiveM scripting. This is particularly attractive for developers with a background in .NET development.
+
+It's essential to consider the community support, available resources, and compatibility with your project's goals when making your choice.
+
+### Community Resources
+
+As you continue your journey in FiveM development, you'll likely have more questions or seek further inspiration. The FiveM community is vast and welcoming, with numerous resources available to support your growth as a developer. Here are some key platforms and communities you might find useful:
+
+- **Official FiveM Forums**: The [FiveM forums](https://forum.cfx.net/) are a great place to ask questions, share your projects, and learn from others. Whether you're looking for scripting advice, showcasing your work, or seeking collaboration opportunities, the forums are a valuable resource.
+
+- **FiveM Discord Server**: Joining the [FiveM Discord server](https://discord.gg/fivem) is one of the quickest ways to connect with the community. It's a hub for real-time discussions, with channels dedicated to scripting help, resource development, and server management.
+
+- **GitHub Repositories**: Many developers share their FiveM projects on GitHub. Exploring these repositories can provide insights into best practices, coding techniques, and innovative resource ideas. Don't forget to check out the [FiveM repository](https://github.com/citizenfx/fivem) for the latest updates and community contributions.
+
+Remember, no question is too small, and every developer started somewhere. Engaging with the community can not only help you overcome challenges but also inspire your next big project. For further insights on advanced techniques, refer to the [advanced part](/content/docs/scripting-manual/introduction/creating-your-first-script-extra.md).
+
+---
+
+## Conclusion:
+Congratulations on reaching this significant milestone! You've successfully created your first FiveM resource, demonstrating a fundamental understanding of client-server communication through events and commands. This achievement is a testament to your dedication and curiosity, opening up a world of possibilities in the realm of FiveM development.
+
+As you reflect on this accomplishment, consider the following steps to further your expertise and expand your impact within the FiveM community:
+
+1. **Explore Advanced Topics**: Dive deeper into FiveM's capabilities by exploring advanced scripting techniques, such as database integration, resource optimization, and the creation of complex game mechanics.
+
+2. **Join the Community**: Engage with the vibrant FiveM community through forums, Discord servers, and GitHub repositories. Sharing your experiences, asking questions, and collaborating with others can accelerate your learning and lead to new opportunities.
+
+3. **Expand Your Resource**: Use your newfound skills to enhance your first resource or start a new project that pushes the boundaries of what you thought was possible. Remember, every successful endeavor begins with a simple idea.
+
+4. **Contribute to the Community**: Consider contributing to existing projects or creating open-source resources that others can learn from and build upon. Your unique perspective and skills can make a meaningful impact on the FiveM community.
+
+5. **Stay Updated**: FiveM and its ecosystem are constantly evolving. Stay informed about the latest updates, tools, and best practices by following official channels and community news sources.
+
+Your journey in FiveM development has just begun. Embrace the challenges, celebrate the victories, and continue to explore the endless possibilities that lie ahead. Welcome to the community, and happy developing!
