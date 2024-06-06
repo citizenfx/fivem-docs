@@ -66,7 +66,7 @@ for i = 0, 255 do
       end
 
       mpGamerTags[i] = {
-        tag = CreateMpGamerTagForNetPlayer(i, nameTag, false, false, '', 0, 0, 0, 0),
+        tag = CreateMpGamerTagWithCrewColor(i, nameTag, false, false, '', 0, 0, 0, 0),
         ped = ped
       }
     end
@@ -87,13 +87,13 @@ Example
 
 ``` lua
 -- Create gamer info
-local gamerTagId = CreateMpGamerTagForNetPlayer(
+local gamerTagId = CreateMpGamerTagWithCrewColor(
   ped, -- Ped to which gamer info will be assigned
   "User name", -- String to display for flag ""
-  false, -- pointedClanTag
-  false, -- Is R* clan
-  "", -- Clantag
-  0, -- Clantag flags
+  false, -- Is private crew
+  false, -- Is R* crew
+  "", -- Crew name
+  0, -- Crew rank
   0, -- red
   0, -- green
   0 -- blue
@@ -105,13 +105,13 @@ local gamerTagId = CreateMpGamerTagForNetPlayer(
 ``` csharp
 // Create gamer info
 // assuming using static CitizenFX.Core.API;
-int gamerTagId = CreateMpGamerTagForNetPlayer(
+int gamerTagId = CreateMpGamerTagWithCrewColor(
   ped.Handle, // Ped to which gamer info will be assigned
   "User name", // String to display for flag ""
-  false, // pointedClanTag
-  false, // Is R* clan
-  clanTag,
-  0, // Clantag flags
+  false, // Is private crew
+  false, // Is R* crew
+  "", // Crew name
+  0, // Crew rank
   0, // red
   0, // green
   0  // blue
@@ -236,7 +236,7 @@ Health bar has 0 opacity by default. Colour of health bar changes using it's own
 
 ``` lua
 -- Change health bar colour
-SetMpGamerTagHealthBarColor(
+SetMpGamerTagHealthBarColour(
   gamerTagId,
   colour -- 0 - 255
 )
