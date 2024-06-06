@@ -8,6 +8,7 @@ Basics
 ------
 - [Installing FiveM](/docs/client-manual/installing-fivem)
 - [Console commands](/docs/client-manual/console-commands)
+- [FiveM shortcut](/docs/client-manual/shortcut)
 
 FiveM singleplayer
 ------------------
