@@ -6,47 +6,58 @@ title: txAdmin
 **txAdmin** is a **full featured** web panel to help you Manage & monitor your FiveM Server.  
 Contrary to the other resources on this documentation (eg. chat, mapmanager and etc), **txAdmin** already comes preinstalled with FXServer, so you do not need to download it separately.
 
+For more information, you can join the [Discord Server](https://discord.gg/AFAAXzq).
+
 ## Main Features
 - Recipe-based Server Deployer: create a server in under 60 seconds!
 - Start/Stop/Restart your server instance or resources
-- Server Performance Chart (all 3 threads) ([example](https://i.imgur.com/VG8hpzr.gif))
+- Full-featured in-game admin menu:
+	- Player Mode: NoClip, God, SuperJump
+	- Teleport:  waypoint, coords and back
+	- Vehicle: Spawn, Fix, Delete, Boost
+	- Heal: yourself, everyone
+	- Send Announcements
+	- Reset World Area
+	- Show player IDs
+	- Player search/sort by distance, ID, name
+	- Player interactions: Go To, Bring, Spectate, Freeze
+	- Player troll: make drunk, set fire, wild attack
+	- Player ban/warn/dm
 - Access control:
 	- Login via Password or CitizenFX
-	- Admin permission system ([more info](permissions))
+	- Admin permission system
 	- Action logging
-	- Login brute-force protection
+	- Brute-force protection
 - Discord Integration:
-	- Server status command (`/status`)
-	- Add to Whitelist command (`/addwl`)
-	- Command spam prevention
+	- Server configurable, persistent, auto-updated status embed
+	- Command to whitelist players
+	- Command to display player infos
 - Monitoring:
-	- Auto Restart FXServer on crash
+	- Auto Restart FXServer on crash or hang
 	- Server’s CPU/RAM consumption
-	- Live Console (with log file and command history)
-	- Online players chart
-	- Server Activity Log (connections/disconnections, kills, chat, explosions and custom commands)
+	- Live Console (with log file, command history and search)
+	- Server threads performance chart with player count
+	- Server Activity (Log connections/disconnections, kills, chat, explosions and custom commands)
 - Player Manager:
 	- [Warning system](https://www.youtube.com/watch?v=DeE0-5vtZ4E)
 	- Ban (temporary or permanently) system
-	- Whitelist system
+	- Whitelist system (Discord member, Discord Role, Approved License, Admin-only)
 	- Take notes about players
 	- Keep track of player's play and session time
-	- Import bans from EasyAdmin, BanSQL, vMenu, vRP, el_bwh
-	- Self-contained player database (no MySQL required!)
+	- Self-contained player database with backup tool (no MySQL required!)
+	- Clean/Optimize the database by removing old players, or bans/warns/whitelists
 - Real-time playerlist
 - Scheduled restarts with warning announcements and custom events
 - Translation Support
-- FiveM's Server CFG editor
+- FiveM's Server CFG editor & validator
 - Responsive web interface with Dark Mode 😎
 
 ## Running (Windows/Linux)
-Currently **txAdmin is included in all FXServer builds** above 2524, so to run it for the first time simply do the following:
+**txAdmin is included in all FXServer builds** above 2524, so to run it for the first time simply do the following:
 - Update FXServer to the latest artifact/build (2524 or superior)
-- If Windows, run FXServer.exe | If Linux, run `./run.sh`
+- If Windows, run FXServer.exe | If Linux, run `screen ./run.sh`
 - Open one of the URLs shown and configure txAdmin
 
-After that you could also run the `start_<build>_<profile>.bat` file created, or call it via cmd/bash if you want to edit the ConVars (ex http port).  
-  
 txAdmin requires to be launched from *inside* FXServer in monitor mode, to do that, just execute the `run.sh` or `FXServer.exe` without **any** `+exec` arguments.  
   
 ### ConVars
@@ -59,8 +70,8 @@ txAdmin requires to be launched from *inside* FXServer in monitor mode, to do th
 ConVar usage **example** for different port and profile:  
 ```bash
 # Windows
-./FXServer.exe +set serverProfile dev_server +set txAdminPort 40125
+./FXServer.exe +set serverProfile dev_server +set txAdminPort 40121
 
 # Linux
-./run.sh +set serverProfile dev_server +set txAdminPort 40125
+./run.sh +set serverProfile dev_server +set txAdminPort 40121
 ```
