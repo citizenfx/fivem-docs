@@ -62,20 +62,22 @@ There could be a lot of different problems, most likely it has something to do w
 - Your ports aren't properly forwarded.
 - You have a firewall (or AV) that blocks (external) connections.
 
-My server can't use 64, 128, or more than 32 slots
+My server can only use 48 slots.
 ---------------------------------
 
-Using more than 32 slots requires OneSync. The maximum slot count supported with OneSync is 128 slots. OneSync was publicly released in April 2018 as early access and made available for everyone in June 2019. However, the support of 32+ slots did not leave early access, yet. Hence, you still require an active FiveM Element Club Argentum (or higher) Patreon pledge tier or be part of the manually granted OneSync EAP.
+Using more than 48 slots requires `Cfx.re Element Club Argentum 💿`. The maximum slot count supported with OneSync is 2048 slots with `Cfx.re Element Club Platinum 🌟`.
 
-To use more than 32 slots follow these steps.
+To use more than 48 slots follow these steps.
 
 1. Use a license key with OneSync access
 2. Use the latest [server artifact][setting-up-server]
 2. Activate OneSync - add `onesync_enabled 1` to your server.cfg
-3. Set `sv_maxclients` in your server.cfg to a value higher than 32
+3. Set `sv_maxclients` in your server.cfg to a value higher than 48 (Depending on the Patreon perk you have)
 4. Restart your server
 
 If you are not seeing the changes in the server list, be patient until the server list updates. You will see the changes already in Direct Connect.
+
+Please note that [TxAdmin](/docs/resources/txAdmin/) can handle onesync activation by the panel directly.
 
 My server's name doesn't have colors
 ---------------------------------
