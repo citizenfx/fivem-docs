@@ -65,7 +65,7 @@ There could be a lot of different problems, most likely it has something to do w
 My server can only use 48 slots.
 ---------------------------------
 
-Using more than 48 slots requires `Cfx.re Element Club Argentum 💿`. The maximum slot count supported with OneSync is 2048 slots with `Cfx.re Element Club Platinum 🌟`.
+Using more than 48 slots requires __at least__ `Cfx.re Element Club Argentum 💿`. The maximum slot count supported with OneSync is 2048 slots with `Cfx.re Element Club Platinum 🌟`.
 
 To use more than 48 slots follow these steps.
 
