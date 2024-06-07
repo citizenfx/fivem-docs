@@ -71,9 +71,9 @@ To use more than 48 slots follow these steps.
 
 1. Use a license key with OneSync access
 2. Use the latest [server artifact][setting-up-server]
-2. Activate OneSync - add `onesync_enabled 1` to your server.cfg
-3. Set `sv_maxclients` in your server.cfg to a value higher than 48 (Depending on the Patreon perk you have)
-4. Restart your server
+3. Activate OneSync - add `+set onesync on` to your server.cfg
+4. Set `sv_maxclients` in your server.cfg to a value higher than 48 (Depending on the Patreon perk you have)
+5. Restart your server
 
 If you are not seeing the changes in the server list, be patient until the server list updates. You will see the changes already in Direct Connect.
 
