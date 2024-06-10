@@ -1,6 +1,6 @@
 # FiveM Documentation 📚
 
-Welcome to the FiveM Documentation! This is the official source for all things FiveM. You can explore detailed guides, reference materials, and development resources here.
+Welcome to the FiveM Documentation! This is the official source. You can explore detailed guides, reference materials, and development resources here.
 
 🔗 **Source:** [docs.fivem.net][docs]
 
@@ -11,8 +11,5 @@ If you encounter any dead links or issues, please report them on our [GitHub Iss
 ### Wanna Contribute? 🤝
 
 We love contributions! If you're interested in helping out, check out our [Contribution Guidelines](content/docs/contributing/how-you-can-help.md) to get started.
-
----
-Please note we are not supporting RedM documentation yet!
 
 [docs]: https://docs.fivem.net
