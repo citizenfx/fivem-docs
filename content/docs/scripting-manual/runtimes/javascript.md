@@ -24,8 +24,8 @@ For automatic completion of the FiveM API methods and mapped native functions we
 Example:
 
 ``` js
-// The native command GET_PLAYER_PED translates to the following:
-GetPlayerPed(-1);
+// The native command PLAYER_PED_ID translates to the following:
+PlayerPedId();
 ```
 
 Using Node.js APIs
