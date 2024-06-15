@@ -140,7 +140,7 @@ We are more than happy to help you out! If you're running into crashes or freeze
 on our [forums][forum]. Provide as much detail as you can, that will make it easier for everyone to help you.
 For all other issues, you are more than welcome to join our [Discord][discord] and have a chat with us.
 
-[where-is-fivem-installed]: /docs/support/client-faq#where-is-fivem-installed
+[where-is-fivem-installed]: https://support.cfx.re/hc/en-us/articles/8016397932444-Client-FAQ#where-is-fivem-installed
 [antivirus-ticket]: https://support.cfx.re/hc/en-us/requests/new
 [email]: mailto:support@fivem.net
 [forum]: https://forum.cfx.re

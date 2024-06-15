@@ -50,7 +50,7 @@ In FxDK, [building](/docs/fxdk/project-building) deploy-ready server is as easy 
 
 > If you have FiveM installed - skip to step 2.
 
-1. [Install FiveM](/docs/client-manual/installing-fivem).
+1. [Install FiveM](https://support.cfx.re/hc/en-us/articles/360020992639-Installing-FiveM).
 2. Next to `FiveM.exe` you'll find a shortcut named `FiveM - Cfx.re Development Kit (FxDK)`.
 3. Follow intro or skip and start creating right away.
 
