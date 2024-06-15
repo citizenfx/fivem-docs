@@ -8,6 +8,7 @@ Basics
 ------
 - [Installing FiveM](/docs/client-manual/installing-fivem)
 - [Console commands](/docs/client-manual/console-commands)
+- [CitizenFX.ini](/docs/client-manual/citizenfx)
 
 FiveM singleplayer
 ------------------
