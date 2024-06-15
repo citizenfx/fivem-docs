@@ -1,5 +1,7 @@
 ---
 title: sessionmanager
+draft: true
+toc_hide: true
 ---
 
 ##### TODO
