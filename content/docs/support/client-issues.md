@@ -85,6 +85,38 @@ Stuck on a black screen
 This is a common issue with certain NVIDIA drivers. Stay patient, it takes a minute to load. This often
 happens to other games too.
 
+Early Exit Trap crash
+-----------------------
+Looks like you might have something messing in the background. Please make sure to remove everything running on background when lauching FiveM. It could be antivirus or any software recording app.
+
+Can't link FiveM to Discord
+-----------------------
+To be able to connect Discord to FiveM, you need to do the following:
+- Close FiveM and Discord completely
+- Open Discord Desktop App
+- Start FiveM and load main menu
+
+Please avoid using any plugins / client modification when following the steps.
+
+HTTP 412 System Clock
+-----------------------
+Looks like you are not sync on time. Follow those simple steps:
+- Close FiveM and open Windows settings
+- Go to Date & Time
+- Sync Clock
+- Start FiveM and load main menu
+
+**Note:** words might change depending on what Windows version you are running (10/11).
+
+Connection to CNL timed out
+-----------------------
+If you are having issues connecting on many servers, please try the following:
+- Try temporarily disabling antivirus to see if it is causing this issue. Sometimes, some antivirus still have their web filters working even if the antivirus itself is disabled. Make sure those web filters are disabled too - you may need to find out how to disable them.
+- Try disabling or enabling any VPN you may be using. Some VPNs are blocked by our protection systems, but for some users a VPN may actually help.
+- Allow FiveM connections through your Firewall, or disable your firewall.
+
+If the options above did not work, some players have found success by creating a new Windows user account and playing FiveM there.
+
 Stuck on a colored background but no menu
 ------------------------------
 This happens on specific older AMD laptop GPUs. Unfortunately, this is caused by CEF and not by FiveM. Once the issue has been fixed in CEF, FiveM will be updated too. A forum moderator has created a topic that could potentially rectify this issue. [Click here][discrete-gpu] for more info.
