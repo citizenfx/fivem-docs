@@ -228,7 +228,7 @@ useful information to share, please [add it to this doc][contributing]. Any help
 | CEventShockingDrivingOnPavement                    |             |
 | CEventShockingEngineRevved                         |             |
 | CEventShockingExplosion                            |             |
-| CEventShockingFire                                 |             |
+| CEventShockingFire                                 |Is triggered when a fire is changing (being created, spreading). Returns: 1. Table including handles of nearby peds reacting to the fire. Seems to return only one tho and trigger again for other peds. 2. The handle of the entity that is set on fire, 0 if none. 3. coords of the fire as array.|
 | CEventShockingGunFight                             |             |
 | CEventShockingGunshotFired                         |             |
 | CEventShockingHelicopterOverhead                   |             |
