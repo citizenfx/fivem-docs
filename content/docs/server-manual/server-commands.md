@@ -366,7 +366,7 @@ load_server_icon "my-server.png"
 
 ### `rcon_password [password]`
 
-Sets the RCon password. This being unset means RCon is disabled.
+Sets the RCon password, if unset then RCon will be disabled. FXServer RCon uses UDP.
 
 ### `steam_webApiKey [key]`
 
