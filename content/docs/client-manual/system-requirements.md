@@ -5,23 +5,26 @@ weight: 220
 
 To [run FiveM][installing] your system must meet the [minimum requirements of the original game][gtav-system-specs].
 
-FiveM requires a _fully_ updated version of Windows 8.1, Windows 10 or Windows 11. An outdated operating system may not
+FiveM requires a _fully_ updated version of Windows 10 or Windows 11. An outdated operating system may not
 work. It is generally advised to upgrade to Windows 10 when you can as this provides the best experience.
 
 Additional details:
 
-|                 | Minimum                                                 | Recommended                                         |
-|-----------------|---------------------------------------------------------|-----------------------------------------------------|
-| CPU             | Intel Core 2 Q6600 @ 2.40GHz / AMD Phenom 9850 @ 2.5GHz | Intel Core i5 3470 @ 3.2GHz / AMD X8 FX-8350 @ 4GHz |
-| GPU<sup>1</sup> | NVIDIA 9800 GT 1GB / AMD HD 4870 1GB / Intel HD GT2     | NVIDIA GTX 660 2GB / AMD HD7870 2GB                 |
-| RAM             | 8GB (4 may work)                                        | 16GB                                                |
-| HDD<sup>2</sup> | 105GB + ~4GB                                            | 105GB + 8GB                                         |
+|                 | Minimum                                                                                     | Recommended                                                                      |
+|-----------------|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| OS              | Windows 10 64 Bit                                                                            | Windows 10 64 Bit                                                                |
+| Processor       | Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz | Intel Core i5 3470 @ 3.2GHz (4 CPUs) / AMD X8 FX-8350 @ 4GHz (8 CPUs)             |
+| Memory          | 4GB                                                                                         | 8GB                                                                              |
+| Video Card      | NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)                                       | NVIDIA GTX 660 2GB / AMD HD7870 2GB                                              |
+| Sound Card      | 100% DirectX 10 compatible                                                                  | 100% DirectX 10 compatible                                                       |
+| HDD Space       | 120 GB                                                                                      | 120 GB                                                                           |
 
+### Other requirements
 
-_Notes:_
-
-1. May not work with some older AMD laptop GPUs. More on that [here][client-issues-gpu].
-2. 105GB for the original game + additional FiveM cache.
+- Over time downloadable content and programming changes will change the system requirements for this game
+- Some system components such as mobile chipsets, integrated, and AGP graphics cards may be incompatible. See more [here][client-issues-gpu]
+- Unlisted specifications may not be supported
+- 120GB for the original game + additional FiveM cache.
 
 [installing]: /docs/client-manual/installing-fivem
 [client-issues-gpu]: /docs/support/client-issues#stuck-on-a-colored-background-but-no-menu
