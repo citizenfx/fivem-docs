@@ -17,16 +17,16 @@ GetPlayerIdentifiers(Player player)
 License Types
 --------
 
-|Type ID|Provider|Type|Data Type|
-|-|-|-|-|
-|`steam`|Steam|[Steam ID](https://partner.steamgames.com/doc/webapi/isteamuserauth)|hex|
-|`discord`|Discord|[User Id](https://discord.com/developers/docs/topics/oauth2#get-current-authorization-information-example-authorization-information)|int|
-|`xbl`|Xbox Live||int|
-|`live`|Microsoft PUID|Passport Unique Identifier|int|
-|`license`|Rockstar Online Services|Hash|hex|
-|`license2`|Rockstar Online Services|Hash|hex|
-|`fivem`|CFX.re|User Id|int|
-|`ip`|IP Adress|IPv4|string|
+| Type ID    | Provider                 | Type                                                                      | Data Type |
+|------------|--------------------------|---------------------------------------------------------------------------|-----------|
+| `steam`    | Steam                    | [Steam Id](https://partner.steamgames.com/doc/webapi/isteamuserauth)      | hex       |
+| `discord`  | Discord                  | [User Id](https://discord.com/developers/docs/resources/user#user-object) | int       |
+| `xbl`      | Xbox Live                |                                                                           | int       |
+| `live`     | Microsoft PUID           | Passport Unique Identifier                                                | int       |
+| `license`  | Rockstar Online Services | Hash                                                                      | hex       |
+| `license2` | Rockstar Online Services | Hash                                                                      | hex       |
+| `fivem`    | CFX.re                   | User Id                                                                   | int       |
+| `ip`       | IP Address               | IPv4                                                                      | string    |
 
 \* `licence2` - This identifier is present if the user has switched Social Club accounts
 
