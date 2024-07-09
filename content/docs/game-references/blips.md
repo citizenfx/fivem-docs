@@ -6,7 +6,7 @@ weight: 720
 Blips
 -----
 
-A list of all game blips as of build 3095 is shown below.
+A list of all game blips as of build 3258 is shown below.
 
 <!-- check down for more recent HTML -->
 <!-- _loc1_ = []; -->
