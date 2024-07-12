@@ -39,7 +39,13 @@ Whether you're looking to improve your gameplay or contribute to the community, 
 
 ## Contribute to the project
 
-You are free to contribute on this open project, you can learn more [here](docs/contributing/how-you-can-help.md). Make sure to respect our method signature.
+We invite you to contribute to our open project! Your skills and insights are invaluable to us, and we would love for you to be part of our journey. Learn more about how you can make a difference [here](docs/contributing/how-you-can-help.md).
+
+You can also learn more about:
+- How to help with [natives](docs/scripting-manual/introduction/about-native-functions.md).
+- Contribute to the [Github Project](https://github.com/citizenfx/fivem)
+
+Thank you for considering joining our community and helping us grow. Together, we can achieve great things!
 
 ## Coding
 
