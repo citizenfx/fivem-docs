@@ -46,6 +46,6 @@ To call an event for multiple players, you need to include their IDs in an array
 local playerIds = {1, 3, 5}  -- Replace with actual player IDs
 
 -- Trigger the event for the specified players
-TriggerClientEvent('eventName', -1, playerIds, { example = 0 })
+TriggerClientEvent('eventName', playerIds, { example = 0 })
 ```
 This format ensures that the event is called for each player specified in the `playerIds` array.
