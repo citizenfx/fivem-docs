@@ -71,13 +71,13 @@ To use more than 48 slots follow these steps.
 
 1. Use a license key with OneSync access
 2. Use the latest [server artifact][setting-up-server]
-3. Activate OneSync - add `+set onesync on` to your server.cfg
+3. Activate OneSync - add `set onesync on` to your server.cfg
 4. Set `sv_maxclients` in your server.cfg to a value higher than 48 (Depending on the Patreon perk you have)
 5. Restart your server
 
 If you are not seeing the changes in the server list, be patient until the server list updates. You will see the changes already in Direct Connect.
 
-Please note that [TxAdmin](/docs/resources/txAdmin/) can handle onesync activation by the panel directly.
+Please note that [txAdmin](/docs/resources/txAdmin/) can handle onesync activation by the panel directly.
 
 My server's name doesn't have colors
 ---------------------------------
