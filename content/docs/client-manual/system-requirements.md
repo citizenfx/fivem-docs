@@ -10,14 +10,14 @@ work. It is generally advised to upgrade to Windows 10 when you can as this prov
 
 Additional details:
 
-|                 | Minimum                                                                                     | Recommended                                                                      |
-|-----------------|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+|                 | Minimum                                                                                      | Recommended                                                                      |
+|-----------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | OS              | Windows 10 64 Bit                                                                            | Windows 10 64 Bit                                                                |
-| Processor       | Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz | Intel Core i5 3470 @ 3.2GHz (4 CPUs) / AMD X8 FX-8350 @ 4GHz (8 CPUs)             |
-| Memory          | 4GB                                                                                         | 8GB                                                                              |
+| Processor       | Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz | Intel Core i5 3470 @ 3.2GHz (4 CPUs) / AMD X8 FX-8350 @ 4GHz (8 CPUs)  |
+| Memory          | 4GB                                                                                          | 8GB                                                                              |
 | Video Card      | NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)                                       | NVIDIA GTX 660 2GB / AMD HD7870 2GB                                              |
-| Sound Card      | 100% DirectX 10 compatible                                                                  | 100% DirectX 10 compatible                                                       |
-| HDD Space       | 120 GB                                                                                      | 120 GB                                                                           |
+| Sound Card      | 100% DirectX 10 compatible                                                                   | 100% DirectX 10 compatible                                                       |
+| HDD Space       | 120 GB + additional FiveM cache                                                              | 120 GB + additional FiveM cache                                                  |
 
 ### Other requirements
 
