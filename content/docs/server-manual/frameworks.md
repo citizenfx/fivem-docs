@@ -20,6 +20,7 @@ If there's a framework you believe should be included in this list, please submi
 - [QBCore](https://github.com/qbcore-framework/qb-core) ([Docs](https://docs.qbcore.org/qbcore-documentation/))
 - [Qbox](https://github.com/Qbox-project/qbx_core) ([Docs](https://docs.qbox.re/installation))
 - [vRP](https://github.com/vRP-framework/vRP) ([Docs](https://vrp-framework.github.io/vRP/))
+- [VORP](https://github.com/VORPCORE/vorp-core-lua) ([Docs](https://vorpcore.github.io/VORP_Documentation)) (RedM)
 
 ## Need Help?
 If you require assistance with any of these frameworks, refer to their respective documentation. Please note that we are not affiliated with any specific framework and do not provide support.
