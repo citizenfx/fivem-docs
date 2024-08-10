@@ -23,14 +23,26 @@ Examples
 
 -- CLIENT
 
-Don't forget to [RegisterNetEvent][]!
+Lua's traditional way to register a net event and add an event handler:
 ```lua
-AddEventHandler('eventName', function(text)
-  print(('I just received %s from the server'):format(text)) -- I just received Hello world! from the server
+RegisterNetEvent("eventName")
+-- The event handler function follows after registering the event first.
+AddEventHandler("eventName", function(eventParam1, eventParam2)
+    -- Code here will be executed once the event is triggered.
 end)
 ```
+
+Lua's simplified way:
+```lua
+RegisterNetEvent("eventName", function(eventParam1, eventParam2)
+    -- Code here will be executed once the event is triggered.
+end)
+```
+
 -- SERVER
 ```lua
 TriggerClientEvent('eventName', playerId, 'Hello world!')
 ```
+
+[AddEventHandler]: /docs/scripting-reference/runtimes/lua/functions/AddEventHandler/
 [RegisterNetEvent]: /docs/scripting-reference/runtimes/lua/functions/RegisterNetEvent/
