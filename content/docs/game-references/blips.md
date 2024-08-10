@@ -6,7 +6,7 @@ weight: 720
 Blips
 -----
 
-A list of all game blips as of build 3095 is shown below.
+A list of all game blips as of build 3258 are shown below.
 
 <!-- check down for more recent HTML -->
 <!-- _loc1_ = []; -->
@@ -962,6 +962,22 @@ A list of all game blips as of build 3095 is shown below.
 <div class="blip"><div><div><img src="/blips/radar_weapon_snowball.png" alt="radar_weapon_snowball"></div></div><span><strong>881</strong><br>radar_weapon_snowball</span></div>
 <div class="blip"><div><div><img src="/blips/radar_train_signals_green.png" alt="radar_train_signals_green"></div></div><span><strong>882</strong><br>radar_train_signals_green</span></div>
 <div class="blip"><div><div><img src="/blips/radar_train_signals_red.png" alt="radar_train_signals_red"></div></div><span><strong>883</strong><br>radar_train_signals_red</span></div>
+<div class="blip"><div><div><img src="/blips/radar_office_transporter.png" alt="radar_office_transporter"></div></div><span><strong>884</strong><br>radar_office_transporter</span></div>
+<div class="blip"><div><div><img src="/blips/radar_yankton_survival.png" alt="radar_yankton_survival"></div></div><span><strong>885</strong><br>radar_yankton_survival</span></div>
+<div class="blip"><div><div><img src="/blips/radar_daily_bounty.png" alt="radar_daily_bounty"></div></div><span><strong>886</strong><br>radar_daily_bounty</span></div>
+<div class="blip"><div><div><img src="/blips/radar_bounty_target.png" alt="radar_bounty_target"></div></div><span><strong>887</strong><br>radar_bounty_target</span></div>
+<div class="blip"><div><div><img src="/blips/radar_filming_schedule.png" alt="radar_filming_schedule"></div></div><span><strong>888</strong><br>radar_filming_schedule</span></div>
+<div class="blip"><div><div><img src="/blips/radar_pizza_this.png" alt="radar_pizza_this"></div></div><span><strong>889</strong><br>radar_pizza_this</span></div>
+<div class="blip"><div><div><img src="/blips/radar_aircraft_carrier.png" alt="radar_aircraft_carrier"></div></div><span><strong>890</strong><br>radar_aircraft_carrier</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_emp.png" alt="radar_weapon_emp"></div></div><span><strong>891</strong><br>radar_weapon_emp</span></div>
+<div class="blip"><div><div><img src="/blips/radar_maude_eccles.png" alt="radar_maude_eccles"></div></div><span><strong>892</strong><br>radar_maude_eccles</span></div>
+<div class="blip"><div><div><img src="/blips/radar_bail_bonds_office.png" alt="radar_bail_bonds_office"></div></div><span><strong>893</strong><br>radar_bail_bonds_office</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_emp_mine.png" alt="radar_weapon_emp_mine"></div></div><span><strong>894</strong><br>radar_weapon_emp_mine</span></div>
+<div class="blip"><div><div><img src="/blips/radar_zombie_disease.png" alt="radar_zombie_disease"></div></div><span><strong>895</strong><br>radar_zombie_disease</span></div>
+<div class="blip"><div><div><img src="/blips/radar_zombie_proximity.png" alt="radar_zombie_proximity"></div></div><span><strong>896</strong><br>radar_zombie_proximity</span></div>
+<div class="blip"><div><div><img src="/blips/radar_zombie_fire.png" alt="radar_zombie_fire"></div></div><span><strong>897</strong><br>radar_zombie_fire</span></div>
+<div class="blip"><div><div><img src="/blips/radar_animal_possessed.png" alt="radar_animal_possessed"></div></div><span><strong>898</strong><br>radar_animal_possessed</span></div>
+<div class="blip"><div><div><img src="/blips/radar_mobile_phone.png" alt="radar_mobile_phone"></div></div><span><strong>899</strong><br>radar_mobile_phone</span></div>
 </div>
 
 ---
