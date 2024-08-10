@@ -83,8 +83,7 @@ If a player is running at 180 fps they will have a tick happen once every 5.5ms.
 
 ## Best Practices
 
-1. **Avoid short waits**: Be cautious about using short waits in threads such as `0ms` for things that can take a higher time.
-
+1. **Avoid short waits**: use different coroutines to cache values that don't need to be called every frame, and don't call expensive native calls per-frame, like [START_EXPENSIVE_SYNCHRONOUS_SHAPE_TEST_LOS_PROBE](https://docs.fivem.net/natives/?_0x377906D8A31E5586) if it can be avoided, if something needs to be run per-frame run it with `Wait(0)`.
 2. **Combine with Conditional Logic**: You can combine `Citizen.Wait` with conditional logic to create more sophisticated behaviors. Please refer to the sleep method example.
 
 ## Conclusion
