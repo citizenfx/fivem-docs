@@ -354,6 +354,12 @@ A boolean console variable introduced in server version 6831, that is disabled (
 
 Enabling it (by setting it to `true`), will allow users to route `REQUEST_PHONE_EXPLOSION_EVENT` through the server. The main drawback behind enabling this, is that it can also be used by malicious actors.
 
+### `sv_enableNetworkedScriptEntityStates [true|false]`
+
+A boolean console variable introduced in server version 8540 that can be used to prevent users from routing `SCRIPT_ENTITY_STATE_CHANGE_EVENT` through the server, which is commonly used by malicious actors.
+
+This is set to true by default (allow routing)
+
 ### `load_server_icon [fileName.png]`
 
 A console command which loads a specfied icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
