@@ -26,7 +26,7 @@ weight: 760
 
     .vehicles {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-template-columns: repeat(4, 180px);
         gap: 20px;
         padding: 20px;
         justify-content: center;
