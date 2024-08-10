@@ -32,7 +32,7 @@ AddEventHandler("eventName", function(eventParam1, eventParam2)
 end)
 ```
 
-Lua's new simplified way:
+Lua's simplified way:
 ```lua
 RegisterNetEvent("eventName", function(eventParam1, eventParam2)
     -- Code here will be executed once the event is triggered.
