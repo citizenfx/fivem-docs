@@ -16,7 +16,7 @@ Examples
 
 ##### JavaScript Example:
 ```js
-on('onClientMapStart', name => {
+on('onClientGameTypeStart', (name) => {
    console.log('Map started: ', name);
 });
 ```
