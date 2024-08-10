@@ -29,5 +29,3 @@ Thank you for your support and contributions!
 [discord]: https://discord.gg/fivem
 [docs-rep]: https://github.com/citizenfx/fivem-docs
 [patreon]: https://patreon.com/fivem
-
----
