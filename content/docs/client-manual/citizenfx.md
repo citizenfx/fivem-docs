@@ -3,8 +3,6 @@ title: CitizenFX.ini
 toc_hide: true
 ---
 
-***Please note that this file shouldn't be modified if you don't know what you are doing. For any issue join our [discord](discord.gg/fivem).***
-
 ## How to find this file
 
 - Press Win+R, enter `%localappdata%\FiveM\FiveM.app\CitizenFX.ini` into the Open field, and click OK.
@@ -28,11 +26,12 @@ You can also add the following in this file:
 ### Game build
 
 ```
-SavedBuildNumber=3095
+SavedBuildNumber=1604
 ```
 
-Where `3095` will represent the build number you wish. You can find the list [here](docs/server-manual/server-commands/#sv_enforcegamebuild-build). 
-This will launch FiveM app directly to the build asked. This is good if you play on a specific server to avoid the "build transition".
+You can find the list of game builds [here](docs/server-manual/server-commands/#sv_enforcegamebuild-build).
+
+This will launch FiveM directly into the specified build so you don't have to transition when connecting to servers on the specified build.
 
 ### Update channel
 
@@ -40,11 +39,11 @@ This will launch FiveM app directly to the build asked. This is good if you play
 UpdateChannel=production
 ```
 
-You can replace `production` by:
+UpdateChannel can have the following values:
 
-- **production** this is the stable channel for FiveM (this does not contain latest updates)
-- **beta** this is the version between latest updates on canary and production which will have some of the latest features after they've been tested on canary.
-- **canary** that represent the latest version of FiveM wich can be unstable. This is not recommanded unless you know what you are doing.
+- **production**: this is the stable channel for FiveM.
+- **beta**: this is the version between latest updates on canary and production which will have some of the latest features after they've been tested on canary. This version isn't guaranteed to be stable you should only use it if you're a developer or want to test new features.
+- **canary**: this channel will have the latest build of FiveM. This channel is unstable, **do not use this build unless you're fine with issues, crashes, etc.**.
 
 **Note:** `canary` and `beta` are versions that isn't guaranteed to be stable and you should only use it if you're a developer or want to test new features.
 
@@ -54,16 +53,20 @@ You can replace `production` by:
 DisableNVSP=0
 ```
 
-This will let you enable the Geforce Experience Overlay.
+**NOTE**: Enabling GeForce Experience Overlay has been known to cause crashing issues, which is why it is disabled.
+
+This will tell FiveM to not block the GeForce Experience Overlay.
 
 ### Enabling dumps
 
 ```
-EnableFullMemoryDump=1
+EnableFullMemoryDump=0
 ```
 
 Setting this to `EnableFullMemoryDump=1` will enable Full Memory dumps which is useful for diagnosing game crashes.
+
 These dumps are typically very large (anywhere from 1-10gb), if you have these enabled make sure to clean then out from time to time.
+
 You can read more about this [here](https://forum.cfx.re/t/enabling-and-uploading-full-client-dumps/1138940).
 
 ### Windows version not supported
@@ -81,8 +84,10 @@ You can see more [here](https://github.com/citizenfx/fivem/blob/1b01a54ea0803c8e
 ### Disable crash dump upload
 
 ```
-DisableCrashUpload=1
+DisableCrashUpload=0
 ```
 
 Setting this to `DisableCrashUpload=1` will disable the game from automatically uploading the crash dumps to the Cfx Sentry.
 You can see more [here](https://github.com/citizenfx/fivem/blob/1b01a54ea0803c8e06ef7e15bb1ae3a3d64de085/code/client/launcher/MiniDump.cpp#L1646).
+
+***Please note that this file shouldn't be modified if you don't know what you are doing. For any issue join our [discord](discord.gg/fivem).***
