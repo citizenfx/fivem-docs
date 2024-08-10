@@ -29,7 +29,6 @@ weight: 760
         grid-template-columns: repeat(4, 180px);
         gap: 20px;
         padding: 20px;
-        justify-content: center;
         align-items: start;
         margin: auto;
     }
