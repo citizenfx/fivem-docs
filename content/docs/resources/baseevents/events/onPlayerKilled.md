@@ -30,7 +30,12 @@ player killerID, array deathData
 Examples
 --------
 
-TODO
-
+##### JavaScript Example:
+```js
+on('baseevents:onPlayerKilled', (killerID, deathData) => {
+   const [x, y, z] = deathData.killerpos;
+   console.log('died in:', { x, y, z });
+});
+```
 
 <!-- TriggerEvent('baseevents:onPlayerKilled', killerid, {killertype=killertype, weaponhash = killerweapon, killerinveh=killerinvehicle, killervehseat=killervehicleseat, killervehname=killervehiclename, killerpos=table.unpack(GetEntityCoords(ped))}) -->
