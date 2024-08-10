@@ -19,15 +19,11 @@ falsely banned from a server, contact the server owners. FiveM can not and will 
 
 I've been globally banned from FiveM
 ------------------------------------
-Please see [the following article](/docs/support/ban-faq).
+Please refer to the following support [article][support-ban-faq].
 
 Could not find game executable
 ------------------------------
-<!-- https://media.discordapp.net/attachments/455024366091108352/479263072276578324/unknown.png -->
-<!--<img src="/static/could-not-find-game-exec-error.png">-->
-Locate the `CitizenFX.ini` file within your [FiveM Application Data][where-is-fivem-installed] and make sure it is
-pointing to the correct path. Open the file with a text editor like Notepad and edit the path to your GTA V installation
-if necessary.
+Please refer to the following support [article][support-could-not-find-game-exe].
 
 FiveM is already installed
 --------------------------
@@ -37,13 +33,9 @@ start menu. Press the Start button on your taskbar and look for FiveM there.
 
 If you uninstalled FiveM by deleting the shortcut, you might have to [uninstall][uninstalling] FiveM properly.
 
-Game cache outdated
+Game storage outdated
 -------------------
-<!-- https://media.discordapp.net/attachments/455024366091108352/479268603510652946/unknown.png -->
-<!-- https://vgy.me/JJJzfI.png -->
-Press `Yes` if the dialog asks `Do you wish to continue?`. If you get an error like `DLC files are missing`, make sure
-your game is up to date by following the instructions in the dialog. Also, make sure your `CitizenFX.ini` points to
-the correct GTA V installation. You can find that file within your [FiveM application data][where-is-fivem-installed].
+Please refer to the following support [article][support-game-storage-outdated].
 
 Error generating ROS entitlement token
 --------------------------------------
@@ -61,7 +53,7 @@ Your Windows 10 installation is outdated. Please update it to at least version 1
 
 Opening database (privcache:/) failed: IO error: could not lock file
 ------------------------------
-Your privcache got corrupted. Please remove the "priv" folder from the cache folder located in your [FiveM application data][where-is-fivem-installed].
+Please refer to the following support [article][support-privcache-failed].
 
 Entry Point Not Found
 ------------------------------
@@ -71,7 +63,7 @@ Moving of xyz.exe failed (err = 32)
 ------------------------------
 First check your task manager for existing FiveM related processes; if you see them, close them. If that doesn't fix the issue, you may want to submit a [support ticket][antivirus-ticket] regarding your antivirus.
 
-Stuck on 'We're getting there and it will be worth the wait'
+Stuck on 'Starting FiveM, we're getting there'
 ------------------------------------------------------------
 <!-- https://prnt.sc/kj02oo -->
 If this occurs, it is often caused by aggressive antivirus settings. You may want to submit a [support ticket][antivirus-ticket] regarding your antivirus.
@@ -91,34 +83,14 @@ This happens on specific older AMD laptop GPUs. Unfortunately, this is caused by
 
 FiveM uninstalls itself after running it!
 -----------------------------------------
-This is most likely your antivirus software removing FiveM. Unfortunately some antivirus vendors falsely flag FiveM,
-and remove some (or even all) FiveM files as a precaution. You can safely ignore any warnings about this.  
-If this becomes an issue, you may want to submit a support ticket regarding your antivirus [here][antivirus-ticket].
+Please refer to the following support [article][support-fivem-uninstalls-itself].
 
 My game is dropping frames and I have decent hardware
 ----------------------------
 If you believe your game is dropping frames for whatever reason, you may want to take what's called
 a 'trace'. A trace can be used to capture game function calls and allows developers to see where an application is taking longer than expected to execute, causing performance drops.
 
-ETW can be downloaded from here:
-https://github.com/google/UIforETW/releases
-
-Download the `etwpackage` zip file from the `Assets` section and extract it, optionally, you can click [here](https://github.com/google/UIforETW/releases/download/v1.56/etwpackage1.56.zip) to download it. Make sure you are downloading the zip file that contains the binaries and not the source code.
-
-After extracting the zip file:
-- Navigate to the etwpackage folder
-- Navigate to the bin folder
-- Execute `UIforETW.exe` by double clicking it.
-
-You will see a couple options there (to the right, in the checkbox section), leave them as is and follow the next steps: 
-- Wait for the game/application to drop frames. 
-- Once your game begins to drop frames click on ‘Start Tracing’. 
-- Let it run for a minute.
-- Click on `Save Trace Buffers` after that. Remember to upload the trace afterwards.
-
-Traces will most likely end up saved under `C:\Users\xxxx\Documents\etwtraces`. In UI For ETW's window there's a list of saved traces, you can click on. Click on the trace with the most recent date and proceed by clicking on 'Browse Folder' afterwards.
-
-You can use services such as Google drive to upload your trace.
+Please refer to the following support [article][support-create-etw-trace] to create a trace.
 
 I have an NVIDIA GPU and FiveM hanged
 -----------------------------------------
@@ -136,15 +108,22 @@ Additionally, you may still enjoy FiveM by rolling back to older drivers such as
 
 Help! I can't find my issue here!
 ---------------------------------
-We are more than happy to help you out! If you're running into crashes or freezes, please post your issue
-on our [forums][forum]. Provide as much detail as you can, that will make it easier for everyone to help you.
-For all other issues, you are more than welcome to join our [Discord][discord] and have a chat with us.
+We're here to help! First, check the Cfx.re support [section][support-game-articles] for your issue. If you're experiencing crashes or freezes, please post your details on our [forums][forum-tech-support] to help us assist you better.
+For all other inquiries, feel free to join our [Discord][discord] for a chat!
 
 [where-is-fivem-installed]: /docs/support/client-faq#where-is-fivem-installed
 [antivirus-ticket]: https://support.cfx.re/hc/en-us/requests/new
 [email]: mailto:support@fivem.net
 [forum]: https://forum.cfx.re
+[forum-tech-support]: https://forum.cfx.re/c/technical-support
 [discord]: https://discord.gg/fivem
 [testing-server]: https://cfx.re/join/7b6bor
 [uninstalling]: /docs/client-manual/installing-fivem#uninstalling
 [discrete-gpu]: https://forum.cfx.re/t/217731
+[support-create-etw-trace]: https://support.cfx.re/hc/en-us/articles/8366604193436-Creating-an-ETW-trace
+[support-ban-faq]: https://support.cfx.re/hc/en-us/articles/8444465475356-Bans-FAQ
+[support-game-articles]: https://support.cfx.re/hc/en-us/sections/8856819954332-Games
+[support-fivem-uninstalls-itself]: https://support.cfx.re/hc/en-us/articles/8039696924700-FiveM-error-FiveM-uninstalls-itself-after-running-it
+[support-privcache-failed]: https://support.cfx.re/hc/en-us/articles/8039663675036-FiveM-error-Opening-database-privcache-failed-IO-error-could-not-lock-file
+[support-game-storage-outdated]: https://support.cfx.re/hc/en-us/articles/8016876906140-FiveM-error-Game-storage-outdated
+[support-could-not-find-game-exe]: https://support.cfx.re/hc/en-us/articles/8016804120604-FiveM-error-Could-not-find-game-executable
