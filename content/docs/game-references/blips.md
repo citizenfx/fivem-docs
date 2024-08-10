@@ -121,7 +121,7 @@ A list of all game blips as of build 2545 is shown below.
 <div class="blip"><div><div><img src="/blips/radar_safehouse.png" alt="radar_safehouse"></div></div><span><strong>40</strong><br>radar_safehouse</span></div>
 <div class="blip"><div><div><img src="/blips/radar_police.gif" alt="radar_police"></div></div><span><strong>41</strong><br>radar_police</span></div>
 <div class="blip"><div><div><img src="/blips/radar_police_chase.gif" alt="radar_police_chase"></div></div><span><strong>42</strong><br>radar_police_chase</span></div>
-<div class="blip"><div><div><img src="/blips/radar_police_heli.gif" alt="radar_police_heli"></div></div><span><strong>43</strong><br>radar_police_heli</span></div>
+<div class="blip"><div><div><img src="/blips/radar_police_heli.png" alt="radar_police_heli"></div></div><span><strong>43</strong><br>radar_police_heli</span></div>
 <div class="blip"><div><div><img src="/blips/radar_bomb_a.png" alt="radar_bomb_a"></div></div><span><strong>44</strong><br>radar_bomb_a</span></div>
 <!--<div class="blip"><div><div><img src="/blips/radar_bomb_b.png" alt="radar_bomb_b"></div></div><span><strong>45</strong><br>radar_bomb_b</span></div>
 <div class="blip"><div><div><img src="/blips/radar_bomb_c.png" alt="radar_bomb_c"></div></div><span><strong>46</strong><br>radar_bomb_c</span></div>-->
