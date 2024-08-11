@@ -25,12 +25,10 @@ License Types
 | `live`     | Microsoft PUID           | Passport Unique Identifier                                                | int       |
 | `license`  | Rockstar Online Services | Hash                                                                      | hex       |
 | `license2` | Rockstar Online Services | Hash                                                                      | hex       |
-| `fivem`    | CFX.re                   | User Id                                                                   | int       |
+| `fivem`    | Cfx.re                   | User Id                                                                   | int       |
 | `ip`       | IP Address               | IPv4                                                                      | string    |
 
-\* `licence2` - This identifier is present if the user has switched Social Club accounts
-
-** `license2` - This can be the same value as `license`
+* `license2` - This identifier is the ROS license for people who use steam, this identifier can be the same value as `license`
 
 
 Examples
