@@ -72,7 +72,7 @@ You can read more about this [here](https://forum.cfx.re/t/enabling-and-uploadin
 ### Windows version not supported
 
 ```
-DisableOSVersionCheck=1
+DisableOSVersionCheck=0
 ```
 
 By default FiveM checks if you're using using an outdated version of Windows 10 as older versions don't have certain [ABIs](https://en.wikipedia.org/wiki/Application_binary_interface) that FiveM uses.
