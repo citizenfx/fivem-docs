@@ -15,9 +15,11 @@ weight: 770
    .weapon-info span { margin: 2px 0; }
    .weapon-info span:last-child { margin-bottom: 0; }
    .components, .tints { margin-top: 10px; }
+   .no-image { text-align: center; padding: 20px; background: #f0f0f0; color: #666; font-style: italic; border: 1px solid #ccc; border-radius: 8px; }
+   .no-image img { display: none; }
 </style>
 
-## Shotgun group
+<h2>Shotgun group</h2>
 <div class="category" id="shotgun">
    <div class="weapons">
       <div class="weapon">
@@ -375,8 +377,7 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Sniper group
+<h2>Sniper group</h2>
 <div class="category" id="sniper">
    <div class="weapons">
       <div class="weapon">
@@ -721,12 +722,11 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Fire extinguisher group
+<h2>Fire extinguisher group</h2>
 <div class="category" id="fire-extinguisher">
    <div class="weapons">
       <div class="weapon">
-         <img src="/weapons/WEAPON_FIREEXTINGUISHER.png" alt="Fire Extinguisher">
+         <div class="no-image">This model has no image</div>
          <div class="weapon-info">
             <span><strong>Name:</strong> Fire Extinguisher</span>
             <span><strong>Hash:</strong> WEAPON_FIREEXTINGUISHER</span>
@@ -751,8 +751,7 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Heavy group
+<h2>Heavy group</h2>
 <div class="category" id="heavy">
    <div class="weapons">
       <div class="weapon">
@@ -1112,8 +1111,7 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Thrown group
+<h2>Thrown group</h2>
 <div class="category" id="thrown">
    <div class="weapons">
       <div class="weapon">
@@ -1234,8 +1232,7 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Pistol group
+<h2>Pistol group</h2>
 <div class="category" id="pistol">
    <div class="weapons">
       <div class="weapon">
@@ -2011,8 +2008,7 @@ weight: 770
       </div>
    </div>
 </div>
-
-## SMG group
+<h2>SMG group</h2>
 <div class="category" id="smg">
    <div class="weapons">
       <div class="weapon">
@@ -2322,8 +2318,7 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Petrol can group
+<h2>Petrol can group</h2>
 <div class="category" id="petrol-can">
    <div class="weapons">
       <div class="weapon">
@@ -2401,8 +2396,7 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Melee group
+<h2>Melee group</h2>
 <div class="category" id="melee">
    <div class="weapons">
       <div class="weapon">
@@ -2642,8 +2636,7 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Stun gun group
+<h2>Stun gun group</h2>
 <div class="category" id="stun-gun">
    <div class="weapons">
       <div class="weapon">
@@ -2698,8 +2691,7 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Rifle group
+<h2>Rifle group</h2>
 <div class="category" id="rifle">
    <div class="weapons">
       <div class="weapon">
@@ -3391,8 +3383,7 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Machine gun group
+<h2>Machine gun group</h2>
 <div class="category" id="machine-gun">
    <div class="weapons">
       <div class="weapon">
@@ -3610,8 +3601,7 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Unarmed group
+<h2>Unarmed group</h2>
 <div class="category" id="unarmed">
    <div class="weapons">
       <div class="weapon">
@@ -3653,12 +3643,11 @@ weight: 770
       </div>
    </div>
 </div>
-
-## Metal detector group
+<h2>Metal detector group</h2>
 <div class="category" id="metal-detector">
    <div class="weapons">
       <div class="weapon">
-         <img src="/weapons/WEAPON_METALDETECTOR.png" alt="Metal Detector">
+         <div class="no-image">This model has no image</div>
          <div class="weapon-info">
             <span><strong>Name:</strong> Metal Detector</span>
             <span><strong>Hash:</strong> WEAPON_METALDETECTOR</span>
