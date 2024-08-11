@@ -69,7 +69,7 @@ Using more than 48 slots requires __at least__ `Cfx.re Element Club Argentum ðŸ’
 
 To use more than 48 slots follow these steps.
 
-1. Use a license key with Premium access
+1. Use a license key with OneSync access
 2. Use the latest [server artifact][setting-up-server]
 3. Activate OneSync - add `set onesync on` to your server.cfg
 4. Set `sv_maxclients` in your server.cfg to a value higher than 48 (Depending on the Patreon perk you have)
