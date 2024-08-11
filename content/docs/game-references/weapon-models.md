@@ -11,14 +11,401 @@ weight: 770
    .weapons { display: flex; flex-wrap: wrap; gap: 20px; padding: 20px; }
    .weapon { background: #FFF; color: #000; border: 1px solid #CCC; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); transition: box-shadow 0.3s ease-in-out; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; justify-content: space-between; height: 100%; width: 220px; }
    .weapon img { width: 100%; height: 100px; object-fit: scale-down; display: block; padding: 10px; border-radius: 8px; }
-   .weapon-info { padding: 5px 10px; font-size: 0.8em; background: #F7F7F7; border-top: 1px solid #DDD; color: #333; text-align: left; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; flex-grow: 1; }
+   .weapon-info { padding: 5px 10px; font-size: 0.8em; background: #F7F7F7; border-top: 1px solid #DDD; color: #333; text-align: left; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; flex-grow: 1; width: 220px; }
    .weapon-info span { margin: 2px 0; }
    .weapon-info span:last-child { margin-bottom: 0; }
    .components, .tints { margin-top: 10px; }
    .no-image { text-align: center; padding: 20px; background: #f0f0f0; color: #666; font-style: italic; border: 1px solid #ccc; border-radius: 8px; }
    .no-image img { display: none; }
+   details { cursor: pointer; font-weight: bold; background: #F7F7F7; border-top: 1px solid #DDD; margin-top: 10px; padding: 5px; width: 200px; overflow-x: auto; }
+   summary { margin: 0; padding: 5px; }
 </style>
-
+<h2>Heavy group</h2>
+<div class="category" id="heavy">
+   <div class="weapons">
+      <div class="weapon">
+         <div class="no-image">This model has no image</div>
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Snowball Launcher</span>
+            <span><strong>Hash:</strong> WEAPON_SNOWLAUNCHER</span>
+            <span><strong>Model Hash Key:</strong> W_LR_CompactSL_M32</span>
+            <span><strong>Description:</strong> There's no greater gift than pummeling someone with rounds of festive cheer. With automatic reload, there's no time for anyone to disagree. Part of The Chop Shop.</span>
+            <div class="components"></div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <img src="/weapons/WEAPON_COMPACTLAUNCHER.png" alt="Compact Grenade Launcher">
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Compact Grenade Launcher</span>
+            <span><strong>Hash:</strong> WEAPON_COMPACTLAUNCHER</span>
+            <span><strong>Model Hash Key:</strong> w_lr_compactgl</span>
+            <span><strong>Description:</strong> Focus groups using the regular model suggested it was too accurate and found it awkward to use with one hand on the throttle. Easy fix. Part of Bikers.</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='Default Clip'>COMPONENT_COMPACTLAUNCHER_CLIP_01</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <img src="/weapons/WEAPON_MINIGUN.png" alt="Minigun">
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Minigun</span>
+            <span><strong>Hash:</strong> WEAPON_MINIGUN</span>
+            <span><strong>Model Hash Key:</strong> w_mg_minigun</span>
+            <span><strong>Description:</strong> A devastating 6-barrel machine gun that features Gatling-style rotating barrels. Very high rate of fire (2000 to 6000 rounds per minute).</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='N/A'>COMPONENT_MINIGUN_CLIP_01</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <img src="/weapons/WEAPON_GRENADELAUNCHER_SMOKE.png" alt="Tear Gas Launcher">
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Tear Gas Launcher</span>
+            <span><strong>Hash:</strong> WEAPON_GRENADELAUNCHER_SMOKE</span>
+            <span><strong>Model Hash Key:</strong> w_lr_grenadelauncher</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_SMALL</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <img src="/weapons/WEAPON_HOMINGLAUNCHER.png" alt="Homing Launcher">
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Homing Launcher</span>
+            <span><strong>Hash:</strong> WEAPON_HOMINGLAUNCHER</span>
+            <span><strong>Model Hash Key:</strong> w_lr_homing</span>
+            <span><strong>Description:</strong> Infrared guided fire-and-forget missile launcher. For all your moving target needs. Part of the Festive Surprise.</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='N/A'>COMPONENT_HOMINGLAUNCHER_CLIP_01</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <img src="/weapons/WEAPON_RAILGUN.png" alt="Railgun">
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Railgun</span>
+            <span><strong>Hash:</strong> WEAPON_RAILGUN</span>
+            <span><strong>Model Hash Key:</strong> w_ar_railgun</span>
+            <span><strong>Description:</strong> All you need to know is - magnets, and it does horrible things to the things it's pointed at. Exclusive content for returning players.</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='Default Clip'>COMPONENT_RAILGUN_CLIP_01</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <img src="/weapons/WEAPON_FIREWORK.png" alt="Firework Launcher">
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Firework Launcher</span>
+            <span><strong>Hash:</strong> WEAPON_FIREWORK</span>
+            <span><strong>Model Hash Key:</strong> w_lr_firework</span>
+            <span><strong>Description:</strong> Put the flair back in flare with this firework launcher, guaranteed to raise some oohs and aahs from the crowd. Part of the Independence Day Special.</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='Default Clip'>COMPONENT_FIREWORK_CLIP_01</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Default tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <img src="/weapons/WEAPON_GRENADELAUNCHER.png" alt="Grenade Launcher">
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Grenade Launcher</span>
+            <span><strong>Hash:</strong> WEAPON_GRENADELAUNCHER</span>
+            <span><strong>Model Hash Key:</strong> w_lr_grenadelauncher</span>
+            <span><strong>Description:</strong> A compact, lightweight grenade launcher with semi-automatic functionality. Holds up to 10 rounds.</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='N/A'>COMPONENT_GRENADELAUNCHER_CLIP_01</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_SMALL</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <img src="/weapons/WEAPON_RPG.png" alt="RPG">
+         <div class="weapon-info">
+            <span><strong>Name:</strong> RPG</span>
+            <span><strong>Hash:</strong> WEAPON_RPG</span>
+            <span><strong>Model Hash Key:</strong> w_lr_rpg</span>
+            <span><strong>Description:</strong> A portable, shoulder-launched, anti-tank weapon that fires explosive warheads. Very effective for taking down vehicles or large groups of assailants.</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='N/A'>COMPONENT_RPG_CLIP_01</li>
+                     <li title='Uncle T Finish'>COMPONENT_RPG_VARMOD_TVR</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <img src="/weapons/WEAPON_RAYMINIGUN.png" alt="Widowmaker">
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Widowmaker</span>
+            <span><strong>Hash:</strong> WEAPON_RAYMINIGUN</span>
+            <span><strong>Model Hash Key:</strong> w_mg_sminigun</span>
+            <span><strong>Description:</strong> Republican Space Ranger Special. GO AHEAD, SAY I'M COMPENSATING FOR SOMETHING. I DARE YOU.</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='N/A'>COMPONENT_MINIGUN_CLIP_01</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Space Ranger tint</li>
+                     <li>Purple tint</li>
+                     <li>Green tint</li>
+                     <li>Orange tint</li>
+                     <li>Pink tint</li>
+                     <li>Gold tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <img src="/weapons/WEAPON_EMPLAUNCHER.png" alt="Compact EMP Launcher">
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Compact EMP Launcher</span>
+            <span><strong>Hash:</strong> WEAPON_EMPLAUNCHER</span>
+            <span><strong>Model Hash Key:</strong> w_lr_compactml</span>
+            <span><strong>Description:</strong> Ever seen a confetti cannon? The Compact EMP Launcher is just like that, but instead of paper and happiness, it's an electromagnetic pulse, short circuits and shattered dreams.</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='Default Clip'>COMPONENT_EMPLAUNCHER_CLIP_01</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <img src="/weapons/WEAPON_RAILGUNXM3.png" alt="Railgun">
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Railgun</span>
+            <span><strong>Hash:</strong> WEAPON_RAILGUNXM3</span>
+            <span><strong>Model Hash Key:</strong> W_AR_RailGun_XM3</span>
+            <span><strong>Description:</strong> All you need to know is — magnets, and it does horrible things to the things it's pointed at.</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='Default Clip'>COMPONENT_RAILGUNXM3_CLIP_01</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
 <h2>Shotgun group</h2>
 <div class="category" id="shotgun">
    <div class="weapons">
@@ -33,9 +420,9 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP)</li>
-                     <li>Default Shells (COMPONENT_COMBATSHOTGUN_CLIP_01)</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Default Shells'>COMPONENT_COMBATSHOTGUN_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -67,7 +454,7 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_AUTOSHOTGUN_CLIP_01)</li>
+                     <li title='Default Clip'>COMPONENT_AUTOSHOTGUN_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -99,12 +486,12 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Dildodude Camo (COMPONENT_PUMPSHOTGUN_VARMOD_XM3)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Yusuf Amir Luxury Finish (COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER)</li>
-                     <li> (COMPONENT_PUMPSHOTGUN_CLIP_01)</li>
-                     <li>Suppressor (COMPONENT_AT_SR_SUPP)</li>
-                     <li>Bone Finish (COMPONENT_PUMPSHOTGUN_VARMOD_SECURITY)</li>
+                     <li title='Dildodude Camo'>COMPONENT_PUMPSHOTGUN_VARMOD_XM3</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Yusuf Amir Luxury Finish'>COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER</li>
+                     <li title='N/A'>COMPONENT_PUMPSHOTGUN_CLIP_01</li>
+                     <li title='Suppressor'>COMPONENT_AT_SR_SUPP</li>
+                     <li title='Bone Finish'>COMPONENT_PUMPSHOTGUN_VARMOD_SECURITY</li>
                   </ul>
                </details>
             </div>
@@ -136,12 +523,12 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Default Clip (COMPONENT_HEAVYSHOTGUN_CLIP_01)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Drum Magazine (COMPONENT_HEAVYSHOTGUN_CLIP_03)</li>
-                     <li>Extended Clip (COMPONENT_HEAVYSHOTGUN_CLIP_02)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP_02)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Default Clip'>COMPONENT_HEAVYSHOTGUN_CLIP_01</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Drum Magazine'>COMPONENT_HEAVYSHOTGUN_CLIP_03</li>
+                     <li title='Extended Clip'>COMPONENT_HEAVYSHOTGUN_CLIP_02</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
                   </ul>
                </details>
             </div>
@@ -173,28 +560,28 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Sessanta Nove (COMPONENT_PUMPSHOTGUN_MK2_CAMO_05)</li>
-                     <li>Small Scope (COMPONENT_AT_SCOPE_MACRO_MK2)</li>
-                     <li>Brushstroke Camo (COMPONENT_PUMPSHOTGUN_MK2_CAMO_02)</li>
-                     <li>Woodland Camo (COMPONENT_PUMPSHOTGUN_MK2_CAMO_03)</li>
-                     <li>Explosive Slugs (COMPONENT_PUMPSHOTGUN_MK2_CLIP_EXPLOSIVE)</li>
-                     <li>Medium Scope (COMPONENT_AT_SCOPE_SMALL_MK2)</li>
-                     <li>Holographic Sight (COMPONENT_AT_SIGHTS)</li>
-                     <li>Patriotic (COMPONENT_PUMPSHOTGUN_MK2_CAMO_IND_01)</li>
-                     <li>Steel Buckshot Shells (COMPONENT_PUMPSHOTGUN_MK2_CLIP_ARMORPIERCING)</li>
-                     <li>Squared Muzzle Brake (COMPONENT_AT_MUZZLE_08)</li>
-                     <li>Boom! (COMPONENT_PUMPSHOTGUN_MK2_CAMO_10)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Dragon's Breath Shells (COMPONENT_PUMPSHOTGUN_MK2_CLIP_INCENDIARY)</li>
-                     <li>Suppressor (COMPONENT_AT_SR_SUPP_03)</li>
-                     <li>Default Shells (COMPONENT_PUMPSHOTGUN_MK2_CLIP_01)</li>
-                     <li>Zebra (COMPONENT_PUMPSHOTGUN_MK2_CAMO_08)</li>
-                     <li>Perseus (COMPONENT_PUMPSHOTGUN_MK2_CAMO_06)</li>
-                     <li>Leopard (COMPONENT_PUMPSHOTGUN_MK2_CAMO_07)</li>
-                     <li>Digital Camo (COMPONENT_PUMPSHOTGUN_MK2_CAMO)</li>
-                     <li>Flechette Shells (COMPONENT_PUMPSHOTGUN_MK2_CLIP_HOLLOWPOINT)</li>
-                     <li>Geometric (COMPONENT_PUMPSHOTGUN_MK2_CAMO_09)</li>
-                     <li>Skull (COMPONENT_PUMPSHOTGUN_MK2_CAMO_04)</li>
+                     <li title='Sessanta Nove'>COMPONENT_PUMPSHOTGUN_MK2_CAMO_05</li>
+                     <li title='Small Scope'>COMPONENT_AT_SCOPE_MACRO_MK2</li>
+                     <li title='Brushstroke Camo'>COMPONENT_PUMPSHOTGUN_MK2_CAMO_02</li>
+                     <li title='Woodland Camo'>COMPONENT_PUMPSHOTGUN_MK2_CAMO_03</li>
+                     <li title='Explosive Slugs'>COMPONENT_PUMPSHOTGUN_MK2_CLIP_EXPLOSIVE</li>
+                     <li title='Medium Scope'>COMPONENT_AT_SCOPE_SMALL_MK2</li>
+                     <li title='Holographic Sight'>COMPONENT_AT_SIGHTS</li>
+                     <li title='Patriotic'>COMPONENT_PUMPSHOTGUN_MK2_CAMO_IND_01</li>
+                     <li title='Steel Buckshot Shells'>COMPONENT_PUMPSHOTGUN_MK2_CLIP_ARMORPIERCING</li>
+                     <li title='Squared Muzzle Brake'>COMPONENT_AT_MUZZLE_08</li>
+                     <li title='Boom!'>COMPONENT_PUMPSHOTGUN_MK2_CAMO_10</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Dragon's Breath Shells'>COMPONENT_PUMPSHOTGUN_MK2_CLIP_INCENDIARY</li>
+                     <li title='Suppressor'>COMPONENT_AT_SR_SUPP_03</li>
+                     <li title='Default Shells'>COMPONENT_PUMPSHOTGUN_MK2_CLIP_01</li>
+                     <li title='Zebra'>COMPONENT_PUMPSHOTGUN_MK2_CAMO_08</li>
+                     <li title='Perseus'>COMPONENT_PUMPSHOTGUN_MK2_CAMO_06</li>
+                     <li title='Leopard'>COMPONENT_PUMPSHOTGUN_MK2_CAMO_07</li>
+                     <li title='Digital Camo'>COMPONENT_PUMPSHOTGUN_MK2_CAMO</li>
+                     <li title='Flechette Shells'>COMPONENT_PUMPSHOTGUN_MK2_CLIP_HOLLOWPOINT</li>
+                     <li title='Geometric'>COMPONENT_PUMPSHOTGUN_MK2_CAMO_09</li>
+                     <li title='Skull'>COMPONENT_PUMPSHOTGUN_MK2_CAMO_04</li>
                   </ul>
                </details>
             </div>
@@ -250,8 +637,8 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Gilded Gun Metal Finish (COMPONENT_SAWNOFFSHOTGUN_VARMOD_LUXE)</li>
-                     <li> (COMPONENT_SAWNOFFSHOTGUN_CLIP_01)</li>
+                     <li title='Gilded Gun Metal Finish'>COMPONENT_SAWNOFFSHOTGUN_VARMOD_LUXE</li>
+                     <li title='N/A'>COMPONENT_SAWNOFFSHOTGUN_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -283,10 +670,10 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP_02)</li>
-                     <li> (COMPONENT_BULLPUPSHOTGUN_CLIP_01)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
+                     <li title='N/A'>COMPONENT_BULLPUPSHOTGUN_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -318,11 +705,11 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP)</li>
-                     <li>Extended Clip (COMPONENT_ASSAULTSHOTGUN_CLIP_02)</li>
-                     <li>Default Clip (COMPONENT_ASSAULTSHOTGUN_CLIP_01)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Extended Clip'>COMPONENT_ASSAULTSHOTGUN_CLIP_02</li>
+                     <li title='Default Clip'>COMPONENT_ASSAULTSHOTGUN_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -354,7 +741,7 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li> (COMPONENT_DBSHOTGUN_CLIP_01)</li>
+                     <li title='N/A'>COMPONENT_DBSHOTGUN_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -391,11 +778,11 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Etched Wood Grip Finish (COMPONENT_SNIPERRIFLE_VARMOD_LUXE)</li>
-                     <li>Default Clip (COMPONENT_SNIPERRIFLE_CLIP_01)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP_02)</li>
-                     <li>Advanced Scope (COMPONENT_AT_SCOPE_MAX)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_LARGE)</li>
+                     <li title='Etched Wood Grip Finish'>COMPONENT_SNIPERRIFLE_VARMOD_LUXE</li>
+                     <li title='Default Clip'>COMPONENT_SNIPERRIFLE_CLIP_01</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
+                     <li title='Advanced Scope'>COMPONENT_AT_SCOPE_MAX</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_LARGE</li>
                   </ul>
                </details>
             </div>
@@ -427,32 +814,32 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Incendiary Rounds (COMPONENT_HEAVYSNIPER_MK2_CLIP_INCENDIARY)</li>
-                     <li>Heavy Barrel (COMPONENT_AT_SR_BARREL_02)</li>
-                     <li>Skull (COMPONENT_HEAVYSNIPER_MK2_CAMO_04)</li>
-                     <li>Sessanta Nove (COMPONENT_HEAVYSNIPER_MK2_CAMO_05)</li>
-                     <li>Extended Clip (COMPONENT_HEAVYSNIPER_MK2_CLIP_02)</li>
-                     <li>Thermal Scope (COMPONENT_AT_SCOPE_THERMAL)</li>
-                     <li>Perseus (COMPONENT_HEAVYSNIPER_MK2_CAMO_06)</li>
-                     <li>Full Metal Jacket Rounds (COMPONENT_HEAVYSNIPER_MK2_CLIP_FMJ)</li>
-                     <li>Squared Muzzle Brake (COMPONENT_AT_MUZZLE_08)</li>
-                     <li>Bell-End Muzzle Brake (COMPONENT_AT_MUZZLE_09)</li>
-                     <li>Patriotic (COMPONENT_HEAVYSNIPER_MK2_CAMO_IND_01)</li>
-                     <li>Zoom Scope (COMPONENT_AT_SCOPE_LARGE_MK2)</li>
-                     <li>Explosive Rounds (COMPONENT_HEAVYSNIPER_MK2_CLIP_EXPLOSIVE)</li>
-                     <li>Default Barrel (COMPONENT_AT_SR_BARREL_01)</li>
-                     <li>Boom! (COMPONENT_HEAVYSNIPER_MK2_CAMO_10)</li>
-                     <li>Suppressor (COMPONENT_AT_SR_SUPP_03)</li>
-                     <li>Leopard (COMPONENT_HEAVYSNIPER_MK2_CAMO_07)</li>
-                     <li>Night Vision Scope (COMPONENT_AT_SCOPE_NV)</li>
-                     <li>Advanced Scope (COMPONENT_AT_SCOPE_MAX)</li>
-                     <li>Zebra (COMPONENT_HEAVYSNIPER_MK2_CAMO_08)</li>
-                     <li>Brushstroke Camo (COMPONENT_HEAVYSNIPER_MK2_CAMO_02)</li>
-                     <li>Geometric (COMPONENT_HEAVYSNIPER_MK2_CAMO_09)</li>
-                     <li>Woodland Camo (COMPONENT_HEAVYSNIPER_MK2_CAMO_03)</li>
-                     <li>Digital Camo (COMPONENT_HEAVYSNIPER_MK2_CAMO)</li>
-                     <li>Armor Piercing Rounds (COMPONENT_HEAVYSNIPER_MK2_CLIP_ARMORPIERCING)</li>
-                     <li>Default Clip (COMPONENT_HEAVYSNIPER_MK2_CLIP_01)</li>
+                     <li title='Incendiary Rounds'>COMPONENT_HEAVYSNIPER_MK2_CLIP_INCENDIARY</li>
+                     <li title='Heavy Barrel'>COMPONENT_AT_SR_BARREL_02</li>
+                     <li title='Skull'>COMPONENT_HEAVYSNIPER_MK2_CAMO_04</li>
+                     <li title='Sessanta Nove'>COMPONENT_HEAVYSNIPER_MK2_CAMO_05</li>
+                     <li title='Extended Clip'>COMPONENT_HEAVYSNIPER_MK2_CLIP_02</li>
+                     <li title='Thermal Scope'>COMPONENT_AT_SCOPE_THERMAL</li>
+                     <li title='Perseus'>COMPONENT_HEAVYSNIPER_MK2_CAMO_06</li>
+                     <li title='Full Metal Jacket Rounds'>COMPONENT_HEAVYSNIPER_MK2_CLIP_FMJ</li>
+                     <li title='Squared Muzzle Brake'>COMPONENT_AT_MUZZLE_08</li>
+                     <li title='Bell-End Muzzle Brake'>COMPONENT_AT_MUZZLE_09</li>
+                     <li title='Patriotic'>COMPONENT_HEAVYSNIPER_MK2_CAMO_IND_01</li>
+                     <li title='Zoom Scope'>COMPONENT_AT_SCOPE_LARGE_MK2</li>
+                     <li title='Explosive Rounds'>COMPONENT_HEAVYSNIPER_MK2_CLIP_EXPLOSIVE</li>
+                     <li title='Default Barrel'>COMPONENT_AT_SR_BARREL_01</li>
+                     <li title='Boom!'>COMPONENT_HEAVYSNIPER_MK2_CAMO_10</li>
+                     <li title='Suppressor'>COMPONENT_AT_SR_SUPP_03</li>
+                     <li title='Leopard'>COMPONENT_HEAVYSNIPER_MK2_CAMO_07</li>
+                     <li title='Night Vision Scope'>COMPONENT_AT_SCOPE_NV</li>
+                     <li title='Advanced Scope'>COMPONENT_AT_SCOPE_MAX</li>
+                     <li title='Zebra'>COMPONENT_HEAVYSNIPER_MK2_CAMO_08</li>
+                     <li title='Brushstroke Camo'>COMPONENT_HEAVYSNIPER_MK2_CAMO_02</li>
+                     <li title='Geometric'>COMPONENT_HEAVYSNIPER_MK2_CAMO_09</li>
+                     <li title='Woodland Camo'>COMPONENT_HEAVYSNIPER_MK2_CAMO_03</li>
+                     <li title='Digital Camo'>COMPONENT_HEAVYSNIPER_MK2_CAMO</li>
+                     <li title='Armor Piercing Rounds'>COMPONENT_HEAVYSNIPER_MK2_CLIP_ARMORPIERCING</li>
+                     <li title='Default Clip'>COMPONENT_HEAVYSNIPER_MK2_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -508,9 +895,10 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_HEAVYSNIPER_CLIP_01)</li>
-                     <li>Advanced Scope (COMPONENT_AT_SCOPE_MAX)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_LARGE)</li>
+                     <li title='Santa's Helper Finish'>COMPONENT_HEAVYSNIPER_VARMOD_XMAS23</li>
+                     <li title='Default Clip'>COMPONENT_HEAVYSNIPER_CLIP_01</li>
+                     <li title='Advanced Scope'>COMPONENT_AT_SCOPE_MAX</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_LARGE</li>
                   </ul>
                </details>
             </div>
@@ -542,38 +930,38 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Heavy Duty Muzzle Brake (COMPONENT_AT_MUZZLE_05)</li>
-                     <li>Leopard (COMPONENT_MARKSMANRIFLE_MK2_CAMO_07)</li>
-                     <li>Perseus (COMPONENT_MARKSMANRIFLE_MK2_CAMO_06)</li>
-                     <li>Slanted Muzzle Brake (COMPONENT_AT_MUZZLE_06)</li>
-                     <li>Default Barrel (COMPONENT_AT_MRFL_BARREL_01)</li>
-                     <li>Boom! (COMPONENT_MARKSMANRIFLE_MK2_CAMO_10)</li>
-                     <li>Holographic Sight (COMPONENT_AT_SIGHTS)</li>
-                     <li>Split-End Muzzle Brake (COMPONENT_AT_MUZZLE_07)</li>
-                     <li>Zoom Scope (COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM_MK2)</li>
-                     <li>Woodland Camo (COMPONENT_MARKSMANRIFLE_MK2_CAMO_03)</li>
-                     <li>Heavy Barrel (COMPONENT_AT_MRFL_BARREL_02)</li>
-                     <li>Incendiary Rounds (COMPONENT_MARKSMANRIFLE_MK2_CLIP_INCENDIARY)</li>
-                     <li>Brushstroke Camo (COMPONENT_MARKSMANRIFLE_MK2_CAMO_02)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP)</li>
-                     <li>Digital Camo (COMPONENT_MARKSMANRIFLE_MK2_CAMO)</li>
-                     <li>Default Clip (COMPONENT_MARKSMANRIFLE_MK2_CLIP_01)</li>
-                     <li>Geometric (COMPONENT_MARKSMANRIFLE_MK2_CAMO_09)</li>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP_02)</li>
-                     <li>Boom! (COMPONENT_MARKSMANRIFLE_MK2_CAMO_IND_01)</li>
-                     <li>Flat Muzzle Brake (COMPONENT_AT_MUZZLE_01)</li>
-                     <li>Zebra (COMPONENT_MARKSMANRIFLE_MK2_CAMO_08)</li>
-                     <li>Large Scope (COMPONENT_AT_SCOPE_MEDIUM_MK2)</li>
-                     <li>Tactical Muzzle Brake (COMPONENT_AT_MUZZLE_02)</li>
-                     <li>Tracer Rounds (COMPONENT_MARKSMANRIFLE_MK2_CLIP_TRACER)</li>
-                     <li>Fat-End Muzzle Brake (COMPONENT_AT_MUZZLE_03)</li>
-                     <li>Full Metal Jacket Rounds (COMPONENT_MARKSMANRIFLE_MK2_CLIP_FMJ)</li>
-                     <li>Extended Clip (COMPONENT_MARKSMANRIFLE_MK2_CLIP_02)</li>
-                     <li>Precision Muzzle Brake (COMPONENT_AT_MUZZLE_04)</li>
-                     <li>Sessanta Nove (COMPONENT_MARKSMANRIFLE_MK2_CAMO_05)</li>
-                     <li>Armor Piercing Rounds (COMPONENT_MARKSMANRIFLE_MK2_CLIP_ARMORPIERCING)</li>
-                     <li>Skull (COMPONENT_MARKSMANRIFLE_MK2_CAMO_04)</li>
+                     <li title='Heavy Duty Muzzle Brake'>COMPONENT_AT_MUZZLE_05</li>
+                     <li title='Leopard'>COMPONENT_MARKSMANRIFLE_MK2_CAMO_07</li>
+                     <li title='Perseus'>COMPONENT_MARKSMANRIFLE_MK2_CAMO_06</li>
+                     <li title='Slanted Muzzle Brake'>COMPONENT_AT_MUZZLE_06</li>
+                     <li title='Default Barrel'>COMPONENT_AT_MRFL_BARREL_01</li>
+                     <li title='Boom!'>COMPONENT_MARKSMANRIFLE_MK2_CAMO_10</li>
+                     <li title='Holographic Sight'>COMPONENT_AT_SIGHTS</li>
+                     <li title='Split-End Muzzle Brake'>COMPONENT_AT_MUZZLE_07</li>
+                     <li title='Zoom Scope'>COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM_MK2</li>
+                     <li title='Woodland Camo'>COMPONENT_MARKSMANRIFLE_MK2_CAMO_03</li>
+                     <li title='Heavy Barrel'>COMPONENT_AT_MRFL_BARREL_02</li>
+                     <li title='Incendiary Rounds'>COMPONENT_MARKSMANRIFLE_MK2_CLIP_INCENDIARY</li>
+                     <li title='Brushstroke Camo'>COMPONENT_MARKSMANRIFLE_MK2_CAMO_02</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Digital Camo'>COMPONENT_MARKSMANRIFLE_MK2_CAMO</li>
+                     <li title='Default Clip'>COMPONENT_MARKSMANRIFLE_MK2_CLIP_01</li>
+                     <li title='Geometric'>COMPONENT_MARKSMANRIFLE_MK2_CAMO_09</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP_02</li>
+                     <li title='Boom!'>COMPONENT_MARKSMANRIFLE_MK2_CAMO_IND_01</li>
+                     <li title='Flat Muzzle Brake'>COMPONENT_AT_MUZZLE_01</li>
+                     <li title='Zebra'>COMPONENT_MARKSMANRIFLE_MK2_CAMO_08</li>
+                     <li title='Large Scope'>COMPONENT_AT_SCOPE_MEDIUM_MK2</li>
+                     <li title='Tactical Muzzle Brake'>COMPONENT_AT_MUZZLE_02</li>
+                     <li title='Tracer Rounds'>COMPONENT_MARKSMANRIFLE_MK2_CLIP_TRACER</li>
+                     <li title='Fat-End Muzzle Brake'>COMPONENT_AT_MUZZLE_03</li>
+                     <li title='Full Metal Jacket Rounds'>COMPONENT_MARKSMANRIFLE_MK2_CLIP_FMJ</li>
+                     <li title='Extended Clip'>COMPONENT_MARKSMANRIFLE_MK2_CLIP_02</li>
+                     <li title='Precision Muzzle Brake'>COMPONENT_AT_MUZZLE_04</li>
+                     <li title='Sessanta Nove'>COMPONENT_MARKSMANRIFLE_MK2_CAMO_05</li>
+                     <li title='Armor Piercing Rounds'>COMPONENT_MARKSMANRIFLE_MK2_CLIP_ARMORPIERCING</li>
+                     <li title='Skull'>COMPONENT_MARKSMANRIFLE_MK2_CAMO_04</li>
                   </ul>
                </details>
             </div>
@@ -629,7 +1017,7 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_PRECISIONRIFLE_CLIP_01)</li>
+                     <li title='Default Clip'>COMPONENT_PRECISIONRIFLE_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -661,7 +1049,7 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_MUSKET_CLIP_01)</li>
+                     <li title='Default Clip'>COMPONENT_MUSKET_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -693,13 +1081,13 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Yusuf Amir Luxury Finish (COMPONENT_MARKSMANRIFLE_VARMOD_LUXE)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP)</li>
-                     <li>Extended Clip (COMPONENT_MARKSMANRIFLE_CLIP_02)</li>
-                     <li>Default Clip (COMPONENT_MARKSMANRIFLE_CLIP_01)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Yusuf Amir Luxury Finish'>COMPONENT_MARKSMANRIFLE_VARMOD_LUXE</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Extended Clip'>COMPONENT_MARKSMANRIFLE_CLIP_02</li>
+                     <li title='Default Clip'>COMPONENT_MARKSMANRIFLE_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -732,366 +1120,6 @@ weight: 770
             <span><strong>Hash:</strong> WEAPON_FIREEXTINGUISHER</span>
             <span><strong>Model Hash Key:</strong> w_am_fire_exting</span>
             <div class="components"></div>
-            <div class="tints">
-               <details>
-                  <summary>Tints</summary>
-                  <ul>
-                     <li>Black tint</li>
-                     <li>Green tint</li>
-                     <li>Gold tint</li>
-                     <li>Pink tint</li>
-                     <li>Army tint</li>
-                     <li>LSPD tint</li>
-                     <li>Orange tint</li>
-                     <li>Platinum tint</li>
-                  </ul>
-               </details>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-<h2>Heavy group</h2>
-<div class="category" id="heavy">
-   <div class="weapons">
-      <div class="weapon">
-         <img src="/weapons/WEAPON_COMPACTLAUNCHER.png" alt="Compact Grenade Launcher">
-         <div class="weapon-info">
-            <span><strong>Name:</strong> Compact Grenade Launcher</span>
-            <span><strong>Hash:</strong> WEAPON_COMPACTLAUNCHER</span>
-            <span><strong>Model Hash Key:</strong> w_lr_compactgl</span>
-            <span><strong>Description:</strong> Focus groups using the regular model suggested it was too accurate and found it awkward to use with one hand on the throttle. Easy fix. Part of Bikers.</span>
-            <div class="components">
-               <details>
-                  <summary>Components</summary>
-                  <ul>
-                     <li>Default Clip (COMPONENT_COMPACTLAUNCHER_CLIP_01)</li>
-                  </ul>
-               </details>
-            </div>
-            <div class="tints">
-               <details>
-                  <summary>Tints</summary>
-                  <ul>
-                     <li>Black tint</li>
-                     <li>Green tint</li>
-                     <li>Gold tint</li>
-                     <li>Pink tint</li>
-                     <li>Army tint</li>
-                     <li>LSPD tint</li>
-                     <li>Orange tint</li>
-                     <li>Platinum tint</li>
-                  </ul>
-               </details>
-            </div>
-         </div>
-      </div>
-      <div class="weapon">
-         <img src="/weapons/WEAPON_MINIGUN.png" alt="Minigun">
-         <div class="weapon-info">
-            <span><strong>Name:</strong> Minigun</span>
-            <span><strong>Hash:</strong> WEAPON_MINIGUN</span>
-            <span><strong>Model Hash Key:</strong> w_mg_minigun</span>
-            <span><strong>Description:</strong> A devastating 6-barrel machine gun that features Gatling-style rotating barrels. Very high rate of fire (2000 to 6000 rounds per minute).</span>
-            <div class="components">
-               <details>
-                  <summary>Components</summary>
-                  <ul>
-                     <li> (COMPONENT_MINIGUN_CLIP_01)</li>
-                  </ul>
-               </details>
-            </div>
-            <div class="tints">
-               <details>
-                  <summary>Tints</summary>
-                  <ul>
-                     <li>Black tint</li>
-                     <li>Green tint</li>
-                     <li>Gold tint</li>
-                     <li>Pink tint</li>
-                     <li>Army tint</li>
-                     <li>LSPD tint</li>
-                     <li>Orange tint</li>
-                     <li>Platinum tint</li>
-                  </ul>
-               </details>
-            </div>
-         </div>
-      </div>
-      <div class="weapon">
-         <img src="/weapons/WEAPON_GRENADELAUNCHER_SMOKE.png" alt="Tear Gas Launcher">
-         <div class="weapon-info">
-            <span><strong>Name:</strong> Tear Gas Launcher</span>
-            <span><strong>Hash:</strong> WEAPON_GRENADELAUNCHER_SMOKE</span>
-            <span><strong>Model Hash Key:</strong> w_lr_grenadelauncher</span>
-            <div class="components">
-               <details>
-                  <summary>Components</summary>
-                  <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_SMALL)</li>
-                  </ul>
-               </details>
-            </div>
-            <div class="tints">
-               <details>
-                  <summary>Tints</summary>
-                  <ul>
-                     <li>Black tint</li>
-                     <li>Green tint</li>
-                     <li>Gold tint</li>
-                     <li>Pink tint</li>
-                     <li>Army tint</li>
-                     <li>LSPD tint</li>
-                     <li>Orange tint</li>
-                     <li>Platinum tint</li>
-                  </ul>
-               </details>
-            </div>
-         </div>
-      </div>
-      <div class="weapon">
-         <img src="/weapons/WEAPON_HOMINGLAUNCHER.png" alt="Homing Launcher">
-         <div class="weapon-info">
-            <span><strong>Name:</strong> Homing Launcher</span>
-            <span><strong>Hash:</strong> WEAPON_HOMINGLAUNCHER</span>
-            <span><strong>Model Hash Key:</strong> w_lr_homing</span>
-            <span><strong>Description:</strong> Infrared guided fire-and-forget missile launcher. For all your moving target needs. Part of the Festive Surprise.</span>
-            <div class="components">
-               <details>
-                  <summary>Components</summary>
-                  <ul>
-                     <li> (COMPONENT_HOMINGLAUNCHER_CLIP_01)</li>
-                  </ul>
-               </details>
-            </div>
-            <div class="tints">
-               <details>
-                  <summary>Tints</summary>
-                  <ul>
-                     <li>Black tint</li>
-                     <li>Green tint</li>
-                     <li>Gold tint</li>
-                     <li>Pink tint</li>
-                     <li>Army tint</li>
-                     <li>LSPD tint</li>
-                     <li>Orange tint</li>
-                     <li>Platinum tint</li>
-                  </ul>
-               </details>
-            </div>
-         </div>
-      </div>
-      <div class="weapon">
-         <img src="/weapons/WEAPON_RAILGUN.png" alt="Railgun">
-         <div class="weapon-info">
-            <span><strong>Name:</strong> Railgun</span>
-            <span><strong>Hash:</strong> WEAPON_RAILGUN</span>
-            <span><strong>Model Hash Key:</strong> w_ar_railgun</span>
-            <span><strong>Description:</strong> All you need to know is - magnets, and it does horrible things to the things it's pointed at. Exclusive content for returning players.</span>
-            <div class="components">
-               <details>
-                  <summary>Components</summary>
-                  <ul>
-                     <li>Default Clip (COMPONENT_RAILGUN_CLIP_01)</li>
-                  </ul>
-               </details>
-            </div>
-            <div class="tints">
-               <details>
-                  <summary>Tints</summary>
-                  <ul>
-                     <li>Black tint</li>
-                     <li>Green tint</li>
-                     <li>Gold tint</li>
-                     <li>Pink tint</li>
-                     <li>Army tint</li>
-                     <li>LSPD tint</li>
-                     <li>Orange tint</li>
-                     <li>Platinum tint</li>
-                  </ul>
-               </details>
-            </div>
-         </div>
-      </div>
-      <div class="weapon">
-         <img src="/weapons/WEAPON_FIREWORK.png" alt="Firework Launcher">
-         <div class="weapon-info">
-            <span><strong>Name:</strong> Firework Launcher</span>
-            <span><strong>Hash:</strong> WEAPON_FIREWORK</span>
-            <span><strong>Model Hash Key:</strong> w_lr_firework</span>
-            <span><strong>Description:</strong> Put the flair back in flare with this firework launcher, guaranteed to raise some oohs and aahs from the crowd. Part of the Independence Day Special.</span>
-            <div class="components">
-               <details>
-                  <summary>Components</summary>
-                  <ul>
-                     <li>Default Clip (COMPONENT_FIREWORK_CLIP_01)</li>
-                  </ul>
-               </details>
-            </div>
-            <div class="tints">
-               <details>
-                  <summary>Tints</summary>
-                  <ul>
-                     <li>Default tint</li>
-                     <li>Green tint</li>
-                     <li>Gold tint</li>
-                     <li>Pink tint</li>
-                     <li>Army tint</li>
-                     <li>LSPD tint</li>
-                     <li>Orange tint</li>
-                     <li>Platinum tint</li>
-                  </ul>
-               </details>
-            </div>
-         </div>
-      </div>
-      <div class="weapon">
-         <img src="/weapons/WEAPON_GRENADELAUNCHER.png" alt="Grenade Launcher">
-         <div class="weapon-info">
-            <span><strong>Name:</strong> Grenade Launcher</span>
-            <span><strong>Hash:</strong> WEAPON_GRENADELAUNCHER</span>
-            <span><strong>Model Hash Key:</strong> w_lr_grenadelauncher</span>
-            <span><strong>Description:</strong> A compact, lightweight grenade launcher with semi-automatic functionality. Holds up to 10 rounds.</span>
-            <div class="components">
-               <details>
-                  <summary>Components</summary>
-                  <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li> (COMPONENT_GRENADELAUNCHER_CLIP_01)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_SMALL)</li>
-                  </ul>
-               </details>
-            </div>
-            <div class="tints">
-               <details>
-                  <summary>Tints</summary>
-                  <ul>
-                     <li>Black tint</li>
-                     <li>Green tint</li>
-                     <li>Gold tint</li>
-                     <li>Pink tint</li>
-                     <li>Army tint</li>
-                     <li>LSPD tint</li>
-                     <li>Orange tint</li>
-                     <li>Platinum tint</li>
-                  </ul>
-               </details>
-            </div>
-         </div>
-      </div>
-      <div class="weapon">
-         <img src="/weapons/WEAPON_RPG.png" alt="RPG">
-         <div class="weapon-info">
-            <span><strong>Name:</strong> RPG</span>
-            <span><strong>Hash:</strong> WEAPON_RPG</span>
-            <span><strong>Model Hash Key:</strong> w_lr_rpg</span>
-            <span><strong>Description:</strong> A portable, shoulder-launched, anti-tank weapon that fires explosive warheads. Very effective for taking down vehicles or large groups of assailants.</span>
-            <div class="components">
-               <details>
-                  <summary>Components</summary>
-                  <ul>
-                     <li> (COMPONENT_RPG_CLIP_01)</li>
-                  </ul>
-               </details>
-            </div>
-            <div class="tints">
-               <details>
-                  <summary>Tints</summary>
-                  <ul>
-                     <li>Black tint</li>
-                     <li>Green tint</li>
-                     <li>Gold tint</li>
-                     <li>Pink tint</li>
-                     <li>Army tint</li>
-                     <li>LSPD tint</li>
-                     <li>Orange tint</li>
-                     <li>Platinum tint</li>
-                  </ul>
-               </details>
-            </div>
-         </div>
-      </div>
-      <div class="weapon">
-         <img src="/weapons/WEAPON_RAYMINIGUN.png" alt="Widowmaker">
-         <div class="weapon-info">
-            <span><strong>Name:</strong> Widowmaker</span>
-            <span><strong>Hash:</strong> WEAPON_RAYMINIGUN</span>
-            <span><strong>Model Hash Key:</strong> w_mg_sminigun</span>
-            <span><strong>Description:</strong> Republican Space Ranger Special. GO AHEAD, SAY I'M COMPENSATING FOR SOMETHING. I DARE YOU.</span>
-            <div class="components">
-               <details>
-                  <summary>Components</summary>
-                  <ul>
-                     <li> (COMPONENT_MINIGUN_CLIP_01)</li>
-                  </ul>
-               </details>
-            </div>
-            <div class="tints">
-               <details>
-                  <summary>Tints</summary>
-                  <ul>
-                     <li>Space Ranger tint</li>
-                     <li>Purple tint</li>
-                     <li>Green tint</li>
-                     <li>Orange tint</li>
-                     <li>Pink tint</li>
-                     <li>Gold tint</li>
-                     <li>Platinum tint</li>
-                  </ul>
-               </details>
-            </div>
-         </div>
-      </div>
-      <div class="weapon">
-         <img src="/weapons/WEAPON_EMPLAUNCHER.png" alt="Compact EMP Launcher">
-         <div class="weapon-info">
-            <span><strong>Name:</strong> Compact EMP Launcher</span>
-            <span><strong>Hash:</strong> WEAPON_EMPLAUNCHER</span>
-            <span><strong>Model Hash Key:</strong> w_lr_compactml</span>
-            <span><strong>Description:</strong> Ever seen a confetti cannon? The Compact EMP Launcher is just like that, but instead of paper and happiness, it's an electromagnetic pulse, short circuits and shattered dreams.</span>
-            <div class="components">
-               <details>
-                  <summary>Components</summary>
-                  <ul>
-                     <li>Default Clip (COMPONENT_EMPLAUNCHER_CLIP_01)</li>
-                  </ul>
-               </details>
-            </div>
-            <div class="tints">
-               <details>
-                  <summary>Tints</summary>
-                  <ul>
-                     <li>Black tint</li>
-                     <li>Green tint</li>
-                     <li>Gold tint</li>
-                     <li>Pink tint</li>
-                     <li>Army tint</li>
-                     <li>LSPD tint</li>
-                     <li>Orange tint</li>
-                     <li>Platinum tint</li>
-                  </ul>
-               </details>
-            </div>
-         </div>
-      </div>
-      <div class="weapon">
-         <img src="/weapons/WEAPON_RAILGUNXM3.png" alt="Railgun">
-         <div class="weapon-info">
-            <span><strong>Name:</strong> Railgun</span>
-            <span><strong>Hash:</strong> WEAPON_RAILGUNXM3</span>
-            <span><strong>Model Hash Key:</strong> W_AR_RailGun_XM3</span>
-            <span><strong>Description:</strong> All you need to know is — magnets, and it does horrible things to the things it's pointed at.</span>
-            <div class="components">
-               <details>
-                  <summary>Components</summary>
-                  <ul>
-                     <li>Default Clip (COMPONENT_RAILGUNXM3_CLIP_01)</li>
-                  </ul>
-               </details>
-            </div>
             <div class="tints">
                <details>
                   <summary>Tints</summary>
@@ -1246,9 +1274,9 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Extended Clip (COMPONENT_VINTAGEPISTOL_CLIP_02)</li>
-                     <li>Default Clip (COMPONENT_VINTAGEPISTOL_CLIP_01)</li>
-                     <li>Suppressor (COMPONENT_AT_PI_SUPP)</li>
+                     <li title='Extended Clip'>COMPONENT_VINTAGEPISTOL_CLIP_02</li>
+                     <li title='Default Clip'>COMPONENT_VINTAGEPISTOL_CLIP_01</li>
+                     <li title='Suppressor'>COMPONENT_AT_PI_SUPP</li>
                   </ul>
                </details>
             </div>
@@ -1280,11 +1308,11 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Flashlight (COMPONENT_AT_PI_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_PI_SUPP_02)</li>
-                     <li>Yusuf Amir Luxury Finish (COMPONENT_PISTOL_VARMOD_LUXE)</li>
-                     <li>Extended Clip (COMPONENT_PISTOL_CLIP_02)</li>
-                     <li>Default Clip (COMPONENT_PISTOL_CLIP_01)</li>
+                     <li title='Flashlight'>COMPONENT_AT_PI_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_PI_SUPP_02</li>
+                     <li title='Yusuf Amir Luxury Finish'>COMPONENT_PISTOL_VARMOD_LUXE</li>
+                     <li title='Extended Clip'>COMPONENT_PISTOL_CLIP_02</li>
+                     <li title='Default Clip'>COMPONENT_PISTOL_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -1316,8 +1344,8 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_PISTOLXM3_CLIP_01)</li>
-                     <li>Suppressor (COMPONENT_PISTOLXM3_SUPP)</li>
+                     <li title='Default Clip'>COMPONENT_PISTOLXM3_CLIP_01</li>
+                     <li title='Suppressor'>COMPONENT_PISTOLXM3_SUPP</li>
                   </ul>
                </details>
             </div>
@@ -1349,12 +1377,12 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Extended Clip (COMPONENT_APPISTOL_CLIP_02)</li>
-                     <li>Default Clip (COMPONENT_APPISTOL_CLIP_01)</li>
-                     <li>Flashlight (COMPONENT_AT_PI_FLSH)</li>
-                     <li>Record A Finish (COMPONENT_APPISTOL_VARMOD_SECURITY)</li>
-                     <li>Gilded Gun Metal Finish (COMPONENT_APPISTOL_VARMOD_LUXE)</li>
-                     <li>Suppressor (COMPONENT_AT_PI_SUPP)</li>
+                     <li title='Extended Clip'>COMPONENT_APPISTOL_CLIP_02</li>
+                     <li title='Default Clip'>COMPONENT_APPISTOL_CLIP_01</li>
+                     <li title='Flashlight'>COMPONENT_AT_PI_FLSH</li>
+                     <li title='Record A Finish'>COMPONENT_APPISTOL_VARMOD_SECURITY</li>
+                     <li title='Gilded Gun Metal Finish'>COMPONENT_APPISTOL_VARMOD_LUXE</li>
+                     <li title='Suppressor'>COMPONENT_AT_PI_SUPP</li>
                   </ul>
                </details>
             </div>
@@ -1386,9 +1414,9 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_CERAMICPISTOL_CLIP_01)</li>
-                     <li>Extended Clip (COMPONENT_CERAMICPISTOL_CLIP_02)</li>
-                     <li>Suppressor (COMPONENT_CERAMICPISTOL_SUPP)</li>
+                     <li title='Default Clip'>COMPONENT_CERAMICPISTOL_CLIP_01</li>
+                     <li title='Extended Clip'>COMPONENT_CERAMICPISTOL_CLIP_02</li>
+                     <li title='Suppressor'>COMPONENT_CERAMICPISTOL_SUPP</li>
                   </ul>
                </details>
             </div>
@@ -1420,7 +1448,7 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li> (COMPONENT_FLAREGUN_CLIP_01)</li>
+                     <li title='N/A'>COMPONENT_FLAREGUN_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -1452,7 +1480,7 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_GADGETPISTOL_CLIP_01)</li>
+                     <li title='Default Clip'>COMPONENT_GADGETPISTOL_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -1484,11 +1512,12 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_COMBATPISTOL_CLIP_01)</li>
-                     <li>Flashlight (COMPONENT_AT_PI_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_PI_SUPP)</li>
-                     <li>Yusuf Amir Luxury Finish (COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER)</li>
-                     <li>Extended Clip (COMPONENT_COMBATPISTOL_CLIP_02)</li>
+                     <li title='Default Clip'>COMPONENT_COMBATPISTOL_CLIP_01</li>
+                     <li title='Flashlight'>COMPONENT_AT_PI_FLSH</li>
+                     <li title='Snowman Finish'>COMPONENT_COMBATPISTOL_VARMOD_XMAS23</li>
+                     <li title='Suppressor'>COMPONENT_AT_PI_SUPP</li>
+                     <li title='Yusuf Amir Luxury Finish'>COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER</li>
+                     <li title='Extended Clip'>COMPONENT_COMBATPISTOL_CLIP_02</li>
                   </ul>
                </details>
             </div>
@@ -1520,38 +1549,38 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_SNSPISTOL_MK2_CLIP_01)</li>
-                     <li>Geometric (COMPONENT_SNSPISTOL_MK2_CAMO_09)</li>
-                     <li>Digital Camo (COMPONENT_SNSPISTOL_MK2_CAMO)</li>
-                     <li>Patriotic (COMPONENT_SNSPISTOL_MK2_CAMO_IND_01_SLIDE)</li>
-                     <li>Geometric (COMPONENT_SNSPISTOL_MK2_CAMO_09_SLIDE)</li>
-                     <li>Boom! (COMPONENT_SNSPISTOL_MK2_CAMO_10)</li>
-                     <li>Brushstroke Camo (COMPONENT_SNSPISTOL_MK2_CAMO_02_SLIDE)</li>
-                     <li>Zebra (COMPONENT_SNSPISTOL_MK2_CAMO_08_SLIDE)</li>
-                     <li>Woodland Camo (COMPONENT_SNSPISTOL_MK2_CAMO_03_SLIDE)</li>
-                     <li>Leopard (COMPONENT_SNSPISTOL_MK2_CAMO_07)</li>
-                     <li>Boom! (COMPONENT_SNSPISTOL_MK2_CAMO_IND_01)</li>
-                     <li>Mounted Scope (COMPONENT_AT_PI_RAIL_02)</li>
-                     <li>Flashlight (COMPONENT_AT_PI_FLSH_03)</li>
-                     <li>Perseus (COMPONENT_SNSPISTOL_MK2_CAMO_06)</li>
-                     <li>Zebra (COMPONENT_SNSPISTOL_MK2_CAMO_08)</li>
-                     <li>Suppressor (COMPONENT_AT_PI_SUPP_02)</li>
-                     <li>Woodland Camo (COMPONENT_SNSPISTOL_MK2_CAMO_03)</li>
-                     <li>Brushstroke Camo (COMPONENT_SNSPISTOL_MK2_CAMO_02)</li>
-                     <li>Boom! (COMPONENT_SNSPISTOL_MK2_CAMO_10_SLIDE)</li>
-                     <li>Hollow Point Rounds (COMPONENT_SNSPISTOL_MK2_CLIP_HOLLOWPOINT)</li>
-                     <li>Tracer Rounds (COMPONENT_SNSPISTOL_MK2_CLIP_TRACER)</li>
-                     <li>Sessanta Nove (COMPONENT_SNSPISTOL_MK2_CAMO_05)</li>
-                     <li>Skull (COMPONENT_SNSPISTOL_MK2_CAMO_04)</li>
-                     <li>Compensator (COMPONENT_AT_PI_COMP_02)</li>
-                     <li>Full Metal Jacket Rounds (COMPONENT_SNSPISTOL_MK2_CLIP_FMJ)</li>
-                     <li>Sessanta Nove (COMPONENT_SNSPISTOL_MK2_CAMO_05_SLIDE)</li>
-                     <li>Extended Clip (COMPONENT_SNSPISTOL_MK2_CLIP_02)</li>
-                     <li>Leopard (COMPONENT_SNSPISTOL_MK2_CAMO_07_SLIDE)</li>
-                     <li>Skull (COMPONENT_SNSPISTOL_MK2_CAMO_04_SLIDE)</li>
-                     <li>Incendiary Rounds (COMPONENT_SNSPISTOL_MK2_CLIP_INCENDIARY)</li>
-                     <li>Digital Camo (COMPONENT_SNSPISTOL_MK2_CAMO_SLIDE)</li>
-                     <li>Perseus (COMPONENT_SNSPISTOL_MK2_CAMO_06_SLIDE)</li>
+                     <li title='Default Clip'>COMPONENT_SNSPISTOL_MK2_CLIP_01</li>
+                     <li title='Geometric'>COMPONENT_SNSPISTOL_MK2_CAMO_09</li>
+                     <li title='Digital Camo'>COMPONENT_SNSPISTOL_MK2_CAMO</li>
+                     <li title='Patriotic'>COMPONENT_SNSPISTOL_MK2_CAMO_IND_01_SLIDE</li>
+                     <li title='Geometric'>COMPONENT_SNSPISTOL_MK2_CAMO_09_SLIDE</li>
+                     <li title='Boom!'>COMPONENT_SNSPISTOL_MK2_CAMO_10</li>
+                     <li title='Brushstroke Camo'>COMPONENT_SNSPISTOL_MK2_CAMO_02_SLIDE</li>
+                     <li title='Zebra'>COMPONENT_SNSPISTOL_MK2_CAMO_08_SLIDE</li>
+                     <li title='Woodland Camo'>COMPONENT_SNSPISTOL_MK2_CAMO_03_SLIDE</li>
+                     <li title='Leopard'>COMPONENT_SNSPISTOL_MK2_CAMO_07</li>
+                     <li title='Boom!'>COMPONENT_SNSPISTOL_MK2_CAMO_IND_01</li>
+                     <li title='Mounted Scope'>COMPONENT_AT_PI_RAIL_02</li>
+                     <li title='Flashlight'>COMPONENT_AT_PI_FLSH_03</li>
+                     <li title='Perseus'>COMPONENT_SNSPISTOL_MK2_CAMO_06</li>
+                     <li title='Zebra'>COMPONENT_SNSPISTOL_MK2_CAMO_08</li>
+                     <li title='Suppressor'>COMPONENT_AT_PI_SUPP_02</li>
+                     <li title='Woodland Camo'>COMPONENT_SNSPISTOL_MK2_CAMO_03</li>
+                     <li title='Brushstroke Camo'>COMPONENT_SNSPISTOL_MK2_CAMO_02</li>
+                     <li title='Boom!'>COMPONENT_SNSPISTOL_MK2_CAMO_10_SLIDE</li>
+                     <li title='Hollow Point Rounds'>COMPONENT_SNSPISTOL_MK2_CLIP_HOLLOWPOINT</li>
+                     <li title='Tracer Rounds'>COMPONENT_SNSPISTOL_MK2_CLIP_TRACER</li>
+                     <li title='Sessanta Nove'>COMPONENT_SNSPISTOL_MK2_CAMO_05</li>
+                     <li title='Skull'>COMPONENT_SNSPISTOL_MK2_CAMO_04</li>
+                     <li title='Compensator'>COMPONENT_AT_PI_COMP_02</li>
+                     <li title='Full Metal Jacket Rounds'>COMPONENT_SNSPISTOL_MK2_CLIP_FMJ</li>
+                     <li title='Sessanta Nove'>COMPONENT_SNSPISTOL_MK2_CAMO_05_SLIDE</li>
+                     <li title='Extended Clip'>COMPONENT_SNSPISTOL_MK2_CLIP_02</li>
+                     <li title='Leopard'>COMPONENT_SNSPISTOL_MK2_CAMO_07_SLIDE</li>
+                     <li title='Skull'>COMPONENT_SNSPISTOL_MK2_CAMO_04_SLIDE</li>
+                     <li title='Incendiary Rounds'>COMPONENT_SNSPISTOL_MK2_CLIP_INCENDIARY</li>
+                     <li title='Digital Camo'>COMPONENT_SNSPISTOL_MK2_CAMO_SLIDE</li>
+                     <li title='Perseus'>COMPONENT_SNSPISTOL_MK2_CAMO_06_SLIDE</li>
                   </ul>
                </details>
             </div>
@@ -1607,7 +1636,7 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_NAVYREVOLVER_CLIP_01)</li>
+                     <li title='Default Clip'>COMPONENT_NAVYREVOLVER_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -1632,7 +1661,7 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_DOUBLEACTION_CLIP_01)</li>
+                     <li title='Default Clip'>COMPONENT_DOUBLEACTION_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -1650,11 +1679,11 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_PISTOL50_CLIP_01)</li>
-                     <li>Flashlight (COMPONENT_AT_PI_FLSH)</li>
-                     <li>Platinum Pearl Deluxe Finish (COMPONENT_PISTOL50_VARMOD_LUXE)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP_02)</li>
-                     <li>Extended Clip (COMPONENT_PISTOL50_CLIP_02)</li>
+                     <li title='Default Clip'>COMPONENT_PISTOL50_CLIP_01</li>
+                     <li title='Flashlight'>COMPONENT_AT_PI_FLSH</li>
+                     <li title='Platinum Pearl Deluxe Finish'>COMPONENT_PISTOL50_VARMOD_LUXE</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
+                     <li title='Extended Clip'>COMPONENT_PISTOL50_CLIP_02</li>
                   </ul>
                </details>
             </div>
@@ -1686,7 +1715,7 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Festive tint (COMPONENT_RAYPISTOL_VARMOD_XMAS18)</li>
+                     <li title='Festive tint'>COMPONENT_RAYPISTOL_VARMOD_XMAS18</li>
                   </ul>
                </details>
             </div>
@@ -1717,9 +1746,9 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Extended Clip (COMPONENT_SNSPISTOL_CLIP_02)</li>
-                     <li>Etched Wood Grip Finish (COMPONENT_SNSPISTOL_VARMOD_LOWRIDER)</li>
-                     <li>Default Clip (COMPONENT_SNSPISTOL_CLIP_01)</li>
+                     <li title='Extended Clip'>COMPONENT_SNSPISTOL_CLIP_02</li>
+                     <li title='Etched Wood Grip Finish'>COMPONENT_SNSPISTOL_VARMOD_LOWRIDER</li>
+                     <li title='Default Clip'>COMPONENT_SNSPISTOL_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -1751,40 +1780,40 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Skull (COMPONENT_PISTOL_MK2_CAMO_04)</li>
-                     <li>Brushstroke Camo (COMPONENT_PISTOL_MK2_CAMO_02)</li>
-                     <li>Digital Camo (COMPONENT_PISTOL_MK2_CAMO_02_SLIDE)</li>
-                     <li>Compensator (COMPONENT_AT_PI_COMP)</li>
-                     <li>Tracer Rounds (COMPONENT_PISTOL_MK2_CLIP_TRACER)</li>
-                     <li>Incendiary Rounds (COMPONENT_PISTOL_MK2_CLIP_INCENDIARY)</li>
-                     <li>Digital Camo (COMPONENT_PISTOL_MK2_CAMO_04_SLIDE)</li>
-                     <li>Season's Greetings (COMPONENT_PISTOL_MK2_VARMOD_XM3_SLIDE)</li>
-                     <li>Digital Camo (COMPONENT_PISTOL_MK2_CAMO_10_SLIDE)</li>
-                     <li>Flashlight (COMPONENT_AT_PI_FLSH_02)</li>
-                     <li>Season's Greetings (COMPONENT_PISTOL_MK2_VARMOD_XM3)</li>
-                     <li>Patriotic (COMPONENT_PISTOL_MK2_CAMO_IND_01_SLIDE)</li>
-                     <li>Zebra (COMPONENT_PISTOL_MK2_CAMO_08)</li>
-                     <li>Full Metal Jacket Rounds (COMPONENT_PISTOL_MK2_CLIP_FMJ)</li>
-                     <li>Digital Camo (COMPONENT_PISTOL_MK2_CAMO)</li>
-                     <li>Extended Clip (COMPONENT_PISTOL_MK2_CLIP_02)</li>
-                     <li>Geometric (COMPONENT_PISTOL_MK2_CAMO_09)</li>
-                     <li>Suppressor (COMPONENT_AT_PI_SUPP_02)</li>
-                     <li>Boom! (COMPONENT_PISTOL_MK2_CAMO_10)</li>
-                     <li>Digital Camo (COMPONENT_PISTOL_MK2_CAMO_06_SLIDE)</li>
-                     <li>Hollow Point Rounds (COMPONENT_PISTOL_MK2_CLIP_HOLLOWPOINT)</li>
-                     <li>Mounted Scope (COMPONENT_AT_PI_RAIL)</li>
-                     <li>Patriotic (COMPONENT_PISTOL_MK2_CAMO_IND_01)</li>
-                     <li>Default Clip (COMPONENT_PISTOL_MK2_CLIP_01)</li>
-                     <li>Woodland Camo (COMPONENT_PISTOL_MK2_CAMO_03)</li>
-                     <li>Digital Camo (COMPONENT_PISTOL_MK2_CAMO_07_SLIDE)</li>
-                     <li>Digital Camo (COMPONENT_PISTOL_MK2_CAMO_08_SLIDE)</li>
-                     <li>Digital Camo (COMPONENT_PISTOL_MK2_CAMO_SLIDE)</li>
-                     <li>Leopard (COMPONENT_PISTOL_MK2_CAMO_07)</li>
-                     <li>Digital Camo (COMPONENT_PISTOL_MK2_CAMO_09_SLIDE)</li>
-                     <li>Perseus (COMPONENT_PISTOL_MK2_CAMO_06)</li>
-                     <li>Digital Camo (COMPONENT_PISTOL_MK2_CAMO_05_SLIDE)</li>
-                     <li>Digital Camo (COMPONENT_PISTOL_MK2_CAMO_03_SLIDE)</li>
-                     <li>Sessanta Nove (COMPONENT_PISTOL_MK2_CAMO_05)</li>
+                     <li title='Skull'>COMPONENT_PISTOL_MK2_CAMO_04</li>
+                     <li title='Brushstroke Camo'>COMPONENT_PISTOL_MK2_CAMO_02</li>
+                     <li title='Digital Camo'>COMPONENT_PISTOL_MK2_CAMO_02_SLIDE</li>
+                     <li title='Compensator'>COMPONENT_AT_PI_COMP</li>
+                     <li title='Tracer Rounds'>COMPONENT_PISTOL_MK2_CLIP_TRACER</li>
+                     <li title='Incendiary Rounds'>COMPONENT_PISTOL_MK2_CLIP_INCENDIARY</li>
+                     <li title='Digital Camo'>COMPONENT_PISTOL_MK2_CAMO_04_SLIDE</li>
+                     <li title='Season's Greetings'>COMPONENT_PISTOL_MK2_VARMOD_XM3_SLIDE</li>
+                     <li title='Digital Camo'>COMPONENT_PISTOL_MK2_CAMO_10_SLIDE</li>
+                     <li title='Flashlight'>COMPONENT_AT_PI_FLSH_02</li>
+                     <li title='Season's Greetings'>COMPONENT_PISTOL_MK2_VARMOD_XM3</li>
+                     <li title='Patriotic'>COMPONENT_PISTOL_MK2_CAMO_IND_01_SLIDE</li>
+                     <li title='Zebra'>COMPONENT_PISTOL_MK2_CAMO_08</li>
+                     <li title='Full Metal Jacket Rounds'>COMPONENT_PISTOL_MK2_CLIP_FMJ</li>
+                     <li title='Digital Camo'>COMPONENT_PISTOL_MK2_CAMO</li>
+                     <li title='Extended Clip'>COMPONENT_PISTOL_MK2_CLIP_02</li>
+                     <li title='Geometric'>COMPONENT_PISTOL_MK2_CAMO_09</li>
+                     <li title='Suppressor'>COMPONENT_AT_PI_SUPP_02</li>
+                     <li title='Boom!'>COMPONENT_PISTOL_MK2_CAMO_10</li>
+                     <li title='Digital Camo'>COMPONENT_PISTOL_MK2_CAMO_06_SLIDE</li>
+                     <li title='Hollow Point Rounds'>COMPONENT_PISTOL_MK2_CLIP_HOLLOWPOINT</li>
+                     <li title='Mounted Scope'>COMPONENT_AT_PI_RAIL</li>
+                     <li title='Patriotic'>COMPONENT_PISTOL_MK2_CAMO_IND_01</li>
+                     <li title='Default Clip'>COMPONENT_PISTOL_MK2_CLIP_01</li>
+                     <li title='Woodland Camo'>COMPONENT_PISTOL_MK2_CAMO_03</li>
+                     <li title='Digital Camo'>COMPONENT_PISTOL_MK2_CAMO_07_SLIDE</li>
+                     <li title='Digital Camo'>COMPONENT_PISTOL_MK2_CAMO_08_SLIDE</li>
+                     <li title='Digital Camo'>COMPONENT_PISTOL_MK2_CAMO_SLIDE</li>
+                     <li title='Leopard'>COMPONENT_PISTOL_MK2_CAMO_07</li>
+                     <li title='Digital Camo'>COMPONENT_PISTOL_MK2_CAMO_09_SLIDE</li>
+                     <li title='Perseus'>COMPONENT_PISTOL_MK2_CAMO_06</li>
+                     <li title='Digital Camo'>COMPONENT_PISTOL_MK2_CAMO_05_SLIDE</li>
+                     <li title='Digital Camo'>COMPONENT_PISTOL_MK2_CAMO_03_SLIDE</li>
+                     <li title='Sessanta Nove'>COMPONENT_PISTOL_MK2_CAMO_05</li>
                   </ul>
                </details>
             </div>
@@ -1840,9 +1869,9 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>VIP Variant (COMPONENT_REVOLVER_VARMOD_BOSS)</li>
-                     <li>Bodyguard Variant (COMPONENT_REVOLVER_VARMOD_GOON)</li>
-                     <li>Default Clip (COMPONENT_REVOLVER_CLIP_01)</li>
+                     <li title='VIP Variant'>COMPONENT_REVOLVER_VARMOD_BOSS</li>
+                     <li title='Bodyguard Variant'>COMPONENT_REVOLVER_VARMOD_GOON</li>
+                     <li title='Default Clip'>COMPONENT_REVOLVER_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -1874,26 +1903,26 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Brushstroke Camo (COMPONENT_REVOLVER_MK2_CAMO_02)</li>
-                     <li>Incendiary Rounds (COMPONENT_REVOLVER_MK2_CLIP_INCENDIARY)</li>
-                     <li>Small Scope (COMPONENT_AT_SCOPE_MACRO_MK2)</li>
-                     <li>Woodland Camo (COMPONENT_REVOLVER_MK2_CAMO_03)</li>
-                     <li>Full Metal Jacket Rounds (COMPONENT_REVOLVER_MK2_CLIP_FMJ)</li>
-                     <li>Hollow Point Rounds (COMPONENT_REVOLVER_MK2_CLIP_HOLLOWPOINT)</li>
-                     <li>Sessanta Nove (COMPONENT_REVOLVER_MK2_CAMO_05)</li>
-                     <li>Perseus (COMPONENT_REVOLVER_MK2_CAMO_06)</li>
-                     <li>Boom! (COMPONENT_REVOLVER_MK2_CAMO_10)</li>
-                     <li>Leopard (COMPONENT_REVOLVER_MK2_CAMO_07)</li>
-                     <li>Compensator (COMPONENT_AT_PI_COMP_03)</li>
-                     <li>Flashlight (COMPONENT_AT_PI_FLSH)</li>
-                     <li>Zebra (COMPONENT_REVOLVER_MK2_CAMO_08)</li>
-                     <li>Holographic Sight (COMPONENT_AT_SIGHTS)</li>
-                     <li>Geometric (COMPONENT_REVOLVER_MK2_CAMO_09)</li>
-                     <li>Default Rounds (COMPONENT_REVOLVER_MK2_CLIP_01)</li>
-                     <li>Digital Camo (COMPONENT_REVOLVER_MK2_CAMO)</li>
-                     <li>Tracer Rounds (COMPONENT_REVOLVER_MK2_CLIP_TRACER)</li>
-                     <li>Patriotic (COMPONENT_REVOLVER_MK2_CAMO_IND_01)</li>
-                     <li>Skull (COMPONENT_REVOLVER_MK2_CAMO_04)</li>
+                     <li title='Brushstroke Camo'>COMPONENT_REVOLVER_MK2_CAMO_02</li>
+                     <li title='Incendiary Rounds'>COMPONENT_REVOLVER_MK2_CLIP_INCENDIARY</li>
+                     <li title='Small Scope'>COMPONENT_AT_SCOPE_MACRO_MK2</li>
+                     <li title='Woodland Camo'>COMPONENT_REVOLVER_MK2_CAMO_03</li>
+                     <li title='Full Metal Jacket Rounds'>COMPONENT_REVOLVER_MK2_CLIP_FMJ</li>
+                     <li title='Hollow Point Rounds'>COMPONENT_REVOLVER_MK2_CLIP_HOLLOWPOINT</li>
+                     <li title='Sessanta Nove'>COMPONENT_REVOLVER_MK2_CAMO_05</li>
+                     <li title='Perseus'>COMPONENT_REVOLVER_MK2_CAMO_06</li>
+                     <li title='Boom!'>COMPONENT_REVOLVER_MK2_CAMO_10</li>
+                     <li title='Leopard'>COMPONENT_REVOLVER_MK2_CAMO_07</li>
+                     <li title='Compensator'>COMPONENT_AT_PI_COMP_03</li>
+                     <li title='Flashlight'>COMPONENT_AT_PI_FLSH</li>
+                     <li title='Zebra'>COMPONENT_REVOLVER_MK2_CAMO_08</li>
+                     <li title='Holographic Sight'>COMPONENT_AT_SIGHTS</li>
+                     <li title='Geometric'>COMPONENT_REVOLVER_MK2_CAMO_09</li>
+                     <li title='Default Rounds'>COMPONENT_REVOLVER_MK2_CLIP_01</li>
+                     <li title='Digital Camo'>COMPONENT_REVOLVER_MK2_CAMO</li>
+                     <li title='Tracer Rounds'>COMPONENT_REVOLVER_MK2_CLIP_TRACER</li>
+                     <li title='Patriotic'>COMPONENT_REVOLVER_MK2_CAMO_IND_01</li>
+                     <li title='Skull'>COMPONENT_REVOLVER_MK2_CAMO_04</li>
                   </ul>
                </details>
             </div>
@@ -1949,11 +1978,11 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_HEAVYPISTOL_CLIP_01)</li>
-                     <li>Flashlight (COMPONENT_AT_PI_FLSH)</li>
-                     <li>Extended Clip (COMPONENT_HEAVYPISTOL_CLIP_02)</li>
-                     <li>Etched Wood Grip Finish (COMPONENT_HEAVYPISTOL_VARMOD_LUXE)</li>
-                     <li>Suppressor (COMPONENT_AT_PI_SUPP)</li>
+                     <li title='Default Clip'>COMPONENT_HEAVYPISTOL_CLIP_01</li>
+                     <li title='Flashlight'>COMPONENT_AT_PI_FLSH</li>
+                     <li title='Extended Clip'>COMPONENT_HEAVYPISTOL_CLIP_02</li>
+                     <li title='Etched Wood Grip Finish'>COMPONENT_HEAVYPISTOL_VARMOD_LUXE</li>
+                     <li title='Suppressor'>COMPONENT_AT_PI_SUPP</li>
                   </ul>
                </details>
             </div>
@@ -1985,7 +2014,7 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_MARKSMANPISTOL_CLIP_01)</li>
+                     <li title='Default Clip'>COMPONENT_MARKSMANPISTOL_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -2022,12 +2051,12 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Extended Clip (COMPONENT_COMBATPDW_CLIP_02)</li>
-                     <li>Default Clip (COMPONENT_COMBATPDW_CLIP_01)</li>
-                     <li>Drum Magazine (COMPONENT_COMBATPDW_CLIP_03)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_SMALL)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Extended Clip'>COMPONENT_COMBATPDW_CLIP_02</li>
+                     <li title='Default Clip'>COMPONENT_COMBATPDW_CLIP_01</li>
+                     <li title='Drum Magazine'>COMPONENT_COMBATPDW_CLIP_03</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_SMALL</li>
                   </ul>
                </details>
             </div>
@@ -2059,14 +2088,50 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Extended Clip (COMPONENT_MICROSMG_CLIP_02)</li>
-                     <li>Flashlight (COMPONENT_AT_PI_FLSH)</li>
-                     <li>Yusuf Amir Luxury Finish (COMPONENT_MICROSMG_VARMOD_LUXE)</li>
-                     <li>Organics Finish (COMPONENT_MICROSMG_VARMOD_SECURITY)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_MACRO)</li>
-                     <li>Dildodude Camo (COMPONENT_MICROSMG_VARMOD_XM3)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP_02)</li>
-                     <li>Default Clip (COMPONENT_MICROSMG_CLIP_01)</li>
+                     <li title='Extended Clip'>COMPONENT_MICROSMG_CLIP_02</li>
+                     <li title='Flashlight'>COMPONENT_AT_PI_FLSH</li>
+                     <li title='Yusuf Amir Luxury Finish'>COMPONENT_MICROSMG_VARMOD_LUXE</li>
+                     <li title='Employee of the Month Finish'>COMPONENT_MICROSMG_VARMOD_FRN</li>
+                     <li title='Organics Finish'>COMPONENT_MICROSMG_VARMOD_SECURITY</li>
+                     <li title='Small Scope'>COMPONENT_AT_SCOPE_MACRO</li>
+                     <li title='Dildodude Camo'>COMPONENT_MICROSMG_VARMOD_XM3</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
+                     <li title='Default Clip'>COMPONENT_MICROSMG_CLIP_01</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <div class="no-image">This model has no image</div>
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Tactical SMG</span>
+            <span><strong>Hash:</strong> WEAPON_TECPISTOL</span>
+            <span><strong>Model Hash Key:</strong> W_PI_PistolSMG_M31</span>
+            <span><strong>Description:</strong> Ever been on the wrong side of the Micro SMG's big bad brother? Trust us, with double the capacity for conflict resolution, you'd know.</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='Extended Clip'>COMPONENT_TECPISTOL_CLIP_02</li>
+                     <li title='Default Clip'>COMPONENT_TECPISTOL_CLIP_01</li>
+                     <li title='Small Scope'>COMPONENT_AT_SCOPE_MACRO</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
                   </ul>
                </details>
             </div>
@@ -2098,13 +2163,13 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_SMG_CLIP_01)</li>
-                     <li>Yusuf Amir Luxury Finish (COMPONENT_SMG_VARMOD_LUXE)</li>
-                     <li>Extended Clip (COMPONENT_SMG_CLIP_02)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_MACRO_02)</li>
-                     <li>Drum Magazine (COMPONENT_SMG_CLIP_03)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_PI_SUPP)</li>
+                     <li title='Default Clip'>COMPONENT_SMG_CLIP_01</li>
+                     <li title='Yusuf Amir Luxury Finish'>COMPONENT_SMG_VARMOD_LUXE</li>
+                     <li title='Extended Clip'>COMPONENT_SMG_CLIP_02</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_MACRO_02</li>
+                     <li title='Drum Magazine'>COMPONENT_SMG_CLIP_03</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_PI_SUPP</li>
                   </ul>
                </details>
             </div>
@@ -2136,37 +2201,37 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Heavy Duty Muzzle Brake (COMPONENT_AT_MUZZLE_05)</li>
-                     <li>Full Metal Jacket Rounds (COMPONENT_SMG_MK2_CLIP_FMJ)</li>
-                     <li>Geometric (COMPONENT_SMG_MK2_CAMO_09)</li>
-                     <li>Leopard (COMPONENT_SMG_MK2_CAMO_07)</li>
-                     <li>Slanted Muzzle Brake (COMPONENT_AT_MUZZLE_06)</li>
-                     <li>Perseus (COMPONENT_SMG_MK2_CAMO_06)</li>
-                     <li>Brushstroke Camo (COMPONENT_SMG_MK2_CAMO_02)</li>
-                     <li>Patriotic (COMPONENT_SMG_MK2_CAMO_IND_01)</li>
-                     <li>Hollow Point Rounds (COMPONENT_SMG_MK2_CLIP_HOLLOWPOINT)</li>
-                     <li>Medium Scope (COMPONENT_AT_SCOPE_SMALL_SMG_MK2)</li>
-                     <li>Boom! (COMPONENT_SMG_MK2_CAMO_10)</li>
-                     <li>Sessanta Nove (COMPONENT_SMG_MK2_CAMO_05)</li>
-                     <li>Woodland Camo (COMPONENT_SMG_MK2_CAMO_03)</li>
-                     <li>Default Clip (COMPONENT_SMG_MK2_CLIP_01)</li>
-                     <li>Split-End Muzzle Brake (COMPONENT_AT_MUZZLE_07)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Tracer Rounds (COMPONENT_SMG_MK2_CLIP_TRACER)</li>
-                     <li>Holographic Sight (COMPONENT_AT_SIGHTS_SMG)</li>
-                     <li>Zebra (COMPONENT_SMG_MK2_CAMO_08)</li>
-                     <li>Heavy Barrel (COMPONENT_AT_SB_BARREL_02)</li>
-                     <li>Extended Clip (COMPONENT_SMG_MK2_CLIP_02)</li>
-                     <li>Flat Muzzle Brake (COMPONENT_AT_MUZZLE_01)</li>
-                     <li>Suppressor (COMPONENT_AT_PI_SUPP)</li>
-                     <li>Digital Camo (COMPONENT_SMG_MK2_CAMO)</li>
-                     <li>Tactical Muzzle Brake (COMPONENT_AT_MUZZLE_02)</li>
-                     <li>Default Barrel (COMPONENT_AT_SB_BARREL_01)</li>
-                     <li>Incendiary Rounds (COMPONENT_SMG_MK2_CLIP_INCENDIARY)</li>
-                     <li>Fat-End Muzzle Brake (COMPONENT_AT_MUZZLE_03)</li>
-                     <li>Small Scope (COMPONENT_AT_SCOPE_MACRO_02_SMG_MK2)</li>
-                     <li>Skull (COMPONENT_SMG_MK2_CAMO_04)</li>
-                     <li>Precision Muzzle Brake (COMPONENT_AT_MUZZLE_04)</li>
+                     <li title='Heavy Duty Muzzle Brake'>COMPONENT_AT_MUZZLE_05</li>
+                     <li title='Full Metal Jacket Rounds'>COMPONENT_SMG_MK2_CLIP_FMJ</li>
+                     <li title='Geometric'>COMPONENT_SMG_MK2_CAMO_09</li>
+                     <li title='Leopard'>COMPONENT_SMG_MK2_CAMO_07</li>
+                     <li title='Slanted Muzzle Brake'>COMPONENT_AT_MUZZLE_06</li>
+                     <li title='Perseus'>COMPONENT_SMG_MK2_CAMO_06</li>
+                     <li title='Brushstroke Camo'>COMPONENT_SMG_MK2_CAMO_02</li>
+                     <li title='Patriotic'>COMPONENT_SMG_MK2_CAMO_IND_01</li>
+                     <li title='Hollow Point Rounds'>COMPONENT_SMG_MK2_CLIP_HOLLOWPOINT</li>
+                     <li title='Medium Scope'>COMPONENT_AT_SCOPE_SMALL_SMG_MK2</li>
+                     <li title='Boom!'>COMPONENT_SMG_MK2_CAMO_10</li>
+                     <li title='Sessanta Nove'>COMPONENT_SMG_MK2_CAMO_05</li>
+                     <li title='Woodland Camo'>COMPONENT_SMG_MK2_CAMO_03</li>
+                     <li title='Default Clip'>COMPONENT_SMG_MK2_CLIP_01</li>
+                     <li title='Split-End Muzzle Brake'>COMPONENT_AT_MUZZLE_07</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Tracer Rounds'>COMPONENT_SMG_MK2_CLIP_TRACER</li>
+                     <li title='Holographic Sight'>COMPONENT_AT_SIGHTS_SMG</li>
+                     <li title='Zebra'>COMPONENT_SMG_MK2_CAMO_08</li>
+                     <li title='Heavy Barrel'>COMPONENT_AT_SB_BARREL_02</li>
+                     <li title='Extended Clip'>COMPONENT_SMG_MK2_CLIP_02</li>
+                     <li title='Flat Muzzle Brake'>COMPONENT_AT_MUZZLE_01</li>
+                     <li title='Suppressor'>COMPONENT_AT_PI_SUPP</li>
+                     <li title='Digital Camo'>COMPONENT_SMG_MK2_CAMO</li>
+                     <li title='Tactical Muzzle Brake'>COMPONENT_AT_MUZZLE_02</li>
+                     <li title='Default Barrel'>COMPONENT_AT_SB_BARREL_01</li>
+                     <li title='Incendiary Rounds'>COMPONENT_SMG_MK2_CLIP_INCENDIARY</li>
+                     <li title='Fat-End Muzzle Brake'>COMPONENT_AT_MUZZLE_03</li>
+                     <li title='Small Scope'>COMPONENT_AT_SCOPE_MACRO_02_SMG_MK2</li>
+                     <li title='Skull'>COMPONENT_SMG_MK2_CAMO_04</li>
+                     <li title='Precision Muzzle Brake'>COMPONENT_AT_MUZZLE_04</li>
                   </ul>
                </details>
             </div>
@@ -2222,8 +2287,8 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_MINISMG_CLIP_01)</li>
-                     <li>Extended Clip (COMPONENT_MINISMG_CLIP_02)</li>
+                     <li title='Default Clip'>COMPONENT_MINISMG_CLIP_01</li>
+                     <li title='Extended Clip'>COMPONENT_MINISMG_CLIP_02</li>
                   </ul>
                </details>
             </div>
@@ -2255,10 +2320,10 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_MACHINEPISTOL_CLIP_01)</li>
-                     <li>Drum Magazine (COMPONENT_MACHINEPISTOL_CLIP_03)</li>
-                     <li>Extended Clip (COMPONENT_MACHINEPISTOL_CLIP_02)</li>
-                     <li>Suppressor (COMPONENT_AT_PI_SUPP)</li>
+                     <li title='Default Clip'>COMPONENT_MACHINEPISTOL_CLIP_01</li>
+                     <li title='Drum Magazine'>COMPONENT_MACHINEPISTOL_CLIP_03</li>
+                     <li title='Extended Clip'>COMPONENT_MACHINEPISTOL_CLIP_02</li>
+                     <li title='Suppressor'>COMPONENT_AT_PI_SUPP</li>
                   </ul>
                </details>
             </div>
@@ -2290,12 +2355,12 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Yusuf Amir Luxury Finish (COMPONENT_ASSAULTSMG_VARMOD_LOWRIDER)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Default Clip (COMPONENT_ASSAULTSMG_CLIP_01)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_MACRO)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP_02)</li>
-                     <li>Extended Clip (COMPONENT_ASSAULTSMG_CLIP_02)</li>
+                     <li title='Yusuf Amir Luxury Finish'>COMPONENT_ASSAULTSMG_VARMOD_LOWRIDER</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Default Clip'>COMPONENT_ASSAULTSMG_CLIP_01</li>
+                     <li title='Small Scope'>COMPONENT_AT_SCOPE_MACRO</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
+                     <li title='Extended Clip'>COMPONENT_ASSAULTSMG_CLIP_02</li>
                   </ul>
                </details>
             </div>
@@ -2487,7 +2552,7 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Flashlight (COMPONENT_FLASHLIGHT_LIGHT)</li>
+                     <li title='Flashlight'>COMPONENT_FLASHLIGHT_LIGHT</li>
                   </ul>
                </details>
             </div>
@@ -2527,16 +2592,16 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Trippy (COMPONENT_BAT_VARMOD_XM3_07)</li>
-                     <li>Spatter (COMPONENT_BAT_VARMOD_XM3_01)</li>
-                     <li>Blagueurs (COMPONENT_BAT_VARMOD_XM3)</li>
-                     <li>Bullet Holes (COMPONENT_BAT_VARMOD_XM3_02)</li>
-                     <li>Burger Shot (COMPONENT_BAT_VARMOD_XM3_03)</li>
-                     <li>Wall (COMPONENT_BAT_VARMOD_XM3_09)</li>
-                     <li>Tie-Dye (COMPONENT_BAT_VARMOD_XM3_08)</li>
-                     <li>Cluckin' Bell (COMPONENT_BAT_VARMOD_XM3_04)</li>
-                     <li>Fatal Incursion (COMPONENT_BAT_VARMOD_XM3_05)</li>
-                     <li>Lucha Libre (COMPONENT_BAT_VARMOD_XM3_06)</li>
+                     <li title='Trippy'>COMPONENT_BAT_VARMOD_XM3_07</li>
+                     <li title='Spatter'>COMPONENT_BAT_VARMOD_XM3_01</li>
+                     <li title='Blagueurs'>COMPONENT_BAT_VARMOD_XM3</li>
+                     <li title='Bullet Holes'>COMPONENT_BAT_VARMOD_XM3_02</li>
+                     <li title='Burger Shot'>COMPONENT_BAT_VARMOD_XM3_03</li>
+                     <li title='Wall'>COMPONENT_BAT_VARMOD_XM3_09</li>
+                     <li title='Tie-Dye'>COMPONENT_BAT_VARMOD_XM3_08</li>
+                     <li title='Cluckin' Bell'>COMPONENT_BAT_VARMOD_XM3_04</li>
+                     <li title='Fatal Incursion'>COMPONENT_BAT_VARMOD_XM3_05</li>
+                     <li title='Lucha Libre'>COMPONENT_BAT_VARMOD_XM3_06</li>
                   </ul>
                </details>
             </div>
@@ -2554,16 +2619,16 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Eyes (COMPONENT_KNIFE_VARMOD_XM3)</li>
-                     <li>Spatter (COMPONENT_KNIFE_VARMOD_XM3_01)</li>
-                     <li>Lightning (COMPONENT_KNIFE_VARMOD_XM3_03)</li>
-                     <li>Flames (COMPONENT_KNIFE_VARMOD_XM3_02)</li>
-                     <li>Trippy (COMPONENT_KNIFE_VARMOD_XM3_07)</li>
-                     <li>Lucha Libre (COMPONENT_KNIFE_VARMOD_XM3_06)</li>
-                     <li>Pills (COMPONENT_KNIFE_VARMOD_XM3_04)</li>
-                     <li>Snakeskin (COMPONENT_KNIFE_VARMOD_XM3_05)</li>
-                     <li>Tequilya (COMPONENT_KNIFE_VARMOD_XM3_08)</li>
-                     <li>Orang-O-Tang (COMPONENT_KNIFE_VARMOD_XM3_09)</li>
+                     <li title='Eyes'>COMPONENT_KNIFE_VARMOD_XM3</li>
+                     <li title='Spatter'>COMPONENT_KNIFE_VARMOD_XM3_01</li>
+                     <li title='Lightning'>COMPONENT_KNIFE_VARMOD_XM3_03</li>
+                     <li title='Flames'>COMPONENT_KNIFE_VARMOD_XM3_02</li>
+                     <li title='Trippy'>COMPONENT_KNIFE_VARMOD_XM3_07</li>
+                     <li title='Lucha Libre'>COMPONENT_KNIFE_VARMOD_XM3_06</li>
+                     <li title='Pills'>COMPONENT_KNIFE_VARMOD_XM3_04</li>
+                     <li title='Snakeskin'>COMPONENT_KNIFE_VARMOD_XM3_05</li>
+                     <li title='Tequilya'>COMPONENT_KNIFE_VARMOD_XM3_08</li>
+                     <li title='Orang-O-Tang'>COMPONENT_KNIFE_VARMOD_XM3_09</li>
                   </ul>
                </details>
             </div>
@@ -2577,6 +2642,17 @@ weight: 770
             <span><strong>Hash:</strong> WEAPON_BATTLEAXE</span>
             <span><strong>Model Hash Key:</strong> w_me_battleaxe</span>
             <span><strong>Description:</strong> If it's good enough for medieval foot soldiers, modern border guards and pushy soccer moms, it's good enough for you. Part of Bikers.</span>
+            <div class="components"></div>
+            <div class="tints"></div>
+         </div>
+      </div>
+      <div class="weapon">
+         <div class="no-image">This model has no image</div>
+         <div class="weapon-info">
+            <span><strong>Name:</strong> The Shocker</span>
+            <span><strong>Hash:</strong> WEAPON_STUNROD</span>
+            <span><strong>Model Hash Key:</strong> W_ME_Rod_M41</span>
+            <span><strong>Description:</strong> When blunt force trauma just isn't enough, consider diversifying your approach to aggravated assault with a dose of 30,000 volts.</span>
             <div class="components"></div>
             <div class="tints"></div>
          </div>
@@ -2603,9 +2679,9 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>VIP Variant (COMPONENT_SWITCHBLADE_VARMOD_VAR1)</li>
-                     <li>Default Handle (COMPONENT_SWITCHBLADE_VARMOD_BASE)</li>
-                     <li>Bodyguard Variant (COMPONENT_SWITCHBLADE_VARMOD_VAR2)</li>
+                     <li title='VIP Variant'>COMPONENT_SWITCHBLADE_VARMOD_VAR1</li>
+                     <li title='Default Handle'>COMPONENT_SWITCHBLADE_VARMOD_BASE</li>
+                     <li title='Bodyguard Variant'>COMPONENT_SWITCHBLADE_VARMOD_VAR2</li>
                   </ul>
                </details>
             </div>
@@ -2632,6 +2708,35 @@ weight: 770
             <span><strong>Description:</strong> It's not clever and it's not pretty but, most of the time, neither is the guy coming at you with a knife. When all else fails, this gets the job done. Part of the Beach Bum Pack.</span>
             <div class="components"></div>
             <div class="tints"></div>
+         </div>
+      </div>
+   </div>
+</div>
+<h2>Hacking device group</h2>
+<div class="category" id="hacking-device">
+   <div class="weapons">
+      <div class="weapon">
+         <div class="no-image">This model has no image</div>
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Hacking Device</span>
+            <span><strong>Hash:</strong> WEAPON_HACKINGDEVICE</span>
+            <span><strong>Model Hash Key:</strong> W_AM_HackDevice_M32</span>
+            <div class="components"></div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
          </div>
       </div>
    </div>
@@ -2671,7 +2776,14 @@ weight: 770
             <span><strong>Hash:</strong> WEAPON_STUNGUN_MP</span>
             <span><strong>Model Hash Key:</strong> w_pi_stungun</span>
             <span><strong>Description:</strong> It's, like, literally stunning.</span>
-            <div class="components"></div>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='Bottom Dollar Bail Enforcement'>COMPONENT_STUNGUN_VARMOD_BAIL</li>
+                  </ul>
+               </details>
+            </div>
             <div class="tints">
                <details>
                   <summary>Tints</summary>
@@ -2705,38 +2817,38 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Heavy Duty Muzzle Brake (COMPONENT_AT_MUZZLE_05)</li>
-                     <li>Small Scope (COMPONENT_AT_SCOPE_MACRO_MK2)</li>
-                     <li>Skull (COMPONENT_ASSAULTRIFLE_MK2_CAMO_04)</li>
-                     <li>Slanted Muzzle Brake (COMPONENT_AT_MUZZLE_06)</li>
-                     <li>Brushstroke Camo (COMPONENT_ASSAULTRIFLE_MK2_CAMO_02)</li>
-                     <li>Holographic Sight (COMPONENT_AT_SIGHTS)</li>
-                     <li>Default Barrel (COMPONENT_AT_AR_BARREL_01)</li>
-                     <li>Split-End Muzzle Brake (COMPONENT_AT_MUZZLE_07)</li>
-                     <li>Woodland Camo (COMPONENT_ASSAULTRIFLE_MK2_CAMO_03)</li>
-                     <li>Heavy Barrel (COMPONENT_AT_AR_BARREL_02)</li>
-                     <li>Full Metal Jacket Rounds (COMPONENT_ASSAULTRIFLE_MK2_CLIP_FMJ)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Geometric (COMPONENT_ASSAULTRIFLE_MK2_CAMO_09)</li>
-                     <li>Default Clip (COMPONENT_ASSAULTRIFLE_MK2_CLIP_01)</li>
-                     <li>Digital Camo (COMPONENT_ASSAULTRIFLE_MK2_CAMO)</li>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP_02)</li>
-                     <li>Boom! (COMPONENT_ASSAULTRIFLE_MK2_CAMO_10)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP_02)</li>
-                     <li>Armor Piercing Rounds (COMPONENT_ASSAULTRIFLE_MK2_CLIP_ARMORPIERCING)</li>
-                     <li>Leopard (COMPONENT_ASSAULTRIFLE_MK2_CAMO_07)</li>
-                     <li>Flat Muzzle Brake (COMPONENT_AT_MUZZLE_01)</li>
-                     <li>Patriotic (COMPONENT_ASSAULTRIFLE_MK2_CAMO_IND_01)</li>
-                     <li>Sessanta Nove (COMPONENT_ASSAULTRIFLE_MK2_CAMO_05)</li>
-                     <li>Large Scope (COMPONENT_AT_SCOPE_MEDIUM_MK2)</li>
-                     <li>Tactical Muzzle Brake (COMPONENT_AT_MUZZLE_02)</li>
-                     <li>Perseus (COMPONENT_ASSAULTRIFLE_MK2_CAMO_06)</li>
-                     <li>Extended Clip (COMPONENT_ASSAULTRIFLE_MK2_CLIP_02)</li>
-                     <li>Fat-End Muzzle Brake (COMPONENT_AT_MUZZLE_03)</li>
-                     <li>Precision Muzzle Brake (COMPONENT_AT_MUZZLE_04)</li>
-                     <li>Tracer Rounds (COMPONENT_ASSAULTRIFLE_MK2_CLIP_TRACER)</li>
-                     <li>Incendiary Rounds (COMPONENT_ASSAULTRIFLE_MK2_CLIP_INCENDIARY)</li>
-                     <li>Zebra (COMPONENT_ASSAULTRIFLE_MK2_CAMO_08)</li>
+                     <li title='Heavy Duty Muzzle Brake'>COMPONENT_AT_MUZZLE_05</li>
+                     <li title='Small Scope'>COMPONENT_AT_SCOPE_MACRO_MK2</li>
+                     <li title='Skull'>COMPONENT_ASSAULTRIFLE_MK2_CAMO_04</li>
+                     <li title='Slanted Muzzle Brake'>COMPONENT_AT_MUZZLE_06</li>
+                     <li title='Brushstroke Camo'>COMPONENT_ASSAULTRIFLE_MK2_CAMO_02</li>
+                     <li title='Holographic Sight'>COMPONENT_AT_SIGHTS</li>
+                     <li title='Default Barrel'>COMPONENT_AT_AR_BARREL_01</li>
+                     <li title='Split-End Muzzle Brake'>COMPONENT_AT_MUZZLE_07</li>
+                     <li title='Woodland Camo'>COMPONENT_ASSAULTRIFLE_MK2_CAMO_03</li>
+                     <li title='Heavy Barrel'>COMPONENT_AT_AR_BARREL_02</li>
+                     <li title='Full Metal Jacket Rounds'>COMPONENT_ASSAULTRIFLE_MK2_CLIP_FMJ</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Geometric'>COMPONENT_ASSAULTRIFLE_MK2_CAMO_09</li>
+                     <li title='Default Clip'>COMPONENT_ASSAULTRIFLE_MK2_CLIP_01</li>
+                     <li title='Digital Camo'>COMPONENT_ASSAULTRIFLE_MK2_CAMO</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP_02</li>
+                     <li title='Boom!'>COMPONENT_ASSAULTRIFLE_MK2_CAMO_10</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
+                     <li title='Armor Piercing Rounds'>COMPONENT_ASSAULTRIFLE_MK2_CLIP_ARMORPIERCING</li>
+                     <li title='Leopard'>COMPONENT_ASSAULTRIFLE_MK2_CAMO_07</li>
+                     <li title='Flat Muzzle Brake'>COMPONENT_AT_MUZZLE_01</li>
+                     <li title='Patriotic'>COMPONENT_ASSAULTRIFLE_MK2_CAMO_IND_01</li>
+                     <li title='Sessanta Nove'>COMPONENT_ASSAULTRIFLE_MK2_CAMO_05</li>
+                     <li title='Large Scope'>COMPONENT_AT_SCOPE_MEDIUM_MK2</li>
+                     <li title='Tactical Muzzle Brake'>COMPONENT_AT_MUZZLE_02</li>
+                     <li title='Perseus'>COMPONENT_ASSAULTRIFLE_MK2_CAMO_06</li>
+                     <li title='Extended Clip'>COMPONENT_ASSAULTRIFLE_MK2_CLIP_02</li>
+                     <li title='Fat-End Muzzle Brake'>COMPONENT_AT_MUZZLE_03</li>
+                     <li title='Precision Muzzle Brake'>COMPONENT_AT_MUZZLE_04</li>
+                     <li title='Tracer Rounds'>COMPONENT_ASSAULTRIFLE_MK2_CLIP_TRACER</li>
+                     <li title='Incendiary Rounds'>COMPONENT_ASSAULTRIFLE_MK2_CLIP_INCENDIARY</li>
+                     <li title='Zebra'>COMPONENT_ASSAULTRIFLE_MK2_CAMO_08</li>
                   </ul>
                </details>
             </div>
@@ -2792,9 +2904,43 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_COMPACTRIFLE_CLIP_01)</li>
-                     <li>Extended Clip (COMPONENT_COMPACTRIFLE_CLIP_02)</li>
-                     <li>Drum Magazine (COMPONENT_COMPACTRIFLE_CLIP_03)</li>
+                     <li title='Default Clip'>COMPONENT_COMPACTRIFLE_CLIP_01</li>
+                     <li title='Extended Clip'>COMPONENT_COMPACTRIFLE_CLIP_02</li>
+                     <li title='Drum Magazine'>COMPONENT_COMPACTRIFLE_CLIP_03</li>
+                  </ul>
+               </details>
+            </div>
+            <div class="tints">
+               <details>
+                  <summary>Tints</summary>
+                  <ul>
+                     <li>Black tint</li>
+                     <li>Green tint</li>
+                     <li>Gold tint</li>
+                     <li>Pink tint</li>
+                     <li>Army tint</li>
+                     <li>LSPD tint</li>
+                     <li>Orange tint</li>
+                     <li>Platinum tint</li>
+                  </ul>
+               </details>
+            </div>
+         </div>
+      </div>
+      <div class="weapon">
+         <div class="no-image">This model has no image</div>
+         <div class="weapon-info">
+            <span><strong>Name:</strong> Battle Rifle</span>
+            <span><strong>Hash:</strong> WEAPON_BATTLERIFLE</span>
+            <span><strong>Model Hash Key:</strong> W_SL_BattleRifle_M32</span>
+            <span><strong>Description:</strong> Does life feel like a daily battle? Then why not try the Battle Rifle: the fast-acting pick-me-up that flawlessly targets every pain in your ass. Part of The Chop Shop.</span>
+            <div class="components">
+               <details>
+                  <summary>Components</summary>
+                  <ul>
+                     <li title='Extended Clip'>COMPONENT_BATTLERIFLE_CLIP_02</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Default Clip'>COMPONENT_BATTLERIFLE_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -2826,13 +2972,13 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP)</li>
-                     <li>Gilded Gun Metal Finish (COMPONENT_BULLPUPRIFLE_VARMOD_LOW)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_SMALL)</li>
-                     <li>Extended Clip (COMPONENT_BULLPUPRIFLE_CLIP_02)</li>
-                     <li>Default Clip (COMPONENT_BULLPUPRIFLE_CLIP_01)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Gilded Gun Metal Finish'>COMPONENT_BULLPUPRIFLE_VARMOD_LOW</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_SMALL</li>
+                     <li title='Extended Clip'>COMPONENT_BULLPUPRIFLE_CLIP_02</li>
+                     <li title='Default Clip'>COMPONENT_BULLPUPRIFLE_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -2864,15 +3010,16 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li> (COMPONENT_AT_RAILCOVER_01)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP)</li>
-                     <li>Extended Clip (COMPONENT_CARBINERIFLE_CLIP_02)</li>
-                     <li>Default Clip (COMPONENT_CARBINERIFLE_CLIP_01)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_MEDIUM)</li>
-                     <li>Box Magazine (COMPONENT_CARBINERIFLE_CLIP_03)</li>
-                     <li>Yusuf Amir Luxury Finish (COMPONENT_CARBINERIFLE_VARMOD_LUXE)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Suede Bucks Finish'>COMPONENT_CARBINERIFLE_VARMOD_MICH</li>
+                     <li title='N/A'>COMPONENT_AT_RAILCOVER_01</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Extended Clip'>COMPONENT_CARBINERIFLE_CLIP_02</li>
+                     <li title='Default Clip'>COMPONENT_CARBINERIFLE_CLIP_01</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_MEDIUM</li>
+                     <li title='Box Magazine'>COMPONENT_CARBINERIFLE_CLIP_03</li>
+                     <li title='Yusuf Amir Luxury Finish'>COMPONENT_CARBINERIFLE_VARMOD_LUXE</li>
                   </ul>
                </details>
             </div>
@@ -2904,38 +3051,38 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_BULLPUPRIFLE_MK2_CLIP_01)</li>
-                     <li>Perseus (COMPONENT_BULLPUPRIFLE_MK2_CAMO_06)</li>
-                     <li>Heavy Duty Muzzle Brake (COMPONENT_AT_MUZZLE_05)</li>
-                     <li>Slanted Muzzle Brake (COMPONENT_AT_MUZZLE_06)</li>
-                     <li>Heavy Barrel (COMPONENT_AT_BP_BARREL_02)</li>
-                     <li>Medium Scope (COMPONENT_AT_SCOPE_SMALL_MK2)</li>
-                     <li>Holographic Sight (COMPONENT_AT_SIGHTS)</li>
-                     <li>Full Metal Jacket Rounds (COMPONENT_BULLPUPRIFLE_MK2_CLIP_FMJ)</li>
-                     <li>Split-End Muzzle Brake (COMPONENT_AT_MUZZLE_07)</li>
-                     <li>Default Barrel (COMPONENT_AT_BP_BARREL_01)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Tracer Rounds (COMPONENT_BULLPUPRIFLE_MK2_CLIP_TRACER)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP)</li>
-                     <li>Sessanta Nove (COMPONENT_BULLPUPRIFLE_MK2_CAMO_05)</li>
-                     <li>Skull (COMPONENT_BULLPUPRIFLE_MK2_CAMO_04)</li>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP_02)</li>
-                     <li>Woodland Camo (COMPONENT_BULLPUPRIFLE_MK2_CAMO_03)</li>
-                     <li>Boom! (COMPONENT_BULLPUPRIFLE_MK2_CAMO_10)</li>
-                     <li>Incendiary Rounds (COMPONENT_BULLPUPRIFLE_MK2_CLIP_INCENDIARY)</li>
-                     <li>Digital Camo (COMPONENT_BULLPUPRIFLE_MK2_CAMO)</li>
-                     <li>Brushstroke Camo (COMPONENT_BULLPUPRIFLE_MK2_CAMO_02)</li>
-                     <li>Flat Muzzle Brake (COMPONENT_AT_MUZZLE_01)</li>
-                     <li>Patriotic (COMPONENT_BULLPUPRIFLE_MK2_CAMO_IND_01)</li>
-                     <li>Small Scope (COMPONENT_AT_SCOPE_MACRO_02_MK2)</li>
-                     <li>Tactical Muzzle Brake (COMPONENT_AT_MUZZLE_02)</li>
-                     <li>Geometric (COMPONENT_BULLPUPRIFLE_MK2_CAMO_09)</li>
-                     <li>Zebra (COMPONENT_BULLPUPRIFLE_MK2_CAMO_08)</li>
-                     <li>Fat-End Muzzle Brake (COMPONENT_AT_MUZZLE_03)</li>
-                     <li>Precision Muzzle Brake (COMPONENT_AT_MUZZLE_04)</li>
-                     <li>Extended Clip (COMPONENT_BULLPUPRIFLE_MK2_CLIP_02)</li>
-                     <li>Leopard (COMPONENT_BULLPUPRIFLE_MK2_CAMO_07)</li>
-                     <li>Armor Piercing Rounds (COMPONENT_BULLPUPRIFLE_MK2_CLIP_ARMORPIERCING)</li>
+                     <li title='Default Clip'>COMPONENT_BULLPUPRIFLE_MK2_CLIP_01</li>
+                     <li title='Perseus'>COMPONENT_BULLPUPRIFLE_MK2_CAMO_06</li>
+                     <li title='Heavy Duty Muzzle Brake'>COMPONENT_AT_MUZZLE_05</li>
+                     <li title='Slanted Muzzle Brake'>COMPONENT_AT_MUZZLE_06</li>
+                     <li title='Heavy Barrel'>COMPONENT_AT_BP_BARREL_02</li>
+                     <li title='Medium Scope'>COMPONENT_AT_SCOPE_SMALL_MK2</li>
+                     <li title='Holographic Sight'>COMPONENT_AT_SIGHTS</li>
+                     <li title='Full Metal Jacket Rounds'>COMPONENT_BULLPUPRIFLE_MK2_CLIP_FMJ</li>
+                     <li title='Split-End Muzzle Brake'>COMPONENT_AT_MUZZLE_07</li>
+                     <li title='Default Barrel'>COMPONENT_AT_BP_BARREL_01</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Tracer Rounds'>COMPONENT_BULLPUPRIFLE_MK2_CLIP_TRACER</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Sessanta Nove'>COMPONENT_BULLPUPRIFLE_MK2_CAMO_05</li>
+                     <li title='Skull'>COMPONENT_BULLPUPRIFLE_MK2_CAMO_04</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP_02</li>
+                     <li title='Woodland Camo'>COMPONENT_BULLPUPRIFLE_MK2_CAMO_03</li>
+                     <li title='Boom!'>COMPONENT_BULLPUPRIFLE_MK2_CAMO_10</li>
+                     <li title='Incendiary Rounds'>COMPONENT_BULLPUPRIFLE_MK2_CLIP_INCENDIARY</li>
+                     <li title='Digital Camo'>COMPONENT_BULLPUPRIFLE_MK2_CAMO</li>
+                     <li title='Brushstroke Camo'>COMPONENT_BULLPUPRIFLE_MK2_CAMO_02</li>
+                     <li title='Flat Muzzle Brake'>COMPONENT_AT_MUZZLE_01</li>
+                     <li title='Patriotic'>COMPONENT_BULLPUPRIFLE_MK2_CAMO_IND_01</li>
+                     <li title='Small Scope'>COMPONENT_AT_SCOPE_MACRO_02_MK2</li>
+                     <li title='Tactical Muzzle Brake'>COMPONENT_AT_MUZZLE_02</li>
+                     <li title='Geometric'>COMPONENT_BULLPUPRIFLE_MK2_CAMO_09</li>
+                     <li title='Zebra'>COMPONENT_BULLPUPRIFLE_MK2_CAMO_08</li>
+                     <li title='Fat-End Muzzle Brake'>COMPONENT_AT_MUZZLE_03</li>
+                     <li title='Precision Muzzle Brake'>COMPONENT_AT_MUZZLE_04</li>
+                     <li title='Extended Clip'>COMPONENT_BULLPUPRIFLE_MK2_CLIP_02</li>
+                     <li title='Leopard'>COMPONENT_BULLPUPRIFLE_MK2_CAMO_07</li>
+                     <li title='Armor Piercing Rounds'>COMPONENT_BULLPUPRIFLE_MK2_CLIP_ARMORPIERCING</li>
                   </ul>
                </details>
             </div>
@@ -2991,38 +3138,38 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Heavy Duty Muzzle Brake (COMPONENT_AT_MUZZLE_05)</li>
-                     <li>Small Scope (COMPONENT_AT_SCOPE_MACRO_MK2)</li>
-                     <li>Leopard (COMPONENT_SPECIALCARBINE_MK2_CAMO_07)</li>
-                     <li>Default Clip (COMPONENT_SPECIALCARBINE_MK2_CLIP_01)</li>
-                     <li>Slanted Muzzle Brake (COMPONENT_AT_MUZZLE_06)</li>
-                     <li>Woodland Camo (COMPONENT_SPECIALCARBINE_MK2_CAMO_03)</li>
-                     <li>Holographic Sight (COMPONENT_AT_SIGHTS)</li>
-                     <li>Brushstroke Camo (COMPONENT_SPECIALCARBINE_MK2_CAMO_02)</li>
-                     <li>Split-End Muzzle Brake (COMPONENT_AT_MUZZLE_07)</li>
-                     <li>Full Metal Jacket Rounds (COMPONENT_SPECIALCARBINE_MK2_CLIP_FMJ)</li>
-                     <li>Armor Piercing Rounds (COMPONENT_SPECIALCARBINE_MK2_CLIP_ARMORPIERCING)</li>
-                     <li>Patriotic (COMPONENT_SPECIALCARBINE_MK2_CAMO_IND_01)</li>
-                     <li>Geometric (COMPONENT_SPECIALCARBINE_MK2_CAMO_09)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Tracer Rounds (COMPONENT_SPECIALCARBINE_MK2_CLIP_TRACER)</li>
-                     <li>Boom! (COMPONENT_SPECIALCARBINE_MK2_CAMO_10)</li>
-                     <li>Zebra (COMPONENT_SPECIALCARBINE_MK2_CAMO_08)</li>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP_02)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP_02)</li>
-                     <li>Skull (COMPONENT_SPECIALCARBINE_MK2_CAMO_04)</li>
-                     <li>Flat Muzzle Brake (COMPONENT_AT_MUZZLE_01)</li>
-                     <li>Large Scope (COMPONENT_AT_SCOPE_MEDIUM_MK2)</li>
-                     <li>Tactical Muzzle Brake (COMPONENT_AT_MUZZLE_02)</li>
-                     <li>Digital Camo (COMPONENT_SPECIALCARBINE_MK2_CAMO)</li>
-                     <li>Incendiary Rounds (COMPONENT_SPECIALCARBINE_MK2_CLIP_INCENDIARY)</li>
-                     <li>Fat-End Muzzle Brake (COMPONENT_AT_MUZZLE_03)</li>
-                     <li>Extended Clip (COMPONENT_SPECIALCARBINE_MK2_CLIP_02)</li>
-                     <li>Perseus (COMPONENT_SPECIALCARBINE_MK2_CAMO_06)</li>
-                     <li>Default Barrel (COMPONENT_AT_SC_BARREL_01)</li>
-                     <li>Precision Muzzle Brake (COMPONENT_AT_MUZZLE_04)</li>
-                     <li>Sessanta Nove (COMPONENT_SPECIALCARBINE_MK2_CAMO_05)</li>
-                     <li>Heavy Barrel (COMPONENT_AT_SC_BARREL_02)</li>
+                     <li title='Heavy Duty Muzzle Brake'>COMPONENT_AT_MUZZLE_05</li>
+                     <li title='Small Scope'>COMPONENT_AT_SCOPE_MACRO_MK2</li>
+                     <li title='Leopard'>COMPONENT_SPECIALCARBINE_MK2_CAMO_07</li>
+                     <li title='Default Clip'>COMPONENT_SPECIALCARBINE_MK2_CLIP_01</li>
+                     <li title='Slanted Muzzle Brake'>COMPONENT_AT_MUZZLE_06</li>
+                     <li title='Woodland Camo'>COMPONENT_SPECIALCARBINE_MK2_CAMO_03</li>
+                     <li title='Holographic Sight'>COMPONENT_AT_SIGHTS</li>
+                     <li title='Brushstroke Camo'>COMPONENT_SPECIALCARBINE_MK2_CAMO_02</li>
+                     <li title='Split-End Muzzle Brake'>COMPONENT_AT_MUZZLE_07</li>
+                     <li title='Full Metal Jacket Rounds'>COMPONENT_SPECIALCARBINE_MK2_CLIP_FMJ</li>
+                     <li title='Armor Piercing Rounds'>COMPONENT_SPECIALCARBINE_MK2_CLIP_ARMORPIERCING</li>
+                     <li title='Patriotic'>COMPONENT_SPECIALCARBINE_MK2_CAMO_IND_01</li>
+                     <li title='Geometric'>COMPONENT_SPECIALCARBINE_MK2_CAMO_09</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Tracer Rounds'>COMPONENT_SPECIALCARBINE_MK2_CLIP_TRACER</li>
+                     <li title='Boom!'>COMPONENT_SPECIALCARBINE_MK2_CAMO_10</li>
+                     <li title='Zebra'>COMPONENT_SPECIALCARBINE_MK2_CAMO_08</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP_02</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
+                     <li title='Skull'>COMPONENT_SPECIALCARBINE_MK2_CAMO_04</li>
+                     <li title='Flat Muzzle Brake'>COMPONENT_AT_MUZZLE_01</li>
+                     <li title='Large Scope'>COMPONENT_AT_SCOPE_MEDIUM_MK2</li>
+                     <li title='Tactical Muzzle Brake'>COMPONENT_AT_MUZZLE_02</li>
+                     <li title='Digital Camo'>COMPONENT_SPECIALCARBINE_MK2_CAMO</li>
+                     <li title='Incendiary Rounds'>COMPONENT_SPECIALCARBINE_MK2_CLIP_INCENDIARY</li>
+                     <li title='Fat-End Muzzle Brake'>COMPONENT_AT_MUZZLE_03</li>
+                     <li title='Extended Clip'>COMPONENT_SPECIALCARBINE_MK2_CLIP_02</li>
+                     <li title='Perseus'>COMPONENT_SPECIALCARBINE_MK2_CAMO_06</li>
+                     <li title='Default Barrel'>COMPONENT_AT_SC_BARREL_01</li>
+                     <li title='Precision Muzzle Brake'>COMPONENT_AT_MUZZLE_04</li>
+                     <li title='Sessanta Nove'>COMPONENT_SPECIALCARBINE_MK2_CAMO_05</li>
+                     <li title='Heavy Barrel'>COMPONENT_AT_SC_BARREL_02</li>
                   </ul>
                </details>
             </div>
@@ -3078,12 +3225,12 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_MILITARYRIFLE_CLIP_01)</li>
-                     <li>Extended Clip (COMPONENT_MILITARYRIFLE_CLIP_02)</li>
-                     <li>Iron Sights (COMPONENT_MILITARYRIFLE_SIGHT_01)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_SMALL)</li>
+                     <li title='Default Clip'>COMPONENT_MILITARYRIFLE_CLIP_01</li>
+                     <li title='Extended Clip'>COMPONENT_MILITARYRIFLE_CLIP_02</li>
+                     <li title='Iron Sights'>COMPONENT_MILITARYRIFLE_SIGHT_01</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_SMALL</li>
                   </ul>
                </details>
             </div>
@@ -3115,12 +3262,12 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Gilded Gun Metal Finish (COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP)</li>
-                     <li>Extended Clip (COMPONENT_ADVANCEDRIFLE_CLIP_02)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_SMALL)</li>
-                     <li>Default Clip (COMPONENT_ADVANCEDRIFLE_CLIP_01)</li>
+                     <li title='Gilded Gun Metal Finish'>COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Extended Clip'>COMPONENT_ADVANCEDRIFLE_CLIP_02</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_SMALL</li>
+                     <li title='Default Clip'>COMPONENT_ADVANCEDRIFLE_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -3152,14 +3299,14 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Yusuf Amir Luxury Finish (COMPONENT_ASSAULTRIFLE_VARMOD_LUXE)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_MACRO)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP_02)</li>
-                     <li>Extended Clip (COMPONENT_ASSAULTRIFLE_CLIP_02)</li>
-                     <li>Default Clip (COMPONENT_ASSAULTRIFLE_CLIP_01)</li>
-                     <li>Drum Magazine (COMPONENT_ASSAULTRIFLE_CLIP_03)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Yusuf Amir Luxury Finish'>COMPONENT_ASSAULTRIFLE_VARMOD_LUXE</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Small Scope'>COMPONENT_AT_SCOPE_MACRO</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
+                     <li title='Extended Clip'>COMPONENT_ASSAULTRIFLE_CLIP_02</li>
+                     <li title='Default Clip'>COMPONENT_ASSAULTRIFLE_CLIP_01</li>
+                     <li title='Drum Magazine'>COMPONENT_ASSAULTRIFLE_CLIP_03</li>
                   </ul>
                </details>
             </div>
@@ -3191,14 +3338,15 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Drum Magazine (COMPONENT_SPECIALCARBINE_CLIP_03)</li>
-                     <li>Etched Gun Metal Finish (COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Extended Clip (COMPONENT_SPECIALCARBINE_CLIP_02)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_MEDIUM)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP_02)</li>
-                     <li>Default Clip (COMPONENT_SPECIALCARBINE_CLIP_01)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Skull Santa Finish'>COMPONENT_SPECIALCARBINE_VARMOD_XMAS23</li>
+                     <li title='Drum Magazine'>COMPONENT_SPECIALCARBINE_CLIP_03</li>
+                     <li title='Etched Gun Metal Finish'>COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Extended Clip'>COMPONENT_SPECIALCARBINE_CLIP_02</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_MEDIUM</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
+                     <li title='Default Clip'>COMPONENT_SPECIALCARBINE_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -3230,14 +3378,14 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Default Clip (COMPONENT_HEAVYRIFLE_CLIP_01)</li>
-                     <li>Extended Clip (COMPONENT_HEAVYRIFLE_CLIP_02)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_MEDIUM)</li>
-                     <li>Iron Sights (COMPONENT_HEAVYRIFLE_SIGHT_01)</li>
-                     <li>Families Finish (COMPONENT_HEAVYRIFLE_CAMO1)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Default Clip'>COMPONENT_HEAVYRIFLE_CLIP_01</li>
+                     <li title='Extended Clip'>COMPONENT_HEAVYRIFLE_CLIP_02</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_MEDIUM</li>
+                     <li title='Iron Sights'>COMPONENT_HEAVYRIFLE_SIGHT_01</li>
+                     <li title='Families Finish'>COMPONENT_HEAVYRIFLE_CAMO1</li>
                   </ul>
                </details>
             </div>
@@ -3269,11 +3417,11 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Default Clip (COMPONENT_TACTICALRIFLE_CLIP_01)</li>
-                     <li>Extended Clip (COMPONENT_TACTICALRIFLE_CLIP_02)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH_REH)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP_02)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Default Clip'>COMPONENT_TACTICALRIFLE_CLIP_01</li>
+                     <li title='Extended Clip'>COMPONENT_TACTICALRIFLE_CLIP_02</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH_REH</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP_02</li>
                   </ul>
                </details>
             </div>
@@ -3305,38 +3453,38 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Heavy Duty Muzzle Brake (COMPONENT_AT_MUZZLE_05)</li>
-                     <li>Small Scope (COMPONENT_AT_SCOPE_MACRO_MK2)</li>
-                     <li>Tracer Rounds (COMPONENT_CARBINERIFLE_MK2_CLIP_TRACER)</li>
-                     <li>Armor Piercing Rounds (COMPONENT_CARBINERIFLE_MK2_CLIP_ARMORPIERCING)</li>
-                     <li>Woodland Camo (COMPONENT_CARBINERIFLE_MK2_CAMO_03)</li>
-                     <li>Slanted Muzzle Brake (COMPONENT_AT_MUZZLE_06)</li>
-                     <li>Incendiary Rounds (COMPONENT_CARBINERIFLE_MK2_CLIP_INCENDIARY)</li>
-                     <li>Brushstroke Camo (COMPONENT_CARBINERIFLE_MK2_CAMO_02)</li>
-                     <li>Holographic Sight (COMPONENT_AT_SIGHTS)</li>
-                     <li>Full Metal Jacket Rounds (COMPONENT_CARBINERIFLE_MK2_CLIP_FMJ)</li>
-                     <li>Digital Camo (COMPONENT_CARBINERIFLE_MK2_CAMO)</li>
-                     <li>Default Clip (COMPONENT_CARBINERIFLE_MK2_CLIP_01)</li>
-                     <li>Split-End Muzzle Brake (COMPONENT_AT_MUZZLE_07)</li>
-                     <li>Extended Clip (COMPONENT_CARBINERIFLE_MK2_CLIP_02)</li>
-                     <li>Boom! (COMPONENT_CARBINERIFLE_MK2_CAMO_10)</li>
-                     <li>Flashlight (COMPONENT_AT_AR_FLSH)</li>
-                     <li>Default Barrel (COMPONENT_AT_CR_BARREL_01)</li>
-                     <li>Suppressor (COMPONENT_AT_AR_SUPP)</li>
-                     <li>Perseus (COMPONENT_CARBINERIFLE_MK2_CAMO_06)</li>
-                     <li>Heavy Barrel (COMPONENT_AT_CR_BARREL_02)</li>
-                     <li>Geometric (COMPONENT_CARBINERIFLE_MK2_CAMO_09)</li>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP_02)</li>
-                     <li>Zebra (COMPONENT_CARBINERIFLE_MK2_CAMO_08)</li>
-                     <li>Flat Muzzle Brake (COMPONENT_AT_MUZZLE_01)</li>
-                     <li>Large Scope (COMPONENT_AT_SCOPE_MEDIUM_MK2)</li>
-                     <li>Tactical Muzzle Brake (COMPONENT_AT_MUZZLE_02)</li>
-                     <li>Sessanta Nove (COMPONENT_CARBINERIFLE_MK2_CAMO_05)</li>
-                     <li>Patriotic (COMPONENT_CARBINERIFLE_MK2_CAMO_IND_01)</li>
-                     <li>Fat-End Muzzle Brake (COMPONENT_AT_MUZZLE_03)</li>
-                     <li>Skull (COMPONENT_CARBINERIFLE_MK2_CAMO_04)</li>
-                     <li>Precision Muzzle Brake (COMPONENT_AT_MUZZLE_04)</li>
-                     <li>Leopard (COMPONENT_CARBINERIFLE_MK2_CAMO_07)</li>
+                     <li title='Heavy Duty Muzzle Brake'>COMPONENT_AT_MUZZLE_05</li>
+                     <li title='Small Scope'>COMPONENT_AT_SCOPE_MACRO_MK2</li>
+                     <li title='Tracer Rounds'>COMPONENT_CARBINERIFLE_MK2_CLIP_TRACER</li>
+                     <li title='Armor Piercing Rounds'>COMPONENT_CARBINERIFLE_MK2_CLIP_ARMORPIERCING</li>
+                     <li title='Woodland Camo'>COMPONENT_CARBINERIFLE_MK2_CAMO_03</li>
+                     <li title='Slanted Muzzle Brake'>COMPONENT_AT_MUZZLE_06</li>
+                     <li title='Incendiary Rounds'>COMPONENT_CARBINERIFLE_MK2_CLIP_INCENDIARY</li>
+                     <li title='Brushstroke Camo'>COMPONENT_CARBINERIFLE_MK2_CAMO_02</li>
+                     <li title='Holographic Sight'>COMPONENT_AT_SIGHTS</li>
+                     <li title='Full Metal Jacket Rounds'>COMPONENT_CARBINERIFLE_MK2_CLIP_FMJ</li>
+                     <li title='Digital Camo'>COMPONENT_CARBINERIFLE_MK2_CAMO</li>
+                     <li title='Default Clip'>COMPONENT_CARBINERIFLE_MK2_CLIP_01</li>
+                     <li title='Split-End Muzzle Brake'>COMPONENT_AT_MUZZLE_07</li>
+                     <li title='Extended Clip'>COMPONENT_CARBINERIFLE_MK2_CLIP_02</li>
+                     <li title='Boom!'>COMPONENT_CARBINERIFLE_MK2_CAMO_10</li>
+                     <li title='Flashlight'>COMPONENT_AT_AR_FLSH</li>
+                     <li title='Default Barrel'>COMPONENT_AT_CR_BARREL_01</li>
+                     <li title='Suppressor'>COMPONENT_AT_AR_SUPP</li>
+                     <li title='Perseus'>COMPONENT_CARBINERIFLE_MK2_CAMO_06</li>
+                     <li title='Heavy Barrel'>COMPONENT_AT_CR_BARREL_02</li>
+                     <li title='Geometric'>COMPONENT_CARBINERIFLE_MK2_CAMO_09</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP_02</li>
+                     <li title='Zebra'>COMPONENT_CARBINERIFLE_MK2_CAMO_08</li>
+                     <li title='Flat Muzzle Brake'>COMPONENT_AT_MUZZLE_01</li>
+                     <li title='Large Scope'>COMPONENT_AT_SCOPE_MEDIUM_MK2</li>
+                     <li title='Tactical Muzzle Brake'>COMPONENT_AT_MUZZLE_02</li>
+                     <li title='Sessanta Nove'>COMPONENT_CARBINERIFLE_MK2_CAMO_05</li>
+                     <li title='Patriotic'>COMPONENT_CARBINERIFLE_MK2_CAMO_IND_01</li>
+                     <li title='Fat-End Muzzle Brake'>COMPONENT_AT_MUZZLE_03</li>
+                     <li title='Skull'>COMPONENT_CARBINERIFLE_MK2_CAMO_04</li>
+                     <li title='Precision Muzzle Brake'>COMPONENT_AT_MUZZLE_04</li>
+                     <li title='Leopard'>COMPONENT_CARBINERIFLE_MK2_CAMO_07</li>
                   </ul>
                </details>
             </div>
@@ -3421,8 +3569,8 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Default Clip (COMPONENT_GUSENBERG_CLIP_01)</li>
-                     <li>Extended Clip (COMPONENT_GUSENBERG_CLIP_02)</li>
+                     <li title='Default Clip'>COMPONENT_GUSENBERG_CLIP_01</li>
+                     <li title='Extended Clip'>COMPONENT_GUSENBERG_CLIP_02</li>
                   </ul>
                </details>
             </div>
@@ -3454,11 +3602,11 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP)</li>
-                     <li>Etched Gun Metal Finish (COMPONENT_COMBATMG_VARMOD_LOWRIDER)</li>
-                     <li>Scope (COMPONENT_AT_SCOPE_MEDIUM)</li>
-                     <li>Extended Clip (COMPONENT_COMBATMG_CLIP_02)</li>
-                     <li>Default Clip (COMPONENT_COMBATMG_CLIP_01)</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP</li>
+                     <li title='Etched Gun Metal Finish'>COMPONENT_COMBATMG_VARMOD_LOWRIDER</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_MEDIUM</li>
+                     <li title='Extended Clip'>COMPONENT_COMBATMG_CLIP_02</li>
+                     <li title='Default Clip'>COMPONENT_COMBATMG_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -3490,10 +3638,10 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Scope (COMPONENT_AT_SCOPE_SMALL_02)</li>
-                     <li>Extended Clip (COMPONENT_MG_CLIP_02)</li>
-                     <li>Yusuf Amir Luxury Finish (COMPONENT_MG_VARMOD_LOWRIDER)</li>
-                     <li>Default Clip (COMPONENT_MG_CLIP_01)</li>
+                     <li title='Scope'>COMPONENT_AT_SCOPE_SMALL_02</li>
+                     <li title='Extended Clip'>COMPONENT_MG_CLIP_02</li>
+                     <li title='Yusuf Amir Luxury Finish'>COMPONENT_MG_VARMOD_LOWRIDER</li>
+                     <li title='Default Clip'>COMPONENT_MG_CLIP_01</li>
                   </ul>
                </details>
             </div>
@@ -3525,36 +3673,36 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>Boom! (COMPONENT_COMBATMG_MK2_CAMO_10)</li>
-                     <li>Heavy Duty Muzzle Brake (COMPONENT_AT_MUZZLE_05)</li>
-                     <li>Geometric (COMPONENT_COMBATMG_MK2_CAMO_09)</li>
-                     <li>Extended Clip (COMPONENT_COMBATMG_MK2_CLIP_02)</li>
-                     <li>Zebra (COMPONENT_COMBATMG_MK2_CAMO_08)</li>
-                     <li>Armor Piercing Rounds (COMPONENT_COMBATMG_MK2_CLIP_ARMORPIERCING)</li>
-                     <li>Slanted Muzzle Brake (COMPONENT_AT_MUZZLE_06)</li>
-                     <li>Medium Scope (COMPONENT_AT_SCOPE_SMALL_MK2)</li>
-                     <li>Holographic Sight (COMPONENT_AT_SIGHTS)</li>
-                     <li>Sessanta Nove (COMPONENT_COMBATMG_MK2_CAMO_05)</li>
-                     <li>Default Clip (COMPONENT_COMBATMG_MK2_CLIP_01)</li>
-                     <li>Digital Camo (COMPONENT_COMBATMG_MK2_CAMO)</li>
-                     <li>Split-End Muzzle Brake (COMPONENT_AT_MUZZLE_07)</li>
-                     <li>Full Metal Jacket Rounds (COMPONENT_COMBATMG_MK2_CLIP_FMJ)</li>
-                     <li>Skull (COMPONENT_COMBATMG_MK2_CAMO_04)</li>
-                     <li>Leopard (COMPONENT_COMBATMG_MK2_CAMO_07)</li>
-                     <li>Perseus (COMPONENT_COMBATMG_MK2_CAMO_06)</li>
-                     <li>Grip (COMPONENT_AT_AR_AFGRIP_02)</li>
-                     <li>Heavy Barrel (COMPONENT_AT_MG_BARREL_02)</li>
-                     <li>Flat Muzzle Brake (COMPONENT_AT_MUZZLE_01)</li>
-                     <li>Woodland Camo (COMPONENT_COMBATMG_MK2_CAMO_03)</li>
-                     <li>Incendiary Rounds (COMPONENT_COMBATMG_MK2_CLIP_INCENDIARY)</li>
-                     <li>Default Barrel (COMPONENT_AT_MG_BARREL_01)</li>
-                     <li>Large Scope (COMPONENT_AT_SCOPE_MEDIUM_MK2)</li>
-                     <li>Tactical Muzzle Brake (COMPONENT_AT_MUZZLE_02)</li>
-                     <li>Brushstroke Camo (COMPONENT_COMBATMG_MK2_CAMO_02)</li>
-                     <li>Patriotic (COMPONENT_COMBATMG_MK2_CAMO_IND_01)</li>
-                     <li>Fat-End Muzzle Brake (COMPONENT_AT_MUZZLE_03)</li>
-                     <li>Precision Muzzle Brake (COMPONENT_AT_MUZZLE_04)</li>
-                     <li>Tracer Rounds (COMPONENT_COMBATMG_MK2_CLIP_TRACER)</li>
+                     <li title='Boom!'>COMPONENT_COMBATMG_MK2_CAMO_10</li>
+                     <li title='Heavy Duty Muzzle Brake'>COMPONENT_AT_MUZZLE_05</li>
+                     <li title='Geometric'>COMPONENT_COMBATMG_MK2_CAMO_09</li>
+                     <li title='Extended Clip'>COMPONENT_COMBATMG_MK2_CLIP_02</li>
+                     <li title='Zebra'>COMPONENT_COMBATMG_MK2_CAMO_08</li>
+                     <li title='Armor Piercing Rounds'>COMPONENT_COMBATMG_MK2_CLIP_ARMORPIERCING</li>
+                     <li title='Slanted Muzzle Brake'>COMPONENT_AT_MUZZLE_06</li>
+                     <li title='Medium Scope'>COMPONENT_AT_SCOPE_SMALL_MK2</li>
+                     <li title='Holographic Sight'>COMPONENT_AT_SIGHTS</li>
+                     <li title='Sessanta Nove'>COMPONENT_COMBATMG_MK2_CAMO_05</li>
+                     <li title='Default Clip'>COMPONENT_COMBATMG_MK2_CLIP_01</li>
+                     <li title='Digital Camo'>COMPONENT_COMBATMG_MK2_CAMO</li>
+                     <li title='Split-End Muzzle Brake'>COMPONENT_AT_MUZZLE_07</li>
+                     <li title='Full Metal Jacket Rounds'>COMPONENT_COMBATMG_MK2_CLIP_FMJ</li>
+                     <li title='Skull'>COMPONENT_COMBATMG_MK2_CAMO_04</li>
+                     <li title='Leopard'>COMPONENT_COMBATMG_MK2_CAMO_07</li>
+                     <li title='Perseus'>COMPONENT_COMBATMG_MK2_CAMO_06</li>
+                     <li title='Grip'>COMPONENT_AT_AR_AFGRIP_02</li>
+                     <li title='Heavy Barrel'>COMPONENT_AT_MG_BARREL_02</li>
+                     <li title='Flat Muzzle Brake'>COMPONENT_AT_MUZZLE_01</li>
+                     <li title='Woodland Camo'>COMPONENT_COMBATMG_MK2_CAMO_03</li>
+                     <li title='Incendiary Rounds'>COMPONENT_COMBATMG_MK2_CLIP_INCENDIARY</li>
+                     <li title='Default Barrel'>COMPONENT_AT_MG_BARREL_01</li>
+                     <li title='Large Scope'>COMPONENT_AT_SCOPE_MEDIUM_MK2</li>
+                     <li title='Tactical Muzzle Brake'>COMPONENT_AT_MUZZLE_02</li>
+                     <li title='Brushstroke Camo'>COMPONENT_COMBATMG_MK2_CAMO_02</li>
+                     <li title='Patriotic'>COMPONENT_COMBATMG_MK2_CAMO_IND_01</li>
+                     <li title='Fat-End Muzzle Brake'>COMPONENT_AT_MUZZLE_03</li>
+                     <li title='Precision Muzzle Brake'>COMPONENT_AT_MUZZLE_04</li>
+                     <li title='Tracer Rounds'>COMPONENT_COMBATMG_MK2_CLIP_TRACER</li>
                   </ul>
                </details>
             </div>
@@ -3625,16 +3773,16 @@ weight: 770
                <details>
                   <summary>Components</summary>
                   <ul>
-                     <li>The Player (COMPONENT_KNUCKLE_VARMOD_PLAYER)</li>
-                     <li>The Lover (COMPONENT_KNUCKLE_VARMOD_LOVE)</li>
-                     <li>The Hustler (COMPONENT_KNUCKLE_VARMOD_DOLLAR)</li>
-                     <li>The Vagos (COMPONENT_KNUCKLE_VARMOD_VAGOS)</li>
-                     <li>The Hater (COMPONENT_KNUCKLE_VARMOD_HATE)</li>
-                     <li>The Rock (COMPONENT_KNUCKLE_VARMOD_DIAMOND)</li>
-                     <li>The Pimp (COMPONENT_KNUCKLE_VARMOD_PIMP)</li>
-                     <li>The King (COMPONENT_KNUCKLE_VARMOD_KING)</li>
-                     <li>The Ballas (COMPONENT_KNUCKLE_VARMOD_BALLAS)</li>
-                     <li>Base Model (COMPONENT_KNUCKLE_VARMOD_BASE)</li>
+                     <li title='The Player'>COMPONENT_KNUCKLE_VARMOD_PLAYER</li>
+                     <li title='The Lover'>COMPONENT_KNUCKLE_VARMOD_LOVE</li>
+                     <li title='The Hustler'>COMPONENT_KNUCKLE_VARMOD_DOLLAR</li>
+                     <li title='The Vagos'>COMPONENT_KNUCKLE_VARMOD_VAGOS</li>
+                     <li title='The Hater'>COMPONENT_KNUCKLE_VARMOD_HATE</li>
+                     <li title='The Rock'>COMPONENT_KNUCKLE_VARMOD_DIAMOND</li>
+                     <li title='The Pimp'>COMPONENT_KNUCKLE_VARMOD_PIMP</li>
+                     <li title='The King'>COMPONENT_KNUCKLE_VARMOD_KING</li>
+                     <li title='The Ballas'>COMPONENT_KNUCKLE_VARMOD_BALLAS</li>
+                     <li title='Base Model'>COMPONENT_KNUCKLE_VARMOD_BASE</li>
                   </ul>
                </details>
             </div>
