@@ -18,10 +18,10 @@ weight: 760
     }
 
     .category h2 {
-        text-align: left; 
-        margin-top: 30px; 
-        margin-bottom: 10px; 
-        padding-left: 20px; 
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding-left: 20px;
     }
 
     .vehicles {
@@ -34,10 +34,10 @@ weight: 760
     }
 
     .vehicle {
-        background: #FFF; 
-        color: #000; 
-        border: 1px solid #CCC; 
-        border-radius: 8px; 
+        background: #FFF;
+        color: #000;
+        border: 1px solid #CCC;
+        border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         transition: box-shadow 0.3s ease-in-out;
@@ -49,64 +49,41 @@ weight: 760
     }
 
     .vehicle img {
-        width: 100%; 
-        height: 100px; 
-        object-fit: scale-down; 
+        width: 100%;
+        height: 100px;
+        object-fit: scale-down;
         display: block;
         padding: 10px;
-        border-radius: 8px; 
+        border-radius: 8px;
     }
 
     .vehicle-info {
         padding: 5px 10px;
         font-size: 0.8em;
-        background: #F7F7F7; 
-        border-top: 1px solid #DDD; 
-        color: #333; 
-        text-align: left; 
-        display: flex; 
-        flex-direction: column; 
-        justify-content: center; 
+        background: #F7F7F7;
+        border-top: 1px solid #DDD;
+        color: #333;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: flex-start;
         flex-grow: 1;
     }
 
     .vehicle-info span {
-        margin: 2px 0; 
+        margin: 2px 0;
     }
 
     .vehicle-info span:last-child {
-        margin-bottom: 0; 
+        margin-bottom: 0;
     }
 </style>
 
 
-- <a href="#compacts">Compacts</a>
-- <a href="#sedans">Sedans</a>
-- <a href="#suvs">SUVs</a>
-- <a href="#coupes">Coupes</a>
-- <a href="#muscle">Muscle</a>
-- <a href="#sports-classics">Sports Classics</a>
-- <a href="#sports">Sports</a>
-- <a href="#super">Super</a>
-- <a href="#motorcycles">Motorcycles</a>
-- <a href="#off-road">Off-Road</a>
-- <a href="#industrial">Industrial</a>
-- <a href="#utility">Utility</a>
-- <a href="#vans">Vans</a>
-- <a href="#cycles">Cycles</a>
-- <a href="#boats">Boats</a>
-- <a href="#helicopters">Helicopters</a>
-- <a href="#planes">Planes</a>
-- <a href="#service">Service</a>
-- <a href="#emergency">Emergency</a>
-- <a href="#military">Military</a>
-- <a href="#commercial">Commercial</a>
-- <a href="#trains">Trains</a>
-- <a href="#open-wheels">Open Wheels</a>
 
+## Compacts
 <div class="category" id="compacts">
-    <h2>Compact</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/asbo.webp" alt="Asbo">
@@ -254,8 +231,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Sedans
 <div class="category" id="sedans">
-    <h2>Sedans</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/asea.webp" alt="Asea">
@@ -579,8 +557,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## SUVs
 <div class="category" id="suvs">
-    <h2>SUVs</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/aleutian.webp" alt="Aleutian">
@@ -952,8 +931,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Coupes
 <div class="category" id="coupes">
-    <h2>Coupes</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/cogcabrio.webp" alt="Cognoscenti Cabrio">
@@ -1109,8 +1089,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Muscles
 <div class="category" id="muscle">
-    <h2>Muscles</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/arbitergt.webp" alt="Arbiter GT">
@@ -1834,8 +1815,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Sports Classic
 <div class="category" id="sports-classics">
-    <h2>Sports Classic</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/ardent.webp" alt="Ardent">
@@ -2199,8 +2181,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Sports
 <div class="category" id="sports">
-    <h2>Sports</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/alpha.webp" alt="Alpha">
@@ -3084,8 +3067,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Super
 <div class="category" id="super">
-    <h2>Super</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/adder.webp" alt="Adder">
@@ -3553,8 +3537,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Motorcycles
 <div class="category" id="motorcycles">
-    <h2>Motorcycles</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/akuma.webp" alt="Akuma">
@@ -4022,8 +4007,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Off-Road
 <div class="category" id="off-road">
-    <h2>Off-Road</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/bfinjection.webp" alt="Injection">
@@ -4555,8 +4541,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Industrial
 <div class="category" id="industrial">
-    <h2>Industrial</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/bulldozer.webp" alt="Dozer">
@@ -4648,8 +4635,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Utility
 <div class="category" id="utility">
-    <h2>Utility</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/airtug.webp" alt="Airtug">
@@ -5053,8 +5041,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Vans
 <div class="category" id="vans">
-    <h2>Vans</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/bison.webp" alt="Bison">
@@ -5378,8 +5367,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Cycles
 <div class="category" id="cycles">
-    <h2>Cycles</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/bmx.webp" alt="BMX">
@@ -5455,8 +5445,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Boats
 <div class="category" id="boats">
-    <h2>Boats</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/avisa.webp" alt="Avisa">
@@ -5905,8 +5896,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Planes
 <div class="category" id="planes">
-    <h2>Planes</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/alkonost.webp" alt="RO-86 Alkonost">
@@ -6262,8 +6254,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Service
 <div class="category" id="service">
-    <h2>Service</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/airbus.webp" alt="Airport Bus">
@@ -6371,8 +6364,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Emergency
 <div class="category" id="emergency">
-    <h2>Emergency</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/ambulance.webp" alt="Ambulance">
@@ -6544,8 +6538,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Military
 <div class="category" id="military">
-    <h2>Military</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/apc.webp" alt="APC">
@@ -6685,8 +6680,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Commercial
 <div class="category" id="commercial">
-    <h2>Commercial</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/benson.webp" alt="Benson">
@@ -6874,8 +6870,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Trains
 <div class="category" id="trains">
-    <h2>Trains</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/cablecar.webp" alt="Cable Car">
@@ -6959,8 +6956,9 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Open Wheels
 <div class="category" id="open-wheels">
-    <h2>Open Wheels</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/formula.webp" alt="PR4">
