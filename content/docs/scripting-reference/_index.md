@@ -23,13 +23,10 @@ We offer a variety of excellent tools to help you get started with your server. 
 
 FiveM supports C#, Lua, and JavaScript, allowing you the flexibility to create and modify your scripts. Here are some useful links to get you started:
 
-- [Create Your First Script](/docs/scripting-manual/introduction/creating-your-first-script.md)
+- [Create Your First Script](/docs/scripting-manual/introduction/creating-your-first-script)
 - [Client Events](/docs/scripting-reference/events/client-events)
 - [Server Events](/docs/scripting-reference/events/server-events)
 - [Native Functions](https://docs.fivem.net/natives/)
 - [Client Functions](/docs/scripting-reference/client-functions)
 - [Server Functions](/docs/scripting-reference/server-functions)
 
-## Guidelines
-
-This guideline and resources will help you make the most of your scripting experience on FiveM. You can learn more about our guidelines [here](/docs/developers/coding-guidelines.md).
