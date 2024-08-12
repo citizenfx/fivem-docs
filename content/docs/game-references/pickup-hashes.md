@@ -6,7 +6,7 @@ weight: 770
 List of found pickup hashes in GTA V as of February 27th, 2023.
 
 ```c
-enum pickupHashes {
+enum ePickupHashes {
     PICKUP_WEAPON_BULLPUPSHOTGUN = 1850631618,
     PICKUP_WEAPON_ASSAULTSMG = 1948018762,
     PICKUP_VEHICLE_WEAPON_ASSAULTSMG = 1751145014,
