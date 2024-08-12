@@ -13,7 +13,7 @@ Will FiveM run on Linux?
 
 You can run the FiveM client on Linux through Wine/Proton, but the anti-cheat will not work, meaning you will only be able to join servers that have disabled `svadhesive`.
 
-**NOTE**: Running on Linux **might** work, but there is no plans to anti-cheat support. Issues or topics pertaining to this will likely be closed.
+**NOTE**: Running on Linux **might** work, but there is no plan for anti-cheat support. Issues or topics pertaining to this will likely be closed.
 
 Where is FiveM installed?
 -------------------------
