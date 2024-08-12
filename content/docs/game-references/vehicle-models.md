@@ -578,14 +578,6 @@ weight: 760
             </div>
         </div>
         <div class="vehicle">
-            <img src="/vehicles/astron2.webp" alt="Astron Custom">
-            <div class="vehicle-info">
-                <span><strong>Display Name:</strong> Astron Custom</span>
-                <span><strong>Hash:</strong> 2803699023</span>
-                <span><strong>Model Name:</strong> astron2</span>
-            </div>
-        </div>
-        <div class="vehicle">
             <img src="/vehicles/baller.webp" alt="Baller">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Baller</span>
@@ -1093,14 +1085,6 @@ weight: 760
 ## Muscles
 <div class="category" id="muscle">
     <div class="vehicles">
-        <div class="vehicle">
-            <img src="/vehicles/arbitergt.webp" alt="Arbiter GT">
-            <div class="vehicle-info">
-                <span><strong>Display Name:</strong> Arbiter GT</span>
-                <span><strong>Hash:</strong> 1549009676</span>
-                <span><strong>Model Name:</strong> arbitergt</span>
-            </div>
-        </div>
         <div class="vehicle">
             <img src="/vehicles/blade.webp" alt="Blade">
             <div class="vehicle-info">
@@ -3128,14 +3112,6 @@ weight: 760
             </div>
         </div>
         <div class="vehicle">
-            <img src="/vehicles/cyclone2.webp" alt="Cyclone II">
-            <div class="vehicle-info">
-                <span><strong>Display Name:</strong> Cyclone II</span>
-                <span><strong>Hash:</strong> 386089410</span>
-                <span><strong>Model Name:</strong> cyclone2</span>
-            </div>
-        </div>
-        <div class="vehicle">
             <img src="/vehicles/deveste.webp" alt="Deveste Eight">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Deveste Eight</span>
@@ -3205,14 +3181,6 @@ weight: 760
                 <span><strong>Display Name:</strong> Ignus</span>
                 <span><strong>Hash:</strong> 2850852987</span>
                 <span><strong>Model Name:</strong> ignus</span>
-            </div>
-        </div>
-        <div class="vehicle">
-            <img src="/vehicles/ignus2.webp" alt="Weaponized Ignus">
-            <div class="vehicle-info">
-                <span><strong>Display Name:</strong> Weaponized Ignus</span>
-                <span><strong>Hash:</strong> 956849991</span>
-                <span><strong>Model Name:</strong> ignus2</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4217,14 +4185,6 @@ weight: 760
                 <span><strong>Display Name:</strong> Ramp Buggy</span>
                 <span><strong>Hash:</strong> 3982671785</span>
                 <span><strong>Model Name:</strong> dune5</span>
-            </div>
-        </div>
-        <div class="vehicle">
-            <img src="/vehicles/everon.webp" alt="Everon">
-            <div class="vehicle-info">
-                <span><strong>Display Name:</strong> Everon</span>
-                <span><strong>Hash:</strong> 2538945576</span>
-                <span><strong>Model Name:</strong> everon</span>
             </div>
         </div>
         <div class="vehicle">
