@@ -145,6 +145,6 @@ For all other issues, you are more than welcome to join our [Discord][discord] a
 [email]: mailto:support@fivem.net
 [forum]: https://forum.cfx.re
 [discord]: https://discord.gg/fivem
-[testing-server]: https://cfx.re/join/jm85gm
+[testing-server]: https://cfx.re/join/7b6bor
 [uninstalling]: /docs/client-manual/installing-fivem#uninstalling
 [discrete-gpu]: https://forum.cfx.re/t/217731

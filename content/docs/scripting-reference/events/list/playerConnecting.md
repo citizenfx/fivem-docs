@@ -49,6 +49,17 @@ prior deferral method.
 If `failureReason` is specified, the connection will be refused, and the user will see the specified message as a result.
 If this is not specified, the user will be allowed to connect.
 
+#### Dynamic handover
+
+`deferrals.handover` will allow you to set in a table the enpoints for a specific player on connection.
+
+This will look like this:
+```lua
+deferrals.handover({
+    endpoints = { "127.0.0.1" }
+})
+```
+
 Examples
 --------
 This example checks a connecting player's license identifier against a ban list. If the player is in the ban list, they get kicked, otherwise they are allowed to connect.

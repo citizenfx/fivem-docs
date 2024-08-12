@@ -143,6 +143,7 @@ useful information to share, please [add it to this doc][contributing]. Any help
 | CEventNetworkPlayerCollectedPickup                 |             |
 | CEventNetworkPlayerCollectedPortablePickup         |             |
 | CEventNetworkPlayerDroppedPortablePickup           |             |
+| CEventNetworkPlayerEnteredVehicle                  |             |
 | CEventNetworkPlayerJoinScript                      |             |
 | CEventNetworkPlayerLeftScript                      |             |
 | CEventNetworkPlayerScript                          |             |

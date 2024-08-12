@@ -24,3 +24,5 @@ This resource does not have any export functions.
 - [`baseevents:enteringAborted`](./events/enteringAborted)
 - [`baseevents:enteredVehicle`](./events/enteredVehicle)
 - [`baseevents:leftVehicle`](./events/leftVehicle)
+
+**Note:** Don't forget to add `ensure baseevents` in server.cfg.

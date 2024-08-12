@@ -8,6 +8,7 @@ Getting started with scripting for FiveM might be a tad overwhelming, given the 
 ## Prerequisites
 Before creating your first script with JavaScript, there are a couple of things you will need to set up and understand.
 
+* [Understanding the JavaScript programming language (Getting Started)][basic-understanding-js]
 * [Understanding the JavaScript runtime][runtime-javascript]
 * [Understanding of resources and manifest files](/docs/scripting-reference/resource-manifest/resource-manifest)
 
@@ -303,3 +304,4 @@ In your server console, `refresh; restart mymode` (yeah you can split stuff with
 You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
 
 [runtime-javascript]: /docs/scripting-manual/runtimes/javascript/
+[basic-understanding-js]: https://developer.mozilla.org/en-US/docs/Web/JavaScript

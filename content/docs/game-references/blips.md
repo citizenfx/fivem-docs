@@ -6,7 +6,7 @@ weight: 720
 Blips
 -----
 
-A list of all game blips as of build 3258 is shown below.
+A list of all game blips as of build 3258 are shown below.
 
 <!-- check down for more recent HTML -->
 <!-- _loc1_ = []; -->
@@ -78,10 +78,10 @@ A list of all game blips as of build 3258 is shown below.
 </style>
 
 <div class="blips">
-<div class="blip"><div><div><img src="/blips/radar_higher.png" alt="radar_higher"></div></div><span><strong>0</strong><br>radar_higher</span></div>
+<div class="blip"><div><div><img src="/blips/radar_higher.gif" alt="radar_higher"></div></div><span><strong>0</strong><br>radar_higher</span></div>
 <div class="blip"><div><div><img src="/blips/radar_level.png" alt="radar_level"></div></div><span><strong>1</strong><br>radar_level</span></div>
-<div class="blip"><div><div><img src="/blips/radar_lower.png" alt="radar_lower"></div></div><span><strong>2</strong><br>radar_lower</span></div>
-<div class="blip"><div><div><img src="/blips/radar_police_ped.png" alt="radar_police_ped"></div></div><span><strong>3</strong><br>radar_police_ped</span></div>
+<div class="blip"><div><div><img src="/blips/radar_lower.gif" alt="radar_lower"></div></div><span><strong>2</strong><br>radar_lower</span></div>
+<div class="blip"><div><div><img src="/blips/radar_police_ped.gif" alt="radar_police_ped"></div></div><span><strong>3</strong><br>radar_police_ped</span></div>
 <div class="blip"><div><div><img src="/blips/radar_wanted_radius.png" alt="radar_wanted_radius"></div></div><span><strong>4</strong><br>radar_wanted_radius</span></div>
 <div class="blip"><div><div><img src="/blips/radar_area_blip.png" alt="radar_area_blip"></div></div><span><strong>5</strong><br>radar_area_blip</span></div>
 <div class="blip"><div><div><img src="/blips/radar_centre.png" alt="radar_centre"></div></div><span><strong>6</strong><br>radar_centre</span></div>
@@ -89,10 +89,10 @@ A list of all game blips as of build 3258 is shown below.
 <div class="blip"><div><div><img src="/blips/radar_waypoint.png" alt="radar_waypoint"></div></div><span><strong>8</strong><br>radar_waypoint</span></div>
 <div class="blip"><div><div><img src="/blips/radar_radius_blip.png" alt="radar_radius_blip"></div></div><span><strong>9</strong><br>radar_radius_blip</span></div>
 <div class="blip"><div><div><img src="/blips/radar_radius_outline_blip.png" alt="radar_radius_outline_blip"></div></div><span><strong>10</strong><br>radar_radius_outline_blip</span></div>
-<div class="blip"><div><div><img src="/blips/radar_weapon_higher.png" alt="radar_weapon_higher"></div></div><span><strong>11</strong><br>radar_weapon_higher</span></div>
-<div class="blip"><div><div><img src="/blips/radar_weapon_lower.png" alt="radar_weapon_lower"></div></div><span><strong>12</strong><br>radar_weapon_lower</span></div>
-<div class="blip"><div><div><img src="/blips/radar_higher_ai.png" alt="radar_higher_ai"></div></div><span><strong>13</strong><br>radar_higher_ai</span></div>
-<div class="blip"><div><div><img src="/blips/radar_lower_ai.png" alt="radar_lower_ai"></div></div><span><strong>14</strong><br>radar_lower_ai</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_higher.gif" alt="radar_weapon_higher"></div></div><span><strong>11</strong><br>radar_weapon_higher</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_lower.gif" alt="radar_weapon_lower"></div></div><span><strong>12</strong><br>radar_weapon_lower</span></div>
+<div class="blip"><div><div><img src="/blips/radar_higher_ai.gif" alt="radar_higher_ai"></div></div><span><strong>13</strong><br>radar_higher_ai</span></div>
+<div class="blip"><div><div><img src="/blips/radar_lower_ai.gif" alt="radar_lower_ai"></div></div><span><strong>14</strong><br>radar_lower_ai</span></div>
 <div class="blip"><div><div><img src="/blips/radar_police_heli_spin.png" alt="radar_police_heli_spin"></div></div><span><strong>15</strong><br>radar_police_heli_spin</span></div>
 <div class="blip"><div><div><img src="/blips/radar_police_plane_move.png" alt="radar_police_plane_move"></div></div><span><strong>16</strong><br>radar_police_plane_move</span></div>
 <!--<div class="blip"><div><div><img src="/blips/radar_numbered_1.png" alt="radar_numbered_1"></div></div><span><strong>17</strong><br>radar_numbered_1</span></div>
@@ -119,8 +119,8 @@ A list of all game blips as of build 3258 is shown below.
 <div class="blip"><div><div><img src="/blips/radar_raceflag.png" alt="radar_raceflag"></div></div><span><strong>38</strong><br>radar_raceflag</span></div>
 <!--<div class="blip"><div><div><img src="/blips/radar_fire.png" alt="radar_fire"></div></div><span><strong>39</strong><br>radar_fire</span></div>-->
 <div class="blip"><div><div><img src="/blips/radar_safehouse.png" alt="radar_safehouse"></div></div><span><strong>40</strong><br>radar_safehouse</span></div>
-<div class="blip"><div><div><img src="/blips/radar_police.png" alt="radar_police"></div></div><span><strong>41</strong><br>radar_police</span></div>
-<div class="blip"><div><div><img src="/blips/radar_police_chase.png" alt="radar_police_chase"></div></div><span><strong>42</strong><br>radar_police_chase</span></div>
+<div class="blip"><div><div><img src="/blips/radar_police.gif" alt="radar_police"></div></div><span><strong>41</strong><br>radar_police</span></div>
+<div class="blip"><div><div><img src="/blips/radar_police_chase.gif" alt="radar_police_chase"></div></div><span><strong>42</strong><br>radar_police_chase</span></div>
 <div class="blip"><div><div><img src="/blips/radar_police_heli.png" alt="radar_police_heli"></div></div><span><strong>43</strong><br>radar_police_heli</span></div>
 <div class="blip"><div><div><img src="/blips/radar_bomb_a.png" alt="radar_bomb_a"></div></div><span><strong>44</strong><br>radar_bomb_a</span></div>
 <!--<div class="blip"><div><div><img src="/blips/radar_bomb_b.png" alt="radar_bomb_b"></div></div><span><strong>45</strong><br>radar_bomb_b</span></div>
@@ -239,7 +239,7 @@ A list of all game blips as of build 3258 is shown below.
 <div class="blip"><div><div><img src="/blips/radar_weapon_shotgun.png" alt="radar_weapon_shotgun"></div></div><span><strong>158</strong><br>radar_weapon_shotgun</span></div>
 <div class="blip"><div><div><img src="/blips/radar_weapon_smg.png" alt="radar_weapon_smg"></div></div><span><strong>159</strong><br>radar_weapon_smg</span></div>
 <div class="blip"><div><div><img src="/blips/radar_weapon_sniper.png" alt="radar_weapon_sniper"></div></div><span><strong>160</strong><br>radar_weapon_sniper</span></div>
-<div class="blip"><div><div><img src="/blips/radar_mp_noise.png" alt="radar_mp_noise"></div></div><span><strong>161</strong><br>radar_mp_noise</span></div>
+<div class="blip"><div><div><img src="/blips/radar_mp_noise.gif" alt="radar_mp_noise"></div></div><span><strong>161</strong><br>radar_mp_noise</span></div>
 <div class="blip"><div><div><img src="/blips/radar_poi.png" alt="radar_poi"></div></div><span><strong>162</strong><br>radar_poi</span></div>
 <div class="blip"><div><div><img src="/blips/radar_passive.png" alt="radar_passive"></div></div><span><strong>163</strong><br>radar_passive</span></div>
 <div class="blip"><div><div><img src="/blips/radar_usingmenu.png" alt="radar_usingmenu"></div></div><span><strong>164</strong><br>radar_usingmenu</span></div>
@@ -431,7 +431,7 @@ A list of all game blips as of build 3258 is shown below.
 <div class="blip"><div><div><img src="/blips/radar_property_for_sale.png" alt="radar_property_for_sale"></div></div><span><strong>350</strong><br>radar_property_for_sale</span></div>
 <div class="blip"><div><div><img src="/blips/radar_gang_attack_package.png" alt="radar_gang_attack_package"></div></div><span><strong>351</strong><br>radar_gang_attack_package</span></div>
 <div class="blip"><div><div><img src="/blips/radar_martin_madrazzo.png" alt="radar_martin_madrazzo"></div></div><span><strong>352</strong><br>radar_martin_madrazzo</span></div>
-<div class="blip"><div><div><img src="/blips/radar_enemy_heli_spin.png" alt="radar_enemy_heli_spin"></div></div><span><strong>353</strong><br>radar_enemy_heli_spin</span></div>
+<div class="blip"><div><div><img src="/blips/radar_enemy_heli_spin.gif" alt="radar_enemy_heli_spin"></div></div><span><strong>353</strong><br>radar_enemy_heli_spin</span></div>
 <div class="blip"><div><div><img src="/blips/radar_boost.png" alt="radar_boost"></div></div><span><strong>354</strong><br>radar_boost</span></div>
 <div class="blip"><div><div><img src="/blips/radar_devin.png" alt="radar_devin"></div></div><span><strong>355</strong><br>radar_devin</span></div>
 <div class="blip"><div><div><img src="/blips/radar_dock.png" alt="radar_dock"></div></div><span><strong>356</strong><br>radar_dock</span></div>
@@ -500,7 +500,7 @@ A list of all game blips as of build 3258 is shown below.
 <div class="blip"><div><div><img src="/blips/radar_capture_the_usaflag.png" alt="radar_capture_the_usaflag"></div></div><span><strong>419</strong><br>radar_capture_the_usaflag</span></div>
 <div class="blip"><div><div><img src="/blips/radar_capture_the_usaflag_outline.png" alt="radar_capture_the_usaflag_outline"></div></div><span><strong>420</strong><br>radar_capture_the_usaflag_outline</span></div>
 <div class="blip"><div><div><img src="/blips/radar_tank.png" alt="radar_tank"></div></div><span><strong>421</strong><br>radar_tank</span></div>
-<div class="blip"><div><div><img src="/blips/radar_player_heli.png" alt="radar_player_heli"></div></div><span><strong>422</strong><br>radar_player_heli</span></div>
+<div class="blip"><div><div><img src="/blips/radar_player_heli.gif" alt="radar_player_heli"></div></div><span><strong>422</strong><br>radar_player_heli</span></div>
 <div class="blip"><div><div><img src="/blips/radar_player_plane.png" alt="radar_player_plane"></div></div><span><strong>423</strong><br>radar_player_plane</span></div>
 <div class="blip"><div><div><img src="/blips/radar_player_jet.png" alt="radar_player_jet"></div></div><span><strong>424</strong><br>radar_player_jet</span></div>
 <div class="blip"><div><div><img src="/blips/radar_centre_stroke.png" alt="radar_centre_stroke"></div></div><span><strong>425</strong><br>radar_centre_stroke</span></div>
@@ -962,6 +962,22 @@ A list of all game blips as of build 3258 is shown below.
 <div class="blip"><div><div><img src="/blips/radar_weapon_snowball.png" alt="radar_weapon_snowball"></div></div><span><strong>881</strong><br>radar_weapon_snowball</span></div>
 <div class="blip"><div><div><img src="/blips/radar_train_signals_green.png" alt="radar_train_signals_green"></div></div><span><strong>882</strong><br>radar_train_signals_green</span></div>
 <div class="blip"><div><div><img src="/blips/radar_train_signals_red.png" alt="radar_train_signals_red"></div></div><span><strong>883</strong><br>radar_train_signals_red</span></div>
+<div class="blip"><div><div><img src="/blips/radar_office_transporter.png" alt="radar_office_transporter"></div></div><span><strong>884</strong><br>radar_office_transporter</span></div>
+<div class="blip"><div><div><img src="/blips/radar_yankton_survival.png" alt="radar_yankton_survival"></div></div><span><strong>885</strong><br>radar_yankton_survival</span></div>
+<div class="blip"><div><div><img src="/blips/radar_daily_bounty.png" alt="radar_daily_bounty"></div></div><span><strong>886</strong><br>radar_daily_bounty</span></div>
+<div class="blip"><div><div><img src="/blips/radar_bounty_target.png" alt="radar_bounty_target"></div></div><span><strong>887</strong><br>radar_bounty_target</span></div>
+<div class="blip"><div><div><img src="/blips/radar_filming_schedule.png" alt="radar_filming_schedule"></div></div><span><strong>888</strong><br>radar_filming_schedule</span></div>
+<div class="blip"><div><div><img src="/blips/radar_pizza_this.png" alt="radar_pizza_this"></div></div><span><strong>889</strong><br>radar_pizza_this</span></div>
+<div class="blip"><div><div><img src="/blips/radar_aircraft_carrier.png" alt="radar_aircraft_carrier"></div></div><span><strong>890</strong><br>radar_aircraft_carrier</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_emp.png" alt="radar_weapon_emp"></div></div><span><strong>891</strong><br>radar_weapon_emp</span></div>
+<div class="blip"><div><div><img src="/blips/radar_maude_eccles.png" alt="radar_maude_eccles"></div></div><span><strong>892</strong><br>radar_maude_eccles</span></div>
+<div class="blip"><div><div><img src="/blips/radar_bail_bonds_office.png" alt="radar_bail_bonds_office"></div></div><span><strong>893</strong><br>radar_bail_bonds_office</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_emp_mine.png" alt="radar_weapon_emp_mine"></div></div><span><strong>894</strong><br>radar_weapon_emp_mine</span></div>
+<div class="blip"><div><div><img src="/blips/radar_zombie_disease.png" alt="radar_zombie_disease"></div></div><span><strong>895</strong><br>radar_zombie_disease</span></div>
+<div class="blip"><div><div><img src="/blips/radar_zombie_proximity.png" alt="radar_zombie_proximity"></div></div><span><strong>896</strong><br>radar_zombie_proximity</span></div>
+<div class="blip"><div><div><img src="/blips/radar_zombie_fire.png" alt="radar_zombie_fire"></div></div><span><strong>897</strong><br>radar_zombie_fire</span></div>
+<div class="blip"><div><div><img src="/blips/radar_animal_possessed.png" alt="radar_animal_possessed"></div></div><span><strong>898</strong><br>radar_animal_possessed</span></div>
+<div class="blip"><div><div><img src="/blips/radar_mobile_phone.png" alt="radar_mobile_phone"></div></div><span><strong>899</strong><br>radar_mobile_phone</span></div>
 </div>
 
 ---
