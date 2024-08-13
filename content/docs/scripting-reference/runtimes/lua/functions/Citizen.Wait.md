@@ -2,7 +2,7 @@
 title: Citizen.Wait
 ---
 
-This will "pause" the execution of the current thread for miliseconds amount of time.
+This will "pause" the execution of the current thread for milliseconds amount of time.
 
 Syntax
 ------

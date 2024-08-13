@@ -14,10 +14,27 @@ GetPlayerIdentifiers(Player player)
 ### Required arguments
 - **player**: The ID of the player to get the identifiers from.
 
+License Types
+--------
+
+| Type ID    | Provider                 | Type                                                                      | Data Type |
+|------------|--------------------------|---------------------------------------------------------------------------|-----------|
+| `steam`    | Steam                    | [Steam Id](https://partner.steamgames.com/doc/webapi/isteamuserauth)      | hex       |
+| `discord`  | Discord                  | [User Id](https://discord.com/developers/docs/resources/user#user-object) | int       |
+| `xbl`      | Xbox Live                |                                                                           | int       |
+| `live`     | Microsoft PUID           | Passport Unique Identifier                                                | int       |
+| `license`  | Rockstar Online Services | Hash                                                                      | hex       |
+| `license2` | Rockstar Online Services | Hash                                                                      | hex       |
+| `fivem`    | Cfx.re                   | User Id                                                                   | int       |
+| `ip`       | IP Address               | IPv4                                                                      | string    |
+
+* `license2` - This identifier is the ROS license for people who use steam, this identifier can be the same value as `license`
+
+
 Examples
 --------
 
-Check for all possible identifiers using this method;  works well when triggered by playerConnecting event.
+Check for commonly used identifiers with this method;  works well when triggered by the `playerConnecting` event.
 
 ```lua
     local steamid  = false

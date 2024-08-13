@@ -7,13 +7,13 @@ weight: 920
 
 > Please note, that World Editor is still in it's early stage.
 
-World Editor follows _what you see is what you get_ paradigm of editing, providing 3D gizmo control essential properties of objects on a map, such as positioning, rotation and scale, both in global cooradinates space and local.
+World Editor follows _what you see is what you get_ paradigm of editing, providing 3D gizmo control essential properties of objects on a map, such as positioning, rotation and scale, both in global coordinates space and local.
 
 There're two distinct primitives:
 
 ### Patches
 
-Pathes are your modifications to existing map objects, such as traffic lights, trash bins and so on.
+Patches are your modifications to existing map objects, such as traffic lights, trash bins and so on.
 
 Current major limitation is that you can only patch objects that have embedded collisions. Technically, it is already possible to move even buildings, but as their collisions are part of global collision mesh and as we're still unable to modify that, patches are limited to objects with embedded collision meshes.
 
@@ -51,7 +51,7 @@ Do note that both kinds of events will be triggered after the fact, meaning that
 We won't dive deep into details here because we have extensive intro tour built into World Editor itself, however, there're few things worth mentioning here.
 
 ## Play test
-You can test your creation right away without leaving World Editor by pressing `F5` hotkey or clicking on play button in UI, this will place a controlable player ped where your camera is currently.
+You can test your creation right away without leaving World Editor by pressing `F5` hotkey or clicking on play button in UI, this will place a controllable player ped where your camera is currently.
 
 You can configure World Editor like so that you'll spawn in vehicle instead, see settings panel in UI.
 

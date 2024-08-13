@@ -4,7 +4,7 @@ title: quat
 
 Creates a new quaternion. Quaternions are incredibly useful to represent and calculate rotations in 3D world space.
 Unlike the more common [euler angles][wiki-euler], [quaternions][wiki-quats] are immune to [gimbal lock][wiki-gimbal]
-and are therefor much more suitable for transforming rotations.
+and are therefore much more suitable for transforming rotations.
 
 In FiveM's Lua runtime, quaternions are real data types, just like numbers, bools and strings are.
 This means that `type(quat(1, 0, 0, 0))` will return `quat`. More about this in the [Lua runtime manual][lua-runtime].
@@ -74,7 +74,7 @@ quat(-90, vec(1, 0, 0))
 quat(90, vec(-1, 0, 0))
 
 -- You can also calculate the rotation between 2 vectors.
--- Both of the following rotate 90 degrees arount the X axis:
+-- Both of the following rotate 90 degrees around the X axis:
 quat(vec(0, 1, 0), vec(0, 0, 1))  --  Y is turned to Z
 quat(vec(0, 0, -1), vec(0, 1, 0)) -- -Z is turned to X
 

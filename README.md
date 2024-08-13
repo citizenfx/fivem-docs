@@ -1,30 +1,15 @@
-FiveM Documentation
-===================
+# FiveM Documentation 📚
 
-Source of [docs.fivem.net][docs].
+Welcome to the FiveM Documentation! This is the official source. You can explore detailed guides, reference materials, and development resources here.
 
-Development
------------
+🔗 **Source:** [docs.fivem.net][docs]
 
-Install [Hugo][gohugo], then run:
+## Development 🚀
 
-```sh
-git submodule update --init --recursive
-hugo server -D
-```
+If you encounter any dead links or issues, please report them on our [GitHub Issues Page](https://github.com/citizenfx/fivem-docs/issues). Your feedback helps us improve!
 
-Checking for dead links
------------------------
+### Wanna Contribute? 🤝
 
-Install [Wget][wget], start a Hugo server, then run:
-
-```sh
-wget --spider -o ./wget.log -e robots=off -w 1 -r -p http://localhost:1313
-```
-
-More info on that [here][check-dead-links].
+We love contributions! If you're interested in helping out, check out our [Contribution Guidelines](content/docs/contributing/how-you-can-help.md) to get started.
 
 [docs]: https://docs.fivem.net
-[gohugo]: https://gohugo.io
-[wget]: http://www.gnu.org/software/wget/
-[check-dead-links]: http://n390.com/blog/find-broken-links-using-wget
