@@ -4,7 +4,7 @@ title: Citizen.Wait
 
 ## What is Citizen.Wait?
 
-`Citizen.Wait` is a function in FiveM that allows you to pause the execution of the current script thread for a specified amount of time. This can be useful for creating delays, scheduling tasks, or controlling the flow of your script.
+`Citizen.Wait` is a function in FiveM that allows you to pause the execution of the current thread for a specified amount of time. This can be useful for creating delays, scheduling tasks, or controlling the flow of your script.
 
 ## Syntax
 
@@ -43,7 +43,11 @@ Citizen.CreateThread(function()
 end)
 ```
 
-In this example, the script will continuously print a message every 5 seconds. Note that not waiting at least `0ms` in a thread will crash the client game.
+In this example, the script will continuously print a message every 5 seconds.
+
+{{% alert color="warning" %}}
+Doing a `while true do` loop without a `Wait` will crash the clients game, please make sure your logic doesn't accidentally prevent `Wait` from being called. 
+{{% /alert %}}
 
 You can also use sleep methods to avoid having to use the same time. Here's an example:
 
@@ -85,7 +89,3 @@ If a player is running at 180 fps they will have a tick happen once every 5.5ms.
 
 1. **Avoid short waits**: use different coroutines to cache values that don't need to be called every frame, and don't call expensive native calls per-frame, like [START_EXPENSIVE_SYNCHRONOUS_SHAPE_TEST_LOS_PROBE](https://docs.fivem.net/natives/?_0x377906D8A31E5586) if it can be avoided, if something needs to be run per-frame run it with `Wait(0)`.
 2. **Combine with Conditional Logic**: You can combine `Citizen.Wait` with conditional logic to create more sophisticated behaviors. Please refer to the sleep method example.
-
-## Conclusion
-
-`Citizen.Wait` is a simple function in FiveM scripting that allows you to control the timing and flow of your scripts. By pausing execution for a specified duration, you can create delays, schedule tasks, and manage the sequence of actions in your code. Whether you're creating simple delays or orchestrating complex task sequences, `Citizen.Wait` is an essential tool for effective script management.
