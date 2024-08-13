@@ -17,3 +17,5 @@ Reference lists and guides for game data are in this category.
 - [Profile Settings](/docs/game-references/profile-settings)
 - [Ped models](/docs/game-references/ped-models)
 - [Vehicle models](/docs/game-references/vehicle-models)
+- [Radio Stations](/docs/game-references/radiostations)
+- [Pickup Hashes](/docs/game-references/pickup-hashes)

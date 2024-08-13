@@ -27,14 +27,14 @@ description: >
    ![pic](/server-setup/windows-step2-2.png)
 3. Log in to your account on [Cfx.re](https://forum.cfx.re/) in this tab and then click `Yes, Allow`.<br>
    ![pic](/server-setup/windows-step2-3.png)
-4. Set a password to log in to your server's admin page.<br>
+4. Create a password to sign up to your server's admin page.<br>
    ![pic](/server-setup/windows-step2-4.png)
 5. Click 'Next'.<br>
    ![pic](/server-setup/windows-step2-5.png)
 6. Type a name for your server and click 'Next'.
 7. Select 'Popular Recipes'.<br>
    ![pic](/server-setup/windows-step2-7.png)
-8. Pick the 'CFX Default' template for now. Other templates may exist, but some will require a database server.<br>
+8. Pick the 'CFX Default FiveM' template for now. Other templates may exist, but some will require a database server.<br>
    ![pic](/server-setup/windows-step2-8.png)
 9. Click 'Save' or select another path.
 10. Go to the 'Recipe Deployer'.<br>

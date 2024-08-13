@@ -62,7 +62,7 @@ Currently, there're two types of assets:
  - [Resource](/docs/fxdk/resources)
  - [Map](/docs/fxdk/world-editor)
 
-If you're familiar with how typical server's folder is structred, FxDK projects are a bit different in a way that there's no limitation on where exactly you put your resources.
+If you're familiar with how typical server's folder is structured, FxDK projects are a bit different in a way that there's no limitation on where exactly you put your resources.
 
 FxDK provides system resources automatically, you just enable what you need in project settings, unlike how normally you'd download them from https://github.com/citizenfx/cfx-server-data/.
 

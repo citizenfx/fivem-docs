@@ -5,6 +5,10 @@ weight: 412
 
 Getting started with scripting for FiveM might be a tad overwhelming, given the wide range of possibilities and the sparsely spread documentation. In this quick and simple guide, we'll try to show you how to get started with a quick resource in Lua.
 
+{{% alert theme="info" %}}
+If you're not familiar with Lua, you can refer to the [Lua 5.4 reference manual](https://www.lua.org/manual/5.4/). The scripting runtime supports both Lua 5.4 and 5.3. For older versions, visit the [manual archive](https://www.lua.org/manual/).
+{{% /alert %}}
+
 ## Resources
 A resource is, simply said, a collection of files that can be individually started, stopped and restarted. Your server-data folder (assuming you already installed a server) should have a `resources` folder already, with a few resources in them already.
 

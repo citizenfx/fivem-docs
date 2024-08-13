@@ -56,6 +56,6 @@ Hitch warnings indicate that one of your resources is not performing as it shoul
 The profiler can be used to diagnose _why_ a resource is taking a long time to execute, there's a [guide](/docs/scripting-manual/debugging/using-profiler) explaining how to use it, it can be used both on the server and client.
 
 ## Resource Monitor (Resmon)
-The resource monitor can be used on the client to diagonse which resource is taking a long time to execute, it shows certain things such as cpu usage (msec) and memory usage for each resource. 
+The resource monitor can be used on the client to diagnose which resource is taking a long time to execute, it shows certain things such as cpu usage (msec) and memory usage for each resource. 
 
 It can be enabled by typing `resmon true`. It's possible that you see a message such as `Access denied for command resmon` (especially when running in production builds), this means that the developer mode needs to be enabled by launching the FiveM/RedM client using the `+set moo 31337` argument (for example, by adding it to a shortcut).
