@@ -1,14 +1,13 @@
 ---
-title: Understanding and Using Native Functions in FiveM
+title: Understanding and Using Native Functions
 weight: 1300
 ---
 
-In FiveM, you have access to what are called "native functions" or simply "natives". These functions interact with the game directly, allowing you to perform a wide variety of actions within the game environment. This guide will explain what natives are, where you can find them, and how to use them in your scripts.
+In FiveM, you have access to what are called "native functions" or simply "natives". These functions are provided by the game itself, using them will allow you to perform a wide variety of actions within the game environment. This guide will explain what natives are, where you can find them, and how to use them in your scripts.
 
 ## What Are Native Functions?
-Native functions in FiveM are predefined functions that enable interaction with the game. They are essential for creating and managing game mechanics, player interactions, and various other functionalities within your server. Natives are used in both client-side and server-side. Some of them are created by CFX like [DropPlayer](https://docs.fivem.net/natives/?_0xBA0613E1).
+Native functions in FiveM are predefined functions that enable interaction with the game. They are essential for creating and managing game mechanics, player interactions, and various other functionalities within your server. Natives are used in both client-side and server-side. Some of them are created by Cfx like [DropPlayer](https://docs.fivem.net/natives/?_0xBA0613E1).
 
-These functions are called "native" because they are built into the game engine itself (for most of them). Like stated, some of them are made CFX to handle particular things in the platform. Natives provide a powerful interface for developers to interact with the game code. Natives can perform a wide range of tasks, from simple operations like getting a player name, to complex actions such as manipulating player physics or creating game entities.
 
 ## Where Can You Find Native Functions?
 FiveM provides comprehensive documentation for native functions. This documentation is essential for understanding what each native function does, how to use it, and what parameters it requires.
@@ -17,7 +16,7 @@ FiveM provides comprehensive documentation for native functions. This documentat
 
 - **Community Forums**: The [Cfx.re Forums](https://forum.cfx.re/) are another valuable resource. Here, you can find discussions, tutorials, and examples from other developers who share their experiences and solutions related to using native functions.
 
-- **CitizenFX GitHub**: Users can contribute to the [repository](https://github.com/citizenfx/fivem) by adding descriptions, names, and new native functions. This collaborative effort helps keep the list of natives comprehensive and up-to-date, ensuring that the community benefits from the latest features and improvements.
+- **Native Docs Repo**: Users can contribute to the [repository](https://github.com/citizenfx/natives) by adding descriptions, names, and new native functions.
 
 ## Difference Between Client and Server-Side Natives
 
