@@ -30,7 +30,7 @@ The anticheat system has been rigorously tested to ensure that there are incredi
 
 Banned testing a cheat in my own server
 ----------
-Even if you own or develop the server, a ban imposed while testing your anti-cheat resource will remain in effect. To avoid this, you can create your own resources that will 'simulate' how a typical cheat works. If you need help, you are always welcome to join our [Discord](discord.gg/fivem).
+Even if you own or develop the server, a ban imposed while testing your anti-cheat resource will remain in effect. To avoid this, you can create your own resources that will 'simulate' how a typical cheat works. If you need help, you are always welcome to join our [Discord](https://discord.gg/fivem).
 
 <br/>
 
