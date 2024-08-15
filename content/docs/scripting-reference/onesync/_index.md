@@ -99,6 +99,43 @@ Culling is used to avoid sending a lot of synchronization data to the server (su
 
 When an entity goes out of range, it's no longer controlled by their original owner. This means that any entity that would be out of scope will be culled and migrated/disowned. By default, the culling radius is set to `424 units` around the entity.
 
+# Scopes
+Players may enter/leave other players' scopes, this depends on the culling radius from each other, [server event][server-events] handlers such as `playerEnteredScope` and `playerLeftScope` can be used to track who entered/left someone else's scope.
+
+An implementation example can be found down below.
+
+## playerEnteredScope
+
+{{% alert title="Performance Warning" color="warning" %}}
+Using these events is frowned upon, these events have scaling performance costs. For every person within the scope of the player on every enter/leave scope this this will be called an additional time, so having 32 players within the scope of a player will lead to this being called 32 times. Whenever possible you should use state bags if you need to trigger scoped events, see {{% native_link "ADD_STATE_BAG_CHANGE_HANDLER" %}}.
+{{% /alert %}}
+
+This event handler is triggered when a player enters another player's scope.
+
+```lua
+AddEventHandler("playerEnteredScope", function(data)
+    local playerEntered, player = data["player"], data["for"]
+    print(("%s entered %s's scope"):format(playerEntered, player))
+end)
+
+```
+## playerLeftScope
+
+{{% alert title="Performance Warning" color="warning" %}}
+Using these events is frowned upon, these events have scaling performance costs. For every person within the scope of the player on every enter/leave scope this this will be called an additional time, so having 32 players within the scope of a player will lead to this being called 32 times. Whenever possible you should use state bags if you need to trigger scoped events, see {{% native_link "ADD_STATE_BAG_CHANGE_HANDLER" %}}.
+{{% /alert %}}
+
+This event handler is triggered when a player leaves another player's scope.
+
+```lua
+AddEventHandler("playerLeftScope", function(data)
+    local playerLeft, player = data["player"], data["for"]
+    print(("%s left %s's scope"):format(playerLeft, player))
+end)
+```
+
+The original examples can be found in the following forum [post][original-scope-post] by PichotM.
+
 # Best practices
 
 ## Server-created entities, not client entities
@@ -175,3 +212,5 @@ State bags allow you to set attributes to entities and allow other clients to ac
 
 [vmturl]: https://en.wikipedia.org/wiki/Virtual_method_table
 [fivem-codebase]: https://github.com/citizenfx/fivem
+[server-events]: https://docs.fivem.net/docs/scripting-reference/events/server-events
+[original-scope-post]: https://forum.cfx.re/t/onesync-playerenteredscope-and-playerleftscope-events
