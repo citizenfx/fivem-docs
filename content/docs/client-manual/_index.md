@@ -9,6 +9,7 @@ Basics
 - [Installing FiveM](https://support.cfx.re/hc/en-us/articles/360020992639-Installing-FiveM)
 - [CFX articles](https://support.cfx.re/hc/en-us/sections/360005606960-FiveM)
 - [Console commands](/docs/client-manual/console-commands)
+- [FiveM shortcut](/docs/client-manual/shortcut)
 - [CitizenFX.ini](/docs/client-manual/citizenfx)
 
 FiveM singleplayer
