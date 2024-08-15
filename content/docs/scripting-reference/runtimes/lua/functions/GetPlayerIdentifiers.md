@@ -4,18 +4,16 @@ title: GetPlayerIdentifiers
 
 Returns a table containing all of the player’s identifiers.
 
-Syntax
-------
+### Syntax
 
 ```lua
 GetPlayerIdentifiers(Player player)
 ```
 
-### Required arguments
-- **player**: The ID of the player to get the identifiers from.
+#### Required arguments
+* **player**: The ID of the player to get the identifiers from.
 
-License Types
---------
+### License Types
 
 | Type ID    | Provider                 | Type                                                                      | Data Type |
 |------------|--------------------------|---------------------------------------------------------------------------|-----------|
@@ -31,35 +29,25 @@ License Types
 * `license2` - This identifier is the ROS license for people who use steam, this identifier can be the same value as `license`
 
 
-Examples
---------
+### Examples
 
 Check for commonly used identifiers with this method;  works well when triggered by the `playerConnecting` event.
 
-```lua
-    local steamid  = false
-    local license  = false
-    local discord  = false
-    local xbl      = false
-    local liveid   = false
-    local ip       = false
+{{% alert color="info" %}}
+If you only need to get a single identifier you can use {{% native_link "GET_PLAYER_IDENTIFIER_BY_TYPE" %}}, if you need to get multiple you should use the below example.
+{{% /alert %}}
 
-  for k,v in pairs(GetPlayerIdentifiers(source))do
-    print(v)
-        
-      if string.sub(v, 1, string.len("steam:")) == "steam:" then
-        steamid = v
-      elseif string.sub(v, 1, string.len("license:")) == "license:" then
-        license = v
-      elseif string.sub(v, 1, string.len("xbl:")) == "xbl:" then
-        xbl  = v
-      elseif string.sub(v, 1, string.len("ip:")) == "ip:" then
-        ip = v
-      elseif string.sub(v, 1, string.len("discord:")) == "discord:" then
-        discord = v
-      elseif string.sub(v, 1, string.len("live:")) == "live:" then
-        liveid = v
-      end
-    
-  end
+```lua
+local identifiers = {}
+local playerIdents = GetPlayerIdentifiers(source)
+
+for i = 1, #playerIdents do
+  local ident = playerIdentifiers[i]
+  local colonPosition = string.find(ident, ":") - 1
+  local identifierType = string.sub(ident, 1, colonPosition)
+  identifiers[identifierType] = ident
+end
+
+-- if you want the fivem identifier you would do this:
+print(identifiers["fivem"]) -- returns fivem:123456789
 ```
