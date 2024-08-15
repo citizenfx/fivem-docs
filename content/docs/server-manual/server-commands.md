@@ -172,6 +172,7 @@ Every build includes all content and changes from the builds before.
 | 2802   | mpchristmas3                         | Los Santos Drug Wars        |
 | 2944   | mp2023_01                            | San Andreas Mercenaries     |
 | 3095   | mp2023_02                            | The Chop Shop               |
+| 3258   | mp2024_01                            | Bottom Dollar Bounties      |
 
 **RedM builds**
 
@@ -362,7 +363,7 @@ This is set to true by default (allow routing)
 
 ### `load_server_icon [fileName.png]`
 
-A console command which loads a specfied icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
+A console command which loads a specified icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
 
 Example:
 

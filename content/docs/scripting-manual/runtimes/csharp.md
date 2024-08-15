@@ -24,7 +24,7 @@ dotnet new cfx-resource
 ```
 
 3. If everything went right, you should get a folder named `MyResource` with a solution file named `MyResource.sln`. This is the solution file to manage your projects.
-4. To build the project, you can click on `build.cmd`, which will build a release server and client dll for you, both targetting the correct .NET frameworks needed for FiveM and FXServer.
+4. To build the project, you can click on `build.cmd`, which will build a release server and client dll for you, both targeting the correct `.NET Framework` needed for FiveM and FXServer.
 
 ## Setting up and running the project
 If you built the resource, you should now have a `dist` folder available, so you should be able to run the following commands:

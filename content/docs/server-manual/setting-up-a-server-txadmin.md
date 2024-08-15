@@ -48,6 +48,8 @@ description: >
 14. ... and finally, "Save & Run Server", and you're done!<br>
    ![pic](/server-setup/windows-step2-14.png)
 
+#### Troubleshooting
+If you're facing slow server startups, refer to [this][slow-server-startups].
 
 [windows-artifacts]: https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/
 [server-data]: https://github.com/citizenfx/cfx-server-data
@@ -56,3 +58,4 @@ description: >
 
 [winrar]: https://www.rarlab.com/download.htm
 [7zip]: https://www.7-zip.org/download.html
+[slow-server-startups]: /docs/support/server-issues/#troubleshooting-slow-server-startups-on-windows

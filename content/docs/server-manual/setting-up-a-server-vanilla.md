@@ -70,6 +70,7 @@ An example server.cfg follows.
 - If you don't get any 'resources found', and it says 'Failed to start resource', you didn't 'cd' to the right folder.
 - If no resources get started, and you also can't connect (i.e. 'timed out'/'connection refused'), you didn't add +exec.
 - If you get 'no license key was specified', one of the above two mistakes may apply.
+- If you're facing slow server startups on Windows, refer to [this][slow-server-startups].
 
 [windows-artifacts]: https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/
 [linux-artifacts]: https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
@@ -79,4 +80,5 @@ An example server.cfg follows.
 [winrar]: https://www.rarlab.com/download.htm
 [7zip]: https://www.7-zip.org/download.html
 [git-scm]: https://git-scm.com/download/win
+[slow-server-startups]: /docs/support/server-issues/#troubleshooting-slow-server-startups-on-windows
 
