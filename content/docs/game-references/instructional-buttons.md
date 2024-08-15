@@ -11,36 +11,52 @@ Simple non-clickable buttons example
 ### Lua
 
 ``` lua
-    local ButtonsHandle = RequestScaleformMovie('INSTRUCTIONAL_BUTTONS') -- Request the buttons GFX to be loaded
-	while not HasScaleformMovieLoaded(ButtonsHandle) do -- Wait for the buttons GFX to be fully loaded
+CreateThread(function()
+	-- Request the buttons GFX to be loaded
+	local ButtonsHandle = RequestScaleformMovie('INSTRUCTIONAL_BUTTONS')
+	-- Wait for the buttons GFX to be fully loaded
+	while not HasScaleformMovieLoaded(ButtonsHandle) do
 		Wait(0)
 	end
 
-	CallScaleformMovieMethod(ButtonsHandle, 'CLEAR_ALL') -- Clear previous buttons
-	CallScaleformMovieMethodWithNumber(ButtonsHandle, 'TOGGLE_MOUSE_BUTTONS', 0) -- Disable mouse buttons
+	-- Clear previous buttons
+	CallScaleformMovieMethod(ButtonsHandle, 'CLEAR_ALL')
+	-- Disable mouse buttons
+	CallScaleformMovieMethodWithNumber(ButtonsHandle, 'TOGGLE_MOUSE_BUTTONS', 0)
 
-	BeginScaleformMovieMethod(ButtonsHandle, 'SET_DATA_SLOT') -- Begin setting a button slot
-	ScaleformMovieMethodAddParamInt(0) -- Position of the button
-	ScaleformMovieMethodAddParamPlayerNameString('~INPUT_FRONTEND_ACCEPT~') -- Add the Enter keyboard icon
-	ScaleformMovieMethodAddParamPlayerNameString('Select') -- Add the text before icon
-	EndScaleformMovieMethod() -- End the function
-
-	CallScaleformMovieMethod(ButtonsHandle, 'DRAW_INSTRUCTIONAL_BUTTONS') -- Sets buttons ready to be drawn
+	-- Begin setting a button slot
+	BeginScaleformMovieMethod(ButtonsHandle, 'SET_DATA_SLOT')
+	-- Position of the button
+	ScaleformMovieMethodAddParamInt(0)
+	-- Add the Enter keyboard icon
+	ScaleformMovieMethodAddParamPlayerNameString('~INPUT_FRONTEND_ACCEPT~')
+	-- Add the text before icon
+	ScaleformMovieMethodAddParamPlayerNameString('Select')
+	-- End the function
+	EndScaleformMovieMethod()
+	-- Sets buttons ready to be drawn
+	CallScaleformMovieMethod(ButtonsHandle, 'DRAW_INSTRUCTIONAL_BUTTONS')
 
 	local selectPressed = false
-	while not selectPressed do -- Display instructional buttons while enter hasn't been pressed
+	-- Display instructional buttons while enter hasn't been pressed
+	while not selectPressed do
 		Wait(0)
 
-		DrawScaleformMovieFullscreen(ButtonsHandle, 255, 255, 255, 255, 1) -- Draw the instructional buttons this frame
+		-- Draw the instructional buttons this frame
+		DrawScaleformMovieFullscreen(ButtonsHandle, 255, 255, 255, 255, 1)
 
-		if IsControlJustReleased(2, 201) then -- Is Enter just released
+		-- Is Enter just released
+		if IsControlJustReleased(2, 201) then
 			selectPressed = true
 
 			print('Enter has been pressed!')
 		end
 	end
 
-	SetScaleformMovieAsNoLongerNeeded(ButtonsHandle) -- Unload the scaleform movie after enter has been pressed
+	-- Unload the scaleform movie after enter has been pressed
+	SetScaleformMovieAsNoLongerNeeded(ButtonsHandle)
+end)
+
 ```
 ![Code Result](https://i.imgur.com/b0NsTkC.png)
 
@@ -49,47 +65,73 @@ Simple clickable buttons example
 ### Lua
 
 ``` lua
-    local ButtonsHandle = RequestScaleformMovieInstance('INSTRUCTIONAL_BUTTONS') -- Request the buttons GFX to be loaded
+CreateThread(function()
+	-- Request the buttons GFX to be loaded
 	-- Note: RequestScaleformMovieInstance prevents the buttons being stretched on wide-screen
-	while not HasScaleformMovieLoaded(ButtonsHandle) do -- Wait for the buttons GFX to be fully loaded
+	local ButtonsHandle = RequestScaleformMovieInstance('INSTRUCTIONAL_BUTTONS')
+
+	-- Wait for the buttons GFX to be fully loaded
+	while not HasScaleformMovieLoaded(ButtonsHandle) do
 		Wait(0)
 	end
 
-	CallScaleformMovieMethod(ButtonsHandle, 'CLEAR_ALL') -- Clear previous buttons
-	CallScaleformMovieMethodWithNumber(ButtonsHandle, 'TOGGLE_MOUSE_BUTTONS', 1) -- ENABLE mouse buttons
+	-- Clear previous buttons
+	CallScaleformMovieMethod(ButtonsHandle, 'CLEAR_ALL')
+	-- ENABLE mouse buttons
+	CallScaleformMovieMethodWithNumber(ButtonsHandle, 'TOGGLE_MOUSE_BUTTONS', 1)
 
-	BeginScaleformMovieMethod(ButtonsHandle, 'SET_DATA_SLOT') -- Begin setting a button slot
-	ScaleformMovieMethodAddParamInt(0) -- Position of the button
-	ScaleformMovieMethodAddParamPlayerNameString('~INPUT_FRONTEND_ACCEPT~') -- Add the Enter keyboard icon
-	ScaleformMovieMethodAddParamPlayerNameString('Select') -- Add the text before icon
-	-- Note: Adding last 2 SET_DATA_SLOT parameters while TOGGLE_MOUSE_BUTTONS is disabled can cause buttons to bug out like this: https://i.imgur.com/gD5fkFb.png
-	ScaleformMovieMethodAddParamBool(true) -- Wether or not this button can be clicked by the mouse
-	ScaleformMovieMethodAddParamInt(201) -- Which control will be triggered when this button is clicked by the mouse (INPUT_FRONTEND_ACCEPT in this case)
-	EndScaleformMovieMethod() -- End the function
+	-- Begin setting a button slot
+	BeginScaleformMovieMethod(ButtonsHandle, 'SET_DATA_SLOT')
+	-- Position of the button
+	ScaleformMovieMethodAddParamInt(0)
+	-- Add the Enter keyboard icon
+	ScaleformMovieMethodAddParamPlayerNameString('~INPUT_FRONTEND_ACCEPT~')
+	-- Add the text before icon
+	ScaleformMovieMethodAddParamPlayerNameString('Select')
+	-- Note: Adding last 2 SET_DATA_SLOT parameters while TOGGLE_MOUSE_BUTTONS 
+	-- is disabled can cause buttons to bug out like this: https://i.imgur.com/gD5fkFb.png
+	
+	-- Whether or not this button can be clicked by the mouse
+	ScaleformMovieMethodAddParamBool(true)
+	-- Which control will be triggered when this button is clicked by the mouse (INPUT_FRONTEND_ACCEPT in this case)
+	ScaleformMovieMethodAddParamInt(201)
+	-- End the function
+	EndScaleformMovieMethod()
 
-	CallScaleformMovieMethod(ButtonsHandle, 'DRAW_INSTRUCTIONAL_BUTTONS') -- Sets buttons ready to be drawn
+	-- Sets buttons ready to be drawn
+	CallScaleformMovieMethod(ButtonsHandle, 'DRAW_INSTRUCTIONAL_BUTTONS')
 
 	local selectPressed = false
-	while not selectPressed do -- Display instructional buttons while enter hasn't been pressed
+	-- Display instructional buttons while enter hasn't been pressed
+	while not selectPressed do
 		Wait(0)
 
-		SetMouseCursorActiveThisFrame() -- Show the mouse this frame
+		-- Show the mouse this frame
+		SetMouseCursorActiveThisFrame()
 
-		DisableControlAction(0, 1, true) -- Disable camera moving left and right
-		DisableControlAction(0, 2, true) -- Disable camera moving up and down
-		DisableControlAction(0, 24, true) -- Disable attacking by mouse click
+		-- Disable camera moving left and right
+		DisableControlAction(0, 1, true)
+		-- Disable camera moving up and down
+		DisableControlAction(0, 2, true)
+		-- Disable attacking by mouse click
+		DisableControlAction(0, 24, true)
 
-		DrawScaleformMovieFullscreen(ButtonsHandle, 255, 255, 255, 255, 1) -- Draw the instructional buttons this frame
+		-- Draw the instructional buttons this frame
+		DrawScaleformMovieFullscreen(ButtonsHandle, 255, 255, 255, 255, 1)
 
-		if IsControlJustReleased(2, 201) then -- Is Enter just released
+		-- Is Enter just released
+		if IsControlJustReleased(2, 201) then
 			selectPressed = true
 
 			print('Select has been pressed!')
 		end
 	end
 
-	CallScaleformMovieMethod(ButtonsHandle, 'TOGGLE_MOUSE_BUTTONS', 0) -- Disable mouse buttons so they don't bug out for other scripts
-	SetScaleformMovieAsNoLongerNeeded(ButtonsHandle) -- Unload the scaleform movie after enter has been pressed
+	-- Disable mouse buttons so they don't bug out for other scripts
+	CallScaleformMovieMethod(ButtonsHandle, 'TOGGLE_MOUSE_BUTTONS', 0)
+	-- Unload the scaleform movie after enter has been pressed
+	SetScaleformMovieAsNoLongerNeeded(ButtonsHandle)
+end)
 ```
 ![Code Result](https://i.imgur.com/0Ol9zxA.png)
 
@@ -98,37 +140,57 @@ Simple buttons with icons example
 ### Lua
 
 ```lua
-    local ButtonsHandle = RequestScaleformMovie('INSTRUCTIONAL_BUTTONS') -- Request the buttons GFX to be loaded
-	while not HasScaleformMovieLoaded(ButtonsHandle) do -- Wait for the buttons GFX to be fully loaded
+CreateThread(function()
+	-- Request the buttons GFX to be loaded
+	local ButtonsHandle = RequestScaleformMovie('INSTRUCTIONAL_BUTTONS')
+	-- Wait for the buttons GFX to be fully loaded
+	while not HasScaleformMovieLoaded(ButtonsHandle) do
 		Wait(0)
 	end
 
-	CallScaleformMovieMethod(ButtonsHandle, 'CLEAR_ALL') -- Clear previous buttons
+	-- Clear previous buttons
+	CallScaleformMovieMethod(ButtonsHandle, 'CLEAR_ALL')
 
-	BeginScaleformMovieMethod(ButtonsHandle, 'SET_DATA_SLOT') -- Begin setting a button slot
-	ScaleformMovieMethodAddParamInt(0) -- Position of the button
-	ScaleformMovieMethodAddParamInt(45) -- Add the arrow up/down icon
+	-- Begin setting a button slot
+	BeginScaleformMovieMethod(ButtonsHandle, 'SET_DATA_SLOT')
+	-- Position of the button
+	ScaleformMovieMethodAddParamInt(0)
+	-- Add the arrow up/down icon
+	ScaleformMovieMethodAddParamInt(45)
 	-- Note: You can add up to 20 keys and icons
-	ScaleformMovieMethodAddParamPlayerNameString('Scroll') -- Add the text before the icon
-	EndScaleformMovieMethod() -- End the function
+	---- Add the text before the icon
+	ScaleformMovieMethodAddParamPlayerNameString('Scroll')
+	-- End the function
+	EndScaleformMovieMethod()
 
-	BeginScaleformMovieMethod(ButtonsHandle, 'SET_DATA_SLOT') -- Begin setting a button slot
-	ScaleformMovieMethodAddParamInt(1) -- Position of the button
-	ScaleformMovieMethodAddParamInt(50) -- Add the loading icon
+	-- Begin setting a button slot
+	BeginScaleformMovieMethod(ButtonsHandle, 'SET_DATA_SLOT')
+	-- Position of the button
+	ScaleformMovieMethodAddParamInt(1)
+	-- Add the loading icon
+	ScaleformMovieMethodAddParamInt(50)
 	-- Note: You can add up to 20 keys and icons
-	ScaleformMovieMethodAddParamPlayerNameString('Loading') -- Add the text before the icon
-	EndScaleformMovieMethod() -- End the function
+	---- Add the text before the icon
+	ScaleformMovieMethodAddParamPlayerNameString('Loading')
+	-- End the function
+	EndScaleformMovieMethod()
 
-	CallScaleformMovieMethod(ButtonsHandle, 'DRAW_INSTRUCTIONAL_BUTTONS') -- Sets buttons ready to be drawn
+	-- Sets buttons ready to be drawn
+	CallScaleformMovieMethod(ButtonsHandle, 'DRAW_INSTRUCTIONAL_BUTTONS')
 
 	local startedLoading = GetGameTimer()
-	while GetGameTimer() - startedLoading < 3000 do -- Display instructional buttons for 3 seconds (3000 ms)
+	-- Display instructional buttons for 3 seconds (3000 ms)
+	while GetGameTimer() - startedLoading < 3000 do
 		Wait(0)
 
-		DrawScaleformMovieFullscreen(ButtonsHandle, 255, 255, 255, 255, 1) -- Draw the instructional buttons this frame
+		-- Draw the instructional buttons this frame
+		DrawScaleformMovieFullscreen(ButtonsHandle, 255, 255, 255, 255, 1)
 	end
 
-	SetScaleformMovieAsNoLongerNeeded(ButtonsHandle) -- Unload the scaleform movie after enter has been pressed
+	-- Unload the scaleform movie after enter has been pressed
+	SetScaleformMovieAsNoLongerNeeded(ButtonsHandle)
+end)
+
 ```
 ![Code Result](https://i.imgur.com/8XVLFXD.png)
 
