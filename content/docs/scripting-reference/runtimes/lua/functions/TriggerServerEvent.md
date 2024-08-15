@@ -4,7 +4,7 @@ title: TriggerServerEvent
 
 ## What is TriggerServerEvent?
 
-`TriggerServerEvent` is a function in FiveM that allows you to trigger a specified event, optionally passing along additional data. This function is integral for communication within the client-server scripts, enabling different parts of your resources to interact with each other seamlessly.
+`TriggerServerEvent` is a function in FiveM that allows you to trigger a server event from the client.
 
 Please note this is similar to `TriggerEvent`, but allow you to pass from client to server.
 
@@ -97,14 +97,11 @@ In this example, the `updatePlayerScore` function is defined and used directly a
 
 ## Best Practices
 
-1. **Consistent Naming**: Use clear and consistent naming conventions for your events to avoid confusion and make your code more readable.
+1. **Minimal Data Passing**: Sending data via events has msgpack serialization overhead when sending **AND** when recieving, you should try to keep your data types as simple and as small as possible so you don't send a bunch of unneeded data.
 
-2. **Minimal Data Passing**: Only pass the necessary data with your events to keep them lightweight and efficient.
+2. **Check your data**: ***Never, ever*** trust data from the client, you should always try to verify the data that the client sends. If at all possible you should try to do as much of your logic server-side so the client cannot manipulate it.
 
-3. **Error Handling**: Ensure that your event handlers include error handling to manage any unexpected issues that may arise when processing events.
+You can find common examples in the [security guidelines](/developers/server-security)
 
-4. **Documentation**: Document your custom events and their expected parameters to make your code easier to understand and maintain.
 
-## Conclusion
 
-`TriggerServerEvent` is a powerful tool in FiveM scripting that helps different parts of your script communicate from client to server. By using events and passing data, you can create whether you're updating player scores, handling database, or managing game informations, `TriggerServerEvent` helps keep your code organized and efficient. Use it to make your FiveM scripts more modular and responsive.
