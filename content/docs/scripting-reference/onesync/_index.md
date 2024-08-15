@@ -105,7 +105,7 @@ An implementation example can be found down below.
 ## playerEnteredScope
 
 {{% alert title="Performance Warning" color="warning" %}}
-Using these events is frowned upon, these events have scaling performance costs. For every person within the scope of the player on every enter/leave scope this this will be called an additional time, so having 32 players within the scope of a player will lead to this being called 32 times. Whenever possible you should use state bags if you need to trigger scoped events.
+Using these events is frowned upon, these events have scaling performance costs. For every person within the scope of the player on every enter/leave scope this this will be called an additional time, so having 32 players within the scope of a player will lead to this being called 32 times. Whenever possible you should use state bags if you need to trigger scoped events, see {{% native_link "ADD_STATE_BAG_CHANGE_HANDLER" %}}.
 {{% /alert %}}
 
 This event handler is triggered when a player enters another player's scope.
@@ -120,7 +120,7 @@ end)
 ## playerLeftScope
 
 {{% alert title="Performance Warning" color="warning" %}}
-Using these events is frowned upon, these events have scaling performance costs. For every person within the scope of the player on every enter/leave scope this this will be called an additional time, so having 32 players within the scope of a player will lead to this being called 32 times. Whenever possible you should use state bags if you need to trigger scoped events.
+Using these events is frowned upon, these events have scaling performance costs. For every person within the scope of the player on every enter/leave scope this this will be called an additional time, so having 32 players within the scope of a player will lead to this being called 32 times. Whenever possible you should use state bags if you need to trigger scoped events, see {{% native_link "ADD_STATE_BAG_CHANGE_HANDLER" %}}.
 {{% /alert %}}
 
 This event handler is triggered when a player leaves another player's scope.
