@@ -75,6 +75,8 @@ To use more than 48 slots follow these steps.
 4. Set `sv_maxclients` in your server.cfg to a value higher than 48 (Depending on the Patreon perk you have)
 5. Restart your server
 
+You can easily link your Patreon account to "Keymaster" by following this helpful [support article][support-connect-patreon].
+
 If you are not seeing the changes in the server list, be patient until the server list updates. You will see the changes already in Direct Connect.
 
 Please note that [txAdmin](/docs/resources/txAdmin/) can handle onesync activation by the panel directly.
@@ -106,8 +108,10 @@ Help! I can't find my issue here!
 ---------------------------------
 
 We are more than happy to help you out!
-Please post a topic on the [forums][forum] so we can take a look at your issue.
-You can also join our [Discord][discord] and have a chat with us.
+
+For support, please check out our [support section][support-cfx-platform-server] for helpful resources. If you'd like to discuss your issue further, feel free to post a topic on our [forums][forum], and we'll be happy to take a look.
+
+Additionally, you can join our [Discord][discord] community and have a chat with us.
 
 [patreon]: https://patreon.com/fivem
 [forum]: https://forum.cfx.re/
@@ -116,4 +120,6 @@ You can also join our [Discord][discord] and have a chat with us.
 [servercfg]: /docs/server-manual/setting-up-a-server-vanilla/#servercfg
 [chat-formatting]: https://forum.cfx.re/t/67641
 [setting-up-server]: /docs/server-manual/setting-up-a-server
+[support-cfx-platform-server]: https://support.cfx.re/hc/en-us/sections/8856844172188-Cfx-re-Platform-Server-FXServer
+[support-connect-patreon]: https://support.cfx.re/hc/en-us/articles/8014624625052-Connect-your-Patreon-account
 [add-mp-preference-docs]: https://learn.microsoft.com/en-us/powershell/module/defender/add-mppreference
