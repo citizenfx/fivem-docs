@@ -89,6 +89,19 @@ You may be experiencing this in different cases. For example, the server colors 
 3. Didn't save and/or restart server
 4. Server list cache hasn't updated, be patient
 
+Troubleshooting Slow Server Startups on Windows
+---------------------------------
+
+On Windows, Microsoft Defender Antivirus can slow down server startups by scanning files within your FXServer directory. To mitigate this issue, you can add your server folder to the exclusion list. 
+
+Launch PowerShell as an administrator and execute the following command, replacing `'C:\FXServer\'` with the actual path to your FXServer directory:
+
+```
+Add-MpPreference -ExclusionPath 'C:\FXServer\'
+```
+
+For more details on the `Add-MpPreference` command, refer to the [official documentation][add-mp-preference-docs].
+
 Help! I can't find my issue here!
 ---------------------------------
 
@@ -103,3 +116,4 @@ You can also join our [Discord][discord] and have a chat with us.
 [servercfg]: /docs/server-manual/setting-up-a-server-vanilla/#servercfg
 [chat-formatting]: https://forum.cfx.re/t/67641
 [setting-up-server]: /docs/server-manual/setting-up-a-server
+[add-mp-preference-docs]: https://learn.microsoft.com/en-us/powershell/module/defender/add-mppreference
