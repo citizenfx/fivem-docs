@@ -1,15 +1,20 @@
 ---
-title: Make your server more secure
-draft: true
+title: Secure your events
 ---
 
-Our anti-cheat cannot protect some of the exploit your server might have. In this simple guide, we'll try to show you how to get started with some tips to prevent in Lua. 
+The anti-cheat team is always trying to improve the anti-cheat, but sometimes things slip through.
+
+In this guide we'll try to help cover some common-practice things you can do to make your server more secure.
 
 ## Events
-Some cheats authorize the client to trigger events allowing them to have access to a wide possibilities, let's see how you can protect them:
+Cheats can allow the client to trigger events in any context
+
+* When we say `context` we mean they can execute `client->server` (via `TriggerServerEvent`) or `client resource->client resource` (via `TriggerEvent`)
 
 ### Proper Use of Event Handlers in Lua
-When working with events in Lua, it's crucial to register them correctly based on whether they are called by the client or the server. A common mistake is registering server events that are not supposed to be called by the client, or vice-versa, which can lead to security vulnerabilities. Here’s a concise guide to using `AddEventHandler` and `RegisterNetEvent` appropriately:
+When working with events in Lua, it's crucial to register them correctly based on whether they are called by the client or the server.
+
+A common mistake is registering server events that are not supposed to be called by the client, or vice-versa, which can lead to security vulnerabilities.
 
 #### `AddEventHandler`
 
@@ -40,6 +45,16 @@ RegisterNetEvent("eventName", function(eventParam1, eventParam2)
 end)
 ```
 
+This example is for the client, this example *is not bullet proof* as with anything on the client, it can be manipulated by cheating clients.
+
+If you want to block execution from the same context, you should register your event like so:
+```lua
+RegisterNetEvent("eventName", function(eventParam1, eventParam2)
+    -- server will send net id `65535` for events from the server
+    if source ~= 65535 then return end
+end)
+```
+
 You can learn more [on this guide](docs/scripting-manual/working-with-events/listening-for-events/).
 
 ### Add Checks
@@ -53,105 +68,102 @@ When using networked events, make sure to add some checks like:
 - Player experience and level
 - Player [permissions](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) and roles
 
-Make sure to retrieve all values using server-side methods, not allowing players to change the values. This ensures the integrity and security of your game environment. Please note that client checks can also be a good pratice but can be easily be overridden.
+Make sure to retrieve all values using server-side methods, not allowing players to change the values.
 
+This ensures the integrity and security of your game environment. Please note that client checks can also be a good practice but can be easily be overridden.
 
-## Cheaters
-Even though we are trying to keep our community safe, some users might have not been detected yet. These are some tools to prevent some popular actions:
+### Examples of common security patterns
+All examples assume some kind of framework.
 
-Please note that this doesn't mean it will block the features presented, but can prevent some cases.
+##### Bad Security
 
-### Teleporation/NoClip
-This is a popular function allowing the cheater to move around the map easily which allow to do some actions in the server easier.
+{{% alert color="warning" %}}
+This is meant to show you *bad* ways of doing events, you should **never** do this.
+{{% /alert %}}
 
 ```lua
-local wasFastTravelAllowed = false
+RegisterNetEvent("job:givePlayerItem", function(item, count)
+    local ply = FX.GetPlayerFromSource(source)
+    -- directly adding items to the user from their own input
+    -- is always bad practice, you should always validate user input
+    ply.addItem(item, count)
+end)
+```
+
+##### Good Security
+
+You can also check out [this example resource](https://github.com/TheIndra55/secure-resource-examples) for a more in-depth example with client and server examples.
+
+```lua
+-- coord is randomly made up
+local VALID_JOB_COORD = vector3(125.0, 111.1, 35.83)
+local MAX_ITEM_COUNT = 10
+
+-- coord is randomly made up
+local VALID_TURNIN_COORD = vecor3(1888.0, 1254.1, 48.0)
+
+local ITEM_NAME = 'log'
+
+-- list of players with active jobs
+local activeJobs = {}
+
+AddEventHandler("playerDropped", function ()
+    if not activeJobs[source] then return end
+    activeJobs[source] = nil
+end)
+
+function isPedWithinRange(ped, tgtCoords)
+    return #(GetEntityCoords(ped) - tgtCoords) < 15.0
+end
+
+-- handle incrementing the amount of items the ped would get server side
 CreateThread(function()
-    local lastDist = GetEntityCoords(PlayerPedId())
-    -- if you have a specific way of setting a player to be staff you can replace it here
-    local admin = false
-    -- if the player is a staff member they don't need this check.
-    if admin then return end 
     while true do
-        local player = PlayerPedId()
-        local playerCoords = GetEntityCoords(player)
-        local dist = #(playerCoords - lastDist)
-        if dist >= 100.0 then
-            if not wasFastTravelAllowed then
-                SetEntityCoords(player, playerCoords.x, playerCoords.y, playerCoords.z, true, false, false)
-                print("Reverting player position -- fast travel not allowed")
-                -- Trigger any event to log
+        for src, data in pairs(activeJobs) do
+            local ped = GetPlayerPed(source)
+            -- if they're not within range then we don't want to give them the item
+            if isPedWithinRange(ped, VALID_JOB_COORD) then
+                -- give them the item, but limit it to MAX_ITEM_COUNT
+                data.itemCount = math.min(data.itemCount + 1, MAX_ITEM_COUNT)
             end
         end
-        lastDist = playerCoords
-
-        Wait(500)
+        -- process job tick once per second
+        Wait(1000)
     end
 end)
 
-local playerFastTravel = function()
-    while IsPlayerTeleportActive() do wasFastTravelAllowed = true Wait(1) end
-    wasFastTravelAllowed = false
-end
-exports("allowFastTravel", playerFastTravel);
-```
-
-Let's break some of the code in parts:
-```lua
-local wasFastTravelAllowed
-```
-So `wasFastTravelAllowed` will be crucial here since it will determinate if player had access to teleportation or not. This is checked after the "teleportation" is detected if player was really doing this action or not. Please refer to the other parts to know how to activate this variable.
-
-```lua
-allowFastTravel
-```
-This export is the most important wich will need to be set before teleportation by the player allowing to do this action. You can rename this export as you wish.
-
-```lua
-IsPlayerTeleportActive()
-```
-While setting the export in each teleportation player can do, you also need to make sure using [StartPlayerTeleport](https://docs.fivem.net/natives/?_0xAD15F075A4DA0FDE) and [StopPlayerTeleport](https://docs.fivem.net/natives/?_0xC449EDED9D73009C) since the function allowing the player to teleport with `wasFastTravelAllowed` check if player is using this function. Not using those natives might cause some false positives reports.
-
-Note that this not a copy/paste code, this just explain how to prevent some cases where cheaters might be caught.
-
-### Screenshot
-Taking a screenshot of the player's screen can be an effective method to monitor unusual activities that might indicate cheating. You can use [screenshot-basic](https://github.com/citizenfx/screenshot-basic) to capture what they are doing.
-
-
-### General report function
-You can create some useful functions to generalize every report in one, here's an example:
-```lua
-local reportsDone = {}
-function reportCheater(enumReason, requestScreenshot, preventSpam)
-	if reportsDone[enumReason] then return end
-
-	if preventSpam then
-		reportsDone[enumReason] = true
-
-        Citizen.SetTimeout(60 * 1000 * 10, function() -- allow 10 min between each report
-			reportsDone[enumReason] = false
-		end)
-	end
-
-    local screenshot
-    if requestScreenshot then
-        exports['screenshot-basic']:requestScreenshot(function(data)
-            screenshot = data
-        end)
+RegisterNetEvent("job:startJob", function()
+    local ped = GetPlayerPed(source)
+    -- if they're within 15 units then they are doing the job
+    if isPedWithinRange(ped, VALID_JOB_COORD) then
+        activeJobs[source] = {
+            itemCount = 0,
+        }
     end
+end)
 
-	-- trigger server event
-end
+RegisterNetEvent("job:givePlayerItem", function()
+    local ply = FX.GetPlayerFromSource(source)
+    -- if they don't have an active job then they shouldn't be hitting this!
+    local jobData = activeJobs[source]
+    if not jobData then return end
+
+    -- they're not within range of the turn in coordinates, reject their changes
+    if not isPedWithinRange(ped, VALID_TURNIN_COORD) then return end
+
+    -- reset the item data so they can't trigger it multiple times
+    activeJobs[source] = nil
+
+    -- directly adding items to the user from their own input
+    -- is always bad practice, you should always validate user input
+    ply.addItem(ITEM_NAME, jobData.itemCount)
+end)
 ```
 
-**enumReason:** Can be used to enumerate a list of reasons this function is triggered.
-**requestScreenshot:** Can be use to request a screenshot for the player on warn.
-**preventSpam:** Can be use to prevent some things that might pass `reportCheater` function more than 1 time. This will block the specific alert for 1 every 10 minutes.
 
 ## Server owner options
 #### Please note that the following shouldn't be touched unless you know what you are doing.
-Adhesive team is always working really hard to prevent cheaters to be able to use them. You can have most of those features enabled by default with `8450` Fx build version and higher.
-<!-- Reference https://discord.com/channels/779705925577080842/842554061734936596/1197336243038597263 -->
+Adhesive team is always working really hard to prevent cheaters to be able to use them. You will have most of those features enabled by default with FXServer `8450` build version and higher.
 
 ```
 sv_kick_players_cnl_timeout_sec
@@ -160,12 +172,12 @@ This is the timeout at which the server will kick the player. (EX: if this is 60
 
 ```
 sv_kick_players_cnl_update_rate_sec
-``` 
-This is the frequency at which CnL is queried with the playerlist.
+```
+This is the frequency at which CnL is queried with the player list.
 
 ```
 sv_pure_verify_client_settings
-``` 
+```
 Replaces the periodic request to `info.json` in the client. Establishes a connection between `adhesive`<->`svadhesive` and verifies some of the `sv_settings` such as pureLevel, scripthook and other settings.
 
 ```
@@ -194,7 +206,7 @@ Having those convars active will likely get the player kick with the following r
 Connection to CNL timed out.
 ```
 
-**Note:** some error *might occur* but it's unlikely. 
+**Note:** some error *might occur* but it's unlikely.
 
 User getting kicked doesn't mean is automatically Global Ban. However, it provides an indication of player reliability, which can be useful for assessing trustworthiness.
 
@@ -206,4 +218,4 @@ sv_disableClientReplays
 Enabling this will aim to reduce chances of cheating options. Please note that this will disable Rockstar Editor.
 
 ## Important to know
-The codes provided are not supposed to be working on a copy/paste method. This is just some tips to prevent some actions that might happen in the server. This require some knowledge, you are always free to join our [discord](discord.gg/fivem) to get additionnal help.
+The codes provided are not supposed to be working on a copy/paste method. This is just some tips to prevent some actions that might happen in the server. This require some knowledge, you are always free to join our [discord](https://discord.gg/fivem) to get additionnal help.
