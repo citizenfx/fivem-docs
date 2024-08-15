@@ -7,7 +7,7 @@ toc_hide: true
 **Note:** You can skip to step 3 if you already have a shortcut created.
 
 1. **Locate FiveM Application**
-   - Navigate to the FiveM installation directory, **typically** found at `C:\Users\[YourUsername]\AppData\Local\FiveM`.
+   - Navigate to the FiveM installation directory, **typically** found at `%localappdata%\FiveM`.
    - Alternatively, you can search for "FiveM" in the Windows search bar to find the application.
 
 2. **Create a Shortcut**
@@ -30,7 +30,7 @@ Shortcut allow you do add multiples things to launch FiveM with pre-defined sett
 -cl2
 
 -- Should look like this
-fivempath\FiveM.exe -cl2
+%localappdata%\FiveM\FiveM.exe -cl2
 ```
 
 This method allows you to create a second instance of FiveM, which is particularly useful for developers who want to test with a second player themselves. However, please note that this will not create a different identifier.
@@ -41,7 +41,7 @@ This method allows you to create a second instance of FiveM, which is particular
 -pure_X
 
 -- Should look like this
-fivempath\FiveM.exe -pure_X
+%localappdata%\FiveM\FiveM.exe -pure_1
 ```
 
 Where `X` will represent the level you wish to have (0-2 available). This will launch FiveM app directly to the puremode level asked. This is good if you play on a specific server to avoid the "Puremode transition".
@@ -52,7 +52,7 @@ Where `X` will represent the level you wish to have (0-2 available). This will l
 -bXXXX
 
 -- Should look like this
-fivempath\FiveM.exe -bXXXX
+%localappdata%\FiveM\FiveM.exe -b1604
 ```
 
 Where `XXXX` will represent the build number you wish. You can find the list [here](docs/server-manual/server-commands/#sv_enforcegamebuild-build). This will launch FiveM app directly to the build asked. This is good if you play on a specific server to avoid the "build transition".
