@@ -111,14 +111,14 @@ Help! I can't find my issue here!
 We're here to help! First, check the Cfx.re support [section][support-game-articles] for your issue. If you're experiencing crashes or freezes, please post your details on our [forums][forum-tech-support] to help us assist you better.
 For all other inquiries, feel free to join our [Discord][discord] for a chat!
 
-[where-is-fivem-installed]: /docs/support/client-faq#where-is-fivem-installed
+[where-is-fivem-installed]: https://support.cfx.re/hc/en-us/articles/8016397932444-Client-FAQ#where-is-fivem-installed
 [antivirus-ticket]: https://support.cfx.re/hc/en-us/requests/new
 [email]: mailto:support@fivem.net
 [forum]: https://forum.cfx.re
 [forum-tech-support]: https://forum.cfx.re/c/technical-support
 [discord]: https://discord.gg/fivem
-[testing-server]: https://cfx.re/join/7b6bor
-[uninstalling]: /docs/client-manual/installing-fivem#uninstalling
+[testing-server]: https://cfx.re/join/jm85gm
+[uninstalling]: https://support.cfx.re/hc/en-us/articles/360020967780-Uninstalling-FiveM
 [discrete-gpu]: https://forum.cfx.re/t/217731
 [support-create-etw-trace]: https://support.cfx.re/hc/en-us/articles/8366604193436-Creating-an-ETW-trace
 [support-ban-faq]: https://support.cfx.re/hc/en-us/articles/8444465475356-Bans-FAQ
