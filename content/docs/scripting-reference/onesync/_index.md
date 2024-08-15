@@ -104,7 +104,7 @@ An implementation example can be found down below.
 
 ## playerEnteredScope
 
-{{% alert theme="warning" %}}
+{{% alert title="Performance Warning" color="warning" %}}
 Using these events is frowned upon, these events have scaling performance costs. For every person within the scope of the player on every enter/leave scope this this will be called an additional time, so having 32 players within the scope of a player will lead to this being called 32 times. Whenever possible you should use state bags if you need to trigger scoped events.
 {{% /alert %}}
 
@@ -119,7 +119,7 @@ end)
 ```
 ## playerLeftScope
 
-{{% alert theme="warning" %}}
+{{% alert title="Performance Warning" color="warning" %}}
 Using these events is frowned upon, these events have scaling performance costs. For every person within the scope of the player on every enter/leave scope this this will be called an additional time, so having 32 players within the scope of a player will lead to this being called 32 times. Whenever possible you should use state bags if you need to trigger scoped events.
 {{% /alert %}}
 
