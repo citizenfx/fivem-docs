@@ -8,7 +8,7 @@ Syntax
 ------
 
 ```lua
-PerformHttpRequest(string url, function callback[, string method = 'GET', string data = '', table headers = {}])
+PerformHttpRequest(string url, function callback[], string method = 'GET', string data = '', table headers = {})
 ```
 
 ### Required arguments
