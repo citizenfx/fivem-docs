@@ -58,7 +58,7 @@ CreateThread(function()
 end)
 
 ```
-![Code Result](https://i.imgur.com/b0NsTkC.png)
+![Code Result](/instructional_buttons_result.png) 
 
 Simple clickable buttons example
 ------------
@@ -89,7 +89,7 @@ CreateThread(function()
 	-- Add the text before icon
 	ScaleformMovieMethodAddParamPlayerNameString('Select')
 	-- Note: Adding last 2 SET_DATA_SLOT parameters while TOGGLE_MOUSE_BUTTONS 
-	-- is disabled can cause buttons to bug out like this: https://i.imgur.com/gD5fkFb.png
+	-- is disabled can cause buttons to bug out
 	
 	-- Whether or not this button can be clicked by the mouse
 	ScaleformMovieMethodAddParamBool(true)
@@ -133,7 +133,7 @@ CreateThread(function()
 	SetScaleformMovieAsNoLongerNeeded(ButtonsHandle)
 end)
 ```
-![Code Result](https://i.imgur.com/0Ol9zxA.png)
+![Code Result](/instructional_buttons_result_2.png) 
 
 Simple buttons with icons example
 ------------
@@ -192,7 +192,7 @@ CreateThread(function()
 end)
 
 ```
-![Code Result](https://i.imgur.com/8XVLFXD.png)
+![Code Result](/instructional_buttons_result_3.png) 
 
 Icon list
 ---------------
@@ -272,7 +272,7 @@ CLEAR_RENDER()
 Stops rendering buttons
 
 OVERRIDE_POSITION(float x, float y, bool alignBottomRight)
-Overrides button position (Example: https://i.imgur.com/QEYJHhn.png)
+Overrides buttons' position.
 
 SET_CLEAR_SPACE(float clearSpace)
 
@@ -284,7 +284,7 @@ SET_DATA_SLOT_EMPTY()
 Alias for CLEAR_ALL()
 
 CLEAR_BACKGROUNDS()
-Clears background for buttons. Eg: https://i.imgur.com/cTqWBnb.png
+Removes background for the buttons.
 
 DRAW_INSTRUCTIONAL_BUTTONS(int layoutType)
 Sets buttons to be drawn.
