@@ -208,12 +208,7 @@ Press ~INPUT_CONTEXT~ when near the ~r~enemies.
 <tr>
 <td><code>~nrt~</code></td>
 <td>No Return Top. This would mean the padding or margin being added does not include any additional space related to the "return" or "top" of the previous element. Works similar to the ~n~ </td>
-<td><code>Every~nrt~sentence~nrt~on a new~nrt~line</code></td>
-</tr>
-<tr>
-<td><code>~no-return-top~</code></td>
-<td>An alias of <code>~nrt~</code>.</td>
-<td><code>Also on~no-return-top~a new line</code></td>
+<td><code> ~nrt~ Added padding before (above) this text</code></td>
 </tr>
 <tr>
 <td><code>~EX_R*~</code></td>
