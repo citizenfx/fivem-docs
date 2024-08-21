@@ -211,6 +211,11 @@ Press ~INPUT_CONTEXT~ when near the ~r~enemies.
 <td><code>Every~nrt~sentence~nrt~on a new~nrt~line</code></td>
 </tr>
 <tr>
+<td><code>~no-return-top~</code></td>
+<td>An alias of <code>~nrt~</code>.</td>
+<td><code>Also on~no-return-top~a new line</code></td>
+</tr>
+<tr>
 <td><code>~EX_R*~</code></td>
 <td>A Rockstar logo, in fonts that support this character.</td>
 <td><code>The ~EX_R*~ logo is a registered trademark</code></td>
