@@ -18,6 +18,8 @@ PerformHttpRequestAwait(string url, string method = 'GET', string data = '', tab
 - **method**: The HTTP method to use.
 - **data**: A string of data to send with the request.
 - **headers**: A table of request headers.
+- **options**: A table of options
+  - **followLocation**: Makes cURL [follow the redirects](https://curl.se/libcurl/c/CURLOPT_FOLLOWLOCATION.html) of the URL
 
 Examples
 --------
