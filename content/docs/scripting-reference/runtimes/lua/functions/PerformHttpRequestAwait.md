@@ -8,7 +8,7 @@ Syntax
 ------
 
 ```lua
-PerformHttpRequestAwait(string url, string method = 'GET', string data = '', table headers = {})
+PerformHttpRequestAwait(string url, string method = 'GET', string data = '', table headers = {}, table options = { followLocation = true })
 ```
 
 ### Required arguments
