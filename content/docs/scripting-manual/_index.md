@@ -29,3 +29,4 @@ layout: single
 - [Voice](/docs/scripting-manual/voice)
 - [Using new game features](/docs/scripting-manual/using-new-game-features)
   - [Fuel consumption](/docs/scripting-manual/using-new-game-features/fuel-consumption)
+  - [Collection based natives](/docs/scripting-manual/using-new-game-features/collection-based-natives)
