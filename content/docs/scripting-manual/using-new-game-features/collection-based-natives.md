@@ -82,32 +82,32 @@ There are three groups of new natives:
 
 #### General info natives
 
-- [GET_PED_COLLECTIONS_COUNT](https://docs.fivem.net/natives/?_0x45946359) - get total number of collections available for Ped
-- [GET_PED_COLLECTION_NAME](https://docs.fivem.net/natives/?_0xFED5D83A) - get collection name by collection number
+- {{% native_link "GET_PED_COLLECTIONS_COUNT" %}} - get total number of collections available for Ped
+- {{% native_link "GET_PED_COLLECTION_NAME" %}} - get collection name by collection number
 
 #### Conversion between global and local indexing
 
-- [GET_PED_COLLECTION_NAME_FROM_DRAWABLE](https://docs.fivem.net/natives/?_0xD6BBA48B), [GET_PED_COLLECTION_LOCAL_INDEX_FROM_DRAWABLE](https://docs.fivem.net/natives/?_0x94EB1FE4) - get collection name and local index from global drawable index
-- [GET_PED_COLLECTION_NAME_FROM_PROP](https://docs.fivem.net/natives/?_0x8ED0C17), [GET_PED_COLLECTION_LOCAL_INDEX_FROM_PROP](https://docs.fivem.net/natives/?_0xFBDB885F) - get collection name and local index from global prop index
-- [GET_PED_DRAWABLE_GLOBAL_INDEX_FROM_COLLECTION](https://docs.fivem.net/natives/?_0x280F1FC3) - get global drawable index from collection name and local index
-- [GET_PED_PROP_GLOBAL_INDEX_FROM_COLLECTION](https://docs.fivem.net/natives/?_0x2CB45CDC) - get global prop index from collection name and local index
+- {{% native_link "GET_PED_COLLECTION_NAME_FROM_DRAWABLE" %}}, {{% native_link "GET_PED_COLLECTION_LOCAL_INDEX_FROM_DRAWABLE" %}} - get collection name and local index from global drawable index
+- {{% native_link "GET_PED_COLLECTION_NAME_FROM_PROP" %}}, {{% native_link "GET_PED_COLLECTION_LOCAL_INDEX_FROM_PROP" %}} - get collection name and local index from global prop index
+- {{% native_link "GET_PED_DRAWABLE_GLOBAL_INDEX_FROM_COLLECTION" %}} - get global drawable index from collection name and local index
+- {{% native_link "GET_PED_PROP_GLOBAL_INDEX_FROM_COLLECTION" %}} - get global prop index from collection name and local index
 
 #### Analogues to existing natives
 
 | Old (global index based) native | New (collection-based) native |
 | ---------- | ---------- |
-| [SET_PED_COMPONENT_VARIATION](https://docs.fivem.net/natives/?_0x262B14F48D29DE80) | [SET_PED_COLLECTION_COMPONENT_VARIATION](https://docs.fivem.net/natives/?_0x88711BBA) |
-| [SET_PED_PROP_INDEX](https://docs.fivem.net/natives/?_0x93376B65A266EB5F) | [SET_PED_COLLECTION_PROP_INDEX](https://docs.fivem.net/natives/?_0x75240BCB) |
-| [SET_PED_PRELOAD_VARIATION_DATA](https://docs.fivem.net/natives/?_0x39D55A620FCB6A3A) | [SET_PED_COLLECTION_PRELOAD_VARIATION_DATA](https://docs.fivem.net/natives/?_0x3EC75558) |
-| [SET_PED_PRELOAD_PROP_DATA](https://docs.fivem.net/natives/?_0x2B16A3BFF1FBCE49) | [SET_PED_COLLECTION_PRELOAD_PROP_DATA](https://docs.fivem.net/natives/?_0x14B5BBE0) |
-| [GET_NUMBER_OF_PED_DRAWABLE_VARIATIONS](https://docs.fivem.net/natives/?_0x27561561732A7842) | [GET_NUMBER_OF_PED_COLLECTION_DRAWABLE_VARIATIONS](https://docs.fivem.net/natives/?_0x310D0271) |
-| [GET_NUMBER_OF_PED_PROP_DRAWABLE_VARIATIONS](https://docs.fivem.net/natives/?_0x5FAF9754E789FB47) | [GET_NUMBER_OF_PED_COLLECTION_PROP_DRAWABLE_VARIATIONS](https://docs.fivem.net/natives/?_0x3B6A13E1) |
-| [GET_NUMBER_OF_PED_TEXTURE_VARIATIONS](https://docs.fivem.net/natives/?_0x8F7156A3142A6BAD) | [GET_NUMBER_OF_PED_COLLECTION_TEXTURE_VARIATIONS](https://docs.fivem.net/natives/?_0xD2C15D7) |
-| [GET_NUMBER_OF_PED_PROP_TEXTURE_VARIATIONS](https://docs.fivem.net/natives/?_0xA6E7F1CEB523E171) | [GET_NUMBER_OF_PED_COLLECTION_PROP_TEXTURE_VARIATIONS](https://docs.fivem.net/natives/?_0x75CAF9CC) |
-| [IS_PED_COMPONENT_VARIATION_VALID](https://docs.fivem.net/natives/?_0xE825F6B6CEA7671D) | [IS_PED_COLLECTION_COMPONENT_VARIATION_VALID](https://docs.fivem.net/natives/?_0xCA63A52A) |
-| [IS_PED_COMPONENT_VARIATION_GEN9_EXCLUSIVE](https://docs.fivem.net/natives/?_0xC767B581) | [IS_PED_COLLECTION_COMPONENT_VARIATION_GEN9_EXCLUSIVE](https://docs.fivem.net/natives/?_0x33B2AFA2) |
-| [GET_PED_DRAWABLE_VARIATION](https://docs.fivem.net/natives/?_0x67F3780DD425D4FC) | [GET_PED_DRAWABLE_VARIATION_COLLECTION_LOCAL_INDEX](https://docs.fivem.net/natives/?_0x9970386F) |
-| [GET_PED_DRAWABLE_VARIATION](https://docs.fivem.net/natives/?_0x67F3780DD425D4FC) | [GET_PED_DRAWABLE_VARIATION_COLLECTION_NAME](https://docs.fivem.net/natives/?_0xBCE0AB63) |
+| {{% native_link "SET_PED_COMPONENT_VARIATION" %}} | {{% native_link "SET_PED_COLLECTION_COMPONENT_VARIATION" %}} |
+| {{% native_link "SET_PED_PROP_INDEX" %}} | {{% native_link "SET_PED_COLLECTION_PROP_INDEX" %}} |
+| {{% native_link "SET_PED_PRELOAD_VARIATION_DATA" %}} | {{% native_link "SET_PED_COLLECTION_PRELOAD_VARIATION_DATA" %}} |
+| {{% native_link "SET_PED_PRELOAD_PROP_DATA" %}} | {{% native_link "SET_PED_COLLECTION_PRELOAD_PROP_DATA" %}} |
+| {{% native_link "GET_NUMBER_OF_PED_DRAWABLE_VARIATIONS" %}} | {{% native_link "GET_NUMBER_OF_PED_COLLECTION_DRAWABLE_VARIATIONS" %}} |
+| {{% native_link "GET_NUMBER_OF_PED_PROP_DRAWABLE_VARIATIONS" %}} | {{% native_link "GET_NUMBER_OF_PED_COLLECTION_PROP_DRAWABLE_VARIATIONS" %}} |
+| {{% native_link "GET_NUMBER_OF_PED_TEXTURE_VARIATIONS" %}} | {{% native_link "GET_NUMBER_OF_PED_COLLECTION_TEXTURE_VARIATIONS" %}} |
+| {{% native_link "GET_NUMBER_OF_PED_PROP_TEXTURE_VARIATIONS" %}} | {{% native_link "GET_NUMBER_OF_PED_COLLECTION_PROP_TEXTURE_VARIATIONS" %}} |
+| {{% native_link "IS_PED_COMPONENT_VARIATION_VALID" %}} | {{% native_link "IS_PED_COLLECTION_COMPONENT_VARIATION_VALID" %}} |
+| {{% native_link "IS_PED_COMPONENT_VARIATION_GEN9_EXCLUSIVE" %}} | {{% native_link "IS_PED_COLLECTION_COMPONENT_VARIATION_GEN9_EXCLUSIVE" %}} |
+| {{% native_link "GET_PED_DRAWABLE_VARIATION" %}} | {{% native_link "GET_PED_DRAWABLE_VARIATION_COLLECTION_LOCAL_INDEX" %}} |
+| {{% native_link "GET_PED_DRAWABLE_VARIATION" %}} | {{% native_link "GET_PED_DRAWABLE_VARIATION_COLLECTION_NAME" %}} |
 
 ### Examples
 
