@@ -65,11 +65,11 @@ E.g.:
 </tbody>
 </table>
 
-#### Where collection name is set
-
 The first collection corresponds to the base game (without any DLCs). After the base game collection follow collection that correspond to official DLCs. Custom collections are added to the end.
 
 After TU is released and new official DLC collection is added - all custom collections are shifted. So, the global indexes that correspond to custom collections shift and must be updated on every TU. While the indexes that are relative to the beginning of a collection will remain stable after TU.
+
+#### Where collection name is set
 
 The base game name collection is an empty string. Names of other collections are set by `<CPedVariationInfo name="...">` tag of the corresponding `.ymt` file. E.g. see `Grand Theft Auto V\update\x64\dlcpacks\mp2024_01\dlc.rpf\x64\models\cdimages\mp2024_01_female.rpf\mp_f_freemode_01_mp_f_2024_01.ymt` base game file.
 
