@@ -3,11 +3,11 @@ title: Work with drawable components and props using collections
 weight: 421
 ---
 
-Inside the GTA5 Ped drawable components and props are stored in named groups called collections. However, collections were previously unavailable for FiveM users. The drawable components and props were indexed through global index. On every TU (Title Update) the global index of custom drawable components and props would change (see below for more details on why it happens). This complicates migration to the latest game build.
+Inside the GTAV Ped drawable components and props are stored in named groups called collections. However, collections were previously unavailable for FiveM users. The drawable components and props were indexed through global index. On every TU (Title Update) the global index of custom drawable components and props would change (see below for more details on why it happens). This complicates migration to the latest game build.
 
 The new set of natives allows accessing drawable components and props through collections. The collection-based indexes remain stable after TUs. **So using these natives will simplify all future TU updates for a server.**
 
-    Note: The new natives are currently available for GTA5 and on client side only.
+    Note: The new natives are currently available for GTAV and on client side only.
 
 ### How drawable components and props indexing works
 
@@ -22,7 +22,7 @@ E.g.:
 <table><tbody>
   <tr>
     <td></td>
-    <td colspan="9">Official GTA5 collections</td>
+    <td colspan="9">Official GTAV collections</td>
     <td colspan="3">Custom collections</td>
   </tr>
   <tr>
