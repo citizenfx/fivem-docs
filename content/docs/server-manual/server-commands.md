@@ -361,6 +361,30 @@ A boolean console variable introduced in server version 8540 that can be used to
 
 This is set to true by default (allow routing)
 
+### `sv_experimentalStateBagsHandler [true|false]`
+
+A boolean console variable introduced in server version 8510 that uses the new serialization API to improve the speed of packing/unpacking state bag changes.
+
+This is set to false by default
+
+### `sv_experimentalOnesyncPopulation [true|false]`
+
+A boolean console variable introduced in server version 8823 that fix an oversight in older server version that incorrectly limited the amount of entity ids to `8192` instead of the proper `65535` when both `set onesync on` and `set onesync_population false`.
+
+This ConVar doesn't change if population spawns on the server, you still need to use the `onesync_population` ConVar for this.
+
+NOTE: Using this ConVar also opts you into using `sv_experimentalStateBagsHandler`
+
+This is set to false by default
+
+### `sv_experimentalNetEventHandler [true|false]`
+
+A boolean console variable introduced in server version 9149 that uses the new serialization API to improve the speed of packing/unpacking GTA game events, adds checks for if entities sent with the game events are relevant to target client, along side improving backwards compatibility with future title updates.
+
+NOTE: Using this ConVar also opts you into using `sv_experimentalStateBagsHandler` and `sv_experimentalOneSyncPopulation`
+
+This is set to false by default
+
 ### `load_server_icon [fileName.png]`
 
 A console command which loads a specified icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
