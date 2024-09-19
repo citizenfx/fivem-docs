@@ -74,4 +74,37 @@ When doing so, the following natives become available once scripts start (after 
 This can be used to, say, add a custom fade-out effect from the loading screen to an in-game view, or integrate NUI events
 with early-game spawn selection UI.
 
+## Events
+The loading screen will receive data about various events through the `message` event.
+You can handle these events by setting `window.onmessage` or by using `window.addEventListener` with `'message'` as the first argument, and checking the `eventName` value inside the event's `data` field.
+
+### Example
+```html
+<!-- loading screen bar -->
+<progress id="loading-bar" value="0" max="1"></progress>
+
+<script type="text/javascript">
+window.addEventListener('message', (event) => {
+    // ensure that we are handling the loadProgress event
+    if (event.data.eventName !== 'loadProgress') return;
+
+    // use the event's data to fill up the loading bar
+    document.getElementById('loading-bar').value = event.data.loadFraction;
+});
+</script>
+```
+
+### Event List
+- [loadProgress](./loadProgress)
+- [onLogLine](./onLogLine)
+- [startDataFileEntries](./startDataFileEntries)
+- [onDataFileEntry](./onDataFileEntry)
+- [performMapLoadFunction](./performMapLoadFunction)
+- [endDataFileEntries](./endDataFileEntries)
+- [startInitFunction](./startInitFunction)
+- [startInitFunctionOrder](./startInitFunctionOrder)
+- [initFunctionInvoking](./initFunctionInvoking)
+- [initFunctionInvoked](./initFunctionInvoked)
+- [endInitFunction](./endInitFunction)
+
 [resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest
