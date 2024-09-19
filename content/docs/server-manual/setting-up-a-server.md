@@ -12,8 +12,6 @@ Having trouble running your server? Check the [server issue FAQ][server-issues],
 ## Before you begin
 If you haven't done so yet, register a free license key on the [Cfx.re Keymaster](https://keymaster.fivem.net/).
 
-When asked for an IP, the IP should be the *public* IP on which you're going to *first* use the key. Afterwards, the key can be used for a single server instance on any IP.
-
 ## Available guides
 - [ZAP-Hosting setup guide][setting-up-a-server-zap]
 - [Ultimate easy setup guide (txAdmin)][setting-up-a-server-txadmin]
