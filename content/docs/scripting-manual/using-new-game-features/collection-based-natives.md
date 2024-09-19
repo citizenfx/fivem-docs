@@ -19,18 +19,19 @@ You can think of collections in Ped as list of buckets placed one after another.
 
 E.g.:
 
-<table><tbody>
+<table class="collections-indices-example"><tbody>
   <tr>
     <td></td>
     <td colspan="9">Official GTAV collections</td>
-    <td colspan="3">Custom collections</td>
+    <td colspan="5">Custom collections</td>
   </tr>
   <tr>
     <td>Collection names</td>
     <td colspan="2">""</td>
     <td colspan="4">"feemale_freemode_beach"</td>
     <td colspan="3">"feemale_xmas"</td>
-    <td colspan="3">"custom_collection"</td>
+    <td colspan="3">"custom_collection_1"</td>
+    <td colspan="2">"custom_collection_2"</td>
   </tr>
   <tr>
     <td>Local indexes</td>
@@ -46,6 +47,8 @@ E.g.:
     <td>0</td>
     <td>1</td>
     <td>2</td>
+    <td>0</td>
+    <td>1</td>
   </tr>
   <tr>
     <td>Global indexes</td>
@@ -61,9 +64,21 @@ E.g.:
     <td>9</td>
     <td>10</td>
     <td>11</td>
+    <td>12</td>
+    <td>13</td>
   </tr>
 </tbody>
 </table>
+
+<style>
+.collections-indices-example td {
+    border: 0.5px solid grey;
+}
+
+.collections-indices-example td:not(:first-child) {
+    text-align: center !important;
+}
+</style>
 
 The first collection corresponds to the base game (without any DLCs). After the base game collection follow collection that correspond to official DLCs. Custom collections are added to the end.
 
