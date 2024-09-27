@@ -36,6 +36,8 @@ event. This data will be passed to the loading screen in the `window.nuiHandover
 In addition to data specified by the server, a field named `serverAddress` is also added with the current IP/port used for
 the client->server connection.
 
+The handover function is only implemented inside the lua runtime environment.
+
 ### Example
 ```lua
 -- Server script
