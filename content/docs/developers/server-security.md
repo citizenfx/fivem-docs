@@ -188,17 +188,17 @@ How many X's in a row do we need to see a player over the `timeout_sec` in order
 ```
 sv_authMaxVariance
 ```
-**Variance** is how likely the user's id will change for a given provider (i.e. 'steam', 'ip', or 'license'). You can learn about it [here](docs/server-manual/erver-commands/#sv_authmaxvariance-newvalue).
+**Variance** is how likely the user's id will change for a given provider (i.e. 'steam', 'ip', or 'license'). You can learn about it [here](docs/server-manual/server-commands/#sv_authmaxvariance-newvalue).
 
 ```
 sv_authMinTrust
 ```
-**Trust** is how unlikely it is for the user's identity to be spoofed by a malicious client. You can learn about it [here](docs/server-manual/erver-commands/#sv_authmintrust-newvalue).
+**Trust** is how unlikely it is for the user's identity to be spoofed by a malicious client. You can learn about it [here](docs/server-manual/server-commands/#sv_authmintrust-newvalue).
 
 ```
 sv_filterRequestControl
 ```
-A console variable used to block `REQUEST_CONTROL_EVENT` routing based on a configurable policy. You can learn about the list [here](docs/server-manual/erver-commands/#sv_filterrequestcontrol-mode).
+A console variable used to block `REQUEST_CONTROL_EVENT` routing based on a configurable policy. You can learn about the list [here](docs/server-manual/server-commands/#sv_filterrequestcontrol-mode).
 
 ### Results on Player
 Having those convars active will likely get the player kick with the following reason:

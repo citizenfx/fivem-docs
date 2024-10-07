@@ -34,7 +34,7 @@ Examples
 ```js
 on('baseevents:onPlayerKilled', (killerID, deathData) => {
    const [x, y, z] = deathData.killerpos;
-   console.log('died in:', { x, y, z });
+   console.log('died at:', { x, y, z });
 });
 ```
 
