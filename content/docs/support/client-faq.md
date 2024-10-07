@@ -11,9 +11,8 @@ No. FiveM is developed exclusively for the PC version of GTA V. There are no pla
 Will FiveM run on Linux?
 ------------------------
 
-You can run the FiveM client on Linux through Wine/Proton, but the anti-cheat will not work, meaning you will only be able to join servers that have disabled `svadhesive`.
+There are no plans to support the FiveM client on Linux. While some components may work, full functionality is not guaranteed. The FiveM server (FXServer) is available on Linux.
 
-**NOTE**: Running on Linux **might** work, but there is no plan for anti-cheat support. Issues or topics pertaining to this will likely be closed.
 
 Where is FiveM installed?
 -------------------------
