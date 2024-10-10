@@ -365,7 +365,7 @@ This is set to true by default (allow routing)
 
 A boolean console variable introduced in server version 8510 that uses the new serialization API to improve the speed of packing/unpacking state bag changes.
 
-This is set to false by default
+This is set to true by default
 
 ### `sv_experimentalOnesyncPopulation [true|false]`
 
@@ -375,9 +375,9 @@ This ConVar doesn't change if population spawns on the server, you still need to
 
 NOTE: Using this ConVar also opts you into using `sv_experimentalStateBagsHandler`
 
-This is set to false by default
+This is set to true by default
 
-### `sv_experimentalNetEventHandler [true|false]`
+### `sv_experimentalNetGameEventHandler [true|false]`
 
 A boolean console variable introduced in server version 9149 that uses the new serialization API to improve the speed of packing/unpacking GTA game events, adds checks for if entities sent with the game events are relevant to target client, along side improving backwards compatibility with future title updates.
 
