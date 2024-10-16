@@ -403,6 +403,44 @@ Sets the RCon password, if unset then RCon will be disabled. FXServer RCon uses 
 
 Sets a [Steam Web API key](https://steamcommunity.com/dev/apikey), which is required to allow for Steam identifiers to be returned by the server.
 
+### `increase_pool_size [poolName] [increase]`
+
+Increases size of the given pool. May be used more than once to increase size of multiple pools.
+
+- `poolName` - a string indicating which pool should be increased in size.
+- `increase` - positive integer indicating by how much the pool size should be increased.
+
+Example:
+```
+increase_pool_size "TxdStore" 6000
+increase_pool_size "CMoveObject" 15
+```
+
+This can only be specified at startup, and can not be changed at runtime. To join servers with different pools sizes client would have to restart the game - similarly to how it works with `sv_enforceGameBuild` and `sv_pureLevel`. If the client connects to the servers with the same pool size settings - restart will only happen during the first connection.
+
+Pool size increase requests are validated on the server and client side. On the server side, if the pool is not allowed to be resized or the size increase exceeds the allowed limit - the command will have no effect and warning message will be displayed in the logs. On the client side - the client will not be able to connect to a server that requests invalid pool sizes (this should only happen if the server bypassed the server side check somehow).
+
+Set of allowed pools and the maximum size increase per pool are set in `content.cfx.re`. Both server and client fetch the limits on startup for updates. The currently allowed pools and limits are the following (this documentation may be slightly behind the actual state, if not sure - try to set the increase and see if it works):
+
+| Pool name  | FiveM max increase | RedM max increase |
+| ---------- | ------------------ | ----------------- |
+| AttachmentExtension | 430 | 430 |
+| CLightEntity | - | 2000 |
+| CMoveObject | 75 | 100 |
+| FragmentStore | 14000 | 4000 |
+| LightEntity | 1000 | - |
+| netGameEvent | 400 | 400 |
+| OcclusionInteriorInfo | 20 | 10 |
+| OcclusionPathNode | 5000 | 1500 |
+| OcclusionPortalEntity | 750 | 140 |
+| OcclusionPortalInfo | 750 | 140 |
+| PortalInst | 225 | 150 |
+| ScaleformStore | 200 | 100 |
+| StaticBounds | 5000 | 6500 |
+| TxdStore | 26000 | 26000 |
+
+You can explore current pools and their sizes using  `F8 > Tools > Streaming > Pool Monitor` tool.
+
 ## Access control commands
 
 ### `add_ace [principal] [object] [allow|deny]`
