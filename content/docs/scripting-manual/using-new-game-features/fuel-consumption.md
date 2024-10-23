@@ -3,11 +3,11 @@ title: Fuel consumption
 weight: 421
 ---
 
-By default in GTA5 and FiveM vehicles do not consume fuel. This feature allows to turn the fuel consumption on and customize it for your needs.
+By default in GTAV and FiveM vehicles do not consume fuel. This feature allows to turn the fuel consumption on and customize it for your needs.
 
 ### Turn on/off
 
-To set/check the fuel consumption use [`SET_FUEL_CONSUMPTION_STATE`](https://docs.fivem.net/natives/?_0x81DAD03E)/[`GET_FUEL_CONSUMPTION_STATE`](https://docs.fivem.net/natives/?_0xC66CD90C) natives. Set true to turn it on, false - to turn it off.
+To set/check the fuel consumption use {{% native_link "SET_FUEL_CONSUMPTION_STATE" %}}/{{% native_link "GET_FUEL_CONSUMPTION_STATE" %}} natives. Set true to turn it on, false - to turn it off.
 
 ### How it works
 
@@ -27,19 +27,19 @@ By default, 65 liter gas tank car with average fuel consumption can stay **idle 
 
 #### Customize consumption speed
 
-To customize/check global (across all vehicles) fuel consumption rate (`global_fuel_consumption_rate_multiplier` in the formula above) use [`SET_FUEL_CONSUMPTION_RATE_MULTIPLIER`](https://docs.fivem.net/natives/?_0x845F3E5C)/[`GET_FUEL_CONSUMPTION_RATE_MULTIPLIER`](https://docs.fivem.net/natives/?_0x5550BF9F) natives. By default it is set to 1. If set to negative - 0 will be used instead.
+To customize/check global (across all vehicles) fuel consumption rate (`global_fuel_consumption_rate_multiplier` in the formula above) use {{% native_link "SET_FUEL_CONSUMPTION_RATE_MULTIPLIER" %}}/{{% native_link "GET_FUEL_CONSUMPTION_RATE_MULTIPLIER" %}} natives. By default it is set to 1. If set to negative - 0 will be used instead.
 
-To customize fuel consumption per vehicle (`vehicle_fuel_consumption_rate_multiplier` in the formula above) use [`SET_HANDLING_FLOAT`](https://docs.fivem.net/natives/?_0x90DD01C) (for all vehicles with given class) or [`SET_VEHICLE_HANDLING_FLOAT`](https://docs.fivem.net/natives/?_0x488C86D2) (for a specific vehicle) native with `fieldName` equal to `fPetrolConsumptionRate`. By default it is set to 0.5 for all vehicles.
+To customize fuel consumption per vehicle (`vehicle_fuel_consumption_rate_multiplier` in the formula above) use {{% native_link "SET_HANDLING_FLOAT" %}} (for all vehicles with given class) or {{% native_link "SET_VEHICLE_HANDLING_FLOAT" %}} (for a specific vehicle) native with `fieldName` equal to `fPetrolConsumptionRate`. By default it is set to 0.5 for all vehicles.
 
 You can also use [CodeWalker](https://github.com/dexyfex/CodeWalker) tool or similar to edit vehicle `handling.meta` file and set `fPetrolConsumptionRate` value to `HandlingData`. If not set it results to the default value of 0.5.
 
 #### Petrol tank volume and current fuel level
 
-To customize petrol tank volume use [`SET_HANDLING_FLOAT`](https://docs.fivem.net/natives/?_0x90DD01C)/[`SET_VEHICLE_HANDLING_FLOAT`](https://docs.fivem.net/natives/?_0x488C86D2) natives with `fieldName` equal to `fPetrolTankVolume`.
+To customize petrol tank volume use {{% native_link "SET_HANDLING_FLOAT" %}}/{{% native_link "SET_VEHICLE_HANDLING_FLOAT" %}} natives with `fieldName` equal to `fPetrolTankVolume`.
 
 You can also use [CodeWalker](https://github.com/dexyfex/CodeWalker) tool or similar to edit vehicle `handling.meta` file and set `fPetrolTankVolume` value to `HandlingData`.
 
-To update/check fuel level in a vehicle use [`GET_VEHICLE_FUEL_LEVEL`](https://docs.fivem.net/natives/?_0x5F739BB8)/[`SET_VEHICLE_FUEL_LEVEL`](https://docs.fivem.net/natives/?_0xBA970511) natives.
+To update/check fuel level in a vehicle use {{% native_link "GET_VEHICLE_FUEL_LEVEL" %}}/{{% native_link "SET_VEHICLE_FUEL_LEVEL" %}} natives.
 
 #### Vehicles without fuel consumption
 
@@ -49,7 +49,7 @@ Fuel is not consumed for the following vehicles:
 - Bicycles. I.e. vehicles with vehicle type equal to 12.
 - Vehicles with infinite fuel. I.e. vehicles with petrol tank volume equal to 0. By default it's only bicycles.
 
-To check if vehicle will consume fuel when player is inside (i.e. petrol tank volume above 0 and not a bicycle) use [`DOES_VEHICLE_USE_FUEL`](https://docs.fivem.net/natives/?_0xEF30A696) native.
+To check if vehicle will consume fuel when player is inside (i.e. petrol tank volume above 0 and not a bicycle) use {{% native_link "DOES_VEHICLE_USE_FUEL" %}} native.
 
 ### Gas stations
 
