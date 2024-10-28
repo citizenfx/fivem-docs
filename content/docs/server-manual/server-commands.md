@@ -160,6 +160,7 @@ Every build includes all content and changes from the builds before.
 
 | Number |               Aliases                |       Marketing name        |
 | ------ | ------------------------------------ | --------------------------- |
+| 1      |                                      | Base game without any DLCs  |
 | 1604   | xm18, christmas2018, mpchristmas2018 | Arena War                   |
 | -      | -                                    | The Diamond Casino & Resort |
 | -      | -                                    | Diamond Casino Heist        |
@@ -182,6 +183,23 @@ Every build includes all content and changes from the builds before.
 | 1355   | December 2020 update, works with newer game editions such as RDO. |
 | 1436   | July 2021 update, includes new content from Blood Money DLC.      |
 | 1491   | September 2022 update, limited content/changes.                   |
+
+### `sv_replaceExeToSwitchBuilds [newValue]`
+
+An experimental flag that determines how the client will run older game builds when requested with `sv_enforceGameBuild`. Either true or false.
+
+- true: the default value. This will keep the current client behavior, the client will download all the files for the specific game build and run old game build executable.
+- false: The client will run executable for the latest stable game build, regardless of which game build is enforced. Instead the client will only load the specific DLCs related to the game build specified in `sv_enforceGameBuild`. From the user perspective the game will look the same way as under `sv_replaceExeToSwitchBuilds = true`.
+
+    When using `set sv_enforceGameBuild 1` the client will run as if `sv_replaceExeToSwitchBuilds = false` regardless of if it was set to `true` before. That's the only way how base game without DLCs behavior can be achieved.
+
+NOTE: The difference in `sv_replaceExeToSwitchBuilds` should be **invisible** to players and server owners. If you notice a disparity please [report it as a bug](https://github.com/citizenfx/fivem/issues/new?assignees=&labels=bug%2Ctriage&projects=&template=bug_report.yml).
+
+**Context**
+
+The `sv_replaceExeToSwitchBuilds` is intended to eliminate the need in supporting executables for older game builds. It will speed up the development and improve stability of the game in long term.
+
+At some point the default value will be changed to `false` and, eventually, `false` will be left as the only option. We will only do that after we are certain that it doesn't affect the users.
 
 ### `sv_maxClients [newValue]`
 
