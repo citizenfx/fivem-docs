@@ -93,9 +93,15 @@ virtual void GetPosition(float* posOut) override
 }
 ```
 # What's culling?
-Culling is used to avoid sending a lot of synchronization data to the server (such as population among others), thus reducing server load, it's what allows OneSync to handle a lot of clients. Culling has a range for each specific player, and entities are culled to players within this radius. It was introduced in the following [commit](https://github.com/citizenfx/fivem/commit/d98e16354141e50c77b56b2dc672fe4834dccfd6), and had several iterations. You could say that in a way, it 'conceals' entities. There's natives such as [SetEntityDistanceCullingRadius](https://docs.fivem.net/natives/?_0xD3A183A3) and [SetPlayerCullingRadius](https://docs.fivem.net/natives/?_0x8A2FBAD4) to change the default culling radius.
+Culling is used by the server to avoid sending a lot of unneeded data to and from the server, as clients will only care what is going on in their immediate area.
+
+This reduces server load and allows OneSync to handle a lot of clients.
+
+Culling has a range for each specific player, and entities are culled to players within this radius. You could say that in a way, it 'conceals' entities.
 
 {{% alert theme="warning" %}}Culling natives are deprecated and have known, unfixable [issues](https://forum.cfx.re/t/issue-with-culling-radius-and-server-side-entities/4900677/4). {{% /alert %}}
+
+There's natives such as [SetEntityDistanceCullingRadius](https://docs.fivem.net/natives/?_0xD3A183A3) and [SetPlayerCullingRadius](https://docs.fivem.net/natives/?_0x8A2FBAD4) to change the default culling radius.
 
 When an entity goes out of range, it's no longer controlled by their original owner. This means that any entity that would be out of scope will be culled and migrated/disowned. By default, the culling radius is set to `424 units` around the entity.
 
@@ -140,30 +146,55 @@ The original examples can be found in the following forum [post][original-scope-
 
 ## Server-created entities, not client entities
 OneSync allows you to create entities on the server such as Peds, Vehicles and Objects among others.
-One of the advantages about this, is that the server allows you to call natives via RPC (Remote Procedure Call) to perform actions on the client without having to request control of an entity from the client.
 
-For example:
 ```lua
-local vehicle = CreateVehicle(GetHashKey("blista"), 2204.795, -887.9213, 1461.224, 90.0, true, true, true)
-local ped = CreatePed(4, GetHashKey("a_m_y_acult_01"), GetEntityCoords(GetPlayerPed(source)), GetEntityHeading(GetPlayerPed(source)), true, true)
-TaskWarpPedIntoVehicle(ped, vehicle, 1) -- perhaps teleport a ped into a vehicle?
-SetEntityVelocity(vehicle, 0.0, 0.0, 99.0) -- Fly high!
+-- create a blista at the specified coordinates
+local vehicle = CreateVehicleServerSetter(GetHashKey("blista"), "automobile", 2204.795, -887.9213, 1461.224, 90.0)
+-- guarantee that the server created entity will be persistent for the server
+SetEntityOrphanMode(vehicle, 2)
+
+-- NOTE: Even though this says it is an RPC native, this call is done on the server
+-- creates the ped at the same coords!
+local ped = CreatePed(4, GetHashKey("a_m_y_acult_01"), 2204.795, -887.9213, 1461.224, 90.0, true, true)
+-- guarantee that the server created entity will be persistent for the server
+SetEntityOrphanMode(ped, 2)
 ```
 
 ## I want persistent entities, how do I do it?
-Create them server-side as shown up above. If you want to stop this entity from 'despawning' when far away, you could always set the entity culling radius to a very large number by using the following native: `SetEntityDistanceCullingRadius`. You should use this sparingly though, and you should rather do manual lower-level sync such as latent events for blips if you have large amounts of entities. Make sure to make use of network id's since they remain valid as long as the entity is alive.
+If you want to guarantee an entity will not be removed by the server you should use {{% native_link "SET_ENTITY_ORPHAN_MODE" %}} with the 'KeepEntity' flag.
+This will guarantee that the server will not delete the vehicle, though the client will still be able to.
+
+
+## RPC Natives
+There are certain natives that are RPC (Remote Procedure call) natives, these natives will be called on client (typically on whichever client owns the entity), these calls are fallible and are not guaranteed to be called on the client.
+
+```lua
+-- This will call the `CreateVehicle` native on the client
+local vehicle = CreateVehicle(GetHashKey("blista"), 2204.795, -887.9213, 1461.224, 90.0, true, true, true)
+-- This ped will be created on the server, despite the native docs saying otherwise.
+local ped = CreatePed(4, GetHashKey("a_m_y_acult_01"), 2204.795, -887.9213, 1461.224, 90.0, true, true)
+-- perhaps teleport a ped into a vehicle?
+TaskWarpPedIntoVehicle(ped, vehicle, 1)
+-- Fly high!
+SetEntityVelocity(vehicle, 0.0, 0.0, 99.0)
+```
 
 ## Entity lockdown
 Entities can be locked down from the server so they can only be authored by it, meaning the server has full control. This allows you to keep things in check and deter users from doing things they shouldn't be doing, such as spawning stuff client side, for... oh well... malicious purposes, i.e.
 
 ```lua
-local vehicle = CreateVehicle(GetHashKey("blista"), 2204.795, -887.9213, 1461.224, 90.0, true, true, true)
+local vehicle = CreateVehicleServerSetter(GetHashKey("blista"), "automobile", 2204.795, -887.9213, 1461.224, 90.0)
+
+local ped = CreatePed(4, GetHashKey("a_m_y_acult_01"), GetEntityCoords(GetPlayerPed(source)), GetEntityHeading(GetPlayerPed(source)), true, true)
 
 -- Essentially, we set the routing bucket at id 1 to 'strict' and then we set other entities to this as well as the player bucket so they can't create entities client-side.
 SetRoutingBucketEntityLockdownMode(1, "strict")
-SetPlayerRoutingBucket(source, 1) -- Now the given player (source) won't be able to create entities client-side
-SetEntityRoutingBucket(vehicle, 1) -- Set the routing bucket of this vehicle to the same bucket the player is in
-SetRoutingBucketPopulationEnabled(1, false) -- Let's disable population for everything inside this bucket!
+-- Now the given player (source) won't be able to create entities client-side
+SetPlayerRoutingBucket(source, 1)
+-- Set the routing bucket of this vehicle to the same bucket the player is in
+SetEntityRoutingBucket(vehicle, 1)
+-- Let's disable population for everything inside this bucket!
+SetRoutingBucketPopulationEnabled(1, false)
 ```
 
 ## Buckets and why you should use them
@@ -192,7 +223,7 @@ Each bucket can have different rules, these are named 'lockdown modes' and they 
 | Native     |
 | ---------- |
 | **[GET_ENTITY_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0xED4B0486)** |
-| **[GET_PLAYER_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0x52441C34)** | 
+| **[GET_PLAYER_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0x52441C34)** |
 | **[SET_ENTITY_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0x635E5289)** |
 | **[SET_PLAYER_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0x6504EB38)** |
 | **[SET_ROUTING_BUCKET_ENTITY_LOCKDOWN_MODE](https://docs.fivem.net/natives/?_0xA0F2201F)** |
