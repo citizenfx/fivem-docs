@@ -28,8 +28,8 @@ E.g.:
   <tr>
     <td>Collection names</td>
     <td colspan="2">""</td>
-    <td colspan="4">"feemale_freemode_beach"</td>
-    <td colspan="3">"feemale_xmas"</td>
+    <td colspan="4">"female_freemode_beach"</td>
+    <td colspan="3">"female_xmas"</td>
     <td colspan="3">"custom_collection_1"</td>
     <td colspan="2">"custom_collection_2"</td>
   </tr>
