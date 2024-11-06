@@ -208,7 +208,7 @@ Connection to CNL timed out.
 
 **Note:** some error *might occur* but it's unlikely.
 
-User getting kicked doesn't mean it is an automatically Global Ban. However, it provides an indication of player reliability, which can be useful for assessing trustworthiness.
+Kicking a user does not necessarily lead to a Global Ban. However, it provides an indication of player reliability, which can be useful for assessing trustworthiness.
 
 We also have some other options:
 
