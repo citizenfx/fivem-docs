@@ -29,7 +29,7 @@ You can also add the following in this file:
 SavedBuildNumber=1604
 ```
 
-You can find the list of game builds [here](docs/server-manual/server-commands/#sv_enforcegamebuild-build).
+You can find the list of game builds [here](/docs/server-manual/server-commands/#sv_enforcegamebuild-build).
 
 This will launch FiveM directly into the specified build so you don't have to transition when connecting to servers on the specified build.
 
