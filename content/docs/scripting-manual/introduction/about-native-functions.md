@@ -80,7 +80,7 @@ end, false)
 ```
 
 ### Create Your First Resource
-To learn how to create your first resource step-by-step, refer to the comprehensive guide in [this section](/content/docs/scripting-manual/introduction/creating-your-first-script.md). This guide will walk you through the process of setting up a new resource, writing your first script, and integrating it into your FiveM server.
+To learn how to create your first resource step-by-step, refer to the comprehensive guide in [this section](/docs/scripting-manual/introduction/creating-your-first-script). This guide will walk you through the process of setting up a new resource, writing your first script, and integrating it into your FiveM server.
 
 ### Commonly Used Native Functions
 Here are some commonly used native functions and their descriptions:

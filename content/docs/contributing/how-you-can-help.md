@@ -14,7 +14,7 @@ Do you love the GTA universe and want to explore its details? You can make a big
 
 ## Improving Documentation
 
-Documentation is a continual work in progress, and we always welcome improvements. If you spot any areas for improvement, you can submit a pull request on our [docs repository][docs-rep], or simply click the "Improve this page" link at the bottom of any documentation page. You can also create a Github issue to suggest new pages. Any contribution is welcome!
+Documentation is a continual work in progress, and we always welcome improvements. If you spot any areas for improvement, you can submit a pull request on our [docs repository][docs-rep]. You can also create a [Github issue][docs-issues] to suggest new pages. Any contribution is welcome!
 
 ### Method signatures
 All text needs to be written in American English (AmE) style. Please note any variations in spelling, punctuation, or terminology compared to other English language variants.
@@ -22,3 +22,4 @@ All text needs to be written in American English (AmE) style. Please note any va
 [developer-docs]: /docs/developers
 [discord]: https://discord.gg/fivem
 [docs-rep]: https://github.com/citizenfx/fivem-docs
+[docs-issues]: https://github.com/citizenfx/fivem-docs/issues
