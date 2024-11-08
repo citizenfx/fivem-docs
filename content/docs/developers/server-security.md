@@ -70,7 +70,7 @@ When using networked events, make sure to add some checks like:
 
 Make sure to retrieve all values using server-side methods, not allowing players to change the values.
 
-This ensures the integrity and security of your game environment. Please note that client checks can also be a good practice but can be easily be overridden.
+This ensures the integrity and security of your game environment. Please note that client checks can also be beneficial, but can be easily bypassed.
 
 ### Examples of common security patterns
 All examples assume some kind of framework.
@@ -168,7 +168,7 @@ Adhesive team is always working really hard to prevent cheaters to be able to us
 ```
 sv_kick_players_cnl_timeout_sec
 ```
-This is the timeout at which the server will kick the player. (EX: if this is 600, kick them after 10 minutes of no CnL connection).
+This is the timeout at which the server will kick the player. (e.g., if this is 600, kick them after 10 minutes of no CnL connection).
 
 ```
 sv_kick_players_cnl_update_rate_sec
@@ -183,7 +183,7 @@ Replaces the periodic request to `info.json` in the client. Establishes a connec
 ```
 sv_kick_players_cnl_consecutive_failures
 ```
-How many X's in a row do we need to see a player over the `timeout_sec` in order to Kick. The default is set to 2, indicating that if a player fails to check in for 10 minutes and then misses the next check-in update, they will be kicked. This serves as a failsafe mechanism.
+How many times in a row do we need to see a player over the `timeout_sec` in order to Kick. The default is set to 2, indicating that if a player fails to check in for 10 minutes and then misses the next check-in update, they will be kicked. This serves as a failsafe mechanism.
 
 ```
 sv_authMaxVariance
@@ -218,4 +218,4 @@ sv_disableClientReplays
 Enabling this will aim to reduce chances of cheating options. Please note that this will disable Rockstar Editor.
 
 ## Important to know
-The codes provided are not supposed to be working on a copy/paste method. This is just some tips to prevent some actions that might happen in the server. This require some knowledge, you are always free to join our [discord](https://discord.gg/fivem) to get additionnal help.
+Please note that the provided code examples are not meant for a direct copy and paste implementation. They are intended as tips to help prevent certain actions that may occur on the server. Implementing these suggestions requires some prior knowledge, you are always free to join our [discord](https://discord.gg/fivem) to get additional help.
