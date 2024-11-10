@@ -162,7 +162,7 @@ SetEntityOrphanMode(ped, 2)
 
 ## I want persistent entities, how do I do it?
 If you want to guarantee an entity will not be removed by the server you should use {{% native_link "SET_ENTITY_ORPHAN_MODE" %}} with the 'KeepEntity' flag.
-This will guarantee that the server will not delete the vehicle, though the client will still be able to.
+This will guarantee that the server will not delete the vehicle, but the client will still be able to request the deletion of the entity.
 
 
 ## RPC Natives
