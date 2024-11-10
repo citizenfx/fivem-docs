@@ -392,4 +392,4 @@ Example: `test_ace group.admin command.adminstuff`
 
 [faq-data]: https://support.cfx.re/hc/en-us/articles/8016397932444-Client-FAQ#where-is-fivem-installed
 [vconsole]: https://forum.cfx.re/t/20005
-[manifest-reference]: /docs/scripting-reference/resource-manifest/resource-manifest/
+[manifest-reference]: /docs/developers/scripting-reference/resource-manifest/resource-manifest/

@@ -32,7 +32,7 @@ This feature can be toggled on/off as well, in project explorer you'll notice th
 
 ## Convars
 
-Resource can declaratively tell FxDK what [convars](/docs/scripting-reference/convars/) it is able to consume, they'll appear in project settings under `Variables` section with matching UI for each convar kind.
+Resource can declaratively tell FxDK what [convars](/docs/developers/scripting-reference/convars/) it is able to consume, they'll appear in project settings under `Variables` section with matching UI for each convar kind.
 
 Definitions take place in `fxmanifest.lua` of resource, you can specify as many categories as you need:
 
@@ -92,9 +92,9 @@ General schema for convar entry:
 
 Convar of any kind can be of 3 types:
 
- - [`Server only`](/docs/scripting-reference/convars/#standard-convars)
- - [`Information`](/docs/scripting-reference/convars/#server-information-convars) - name starts with `#` symbol, `#my_resource_info` convar from example above.
- - [`Replicated`](/docs/scripting-reference/convars/#server-replicated-convars) - name starts with `$` symbol, `$my_resource_repl` convar from example above.
+ - [`Server only`](/docs/developers/scripting-reference/convars/#standard-convars)
+ - [`Information`](/docs/developers/scripting-reference/convars/#server-information-convars) - name starts with `#` symbol, `#my_resource_info` convar from example above.
+ - [`Replicated`](/docs/developers/scripting-reference/convars/#server-replicated-convars) - name starts with `$` symbol, `$my_resource_repl` convar from example above.
 
 
 ### Kinds
