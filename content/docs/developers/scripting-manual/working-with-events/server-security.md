@@ -209,7 +209,7 @@ Connection to CNL timed out.
 
 **Note:** some error *might occur* but it's unlikely.
 
-User getting kicked doesn't mean is automatically Global Ban. However, it provides an indication of player reliability, which can be useful for assessing trustworthiness.
+The player getting kicked does not necessarily mean a malicious player.
 
 We also have some other options:
 
@@ -219,4 +219,4 @@ sv_disableClientReplays
 Enabling this will aim to reduce chances of cheating options. Please note that this will disable Rockstar Editor.
 
 ## Important to know
-Please note that the provided code examples are not meant for a direct copy and paste implementation. They are intended as tips to help prevent certain actions that may occur on the server. Implementing these suggestions requires some prior knowledge, you are always free to join our [discord](https://discord.gg/fivem) to get additional help.
+Please note that the provided code examples are not meant for a direct copy and paste implementation. They are intended as tips to help prevent certain actions that may occur on the server. Implementing these suggestions requires some prior knowledge, you are always free to join our [Discord](https://discord.gg/fivem) to get additional help.
