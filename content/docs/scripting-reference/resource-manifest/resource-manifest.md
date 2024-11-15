@@ -299,6 +299,18 @@ Marks the current resource as a replacement for the specified resource. This mea
 provide 'mysql-async'
 ```
 
+### use_experimental_fxv2_oal
+
+This will enable the usage of OAL for Lua. This aims to correct return-types of natives and provide better performance via faster native calls.
+
+```lua
+use_experimental_fxv2_oal "yes"
+```
+
+{{% alert color="warning" %}}
+This feature is still experimental, it also **requires** Lua 5.4 to be used.
+{{% /alert %}}
+
 ### clr_disable_task_scheduler
 
 When present, disables the custom C# task scheduler on the server. This will increase compatibility with third-party libraries using the .NET TPL, but make it more likely you'll have to `await Delay(0);` to end up back on the main thread.
