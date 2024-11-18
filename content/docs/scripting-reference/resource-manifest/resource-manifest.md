@@ -301,15 +301,34 @@ provide 'mysql-async'
 
 ### use_experimental_fxv2_oal
 
-This will enable the usage of OAL for Lua. This aims to correct return-types of natives and provide better performance via faster native calls.
+This will enable the usage of OAL (One Argument List) for Lua. This aims to correct return-types of natives and provide better performance via faster native calls.
 
 ```lua
 use_experimental_fxv2_oal "yes"
 ```
 
 {{% alert color="warning" %}}
-This feature is still experimental, it also **requires** Lua 5.4 to be used.
+This feature is still experimental and also **requires** [Lua 5.4](#lua54) to be used.
 {{% /alert %}}
+
+#### Vector unpacking
+
+Vector unpacking is not a feature when using OAL, this means that you will have to explicitly unpack each coordinate into the native. Example below.
+
+```lua
+local coords = vector3(1, 2, 3)
+
+SetEntityCoords(ped, coords) -- would normally work, but NOT with OAL
+SetEntityCoords(ped, coords.x, coords.y, coords.z) -- works both with OAL, and without
+```
+
+#### Downsides
+
+Using OAL does have its downsides, if used incorrectly. Which is especially easy to do in more unexplored/unknown areas, such as RedM.
+
+More specifically, if a native is called with incorrect parameters. Such as unpacked vectors, `0` or `1` instead of `false` or `true`, and so on.
+
+Therefore, please ensure the types of the native parameters if you want to use OAL.
 
 ### clr_disable_task_scheduler
 
