@@ -124,4 +124,4 @@ The crosshair can be disabled from the server by entering the following line in 
 setr cl_customCrosshair false
 ```
 
-Entering said line will set the [convar](https://docs.fivem.net/docs/developers/scripting-reference/convars/#standard-convars) (console variable) as a [replicated variable](https://docs.fivem.net/docs/developers/scripting-reference/convars/#using-commands-1) set to `false`.
+Entering said line will set the [convar](/docs/developers/scripting-reference/convars/#standard-convars) (console variable) as a [replicated variable](/docs/developers/scripting-reference/convars/#using-commands-1) set to `false`.

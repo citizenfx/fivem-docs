@@ -3,7 +3,7 @@ title: Exports
 ---
 
 Use this to export functions so they can be called from other resources.\
-Read more on [exports](https://docs.fivem.net/scripting-manual/runtimes/javascript/#using-exports)
+Read more on [exports](/docs/developers/scripting-manual/runtimes/javascript/#using-exports)
 
 ## Signature
 

@@ -166,7 +166,7 @@ RegisterCommand('PrintFullPlayerPedCollectionsInfo', function(source)
 end, true)
 ```
 
-Set new ped look (for `mp_f_freemode_01` ped model, see https://docs.fivem.net/docs/game-references/ped-models/, other models may have less drawable variations available):
+Set new ped look (for `mp_f_freemode_01` ped model, see [Ped models](/docs/game-references/ped-models/), other models may have less drawable variations available):
 
 ```lua
 function setLook(ped)

@@ -45,5 +45,5 @@ I found cheats that are undetected! Get em!
 -------------------------------------------
 Whoa! That's unfortunate, are you sure they still are undetected? Our anticheat system bans are typically slightly delayed, within 24 hours after detection the user is banned. With that being said,
 we cannot stay on top of them completely without your help, our community is our backbone. If you come across cheats in which you feel are undetected and you have the actual files, please feel free to send
-them to [this form](https://support.cfx.re/hc/en-us/requests/new?ticket_form_id=1900000367874). Additionally, take a look at [this link](https://docs.fivem.net/docs/support/resource-faq/#what-can-i-do-against-cheaters) to see what you can do to help 
+them to [this form](https://support.cfx.re/hc/en-us/requests/new?ticket_form_id=1900000367874). Additionally, take a look at [this link](/docs/support/resource-faq/#what-can-i-do-against-cheaters) to see what you can do to help 
 fight against cheaters who may be affecting your server.

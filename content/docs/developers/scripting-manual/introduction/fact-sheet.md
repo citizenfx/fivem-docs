@@ -39,7 +39,7 @@ GiveWeaponToPed(ped, GetHashKey("WEAPON_PISTOL"), 100, false, false) -- We got a
 ```
 
 ## Where are all the natives?
-Natives are located [here](https://docs.fivem.net/natives/).
+Natives are located [here](/natives/).
 
 # Developer Commands & Game References
 ## Where are all the developer commands?

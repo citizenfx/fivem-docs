@@ -26,7 +26,7 @@ FiveM supports C#, Lua, and JavaScript, allowing you the flexibility to create a
 - [Create Your First Script](/docs/developers/scripting-manual/introduction/creating-your-first-script)
 - [Client Events](/docs/developers/scripting-reference/events/client-events)
 - [Server Events](/docs/developers/scripting-reference/events/server-events)
-- [Native Functions](https://docs.fivem.net/natives/)
+- [Native Functions](/natives/)
 - [Client Functions](/docs/developers/scripting-reference/client-functions)
 - [Server Functions](/docs/developers/scripting-reference/server-functions)
 

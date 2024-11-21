@@ -33,7 +33,7 @@ Enables the game's native audio including filter support. This should be enabled
 
 # Talker Proximity
 
-You can use [`MUMBLE_SET_TALKER_PROXIMITY`](https://docs.fivem.net/natives/?_0x74E927B0) to limit distance between players when communicating via voice chat.  
+You can use [`MUMBLE_SET_TALKER_PROXIMITY`](/natives/?_0x74E927B0) to limit distance between players when communicating via voice chat.  
 
 An example can be shown down below:
 
@@ -43,14 +43,14 @@ MumbleSetTalkerProximity(15.0)
 
 This method ought to be called from the client in order for it to work.
 
-It's worth noting that there's another native named [`NETWORK_SET_TALKER_PROXIMITY`](https://docs.fivem.net/natives/?_0xCBF12D65F95AD686), which is only available on FiveM. The aforementioned native also [calls](https://github.com/citizenfx/fivem/blob/928bd19f886d66d3f85340e65df69ae97ab91dc7/code/components/gta-net-five/src/MumbleVoice.cpp#L1343) the original game native before setting mumble's audio distance.
+It's worth noting that there's another native named [`NETWORK_SET_TALKER_PROXIMITY`](/natives/?_0xCBF12D65F95AD686), which is only available on FiveM. The aforementioned native also [calls](https://github.com/citizenfx/fivem/blob/928bd19f886d66d3f85340e65df69ae97ab91dc7/code/components/gta-net-five/src/MumbleVoice.cpp#L1343) the original game native before setting mumble's audio distance.
 
 # Submixes
 
 Submixes allow you to apply effects to sounds, FiveM utilizes `rage::audDriver::GetMixer` to apply these effects. These can be set to clients to alter their outgoing audio (voice).
 Below is an example of a submix being initialized (with audio effects being applied):
 
-Submix effects have hashes, for the full list of hashes, check out this [native](https://docs.fivem.net/natives/?_0xAAA94D53).
+Submix effects have hashes, for the full list of hashes, check out this [native](/natives/?_0xAAA94D53).
 
 ## Initializing a submix
 
@@ -84,7 +84,7 @@ end
 
 ## Making a submix play through the left channel only
 
-You can change how a submix plays through different channels by using [`SET_AUDIO_SUBMIX_OUTPUT_VOLUMES`](https://docs.fivem.net/natives/?_0x825DC0D1) as described down below.  
+You can change how a submix plays through different channels by using [`SET_AUDIO_SUBMIX_OUTPUT_VOLUMES`](/natives/?_0x825DC0D1) as described down below.  
 Let's create an audio submix, and then play it through the front left channel.
 
 ```lua
@@ -111,7 +111,7 @@ end
 
 ## Removing assignment of a submix for a given player
 
-You can stop a submix from applying to a player by sending `-1` as the submix id to [`MUMBLE_SET_SUBMIX_FOR_SERVER_ID`](https://docs.fivem.net/natives/?_0xFE3A3054), for example:
+You can stop a submix from applying to a player by sending `-1` as the submix id to [`MUMBLE_SET_SUBMIX_FOR_SERVER_ID`](/natives/?_0xFE3A3054), for example:
 
 ```lua
 MumbleSetSubmixForServerId(playerId, -1)
@@ -213,7 +213,7 @@ end, false)
 
 ### Writing the code (client-side)
 
-We will first register an event named `onPlayerChangeVoiceChannels`, we will be using this event to iterate through the list of clients we previously mentioned (which the server is sending us) and set their volume. We will also be setting our voice channel through here by calling [`MUMBLE_SET_VOICE_CHANNEL`](https://docs.fivem.net/natives/?_0x8737EEE8).
+We will first register an event named `onPlayerChangeVoiceChannels`, we will be using this event to iterate through the list of clients we previously mentioned (which the server is sending us) and set their volume. We will also be setting our voice channel through here by calling [`MUMBLE_SET_VOICE_CHANNEL`](/natives/?_0x8737EEE8).
 
 ```lua
 RegisterNetEvent("onPlayerChangeVoiceChannels", function(clients, channel, state)
@@ -245,7 +245,7 @@ And that's it, we can now join and leave channels.
 
 ## Listening to channels
 
-We can listen to channels by using the following native: [`MUMBLE_ADD_VOICE_CHANNEL_LISTEN`](https://docs.fivem.net/natives/?_0xC79F44BF). The native allows us to 'spectate' any channel we want. We can find an example client implementation down below.
+We can listen to channels by using the following native: [`MUMBLE_ADD_VOICE_CHANNEL_LISTEN`](/natives/?_0xC79F44BF). The native allows us to 'spectate' any channel we want. We can find an example client implementation down below.
 
 ```lua
 RegisterCommand("listenchannel", function(source, args, rawCommand)
@@ -253,7 +253,7 @@ RegisterCommand("listenchannel", function(source, args, rawCommand)
 end, false)
 ```
 
-In order to remove ourselves as a listener, we can use [`MUMBLE_REMOVE_VOICE_CHANNEL_LISTEN`](https://docs.fivem.net/natives/?_0x231523B7).
+In order to remove ourselves as a listener, we can use [`MUMBLE_REMOVE_VOICE_CHANNEL_LISTEN`](/natives/?_0x231523B7).
 
 # Not the end
 

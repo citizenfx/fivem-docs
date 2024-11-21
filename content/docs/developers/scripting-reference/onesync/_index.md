@@ -101,7 +101,7 @@ Culling has a range for each specific player, and entities are culled to players
 
 {{% alert theme="warning" %}}Culling natives are deprecated and have known, unfixable [issues](https://forum.cfx.re/t/issue-with-culling-radius-and-server-side-entities/4900677/4). {{% /alert %}}
 
-There's natives such as [SetEntityDistanceCullingRadius](https://docs.fivem.net/natives/?_0xD3A183A3) and [SetPlayerCullingRadius](https://docs.fivem.net/natives/?_0x8A2FBAD4) to change the default culling radius.
+There's natives such as [SetEntityDistanceCullingRadius](/natives/?_0xD3A183A3) and [SetPlayerCullingRadius](/natives/?_0x8A2FBAD4) to change the default culling radius.
 
 When an entity goes out of range, it's no longer controlled by their original owner. This means that any entity that would be out of scope will be culled and migrated/disowned. By default, the culling radius is set to `424 units` around the entity.
 
@@ -222,12 +222,12 @@ Each bucket can have different rules, these are named 'lockdown modes' and they 
 
 | Native     |
 | ---------- |
-| **[GET_ENTITY_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0xED4B0486)** |
-| **[GET_PLAYER_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0x52441C34)** |
-| **[SET_ENTITY_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0x635E5289)** |
-| **[SET_PLAYER_ROUTING_BUCKET](https://docs.fivem.net/natives/?_0x6504EB38)** |
-| **[SET_ROUTING_BUCKET_ENTITY_LOCKDOWN_MODE](https://docs.fivem.net/natives/?_0xA0F2201F)** |
-| **[SET_ROUTING_BUCKET_POPULATION_ENABLED](https://docs.fivem.net/natives/?_0xCE51AC2C)** |
+| **[GET_ENTITY_ROUTING_BUCKET](/natives/?_0xED4B0486)** |
+| **[GET_PLAYER_ROUTING_BUCKET](/natives/?_0x52441C34)** |
+| **[SET_ENTITY_ROUTING_BUCKET](/natives/?_0x635E5289)** |
+| **[SET_PLAYER_ROUTING_BUCKET](/natives/?_0x6504EB38)** |
+| **[SET_ROUTING_BUCKET_ENTITY_LOCKDOWN_MODE](/natives/?_0xA0F2201F)** |
+| **[SET_ROUTING_BUCKET_POPULATION_ENABLED](/natives/?_0xCE51AC2C)** |
 
 **A rough example:**
 
@@ -243,5 +243,5 @@ State bags allow you to set attributes to entities and allow other clients to ac
 
 [vmturl]: https://en.wikipedia.org/wiki/Virtual_method_table
 [fivem-codebase]: https://github.com/citizenfx/fivem
-[server-events]: https://docs.fivem.net/docs/developers/scripting-reference/events/server-events
+[server-events]: /docs/developers/scripting-reference/events/server-events
 [original-scope-post]: https://forum.cfx.re/t/onesync-playerenteredscope-and-playerleftscope-events
