@@ -7,7 +7,7 @@ Example
 
 ### Lua
 
-``` lua
+```lua
 -- Create a random ped
 local coords = GetEntityCoords(PlayerPedId(), false)
 local ped = CreateRandomPed(coords.x, coords.y, coords.z)
