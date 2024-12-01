@@ -8,18 +8,9 @@ Example
 ### Lua
 
 ``` lua
-local modelHash = GetHashKey("a_f_y_beach_01")
-local pedCoords = GetEntityCoords(PlayerPedId(), false)
-
--- Load the ped model
-while not HasModelLoaded(modelHash) do
-    RequestModel(modelHash)
-
-    Wait(0)
-end
-
 -- Create a random ped
-local ped = CreatePed(4, modelHash, pedCoords.x, pedCoords.y, pedCoords.z, 0.0, true, true)
+local coords = GetEntityCoords(PlayerPedId(), false)
+local ped = CreateRandomPed(coords.x, coords.y, coords.z)
 
 -- Makes the ped shout an insult
 PlayPedAmbientSpeechNative(ped, GENERIC_INSULT_HIGH--[[speechName]], SPEECH_PARAMS_FORCE--[[speechParam]])
