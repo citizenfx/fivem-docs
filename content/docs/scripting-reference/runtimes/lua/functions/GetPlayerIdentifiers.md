@@ -13,7 +13,7 @@ GetPlayerIdentifiers(Player player)
 #### Required arguments
 * **player**: The ID of the player to get the identifiers from.
 
-### License Types
+### Identifier Types
 
 | Type ID    | Provider                 | Type                                                                      | Data Type |
 |------------|--------------------------|---------------------------------------------------------------------------|-----------|
@@ -26,7 +26,7 @@ GetPlayerIdentifiers(Player player)
 | `fivem`    | Cfx.re                   | User Id                                                                   | int       |
 | `ip`       | IP Address               | IPv4                                                                      | string    |
 
-* `license2` - This identifier is the ROS license for people who use steam, this identifier can be the same value as `license`
+* `license2` - This identifier is the ROS license for people who use Steam, this identifier can be the same value as `license`
 
 
 ### Examples
