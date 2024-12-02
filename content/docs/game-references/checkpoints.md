@@ -3,7 +3,7 @@ title: Checkpoints
 weight: 730
 ---
 
-{{% alert color="success" title="Note" %}}This checkpoint ID order is valid as of game build 2189. Any game build before that the order slightly differs. You can generally take 3 away from IDs to get an ID that matches older game builds, or you could check the old table on the [native reference](https://docs.fivem.net/natives/?_0x0134F0835AB6BFCB).{{% /alert %}}
+{{% alert color="success" title="Note" %}}This checkpoint ID order is valid as of game build 2189. Any game build before that the order slightly differs. You can generally take 3 away from IDs to get an ID that matches older game builds, or you could check the old table on the [native reference](/natives/?_0x0134F0835AB6BFCB).{{% /alert %}}
 
 
 Standard Checkpoints
@@ -92,7 +92,7 @@ Standard Checkpoints
 
 Checkpoint Type 44-46
 -----
-If using checkpoint type 44-46 the `reserved` parameter in the [CreateCheckpoint](https://docs.fivem.net/natives/?_0x0134F0835AB6BFCB) native sets the number/number and shape to display.
+If using checkpoint type 44-46 the `reserved` parameter in the [CreateCheckpoint](/natives/?_0x0134F0835AB6BFCB) native sets the number/number and shape to display.
 
 IDs 100 and higher include a [marker](/docs/game-references/markers/) next to it, marker IDs are included below.
 

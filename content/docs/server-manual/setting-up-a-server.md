@@ -26,7 +26,7 @@ What's next?
 
 [server-issues]: /docs/support/server-issues
 [server-commands]: /docs/server-manual/server-commands
-[scripting-introduction]: /docs/scripting-manual/introduction
+[scripting-introduction]: /docs/developers/scripting-manual/introduction
 
 [fxserver-support]: https://discord.gg/fivem
 [fxserver-support-category]: https://forum.cfx.re/c/server-development/server-discussion
