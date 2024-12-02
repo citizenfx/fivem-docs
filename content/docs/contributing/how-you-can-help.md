@@ -19,13 +19,6 @@ Documentation is a continual work in progress, and we always welcome improvement
 ### Method signatures
 All text needs to be written in American English (AmE) style. Please note any variations in spelling, punctuation, or terminology compared to other English language variants.
 
-## Supporting via Patreon
-
-If you're looking for another way to support our work, consider becoming a patron. Visit our [Patreon page][patreon] to learn more about how you can help sustain FiveM's development and receive exclusive perks.
-
-Thank you for your support and contributions!
-
 [developer-docs]: /docs/developers
 [discord]: https://discord.gg/fivem
 [docs-rep]: https://github.com/citizenfx/fivem-docs
-[patreon]: https://patreon.com/fivem

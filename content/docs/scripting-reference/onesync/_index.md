@@ -8,7 +8,7 @@ slot count so more players can play on a server and at the same time it introduc
 standards including server-sided synchronization states for entities, which we'll cover in this article.
 
 It's worth mentioning that OneSync is free up to 48 slots, after such, you should get one of the following tiers 
-from [Patreon](https://www.patreon.com/join/fivem) starting from `FiveM Element Club Argentum 💿`.
+from the [Cfx.re Portal](https://portal.cfx.re/subscriptions) starting from `FiveM Element Club Argentum 💿`.
 
 # What is OneSync: Infinity?
 - A mode allowing (up to) 2048 players since the recent [commit](https://github.com/citizenfx/fivem/commit/a03eb34c80571ac37cf8d74ca87fa4e646f2e499). There are servers handling 1000+ concurrent players.
