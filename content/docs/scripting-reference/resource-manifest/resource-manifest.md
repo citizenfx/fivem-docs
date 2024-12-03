@@ -308,7 +308,7 @@ use_experimental_fxv2_oal "yes"
 ```
 
 {{% alert color="warning" %}}
-This feature is still experimental and also **requires** [Lua 5.4](#lua54) to be used.
+This feature is still experimental and **requires** [Lua 5.4](#lua54) to be used.
 {{% /alert %}}
 
 #### Vector unpacking
