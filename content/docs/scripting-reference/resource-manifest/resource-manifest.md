@@ -299,6 +299,35 @@ Marks the current resource as a replacement for the specified resource. This mea
 provide 'mysql-async'
 ```
 
+### use_experimental_fxv2_oal
+
+This will enable the usage of OAL (One Argument List) for Lua. This aims to correct return-types of natives and provide better performance via faster native calls.
+
+```lua
+use_experimental_fxv2_oal "yes"
+```
+
+{{% alert color="warning" %}}
+This feature is still experimental and **requires** [Lua 5.4](#lua54) to be used.
+{{% /alert %}}
+
+#### Vector unpacking
+
+Vector unpacking does not work when using OAL, this means that you will have to manually unpack coordinates instead of providing the `vector3`.
+
+```lua
+local coords = vector3(1, 2, 3)
+
+SetEntityCoords(ped, coords) -- would normally work, but NOT with OAL
+SetEntityCoords(ped, coords.x, coords.y, coords.z) -- works both with OAL, and without
+```
+
+#### Downsides
+
+OALs main downside is that it cannot be used if the parameter type is wrong, as internally it will be converted to whatever the underlying type is.
+
+This means that for natives that are undocumented or don't have the right types OAL will break in unexpected ways, or likely just not working at all.
+
 ### clr_disable_task_scheduler
 
 When present, disables the custom C# task scheduler on the server. This will increase compatibility with third-party libraries using the .NET TPL, but make it more likely you'll have to `await Delay(0);` to end up back on the main thread.
