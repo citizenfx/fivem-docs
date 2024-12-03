@@ -5,7 +5,7 @@ weight: 431
 
 To use existing events in your resources, you need to listen for them. This is the same for client/server side scripts.
 
-In Lua/JS, the `source` variable (global) will contain the player ID that triggered the event. You should most likely save it in a local variable if you're going to use it after the event returns or the event contains asynchronous functionality.
+In Lua/JS, the `source` variable (global) will contain the player ID that triggered the event. You must save the source to a local variable if you plan on using it after the event returns, or inside of an asynchronous scope, as the source is only guaranteed to be valid for the initial event call. Calling `Wait` in Lua or awaiting something in JS will cause the global source to be set back to default.
 
 In C#, you use the `[FromSource]` attribute, as seen in the example below.
 
