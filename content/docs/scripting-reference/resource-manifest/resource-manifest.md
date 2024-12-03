@@ -324,11 +324,9 @@ SetEntityCoords(ped, coords.x, coords.y, coords.z) -- works both with OAL, and w
 
 #### Downsides
 
-Using OAL does have its downsides, if used incorrectly. Which is especially easy to do in more unexplored/unknown areas, such as RedM.
+OALs main downside is that it cannot be used if the parameter type is wrong, as internally it will be converted to whatever the underlying type is.
 
-More specifically, if a native is called with incorrect parameters. Such as unpacked vectors, `0` or `1` instead of `false` or `true`, and so on.
-
-Therefore, please ensure the types of the native parameters if you want to use OAL.
+This means that for natives that are undocumented or don't have the right types OAL will break in unexpected ways, or likely just not working at all.
 
 ### clr_disable_task_scheduler
 
