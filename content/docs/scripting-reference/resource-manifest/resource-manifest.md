@@ -313,7 +313,7 @@ This feature is still experimental and **requires** [Lua 5.4](#lua54) to be used
 
 #### Vector unpacking
 
-Vector unpacking is not a feature when using OAL, this means that you will have to explicitly unpack each coordinate into the native. Example below.
+Vector unpacking does not work when using OAL, this means that you will have to manually unpack coordinates instead of providing the `vector3`.
 
 ```lua
 local coords = vector3(1, 2, 3)
