@@ -978,6 +978,28 @@ A list of all game blips as of build 3258 are shown below.
 <div class="blip"><div><div><img src="/blips/radar_zombie_fire.png" alt="radar_zombie_fire"></div></div><span><strong>897</strong><br>radar_zombie_fire</span></div>
 <div class="blip"><div><div><img src="/blips/radar_animal_possessed.png" alt="radar_animal_possessed"></div></div><span><strong>898</strong><br>radar_animal_possessed</span></div>
 <div class="blip"><div><div><img src="/blips/radar_mobile_phone.png" alt="radar_mobile_phone"></div></div><span><strong>899</strong><br>radar_mobile_phone</span></div>
+<div class="blip"><div><div><img src="/blips/radar_garment_factory.png" alt="radar_garment_factory"></div></div><span><strong>900</strong><br>radar_garment_factory</span></div>
+<div class="blip"><div><div><img src="/blips/radar_garment_factory_for_sale.png" alt="radar_garment_factory_for_sale"></div></div><span><strong>901</strong><br>radar_garment_factory_for_sale</span></div>
+<div class="blip"><div><div><img src="/blips/radar_garment_factory_equipment.png" alt="radar_garment_factory_equipment"></div></div><span><strong>902</strong><br>radar_garment_factory_equipment</span></div>
+<div class="blip"><div><div><img src="/blips/radar_field_hangar.png" alt="radar_field_hangar"></div></div><span><strong>903</strong><br>radar_field_hangar</span></div>
+<div class="blip"><div><div><img src="/blips/radar_field_hangar_for_sale.png" alt="radar_field_hangar_for_sale"></div></div><span><strong>904</strong><br>radar_field_hangar_for_sale</span></div>
+<div class="blip"><div><div><img src="/blips/radar_cargobob_ch53.png" alt="radar_cargobob_ch53"></div></div><span><strong>905</strong><br>radar_cargobob_ch53</span></div>
+<div class="blip"><div><div><img src="/blips/radar_chopper_lift_ammo.png" alt="radar_chopper_lift_ammo"></div></div><span><strong>906</strong><br>radar_chopper_lift_ammo</span></div>
+<div class="blip"><div><div><img src="/blips/radar_chopper_lift_armor.png" alt="radar_chopper_lift_armor"></div></div><span><strong>907</strong><br>radar_chopper_lift_armor</span></div>
+<div class="blip"><div><div><img src="/blips/radar_chopper_lift_explosives.png" alt="radar_chopper_lift_explosives"></div></div><span><strong>908</strong><br>radar_chopper_lift_explosives</span></div>
+<div class="blip"><div><div><img src="/blips/radar_chopper_lift_upgrade.png" alt="radar_chopper_lift_upgrade"></div></div><span><strong>909</strong><br>radar_chopper_lift_upgrade</span></div>
+<div class="blip"><div><div><img src="/blips/radar_chopper_lift_weapon.png" alt="radar_chopper_lift_weapon"></div></div><span><strong>910</strong><br>radar_chopper_lift_weapon</span></div>
+<div class="blip"><div><div><img src="/blips/radar_cargo_ship.png" alt="radar_cargo_ship"></div></div><span><strong>911</strong><br>radar_cargo_ship</span></div>
+<div class="blip"><div><div><img src="/blips/radar_submarine_missile.png" alt="radar_submarine_missile"></div></div><span><strong>912</strong><br>radar_submarine_missile</span></div>
+<div class="blip"><div><div><img src="/blips/radar_propeller_engine.png" alt="radar_propeller_engine"></div></div><span><strong>913</strong><br>radar_propeller_engine</span></div>
+<div class="blip"><div><div><img src="/blips/radar_shark.png" alt="radar_shark"></div></div><span><strong>914</strong><br>radar_shark</span></div>
+<div class="blip"><div><div><img src="/blips/radar_fast_travel.png" alt="radar_fast_travel"></div></div><span><strong>915</strong><br>radar_fast_travel</span></div>
+<div class="blip"><div><div><img src="/blips/radar_plane_duster2.png" alt="radar_plane_duster2"></div></div><span><strong>916</strong><br>radar_plane_duster2</span></div>
+<div class="blip"><div><div><img src="/blips/radar_plane_titan2.png" alt="radar_plane_titan2"></div></div><span><strong>917</strong><br>radar_plane_titan2</span></div>
+<div class="blip"><div><div><img src="/blips/radar_collectible.png" alt="radar_collectible"></div></div><span><strong>918</strong><br>radar_collectible</span></div>
+<div class="blip"><div><div><img src="/blips/radar_field_hangar_discount.png" alt="radar_field_hangar_discount"></div></div><span><strong>919</strong><br>radar_field_hangar_discount</span></div>
+<div class="blip"><div><div><img src="/blips/radar_garment_factory_discount.png" alt="radar_garment_factory_discount"></div></div><span><strong>920</strong><br>radar_garment_factory_discount</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_gusenberg_sweeper.png" alt="radar_weapon_gusenberg_sweeper"></div></div><span><strong>921</strong><br>radar_weapon_gusenberg_sweeper</span></div>
 </div>
 
 ---
