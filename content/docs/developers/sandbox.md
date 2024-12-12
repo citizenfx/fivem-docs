@@ -29,6 +29,13 @@ local files3 = io.readdir("/absolute/path/to/resource")
 local files4 = io.readdir("/absolute/path/to/resource/assets")
 ```
 
+```lua
+local files = io.readdir("@myResource/")
+for _, file in ipairs(files) do
+    print(file) -- Process each file
+end
+```
+
 ### File Operations
 ```lua
 -- Using mount paths (recommended)
@@ -81,14 +88,14 @@ io.tmpfile()          -- Temporary files blocked
 io.popen(command .. resourcePath .. path .. suffix)    -- Only emulated 'ls' and 'dir' allowed
 
 -- Limited functionality
-os.getenv("os")       -- Returns "Windows" or "Linux"
-os.setlocale()        -- Returns current locale, cannot modify
+os.getenv("os") -- Returns "Windows" or "Linux"
+os.setlocale()  -- Returns current locale, cannot modify
 ```
 
 ### Allowed Operations
 ```lua
 -- These operations remain available
-loadfile()           -- Not blocked
+load() -- Not blocked
 ```
 
 ## Debug Namespace Restrictions
