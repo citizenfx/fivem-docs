@@ -44,5 +44,22 @@ AddEventHandler('onResourceStart', function(resourceName)
   })
 end)
 ```
+
+##### C# Example:
+```c#
+EventHandlers["onResourceStart"] += new Action<string>(resourceName); // this in public ClientMain() {...}
+//...
+void resourceName([FromSource] string resourceName)
+{
+    if (API.GetCurrentResourceName() != resourceName) { return; }
+    TriggerEvent("chat:addMessage", new
+    {
+        color = new[] { 255, 0, 0 },
+        multiline = true,
+        args = new[] { "[SYSTEM]", API.GetCurrentResourceName() + " has started." }
+    });
+}
+```
+
 Output:<br>
 ![screenshot-1](/chat_addMessage_export.png)
