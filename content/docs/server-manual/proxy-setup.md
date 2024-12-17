@@ -148,3 +148,86 @@ This setup can have a few variations as well:
 * One could add the load balancer to a Kubernetes cluster as a proper ingress.
 * If specifying a proper `location` block (e.g. a regular expression), the domain could be shared with, say, a web site.
 * Implementing a custom handler for `/client` initConnect requests and delegating a successful connection to the actual backend server's `initConnect` sequence. This could be used for a server picker or some other creative things.
+
+## Local TLS Proxy
+
+The local TLS Proxy setup can be useful if you can't tunnel the TLS traffic with services like CloudFlare, but you still have to protect the FXServer against specific TLS attacks. 
+This guide is using nginx as a example, but you can setup any other reverse proxy such as [traefik](https://doc.traefik.io/traefik/) or [envoy](https://www.envoyproxy.io/) as well.
+
+### TCP Endpoint port change
+
+First you need to change the tcp endpoint on the server to use a different port. In this sample we use 30121 as the none public accessible port that the FXServer is using.
+Usually you will find the `endpoint_add_tcp` defined inside your `server.cfg`. After you found it change its parameter to `"0.0.0.0:30121"`.
+```
+endpoint_add_tcp "0.0.0.0:30121"
+```
+
+Make sure to specify the `endpoint_add_udp` above the `endpoint_add_tcp`, otherwise this port change will not work correctly.
+```
+endpoint_add_udp "0.0.0.0:30120"
+endpoint_add_tcp "0.0.0.0:30121"
+```
+
+### Nginx configuration
+
+The next step is to configure nginx to redirect the incoming TLS traffic from the external accessible 30120 port to the internal 30121 port. 
+
+```
+server {
+    listen 30120 ssl;
+
+    ssl_certificate /etc/ssl/certs/nginx-selfsigned.crt;
+    ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;
+
+    location / {
+        proxy_pass http://127.0.0.1:30121;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+As you can see inside the configuration an `ssl_certificate` and `ssl_certificate_key` is required.
+
+The easiest way is to use an self signed certificates when you don't have a domain name associated with your server ip.
+When you have a domain already configured you can setup [Let's Encrypt](https://letsencrypt.org) to generate this for you.
+
+On Linux the easiest way to generate self signed certificates is using `openssl`.
+```
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+```
+
+For Windows a openssl Binary can be found at [Binaries](https://wiki.openssl.org/index.php/Binaries).
+Which works the same as the Linux Version.
+```
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key -out nginx-selfsigned.crt
+```
+
+### Block 30121 port access
+
+As an last step you have to block the 30121 port to be accessible from the outside.
+When the server host supports a custom firewall configuration inside the configuration panel use that.
+Otherwise rely on the different operating system implementations.
+
+For linux using `iptables`:
+```
+sudo iptables -A INPUT -p tcp --dport 30121 -j DROP
+```
+
+For linux using `ufw`:
+```
+sudo ufw deny 30121/tcp
+```
+
+For windows using `PowerShell`:
+```
+New-NetFirewallRule -DisplayName "Block TCP Port 30121" -Direction Inbound -Protocol TCP -LocalPort 30121 -Action Block
+```
+
+For windows using `netsh`:
+```
+netsh advfirewall firewall add rule name="Block TCP Port 30121" dir=in action=block protocol=TCP localport=30121
+```
+
