@@ -66,7 +66,7 @@ The `SaveResourceFile` native function follows these same restrictions.
 ### System Path Restrictions
 - Operations in the server main folder are blocked
 - Operations outside resource folders are blocked
-- Blocked operations return error code 13 and "Permission denied"
+- Blocked operations return error code 13 "Permission denied"
 
 ## OS Operations
 
