@@ -98,10 +98,6 @@ os.setlocale()  -- Returns current locale, cannot modify
 load() -- Not blocked
 ```
 
-## Debug Namespace Restrictions
-
-The `debug` namespace is sandboxed on the server to prevent unauthorized access to the Lua environment. Please refer to the FiveM natives and APIs documentation for debugging capabilities.
-
 ## Permission System
 {{% alert theme="warning" %}}
 Enabling resource modifications or filesystem permissions can be dangerous if misused. Only enable these for resources you trust completely and understand their modifications.
