@@ -87,16 +87,7 @@ happens to other games too.
 
 Early Exit Trap crash
 -----------------------
-Looks like you might have something messing in the background. Please make sure to remove everything running on background when lauching FiveM. It could be antivirus or any software recording app.
-
-Can't link FiveM to Discord
------------------------
-To be able to connect Discord to FiveM, you need to do the following:
-- Close FiveM and Discord completely
-- Open Discord Desktop App
-- Start FiveM and load main menu
-
-Please avoid using any plugins / client modification when following the steps.
+Looks like you might have something messing in the background. Please make sure to remove everything running on background when lauching FiveM.
 
 HTTP 412 System Clock
 -----------------------
