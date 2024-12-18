@@ -445,7 +445,9 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | AttachmentExtension | 430 | 430 |
 | CLightEntity | - | 2000 |
 | CMoveObject | 75 | 100 |
+| EntityDescPool | 20480 | - |
 | FragmentStore | 14000 | 4000 |
+| InteriorProxy | 450 | 450 |
 | LightEntity | 1000 | - |
 | netGameEvent | 400 | 400 |
 | OcclusionInteriorInfo | 20 | 10 |
@@ -457,7 +459,18 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | StaticBounds | 5000 | 6500 |
 | TxdStore | 26000 | 26000 |
 
-You can explore current pools and their sizes using  `F8 > Tools > Streaming > Pool Monitor` tool.
+You can explore most of the current pools and their sizes using  `F8 > Tools > Streaming > Pool Monitor` tool.
+
+#### Local experiments
+
+It is possible to bypass the pool size limitations for development purposes. In this case the pool size validation will be skipped. In order to do so you need to set `moo` [convar](/docs/scripting-reference/convars/#standard-convars) to `31337` independently on server and client side:
+
+- Add `set moo 31337` to your server config.
+- Add `+set moo 31337` flag when running your client. Similarly to how it's done to turn on [the developer mode](/docs/client-manual/console-commands/#developer-commands).
+
+{{% alert color="warning" %}}
+This is for development and debugging purposes only. Never use it to bypass limitations for your production environment. If you set pool sizes outside of supported limits - you are on your own. If you believe that the limits should be adjusted - reach out to Cfx team by opening a github issue requesting the limit increased with a reason why.
+{{% /alert %}}
 
 ## Access control commands
 
