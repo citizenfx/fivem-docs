@@ -111,7 +111,7 @@ To allow specific resources to write to other resources regardless of file exten
 add_filesystem_permission resourceA write resourceB
 ```
 
-This override grants full write access, bypassing the default file extension restrictions.
+This override grants full write access, bypassing the default file extension restrictions. Please note that author names need to match to authorize write access.
 
 ### ConVar Permissions
 To restrict ConVar access to specific resources, use the `add_convar_permission` configuration:
