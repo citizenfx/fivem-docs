@@ -47,7 +47,8 @@ end)
 
 ##### C# Example:
 ```c#
-EventHandlers["onResourceStart"] += new Action<string>(resourceName); // this in public ClientMain() {...}
+// add this in the class constructor
+EventHandlers["onResourceStart"] += new Action<string>(OnResourceStart);
 //...
 void resourceName([FromSource] string resourceName)
 {
