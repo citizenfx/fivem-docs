@@ -51,7 +51,7 @@ EventHandlers["onResourceStart"] += new Action<string>(resourceName); // this in
 //...
 void resourceName([FromSource] string resourceName)
 {
-    if (API.GetCurrentResourceName() != resourceName) { return; }
+    if (API.GetCurrentResourceName() != resourceName) return;
     TriggerEvent("chat:addMessage", new
     {
         color = new[] { 255, 0, 0 },
