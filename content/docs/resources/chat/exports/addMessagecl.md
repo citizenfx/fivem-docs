@@ -50,7 +50,7 @@ end)
 // add this in the class constructor
 EventHandlers["onResourceStart"] += new Action<string>(OnResourceStart);
 //...
-void resourceName([FromSource] string resourceName)
+void OnResourceStart(string resourceName)
 {
     if (API.GetCurrentResourceName() != resourceName) return;
     TriggerEvent("chat:addMessage", new
