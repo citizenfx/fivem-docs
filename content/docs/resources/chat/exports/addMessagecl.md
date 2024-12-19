@@ -47,18 +47,20 @@ end)
 
 ##### C# Example:
 ```c#
-// add this in the class constructor
-EventHandlers["onResourceStart"] += new Action<string>(OnResourceStart);
-//...
+using Newtonsoft.Json;
+// ...
+EventHandlers["onResourceStart"] += new Action<string>(OnResourceStart); // add this in the class constructor
+// ...
 void OnResourceStart(string resourceName)
 {
     if (API.GetCurrentResourceName() != resourceName) return;
-    TriggerEvent("chat:addMessage", new
-    {
-        color = new[] { 255, 0, 0 },
-        multiline = true,
-        args = new[] { "[SYSTEM]", API.GetCurrentResourceName() + " has started." }
-    });
+    dynamic messageData = new
+        {
+            color = new[] { 255, 0, 0 },
+            multiline = true,
+            args = new[] { "[SYSTEM]", API.GetCurrentResourceName() + " has started." }
+        };
+    Exports["cl_chat"].addMessage(messageData);
 }
 ```
 
