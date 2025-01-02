@@ -44,5 +44,25 @@ AddEventHandler('onResourceStart', function(resourceName)
   })
 end)
 ```
+
+##### C# Example:
+```c#
+using Newtonsoft.Json;
+// ...
+EventHandlers["onResourceStart"] += new Action<string>(OnResourceStart); // add this in the class constructor
+// ...
+void OnResourceStart(string resourceName)
+{
+    if (API.GetCurrentResourceName() != resourceName) return;
+    dynamic messageData = new
+        {
+            color = new[] { 255, 0, 0 },
+            multiline = true,
+            args = new[] { "[SYSTEM]", API.GetCurrentResourceName() + " has started." }
+        };
+    Exports["cl_chat"].addMessage(messageData);
+}
+```
+
 Output:<br>
 ![screenshot-1](/chat_addMessage_export.png)
