@@ -260,7 +260,7 @@ dependencies {
 
 ### Escrow
 
-Requires the specified resource to load before the current resource.
+Chooses what files to ignore when you are Escrow locking
 
 ```lua
 escrow_ignore {
