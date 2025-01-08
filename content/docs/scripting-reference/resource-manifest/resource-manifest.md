@@ -258,6 +258,17 @@ dependencies {
 }
 ```
 
+### Escrow
+
+Requires the specified resource to load before the current resource.
+
+```lua
+escrow_ignore {
+    'file1', -- Use the filepath for the resources you want to ignore When Escrow locking.
+    'config/file2'
+}
+```
+
 #### Runtime constraints
 The `dependency` field can also be used to specify requirements for the resource to run, such as a minimum server version,
 a server policy value, or a game build. These are specified using the following syntax:
