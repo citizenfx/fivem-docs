@@ -5619,6 +5619,8 @@ weight: 760
         </div>
     </div>
 </div>
+
+## Helicopters
 <div class="category" id="helicopters">
     <h2>Helicopters</h2>
     <div class="vehicles">
