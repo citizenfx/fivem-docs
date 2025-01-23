@@ -54,13 +54,12 @@ EventHandlers["onResourceStart"] += new Action<string>(OnResourceStart); // add 
 void OnResourceStart(string resourceName)
 {
     if (API.GetCurrentResourceName() != resourceName) return;
-    dynamic messageData = new
+    Exports["cl_chat"].addMessage(new
         {
             color = new[] { 255, 0, 0 },
             multiline = true,
             args = new[] { "[SYSTEM]", API.GetCurrentResourceName() + " has started." }
-        };
-    Exports["cl_chat"].addMessage(messageData);
+        });
 }
 ```
 
