@@ -1,7 +1,7 @@
 {{- $offlineSearchIndex := resources.Get "json/offline-search-index.json" | resources.ExecuteAsTemplate "/offline-search-index.json" . -}}
 {{- $offlineSearchIndexFingerprint := $offlineSearchIndex | resources.Fingerprint "sha512" -}}
 {
-    "content": {{.ProcessedContent | htmlUnescape | jsonify}},
+    "content": {{.RenderShortcodes | htmlUnescape | jsonify}},
     "params": {{.Params | jsonify }},
     "searchIndex": {{ $offlineSearchIndexFingerprint.Permalink | jsonify }},
     "pages": [
