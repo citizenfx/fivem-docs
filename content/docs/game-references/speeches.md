@@ -13,7 +13,7 @@ local coords = GetEntityCoords(PlayerPedId(), false)
 local ped = CreateRandomPed(coords.x, coords.y, coords.z)
 
 -- Makes the ped shout an insult
-PlayPedAmbientSpeechNative(ped, GENERIC_INSULT_HIGH--[[speechName]], SPEECH_PARAMS_FORCE--[[speechParam]])
+PlayPedAmbientSpeechNative(ped, "GENERIC_INSULT_HIGH"--[[speechName]], "SPEECH_PARAMS_FORCE"--[[speechParam]])
 ```
 
 Speech Params
