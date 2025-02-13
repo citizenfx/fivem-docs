@@ -123,6 +123,8 @@ There are three groups of new natives:
 | {{% native_link "IS_PED_COMPONENT_VARIATION_GEN9_EXCLUSIVE" %}} | {{% native_link "IS_PED_COLLECTION_COMPONENT_VARIATION_GEN9_EXCLUSIVE" %}} |
 | {{% native_link "GET_PED_DRAWABLE_VARIATION" %}} | {{% native_link "GET_PED_DRAWABLE_VARIATION_COLLECTION_LOCAL_INDEX" %}} |
 | {{% native_link "GET_PED_DRAWABLE_VARIATION" %}} | {{% native_link "GET_PED_DRAWABLE_VARIATION_COLLECTION_NAME" %}} |
+| {{% native_link "GET_PED_PROP_INDEX" %}} | {{% native_link "GET_PED_PROP_COLLECTION_LOCAL_INDEX" %}} |
+| {{% native_link "GET_PED_PROP_INDEX" %}} | {{% native_link "GET_PED_PROP_COLLECTION_NAME" %}} |
 
 ### Examples
 

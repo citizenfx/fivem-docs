@@ -444,8 +444,10 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | Pool name  | FiveM max increase | RedM max increase |
 | ---------- | ------------------ | ----------------- |
 | AttachmentExtension | 430 | 430 |
+| CDoorExtension (also known as MaxDoorExtensions) | - | 160 |
 | CLightEntity | - | 2000 |
 | CMoveObject | 75 | 100 |
+| CPropSetObjectExtension | - | 450 |
 | EntityDescPool | 20480 | - |
 | FragmentStore | 14000 | 4000 |
 | InteriorProxy | 450 | 450 |
