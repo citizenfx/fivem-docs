@@ -160,6 +160,7 @@ Every build includes all content and changes from the builds before.
 
 | Number |               Aliases                |       Marketing name        |
 | ------ | ------------------------------------ | --------------------------- |
+| 1      |                                      | Base game without any DLCs  |
 | 1604   | xm18, christmas2018, mpchristmas2018 | Arena War                   |
 | -      | -                                    | The Diamond Casino & Resort |
 | -      | -                                    | Diamond Casino Heist        |
@@ -173,6 +174,7 @@ Every build includes all content and changes from the builds before.
 | 2944   | mp2023_01                            | San Andreas Mercenaries     |
 | 3095   | mp2023_02                            | The Chop Shop               |
 | 3258   | mp2024_01                            | Bottom Dollar Bounties      |
+| 3407   | mp2024_02                            | Agents of Sabotage          |
 
 **RedM builds**
 
@@ -182,6 +184,23 @@ Every build includes all content and changes from the builds before.
 | 1355   | December 2020 update, works with newer game editions such as RDO. |
 | 1436   | July 2021 update, includes new content from Blood Money DLC.      |
 | 1491   | September 2022 update, limited content/changes.                   |
+
+### `sv_replaceExeToSwitchBuilds [newValue]`
+
+An experimental flag that determines how the client will run older game builds when requested with `sv_enforceGameBuild`. Either true or false.
+
+- true: the default value. This will keep the current client behavior, the client will download all the files for the specific game build and run old game build executable.
+- false: The client will run executable for the latest stable game build, regardless of which game build is enforced. Instead the client will only load the specific DLCs related to the game build specified in `sv_enforceGameBuild`. From the user perspective the game will look the same way as under `sv_replaceExeToSwitchBuilds = true`.
+
+    When using `set sv_enforceGameBuild 1` the client will run as if `sv_replaceExeToSwitchBuilds = false` regardless of if it was set to `true` before. That's the only way how base game without DLCs behavior can be achieved.
+
+NOTE: The difference in `sv_replaceExeToSwitchBuilds` should be **invisible** to players and server owners. If you notice a disparity please [report it as a bug](https://github.com/citizenfx/fivem/issues/new?assignees=&labels=bug%2Ctriage&projects=&template=bug_report.yml).
+
+**Context**
+
+The `sv_replaceExeToSwitchBuilds` is intended to eliminate the need in supporting executables for older game builds. It will speed up the development and improve stability of the game in long term.
+
+At some point the default value will be changed to `false` and, eventually, `false` will be left as the only option. We will only do that after we are certain that it doesn't affect the users.
 
 ### `sv_maxClients [newValue]`
 
@@ -365,7 +384,7 @@ This is set to true by default (allow routing)
 
 A boolean console variable introduced in server version 8510 that uses the new serialization API to improve the speed of packing/unpacking state bag changes.
 
-This is set to false by default
+This is set to true by default
 
 ### `sv_experimentalOnesyncPopulation [true|false]`
 
@@ -375,9 +394,9 @@ This ConVar doesn't change if population spawns on the server, you still need to
 
 NOTE: Using this ConVar also opts you into using `sv_experimentalStateBagsHandler`
 
-This is set to false by default
+This is set to true by default
 
-### `sv_experimentalNetEventHandler [true|false]`
+### `sv_experimentalNetGameEventHandler [true|false]`
 
 A boolean console variable introduced in server version 9149 that uses the new serialization API to improve the speed of packing/unpacking GTA game events, adds checks for if entities sent with the game events are relevant to target client, along side improving backwards compatibility with future title updates.
 
@@ -429,7 +448,9 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | CLightEntity | - | 2000 |
 | CMoveObject | 75 | 100 |
 | CPropSetObjectExtension | - | 450 |
+| EntityDescPool | 20480 | - |
 | FragmentStore | 14000 | 4000 |
+| InteriorProxy | 450 | 450 |
 | LightEntity | 1000 | - |
 | netGameEvent | 400 | 400 |
 | OcclusionInteriorInfo | 20 | 10 |
@@ -441,7 +462,18 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | StaticBounds | 5000 | 6500 |
 | TxdStore | 26000 | 26000 |
 
-You can explore current pools and their sizes using  `F8 > Tools > Streaming > Pool Monitor` tool.
+You can explore most of the current pools and their sizes using  `F8 > Tools > Streaming > Pool Monitor` tool.
+
+#### Local experiments
+
+It is possible to bypass the pool size limitations for development purposes. In this case the pool size validation will be skipped. In order to do so you need to set `moo` [convar](/docs/scripting-reference/convars/#standard-convars) to `31337` independently on server and client side:
+
+- Add `set moo 31337` to your server config.
+- Add `+set moo 31337` flag when running your client. Similarly to how it's done to turn on [the developer mode](/docs/client-manual/console-commands/#developer-commands).
+
+{{% alert color="warning" %}}
+This is for development and debugging purposes only. Never use it to bypass limitations for your production environment. If you set pool sizes outside of supported limits - you are on your own. If you believe that the limits should be adjusted - reach out to Cfx team by opening a github issue requesting the limit increased with a reason why.
+{{% /alert %}}
 
 ## Access control commands
 

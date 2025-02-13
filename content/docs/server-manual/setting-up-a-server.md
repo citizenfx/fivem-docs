@@ -10,7 +10,7 @@ This page shows you how to run the Cfx.re platform server (also often named 'FXS
 Having trouble running your server? Check the [server issue FAQ][server-issues], use the Discord [#server-talk][fxserver-support] channel, or create a topic in the [Server Discussion][fxserver-support-category] sub-category on the forum.
 
 ## Before you begin
-If you haven't done so yet, register a free license key on the [Cfx.re Keymaster](https://keymaster.fivem.net/).
+If you haven't done so yet, register a free license key on the [Cfx.re Portal](https://portal.cfx.re/).
 
 ## Available guides
 - [ZAP-Hosting setup guide][setting-up-a-server-zap]

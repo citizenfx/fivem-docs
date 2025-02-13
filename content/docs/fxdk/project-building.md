@@ -34,7 +34,7 @@ All defined variables (convars, Steam WebAPI key, Tebex secret), will be placed 
 
 
 # License key
-For running public server you need to specify license key obtained at https://keymaster.fivem.net/.
+For running public server you need to specify license key obtained at https://portal.cfx.re/.
 
 FxDK purposefully does not provide any way to enter this key in user interface because of security concerns.
 
