@@ -404,6 +404,14 @@ NOTE: Using this ConVar also opts you into using `sv_experimentalStateBagsHandle
 
 This is set to false by default
 
+### `sv_httpFileServerProxyOnly [true|false]`
+
+A boolean console variable introduced in server version 10543 that restricts access to the file server based on IP address ranges. When enabled, only requests from IP addresses within the ranges specified by `sv_proxyIPRanges` will be allowed to access the file server. 
+
+This is particularly useful when using custom proxy servers with `fileserver_add` to ensure clients only access files through the designated proxy.
+
+This is set to false by default.
+
 ### `load_server_icon [fileName.png]`
 
 A console command which loads a specified icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
