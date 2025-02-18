@@ -17,7 +17,7 @@ All file system operations support two types of paths:
 Resource mount paths are recommended as they're cleaner and more portable.
 
 ### Directory Listing
-The `io.readdir()` function returns files and folders within a directory:
+The `io.readdir()` function returns a directory handle:
 
 ```lua
 -- Using mount paths (recommended)
@@ -31,9 +31,11 @@ local files4 = io.readdir("/absolute/path/to/resource/assets")
 
 ```lua
 local files = io.readdir("@myResource/")
-for _, file in ipairs(files) do
+for file in files:lines() do
     print(file) -- Process each file
 end
+
+files:close() -- Not required, but best to do so
 ```
 
 ### File Operations
