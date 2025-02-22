@@ -444,6 +444,7 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | Pool name  | FiveM max increase | RedM max increase |
 | ---------- | ------------------ | ----------------- |
 | AttachmentExtension | 430 | 430 |
+| Building | 20000 | - |
 | CDoorExtension (also known as MaxDoorExtensions) | - | 160 |
 | CLightEntity | - | 2000 |
 | CMoveObject | 75 | 100 |
