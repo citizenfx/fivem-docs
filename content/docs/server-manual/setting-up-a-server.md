@@ -5,7 +5,7 @@ description: >
   A step-by-step guide on setting up FXServer.
 ---
 
-This page shows you how to run the Cfx.re platform server (also often named 'FXServer') on Windows, Linux, txAdmin and there's even a ZAP-Hosting guide! They can all be found down below under *[Available guides][setting-up-a-server-guides]*.
+This page shows you how to run the Cfx.re platform server (also often named 'FXServer') on Windows, Linux, txAdmin, or a game server hosting provider! They can all be found down below under *[Available guides][setting-up-a-server-guides]*.
 
 Having trouble running your server? Check the [server issue FAQ][server-issues], use the Discord [#server-talk][fxserver-support] channel, or create a topic in the [Server Discussion][fxserver-support-category] sub-category on the forum.
 
@@ -13,7 +13,7 @@ Having trouble running your server? Check the [server issue FAQ][server-issues],
 If you haven't done so yet, register a free license key on the [Cfx.re Portal](https://portal.cfx.re/).
 
 ## Available guides
-- [ZAP-Hosting setup guide][setting-up-a-server-zap]
+- [Game server hosting providers][game-server-hosting-providers]
 - [Ultimate easy setup guide (txAdmin)][setting-up-a-server-txadmin]
 - [Windows setup guide (Vanilla)][setting-up-a-server-vanilla-windows]
 - [Linux setup guide (Vanilla)][setting-up-a-server-vanilla-linux]
@@ -32,7 +32,7 @@ What's next?
 [fxserver-support-category]: https://forum.cfx.re/c/server-development/server-discussion
 
 [setting-up-a-server-guides]: /docs/server-manual/setting-up-a-server/#available-guides
-[setting-up-a-server-zap]: /docs/server-manual/setting-up-a-server-zap
+[game-server-hosting-providers]: /docs/server-manual/game-server-hosting-providers
 [setting-up-a-server-txadmin]: /docs/server-manual/setting-up-a-server-txadmin
 [setting-up-a-server-vanilla-windows]: /docs/server-manual/setting-up-a-server-vanilla/#windows
 [setting-up-a-server-vanilla-linux]: /docs/server-manual/setting-up-a-server-vanilla/#linux
