@@ -13,11 +13,17 @@ modifications the [Grit game engine][grit] introduced:
 - [Support for relative path literals](#relative-path-literals)
 - [Support for vectors & quaternions](#vectors-quaternions)
 
+[Lua 5.4][luadocs54] is also supported as of June 30, 2020, when it was introduced in the following [commit][lua54commit]. This new version of Lua also introduces a few power patches that can be found at the bottom of this page.
+
 To learn more about Lua, read their [official documentation][luadocs].
 
 Using Lua
 ---------
 To use Lua in your scripts, simply use the `.lua` file extension. No additional configuration is required.
+
+Using Lua 5.4
+---------
+If you would rather use [Lua 5.4][luadocs54] in your scripts, you should add `lua54 'yes'` to your resource manifest file.
 
 Compile-time hashes
 ----------------------
@@ -126,8 +132,14 @@ Lua specific functions
 - [Client functions](/docs/scripting-reference/runtimes/lua/client-functions)
 - [Server functions](/docs/scripting-reference/runtimes/lua/server-functions)
 
+Lua Power patches
+----------------------
+A list of power patches can be found [here](/docs/scripting-reference/runtimes/lua/power-patches).
+
 [about-natives]: /docs/scripting-manual/introduction/about-native-functions
 [resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest/
 [grit]: http://gritengine.com
 [luadocs]: https://www.lua.org/manual/5.3/
+[luadocs54]: https://www.lua.org/manual/5.4/
+[lua54commit]: https://github.com/citizenfx/fivem/commit/0c0266a7cec1ea2589dd2a0c526b02e23e982a1b
 [natives-doc]: https://runtime.fivem.net/doc/reference.html
