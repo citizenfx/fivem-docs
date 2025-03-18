@@ -1,0 +1,88 @@
+---
+title: Setting up a Tebex Store
+weight: 367
+description: >
+  A step-by-step guide on setting up a Tebex Store.
+---
+
+## What is Tebex?
+
+[Tebex][Tebex] is a popular e-commerce platform.<br>
+It provides a convenient and secure way for server owners to set up and manage their stores, allowing players to purchase virtual items, scripts, and other game-related content.<br>
+[Tebex][Tebex] is the only official partner of FiveM in terms of monetization.<br>
+The use of any other platform or payment provider is prohibited and is a violation of the [Platform License Agreement][fivem-pla].
+
+## Prerequisites
+
+Before starting ensure that you successfully [setup a FiveM-Server][setting-up-a-server-guides].<br>
+
+## Tebex Store Setup
+1. Register a new account [here][tebex-registration].
+2. Verify your email adress (a link will be sent to your email adress).
+3. Check your personal details and if correct start and complete the [identity verification][tebex-identity-verification].
+4. Create a [project][tebex-project] by giving it a name, choosing the preffered currency and choosing the type of the project.<br>
+If you are unsure which type of project is the right one, choose "<em>I operate a game server</em>".<br>
+5. Once done you can proceed to open your Tebex Control Panel and click [Integrations > Game Servers][tebex-integration-game-servers].
+6. Click 'Connect Game Server' in the top-right, then click the 'Plugin' option.
+7. Give your server a name and click 'Continue'.
+8. Follow the instructions on-screen to add your unique secret-key to your server.cfg - we'd recommend adding the line at the bottom of the file.
+9. Restart your server.
+10. Press 'Continue' on the Tebex Control Panel page you have open.
+
+{{% alert color="warning" title="Continue button not lighting up?" %}}Check your server console for errors and press Skip on the Control Panel. {{% /alert %}}
+
+<b>All done!</b><br>
+You can now add packages, customize your store and offer virtual goods to your community.<br>
+Please make sure to read the [Platform License Agreement][fivem-pla] and [Tebex Terms & Conditions][tebex-tos].
+
+## FiveM Server Wrapper
+
+The [Tebex server wrapper][tebex-fivem-server-wrapper] makes it easier to give players rewards and perks and simplifies the setup of your Tebex Store.
+
+After setting up packages on your Tebex Store and within the wrapper itself, all you need to do is get your players to run <b>/redeem [Transaction ID]</b> and the wrapper will give the player their purchase(s).
+
+### FiveM Server Wrapper Installation
+
+1. [Download the wrapper][tebex-download-wrapper]
+2. Extract the wrapper to your resource folder.
+<br>You need to remove '-main' from the end of the folder name.<br>
+The folder within your resources directory should be called '<b>nass_serverstore</b>'
+3. Import the <b>codes.sql</b> to your database
+4. Add  ‘<b>ensure nass_serverstore</b>’ in your <b>server.cfg</b> 
+5. Add the game server command below to each package you’d like to set up with the wrapper:
+<br><br>
+`purchase_package_tebex {"transid":"{transaction}", "packagename":"{packageName}"}`
+<br><br>
+Do not change the variables on this command, use it exactly as shown above.<br>You’ll need to add it as a command that executes ‘When the package is purchased’.
+Additionally, press the ‘Settings’ icon next to the command and set the Require Player to be Online option to ‘Execute the command even if the player is offline’.
+6. Press ‘Update’ at the bottom of the Edit Package page to confirm the changes made.
+7. Setup your packages within the wrapper itself - you can do this within the <b>config.lua</b> inside the wrapper’s script folder on your server.
+
+<br><b>All done!</b><br>
+All you need to do is get your players to run /redeem [Transaction ID] on your server when they've made their purchase.<br>
+The transaction ID will be sent to the players email adress after a purchase is made on your store.
+
+
+## Useful Links
+
+[Tebex FAQs][tebex-faq]<br>
+[Tebex identitiy verification][tebex-identity-verification]<br>
+[Tebex Store Review][tebex-review]<br>
+[Tips for getting your store application approved][tebex-tips-store-application]
+
+
+---
+
+[tebex]: https://tebex.io
+[tebex-registration]: https://accounts.tebex.io/register
+[tebex-project]: https://creator.tebex.io/creator-segments?#/
+[tebex-integration-game-servers]: https://creator.tebex.io/game-servers
+[tebex-faq]: https://docs.tebex.io/creators/faq
+[setting-up-a-server-guides]: /docs/server-manual/setting-up-a-server/#available-guides
+[tebex-identity-verification]: https://docs.tebex.io/creators/initial-setup/identity-verification-for-tebex-store-onboarding
+[tebex-review]: https://docs.tebex.io/creators/initial-setup/your-store-review
+[tebex-tips-store-application]: https://docs.tebex.io/creators/initial-setup/tips-for-getting-your-store-application-approved
+[fivem-pla]: https://fivem.net/terms
+[tebex-tos]: https://checkout.tebex.io/terms
+[tebex-fivem-server-wrapper]: https://docs.tebex.io/creators/tebex-control-panel/game-servers/fivem/fivem-server-wrapper
+[tebex-download-wrapper]: https://github.com/najeetpie/nass_serverstore
