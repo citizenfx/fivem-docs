@@ -7,9 +7,10 @@ description: >
 
 ## What is Tebex?
 
-[Tebex][Tebex] is our exclusive monetization partner for the Cfx.re Platform, allowing you to easily monetize your FiveM or RedM server.<br>
+[Tebex][Tebex] is our authorized monetization partner for the Cfx.re Platform, allowing you to easily monetize your FiveM or RedM server.<br>
+
 It provides a convenient and secure way for server owners to set up and manage their stores, allowing players to purchase virtual items and other game-related content.<br>
-In addition to being the only official monetization partner of FiveM, [Tebex][Tebex] offers a full suite of monetization features, handling all taxes, billing, and providing full insurance for transactions.<br> This makes it easier for server owners to focus on creating a great experience for their players while leaving the complexities of payments and compliance to [Tebex][Tebex].<br>
+In addition to being the exclusive monetization partner of FiveM, [Tebex][Tebex] offers a full suite of monetization features, handling all taxes, billing, and providing full insurance for transactions.<br> This makes it easier for server owners to focus on creating a great experience for their players while leaving the complexities of payments and compliance to [Tebex][Tebex].<br>
 The use of any other platform or payment provider is prohibited and is a violation of the [Platform License Agreement][fivem-pla].<br> Monetization of game servers is also subject to the policies outlined in the PLA, as well as the [Tebex][Tebex] [Acceptable Use Policy][tebex-aup] (AUP) and [Terms of Service][tebex-tos] (TOS).<br>
 
 ## Prerequisites
@@ -21,11 +22,14 @@ Before starting ensure that you successfully [setup a FiveM-Server][setting-up-a
 2. Verify your email adress (a link will be sent to your email adress).
 3. Check your personal details and if correct start and complete the [identity verification][tebex-identity-verification].
 4. Create a [project][tebex-project] by giving it a name, choosing the preffered currency and choosing the type of the project.<br>
-If you are unsure which type of project is the right one, choose "<em>I operate a game server</em>".<br>
+If you are running a server choose "<em>I operate a game server</em>".<br>
 5. Once done you can proceed to open your Tebex Control Panel and click [Integrations > Game Servers][tebex-integration-game-servers].
 6. Click 'Connect Game Server' in the top-right, then click the 'Plugin' option.
 7. Give your server a name and click 'Continue'.
-8. Follow the instructions on-screen to add your unique secret-key to your server.cfg - we'd recommend adding the line at the bottom of the file.
+8. Follow the instructions on-screen to add your unique secret-key to your server.cfg - we'd recommend adding the line at the bottom of the file like this:
+
+`sv_tebexSecret yourtebexsecretkey`
+
 9. Restart your server.
 10. Press 'Continue' on the Tebex Control Panel page you have open.
 
@@ -38,20 +42,21 @@ You will be redirected to the [onboarding page][tebex-get-started].<br>
 
 Before your store can go live you need to complete these 6 steps:
 
-1. Provide a store description
-2. Confirm customer support contact 
-3. Set up wallet
-4. Complete ID verification
-5. Create a package
-6. Associate your Cfx.re account
+1. Provide a store description.
+2. Confirm customer support contact.
+3. Set up wallet.
+4. Complete ID verification.
+5. Create a package.
+6. Associate your Cfx.re account.
 
-After that you can submit your store for [review][tebex-review] to Tebex<br>.
+After that you can submit your store for [review][tebex-review] to Tebex.<br>
 
 Once the [review][tebex-review] is completed, you can add packages, customize your store, offer virtual goods to your community, and change the appearance of your Tebex store with one of many [templates][tebex-templates].
 
 ## FiveM Server Wrapper
 
-The [Tebex server wrapper][tebex-fivem-server-wrapper] enables you to connect your Tebex store to your gameserver. <br>It makes it easier to give players rewards and perks and simplifies the setup of your Tebex Store.
+The community built [Tebex server wrapper][tebex-fivem-server-wrapper] enables you to connect your Tebex store to your gameserver. <br>It makes it easier to give players rewards and perks and simplifies the setup of your Tebex Store.
+
 
 After setting up packages on your Tebex Store and within the wrapper itself, all you need to do is get your players to run <b>/redeem [Transaction ID]</b> and the wrapper will give the player their purchase(s).
 
@@ -80,7 +85,7 @@ The transaction ID will be sent to the players email adress after a purchase is 
 ## Useful Links
 
 [Tebex FAQs][tebex-faq]<br>
-[Tebex identitiy verification][tebex-identity-verification]<br>
+[Tebex Identitiy Verification][tebex-identity-verification]<br>
 [Tebex Store Review][tebex-review]<br>
 [Tips for getting your store application approved][tebex-tips-store-application]
 
