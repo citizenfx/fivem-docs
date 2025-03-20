@@ -7,10 +7,10 @@ description: >
 
 ## What is Tebex?
 
-[Tebex][Tebex] is a popular e-commerce platform.<br>
-It provides a convenient and secure way for server owners to set up and manage their stores, allowing players to purchase virtual items, scripts, and other game-related content.<br>
-[Tebex][Tebex] is the only official partner of FiveM in terms of monetization.<br>
-The use of any other platform or payment provider is prohibited and is a violation of the [Platform License Agreement][fivem-pla].
+[Tebex][Tebex] is our exclusive monetization partner for the Cfx.re Platform, allowing you to easily monetize your FiveM or RedM server.<br>
+It provides a convenient and secure way for server owners to set up and manage their stores, allowing players to purchase virtual items and other game-related content.<br>
+In addition to being the only official monetization partner of FiveM, [Tebex][Tebex] offers a full suite of monetization features, handling all taxes, billing, and providing full insurance for transactions.<br> This makes it easier for server owners to focus on creating a great experience for their players while leaving the complexities of payments and compliance to [Tebex][Tebex].<br>
+The use of any other platform or payment provider is prohibited and is a violation of the [Platform License Agreement][fivem-pla].<br> Monetization of game servers is also subject to the policies outlined in the PLA, as well as the [Tebex][Tebex] [Acceptable Use Policy][tebex-aup] (AUP) and [Terms of Service][tebex-tos] (TOS).<br>
 
 ## Prerequisites
 
@@ -30,14 +30,28 @@ If you are unsure which type of project is the right one, choose "<em>I operate 
 10. Press 'Continue' on the Tebex Control Panel page you have open.
 
 {{% alert color="warning" title="Continue button not lighting up?" %}}Check your server console for errors and press Skip on the Control Panel. {{% /alert %}}
+<br>
 
-<b>All done!</b><br>
-You can now add packages, customize your store and offer virtual goods to your community.<br>
-Please make sure to read the [Platform License Agreement][fivem-pla] and [Tebex Terms & Conditions][tebex-tos].
+### Before you can go live
+
+You will be redirected to the [onboarding page][tebex-get-started] <br>
+
+Before your store can go live you need to complete these 6 steps:
+
+1. Provide a store description
+2. Confirm customer support contact 
+3. Set up wallet
+4. Complete ID verification
+5. Create a package
+6. Associate your Cfx.re account
+
+After that you can submit your store for [review][tebex-review] to Tebex<br>
+
+Once the [review][tebex-review] is completed, you can add packages, customize your store, offer virtual goods to your community, and change the appearance of your Tebex store with one of many [templates][tebex-templates].
 
 ## FiveM Server Wrapper
 
-The [Tebex server wrapper][tebex-fivem-server-wrapper] makes it easier to give players rewards and perks and simplifies the setup of your Tebex Store.
+The [Tebex server wrapper][tebex-fivem-server-wrapper] enables you to connect your Tebex store to your gameserver. <br>It makes it easier to give players rewards and perks and simplifies the setup of your Tebex Store.
 
 After setting up packages on your Tebex Store and within the wrapper itself, all you need to do is get your players to run <b>/redeem [Transaction ID]</b> and the wrapper will give the player their purchase(s).
 
@@ -58,7 +72,7 @@ Additionally, press the ‘Settings’ icon next to the command and set the Requ
 6. Press ‘Update’ at the bottom of the Edit Package page to confirm the changes made.
 7. Setup your packages within the wrapper itself - you can do this within the <b>config.lua</b> inside the wrapper’s script folder on your server.
 
-<br><b>All done!</b><br>
+<br>
 All you need to do is get your players to run /redeem [Transaction ID] on your server when they've made their purchase.<br>
 The transaction ID will be sent to the players email adress after a purchase is made on your store.
 
@@ -86,3 +100,6 @@ The transaction ID will be sent to the players email adress after a purchase is 
 [tebex-tos]: https://checkout.tebex.io/terms
 [tebex-fivem-server-wrapper]: https://docs.tebex.io/creators/tebex-control-panel/game-servers/fivem/fivem-server-wrapper
 [tebex-download-wrapper]: https://github.com/najeetpie/nass_serverstore
+[tebex-aup]: https://www.tebex.io/terms-creator-agreement/acceptable-use-policy
+[tebex-get-started]: https://creator.tebex.io/get-started
+[tebex-templates]: https://creator.tebex.io/templates
