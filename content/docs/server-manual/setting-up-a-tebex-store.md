@@ -34,7 +34,7 @@ If you are unsure which type of project is the right one, choose "<em>I operate 
 
 ### Before you can go live
 
-You will be redirected to the [onboarding page][tebex-get-started] <br>
+You will be redirected to the [onboarding page][tebex-get-started].<br>
 
 Before your store can go live you need to complete these 6 steps:
 
@@ -45,7 +45,7 @@ Before your store can go live you need to complete these 6 steps:
 5. Create a package
 6. Associate your Cfx.re account
 
-After that you can submit your store for [review][tebex-review] to Tebex<br>
+After that you can submit your store for [review][tebex-review] to Tebex<br>.
 
 Once the [review][tebex-review] is completed, you can add packages, customize your store, offer virtual goods to your community, and change the appearance of your Tebex store with one of many [templates][tebex-templates].
 
@@ -62,7 +62,7 @@ After setting up packages on your Tebex Store and within the wrapper itself, all
 <br>You need to remove '-main' from the end of the folder name.<br>
 The folder within your resources directory should be called '<b>nass_serverstore</b>'
 3. Import the <b>codes.sql</b> to your database
-4. Add  ‘<b>ensure nass_serverstore</b>’ in your <b>server.cfg</b> 
+4. Add  ‘<b>ensure nass_serverstore</b>’ in your <b>server.cfg.</b> 
 5. Add the game server command below to each package you’d like to set up with the wrapper:
 <br><br>
 `purchase_package_tebex {"transid":"{transaction}", "packagename":"{packageName}"}`
