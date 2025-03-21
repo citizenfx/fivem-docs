@@ -21,24 +21,18 @@ Before starting ensure that you successfully [setup a FiveM-Server][setting-up-a
 1. Register a new account [here][tebex-registration].
 2. Verify your email adress (a link will be sent to your email adress).
 3. Check your personal details and if correct start and complete the [identity verification][tebex-identity-verification].
-4. Create a [project][tebex-project] by giving it a name, choosing the preffered currency and choosing the type of the project.<br>
-If you are running a server choose "<em>I operate a game server</em>".<br>
+4. Create a [project][tebex-project] by giving it a name, choosing the preffered currency and choosing the type of the project. If you are running a server choose "<em>I operate a game server</em>".
 5. Once done you can proceed to open your Tebex Control Panel and click [Integrations > Game Servers][tebex-integration-game-servers].
 6. Click 'Connect Game Server' in the top-right, then click the 'Plugin' option.
 7. Give your server a name and click 'Continue'.
-8. Follow the instructions on-screen to add your unique secret-key to your server.cfg - we'd recommend adding the line at the bottom of the file like this:
-
-`sv_tebexSecret yourtebexsecretkey`
-
+8. Follow the instructions on-screen to add your unique secret-key to your server.cfg - we'd recommend adding the line at the bottom of the file like this:<code>sv_tebexSecret yourtebexsecretkey</code>
 9. Restart your server.
 10. Press 'Continue' on the Tebex Control Panel page you have open.
+You will be redirected to the [onboarding page][tebex-get-started].
 
 {{% alert color="warning" title="Continue button not lighting up?" %}}Check your server console for errors and press Skip on the Control Panel. {{% /alert %}}
-<br>
 
 ### Before you can go live
-
-You will be redirected to the [onboarding page][tebex-get-started].<br>
 
 Before your store can go live you need to complete these 6 steps:
 
@@ -57,26 +51,20 @@ Once the [review][tebex-review] is completed, you can add packages, customize yo
 
 The community built [Tebex server wrapper][tebex-fivem-server-wrapper] enables you to connect your Tebex store to your gameserver. <br>It makes it easier to give players rewards and perks and simplifies the setup of your Tebex Store.
 
-
 After setting up packages on your Tebex Store and within the wrapper itself, all you need to do is get your players to run <b>/redeem [Transaction ID]</b> and the wrapper will give the player their purchase(s).
 
 ### FiveM Server Wrapper Installation
 
 1. [Download the wrapper][tebex-download-wrapper]
-2. Extract the wrapper to your resource folder.
-<br>You need to remove '-main' from the end of the folder name.<br>
-The folder within your resources directory should be called '<b>nass_serverstore</b>'
+2. Extract the wrapper to your resource folder (You need to remove '-main' from the end of the folder name, the folder within your resources directory should be called '<b>nass_serverstore</b>') 
 3. Import the <b>codes.sql</b> to your database
 4. Add  ‘<b>ensure nass_serverstore</b>’ in your <b>server.cfg.</b> 
 5. Add the game server command below to each package you’d like to set up with the wrapper:
-<br><br>
-`purchase_package_tebex {"transid":"{transaction}", "packagename":"{packageName}"}`
-<br><br>
-Do not change the variables on this command, use it exactly as shown above.<br>You’ll need to add it as a command that executes ‘When the package is purchased’.
-Additionally, press the ‘Settings’ icon next to the command and set the Require Player to be Online option to ‘Execute the command even if the player is offline’.
-6. Press ‘Update’ at the bottom of the Edit Package page to confirm the changes made.
-7. Setup your packages within the wrapper itself - you can do this within the <b>config.lua</b> inside the wrapper’s script folder on your server.
-
+<code>purchase_package_tebex {"transid":"{transaction}", "packagename":"{packageName}"}</code>
+<br>You’ll need to add it as a command that executes ‘When the package is purchased’.<br>
+Additionally, press the ‘Settings’ icon next to the command and set the Require Player to be Online option to ‘Execute the command even if the player is offline’.<br>
+Now press ‘Update’ at the bottom of the Edit Package page to confirm the changes made.<br>
+At this point you can setup your packages within the wrapper itself - you can do this within the <b>config.lua</b> inside the wrapper’s script folder on your server.
 <br>
 All you need to do is get your players to run /redeem [Transaction ID] on your server when they've made their purchase.<br>
 The transaction ID will be sent to the players email adress after a purchase is made on your store.
