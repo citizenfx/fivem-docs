@@ -492,6 +492,17 @@ It is possible to bypass the pool size limitations for development purposes. In 
 This is for development and debugging purposes only. Never use it to bypass limitations for your production environment. If you set pool sizes outside of supported limits - you are on your own. If you believe that the limits should be adjusted - reach out to the Cfx team by opening a github issue requesting the limit increased with a reason why.
 {{% /alert %}}
 
+### sv_tebexSecret
+
+The sv_tebexSecret is a unique secret key that is used to authenticate your FiveM server with the Tebex platform.
+
+Example: 
+
+```
+sv_tebexSecret c4f1300bda0ab123976449d27c160185bc31e175
+```
+
+
 ## Access control commands
 
 ### `add_ace [principal] [object] [allow|deny]`
