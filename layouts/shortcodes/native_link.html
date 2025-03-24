@@ -1,6 +1,6 @@
 {{- $name := .Get 0 -}}
-{{- $natives := getJSON "https://runtime.fivem.net/doc/natives.json" -}}
-{{- $cfxNatives := getJSON "https://runtime.fivem.net/doc/natives_cfx.json" -}}
+{{- $natives := getJSON "https://static.cfx.re/natives/natives.json" -}}
+{{- $cfxNatives := getJSON "https://static.cfx.re/natives/natives_cfx.json" -}}
 {{- $nativeHash := 0 -}}
 {{- range $natives -}}
     {{- range . -}}
@@ -28,4 +28,4 @@
     {{- end -}}
 {{- end -}}
 
-{{- (print "[" $name "](https://runtime.fivem.net/doc/natives/?_" $nativeHash ")") -}}
+{{- (print "[" $name "](https://docs.fivem.net/natives/?_" $nativeHash ")") -}}

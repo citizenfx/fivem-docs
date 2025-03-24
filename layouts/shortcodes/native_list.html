@@ -1,7 +1,7 @@
 {{ $apiset := .Get 0 }}
 {{ $naming := .Get 1 }}
-{{ $nativesOld := getJSON "https://runtime.fivem.net/doc/natives.json" }}
-{{ $nativesCfx := getJSON "https://runtime.fivem.net/doc/natives_cfx.json" }}
+{{ $nativesOld := getJSON "https://static.cfx.re/natives/natives.json" }}
+{{ $nativesCfx := getJSON "https://static.cfx.re/natives/natives_cfx.json" }}
 {{ $natives := merge $nativesOld $nativesCfx }}
 {{ range $key, $value := $natives }}
 {{ $list := "" }}
@@ -20,7 +20,7 @@
 {{ end }}
 {{ range sort ($named) "sortName" }}
 {{ if or (not $apiset) (or (eq .native.apiset "shared") (or (eq .native.apiset $apiset) (and (eq $apiset "client") (not .native.apiset)))) }}
-{{ $list = print $list "* [" .name "](https://runtime.fivem.net/doc/natives/?_" .native.hash ")\n" }}
+{{ $list = print $list "* [" .name "](https://docs.fivem.net/natives/?_" .native.hash ")\n" }}
 {{ end }}
 {{ end }}
 {{ if ne $list "" }}
