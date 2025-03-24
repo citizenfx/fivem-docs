@@ -29,6 +29,13 @@ The NUI cursor can be enabled by adding a `loadscreen_cursor` entry to the resou
 loadscreen_cursor 'yes'
 ```
 
+## Busy spinner
+You can hide the default busy spinner in the bottom right corner of the screen by adding the following command to your `server.cfg`:
+
+```
+setr sv_showBusySpinnerOnLoadingScreen false
+```
+
 ## Handover data
 Server scripts can specify data pairs to send to the client loading screen using the `handover` function in the playerConnecting
 event. This data will be passed to the loading screen in the `window.nuiHandoverData` property.
