@@ -466,6 +466,7 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | OcclusionPathNode | 5000 | 1500 |
 | OcclusionPortalEntity | 750 | 140 |
 | OcclusionPortalInfo | 750 | 140 |
+| fragInstGta | 2000 | - |
 | PortalInst | 225 | 150 |
 | ScaleformStore | 200 | 100 |
 | StaticBounds | 5000 | 6500 |
