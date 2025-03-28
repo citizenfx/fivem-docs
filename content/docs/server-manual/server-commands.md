@@ -455,7 +455,7 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | Building | 20000 | - |
 | CDoorExtension (also known as MaxDoorExtensions) | - | 160 |
 | CLightEntity | - | 2000 |
-| CMoveObject | 75 | 100 |
+| CMoveObject | 600 | 100 |
 | CPropSetObjectExtension | - | 450 |
 | EntityDescPool | 20480 | - |
 | FragmentStore | 14000 | 4000 |
@@ -466,6 +466,7 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | OcclusionPathNode | 5000 | 1500 |
 | OcclusionPortalEntity | 750 | 140 |
 | OcclusionPortalInfo | 750 | 140 |
+| fragInstGta | 2000 | - |
 | PortalInst | 225 | 150 |
 | ScaleformStore | 200 | 100 |
 | StaticBounds | 5000 | 6500 |
