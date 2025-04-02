@@ -33,7 +33,7 @@ You can see more about it [here](https://support.cfx.re/hc/en-us/sections/160395
 ### 🚀 Server Management Made Simple
 Keep track of all your servers - both active and inactive - at our [Server Dashboard](https://portal.cfx.re/servers/registration-keys).
 
-![server-management](/portal/server-management.png)
+![A picture showing the server registration system](/portal/server-management.png)
 
 Quick actions available:
 - 👀 View full registration keys
