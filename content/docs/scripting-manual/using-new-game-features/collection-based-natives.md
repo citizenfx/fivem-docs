@@ -1,6 +1,6 @@
 ---
 title: Work with drawable components and props using collections
-weight: 421
+weight: 481
 ---
 
 Inside the GTAV Ped drawable components and props are stored in named groups called collections. However, collections were previously unavailable for FiveM users. The drawable components and props were indexed through global index. On every TU (Title Update) the global index of custom drawable components and props would change (see below for more details on why it happens). This complicates migration to the latest game build.
