@@ -21,7 +21,7 @@ Portal brings everything together in one seamless experience:
 ### 🎁 Managing Your Assets
 Visit the [Assets Dashboard](https://portal.cfx.re/assets/granted-assets) to take control of your granted assests. Here's what you'll see:
 
-![portal-asset-management](/portal/portal-asset-management.png)
+![A picture showing the asset management system](/portal/portal-asset-management.png)
 
 Key features:
 - 🔄 Transfer assets to other users
