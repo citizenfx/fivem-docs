@@ -77,6 +77,20 @@ Stuck on a black screen
 This is a common issue with certain NVIDIA drivers. Stay patient, it takes a minute to load. This often
 happens to other games too.
 
+Early Exit Trap crash
+-----------------------
+Looks like you might have something messing in the background. Please make sure to remove everything running on background when lauching FiveM.
+
+HTTP 412 System Clock
+-----------------------
+Looks like you are not sync on time. Follow those simple steps:
+- Close FiveM and open Windows settings
+- Go to Date & Time
+- Sync Clock
+- Start FiveM and load main menu
+
+**Note:** words might change depending on what Windows version you are running (10/11).
+
 Stuck on a colored background but no menu
 ------------------------------
 This happens on specific older AMD laptop GPUs. Unfortunately, this is caused by CEF and not by FiveM. Once the issue has been fixed in CEF, FiveM will be updated too. A forum moderator has created a topic that could potentially rectify this issue. [Click here][discrete-gpu] for more info.
