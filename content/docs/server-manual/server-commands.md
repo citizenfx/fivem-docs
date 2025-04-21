@@ -456,7 +456,7 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | CDoorExtension (also known as MaxDoorExtensions) | - | 160 |
 | CLightEntity | - | 2000 |
 | CMoveObject | 600 | 100 |
-| CPropSetObjectExtension | - | 450 |
+| CPropSetObjectExtension | - | 950 |
 | EntityDescPool | 20480 | - |
 | FragmentStore | 14000 | 4000 |
 | InteriorProxy | 450 | 450 |
