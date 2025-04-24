@@ -36,7 +36,7 @@ This variable serves as a kind of public API of the .gfx.
 It'd be pretty time consuming to explain in details how to bootstrap your first gfx thing, so instead please use the boilerplate:
 
 Related files:  
-[boilerplate.zip](/static/examples/using-scaleform/boilerplate.zip)
+[boilerplate.zip](/examples/using-scaleform/boilerplate.zip)
 
 ### Loading
 

@@ -93,7 +93,7 @@ A list of all game blips as of build 3258 are shown below.
 <div class="blip"><div><div><img src="/blips/radar_weapon_lower.gif" alt="radar_weapon_lower"></div></div><span><strong>12</strong><br>radar_weapon_lower</span></div>
 <div class="blip"><div><div><img src="/blips/radar_higher_ai.gif" alt="radar_higher_ai"></div></div><span><strong>13</strong><br>radar_higher_ai</span></div>
 <div class="blip"><div><div><img src="/blips/radar_lower_ai.gif" alt="radar_lower_ai"></div></div><span><strong>14</strong><br>radar_lower_ai</span></div>
-<div class="blip"><div><div><img src="/blips/radar_police_heli_spin.png" alt="radar_police_heli_spin"></div></div><span><strong>15</strong><br>radar_police_heli_spin</span></div>
+<div class="blip"><div><div><img src="/blips/radar_police_heli_spin.gif" alt="radar_police_heli_spin"></div></div><span><strong>15</strong><br>radar_police_heli_spin</span></div>
 <div class="blip"><div><div><img src="/blips/radar_police_plane_move.png" alt="radar_police_plane_move"></div></div><span><strong>16</strong><br>radar_police_plane_move</span></div>
 <!--<div class="blip"><div><div><img src="/blips/radar_numbered_1.png" alt="radar_numbered_1"></div></div><span><strong>17</strong><br>radar_numbered_1</span></div>
 <div class="blip"><div><div><img src="/blips/radar_numbered_2.png" alt="radar_numbered_2"></div></div><span><strong>18</strong><br>radar_numbered_2</span></div>
