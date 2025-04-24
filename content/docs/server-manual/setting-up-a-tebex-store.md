@@ -19,7 +19,7 @@ Before starting, ensure that you successfully [setup a FiveM-Server][setting-up-
 
 ## Tebex Store Setup
 1. Register a new account [here][tebex-registration].
-2. Verify your email adress. A link will be sent to your email adress.
+2. Verify your email address. A link will be sent to your email address.
 3. Check your personal details. If correct, start and complete the [identity verification][tebex-identity-verification].
 4. Create a [project][tebex-project]:
     - Provide a project name.
@@ -70,7 +70,7 @@ After setting up packages on your Tebex Store and within the wrapper itself, all
 6. Click **Settings** icon next to the command and set the **Require Player to be Online** to **Execute the command even if the player is offline**.
 7. Go to **Edit Package** and click **Update** to confirm the changes made.
 8. At this point you can setup your packages within the wrapper itself - you can do this within the <b>config.lua</b> inside the wrapper’s script folder on your server.
-9. Get your players to run **/redeem [Transaction ID]** on your server when they've made their purchase. The transaction ID will be sent to the players email adress after a purchase is made on your store.
+9. Get your players to run **/redeem [Transaction ID]** on your server when they've made their purchase. The transaction ID will be sent to the players email address after a purchase is made on your store.
 
 ## Useful Links
 
