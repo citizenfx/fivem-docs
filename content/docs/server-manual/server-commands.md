@@ -451,22 +451,30 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 
 | Pool name  | FiveM max increase | RedM max increase |
 | ---------- | ------------------ | ----------------- |
+| AnimStore | 20480 | - |
 | AttachmentExtension | 430 | 430 |
 | Building | 20000 | - |
+| CAvoidanceComponent | - | 1300 |
 | CDoorExtension (also known as MaxDoorExtensions) | - | 160 |
 | CLightEntity | - | 2000 |
 | CMoveObject | 600 | 100 |
+| CompEntity | - | 50 |
 | CPropSetObjectExtension | - | 950 |
+| CWeaponComponentInfo | 2048 | - |
+| DrawableStore | - | 50000 |
 | EntityDescPool | 20480 | - |
+| fragInstGta | 2000 | - |
 | FragmentStore | 14000 | 4000 |
+| GrassBatch | - | 2000 |
 | InteriorProxy | 450 | 450 |
 | LightEntity | 1000 | - |
 | netGameEvent | 400 | 400 |
+| Object | 2000 | 2000 |
+| ObjectIntelligence | 512 | - |
 | OcclusionInteriorInfo | 20 | 10 |
 | OcclusionPathNode | 5000 | 1500 |
 | OcclusionPortalEntity | 750 | 140 |
 | OcclusionPortalInfo | 750 | 140 |
-| fragInstGta | 2000 | - |
 | PortalInst | 225 | 150 |
 | ScaleformStore | 200 | 100 |
 | StaticBounds | 5000 | 6500 |
