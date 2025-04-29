@@ -9,48 +9,74 @@ Contrary to the other resources on this documentation (eg. chat, mapmanager and 
 For more information, you can join the [Discord Server](https://discord.gg/AFAAXzq).
 
 ## Main Features
-- Recipe-based Server Deployer: create a server in under 60 seconds!
-- Start/Stop/Restart your server instance or resources
-- Full-featured in-game admin menu:
-	- Player Mode: NoClip, God, SuperJump
-	- Teleport:  waypoint, coords and back
-	- Vehicle: Spawn, Fix, Delete, Boost
-	- Heal: yourself, everyone
-	- Send Announcements
-	- Reset World Area
-	- Show player IDs
-	- Player search/sort by distance, ID, name
-	- Player interactions: Go To, Bring, Spectate, Freeze
-	- Player troll: make drunk, set fire, wild attack
-	- Player ban/warn/dm
-- Access control:
-	- Login via Password or CitizenFX
-	- Admin permission system
-	- Action logging
-	- Brute-force protection
-- Discord Integration:
-	- Server configurable, persistent, auto-updated status embed
-	- Command to whitelist players
-	- Command to display player infos
-- Monitoring:
-	- Auto Restart FXServer on crash or hang
-	- Server’s CPU/RAM consumption
-	- Live Console (with log file, command history and search)
-	- Server threads performance chart with player count
-	- Server Activity (Log connections/disconnections, kills, chat, explosions and custom commands)
-- Player Manager:
-	- [Warning system](https://www.youtube.com/watch?v=DeE0-5vtZ4E)
-	- Ban (temporary or permanently) system
-	- Whitelist system (Discord member, Discord Role, Approved License, Admin-only)
-	- Take notes about players
-	- Keep track of player's play and session time
-	- Self-contained player database with backup tool (no MySQL required!)
-	- Clean/Optimize the database by removing old players, or bans/warns/whitelists
-- Real-time playerlist
-- Scheduled restarts with warning announcements and custom events
-- Translation Support
-- FiveM's Server CFG editor & validator
-- Responsive web interface with Dark Mode 😎
+
+### Server Management
+Start, stop, or restart your server instance or resources, and easily edit your server's configuration using the built-in server CFG editor and validator.
+
+### Server Recipes
+Get a server up and running in under 60 seconds using the powerful txAdmin recipe deployer.
+
+### Performance Analytics
+Gain detailed insights into your server's performance across all three threads via the in-depth performance chart, including player count tracking.
+
+### Player Management
+Manage players with simplicity using the full-featured txAdmin player manager:
+- Ban (temporary or permanent)
+- Warn players
+- Whitelist system (by Discord member, Role, License, Admin-only)
+- Take notes about players
+- Track player playtime and session time
+- Self-contained player database with backup and optimization tools
+
+### Security
+Secure your server with:
+- Cfx.re authentication
+- Admin permission system
+- Action logging
+- Brute-force protection
+- Password/CitizenFX login options
+
+### Monitoring
+Effortlessly monitor your server with:
+- Auto-restart on crashes or hangs
+- Live console with command history, search, and log file
+- RAM and CPU usage monitoring
+- Server activity logs (connections, disconnections, kills, chat, explosions, custom commands)
+
+### In-Game Admin Menu
+Manage players and resources directly from inside the game:
+- **Player Mode:** NoClip, God, SuperJump
+- **Teleport:** To waypoint, specific coordinates, return
+- **Vehicle:** Spawn, fix, delete, boost
+- **Heal:** Yourself or all players
+- **Player Interactions:** Go to player, bring player, spectate, freeze
+- **Trolling:** Make drunk, set fire, wild animal attack
+- **Communication:** Announcements, warn, ban, DM players
+- **Player Management:** Show player IDs, search/sort by distance, ID, name
+- **World Controls:** Reset world areas
+
+### Discord Integration
+Enhance server communication and management with:
+- Server-configurable, persistent, auto-updated status embeds
+- Whitelist players via Discord commands
+- View player information directly from Discord
+
+### Scheduled Server Restarts
+Set up automatic server restarts with custom warnings and event triggers.
+
+### Translation Support
+Multilingual support for global admins.
+
+### Responsive Web Interface
+Modern, responsive web panel with full dark mode support 😎.
+
+---
+
+## Server Stats
+
+| Servers Online | Admins | Bans Issued |
+|:--------------:|:------:|:-----------:|
+| 28.8k          | 155.0k | 2.16m       |
 
 ## Running (Windows/Linux)
 **txAdmin is included in all FXServer builds** above 2524, so to run it for the first time simply do the following:
