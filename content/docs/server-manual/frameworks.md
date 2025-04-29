@@ -15,12 +15,12 @@ While each framework comes with its own documentation for setup, we recommend le
 If there's a framework you believe should be included in this list, please submit a request by creating an issue in the documentation [issues section](https://github.com/citizenfx/fivem-docs/issues).
 
 # Frameworks (Lua) (Alphabetical Order) 
-- [ESX](https://github.com/esx-framework/esx-legacy) ([Docs](https://documentation.esx-framework.org/legacy/installation))
-- [ND](https://github.com/ND-Framework/ND_Core) ([Docs](https://ndcore.dev/setup))
-- [QBCore](https://github.com/qbcore-framework/qb-core) ([Docs](https://docs.qbcore.org/qbcore-documentation/))
-- [Qbox](https://github.com/Qbox-project/qbx_core) ([Docs](https://docs.qbox.re/installation))
-- [vRP](https://github.com/vRP-framework/vRP) ([Docs](https://vrp-framework.github.io/vRP/))
-- [VORP](https://github.com/VORPCORE/vorp-core-lua) ([Docs](https://docs.vorp-core.com)) (RedM)
+- [ESX](https://github.com/esx-framework/esx-legacy) ([Docs](https://documentation.esx-framework.org/legacy/installation)) ([Discord](https://discord.com/invite/RPX2GssV6r)) (FiveM)
+- [ND](https://github.com/ND-Framework/ND_Core) ([Docs](https://ndcore.dev/setup)) ([Discord](https://discord.com/invite/Z9Mxu72zZ6)) (FiveM)
+- [QBCore](https://github.com/qbcore-framework/qb-core) ([Docs](https://docs.qbcore.org/qbcore-documentation/)) ([Discord](https://discord.com/invite/qbcore)) (FiveM)
+- [Qbox](https://github.com/Qbox-project/qbx_core) ([Docs](https://docs.qbox.re/installation)) ([Discord](https://discord.com/invite/qbox))
+- [vRP](https://github.com/vRP-framework/vRP) ([Docs](https://vrp-framework.github.io/vRP/)) ([Discord](https://discord.com/invite/xzGZBAb)) 
+- [VORP](https://github.com/VORPCORE/vorp-core-lua) ([Docs](https://docs.vorp-core.com)) ([Discord](https://discord.com/invite/JjNYMnDKMf)) (RedM)
 
 ## Need Help?
 If you require assistance with any of these frameworks, refer to their respective documentation. Please note that we are not affiliated with any specific framework and do not provide support.
