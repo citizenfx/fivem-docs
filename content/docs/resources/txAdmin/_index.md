@@ -6,7 +6,7 @@ title: txAdmin
 **txAdmin** is a **full featured** web panel to help you Manage & monitor your FiveM Server.  
 Contrary to the other resources on this documentation (eg. chat, mapmanager and etc), **txAdmin** already comes preinstalled with FXServer, so you do not need to download it separately.
 
-For more information, you can join the [Discord Server](https://discord.gg/AFAAXzq).
+For more information, you can join the [Discord Server](https://discord.gg/AFAAXzq) or visite the website [Website](https://txadmin.gg/).
 
 ## Main Features
 
