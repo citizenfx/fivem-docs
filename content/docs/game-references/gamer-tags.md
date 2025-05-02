@@ -207,7 +207,9 @@ Special flags controls
 
 ### Wanted level
 
-For the **WantedStar** flag you can set number that will be shown inside of star icon: ### Lua
+For the **WantedStar** flag you can set number that will be shown inside of star icon:
+
+### Lua
 
 ``` lua
 -- Set the number that will be set inside the wanted star icon
@@ -230,7 +232,7 @@ Function.Call(
 
 ### Health bar colour
 
-Health bar has 0 opacity by default. Colour of health bar changes using it's own native: ### Lua
+Health bar has 0 opacity by default. Colour of health bar changes using it's own native:
 
 ### Lua
 
