@@ -190,7 +190,7 @@ Every build includes all content and changes from the builds before.
 An experimental flag that determines how the client will run older game builds when requested with `sv_enforceGameBuild`. Either true or false.
 
 - true: the default value for builds below 12872. This will keep the original client behavior, the client will download all the files for the specific game build and run old game build executable.
-- false: the new default value (default for server build 12872 and above). The client will run executable for the latest stable game build, regardless of which game build is enforced. Instead the client will only load the specific DLCs related to the game build specified in `sv_enforceGameBuild`. From the user perspective the game will look the same way as under `sv_replaceExeToSwitchBuilds = true`.
+- false: the default value for server builds above 12871. The client will run executable for the latest stable game build, regardless of which game build is enforced. Instead the client will only load the specific DLCs related to the game build specified in `sv_enforceGameBuild`. From the user perspective the game will look the same way as under `sv_replaceExeToSwitchBuilds = true`.
 
     When using `set sv_enforceGameBuild 1` the client will run as if `sv_replaceExeToSwitchBuilds = false` regardless of if it was set to `true` before. That's the only way how base game without DLCs behavior can be achieved.
 
