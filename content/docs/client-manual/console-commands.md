@@ -16,7 +16,7 @@ User commands can be used in the client console by anyone, and don't require add
 ### connect \<server\>
 Connects to a server using a given IP address and port, or URL.
 
-Example: `connect 127.0.0.1:30120`, `connect "https://fivem.net/"`, `connect cfx.re/join/e23ywr`
+Example: `connect 127.0.0.1:30120`, `connect "https://fivem.net/"`, `connect cfx.re/join/y4lg95`
 
 
 ### disconnect

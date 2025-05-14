@@ -3,12 +3,12 @@ title: startInitFunctionOrder
 toc_hide: true
 ---
 
-Triggered after [startInitFunction](./startInitFunction), with additional data.
+Triggered after [startInitFunction](../startInitFunction), with additional data.
 May be triggered multiple times under the same init function type, but with a different `order` value.
 
-Several [initFunctionInvoking](./initFunctionInvoking) and in turn [initFunctionInvoked](./initFunctionInvoked) events will be triggered after this.
+Several [initFunctionInvoking](../initFunctionInvoking) and in turn [initFunctionInvoked](../initFunctionInvoked) events will be triggered after this.
 After the init functions were invoked, **startInitFunctionOrder** may be triggered again with additional functions,
-or [endInitFunction](./endInitFunction) will be triggered, finalizing the process.
+or [endInitFunction](../endInitFunction) will be triggered, finalizing the process.
 
 Event Data
 ----------

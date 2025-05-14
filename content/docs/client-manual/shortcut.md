@@ -59,4 +59,4 @@ Where `XXXX` will represent the build number you wish. You can find the list [he
 
 ---
 
-Please note that this will not affect FiveM impact. You can easily delete / restart the steps if you missed something. For any issue join our [discord](discord.gg/fivem).
+Please note that this will not affect FiveM impact. You can easily delete / restart the steps if you missed something. For any issue join our [discord](https://discord.gg/fivem).

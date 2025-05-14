@@ -102,16 +102,16 @@ window.addEventListener('message', (event) => {
 ```
 
 ### Event List
-- [loadProgress](./loadProgress)
-- [onLogLine](./onLogLine)
-- [startDataFileEntries](./startDataFileEntries)
-- [onDataFileEntry](./onDataFileEntry)
-- [performMapLoadFunction](./performMapLoadFunction)
-- [endDataFileEntries](./endDataFileEntries)
-- [startInitFunction](./startInitFunction)
-- [startInitFunctionOrder](./startInitFunctionOrder)
-- [initFunctionInvoking](./initFunctionInvoking)
-- [initFunctionInvoked](./initFunctionInvoked)
-- [endInitFunction](./endInitFunction)
+- [loadProgress](../loadProgress)
+- [onLogLine](../onLogLine)
+- [startDataFileEntries](../startDataFileEntries)
+- [onDataFileEntry](../onDataFileEntry)
+- [performMapLoadFunction](../performMapLoadFunction)
+- [endDataFileEntries](../endDataFileEntries)
+- [startInitFunction](../startInitFunction)
+- [startInitFunctionOrder](../startInitFunctionOrder)
+- [initFunctionInvoking](../initFunctionInvoking)
+- [initFunctionInvoked](../initFunctionInvoked)
+- [endInitFunction](../endInitFunction)
 
 [resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest

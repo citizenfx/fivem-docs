@@ -3,10 +3,10 @@ title: initFunctionInvoking
 toc_hide: true
 ---
 
-Triggered when an init function is being invoked, as a result of [startInitFunctionOrder](./startInitFunctionOrder).
+Triggered when an init function is being invoked, as a result of [startInitFunctionOrder](../startInitFunctionOrder).
 
-Several [onDataFileEntry](./onDataFileEntry) may be triggered after this.
-After the init function finishes invoking, [initFunctionInvoked](./initFunctionInvoked) will be triggered.
+Several [onDataFileEntry](../onDataFileEntry) may be triggered after this.
+After the init function finishes invoking, [initFunctionInvoked](../initFunctionInvoked) will be triggered.
 
 Event Data
 ----------

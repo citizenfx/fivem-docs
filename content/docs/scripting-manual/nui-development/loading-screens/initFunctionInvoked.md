@@ -3,7 +3,7 @@ title: initFunctionInvoked
 toc_hide: true
 ---
 
-Triggered after an init function was invoked, after [initFunctionInvoking](./initFunctionInvoking).
+Triggered after an init function was invoked, after [initFunctionInvoking](../initFunctionInvoking).
 
 Event Data
 ----------
