@@ -29,7 +29,7 @@ You can also add the following in this file:
 SavedBuildNumber=1604
 ```
 
-You can find the list of game builds [here](docs/server-manual/server-commands/#sv_enforcegamebuild-build).
+You can find the list of game builds [here](/docs/server-manual/server-commands/#sv_enforcegamebuild-build).
 
 This will launch FiveM directly into the specified build so you don't have to transition when connecting to servers on the specified build.
 
@@ -90,4 +90,4 @@ DisableCrashUpload=0
 Setting this to `DisableCrashUpload=1` will disable the game from automatically uploading the crash dumps to the Cfx Sentry.
 You can see more [here](https://github.com/citizenfx/fivem/blob/1b01a54ea0803c8e06ef7e15bb1ae3a3d64de085/code/client/launcher/MiniDump.cpp#L1646).
 
-***Please note that this file shouldn't be modified if you don't know what you are doing. For any issue join our [discord](discord.gg/fivem).***
+***Please note that this file shouldn't be modified if you don't know what you are doing. For any issue join our [discord](https://discord.gg/fivem).***

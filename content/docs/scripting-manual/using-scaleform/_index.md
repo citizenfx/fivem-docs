@@ -25,7 +25,7 @@ Scaleform doesn't implement some features from Flash:
 Interfacing
 -----------
 
-You can interface with scaleforms by performing native calls from the [GRAPHICS namespace](https://runtime.fivem.net/doc/natives/#n_GRAPHICS) with `scaleform` in their name.
+You can interface with scaleforms by performing native calls from the [GRAPHICS namespace](https://docs.fivem.net/natives/?n_GRAPHICS) with `scaleform` in their name.
 
 {{% alert theme="warning" %}}The game expects a .gfx to have a `TIMELINE` variable in the global scope. {{% /alert %}}
 
@@ -36,7 +36,7 @@ This variable serves as a kind of public API of the .gfx.
 It'd be pretty time consuming to explain in details how to bootstrap your first gfx thing, so instead please use the boilerplate:
 
 Related files:  
-[boilerplate.zip](/static/examples/using-scaleform/boilerplate.zip)
+[boilerplate.zip](/examples/using-scaleform/boilerplate.zip)
 
 ### Loading
 

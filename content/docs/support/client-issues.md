@@ -117,7 +117,7 @@ For all other inquiries, feel free to join our [Discord][discord] for a chat!
 [forum]: https://forum.cfx.re
 [forum-tech-support]: https://forum.cfx.re/c/technical-support
 [discord]: https://discord.gg/fivem
-[testing-server]: https://cfx.re/join/jm85gm
+[testing-server]: https://cfx.re/join/y4lg95
 [uninstalling]: https://support.cfx.re/hc/en-us/articles/360020967780-Uninstalling-FiveM
 [discrete-gpu]: https://forum.cfx.re/t/217731
 [support-create-etw-trace]: https://support.cfx.re/hc/en-us/articles/8366604193436-Creating-an-ETW-trace

@@ -14,7 +14,7 @@ These natives are usable in **all** runtimes.
 Runtime specific functions
 --------------------------
 Some functions are exclusive to the scripting runtime you're using, and are **not** documented
-in the [FiveM Native Reference List](https://runtime.fivem.net/doc/reference.html). Refer to their docs for more detail.
+in the [FiveM Native Reference List](https://docs.fivem.net/natives). Refer to their docs for more detail.
 
 - [Server-side functions in Lua](/docs/scripting-reference/runtimes/lua/server-functions)
 - [Server-side functions in JavaScript](/docs/scripting-reference/runtimes/javascript/server-functions)

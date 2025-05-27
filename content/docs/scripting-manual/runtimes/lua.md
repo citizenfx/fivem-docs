@@ -130,4 +130,4 @@ Lua specific functions
 [resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest/
 [grit]: http://gritengine.com
 [luadocs]: https://www.lua.org/manual/5.3/
-[natives-doc]: https://runtime.fivem.net/doc/reference.html
+[natives-doc]: https://docs.fivem.net/natives

@@ -16,7 +16,7 @@ User commands can be used in the client console by anyone, and don't require add
 ### connect \<server\>
 Connects to a server using a given IP address and port, or URL.
 
-Example: `connect 127.0.0.1:30120`, `connect "https://fivem.net/"`, `connect cfx.re/join/e23ywr`
+Example: `connect 127.0.0.1:30120`, `connect "https://fivem.net/"`, `connect cfx.re/join/y4lg95`
 
 
 ### disconnect
@@ -169,13 +169,6 @@ Restarts the localGame resource.
 Allows you to load in TXDs and drawables via an graphical interface.
 
 Usage: `modelviewer <true|false>`
-
-### net_maxPackets
-A configuration flag to tell the client how many packets it should send at minimum per second.
-
-The default value is 50, minimum is 1 and maximum is 200 per second.
-
-Usage: `net_maxPackets <number_of_packets>`
 
 ### net_printOwner \<objectID>
 Prints the owner of a network object ID.

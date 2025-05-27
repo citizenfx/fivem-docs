@@ -55,8 +55,8 @@ Where `X` will represent the level you wish to have (0-2 available). This will l
 %localappdata%\FiveM\FiveM.exe -b1604
 ```
 
-Where `XXXX` will represent the build number you wish. You can find the list [here](docs/server-manual/server-commands/#sv_enforcegamebuild-build). This will launch FiveM app directly to the build asked. This is good if you play on a specific server to avoid the "build transition".
+Where `XXXX` will represent the build number you wish. You can find the list [here](/docs/server-manual/server-commands/#sv_enforcegamebuild-build). This will launch FiveM app directly to the build asked. This is good if you play on a specific server to avoid the "build transition".
 
 ---
 
-Please note that this will not affect FiveM impact. You can easily delete / restart the steps if you missed something. For any issue join our [discord](discord.gg/fivem).
+Please note that this will not affect FiveM impact. You can easily delete / restart the steps if you missed something. For any issue join our [discord](https://discord.gg/fivem).

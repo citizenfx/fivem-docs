@@ -51,7 +51,7 @@ If this is not specified, the user will be allowed to connect.
 
 #### Dynamic handover
 
-`deferrals.handover` will allow you to set in a table the enpoints for a specific player on connection.
+`deferrals.handover` will allow you to provide a set of endpoints for a specific player on connection.
 
 This will look like this:
 ```lua

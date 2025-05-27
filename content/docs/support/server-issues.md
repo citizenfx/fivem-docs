@@ -72,10 +72,10 @@ To use more than 48 slots follow these steps.
 1. Use a license key with OneSync access
 2. Use the latest [server artifact][setting-up-server]
 3. Activate OneSync - add `set onesync on` to your server.cfg
-4. Set `sv_maxclients` in your server.cfg to a value higher than 48 (Depending on the Patreon perk you have)
+4. Set `sv_maxclients` in your server.cfg to a value higher than 48 (Depending on your [Element Club subscription](https://portal.cfx.re/subscriptions) tier)
 5. Restart your server
 
-You can easily link your Patreon account to "Keymaster" by following this helpful [support article][support-connect-patreon].
+To subscribe to Element Club, visit the subscriptions page on the [Cfx.re Portal](https://portal.cfx.re/subscriptions)
 
 If you are not seeing the changes in the server list, be patient until the server list updates. You will see the changes already in Direct Connect.
 
@@ -86,7 +86,7 @@ My server's name doesn't have colors
 
 You may be experiencing this in different cases. For example, the server colors show in Direct Connect, but not on the server list. Or it doesn't show at all. There are a couple of reasons why this may happen.
 
-1. No active [Patreon][patreon] pledge with the requirement minimum tier - FiveM Element Club Argentum 💿 or higher
+1. No active [Element Club subscription](https://portal.cfx.re/subscriptions) with the requirement minimum tier - FiveM Element Club Argentum 💿 or higher
 2. Incorrect usage of [server name formatting][chat-formatting]
 3. Didn't save and/or restart server
 4. Server list cache hasn't updated, be patient
@@ -113,7 +113,6 @@ For support, please check out our [support section][support-cfx-platform-server]
 
 Additionally, you can join our [Discord][discord] community and have a chat with us.
 
-[patreon]: https://patreon.com/fivem
 [forum]: https://forum.cfx.re/
 [discord]: https://discord.gg/fivem
 [pfsensenat]: https://docs.netgate.com/pfsense/en/latest/nat/outbound.html#static-port
@@ -121,5 +120,4 @@ Additionally, you can join our [Discord][discord] community and have a chat with
 [chat-formatting]: https://forum.cfx.re/t/67641
 [setting-up-server]: /docs/server-manual/setting-up-a-server
 [support-cfx-platform-server]: https://support.cfx.re/hc/en-us/sections/8856844172188-Cfx-re-Platform-Server-FXServer
-[support-connect-patreon]: https://support.cfx.re/hc/en-us/articles/8014624625052-Connect-your-Patreon-account
 [add-mp-preference-docs]: https://learn.microsoft.com/en-us/powershell/module/defender/add-mppreference

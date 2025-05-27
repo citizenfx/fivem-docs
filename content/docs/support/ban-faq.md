@@ -36,8 +36,7 @@ Even if you own or develop the server, a ban imposed while testing your anti-che
 
 Unauthorized Game Server Provider (GSP)
 ---------------------------------------
-There are situations where you may attempt to join a server and come across a message indicating that the server you're attempting to join is blocked due to it not being an authorized Game Server Provider (GSP). Based on our [Terms of Service](https://fivem.net/terms) you can see that the only GSP allowed to be used and advertise itself for FiveM is ZAP Hosting.
-While that is our only authorized Game Server Provider, you're welcome to use **any** Virtual Private Server of your choice as long as you have root access to the server itself. 
+There are situations where you may attempt to join a server and come across a message indicating that the server you're attempting to join is blocked due to it not being an authorized Game Server Provider (GSP). See the [Platform License Agreement](https://fivem.net/terms) for more information, and the [Server Hosting page](https://fivem.net/server-hosting) for a list of authorized partners.
 
 <br/>
 

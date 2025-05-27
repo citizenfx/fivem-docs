@@ -13,6 +13,7 @@ weight: 515
 - [GetPlayerIdentifiers](/docs/scripting-reference/runtimes/lua/functions/GetPlayerIdentifiers)
 - [GetPlayers](/docs/scripting-reference/runtimes/lua/functions/GetPlayers)
 - [PerformHttpRequest](/docs/scripting-reference/runtimes/lua/functions/PerformHttpRequest)
+- [PerformHttpRequestAwait](/docs/scripting-reference/runtimes/lua/functions/PerformHttpRequestAwait)
 - [RegisterNetEvent](/docs/scripting-reference/runtimes/lua/functions/RegisterNetEvent)
 - [RemoveEventHandler](/docs/scripting-reference/runtimes/lua/functions/RemoveEventHandler)
 - [TriggerClientEvent](/docs/scripting-reference/runtimes/lua/functions/TriggerClientEvent)

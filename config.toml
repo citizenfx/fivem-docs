@@ -72,10 +72,5 @@ name = "Terms of Service"
 url = "https://fivem.net/terms"
 weight = 60
 
-[[menu.main]]
-name = "<svg style='height: 16px; width: 16px;'><use xlink:href='#patreon-logo'></use></svg>"
-url = "https://patreon.com/fivem"
-weight = 70
-
 [params.ui]
 sidebar_menu_compact = true
