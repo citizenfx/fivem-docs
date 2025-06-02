@@ -66,7 +66,6 @@ Defines the supported game API sets for the resource.
 |  Name  |                                   Meaning                                    |
 | ------ | ---------------------------------------------------------------------------- |
 | common | Runs on any game, but can't access game-specific APIs - only CitizenFX APIs. |
-| gta4   | Runs on LibertyM.                                                            |
 | gta5   | Runs on FiveM.                                                               |
 | rdr3   | Runs on RedM.                                                                |
 
@@ -151,7 +150,7 @@ Defines a global function to be [exported](#export "wikilink") by a server scrip
 
 ### ui_page
 
-Sets the resource's [NUI]({{%  ref "/docs/scripting-manual/nui-development/full-screen-nui.md"  %}}) page to the defined file or URL. If specifying a a file, the file (along with its dependencies) has to be referenced using [files](#file "wikilink").
+Sets the resource's [NUI]({{%  ref "/docs/scripting-manual/nui-development/full-screen-nui.md"  %}}) page to the defined file or URL. If specifying a file, the file (along with its dependencies) has to be referenced using [files](#file "wikilink").
 
 ```lua
 ui_page 'html/index.html'
@@ -365,7 +364,7 @@ When present adds the specified convars to the 'Project Settings' page in FxDK.
 `CV_MULTI`: A drop-down selection menu, the first entry in Items is the default value.
 `title, convar_name, "CV_MULTI", items[{name, value}]`
 
-If your convars are replaced (`setr`) you will need to prepend `$` to the convar name:
+If your convars are replicated (`setr`) you will need to prepend `$` to the convar name:
 `{ "foo", "$my_convar", "CV_STRING", "bar" }`
 
 If your convars are server info (`sets`) you will need to prepend `#` to the convar name:

@@ -132,7 +132,6 @@ Example:
 #### Supported games
 | Name |   Marketing name    |
 | ---- | ------------------- |
-| gta4 | LibertyM for GTA:NY |
 | gta5 | FiveM for GTA:Five  |
 | rdr3 | RedM for RDR3       |
 
@@ -152,7 +151,7 @@ Example:
 
     sv_enforceGameBuild h4
     sv_enforceGameBuild mptuner
-    sv_enforceGameBuild 1355
+    sv_enforceGameBuild 3407
 
 Every build includes all content and changes from the builds before.
 
@@ -180,10 +179,7 @@ Every build includes all content and changes from the builds before.
 **RedM builds**
 
 | Number |                               Notes                               |
-| ------ | ----------------------------------------------------------------- |
-| 1311   | Mid 2020 update, not compatible with Red Dead Online licenses.    |
-| 1355   | December 2020 update, works with newer game editions such as RDO. |
-| 1436   | July 2021 update, includes new content from Blood Money DLC.      |
+| ------ | --------------------------------------------------------------
 | 1491   | September 2022 update, limited content/changes.                   |
 
 ### `sv_replaceExeToSwitchBuilds [newValue]`
