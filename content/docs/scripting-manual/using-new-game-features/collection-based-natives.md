@@ -3,7 +3,7 @@ title: Work with drawable components and props using collections
 weight: 481
 ---
 
-Inside the GTAV Ped drawable components and props are stored in named groups called collections. However, collections were previously unavailable for FiveM users. The drawable components and props were indexed through global index. On every TU (Title Update) the global index of custom drawable components and props would change (see below for more details on why it happens). This complicates migration to the latest game build.
+Inside the GTAV Ped drawable components and props are stored in named groups called collections. However, collections were previously unavailable for FiveM users. The drawable components and props were indexed through a global index. On every TU (Title Update), the global index of custom drawable components and props would change (see below for more details on why it happens). This complicates the migration to the latest game build.
 
 The new set of natives allows accessing drawable components and props through collections. The collection-based indexes remain stable after TUs. **So using these natives will simplify all future TU updates for a server.**
 
@@ -93,7 +93,7 @@ The base game name collection is an empty string. Names of other collections are
 There are three groups of new natives:
 - Natives to get general information about collections 
 - Natives to convert between global and local indexes.
-- Natives that are analogues to the existing natives that work with drawable components and props. But instead of working with global indexes thy work with collection names and local indexes.
+- Natives that are analogues to the existing natives that work with drawable components and props. But instead of working with global indexes they work with collection names and local indexes.
 
 #### General info natives
 

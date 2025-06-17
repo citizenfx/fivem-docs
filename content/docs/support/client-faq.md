@@ -3,7 +3,7 @@ title: Client FAQ
 weight: 810
 ---
 
-Will FiveM run on Xbox or Playstation?
+Will FiveM run on Xbox or PlayStation?
 -------------------------------------
 
 No. FiveM is developed exclusively for the PC version of GTA V. There are no plans to support consoles.
@@ -30,7 +30,7 @@ More about installing FiveM [here][installing-fivem].
 Will I get banned from GTA:Online for playing FiveM?
 ---------------------------------------
 
-Nope! [As mentioned on fivem.net](https://fivem.net/#no-bans), FiveM does not interact with the Rockstar Online Services other than to validate your game copy the first time you launch it. This validation emulates the game's interaction, and can not be detected by Rockstar. It also doesn't modify your game files at all, even when downloading server assets, so you don't have to do anything to move between FiveM or GTA:O.
+Nope! [As mentioned on fivem.net](https://fivem.net/#no-bans), FiveM does not interact with the Rockstar Online Services other than to validate your game copy the first time you launch it. This validation emulates the game's interaction, and cannot be detected by Rockstar. It also doesn't modify your game files at all, even when downloading server assets, so you don't have to do anything to move between FiveM or GTA:O.
 
 I'm running into issues, what can I do?
 ---------------------------------------

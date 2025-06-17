@@ -22,7 +22,7 @@ toc_hide: true
 
 ## What can you add?
 
-Shortcut allow you do add multiples things to launch FiveM with pre-defined settings. You can do the following:
+Shortcut allow you to add multiple things to launch FiveM with pre-defined settings. You can do the following:
 
 ### FiveM second instance
 
@@ -44,7 +44,7 @@ This method allows you to create a second instance of FiveM, which is particular
 %localappdata%\FiveM\FiveM.exe -pure_1
 ```
 
-Where `X` will represent the level you wish to have (0-2 available). This will launch FiveM app directly to the puremode level asked. This is good if you play on a specific server to avoid the "Puremode transition".
+Where `X` will represent the level you wish to have (0-2 available). This will launch FiveM application directly to the puremode level requested. This is good if you play on a specific server to avoid the "Puremode transition".
 
 ### Game build
 
@@ -55,7 +55,7 @@ Where `X` will represent the level you wish to have (0-2 available). This will l
 %localappdata%\FiveM\FiveM.exe -b1604
 ```
 
-Where `XXXX` will represent the build number you wish. You can find the list [here](/docs/server-manual/server-commands/#sv_enforcegamebuild-build). This will launch FiveM app directly to the build asked. This is good if you play on a specific server to avoid the "build transition".
+Where `XXXX` will represent the build number you wish. You can find the list [here](/docs/server-manual/server-commands/#sv_enforcegamebuild-build). This will launch FiveM application directly to the build requested. This is good if you play on a specific server to avoid the "build transition".
 
 ---
 

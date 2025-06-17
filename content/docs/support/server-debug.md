@@ -21,7 +21,7 @@ This section will explain how to create useful debugging dumps (called .dmp file
     procdump64.exe -accepteula -i
     ```
     This registers procdump as a debugger to capture certain crashes.
-4. Open task manager, click `"Details"`. Locate the *largest* `FXServer.exe`. There should be a `"PID"` column. Note down the number.
+4. Open Task Manager, click `"Details"`. Locate the *largest* `FXServer.exe`. There should be a `"PID"` column. Note down the number.
 5. Go back to your command prompt and type in:
     ```dos
     procdump64.exe -accepteula -e -h -mp pidhere

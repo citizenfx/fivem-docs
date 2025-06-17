@@ -9,6 +9,6 @@ layout: single
 Core events
 -----------
 
-These events are part of FiveM and do not require any resource.
+These events are part of FiveM and don’t require any additional resources.
 
 {{% events "server" %}}

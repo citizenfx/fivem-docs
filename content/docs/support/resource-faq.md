@@ -6,7 +6,7 @@ weight: 845
 What does "prohibited logic" mean?
 ----------------------------------
 
-The resource in question likely contains malicious code. Sometimes another resource "infects" other resources, so be sure to check the code of the mentioned resource. Prohibited logic usually includes code that can infect other resources, or that impact your overall gameplay experience.
+The resource in question likely contains malicious code. Sometimes another resource "infects" other resources, so be sure to check the code of the mentioned resource. Prohibited logic usually includes code that can infect other resources, or that impacts your overall gameplay experience.
 
 What are disallowed resources?
 ------------------------------
@@ -14,8 +14,8 @@ What are disallowed resources?
 While FiveM rarely takes action, we do want to avoid:
 
 - Paid resources outside of accepted methods as outlined by FiveM's Terms of Service
-- Protection rackets, in other words, (former) authors of hacks extorting server owners to buy their anticheat. This is in violation with FiveM's Terms of Service.
-- Global ban lists. We have no way to verify the quality of every anticheat, and it may very well be possible for a global ban list to ban players without good reason. With global ban lists, this impacts the overall gameplay experience of FiveM, as players are unable to join a large amount of server without sufficient reason.
+- Protection rackets, in other words, (former) authors of hacks extorting server owners to buy their anticheat. This is in violation of FiveM's Terms of Service.
+- Global ban lists. We have no way to verify the quality of every anticheat, and it may very well be possible for a global ban list to ban players without good reason. With global ban lists, this impacts the overall gameplay experience of FiveM, as players are unable to join a large number of servers without sufficient reason.
 
 
 Are anticheat resources allowed?

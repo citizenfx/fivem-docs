@@ -48,7 +48,7 @@ Controls the gap between the crosshair's center dot and the lines.
 Usage: `cl_crosshairgap 1.0`
 
 ### cl_crosshair_drawoutline \<bool\>
-Controls whether the crosshair should have outline or not. Used in conjunction with `cl_crosshair_outlinethickness`.
+Controls whether the crosshair should have outline or not. Used together with `cl_crosshair_outlinethickness`.
 
 Usage: `cl_crosshair_drawoutline <true|false>`
 
@@ -86,7 +86,7 @@ Controls the blue component in the crosshair's RGB color value.
 Usage: `cl_crosshaircolor_b 50`
 
 ### cl_crosshairusealpha \<bool\>
-Controls whether the crosshair should have transparency or not. Used in conjunction with `cl_crosshairalpha`. 
+Controls whether the crosshair should have transparency or not. Used together with `cl_crosshairalpha`. 
 
 Setting this command to `false` will set the crosshair's alpha to `200`, making it almost opaque. Set to `true` if you want to use custom transparency values via `cl_crosshairalpha`.
 
@@ -103,7 +103,7 @@ Unused, controls how far the crosshair's center spreads when moving or shooting.
 Usage: `cl_crosshair_dynamic_splitdist 7.0`
 
 ### cl_crosshair_dynamic_splitalpha_innermod \<float\>
-Unused, controls the transparency of the inner part of the crosshair's lines when moving or shooting
+Unused, controls the transparency of the inner part of the crosshair's lines when moving or shooting.
 
 Usage: `cl_crosshair_dynamic_splitalpha_innermod 1.0`
 

@@ -365,7 +365,7 @@ When present adds the specified convars to the 'Project Settings' page in FxDK.
 `CV_MULTI`: A drop-down selection menu, the first entry in Items is the default value.
 `title, convar_name, "CV_MULTI", items[{name, value}]`
 
-If your convars are replacted (`setr`) you will need to prepend `$` to the convar name:
+If your convars are replaced (`setr`) you will need to prepend `$` to the convar name:
 `{ "foo", "$my_convar", "CV_STRING", "bar" }`
 
 If your convars are server info (`sets`) you will need to prepend `#` to the convar name:

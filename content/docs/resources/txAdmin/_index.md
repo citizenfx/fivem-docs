@@ -3,8 +3,8 @@ title: txAdmin
 ---
 
 ## About
-**txAdmin** is a **full featured** web panel to help you Manage & monitor your FiveM Server.  
-Contrary to the other resources on this documentation (eg. chat, mapmanager and etc), **txAdmin** already comes preinstalled with FXServer, so you do not need to download it separately.
+**txAdmin** is a **full-featured** web panel to help you Manage & monitor your FiveM Server.  
+Contrary to the other resources on this documentation (eg. chat, mapmanager etc), **txAdmin** already comes preinstalled with FXServer, so you do not need to download it separately.
 
 For more information, you can join the [Discord Server](https://discord.gg/AFAAXzq).
 
@@ -31,7 +31,7 @@ For more information, you can join the [Discord Server](https://discord.gg/AFAAX
 - Discord Integration:
 	- Server configurable, persistent, auto-updated status embed
 	- Command to whitelist players
-	- Command to display player infos
+	- Command to display player info
 - Monitoring:
 	- Auto Restart FXServer on crash or hang
 	- Server’s CPU/RAM consumption
@@ -40,7 +40,7 @@ For more information, you can join the [Discord Server](https://discord.gg/AFAAX
 	- Server Activity (Log connections/disconnections, kills, chat, explosions and custom commands)
 - Player Manager:
 	- [Warning system](https://www.youtube.com/watch?v=DeE0-5vtZ4E)
-	- Ban (temporary or permanently) system
+	- Ban (temporarily or permanently) system
 	- Whitelist system (Discord member, Discord Role, Approved License, Admin-only)
 	- Take notes about players
 	- Keep track of player's play and session time

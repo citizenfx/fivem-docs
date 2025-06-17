@@ -16,7 +16,7 @@ FiveM singleplayer
 ------------------
 FiveM also ships with a customized singleplayer mode. This brings the FiveM experience to singleplayer. For this to
 work, you currently need to have a valid savegame from the original game. Save your game at least once before starting
-FiveM SP, and copy it into the FiveM profile directory in Documents\Rockstar Games\GTA V (the one with a fivem_set.bin).
+FiveM singleplayer (SP), and copy it into the FiveM profile directory in Documents\Rockstar Games\GTA V (the one with a fivem_set.bin).
 
 Using plugins
 -------------

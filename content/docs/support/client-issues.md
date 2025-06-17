@@ -9,13 +9,12 @@ obscure issue? Find the most common issues here.
 I crash when playing on a server
 --------------------------------
 Crashes are fairly often related to a server-specific issue. To make sure your crash isn't related to a specific
-server, it is advised to join the [FiveM.net testing server][testing-server]. If that server works without your issue, we
-recommend you to contact the server owners of the server where you're experiencing crashes on. Otherwise, read on.
+server, it is advised to join the [FiveM.net testing server][testing-server]. If that server works without your issue, we recommend that you contact the owners of the server where you're experiencing crashes. Otherwise, read on.
 
 I've been banned on a server
 ----------------------------
 FiveM is not responsible for what you do on servers, or what server admins do to you. If you believe you've been
-falsely banned from a server, contact the server owners. FiveM can not and will not provide support for this matter.
+falsely banned from a server, contact the server owners. FiveM cannot and will not provide support for this matter.
 
 I've been globally banned from FiveM
 ------------------------------------
@@ -28,7 +27,7 @@ Please refer to the following support [article][support-could-not-find-game-exe]
 FiveM is already installed
 --------------------------
 <!-- https://media.discordapp.net/attachments/455024366091108352/479267390836834306/unknown.png -->
-After you installed FiveM, you don't need to use the same FiveM.exe file anymore. Use the shortcut from your Windows
+After installing FiveM, you don't need to use the same FiveM.exe file anymore. Use the shortcut from your Windows
 start menu. Press the Start button on your taskbar and look for FiveM there.
 
 If you uninstalled FiveM by deleting the shortcut, you might have to [uninstall][uninstalling] FiveM properly.
@@ -57,11 +56,11 @@ Please refer to the following support [article][support-privcache-failed].
 
 Entry Point Not Found
 ------------------------------
-Delete `v8.dll`, `v8_libbase.dll`, `v8_libplatform.dll` if available in your `C:\Windows\system32` directory. These are (leftover) files from other applications that incorrectly use `system32` to place these files. FiveM loads dll's from `system32` first, resulting in these incorrect dll's being loaded.
+Delete `v8.dll`, `v8_libbase.dll`, `v8_libplatform.dll` if available in your `C:\Windows\system32` directory. These are (leftover) files from other applications that incorrectly use `system32` to place these files. FiveM loads DLLs from `system32` first, resulting in these incorrect DLLs being loaded.
 
 Moving of xyz.exe failed (err = 32)
 ------------------------------
-First check your task manager for existing FiveM related processes; if you see them, close them. If that doesn't fix the issue, you may want to submit a [support ticket][antivirus-ticket] regarding your antivirus.
+First, check your Task Manager for existing FiveM related processes; if you see them, close them. If that doesn't fix the issue, you may want to submit a [support ticket][antivirus-ticket] regarding your antivirus.
 
 Stuck on 'Starting FiveM, we're getting there'
 ------------------------------------------------------------
@@ -71,11 +70,6 @@ If this occurs, it is often caused by aggressive antivirus settings. You may wan
 Stuck on a rotating splash screen
 ---------------------------------
 Delete `%appdata%\citizenfx\ros_id.dat` and `%localappdata%\digitalentitlements`.
-
-Stuck on a black screen
------------------------
-This is a common issue with certain NVIDIA drivers. Stay patient, it takes a minute to load. This often
-happens to other games too.
 
 Stuck on a colored background but no menu
 ------------------------------
@@ -94,14 +88,14 @@ Please refer to the following support [article][support-create-etw-trace] to cre
 
 I have an NVIDIA GPU and FiveM hanged
 -----------------------------------------
-FiveM hangs when using NVIDIA GPUs as of recently are not uncommon (especially on most recent drivers), efforts were made, trying to contact NVIDIA, but no clear response was given. As of now, we're trying to figure out a way to resolve hangs for this specific GPU vendor, but we need your help on this, and here's how you can help us:
+Recently, FiveM hangs on NVIDIA GPUs have become more common, especially with the latest drivers. Efforts have been made to contact NVIDIA, but no clear response has been given. As of now, we're trying to figure out a way to resolve hangs for this specific GPU vendor, but we need your help on this, and here's how you can help us:
 
 Once the NVIDIA 'crash' dialog is shown, follow these steps:
 1. Hold `WinKey + R` and type `taskmgr` followed by enter, it's important that you don't close the process while following this guide.
 2. Once `Task Manager` opens, go into the `Details` tab.
 3. Find `FiveM_GTAProcess.exe`, right click it and click on `Create dump file`.
 4. Wait until the process is dumped, it will be created in the following directory: `C:\Users\xxxx\AppData\Local\Temp\FiveM_GTAProcess.DMP`
-5. Click `Open File Location` and zip up the following file: `FiveM_GTAProcess.DMP`, you can zip up a file by right clicking it, followed by clicking `Send To -> Compressed (zipped) folder` on the context menu.
+5. Click `Open File Location` and zip up the following file: `FiveM_GTAProcess.DMP`, you can zip up a file by right clicking it, followed by clicking `Send to > Compressed (zipped) folder` on the context menu.
 6. Contact [CFX Support][email] or one of the elements on our [Discord][discord] once you have the process dump ready to send.
 
 Additionally, you may still enjoy FiveM by rolling back to older drivers such as 471, but we encourage you to send these reports, prior to doing this!

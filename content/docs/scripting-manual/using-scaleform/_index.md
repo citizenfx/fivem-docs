@@ -33,7 +33,7 @@ This variable serves as a kind of public API of the .gfx.
 
 ### Boilerplate
 
-It'd be pretty time consuming to explain in details how to bootstrap your first gfx thing, so instead please use the boilerplate:
+It'd be pretty time-consuming to explain in detail how to bootstrap your first gfx thing, so instead please use the boilerplate:
 
 Related files:  
 [boilerplate.zip](/examples/using-scaleform/boilerplate.zip)
@@ -45,7 +45,7 @@ Related files:
 
 ### Invoking functions in GFx
 
-Please note that this is a low-level api, the C\# runtime has an [easy-to-use high-level abstraction](https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/Scaleform.cs); and even if you don't know C\# you can use it as a reference usage of function calling natives.
+Please note that this is a low-level API, the C\# runtime has an [easy-to-use high-level abstraction](https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/Scaleform.cs); and even if you don't know C\# you can use it as a reference usage of function calling natives.
 
 **&gt;** Call {{% native_link "BEGIN_SCALEFORM_MOVIE_METHOD" %}} to initialize the function call, pass it the `handle` of the GFx, and a function name string, which **should be a member of the global TIMELINE variable** in ActionScript.
 
@@ -65,14 +65,14 @@ You can draw scaleform using one of these commands, **red, green, blue, alpha an
 
 -   {{% native_link "DRAW_SCALEFORM_MOVIE" %}} for drawing gfx in 2D on a specific position
 -   {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN" %}} also draws gfx in 2D, however in fullscreen
--   {{% native_link "DRAW_SCALEFORM_MOVIE_3D" %}} **do note that if you have blackout enabled this will be drawn with “solarized” and shifted to yellow colours**.
+-   {{% native_link "DRAW_SCALEFORM_MOVIE_3D" %}} **do note that if you have blackout enabled this will be drawn with “solarized” and shifted to yellow colors**.
 
 Masking
 -------
 
 Can be faked using the function {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN_MASKED" %}}, where the first gfx is what you want to render, and the second gfx is a mask for it.
 
-This masking has no antialiasing, it doesn't perform “smooth” masking, if a particular pixel of masking gfx is not fully transparent, then the underlying pixel will be fully shown.
+This masking has no anti-aliasing, it doesn't perform “smooth” masking, if a particular pixel of masking gfx is not fully transparent, then the underlying pixel will be fully shown.
 
 Using textures
 --------------

@@ -152,11 +152,11 @@ This setup can have a few variations as well:
 ## Local TLS Proxy
 
 The local TLS Proxy setup can be useful if you can't tunnel the TLS traffic with services like CloudFlare, but you still have to protect the FXServer against specific TLS attacks. 
-This guide is using nginx as a example, but you can setup any other reverse proxy such as [traefik](https://doc.traefik.io/traefik/) or [envoy](https://www.envoyproxy.io/) as well.
+This guide is using nginx as an example, but you can setup any other reverse proxy such as [traefik](https://doc.traefik.io/traefik/) or [envoy](https://www.envoyproxy.io/) as well.
 
 ### TCP Endpoint port change
 
-First you need to change the tcp endpoint on the server to use a different port. In this sample we use 30121 as the none public accessible port that the FXServer is using.
+First you need to change the tcp endpoint on the server to use a different port. In this sample we use 30121 as the non-public accessible port that the FXServer is using.
 Usually you will find the `endpoint_add_tcp` defined inside your `server.cfg`. After you found it change its parameter to `"0.0.0.0:30121"`.
 ```
 endpoint_add_tcp "0.0.0.0:30121"
@@ -207,7 +207,7 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key
 
 ### Block 30121 port access
 
-As an last step you have to block the 30121 port to be accessible from the outside.
+As a last step you have to block the 30121 port to be accessible from the outside.
 When the server host supports a custom firewall configuration inside the configuration panel use that.
 Otherwise rely on the different operating system implementations.
 

@@ -8,7 +8,7 @@ description: >
 <!-- TODO: format this like client commands? -->
 
 Console commands can be executed either using an RCon tool, directly from the server console interface, a server configuration
-file, the server command line, or (if a resource is allowed by the ACL) the [ExecuteCommand]({{% native "EXECUTE_COMMAND" %}}) function.
+file, the server command line, or (if a resource is permitted by the ACL) the [ExecuteCommand]({{% native "EXECUTE_COMMAND" %}}) function.
 
 Adding a custom RCon command can be done using the [RegisterCommand]({{% native "REGISTER_COMMAND" %}}) function on the
 server, or the (legacy) `rconCommand` event.
@@ -26,7 +26,7 @@ Example:
 
 ### `stop [resourceName]`
 
-Stops the resource specified in the argument, if it was started. As with `start`, one can also specify a category name.
+Stops the resource specified in the argument, if it was started. As with `start`, you can also specify a category name.
 
 Example:
 
@@ -36,7 +36,7 @@ Example:
 
 Restarts the resource specified in the argument, if it was started. If it wasn't, starts the resource specified in the argument.
 
-As with `start` and `stop`, one can also specify a category name.
+As with `start` and `stop`, you can also specify a category name.
 
 Example:
 
@@ -312,7 +312,7 @@ Different actions exist to alter this behavior:
 
 | Action  | Description |
 | ------  | ---------------------------------------------------------- |
-| noprint | Will stop anything from being printed at a trace listener level. |
+| noprint | Will stop anything from being printed at the trace listener level. |
 | drop    | Will cause the output to be dropped at `Printfv`, so it won't reach any print listeners. |
 | devonly | Will apply `drop` action behavior and will only drop the output if the [developer](/docs/client-manual/console-commands/#developer) command is set to `false`. |
 
@@ -389,9 +389,9 @@ This is set to true by default
 
 ### `sv_experimentalOnesyncPopulation [true|false]`
 
-A boolean console variable introduced in server version 8823 that fix an oversight in older server version that incorrectly limited the amount of entity ids to `8192` instead of the proper `65535` when both `set onesync on` and `set onesync_population false`.
+A boolean console variable introduced in server version 8823 that fixes an oversight in older server versions that incorrectly limited the amount of entity ids to `8192` instead of the proper `65535` when both `set onesync on` and `set onesync_population false`.
 
-This ConVar doesn't change if population spawns on the server, you still need to use the `onesync_population` ConVar for this.
+This ConVar does not affect whether population spawns on the server, you still need to use the `onesync_population` ConVar for this.
 
 NOTE: Using this ConVar also opts you into using `sv_experimentalStateBagsHandler`
 
@@ -399,7 +399,7 @@ This is set to true by default
 
 ### `sv_experimentalNetGameEventHandler [true|false]`
 
-A boolean console variable introduced in server version 9149 that uses the new serialization API to improve the speed of packing/unpacking GTA game events, adds checks for if entities sent with the game events are relevant to target client, along side improving backwards compatibility with future title updates.
+A boolean console variable introduced in server version 9149 that uses the new serialization API to improve the speed of packing/unpacking GTA game events, adds checks for if entities sent with the game events are relevant to target client, alongside improving backward compatibility with future title updates.
 
 NOTE: Using this ConVar also opts you into using `sv_experimentalStateBagsHandler` and `sv_experimentalOneSyncPopulation`
 
@@ -444,7 +444,7 @@ increase_pool_size "TxdStore" 6000
 increase_pool_size "CMoveObject" 15
 ```
 
-This can only be specified at startup, and can not be changed at runtime. To join servers with different pools sizes client would have to restart the game - similarly to how it works with `sv_enforceGameBuild` and `sv_pureLevel`. If the client connects to the servers with the same pool size settings - restart will only happen during the first connection.
+This can only be specified at startup, and cannot be changed at runtime. To join servers with different pools sizes client would have to restart the game - similarly to how it works with `sv_enforceGameBuild` and `sv_pureLevel`. If the client connects to the servers with the same pool size settings - restart will only happen during the first connection.
 
 Pool size increase requests are validated on the server and client side. On the server side, if the pool is not allowed to be resized or the size increase exceeds the allowed limit - the command will have no effect and warning message will be displayed in the logs. On the client side - the client will not be able to connect to a server that requests invalid pool sizes (this should only happen if the server bypassed the server side check somehow).
 
@@ -488,10 +488,10 @@ You can explore most of the current pools and their sizes using  `F8 > Tools > S
 It is possible to bypass the pool size limitations for development purposes. In this case the pool size validation will be skipped. In order to do so you need to set `moo` [convar](/docs/scripting-reference/convars/#standard-convars) to `31337` independently on server and client side:
 
 - Add `set moo 31337` to your server config.
-- Add `+set moo 31337` flag when running your client. Similarly to how it's done to turn on [the developer mode](/docs/client-manual/console-commands/#developer-commands).
+- Add the `+set moo 31337` flag when running your client. Similarly to how it's done to turn on [the developer mode](/docs/client-manual/console-commands/#developer-commands).
 
 {{% alert color="warning" %}}
-This is for development and debugging purposes only. Never use it to bypass limitations for your production environment. If you set pool sizes outside of supported limits - you are on your own. If you believe that the limits should be adjusted - reach out to Cfx team by opening a github issue requesting the limit increased with a reason why.
+This is for development and debugging purposes only. Never use it to bypass limitations for your production environment. If you set pool sizes outside of supported limits - you are on your own. If you believe that the limits should be adjusted - reach out to the Cfx team by opening a github issue requesting the limit increased with a reason why.
 {{% /alert %}}
 
 ## Access control commands

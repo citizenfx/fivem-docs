@@ -23,7 +23,7 @@ Before starting, ensure that you successfully [setup a FiveM-Server][setting-up-
 3. Check your personal details. If correct, start and complete the [identity verification][tebex-identity-verification].
 4. Create a [project][tebex-project]:
     - Provide a project name.
-    - Provide the preffered currency
+    - Provide the prefered currency
     - Provide the type of the project. If you are running a server choose "<em>I operate a game server</em>".
 5. Open your Tebex Control Panel and click [Integrations > Game Servers][tebex-integration-game-servers].
 6. Click **Connect Game Server** > **Plugin**.
@@ -75,7 +75,7 @@ After setting up packages on your Tebex Store and within the wrapper itself, all
 ## Useful Links
 
 [Tebex FAQs][tebex-faq]<br>
-[Tebex Identitiy Verification][tebex-identity-verification]<br>
+[Tebex Identity Verification][tebex-identity-verification]<br>
 [Tebex Store Review][tebex-review]<br>
 [Tips for getting your store application approved][tebex-tips-store-application]
 
