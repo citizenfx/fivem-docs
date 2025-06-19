@@ -276,6 +276,14 @@ weight: 760
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/driftchavosv6.webp" alt="Chavos V6">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Chavos V6</span>
+                <span><strong>Hash:</strong> 457814204</span>
+                <span><strong>Model Name:</strong> driftchavosv6</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/cog55.webp" alt="Cognoscenti 55">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Cognoscenti 55</span>
@@ -313,6 +321,22 @@ weight: 760
                 <span><strong>Display Name:</strong> Deity</span>
                 <span><strong>Hash:</strong> 1532171089</span>
                 <span><strong>Model Name:</strong> deity</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/hardy.webp" alt="Hardy">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Hardy</span>
+                <span><strong>Hash:</strong> 1580292663</span>
+                <span><strong>Model Name:</strong> hardy</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/drifthardy.webp" alt="Hardy">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Hardy</span>
+                <span><strong>Hash:</strong> -401558446</span>
+                <span><strong>Model Name:</strong> drifthardy</span>
             </div>
         </div>
         <div class="vehicle">
@@ -385,6 +409,14 @@ weight: 760
                 <span><strong>Display Name:</strong> Intruder</span>
                 <span><strong>Hash:</strong> 886934177</span>
                 <span><strong>Model Name:</strong> intruder</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/minimus.webp" alt="Minimus">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Minimus</span>
+                <span><strong>Hash:</strong> -1101107018</span>
+                <span><strong>Model Name:</strong> minimus</span>
             </div>
         </div>
         <div class="vehicle">
@@ -706,6 +738,14 @@ weight: 760
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/everon3.webp" alt="Everon RS">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Everon RS</span>
+                <span><strong>Hash:</strong> 554408685</span>
+                <span><strong>Model Name:</strong> everon3</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/fq2.webp" alt="FQ 2">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> FQ 2</span>
@@ -903,6 +943,14 @@ weight: 760
                 <span><strong>Display Name:</strong> Vivanite</span>
                 <span><strong>Hash:</strong> 2922168362</span>
                 <span><strong>Model Name:</strong> vivanite</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/woodlander.webp" alt="Woodlander">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Woodlander</span>
+                <span><strong>Hash:</strong> 1966698497</span>
+                <span><strong>Model Name:</strong> woodlander</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1262,6 +1310,14 @@ weight: 760
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/driftdominator10.webp" alt="Dominator FX">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Dominator FX</span>
+                <span><strong>Hash:</strong> -939601823</span>
+                <span><strong>Model Name:</strong> driftdominator10</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/driftyosemite.webp" alt="Drift Yosemite">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Drift Yosemite</span>
@@ -1371,6 +1427,14 @@ weight: 760
                 <span><strong>Display Name:</strong> Gauntlet Classic Custom</span>
                 <span><strong>Hash:</strong> 2172320429</span>
                 <span><strong>Model Name:</strong> gauntlet5</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/driftgauntlet4.webp" alt="Gauntlet Hellfire">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Gauntlet Hellfire</span>
+                <span><strong>Hash:</strong> -361348193</span>
+                <span><strong>Model Name:</strong> driftgauntlet4</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1686,6 +1750,14 @@ weight: 760
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/tampa4.webp" alt="Tampa GT">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Tampa GT</span>
+                <span><strong>Hash:</strong> -1508420500</span>
+                <span><strong>Model Name:</strong> tampa4</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/tulip.webp" alt="Tulip">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Tulip</span>
@@ -1857,6 +1929,14 @@ weight: 760
                 <span><strong>Display Name:</strong> Cheetah Classic</span>
                 <span><strong>Hash:</strong> 223240013</span>
                 <span><strong>Model Name:</strong> cheetah2</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/cheetah3.webp" alt="LSCM Cheetah Classic">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> LSCM Cheetah Classic</span>
+                <span><strong>Hash:</strong> 471399650</span>
+                <span><strong>Model Name:</strong> cheetah3</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2770,6 +2850,14 @@ weight: 760
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/rapidgt4.webp" alt="Rapid GT X">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Rapid GT X</span>
+                <span><strong>Hash:</strong> 1761301369</span>
+                <span><strong>Model Name:</strong> rapidgt4</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/raptor.webp" alt="Raptor">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Raptor</span>
@@ -2855,6 +2943,14 @@ weight: 760
                 <span><strong>Display Name:</strong> Sentinel Classic Widebody</span>
                 <span><strong>Hash:</strong> 2938086457</span>
                 <span><strong>Model Name:</strong> sentinel4</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/sentinel5.webp" alt="Sentinel GTS">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Sentinel GTS</span>
+                <span><strong>Hash:</strong> -1585673997</span>
+                <span><strong>Model Name:</strong> sentinel5</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3325,6 +3421,14 @@ weight: 760
                 <span><strong>Display Name:</strong> Sultan RS</span>
                 <span><strong>Hash:</strong> 3999278268</span>
                 <span><strong>Model Name:</strong> sultanrs</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/suzume.webp" alt="Suzume">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Suzume</span>
+                <span><strong>Hash:</strong> 687627128</span>
+                <span><strong>Model Name:</strong> suzume</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4140,6 +4244,14 @@ weight: 760
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/driftl352.webp" alt="Drift Walkton L35">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Drift Walkton L35</span>
+                <span><strong>Hash:</strong> -1982433631</span>
+                <span><strong>Model Name:</strong> driftl352</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/dubsta3.webp" alt="Dubsta 6x6">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Dubsta 6x6</span>
@@ -4249,6 +4361,14 @@ weight: 760
                 <span><strong>Display Name:</strong> Walton L35</span>
                 <span><strong>Hash:</strong> 2531292011</span>
                 <span><strong>Model Name:</strong> l35</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/l352.webp" alt="Walton L35 Stock">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Walton L35 Stock</span>
+                <span><strong>Hash:</strong> 6911448275</span>
+                <span><strong>Model Name:</strong> l352</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4535,6 +4655,14 @@ weight: 760
                 <span><strong>Display Name:</strong> Flatbed</span>
                 <span><strong>Hash:</strong> 1353720154</span>
                 <span><strong>Model Name:</strong> flatbed</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/flatbed2.webp" alt="Custom Flatbed">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Custom Flatbed</span>
+                <span><strong>Hash:</strong> -1882910943</span>
+                <span><strong>Model Name:</strong> flatbed2</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5753,6 +5881,14 @@ weight: 760
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/maverick2.webp" alt="Higgins Helitours Maverick">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Higgins Helitours Maverick</span>
+                <span><strong>Hash:</strong> 437619240</span>
+                <span><strong>Model Name:</strong> maverick2</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/polmav.webp" alt="Police Maverick">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Police Maverick</span>
@@ -6435,6 +6571,14 @@ weight: 760
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/policeb2.webp" alt="Police Bike">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Police Bike</span>
+                <span><strong>Hash:</strong> -1921512137</span>
+                <span><strong>Model Name:</strong> policeb2</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/policeold1.webp" alt="Police Rancher">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Police Rancher</span>
@@ -6820,6 +6964,14 @@ weight: 760
                 <span><strong>Display Name:</strong> Stockade</span>
                 <span><strong>Hash:</strong> 4080511798</span>
                 <span><strong>Model Name:</strong> stockade3</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/stockade4.webp" alt="Bobcat Security Stockade">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Bobcat Security Stockade</span>
+                <span><strong>Hash:</strong> 1089816240</span>
+                <span><strong>Model Name:</strong> stockade4</span>
             </div>
         </div>
         <div class="vehicle">

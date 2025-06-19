@@ -294,6 +294,7 @@ Animals
 	<div class="model"><span><img src="/peds/a_c_retriever.webp" loading="lazy" alt="a_c_retriever"><br><strong>a_c_retriever</strong><br>0 prop<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/a_c_rhesus.webp" loading="lazy" alt="a_c_rhesus"><br><strong>a_c_rhesus</strong><br>0 prop<br>3 components</span></div>
 	<div class="model"><span><img src="/peds/a_c_rottweiler.webp" loading="lazy" alt="a_c_rottweiler"><br><strong>a_c_rottweiler</strong><br>0 prop<br>4 components</span></div>
+	<div class="model"><span><img src="/peds/a_c_rottweiler_02.webp" loading="lazy" alt="a_c_rottweiler_02"><br><strong>a_c_rottweiler_02</strong><br>0 prop<br>4 components</span></div>
 	<div class="model"><span><img src="/peds/a_c_seagull.webp" loading="lazy" alt="a_c_seagull"><br><strong>a_c_seagull</strong><br>0 prop<br>3 components</span></div>
 	<div class="model"><span><img src="/peds/a_c_sharkhammer.webp" loading="lazy" alt="a_c_sharkhammer"><br><strong>a_c_sharkhammer</strong><br>0 prop<br>3 components</span></div>
 	<div class="model"><span><img src="/peds/a_c_sharktiger.webp" loading="lazy" alt="a_c_sharktiger"><br><strong>a_c_sharktiger</strong><br>0 prop<br>3 components</span></div>
@@ -351,6 +352,7 @@ Cutscene
 	<div class="model"><span><img src="/peds/cs_manuel.webp" loading="lazy" alt="cs_manuel"><br><strong>cs_manuel</strong><br>1 prop<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/cs_marnie.webp" loading="lazy" alt="cs_marnie"><br><strong>cs_marnie</strong><br>0 prop<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/cs_martinmadrazo.webp" loading="lazy" alt="cs_martinmadrazo"><br><strong>cs_martinmadrazo</strong><br>1 prop<br>9 components</span></div>
+	<div class="model"><span><img src="/peds/cs_martinmadrazo_02.webp" loading="lazy" alt="cs_martinmadrazo_02"><br><strong>cs_martinmadrazo_02</strong><br>1 prop<br>8 components</span></div>
 	<div class="model"><span><img src="/peds/cs_maryann.webp" loading="lazy" alt="cs_maryann"><br><strong>cs_maryann</strong><br>0 prop<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/cs_michelle.webp" loading="lazy" alt="cs_michelle"><br><strong>cs_michelle</strong><br>0 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/cs_milton.webp" loading="lazy" alt="cs_milton"><br><strong>cs_milton</strong><br>1 prop<br>8 components</span></div>
@@ -388,6 +390,7 @@ Cutscene
 	<div class="model"><span><img src="/peds/cs_zimbor.webp" loading="lazy" alt="cs_zimbor"><br><strong>cs_zimbor</strong><br>2 props<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/csb_abigail.webp" loading="lazy" alt="csb_abigail"><br><strong>csb_abigail</strong><br>1 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/csb_agent.webp" loading="lazy" alt="csb_agent"><br><strong>csb_agent</strong><br>0 prop<br>6 components</span></div>
+	<div class="model"><span><img src="/peds/csb_agent14_02.webp" loading="lazy" alt="csb_agent14_02"><br><strong>csb_agent14_02</strong><br>0 prop<br>8 components</span></div>
 	<div class="model"><span><img src="/peds/csb_alan.webp" loading="lazy" alt="csb_alan"><br><strong>csb_alan</strong><br>1 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/csb_anita.webp" loading="lazy" alt="csb_anita"><br><strong>csb_anita</strong><br>1 prop<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/csb_anton.webp" loading="lazy" alt="csb_anton"><br><strong>csb_anton</strong><br>1 prop<br>3 components</span></div>
@@ -430,6 +433,7 @@ Cutscene
 	<div class="model"><span><img src="/peds/csb_porndudes.webp" loading="lazy" alt="csb_porndudes"><br><strong>csb_porndudes</strong><br>2 props<br>4 components</span></div>
 	<div class="model"><span><img src="/peds/csb_prologuedriver.webp" loading="lazy" alt="csb_prologuedriver"><br><strong>csb_prologuedriver</strong><br>0 prop<br>8 components</span></div>
 	<div class="model"><span><img src="/peds/csb_prolsec.webp" loading="lazy" alt="csb_prolsec"><br><strong>csb_prolsec</strong><br>1 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/csb_rafdeangelis.webp" loading="lazy" alt="csb_rafdeangelis"><br><strong>csb_rafdeangelis</strong><br>1 prop<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/csb_ramp_gang.webp" loading="lazy" alt="csb_ramp_gang"><br><strong>csb_ramp_gang</strong><br>0 prop<br>4 components</span></div>
 	<div class="model"><span><img src="/peds/csb_ramp_hic.webp" loading="lazy" alt="csb_ramp_hic"><br><strong>csb_ramp_hic</strong><br>1 prop<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/csb_ramp_hipster.webp" loading="lazy" alt="csb_ramp_hipster"><br><strong>csb_ramp_hipster</strong><br>0 prop<br>4 components</span></div>
@@ -448,12 +452,14 @@ Cutscene
 	<div class="model"><span><img src="/peds/csb_tonyprince.webp" loading="lazy" alt="csb_tonyprince"><br><strong>csb_tonyprince</strong><br>1 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/csb_trafficwarden.webp" loading="lazy" alt="csb_trafficwarden"><br><strong>csb_trafficwarden</strong><br>1 prop<br>4 components</span></div>
 	<div class="model"><span><img src="/peds/csb_undercover.webp" loading="lazy" alt="csb_undercover"><br><strong>csb_undercover</strong><br>1 prop<br>9 components</span></div>
+	<div class="model"><span><img src="/peds/csb_valentina.webp" loading="lazy" alt="csb_valentina"><br><strong>csb_valentina</strong><br>2 prop<br>8 components</span></div>
 	<div class="model"><span><img src="/peds/csb_vagspeak.webp" loading="lazy" alt="csb_vagspeak"><br><strong>csb_vagspeak</strong><br>1 prop<br>8 components</span></div>
 	<div class="model"><span><img src="/peds/csb_agatha.webp" loading="lazy" alt="csb_agatha"><br><strong>csb_agatha</strong><br>0 prop<br>8 components</span></div>
 	<div class="model"><span><img src="/peds/csb_avery.webp" loading="lazy" alt="csb_avery"><br><strong>csb_avery</strong><br>1 prop<br>8 components</span></div>
 	<div class="model"><span><img src="/peds/csb_brucie2.webp" loading="lazy" alt="csb_brucie2"><br><strong>csb_brucie2</strong><br>0 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/csb_thornton.webp" loading="lazy" alt="csb_thornton"><br><strong>csb_thornton</strong><br>1 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/csb_tomcasino.webp" loading="lazy" alt="csb_tomcasino"><br><strong>csb_tomcasino</strong><br>1 prop<br>9 components</span></div>
+	<div class="model"><span><img src="/peds/ csb_weiss .webp" loading="lazy" alt="csb_weiss"><br><strong>csb_weiss</strong><br>1 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/csb_vincent.webp" loading="lazy" alt="csb_vincent"><br><strong>csb_vincent</strong><br>0 prop<br>9 components</span></div>
 </div>
 
@@ -467,6 +473,7 @@ Gang female
 	<div class="model"><span><img src="/peds/g_f_y_families_01.webp" loading="lazy" alt="g_f_y_families_01"><br><strong>g_f_y_families_01</strong><br>2 props<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/g_f_y_lost_01.webp" loading="lazy" alt="g_f_y_lost_01"><br><strong>g_f_y_lost_01</strong><br>1 prop<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/g_f_y_vagos_01.webp" loading="lazy" alt="g_f_y_vagos_01"><br><strong>g_f_y_vagos_01</strong><br>2 props<br>6 components</span></div>
+	<div class="model"><span><img src="/peds/g_f_m_undeadmage.webp" loading="lazy" alt="g_f_m_undeadmage"><br><strong>g_f_m_undeadmage</strong><br>2 props<br>7 components</span></div>
 </div>
 
 Gang male
@@ -512,6 +519,8 @@ Gang male
 	<div class="model"><span><img src="/peds/g_m_y_strpunk_01.webp" loading="lazy" alt="g_m_y_strpunk_01"><br><strong>g_m_y_strpunk_01</strong><br>2 props<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/g_m_y_strpunk_02.webp" loading="lazy" alt="g_m_y_strpunk_02"><br><strong>g_m_y_strpunk_02</strong><br>2 props<br>4 components</span></div>
 	<div class="model"><span><img src="/peds/g_m_m_casrn_01.webp" loading="lazy" alt="g_m_m_casrn_01"><br><strong>g_m_m_casrn_01</strong><br>2 props<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/g_m_m_zombie_04.webp" loading="lazy" alt="g_m_m_zombie_04"><br><strong>g_m_m_zombie_04</strong><br>0 props<br>5 components</span></div>
+	<div class="model"><span><img src="/peds/g_m_m_zombie_05.webp" loading="lazy" alt="g_m_m_zombie_05"><br><strong>g_m_m_zombie_05</strong><br>0 props<br>5 components</span></div>
 </div>
 
 Multiplayer
@@ -705,6 +714,7 @@ Story
 	<div class="model"><span><img src="/peds/hc_hacker.webp" loading="lazy" alt="hc_hacker"><br><strong>hc_hacker</strong><br>3 props<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/ig_abigail.webp" loading="lazy" alt="ig_abigail"><br><strong>ig_abigail</strong><br>1 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/ig_agent.webp" loading="lazy" alt="ig_agent"><br><strong>ig_agent</strong><br>0 prop<br>6 components</span></div>
+	<div class="model"><span><img src="/peds/ig_agent14_02.webp" loading="lazy" alt="ig_agent14_02"><br><strong>ig_agent14_02</strong><br>0 prop<br>8 components</span></div>
 	<div class="model"><span><img src="/peds/ig_amandatownley.webp" loading="lazy" alt="ig_amandatownley"><br><strong>ig_amandatownley</strong><br>1 prop<br>9 components</span></div>
 	<div class="model"><span><img src="/peds/ig_andreas.webp" loading="lazy" alt="ig_andreas"><br><strong>ig_andreas</strong><br>0 prop<br>9 components</span></div>
 	<div class="model"><span><img src="/peds/ig_ashley.webp" loading="lazy" alt="ig_ashley"><br><strong>ig_ashley</strong><br>0 prop<br>8 components</span></div>
@@ -753,6 +763,7 @@ Story
 	<div class="model"><span><img src="/peds/ig_floyd.webp" loading="lazy" alt="ig_floyd"><br><strong>ig_floyd</strong><br>1 prop<br>8 components</span></div>
 	<div class="model"><span><img src="/peds/ig_g.webp" loading="lazy" alt="ig_g"><br><strong>ig_g</strong><br>2 props<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/ig_groom.webp" loading="lazy" alt="ig_groom"><br><strong>ig_groom</strong><br>0 prop<br>5 components</span></div>
+	<div class="model"><span><img src="/peds/ig_gustavo_02.webp" loading="lazy" alt="ig_gustavo_02"><br><strong>ig_gustavo_02</strong><br>0 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/ig_hao.webp" loading="lazy" alt="ig_hao"><br><strong>ig_hao</strong><br>1 prop<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/ig_hunter.webp" loading="lazy" alt="ig_hunter"><br><strong>ig_hunter</strong><br>0 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/ig_janet.webp" loading="lazy" alt="ig_janet"><br><strong>ig_janet</strong><br>0 prop<br>6 components</span></div>
@@ -777,6 +788,13 @@ Story
 	<div class="model"><span><img src="/peds/ig_lifeinvad_01.webp" loading="lazy" alt="ig_lifeinvad_01"><br><strong>ig_lifeinvad_01</strong><br>1 prop<br>9 components</span></div>
 	<div class="model"><span><img src="/peds/ig_lifeinvad_02.webp" loading="lazy" alt="ig_lifeinvad_02"><br><strong>ig_lifeinvad_02</strong><br>2 props<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/ig_magenta.webp" loading="lazy" alt="ig_magenta"><br><strong>ig_magenta</strong><br>0 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/ig_madrazodriver_01.webp" loading="lazy" alt="ig_madrazodriver_01"><br><strong>ig_madrazodriver_01</strong><br>0 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/ig_martinmadrazo_02.webp" loading="lazy" alt="ig_martinmadrazo_02"><br><strong>ig_martinmadrazo_02</strong><br>1 prop<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/ig_rafdeangelis.webp" loading="lazy" alt="ig_rafdeangelis"><br><strong>ig_rafdeangelis</strong><br>1 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/ig_skeleton_01.webp" loading="lazy" alt="ig_skeleton_01"><br><strong>ig_skeleton_01</strong><br>2 prop<br>4 components</span></div>
+	<div class="model"><span><img src="/peds/ig_valentina.webp" loading="lazy" alt="ig_valentina"><br><strong>ig_valentina</strong><br>2 prop<br>8 components</span></div>
+	<div class="model"><span><img src="/peds/ig_weiss.webp" loading="lazy" alt="ig_weiss"><br><strong>ig_weiss</strong><br>1 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/ig_zombie_dj_01.webp" loading="lazy" alt="ig_zombie_dj_01"><br><strong>ig_zombie_dj_01</strong><br>3 prop<br>5 components</span></div>
 	<div class="model"><span><img src="/peds/ig_malc.webp" loading="lazy" alt="ig_malc"><br><strong>ig_malc</strong><br>0 prop<br>9 components</span></div>
 	<div class="model"><span><img src="/peds/ig_manuel.webp" loading="lazy" alt="ig_manuel"><br><strong>ig_manuel</strong><br>1 prop<br>6 components</span></div>
 	<div class="model"><span><img src="/peds/ig_marnie.webp" loading="lazy" alt="ig_marnie"><br><strong>ig_marnie</strong><br>0 prop<br>6 components</span></div>
