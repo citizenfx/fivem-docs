@@ -579,4 +579,30 @@ Example:
 net_tcpConnLimit 32
 ```
 
+### `block_net_game_event [eventNameHash]`
+Adds the hash of a net game event to the list blocked by the server.
+
+This is used to prevent exploits, for example BLOCK_WEAPON_SELECTION is an event used by the game when invoking SetCurrentPedVehicleWeapon native,
+if you are not using this native, you could block the event to prevent cheaters from blocking the selection of weapon in vehicles.
+
+A list of events can be found [here](/docs/game-references/net-game-events)
+
+You must use the **NON-LOWERED** hash of the event names to block them.
+The current GetHashKey function will lower the string before hashing it, you can't use this to hash the event.
+
+Example:
+```
+block_net_game_event 3948523338
+```
+
+### `unblock_net_game_event [eventNameHash]`
+Do the opposite of block_net_game_event, unblocking a net game event.
+
+NOTE: This doesn't unblock net game events blocked by other means like convars.
+
+Example:
+```
+unblock_net_game_event 3948523338
+```
+
 [servercfg]: /docs/server-manual/setting-up-a-server-vanilla/#servercfg
