@@ -50,10 +50,6 @@ function stringsplit(inputstr, sep)
 end
 ```
 
-### Bitwise Operations
-
-Lua 5.4 deprecated `bit32`, and the CfxLua runtime does not enable it. Bitwise operations now work using normal operators (`&`, `|`, ...) like in most other programming languages.
-
 ### CLR
 
 NeoLua is no longer in use, so the `clr` namespace does not exist anymore. If you need to run C\# code, use the normal .NET runtime and server exports.
