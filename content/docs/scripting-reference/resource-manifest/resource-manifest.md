@@ -5,7 +5,7 @@ weight: 505
 
 The **resource manifest** is a file named `fxmanifest.lua` (or previously, `__resource.lua`), placed in a [resource folder](/docs/scripting-manual/introduction/introduction-to-resources) on the server.
 
-It is a Lua file, ran in a separate runtime from any Lua scripts in the resource, set up with a semi-declarative syntax to be used for defining metadata.
+It is a Lua file, ran in a separate runtime from any Lua scripts in the resource, set up with a semi-declarative syntax to be used for defining metadata. The manifest uses Lua 5.4, for detailed information about the Lua language, refer to the official documentation at http://www.lua.org/manual/5.4/manual.html.
 
 Example
 -------
@@ -282,15 +282,6 @@ The valid constraint types are as follows:
 | gameBuild | Game build being set to at least this build.        | The same values as sv_enforceGameBuild.          |
 | native    | The specified native being supported on the server. | Any server-side native hash.                     |
 
-
-### lua54
-
-Enables Lua 5.4. You can read more about Lua 5.4 at http://www.lua.org/manual/5.4/manual.html
-
-```lua
-lua54 'yes'
-```
-
 ### provide
 
 Marks the current resource as a replacement for the specified resource. This means it'll start instead of the specified resource, if another resource requires it, and will act as if it is said resource if started.
@@ -308,7 +299,7 @@ use_experimental_fxv2_oal "yes"
 ```
 
 {{% alert color="warning" %}}
-This feature is still experimental and **requires** [Lua 5.4](#lua54) to be used.
+This feature is still experimental.
 {{% /alert %}}
 
 #### Vector unpacking

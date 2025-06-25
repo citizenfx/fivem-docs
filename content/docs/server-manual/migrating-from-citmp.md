@@ -52,7 +52,7 @@ end
 
 ### Bitwise Operations
 
-Lua 5.3 deprecated `bit32`, and the CfxLua runtime does not enable it. Bitwise operations now work using normal operators (`&`, `|`, ...) like in most other programming languages.
+Lua 5.4 deprecated `bit32`, and the CfxLua runtime does not enable it. Bitwise operations now work using normal operators (`&`, `|`, ...) like in most other programming languages.
 
 ### CLR
 
