@@ -20,3 +20,4 @@ Reference lists and guides for game data are in this category.
 - [Radio Stations](/docs/game-references/radiostations)
 - [Pickup Hashes](/docs/game-references/pickup-hashes)
 - [Weapon models](/docs/game-references/weapon-models)
+- [Net Game Events](/docs/game-references/net-game-events)
