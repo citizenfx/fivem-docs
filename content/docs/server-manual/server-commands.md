@@ -476,6 +476,8 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | ScaleformStore | 200 | 100 |
 | StaticBounds | 5000 | 6500 |
 | TxdStore | 26000 | 26000 |
+| CNetObjDoor | - | 20 |
+| CDoorSyncData | - | 20 |
 
 You can explore most of the current pools and their sizes using  `F8 > Tools > Streaming > Pool Monitor` tool.
 
