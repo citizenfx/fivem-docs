@@ -6,7 +6,7 @@ weight: 412
 Getting started with scripting for FiveM might be a tad overwhelming, given the wide range of possibilities and the sparsely spread documentation. In this quick and simple guide, we'll try to show you how to get started with a quick resource in Lua.
 
 {{% alert theme="info" %}}
-If you're not familiar with Lua, you can refer to the [Lua 5.4 reference manual](https://www.lua.org/manual/5.4/). The scripting runtime only support Lua 5.4.
+If you're not familiar with Lua, you can refer to the [Lua 5.4 reference manual](https://www.lua.org/manual/5.4/). The scripting runtime only supports Lua 5.4.
 {{% /alert %}}
 
 ## Resources
