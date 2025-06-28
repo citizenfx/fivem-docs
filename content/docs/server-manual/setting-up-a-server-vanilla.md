@@ -55,13 +55,22 @@ If you're experiencing any issues, you're more likely to see them fixed if you u
 
 ---
 
-<a name="servercfgexample"></a>
-
-## server.cfg
+### server.cfg
 
 An example server.cfg follows.
 
 {{%  code file="/static/examples/config/server.cfg" language="sh"  %}}
+
+---
+
+### RedM / RDR2
+
+To set the FXServer to host a RedM server, apply the following to the `server.cfg`.
+
+```
+set gamename rdr3
+
+```
 
 ---
 
