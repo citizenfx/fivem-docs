@@ -579,4 +579,27 @@ Example:
 net_tcpConnLimit 32
 ```
 
+### `block_net_game_event [eventName]`
+Adds the hash of a net game event to the list blocked by the server.
+
+This is used to prevent exploits, for example `BLOCK_WEAPON_SELECTION` is an event used by the game when invoking [SET_CURRENT_PED_VEHICLE_WEAPON](https://docs.fivem.net/natives/?_0x75C55983C2C39DAA) native,
+if you are not using this native, you could block the event to prevent cheaters from blocking the selection of weapon in vehicles.
+
+A list of events can be found [here](/docs/game-references/net-game-events)
+
+Example:
+```
+block_net_game_event "FIRE_EVENT"
+```
+
+### `unblock_net_game_event [eventName]`
+Do the opposite of block_net_game_event, unblocking a net game event.
+
+NOTE: This doesn't unblock net game events blocked by other means like convars.
+
+Example:
+```
+unblock_net_game_event "FIRE_EVENT"
+```
+
 [servercfg]: /docs/server-manual/setting-up-a-server-vanilla/#servercfg
