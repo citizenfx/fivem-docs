@@ -286,7 +286,7 @@ The valid constraint types are as follows:
 
 Enables Lua 5.4. You can read more about Lua 5.4 at http://www.lua.org/manual/5.4/manual.html
 
-**Note: As of June 2023, Lua 5.3 has now been deprecated and all Lua scripts now use the 5.4 version. For more information, [read our announcement](https://forum.cfx.re/t/removal-of-lua-5-3-support/5335232).**
+**Note: As of June 2025, Lua 5.3 has now been deprecated and all Lua scripts now use the 5.4 version. For more information, [read our announcement](https://forum.cfx.re/t/removal-of-lua-5-3-support/5335232).**
 
 ```lua
 lua54 'yes'
