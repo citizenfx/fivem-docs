@@ -31,9 +31,11 @@ PlayerPedId();
 Using Node.js APIs
 ------------------
 
-FiveM includes a [customized version][nodejs] of Node.js 16.x **on the server**. You can simply use `require` in server
+By default, FiveM includes a [customized version][nodejs] of Node.js 16.x **on the server**. You can simply use `require` in server
 scripts, and it'll resolve the package either from Node.js built-ins, or the `node_modules/` folder in your resource
 directory.
+
+NodeJS 22 is optionally available for server scripts by adding `node_version '22'` inside your resource manifest. 
 
 To automatically install and update a `package.json` with Yarn on launch, make sure the `yarn` resource is running
 before starting your resource, or preferably add it as a `dependency` in your [resource manifest][deplink].
