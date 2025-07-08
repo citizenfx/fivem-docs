@@ -50,27 +50,16 @@ After that you can submit your store for [review][tebex-review] to Tebex.<br>
 
 Once the [review][tebex-review] is completed, you can add packages, customize your store, offer virtual goods to your community, and change the appearance of your Tebex store with one of many [templates][tebex-templates].
 
-## FiveM Server Wrapper
+## Video Guide: FiveM Server Setup & Tebex Integration
 
-The community-built [Tebex server wrapper][tebex-fivem-server-wrapper] enables you to connect your Tebex store to your gameserver. It makes it easier to give players rewards and perks and simplifies the setup of your Tebex Store.<br>
+Learn how to set up your FiveM server and integrate it with Tebex for smooth donations and monetization in this step-by-step video guide.
 
-After setting up packages on your Tebex Store and within the wrapper itself, all you need to do is get your players to run <b>/redeem [Transaction ID]</b> and the wrapper will give the player their purchase(s).
-
-### FiveM Server Wrapper Installation
-
-1. [Download the wrapper][tebex-download-wrapper]
-2. Extract the wrapper to your resource folder (You need to remove **-main** from the end of the folder name, the folder within your resources directory should be called <b>nass_serverstore</b>) 
-3. Import the <b>codes.sql</b> to your database
-4. Add  ‘<b>ensure nass_serverstore</b>’ in your <b>server.cfg.</b> 
-5. Add the game server command below to each package you’d like to set up with the wrapper:
-    <code>purchase_package_tebex {"transid":"{transaction}", "packagename":"{packageName}"}</code>
-
-    <br>You’ll need to add it as a command that executes **When the package is purchased**.<br>
-
-6. Click **Settings** icon next to the command and set the **Require Player to be Online** to **Execute the command even if the player is offline**.
-7. Go to **Edit Package** and click **Update** to confirm the changes made.
-8. At this point you can setup your packages within the wrapper itself - you can do this within the <b>config.lua</b> inside the wrapper’s script folder on your server.
-9. Get your players to run **/redeem [Transaction ID]** on your server when they've made their purchase. The transaction ID will be sent to the players email address after a purchase is made on your store.
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+  <iframe src="https://www.youtube.com/embed/lfSjKSFI8vg" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+          frameborder="0" allowfullscreen>
+  </iframe>
+</div>
 
 ## Useful Links
 
@@ -78,7 +67,6 @@ After setting up packages on your Tebex Store and within the wrapper itself, all
 [Tebex Identity Verification][tebex-identity-verification]<br>
 [Tebex Store Review][tebex-review]<br>
 [Tips for getting your store application approved][tebex-tips-store-application]
-
 
 ---
 
@@ -93,8 +81,6 @@ After setting up packages on your Tebex Store and within the wrapper itself, all
 [tebex-tips-store-application]: https://docs.tebex.io/creators/initial-setup/tips-for-getting-your-store-application-approved
 [fivem-pla]: https://fivem.net/terms
 [tebex-tos]: https://checkout.tebex.io/terms
-[tebex-fivem-server-wrapper]: https://docs.tebex.io/creators/tebex-control-panel/game-servers/fivem/fivem-server-wrapper
-[tebex-download-wrapper]: https://github.com/najeetpie/nass_serverstore
 [tebex-aup]: https://www.tebex.io/terms-creator-agreement/acceptable-use-policy
 [tebex-get-started]: https://creator.tebex.io/get-started
 [tebex-templates]: https://creator.tebex.io/templates
