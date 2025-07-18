@@ -395,11 +395,11 @@ This is set to true by default
 
 ### `sv_experimentalNetGameEventHandler [true|false]`
 
-A boolean console variable introduced in server version 9149 that uses the new serialization API to improve the speed of packing/unpacking GTA game events, adds checks for if entities sent with the game events are relevant to target client, alongside improving backward compatibility with future title updates.
+A boolean console variable introduced in server version 9149 that uses the new serialization API to improve the speed of packing/unpacking GTA game events. It adds checks to ensure that entities sent with the game events are relevant to the target client, and also improves backward compatibility with future title updates.
 
 NOTE: Using this ConVar also opts you into using `sv_experimentalStateBagsHandler` and `sv_experimentalOneSyncPopulation`
 
-This is set to false by default
+As of July 2025, this is enabled by default.
 
 ### `sv_httpFileServerProxyOnly [true|false]`
 
