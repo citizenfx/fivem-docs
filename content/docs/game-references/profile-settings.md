@@ -211,11 +211,11 @@ GTA V profile setting values can be obtained using this native: [`GetProfileSett
 |  `199` |                   |                                                 |
 |  `200` |                   |                                                 |
 |  `201` |                   |                                                 |
-|  `202` |                   |                                                 |
+|  `202` | Display           | Safezone Size                                   |
 |  `203` | Display           | Subtitles                                       |
 |  `204` | Display           | Radar                                           |
 |  `205` | Display           | HUD                                             |
-|  `206` |                   |                                                 |
+|  `206` | Display           | Language                                        |
 |  `207` | Display           | GPS Route                                       |
 |  `208` |                   |                                                 |
 |  `209` |                   |                                                 |
