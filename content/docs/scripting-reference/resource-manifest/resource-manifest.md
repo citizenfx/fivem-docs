@@ -286,8 +286,22 @@ The valid constraint types are as follows:
 
 Enables Lua 5.4. You can read more about Lua 5.4 at http://www.lua.org/manual/5.4/manual.html
 
+**Note: As of June 2025, Lua 5.3 has now been deprecated and all Lua scripts now use the 5.4 version. For more information, [read our announcement](https://forum.cfx.re/t/removal-of-lua-5-3-support/5335232).**
+
 ```lua
 lua54 'yes'
+```
+
+### node_version
+
+Allows you to select a different NodeJS version for the server scripting runtime. The default version is **16**.
+
+Available versions are:
+- 16 (default)
+- 22
+
+```lua
+node_version '22'
 ```
 
 ### provide
