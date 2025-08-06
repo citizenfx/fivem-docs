@@ -170,5 +170,62 @@ Since we have our ped and a vehicle now, using the C# wrapper with the `Game.Pla
 ### Running this
 Build your project and make sure the latest `MyResourceNameClient.net.dll` is in the folder of your resource. In your server console, type `restart mymode` (or whatever you named your resource), and try `/car voltic2` in the game client (which should by now be really bored of respawning). You'll now have your very own Rocket Voltic!
 
+### Enabling Debug Information
+To ensure Mono can load debug symbols and display full debug information (e.g., line numbers and file paths) in stack traces during runtime, configure your Visual Studio project's debug build to embed debug information. If not set correctly, stack traces may show error lines as `0`, like the ones shown below, indicating missing debug information.
+
+```
+MainThrd/ Failed to run a tick for Client: System.NullReferenceException: Object reference not set to an instance of an object.
+MainThrd/ at Client.Services.Player.MyService+<RunTasks>d__22.MoveNext () [0x0015d] in <62554d04181b4b90986523fd33deef4c>:0
+```
+
+#### Why Embedded PDBs work in FiveM
+Embedded portable PDBs are the most reliable way to ensure accurate stack traces in FiveM because [.NET Framework 4.7.1][portable-pdb-support] and up supports embedding [portable PDBs][portable-pdb-msft-learn], and Mono (the runtime used by FiveM) can natively extract this data from the DLL's metadata to provide line numbers and file paths in stack traces — even without separate `.pdb` files present.
+
+**Follow these steps to enable embedded debug information in Visual Studio:**
+
+1. **Set Build Configuration to "Debug"**
+   - In Visual Studio, select **Debug** from the configuration dropdown in the top toolbar.
+
+2. **Open Project Properties**
+   - Right-click your project in **Solution Explorer** and select **Properties**.
+   - Navigate to the **Build** tab.
+
+3. **Configure Debug Settings**
+   - In the **Build** tab, ensure the following:
+     - **Define DEBUG constant** is checked.
+     - **Define TRACE constant** is checked.
+     - **Optimize code** is unchecked.
+   - These settings enable full debug information in the build.
+
+4. **Enable Embedded Debug Information**
+   - In the **Build** tab, click **Advanced...**.
+   - On the pop-up, set Debug Info to `Embedded` to include portable PDB data in the assembly.
+   - Click **OK**.
+
+5. **Rebuild the Project**
+   - Press `Ctrl + Shift + B` to rebuild the project.
+   - The resulting DLL will include embedded debug information.
+
+
+#### Using Portable PDBs Instead (as separate `.pdb` files)  
+Portable PDBs can also be used in FiveM without embedding — just make sure the `.pdb` files are copied alongside your DLLs.
+
+To generate separate portable PDBs instead of embedding them, follow the **same steps above**, but in step 4, select `Portable` instead of `Embedded` under **Debug Info**.
+
+The resulting `.pdb` file will be written next to the DLL on build — just be sure to deploy it with your resource.
+
+You should also add the `.pdb` files to your files array (or as commonly known in Lua, table) in your [resource manifest file][resource-manifest] — here's an example (adjust as needed):
+
+```
+files {
+    'Client.net.pdb',
+    'Server.net.pdb',
+}
+```
+
 ## Server scripts
 You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
+
+[portable-pdb-support]: https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-1/#runtime-–-support-for-portable-pdbs
+[portable-pdb-msft-learn]: https://learn.microsoft.com/en-us/dotnet/core/diagnostics/symbols#learn-about-nets-portable-pdb-format
+[resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest/
