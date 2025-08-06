@@ -284,9 +284,11 @@ The valid constraint types are as follows:
 
 ### lua54
 
-Enables Lua 5.4. You can read more about Lua 5.4 at http://www.lua.org/manual/5.4/manual.html
+{{% alert color="warning" %}}
+This setting is deprecated and you do not need to enable it. As of June 2025, Lua 5.3 has been deprecated and all Lua scripts now use the 5.4 version. For more information, [read our announcement](https://forum.cfx.re/t/removal-of-lua-5-3-support/5335232).
+{{% /alert %}}
 
-**Note: As of June 2025, Lua 5.3 has now been deprecated and all Lua scripts now use the 5.4 version. For more information, [read our announcement](https://forum.cfx.re/t/removal-of-lua-5-3-support/5335232).**
+Enables Lua 5.4. You can read more about Lua 5.4 at http://www.lua.org/manual/5.4/manual.html
 
 ```lua
 lua54 'yes'
@@ -321,7 +323,7 @@ use_experimental_fxv2_oal "yes"
 ```
 
 {{% alert color="warning" %}}
-This feature is still experimental and **requires** [Lua 5.4](#lua54) to be used.
+This feature is still experimental.
 {{% /alert %}}
 
 #### Vector unpacking
