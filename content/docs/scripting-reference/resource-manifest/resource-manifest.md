@@ -282,6 +282,17 @@ The valid constraint types are as follows:
 | native    | The specified native being supported on the server. | Any server-side native hash.                     |
 
 
+### escrow_ignore
+
+Choose which files to ignore when using [Asset Escrow](https://forum.cfx.re/t/introducing-asset-escrow-for-your-resources/4777151).
+
+```lua
+escrow_ignore {
+    'file1',
+    'config/file2'
+}
+```
+
 ### lua54
 
 {{% alert color="warning" %}}
