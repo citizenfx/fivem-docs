@@ -3,37 +3,63 @@ title: Server issues
 weight: 840
 ---
 
-My server does not show up in the server list, or it shows up as "private"
----------------------------------------------
+## Server not showing in server list or marked as private
 
-When this happens, make sure other people can connect to your server using
-direct connect. This issue usually is a result of bad port forwarding or some
-firewall issue. Make sure your network configuration is correct.
+This issue is usually caused by **bad port forwarding** or **firewall configuration problems**. Ensure that your network setup is correct and confirm that others can connect to your server using **Direct Connect**.
 
-Server configuration is also important. Your server is listed in the server list if you use the [default server.cfg example][servercfg]. It's possible that you have removed the `#` in front of the following line in your server.cfg, doing so will make your server show up as private and users won't be able to join it by using the server browser (the connect button will be disabled), but they will still be able to see your server.
+### Direct Connect Test
+
+To check whether others can connect directly:
+
+1. Press **F8** in FiveM to open the game client console.
+2. Enter the command: `connect IP:Port`<br/>Replace `IP:Port` with your server's actual IP and port, e.g.: `connect 127.0.0.1:30120`.
+3. Press **Enter** to attempt the connection.
+
+If a direct connection fails, the issue is likely related to incorrect port forwarding or a firewall blocking connections.
+
+### Comment Out `sv_master1`
+
+Check your `server.cfg` for the following line:
 
 ```yaml
 #sv_master1 ""
 ```
 
-Please make sure to add the `#` in front of that line like shown in the example above. If this `#` is already added in front of the line, then try the following steps.
+If the `#` is **missing**, your server might appear as **private** in the server list. This will disable the connect button for users trying to join through the server browser.
 
-#### Check if server is reachable
+**To fix this**, ensure the line is commented out.
+
+If this line is missing, you don't have to add it, as it is disabled by default.
 
 1. Make sure your server is running
 2. In your browser, go to `http://ip:port/info.json` (fill in your ip and port) - example `http://127.0.0.1:30120/info.json`
 3. Check whether it resolves, showing information about your server
 
-Alternatively, use [canyouseeme.org](http://canyouseeme.org). Only works if you're on a Windows server or a Linux machine with a GUI.
+Ensure your server is running and accessible externally.
 
-1. In your browser, visit [canyouseeme.org](http://canyouseeme.org)
-2. Fill in your server port (default: 30120)
-3. Check your port
+1. In your browser, visit:  
+   ```
+   http://ip:port/info.json
+   ```
+   Replace `ip:port` with your server's public IP and port number, e.g.:
+   ```
+   http://127.0.0.1:30120/info.json
+   ```
+2. This page should return a JSON object containing your server's info.
 
-If the server still doesn't show up on the list, make sure the following vars are set (they should be, assuming you used the [default server.cfg example][servercfg]):
+Replace `127.0.0.1` with your server's external (public) IP address to ensure it is reachable from outside the local network.
 
-- `sv_projectName`
-- `sv_projectDesc`
+Alternatively, you can use a port checking service:
+
+1. Visit [canyouseeme.org](http://canyouseeme.org)
+2. Enter your server's port (default port: **30120**)
+3. Click **Check Port**
+
+If the port is open, the site will confirm visibility from the outside.
+
+### Verify Required Server Variables
+
+If your server is reachable but still does not appear in the server list, confirm that the following variables are set in `server.cfg`:
 
 ```yaml
 # Set your server's Project Name
@@ -43,80 +69,67 @@ sets sv_projectName "My FXServer Project"
 sets sv_projectDesc "Default FXServer requiring configuration"
 ```
 
-The server will display an error upon startup if they aren't set.
+If **either** variable is missing, the server will display an error upon startup and may not appear on the list.
 
-##### Could it see the service?
+### Additional Troubleshooting
 
-- A server can take up to 8 minutes to be shown in the server list after initially launching, if no other heartbeats are
-  sent. Please be patient.
-- In very rare cases, there might be an issue with the server listing services, please be patient, chances are very high
-  that our team is already hard at work trying to resolve this issue.
-- You might be using a NAT/gateway that masks UDP source ports. Here's a few guides on resolving this issue for certain
-  firewall applications:
-  - [pfSense][pfsensenat]
+- It can take **up to 8 minutes** for a server to appear in the list after launch if no other heartbeats are sent.
+- There may be an issue with the server listing service itself. Be patient - chances are our team is already working on it.
+- If you're behind a **NAT or gateway** that **masks UDP source ports**, your server may not show up. Consult your firewall/router documentation or check [pfSense’s guide][pfsensenat] for resolving this.
 
-##### Could it NOT see your service?
+## Other Related Issues
 
-There could be a lot of different problems, most likely it has something to do with one (or both) of the following:
+### My Server Can Only Use 48 Slots
 
-- Your ports aren't properly forwarded.
-- You have a firewall (or AV) that blocks (external) connections.
+Using more than 48 slots requires a [Cfx.re Element Club Argentum 💿](https://portal.cfx.re/subscriptions) subscription or higher.
 
-My server can only use 48 slots.
----------------------------------
+To raise the maximum player cap:
 
-Using more than 48 slots requires __at least__ `Cfx.re Element Club Argentum 💿`. The maximum slot count supported with OneSync is 2048 slots with `Cfx.re Element Club Platinum 🌟`.
+1. Use the latest [server artifact][setting-up-server].
+2. Set `sv_maxclients` to a value higher than 48 (based on your [subscription tier](https://portal.cfx.re/subscriptions)).
+3. Restart your server.
 
-To use more than 48 slots follow these steps.
+### My Server's Name Doesn't Have Colors
 
-1. Use a license key with OneSync access
-2. Use the latest [server artifact][setting-up-server]
-3. Activate OneSync - add `set onesync on` to your server.cfg
-4. Set `sv_maxclients` in your server.cfg to a value higher than 48 (Depending on your [Element Club subscription](https://portal.cfx.re/subscriptions) tier)
-5. Restart your server
+Possible reasons:
 
-To subscribe to Element Club, visit the subscriptions page on the [Cfx.re Portal](https://portal.cfx.re/subscriptions)
+1. No active [Element Club subscription](https://portal.cfx.re/subscriptions) with at least **Argentum** tier.
+2. Incorrect [server name formatting][chat-formatting].
+3. Configuration changes weren’t saved or server wasn’t restarted.
 
-If you are not seeing the changes in the server list, be patient until the server list updates. You will see the changes already in Direct Connect.
+### Troubleshooting Slow Server Startups
 
-Please note that [txAdmin](/docs/resources/txAdmin/) can handle onesync activation by the panel directly.
+**Microsoft Defender Antivirus** may slow down server startup by scanning FXServer files on Windows servers.
 
-My server's name doesn't have colors
----------------------------------
+To resolve:
 
-You may be experiencing this in different cases. For example, the server colors show in Direct Connect, but not on the server list. Or it doesn't show at all. There are a couple of reasons why this may happen.
+1. Press **Start** or hit the **Windows key**.
+2. Type `PowerShell` into the search bar.
+3. Right-click on **Windows PowerShell** in the search results.
+4. Click **Run as administrator**.
+5. If prompted by **User Account Control (UAC)**, click **Yes** to confirm.
+6. Run this command (replace `C:\FXServer\` with your actual path):
 
-1. No active [Element Club subscription](https://portal.cfx.re/subscriptions) with the requirement minimum tier - FiveM Element Club Argentum 💿 or higher
-2. Incorrect usage of [server name formatting][chat-formatting]
-3. Didn't save and/or restart server
-4. Server list cache hasn't updated, be patient
-
-Troubleshooting Slow Server Startups on Windows
----------------------------------
-
-On Windows, Microsoft Defender Antivirus can slow down server startups by scanning files within your FXServer directory. To mitigate this issue, you can add your server folder to the exclusion list. 
-
-Launch PowerShell as an administrator and execute the following command, replacing `'C:\FXServer\'` with the actual path to your FXServer directory:
-
-```
+```powershell
 Add-MpPreference -ExclusionPath 'C:\FXServer\'
 ```
 
 For more details on the `Add-MpPreference` command, refer to the [official documentation][add-mp-preference-docs].
 
-Help! I can't find my issue here!
----------------------------------
+Note that adding resources to your server increases the startup time.
+If you experience unusually long startup times, check the server console for errors or warning messages.
 
-We are more than happy to help you out!
+### Help! I Can't Find My Issue Here!
 
-For support, please check out our [support section][support-cfx-platform-server] for helpful resources. If you'd like to discuss your issue further, feel free to post a topic on our [forums][forum], and we'll be happy to take a look.
+We're happy to help.
 
-Additionally, you can join our [Discord][discord] community and have a chat with us.
+- Post on our [forums][forum]
+- Join our [Discord][discord]
+- Visit our [support section][support-cfx-platform-server]
 
 [forum]: https://forum.cfx.re/
 [discord]: https://discord.gg/fivem
 [pfsensenat]: https://docs.netgate.com/pfsense/en/latest/nat/outbound.html#static-port
-[servercfg]: /docs/server-manual/setting-up-a-server-vanilla/#servercfg
 [chat-formatting]: https://forum.cfx.re/t/67641
 [setting-up-server]: /docs/server-manual/setting-up-a-server
 [support-cfx-platform-server]: https://support.cfx.re/hc/en-us/sections/8856844172188-Cfx-re-Platform-Server-FXServer
