@@ -21,7 +21,7 @@ Please make sure to add the `#` in front of that line like shown in the example 
 #### Check if server is reachable
 
 1. Make sure your server is running
-2. In your browser, go to http://ip:port/info.json (fill in your ip and port) - example http://127.0.0.1:30120/info.json
+2. In your browser, go to `http://ip:port/info.json` (fill in your ip and port) - example `http://127.0.0.1:30120/info.json`
 3. Check whether it resolves, showing information about your server
 
 Alternatively, use [canyouseeme.org](http://canyouseeme.org). Only works if you're on a Windows server or a Linux machine with a GUI.
