@@ -113,10 +113,10 @@ For a connection proxy, a setup like the following could work (based on [a commu
     ```
 
 A working setup of this example would have the following URLs accessible correctly in the browser:
-- https://server1.example.com/info.json
-- https://server1.example.com/players.json
-- https://server1.example.com/dynamic.json
-- https://server1.example.com/client (should show '/client is POST only')
+- `https://server1.example.com/info.json`
+- `https://server1.example.com/players.json`
+- `https://server1.example.com/dynamic.json`
+- `https://server1.example.com/client` (should show '/client is POST only')
 
 Note that, at this time, `connect` command usage has to use `connect "https://server1.example.com/"` or a join URL, it will not attempt to look up a bare domain as a URL.
 
