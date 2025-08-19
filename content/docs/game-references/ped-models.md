@@ -459,7 +459,7 @@ Cutscene
 	<div class="model"><span><img src="/peds/csb_brucie2.webp" loading="lazy" alt="csb_brucie2"><br><strong>csb_brucie2</strong><br>0 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/csb_thornton.webp" loading="lazy" alt="csb_thornton"><br><strong>csb_thornton</strong><br>1 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/csb_tomcasino.webp" loading="lazy" alt="csb_tomcasino"><br><strong>csb_tomcasino</strong><br>1 prop<br>9 components</span></div>
-	<div class="model"><span><img src="/peds/ csb_weiss .webp" loading="lazy" alt="csb_weiss"><br><strong>csb_weiss</strong><br>1 prop<br>7 components</span></div>
+	<div class="model"><span><img src="/peds/csb_weiss.webp" loading="lazy" alt="csb_weiss"><br><strong>csb_weiss</strong><br>1 prop<br>7 components</span></div>
 	<div class="model"><span><img src="/peds/csb_vincent.webp" loading="lazy" alt="csb_vincent"><br><strong>csb_vincent</strong><br>0 prop<br>9 components</span></div>
 </div>
 
