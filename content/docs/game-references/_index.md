@@ -21,3 +21,4 @@ Reference lists and guides for game data are in this category.
 - [Pickup Hashes](/docs/game-references/pickup-hashes)
 - [Weapon models](/docs/game-references/weapon-models)
 - [Net Game Events](/docs/game-references/net-game-events)
+- [Zones](/docs/game-references/zones)
