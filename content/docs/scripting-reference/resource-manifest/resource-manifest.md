@@ -33,7 +33,7 @@ Internally, this creates the following metadata entries:
 -   **my_data_extra**: `{"ninety":"nein"}`
 -   **pizza_topping**: pineapple
 
-You can also obtain this metadata from scripts using [GetNumResourceMetadata]({{% native "GET_NUM_RESOURCE_METADATA" %}}) and [GetResourceMetadata]({{% native "GET_RESOURCE_METADATA" %}}).
+You can also obtain this metadata from scripts using {{% native_link "GET_NUM_RESOURCE_METADATA" %}} and {{% native_link "GET_RESOURCE_METADATA" %}}.
 
 Globbing
 --------

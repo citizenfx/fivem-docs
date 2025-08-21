@@ -18,7 +18,7 @@ server_script "my_lib.net.dll" -- load a particular assembly into the .net appdo
 server_script "@resource_name/script.lua" -- load a script from another resource
 ```
 
-To load files at runtime, you can use [LOAD\_RESOURCE\_FILE]({{% native "LOAD_RESOURCE_FILE" %}}) (`LoadResourceFile("resource_name", "file_name")`), and for example if it is a Lua file you can use
+To load files at runtime, you can use {{% native_link "LOAD_RESOURCE_FILE" %}} (`LoadResourceFile("resource_name", "file_name")`), and for example if it is a Lua file you can use
 
 ``` lua
 load(...)

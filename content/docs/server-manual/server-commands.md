@@ -8,9 +8,9 @@ description: >
 <!-- TODO: format this like client commands? -->
 
 Console commands can be executed either using an RCon tool, directly from the server console interface, a server configuration
-file, the server command line, or (if a resource is permitted by the ACL) the [ExecuteCommand]({{% native "EXECUTE_COMMAND" %}}) function.
+file, the server command line, or (if a resource is permitted by the ACL) the {{% native_link "EXECUTE_COMMAND" %}} function.
 
-Adding a custom RCon command can be done using the [RegisterCommand]({{% native "REGISTER_COMMAND" %}}) function on the
+Adding a custom RCon command can be done using the {{% native_link "REGISTER_COMMAND" %}} function on the
 server, or the (legacy) `rconCommand` event.
 
 ## Resource commands
