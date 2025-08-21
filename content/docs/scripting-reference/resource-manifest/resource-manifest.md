@@ -12,11 +12,11 @@ Example
 
 An example resource manifest for a hypothetical resource looks as follows:
 
-{{%  code file="/static/examples/manifest/fxmanifest.lua" language="lua"  %}}
+{{% code file="/static/examples/manifest/fxmanifest.lua" language="lua" %}}
 
 Internally, this creates the following metadata entries:
 
--   **fx_version**: {{%  rmv2  %}}
+-   **fx_version**: {{% rmv2 %}}
 -   **game**: gta5
 -   **game**: rdr3
 -   **author**: John Doe \<j.doe@example.com\>
@@ -57,7 +57,7 @@ A list of built-in resource manifest entries follows. A resource can also contai
 
 ### fx_version
 
-Defines the supported functionality for the resource. This has to be one of a specific set of words. Each entry inherits properties from the previous one. The current FXv2 resource version is **{{%  rmv2  %}}**.
+Defines the supported functionality for the resource. This has to be one of a specific set of words. Each entry inherits properties from the previous one. The current FXv2 resource version is **{{% rmv2 %}}**.
 
 ### game
 
@@ -73,7 +73,7 @@ Defines the supported game API sets for the resource.
 
 {{% alert color="warning" title="Deprecated" %}}You should be using `fxmanifest.lua` and `fx_version` instead.{{% /alert %}}
 
-Defines the supported functionality for the resource. This has to be one of a specific set of GUIDs. Each GUID inherits properties from the previous one. The current resource manifest version is **{{%  rmv  %}}**.
+Defines the supported functionality for the resource. This has to be one of a specific set of GUIDs. Each GUID inherits properties from the previous one. The current resource manifest version is **{{% rmv %}}**.
 
 ### client_script
 
@@ -150,7 +150,7 @@ Defines a global function to be [exported](#export "wikilink") by a server scrip
 
 ### ui_page
 
-Sets the resource's [NUI]({{%  ref "/docs/scripting-manual/nui-development/full-screen-nui.md"  %}}) page to the defined file or URL. If specifying a file, the file (along with its dependencies) has to be referenced using [files](#file "wikilink").
+Sets the resource's [NUI]({{% ref "/docs/scripting-manual/nui-development/full-screen-nui.md" %}}) page to the defined file or URL. If specifying a file, the file (along with its dependencies) has to be referenced using [files](#file "wikilink").
 
 ```lua
 ui_page 'html/index.html'
@@ -189,7 +189,7 @@ files {
 
 {{% alert color="success" title="Note" %}}This directive supports globbing in the filename field.{{% /alert %}}
 
-Adds a [data file]({{%  ref "/docs/game-references/data-files.md"  %}}) of a specified type to the game extra content system.
+Adds a [data file]({{% ref "/docs/game-references/data-files.md" %}}) of a specified type to the game extra content system.
 
 ```lua
 files {

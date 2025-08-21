@@ -27,7 +27,7 @@ A resource folder (you know, this `mymode` you made above) will need a manifest 
 Make a file called `fxmanifest.lua` (this is _always_ Lua, even if you'll be writing scripts in C#/JS later on) in your `mymode` folder. In it, put the following text using your favorite text editor:
 
 ```lua
-fx_version '{{%  rmv2  %}}'
+fx_version '{{% rmv2 %}}'
 game 'gta5'
 
 author 'An awesome dude'
