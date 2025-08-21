@@ -2,5 +2,10 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss-cli": "^11.0.1"
+  },
+  "scripts": {
+    "prepare:submodules": "git submodule update --init --recursive",
+    "prepare:docsy": "cd themes/docsy && npm install",
+    "prepare": "npm run prepare:submodules && npm run prepare:docsy"
   }
 }
