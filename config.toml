@@ -9,7 +9,7 @@ baseURL = "/"
 enableMissingTranslationPlaceholders = true
 timeout = "600s"
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 # Highlighting config
 pygmentsCodeFences = true

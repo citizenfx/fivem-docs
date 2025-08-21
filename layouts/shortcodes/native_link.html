@@ -1,6 +1,6 @@
 {{- $name := .Get 0 -}}
-{{- $natives := getJSON "https://static.cfx.re/natives/natives.json" -}}
-{{- $cfxNatives := getJSON "https://static.cfx.re/natives/natives_cfx.json" -}}
+{{- $natives := (resources.GetRemote "https://static.cfx.re/natives/natives.json") | transform.Unmarshal -}}
+{{- $cfxNatives := (resources.GetRemote "https://static.cfx.re/natives/natives_cfx.json") | transform.Unmarshal -}}
 {{- $nativeHash := 0 -}}
 {{- range $natives -}}
     {{- range . -}}

@@ -1,3 +1,5 @@
-{{ $kind := .Get 0 }}
-{{- $events := getJSON (printf "https://runtime.fivem.net/doc/events/%s.html.json" $kind) -}}
-{{ $events.content }}
+{{- $kind := .Get 0 -}}
+{{- $events := dict -}}
+{{- $url := printf "https://runtime.fivem.net/doc/events/%s.html.json" $kind -}}
+{{- $events := (resources.GetRemote $url) | transform.Unmarshal -}}
+{{- $events.content -}}
