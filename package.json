@@ -6,6 +6,8 @@
     "postcss-cli": "^11.0.1"
   },
   "scripts": {
+    "build": "hugo build --ignoreCache",
+    "serve": "hugo serve --buildDrafts",
     "prepare:submodules": "git submodule update --init --recursive",
     "prepare:docsy": "cd themes/docsy && npm install",
     "prepare": "npm run prepare:submodules && npm run prepare:docsy"
