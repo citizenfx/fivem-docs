@@ -42,7 +42,7 @@ local identifiers = {}
 local playerIdents = GetPlayerIdentifiers(source)
 
 for i = 1, #playerIdents do
-  local ident = playerIdentifiers[i]
+  local ident = playerIdents[i]
   local colonPosition = string.find(ident, ":") - 1
   local identifierType = string.sub(ident, 1, colonPosition)
   identifiers[identifierType] = ident
