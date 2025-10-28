@@ -1,0 +1,15 @@
+<div class="article-nav">
+  {{- with or .Page.PrevInSection .Page.Parent -}}
+    <a href="{{ .RelPermalink }}" class="article-nav-link prev-article">
+      <div class="article-nav-direction"><span class="article-nav-direction-icon material-icons-outlined">arrow_back</span> Previous</div>
+      <div class="article-nav-title">{{- .Title -}}</div>
+    </a>
+  {{- end -}}
+
+  {{- with .Page.NextInSection -}}
+    <a href="{{ .RelPermalink }}" class="article-nav-link next-article">
+      <div class="article-nav-direction">Next <span class="article-nav-direction-icon material-icons-outlined">arrow_forward</span></div>
+      <div class="article-nav-title">{{- .Title -}}</div>
+    </a>
+  {{- end -}}
+</div>

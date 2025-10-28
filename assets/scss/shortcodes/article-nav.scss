@@ -1,0 +1,44 @@
+.article-nav {
+  display: flex;
+  border-top: 1px solid $border-color;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  gap: 1rem;
+
+  .article-nav-link {
+    flex: 1;
+    text-decoration: none;
+    border: 1px solid $border-color;
+    padding: 1rem 1.5rem;
+
+    &:nth-child(1) { text-align: left; }
+    &:nth-child(2) { text-align: right; }
+
+    &:hover {
+      border-color: $primary;
+    }
+  }
+
+  .article-nav-direction {
+    color: $body-secondary-color;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+
+    .article-nav-direction-icon {
+      font-size: inherit;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+    }
+  }
+
+  .article-nav-title {
+    font-weight: $font-weight-semibold;
+    color: $body-color;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+}
