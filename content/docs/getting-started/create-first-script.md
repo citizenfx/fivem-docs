@@ -117,3 +117,5 @@ Within the forum, go to the [Resource Development & Modding category](https://fo
 For questions regarding server setup or general troubleshooting, go to [Server Development category](https://forum.cfx.re/c/server-development/35).
 Want to see what other people made?
 While there is a dedicated #showcase channel in our [Discord server](https://discord.gg/fivem) check out the [FiveM Releases](https://forum.cfx.re/c/releases/7) in our forum which can be a great inspiration for your own projects.
+
+{{% article-nav %}}

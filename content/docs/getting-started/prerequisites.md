@@ -26,3 +26,5 @@ A Cfx.re account is needed in order to set up your server at a later point.
 3. Check your email inbox for a confirmation message and follow the link to activate your Cfx.re account.
 
 Once confirmed, you'll be automatically signed in and ready to go. Your Cfx.re account is created.
+
+{{% article-nav %}}

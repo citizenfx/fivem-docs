@@ -43,3 +43,5 @@ Your browser opens.
 6. Click **Continue**.
 
 Great! FiveM is now installed and ready to use. Next, let's set up your own local server!
+
+{{% article-nav %}}
