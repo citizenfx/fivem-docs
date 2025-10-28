@@ -5,8 +5,6 @@ description: >
   Getting Started with FiveM Server and Scripting.
 ---
 
-## Intro
-
 In this guide, you'll learn everything you need to get started with FiveM, from installing the client to setting up your own server with txAdmin and finally creating your very first resource.
 
 This guide shows you how to:

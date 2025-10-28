@@ -6,8 +6,6 @@ description: >
   Install the FiveM client.
 ---
 
-## Install and setup FiveM
-
 {{% alert color="info" %}}
 If you already have FiveM downloaded and installed, you can skip this step.
 {{% /alert %}}
@@ -34,10 +32,10 @@ Click Yes. FiveM prepares the launch of the data. This can take several minutes.
 ### 4. Sign in with Cfx.re
 
 1. Review the **Terms of Service**.
-2. If you agree, click **I Accept** to continue.
-A new window opens prompting you to sign in with Cfx.re. Don't skip this!
-3. Click **Sign in with Cfx.re**.
-Your browser opens.
+2. If you agree, click **I Accept** to continue.\
+   A new window opens prompting you to sign in with Cfx.re. Don't skip this!
+3. Click **Sign in with Cfx.re**.\
+   Your browser opens.
 4. Click **Authorize** to grant access.
 5. Go back to FiveM and a **Welcome Username** appears.
 6. Click **Continue**.

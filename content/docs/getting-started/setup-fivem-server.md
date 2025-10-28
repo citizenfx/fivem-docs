@@ -1,12 +1,10 @@
 ---
-title: Setup FiveM Server
+title: Setting up a FiveM Server
 weight: 1003
 image: /getting-started/step3.jpg
 description: >
   Setup FiveM Server.
 ---
-
-## Setup Server
 
 {{% alert color="info" %}}
 If you already have a FiveM up & running you can skip this step.

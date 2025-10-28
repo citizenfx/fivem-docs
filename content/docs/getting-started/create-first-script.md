@@ -1,12 +1,10 @@
 ---
-title: Create first script
+title: Creating Scripts
 weight: 1004
 image: /getting-started/step4.jpg
 description: >
   Create your first script in FiveM.
 ---
-
-## Creation of a helloWorld script
 
 {{% video src="https://runtime.fivem.net/edu/step-4_helloworld.mp4" %}}
 
@@ -112,10 +110,14 @@ To use a different vehicle in the script you just created just replace **adder**
 {{% /alert %}}
 
 Where to learn more?
+
 The official [forum](https://forum.cfx.re/) and the official [Discord server](https://discord.gg/fivem) are great places to look at other people's releases, learn from them, or ask members of the community for help.
 Within the forum, go to the [Resource Development & Modding category](https://forum.cfx.re/c/development/30) for learning about resource creation.
+
 For questions regarding server setup or general troubleshooting, go to [Server Development category](https://forum.cfx.re/c/server-development/35).
+
 Want to see what other people made?
+
 While there is a dedicated #showcase channel in our [Discord server](https://discord.gg/fivem) check out the [FiveM Releases](https://forum.cfx.re/c/releases/7) in our forum which can be a great inspiration for your own projects.
 
 {{% article-nav %}}

@@ -6,8 +6,6 @@ description: >
   Prerequisites for getting started with FiveM.
 ---
 
-## Prerequisites
-
 We recommend installing [**Visual Studio Code**](https://code.visualstudio.com/download) (for creating and editing scripts) and [**7-Zip**](https://www.7-zip.org/download.html) (for unpacking server files), as these tools make the process much easier.
 While there are alternatives you can use, our video guides are based on this software. Furthermore, it is recommended to enable the [option in Windows to always show file extensions](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/).
 
