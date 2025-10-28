@@ -38,6 +38,10 @@ offlineSearch = true
 [blackfriday]
 hrefTargetBlank = true
 
+[page]
+nextPrevInSectionSortOrder = "asc"
+nextPrevSortOrder = "asc"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
