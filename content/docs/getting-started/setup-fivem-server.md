@@ -12,7 +12,7 @@ description: >
 If you already have a FiveM up & running you can skip this step.
 {{% /alert %}}
 
-{{% video url="https://runtime.fivem.net/edu/step-2_setup-fivem-server.mp4" %}}
+{{% video src="https://runtime.fivem.net/edu/step-2_setup-fivem-server.mp4" %}}
 
 ### 1. Download and open server artifacts
 
@@ -90,7 +90,7 @@ You made it! Your own local FiveM server is now up and running, waiting for you 
 
 ## Connect to local server
 
-{{% video url="https://runtime.fivem.net/edu/step-3_connect-to-fivem-server.mp4" %}}
+{{% video src="https://runtime.fivem.net/edu/step-3_connect-to-fivem-server.mp4" %}}
 
 ### 1. Launch the FiveM client and connect to your server
 

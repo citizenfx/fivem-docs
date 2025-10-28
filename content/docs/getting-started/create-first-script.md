@@ -8,7 +8,7 @@ description: >
 
 ## Creation of a helloWorld script
 
-{{% video url="https://runtime.fivem.net/edu/step-4_helloworld.mp4" %}}
+{{% video src="https://runtime.fivem.net/edu/step-4_helloworld.mp4" %}}
 
 ### Creating a script with Visual Studio Code
 
@@ -81,7 +81,7 @@ Let's explore some of the simple to use natives first and incorporate them into 
 ##### Disabling the minimap
 
 While the minimap helpful it is not wanted in some cases so let's disable it:
-{{% video url="https://runtime.fivem.net/edu/step-5_displayradar.mp4" %}}
+{{% video src="https://runtime.fivem.net/edu/step-5_displayradar.mp4" %}}
 
 1. Open the [native reference](https://docs.fivem.net/natives/) and try finding the [**DisplayRadar**](https://docs.fivem.net/natives/?_0xA0EBB943C300E693) native.
 2. Go to the helloWorld folder and double-click on client.lua and remove everything inside.

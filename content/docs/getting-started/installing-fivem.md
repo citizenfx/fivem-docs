@@ -12,7 +12,7 @@ description: >
 If you already have FiveM downloaded and installed, you can skip this step.
 {{% /alert %}}
 
-{{% video url="https://runtime.fivem.net/edu/step-1_install-setup-fivem.mp4" %}}
+{{% video src="https://runtime.fivem.net/edu/step-1_install-setup-fivem.mp4" %}}
 
 ### 1. Download the FiveM client
 
