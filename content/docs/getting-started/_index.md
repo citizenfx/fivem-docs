@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-weight: 1000
+weight: 1
 description: >
   Getting Started with FiveM Server and Scripting.
 ---
