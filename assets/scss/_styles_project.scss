@@ -1,4 +1,11 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons+Outlined);
+
+// Navbar Overrides
 .td-navbar {
+  background-color: hsl(226, 23%, 11%);
+
   .navbar-brand,
   .navbar-logo,
   .navbar-nav {
@@ -7,3 +14,26 @@
   }
 }
 
+// Layout Overrides
+@include media-breakpoint-up(md) {
+  .td-main {
+    margin: 0 auto;
+
+    .td-sidebar,
+    .td-sidebar-toc {
+      flex: 1 1 0;
+      max-width: 280px;
+    }
+
+    main {
+      max-width: 980px;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+}
+
+// Always scale to max width
+.td-max-width-on-larger-screens {
+  max-width: 100%;
+}
