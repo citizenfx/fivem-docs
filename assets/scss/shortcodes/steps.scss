@@ -1,0 +1,96 @@
+.steps-container {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.step {
+  margin-bottom: 1.5rem;
+  border: 1px solid $border-color;
+  overflow: hidden;
+  transition: box-shadow .3s ease;
+
+  &:hover {
+    box-shadow: 0 .25rem .75rem rgba($black, 0.1);
+
+    .step-image img {
+      transform: scale(1.1);
+    }
+  }
+
+  .step-content {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .step-image {
+    flex: 0 0 200px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+      transition: transform .3s ease;
+    }
+  }
+
+  .step-description {
+    padding: 1.5rem;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .step-text-group {
+      .step-label {
+        color: $primary;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+      }
+
+      .step-title {
+        font-size: $font-size-lg;
+        margin-bottom: .5rem;
+      }
+
+      .step-text {
+        color: $body-secondary-color;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .step-button {
+      padding: 0.5rem 1rem;
+      align-self: flex-start;
+      background-color: rgb(243, 243, 244);
+      box-shadow: 0 -2px 0 $primary inset;
+      border: none;
+
+      &:hover {
+        color: $white;
+        background: $primary;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .step-content {
+      flex-direction: column;
+    }
+
+    .step-image {
+      flex: none;
+      height: 180px;
+    }
+
+    .step-description {
+      padding: 1rem;
+    }
+  }
+}
