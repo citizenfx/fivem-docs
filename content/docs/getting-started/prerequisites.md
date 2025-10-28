@@ -1,6 +1,7 @@
 ---
 title: Prerequisites
 weight: 1001
+image: /getting-started/step1.jpg
 description: >
   Prerequisites for getting started with FiveM.
 ---

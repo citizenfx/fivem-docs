@@ -1,6 +1,7 @@
 ---
 title: Setup FiveM Server
 weight: 1003
+image: /getting-started/step3.jpg
 description: >
   Setup FiveM Server.
 ---

@@ -22,3 +22,5 @@ This guide shows you how to:
 If you ever get stuck, the [**Cfx.re Forum**](https://forum.cfx.re/) and our [**official Discord**](https://discord.com/invite/fivem) are great places to ask for help.
 
 Let's get started!
+
+{{% steps %}}
