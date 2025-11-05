@@ -21,7 +21,7 @@ If you already have FiveM downloaded and installed, you can skip this step.
 ### 2. Install and set up FiveM client
 
 1. Go to your **Downloads** folder and run **FiveM.exe**.
-2. When prompted, navigate to your GTA V installation folder and select GTA5.exe.
+2. When prompted, navigate to your GTAV installation folder and select GTA5.exe.
 3. Click **Open** to confirm the path.
 
 ### 3. Update game data

@@ -7,7 +7,7 @@ description: >
 ---
 
 {{% alert color="info" %}}
-If you already have a FiveM up & running you can skip this step.
+If you already have a FiveM server up & running you can skip this step.
 {{% /alert %}}
 
 {{% video src="https://runtime.fivem.net/edu/step-2_setup-fivem-server.mp4" %}}
@@ -34,7 +34,7 @@ The download progresses and completes.
 Your browser opens **txAdmin** automatically.
 
 {{% alert color="info" %}}
-If you are not automatically redirected, go to: http://localhost:40120/
+If you are not automatically redirected, go to: [http://localhost:40120](http://localhost:40120)
 {{% /alert %}}
 
 2. Enter the 4-digit PIN from the console.
@@ -44,11 +44,6 @@ If you are not automatically redirected, go to: http://localhost:40120/
 1. Click **Link account**.
 2. Sign in and click **Continue** to authorize txAdmin to access to your Cfx.re account.
 3. Set up a backup password.
-
-{{% alert color="info" %}}
-As an option, you can include your Discord ID.
-{{% /alert %}}
-
 4. Review the **Creator Platform License Agreement** and the **txAdmin License**.
 5. If you agree, click the checkbox below the password.
 6. Click **Register**.
@@ -93,7 +88,7 @@ You made it! Your own local FiveM server is now up and running, waiting for you 
 ### 1. Launch the FiveM client and connect to your server
 
 1. Open the **FiveM client**. Relaunch it if it was previously closed.
-2. Click **Connect to ComputerName on LAN**.
+2. Click **Connect to \[ComputerName\] on LAN**, where ComputerName will be your computer name.
 
 {{% alert color="info" %}}
 If you don't see the button, restart the FiveM client.

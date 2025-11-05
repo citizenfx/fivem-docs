@@ -48,7 +48,7 @@ client_script 'client.lua'
 2. Paste this code:
 
 ```lua
-print("helloWorld")
+print('helloWorld')
 ```
 
 3. Save the file.
@@ -73,7 +73,7 @@ You've successfully set up your server and run your first Lua script in FiveM. W
 
 #### Exploring the FiveM native reference
 
-A crucial part of the documentation around FiveM is the [native reference](https://docs.fivem.net/natives/) which allows you to interact with game events.
+A crucial part of the documentation around FiveM is the [native reference](/natives/) which allows you to interact with game functions.
 Let's explore some of the simple to use natives first and incorporate them into your first script.
 
 ##### Disabling the minimap
@@ -81,7 +81,7 @@ Let's explore some of the simple to use natives first and incorporate them into 
 While the minimap helpful it is not wanted in some cases so let's disable it:
 {{% video src="https://runtime.fivem.net/edu/step-5_displayradar.mp4" %}}
 
-1. Open the [native reference](https://docs.fivem.net/natives/) and try finding the [**DisplayRadar**](https://docs.fivem.net/natives/?_0xA0EBB943C300E693) native.
+1. Open the [native reference](/natives/) and try finding the [**DisplayRadar**](/natives/?_0xA0EBB943C300E693) native.
 2. Go to the helloWorld folder and double-click on client.lua and remove everything inside.
 3. Type the following text:
 
@@ -92,18 +92,18 @@ DisplayRadar(false)
 4. Hit Ctrl + S or go to File > Save to save your file.
 5. Start up the game and restart the helloWorld script via the txAdmin Resource tab.
 The minimap is hidden.
-On the [native reference](https://docs.fivem.net/natives/) you can find more interesting game functions which can be combined to create unique experiences and gameplay twists.
+On the [native reference](/natives/) you can find more interesting game functions which can be combined to create unique experiences and gameplay twists.
 
 ##### Spawning a vehicle guide
 
-1. Open the [native reference](https://docs.fivem.net/natives/) and try finding the [**CreateVehicle**](https://docs.fivem.net/natives/?_0xAF35D0D2583051B0) native.
+1. Open the [native reference](/natives/) and try finding the [**CreateVehicle**](/natives/?_0xAF35D0D2583051B0) native.
 2. Navigate to helloWorld and open **client.lua** and remove everything inside.
 3. Copy the example from the native reference to your **client.lua**.
 4. **Hit Ctrl + S** or go to **File > Save** to save your file.
 5. Start up the game and restart the helloWorld script via the txAdmin Resource tab.
 A car is spawned. For example, an Adder vehicle is spawned.
 
-Feel free to play around with other vehicles which you can find in the [vehicle reference](https://docs.fivem.net/docs/game-references/vehicle-references/vehicle-models/).
+Feel free to play around with other vehicles which you can find in the [vehicle reference](/docs/game-references/vehicle-references/vehicle-models/).
 
 {{% alert color="info" %}}
 To use a different vehicle in the script you just created just replace **adder** with a vehicle name that you like.
