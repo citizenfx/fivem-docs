@@ -230,8 +230,8 @@ file 'html/loadscreen.html'
 
 ### loadscreen_manual_shutdown
 
-Prevents the loadingscreen NUI from shutting down after loading the game data, where you'd usually see the bridge. Can then be closed with [ShutdownLoadingScreenNui](https://docs.fivem.net/natives/?_0xB9234AFB).
-Replacement for unsupported `SET_MANUAL_SHUTDOWN_LOADING_SCREEN_NUI` native.
+Prevents the loadingscreen NUI from shutting down after loading the game data, where you'd usually see the bridge. Can then be closed with {{% native_link "SHUTDOWN_LOADING_SCREEN_NUI" %}}.
+Replacement for unsupported {{% native_link "SET_MANUAL_SHUTDOWN_LOADING_SCREEN_NUI" %}} native.
 
 ```lua
 loadscreen_manual_shutdown 'yes'
