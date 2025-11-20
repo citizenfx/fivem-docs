@@ -28,7 +28,7 @@ The **Asset Conversion** feature allows you to automatically convert a given fol
 
 ## Alchemist GUI
 
-![Alchemist GUI](/alchemist/alchemistGUI.png)
+![Alchemist GUI](/alchemist/alchemist-gui.png)
 
 ### How to Start Alchemist GUI
 
