@@ -18,11 +18,17 @@ The **Asset Conversion** feature allows you to automatically convert a given fol
 
 ### What is Asset Refinement?
 
-**Asset Refinement** automatically corrects your Legacy assets while converting them to Enhanced format.
+**Asset Refinement** automatically corrects your Legacy assets. This is useful if you have existing Legacy assets that were created with older tools.
 
 ### Requirements to Run Alchemist
 
 - Windows 11
+
+### Supported Filetypes
+
+The following filetypes are supported:
+
+YDR, YTD, YFT, YPT and YDD.
 
 ---
 
