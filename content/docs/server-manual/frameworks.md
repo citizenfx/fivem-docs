@@ -19,6 +19,7 @@ If there's a framework you believe should be included in this list, please submi
 - [ND](https://github.com/ND-Framework/ND_Core) ([Docs](https://ndcore.dev/setup))
 - [QBCore](https://github.com/qbcore-framework/qb-core) ([Docs](https://docs.qbcore.org/qbcore-documentation/))
 - [Qbox](https://github.com/Qbox-project/qbx_core) ([Docs](https://docs.qbox.re/installation))
+- [RSG](https://github.com/Rexshack-RedM/rsg-core) ([Docs](https://https://rsg.mintlify.app/)) (RedM)
 - [vRP](https://github.com/vRP-framework/vRP) ([Docs](https://vrp-framework.github.io/vRP/))
 - [VORP](https://github.com/VORPCORE/vorp-core-lua) ([Docs](https://docs.vorp-core.com)) (RedM)
 
