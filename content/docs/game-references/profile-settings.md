@@ -28,7 +28,7 @@ GTA V profile setting values can be obtained using this native: {{% native_link 
 |   `16` |                   |                                                 |
 |   `17` | Gamepad           | Allow Movement When Zoomed                      |
 |   `18` |                   |                                                 |
-|   `19` |                   |                                                 |
+|   `19` | Gamepad           | Sprint Mode (available in build 2944)           |
 |   `20` | Gamepad           | First person control type                       |
 |   `21` | Keyboard / Mouse  | Invert Mouse Flying                             |
 |   `22` | Keyboard / Mouse  | Invert Mouse Submarine                          |
