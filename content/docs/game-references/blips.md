@@ -1000,6 +1000,42 @@ A list of all game blips as of build 3258 are shown below.
 <div class="blip"><div><div><img src="/blips/radar_field_hangar_discount.png" alt="radar_field_hangar_discount"></div></div><span><strong>919</strong><br>radar_field_hangar_discount</span></div>
 <div class="blip"><div><div><img src="/blips/radar_garment_factory_discount.png" alt="radar_garment_factory_discount"></div></div><span><strong>920</strong><br>radar_garment_factory_discount</span></div>
 <div class="blip"><div><div><img src="/blips/radar_weapon_gusenberg_sweeper.png" alt="radar_weapon_gusenberg_sweeper"></div></div><span><strong>921</strong><br>radar_weapon_gusenberg_sweeper</span></div>
+<div class="blip"><div><div><img src="/blips/radar_weapon_tear_gas.png" alt="radar_weapon_tear_gas"></div></div><span><strong>922</strong><br>radar_weapon_tear_gas</span></div>
+<div class="blip"><div><div><img src="/blips/radar_dog.png" alt="radar_dog"></div></div><span><strong>923</strong><br>radar_dog</span></div>
+<div class="blip"><div><div><img src="/blips/radar_bobcat_security.png" alt="radar_bobcat_security"></div></div><span><strong>924</strong><br>radar_bobcat_security</span></div>
+<div class="blip"><div><div><img src="/blips/radar_smoke_shop.png" alt="radar_smoke_shop"></div></div><span><strong>925</strong><br>radar_smoke_shop</span></div>
+<div class="blip"><div><div><img src="/blips/radar_smoke_shop_for_sale.png" alt="radar_smoke_shop_for_sale"></div></div><span><strong>926</strong><br>radar_smoke_shop_for_sale</span></div>
+<div class="blip"><div><div><img src="/blips/radar_smoke_shop_attention.png" alt="radar_smoke_shop_attention"></div></div><span><strong>927</strong><br>radar_smoke_shop_attention</span></div>
+<div class="blip"><div><div><img src="/blips/radar_helitours.png" alt="radar_helitours"></div></div><span><strong>928</strong><br>radar_helitours</span></div>
+<div class="blip"><div><div><img src="/blips/radar_helitours_for_sale.png" alt="radar_helitours_for_sale"></div></div><span><strong>929</strong><br>radar_helitours_for_sale</span></div>
+<div class="blip"><div><div><img src="/blips/radar_helitours_attention.png" alt="radar_helitours_attention"></div></div><span><strong>930</strong><br>radar_helitours_attention</span></div>
+<div class="blip"><div><div><img src="/blips/radar_car_wash_business.png" alt="radar_car_wash_business"></div></div><span><strong>931</strong><br>radar_car_wash_business</span></div>
+<div class="blip"><div><div><img src="/blips/radar_car_wash_business_for_sale.png" alt="radar_car_wash_business_for_sale"></div></div><span><strong>932</strong><br>radar_car_wash_business_for_sale</span></div>
+<div class="blip"><div><div><img src="/blips/radar_car_wash_business_attention.png" alt="radar_car_wash_business_attention"></div></div><span><strong>933</strong><br>radar_car_wash_business_attention</span></div>
+<div class="blip"><div><div><img src="/blips/radar_attention.png" alt="radar_attention"></div></div><span><strong>934</strong><br>radar_attention</span></div>
+<div class="blip"><div><div><img src="/blips/radar_alarm.png" alt="radar_alarm"></div></div><span><strong>935</strong><br>radar_alarm</span></div>
+<div class="blip"><div><div><img src="/blips/radar_helitours_discount.png" alt="radar_helitours_discount"></div></div><span><strong>936</strong><br>radar_helitours_discount</span></div>
+<div class="blip"><div><div><img src="/blips/radar_smoke_shop_discount.png" alt="radar_smoke_shop_discount"></div></div><span><strong>937</strong><br>radar_smoke_shop_discount</span></div>
+<div class="blip"><div><div><img src="/blips/radar_car_wash_business_discount.png" alt="radar_car_wash_business_discount"></div></div><span><strong>938</strong><br>radar_car_wash_business_discount</span></div>
+<div class="blip"><div><div><img src="/blips/radar_real_estate.png" alt="radar_real_estate"></div></div><span><strong>939</strong><br>radar_real_estate</span></div>
+<div class="blip"><div><div><img src="/blips/radar_medical_courier.png" alt="radar_medical_courier"></div></div><span><strong>940</strong><br>radar_medical_courier</span></div>
+<div class="blip"><div><div><img src="/blips/radar_gruppe_sechs.png" alt="radar_gruppe_sechs"></div></div><span><strong>941</strong><br>radar_gruppe_sechs</span></div>
+<div class="blip"><div><div><img src="/blips/radar_fire_station.png" alt="radar_fire_station"></div></div><span><strong>942</strong><br>radar_fire_station</span></div>
+<div class="blip"><div><div><img src="/blips/radar_fire_truck.png" alt="radar_fire_truck"></div></div><span><strong>943</strong><br>radar_fire_truck</span></div>
+<div class="blip"><div><div><img src="/blips/radar_alpha_mail.png" alt="radar_alpha_mail"></div></div><span><strong>944</strong><br>radar_alpha_mail</span></div>
+<div class="blip"><div><div><img src="/blips/radar_ls_meteor.png" alt="radar_ls_meteor"></div></div><span><strong>945</strong><br>radar_ls_meteor</span></div>
+<div class="blip"><div><div><img src="/blips/radar_four20_survival.png" alt="radar_four20_survival"></div></div><span><strong>946</strong><br>radar_four20_survival</span></div>
+<div class="blip"><div><div><img src="/blips/radar_community_mission_series.png" alt="radar_community_mission_series"></div></div><span><strong>947</strong><br>radar_community_mission_series</span></div>
+<div class="blip"><div><div><img src="/blips/radar_property_mansion.png" alt="radar_property_mansion"></div></div><span><strong>948</strong><br>radar_property_mansion</span></div>
+<div class="blip"><div><div><img src="/blips/radar_ai_keypad.png" alt="radar_ai_keypad"></div></div><span><strong>949</strong><br>radar_ai_keypad</span></div>
+<div class="blip"><div><div><img src="/blips/radar_taxi_self_drive.png" alt="radar_taxi_self_drive"></div></div><span><strong>950</strong><br>radar_taxi_self_drive</span></div>
+<div class="blip"><div><div><img src="/blips/radar_train_subway.png" alt="radar_train_subway"></div></div><span><strong>951</strong><br>radar_train_subway</span></div>
+<div class="blip"><div><div><img src="/blips/radar_trashbag.png" alt="radar_trashbag"></div></div><span><strong>952</strong><br>radar_trashbag</span></div>
+<div class="blip"><div><div><img src="/blips/radar_mission_creator.png" alt="radar_mission_creator"></div></div><span><strong>953</strong><br>radar_mission_creator</span></div>
+<div class="blip"><div><div><img src="/blips/radar_cat.png" alt="radar_cat"></div></div><span><strong>954</strong><br>radar_cat</span></div>
+<div class="blip"><div><div><img src="/blips/radar_mansion_ai_m.png" alt="radar_mansion_ai_m"></div></div><span><strong>955</strong><br>radar_mansion_ai_m</span></div>
+<div class="blip"><div><div><img src="/blips/radar_mansion_ai_f.png" alt="radar_mansion_ai_f"></div></div><span><strong>956</strong><br>radar_mansion_ai_f</span></div>
+<div class="blip"><div><div><img src="/blips/radar_mansion_ai_gang.png" alt="radar_mansion_ai_gang"></div></div><span><strong>957</strong><br>radar_mansion_ai_gang</span></div>
 </div>
 
 ---
