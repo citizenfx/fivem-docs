@@ -7,11 +7,12 @@ menu:
     weight: 20
 ---
 
-Welcome to the documentation for the [FiveM][home] modification framework. Use the links below to find the information you're looking for. 
+Welcome to the official documentation for the [FiveM][home] modification framework. Whether you're a server owner or an asset developer, you'll find all the information you need below. Join our [Discord][discord] for more!
 
-## Server owners
+## 🎮 Server owners
 * 🤩 Find out how to [start a server][server-manual] on FiveM.
 * 🧩 Download or buy fancy [resources](./server-manual/finding-resources) for your server, or discover a [🔩 framework](./server-manual/frameworks) to use.
+* 📝 Discover [Portal][portal], our new hub to manage assets, servers and subscriptions!
 
 ## Asset developers
 * 🧐 Get started developing assets for FiveM using our [🧰 Cfx.re Development Kit](./fxdk),
@@ -24,3 +25,4 @@ Welcome to the documentation for the [FiveM][home] modification framework. Use t
 [forum]: https://forum.cfx.re
 [discord]: https://discord.gg/fivem
 [server-manual]: ./server-manual/setting-up-a-server
+[portal]: ./server-owner/portal
