@@ -281,4 +281,4 @@ useful information to share, please [add it to this doc][contributing]. Any help
 | CEventWrithe                                       |             |
 
 [event-ref]: /docs/scripting-reference/events/list/gameEventTriggered
-[contributing]: /docs/contributing/how-you-can-help/#improving-documentation
+[contributing]: /docs/contributing/#improving-documentation

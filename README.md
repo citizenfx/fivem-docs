@@ -10,6 +10,6 @@ If you encounter any dead links or issues, please report them on our [GitHub Iss
 
 ### Wanna Contribute? 🤝
 
-We love contributions! If you're interested in helping out, check out our [Contribution Guidelines](content/docs/contributing/how-you-can-help.md) to get started.
+We love contributions! If you're interested in helping out, check out our [Contribution Guidelines](content/docs/contributing/contribution-guidelines/) to get started.
 
 [docs]: https://docs.fivem.net
