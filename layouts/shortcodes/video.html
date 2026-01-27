@@ -1,5 +1,5 @@
 <div class="video-container">
-  <video width="100%" controls>
+  <video class="video" controls>
     {{- with .Get "src" -}}<source src="{{ . }}" type="video/mp4" />{{- end -}}
   </video>
 </div>
