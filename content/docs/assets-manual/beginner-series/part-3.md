@@ -1,6 +1,6 @@
 ---
-title: Part 3 - Basic Asset Creation
-weight: 400
+title: Part 3 - Basic Asset Creation 1
+weight: 403
 layout: single
 ---
 
@@ -57,3 +57,5 @@ In this example, we have a Diffuse, Normal and Specular texture, so we will be u
 1. Drag all exported files into our RPF we created.
 2. Once imported, restart CodeWalker.
 3. You can now view the Drawable, all textures should be applied correctly.
+
+{{% article-nav %}}

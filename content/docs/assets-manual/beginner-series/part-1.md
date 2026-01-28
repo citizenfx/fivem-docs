@@ -1,6 +1,6 @@
 ---
 title: Part 1 - Initial Tools Setup 1
-weight: 400
+weight: 401
 layout: single
 ---
 
@@ -57,9 +57,4 @@ You have now set up the **basic tools** required to start your GTA V 3D modding 
 - Blender
 - Sollumz Extension
 
-## Next Up - Part 2
-
-In **Part 2**, we'll cover:
-
-- Using **CodeWalker's World Viewer**
-- Basic **Sollumz** usage inside Blender
+{{% article-nav %}}

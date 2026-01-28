@@ -1,6 +1,6 @@
 ---
 title: Part 2 - Initial Tools Setup 2
-weight: 400
+weight: 402
 layout: single
 ---
 
@@ -68,3 +68,5 @@ Expand the panel in the top-right corner, then press **T** to open the toolbar.
 4. Drag the exported `.XML` file into it.
 
 You've successfully imported and exported your first GTA V model using CodeWalker and Sollumz!
+
+{{% article-nav %}}
