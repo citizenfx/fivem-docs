@@ -1,11 +1,18 @@
 ---
-title: Part 1 - Initial Tools Setup 1
+title: Part 1 - Tooling & Workspace Setup
 weight: 10
 ---
 
 {{% youtube id="GgZ82sue3kM" %}}
 
-In this first part of the beginner tutorial series for GTAV 3D modding, we'll cover the initial setup of the required tools.
+## What We'll Cover in This Part
+
+- Downloading and installing CodeWalker
+- Configuring CodeWalker for editing, including enabling Edit Mode
+- Setting up nametables for proper asset loading
+- Creating a custom RPF archive for future mods
+- Installing Blender for 3D modeling
+- Installing and configuring the Sollumz extension for GTAV asset creation
 
 ## Step 1: Download CodeWalker
 

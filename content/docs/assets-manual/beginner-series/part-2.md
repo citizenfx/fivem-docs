@@ -1,11 +1,11 @@
 ---
-title: Part 2 - Initial Tools Setup 2
+title: Part 2 - Exploring & Exporting GTAV Assets
 weight: 20
 ---
 
 {{% youtube id="fCQ5JlbWcSE" %}}
 
-In this part, we'll be covering:
+## What We'll Cover in This Part
 
 - Basic CodeWalker usage
 - Finding models in CodeWalker

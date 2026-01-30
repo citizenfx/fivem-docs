@@ -1,11 +1,11 @@
 ---
-title: Part 3 - Basic Asset Creation 1
+title: Part 3 - Creating GTAV Assets in Blender
 weight: 30
 ---
 
 {{% youtube id="FOBlazpGIhA" %}}
 
-In this part, we'll be covering:
+## What We'll Cover in This Part
 
 - Creating new assets with Sollumz
 - Adding materials

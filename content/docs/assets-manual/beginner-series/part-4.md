@@ -1,11 +1,11 @@
 ---
-title: Part 4 - Basic Asset Creation 2
+title: Part 4 - Placing Assets & Creating Simple Map Mods
 weight: 40
 ---
 
 {{% youtube id="dVBO3_ZGL_Q" %}}
 
-In this part, we'll be covering:
+## What We'll Cover in This Part
 
 - Placing assets in CodeWalker
 - Creating simple map mods
