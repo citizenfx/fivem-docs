@@ -175,7 +175,7 @@ Every build includes all content and changes from the builds before.
 | 3258   | mp2024_01                            | Bottom Dollar Bounties      |
 | 3407   | mp2024_02                            | Agents of Sabotage          |
 | 3570   | mp2025_01                            | Money Fronts                |
-| 3717   | mp2025_02                            | A Safehouse in the Hills    |
+| 3751   | mp2025_02                            | A Safehouse in the Hills    |
 
 **RedM builds**
 
