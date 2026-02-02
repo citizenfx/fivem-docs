@@ -57,7 +57,7 @@ We can squash commits by using `git rebase -i HEAD~n` where `n` is the number of
 
 So essentially, one would type the following into the console if we want to combine said commits (up to head, being the most recent commit):
 
-```
+```bash
 git rebase -i HEAD~3
 ```
 

@@ -25,7 +25,7 @@ Currently, directional audio's position is relative to the game camera, a soluti
 
 ### `voice_useSendingRangeOnly [true/false]`
 
-A Convar that can be used to only hear other clients within their range. This is set to false by default.
+A convar that can be used to only hear other clients within their range. This is set to false by default.
 
 ### `voice_useNativeAudio [true/false]`
 

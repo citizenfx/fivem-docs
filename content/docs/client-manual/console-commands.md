@@ -166,7 +166,7 @@ You will also need an [fxmanifest.lua][manifest-reference] file for the resource
 Restarts the localGame resource.
 
 ### modelviewer
-Allows you to load in TXDs and drawables via an graphical interface.
+Allows you to load in TXDs and drawables via a graphical interface.
 
 Usage: `modelviewer <true|false>`
 
@@ -251,7 +251,7 @@ In order for players to load this file, it needs to be stored in the server's ro
 
 In your resource manifest, `fxmanifest.lua`:
 
-```
+```lua
 files {
   'your_resource_name_cache_y.dat'
 }

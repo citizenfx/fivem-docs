@@ -12,7 +12,7 @@ While there are alternatives you can use, our video guides are based on this sof
 ## Creation of Cfx.re account
 
 {{% alert color="info" %}}
-If you have an Cfx.re account, you can skip this step.
+If you already have a Cfx.re account, you can skip this step.
 {{% /alert %}}
 
 A Cfx.re account is needed in order to set up your server at a later point.

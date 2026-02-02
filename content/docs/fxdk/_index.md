@@ -58,7 +58,7 @@ In FxDK, [building](/docs/fxdk/project-building/) deploy-ready server is as easy
 # Projects
 FxDK operates on so called **projects**. Project, in a nutshell, is a dedicated folder on your disk where all project files live. It is a collection of all assets, scripts, models and other files, treat projects like a complete runnable server.
 
-Currently, there're two types of assets:
+Currently, there are two types of assets:
  - [Resource](/docs/fxdk/resources/)
  - [Map](/docs/fxdk/world-editor/)
 

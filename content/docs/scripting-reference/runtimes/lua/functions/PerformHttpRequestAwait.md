@@ -2,7 +2,7 @@
 title: PerformHttpRequestAwait
 ---
 
-This function is an synchronous wrapper around [PerformHttpRequest](/docs/scripting-reference/runtimes/lua/functions/PerformHttpRequest/) which will await the data internally, preventing the need for callbacks. **It's available on server build 9515 and newer**
+This function is a synchronous wrapper around [PerformHttpRequest](/docs/scripting-reference/runtimes/lua/functions/PerformHttpRequest/) which will await the data internally, preventing the need for callbacks. **It's available on server build 9515 and newer**
 
 Syntax
 ------

@@ -51,7 +51,7 @@ Replace `127.0.0.1` with your server's external (public) IP address to ensure it
 
 Alternatively, you can use a port checking service:
 
-1. Visit [canyouseeme.org](http://canyouseeme.org)
+1. Visit [canyouseeme.org](https://canyouseeme.org)
 2. Enter your server's port (default port: **30120**)
 3. Click **Check Port**
 

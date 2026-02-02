@@ -128,6 +128,6 @@ Lua specific functions
 
 [about-natives]: /docs/scripting-manual/introduction/about-native-functions/
 [resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest/
-[grit]: http://gritengine.com
+[grit]: https://github.com/grit-engine/grit-engine
 [luadocs]: https://www.lua.org/manual/5.4/
 [natives-doc]: /natives/

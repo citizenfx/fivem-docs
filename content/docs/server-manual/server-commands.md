@@ -388,9 +388,9 @@ This is set to true by default
 
 A boolean console variable introduced in server version 8823 that fixes an oversight in older server versions that incorrectly limited the amount of entity ids to `8192` instead of the proper `65535` when both `set onesync on` and `set onesync_population false`.
 
-This ConVar does not affect whether population spawns on the server, you still need to use the `onesync_population` ConVar for this.
+This convar does not affect whether population spawns on the server, you still need to use the `onesync_population` convar for this.
 
-NOTE: Using this ConVar also opts you into using `sv_experimentalStateBagsHandler`
+NOTE: Using this convar also opts you into using `sv_experimentalStateBagsHandler`
 
 This is set to true by default
 
@@ -398,7 +398,7 @@ This is set to true by default
 
 A boolean console variable introduced in server version 9149 that uses the new serialization API to improve the speed of packing/unpacking GTA game events. It adds checks to ensure that entities sent with the game events are relevant to the target client, and also improves backward compatibility with future title updates.
 
-NOTE: Using this ConVar also opts you into using `sv_experimentalStateBagsHandler` and `sv_experimentalOneSyncPopulation`
+NOTE: Using this convar also opts you into using `sv_experimentalStateBagsHandler` and `sv_experimentalOneSyncPopulation`
 
 As of July 2025, this is enabled by default.
 

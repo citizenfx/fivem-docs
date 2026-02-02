@@ -16,7 +16,7 @@ Before you can create your first C# resource, you'll need to install [Visual Stu
 
 2. Once that window shows up we're going to be following the [FiveM's Cookbook modern guide](https://cookbook.fivem.net/2020/02/24/try-the-new-citizenfx-c-templates-for-fivem/) to setup our scripting environment, so make sure you enter the following commands in the console window:
 
-```
+```dos
 dotnet new -i CitizenFX.Templates
 mkdir MyResource
 cd MyResource
@@ -36,7 +36,7 @@ cd /d [PATH TO THIS RESOURCE]
 
 **Make a symbolic link. For more information about `mklink`, visit the following [article](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/mklink)** by Microsoft.
 
-```
+```dos
 mklink /d X:\cfx-server-data\resources\[local]\MyResource dist
 ```
 

@@ -309,5 +309,5 @@ SET_MAX_WIDTH(float maxWidth)
 Sets max width for buttons. This prevents buttons from being off-screen if there are too many data slots set. Instead, they will stack up.
 
 SET_HIT_AREA_VISIBLE(bool isVisible)
-Shows debug hit area for mouse visible. This hit area is used for native 0x3d9acb1eb139e702, which returns wether or not the mouse cursor is above instructional buttons if TOGGLE_MOUSE_BUTTONS is true.
+Shows debug hit area for mouse visible. This hit area is used for native 0x3d9acb1eb139e702, which returns whether or not the mouse cursor is above instructional buttons if TOGGLE_MOUSE_BUTTONS is true.
 ```

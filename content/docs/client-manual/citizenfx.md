@@ -36,7 +36,7 @@ This will launch FiveM directly into the specified build so you don't have to tr
 
 ### Update channel
 
-```
+```ini
 UpdateChannel=production
 ```
 

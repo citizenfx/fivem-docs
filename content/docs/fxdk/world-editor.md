@@ -3,13 +3,13 @@ title: World Editor
 weight: 20
 ---
 
-**World Editor** - is FxDK *personality* allowing you to create your own worlds by modify game's map (with some limitations, see [patches]() section), and adding new objects.
+**World Editor** - is FxDK *personality* allowing you to create your own worlds by modifying the game's map (with some limitations, see [patches](#patches) section), and adding new objects.
 
-> Please note, that World Editor is still in it's early stage.
+> Please note, that World Editor is still in its early stage.
 
 World Editor follows _what you see is what you get_ paradigm of editing, providing 3D gizmo control essential properties of objects on a map, such as positioning, rotation and scale, both in global coordinates space and local.
 
-There're two distinct primitives:
+There are two distinct primitives:
 
 ### Patches
 
@@ -48,14 +48,14 @@ Do note that both kinds of events will be triggered after the fact, meaning that
 
 # Using World Editor
 
-We won't dive deep into details here because we have extensive intro tour built into World Editor itself, however, there're few things worth mentioning here.
+We won't dive deep into details here because we have extensive intro tour built into World Editor itself, however, ther are a few things worth mentioning here.
 
 ## Play test
 You can test your creation right away without leaving World Editor by pressing `F5` hotkey or clicking on play button in UI, this will place a controllable player ped where your camera is currently.
 
 You can configure World Editor like so that you'll spawn in vehicle instead, see settings panel in UI.
 
-There're two options to leave play test mode:
+There are two options to leave play test mode:
  - `ESC` hotkey, camera returns where it was when you entered play test.
  - `Shift+ESC` hotkey, camera stays where you are.
 

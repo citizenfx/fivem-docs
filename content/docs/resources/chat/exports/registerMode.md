@@ -30,7 +30,7 @@ object modeData
 
 Examples
 --------
-This example adds a admin chat for all players with the permission `admin.chat`.
+This example adds an admin chat for all players with the permission `admin.chat`.
 
 ##### Lua Example:
 ```lua

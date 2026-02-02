@@ -231,7 +231,7 @@ Function.Call(
 
 ### Health bar colour
 
-Health bar has 0 opacity by default. Colour of health bar changes using it's own native:
+Health bar has 0 opacity by default. Colour of health bar changes using its own native:
 
 ### Lua
 

@@ -300,7 +300,7 @@ escrow_ignore {
 This setting is deprecated and you do not need to enable it. As of June 2025, Lua 5.3 has been deprecated and all Lua scripts now use the 5.4 version. For more information, [read our announcement](https://forum.cfx.re/t/removal-of-lua-5-3-support/5335232).
 {{% /alert %}}
 
-Enables Lua 5.4. You can read more about Lua 5.4 at http://www.lua.org/manual/5.4/manual.html
+Enables Lua 5.4. You can read more about Lua 5.4 at https://www.lua.org/manual/5.4/manual.html
 
 ```lua
 lua54 'yes'

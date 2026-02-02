@@ -30,13 +30,13 @@ Using `TriggerServerEvent` involves specifying the event name and, _optionally_,
 
 ### Basic Usage
 
-Here's a simple example demonstrating how to trigger an server event:
+Here's a simple example demonstrating how to trigger a server event:
 
 ```lua
 TriggerServerEvent('myCustomServerEvent')
 ```
 
-In this example, the event named 'myCustomServerEvent' is triggered. You would have an register net event somewhere in your server script listening for this event. Note that you will only be able to trigger to server of the script.
+In this example, the event named 'myCustomServerEvent' is triggered. You would have a register net event somewhere in your server script listening for this event. Note that you will only be able to trigger to server of the script.
 
 ### Triggering an Event with Data
 
@@ -53,7 +53,7 @@ In this example, the event 'myCustomServerEvent' is triggered with two pieces of
 
 ### Handling the Triggered Event
 
-To handle the event triggered by `TriggerServerEvent`, you need to define an register net event listener. Here's an example of how you can set up an event listener for the 'myCustomServerEvent' event:
+To handle the event triggered by `TriggerServerEvent`, you need to define a register net event listener. Here's an example of how you can set up an event listener for the 'myCustomServerEvent' event:
 
 (Recommanded)
 ```lua
