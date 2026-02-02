@@ -1,7 +1,6 @@
 ---
 title: Client manual
 weight: 20
-layout: single
 ---
 
 Basics

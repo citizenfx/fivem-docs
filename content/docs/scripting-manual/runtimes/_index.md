@@ -1,7 +1,6 @@
 ---
 title: Scripting runtimes
 weight: 20
-layout: single
 ---
 
 If you're new to scripting, read the introduction first. If you're unsure what language you should choose, remember that

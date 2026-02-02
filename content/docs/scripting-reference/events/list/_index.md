@@ -1,7 +1,6 @@
 ---
 title: List of events
 weight: 30
-layout: single
 hidden: true
 ---
 

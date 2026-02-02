@@ -1,6 +1,5 @@
 ---
 title: 👋🏼 Home
-layout: single
 linkTitle: "Documentation"
 menu:
   main:

@@ -1,7 +1,6 @@
 ---
 title: List of functions in Lua
 toc_hide: true
-layout: single
 ---
 
 - [AddEventHandler](/docs/scripting-reference/runtimes/lua/functions/AddEventHandler)

@@ -2,7 +2,6 @@
 title: Lua function reference
 weight: 10
 hidden: false
-layout: single
 ---
 
 - [Client-side functions](/docs/scripting-reference/runtimes/lua/client-functions)

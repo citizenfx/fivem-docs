@@ -1,7 +1,6 @@
 ---
 title: Game references
 weight: 70
-layout: single
 ---
 
 Reference lists and guides for game data are in this category.

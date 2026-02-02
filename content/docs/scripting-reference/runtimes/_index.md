@@ -1,7 +1,6 @@
 ---
 title: Runtime-specific references
 weight: 40
-layout: single
 ---
 
 - [Functions in Lua](/docs/scripting-reference/runtimes/lua)

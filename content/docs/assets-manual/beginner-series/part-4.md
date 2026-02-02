@@ -1,7 +1,6 @@
 ---
 title: Part 4 - Basic Asset Creation 2
 weight: 40
-layout: single
 ---
 
 {{% youtube id="dVBO3_ZGL_Q" %}}

@@ -1,6 +1,5 @@
 ---
 title: Input mapper/parameter IDs
-layout: single
 hidden: false
 ---
 

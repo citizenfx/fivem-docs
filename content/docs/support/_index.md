@@ -1,7 +1,6 @@
 ---
 title: Support
 weight: 120
-layout: single
 ---
 
 - [Client FAQ](https://support.cfx.re/hc/en-us/articles/8016397932444-Client-FAQ)

@@ -3,7 +3,6 @@ title: Scripting reference
 weight: 60
 description: >
   All the things referencing scripting
-layout: single
 ---
 
 ## Open To All Levels ✨

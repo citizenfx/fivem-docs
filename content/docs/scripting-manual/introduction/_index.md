@@ -1,7 +1,6 @@
 ---
 title: Scripting introduction
 weight: 10
-layout: single
 ---
 
 - [Introduction to resources](/docs/scripting-manual/introduction/introduction-to-resources)

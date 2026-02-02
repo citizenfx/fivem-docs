@@ -1,7 +1,6 @@
 ---
 title: Guides for scripting
 weight: 50
-layout: single
 ---
 
 - [Scripting introduction](/docs/scripting-manual/introduction)

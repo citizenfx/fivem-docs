@@ -1,7 +1,6 @@
 ---
 title: Server events
 weight: 20
-layout: single
 ---
 
 **A list of server side events you can use in your scripts.**

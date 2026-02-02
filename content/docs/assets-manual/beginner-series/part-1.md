@@ -1,7 +1,6 @@
 ---
 title: Part 1 - Initial Tools Setup 1
 weight: 10
-layout: single
 ---
 
 {{% youtube id="GgZ82sue3kM" %}}
