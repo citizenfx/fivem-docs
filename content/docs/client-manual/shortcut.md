@@ -1,5 +1,6 @@
 ---
 title: FiveM shortcut
+weight: 80
 toc_hide: true
 ---
 

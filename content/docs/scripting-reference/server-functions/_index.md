@@ -1,6 +1,6 @@
 ---
 title: Server functions
-weight: 504
+weight: 20
 ---
 
 Here is a list of some of the functions that you can use specifically in **server** side scripts.

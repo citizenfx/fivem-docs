@@ -1,6 +1,5 @@
 ---
 title: Gamer tags
-weight: 760
 ---
 
 ![All flags enabled](/HeadDisplayExample2.png "All flags enabled")

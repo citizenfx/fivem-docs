@@ -1,6 +1,5 @@
 ---
 title: TOUCHPAD_ABSOLUTE_AXIS
-weight: 716
 ---
 
 Vaild parameters for this mapper are unknown.

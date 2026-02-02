@@ -1,6 +1,6 @@
 ---
 title: Scripting reference
-weight: 1220
+weight: 60
 description: >
   All the things referencing scripting
 layout: single

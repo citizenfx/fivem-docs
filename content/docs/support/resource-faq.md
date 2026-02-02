@@ -1,6 +1,6 @@
 ---
 title: Resource FAQ
-weight: 845
+weight: 30
 ---
 
 What does "prohibited logic" mean?

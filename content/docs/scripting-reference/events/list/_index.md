@@ -1,6 +1,6 @@
 ---
 title: List of events
-weight: 543
+weight: 30
 layout: single
 hidden: true
 ---

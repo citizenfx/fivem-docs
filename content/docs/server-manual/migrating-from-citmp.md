@@ -1,6 +1,6 @@
 ---
 title: Migrating from CitizenMP.Server
-weight: 360
+weight: 140
 toc_hide: true
 description: >
   Got some ancient server? This is a guide on migrating.

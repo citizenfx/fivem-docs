@@ -1,6 +1,6 @@
 ---
 title: Guides for scripting
-weight: 400
+weight: 50
 layout: single
 ---
 

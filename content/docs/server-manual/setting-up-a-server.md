@@ -1,6 +1,6 @@
 ---
 title: Setting up a server
-weight: 310
+weight: 10
 description: >
   A step-by-step guide on setting up FXServer.
 ---

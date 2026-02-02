@@ -1,6 +1,6 @@
 ---
 title: User interfaces with NUI
-weight: 440
+weight: 60
 ---
 
 **NUI** (short for 'new UI') is the HTML-based user interface functionality in the CitizenFX framework. Currently using

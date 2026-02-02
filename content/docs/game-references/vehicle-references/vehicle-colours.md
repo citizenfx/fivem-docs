@@ -1,6 +1,6 @@
 ---
 title: Vehicle Colours
-weight: 780
+weight: 20
 ---
 
 List of vehicle colours

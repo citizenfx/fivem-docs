@@ -1,6 +1,5 @@
 ---
 title: MOUSE_CENTEREDAXIS
-weight: 716
 ---
 
 | Input Parameter             | Input Description |

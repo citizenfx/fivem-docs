@@ -1,6 +1,5 @@
 ---
 title: MOUSE_BUTTON
-weight: 716
 ---
 
 | Input Parameter             | Input Description             |

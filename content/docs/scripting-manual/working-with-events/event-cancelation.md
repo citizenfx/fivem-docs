@@ -1,6 +1,6 @@
 ---
 title: Event Cancelation
-weight: 433
+weight: 20
 ---
 
 ### Canceling Events

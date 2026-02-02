@@ -1,6 +1,6 @@
 ---
 title: NUI callbacks
-weight: 443
+weight: 20
 ---
 
 NUI can also send calls back to the game using so-called 'NUI callbacks'. These are currently only fully supported in

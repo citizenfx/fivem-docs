@@ -1,6 +1,5 @@
 ---
 title: onResourceStarting
-weight: 548
 ---
 
 Called before a resource starts. This event can be canceled to prevent this resource from starting.

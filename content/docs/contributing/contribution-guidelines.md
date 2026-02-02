@@ -1,5 +1,6 @@
 ---
 title: Contribution Guidelines
+weight: 10
 ---
 
 ## We welcome contributions!

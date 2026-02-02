@@ -1,6 +1,6 @@
 ---
 title: Server Name Colors
-weight: 955
+weight: 70
 description: >
   Information about colored server names.
 ---

@@ -1,6 +1,6 @@
 ---
 title: Server Commands
-weight: 330
+weight: 50
 description: >
   A list of commands to run in the server console.
 ---

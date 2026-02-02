@@ -1,6 +1,6 @@
 ---
 title: Events
-weight: 540
+weight: 50
 hidden: false
 ---
 

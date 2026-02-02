@@ -1,6 +1,6 @@
 ---
 title: Setting up a server using txAdmin
-weight: 312
+weight: 30
 description: >
   A step-by-step guide on setting up a txAdmin FXServer.
 ---

@@ -1,5 +1,6 @@
 ---
 title: CitizenFX.ini
+weight: 70
 toc_hide: true
 ---
 

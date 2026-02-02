@@ -1,6 +1,6 @@
 ---
 title: Scripting in JavaScript
-weight: 422
+weight: 20
 languages: ['js']
 ---
 

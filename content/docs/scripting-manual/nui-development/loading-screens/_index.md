@@ -1,6 +1,6 @@
 ---
 title: Loading screens
-weight: 444
+weight: 30
 ---
 
 A special NUI frame is the frame called `loadingScreen`, which is shown during loading of FiveM, instead of the default

@@ -1,6 +1,6 @@
 ---
 title: Installing FiveM
-weight: 1002
+weight: 20
 image: /getting-started/step2.jpg
 description: >
   Install the FiveM client.

@@ -1,6 +1,6 @@
 ---
 title: Setting up a FiveM Server
-weight: 1003
+weight: 30
 image: /getting-started/step3.jpg
 description: >
   Setup FiveM Server.

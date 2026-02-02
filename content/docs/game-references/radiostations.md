@@ -1,6 +1,5 @@
 ---
 title: Radio Stations
-weight: 770
 ---
 
 These are all radio stations in the game as of game build 3258, note that indexes 24 and up are not visible in the radio wheel, but if you set the radio station to them, they do get set to one on the radio wheel.

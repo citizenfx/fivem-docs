@@ -1,6 +1,6 @@
 ---
 title: Scripting in Lua
-weight: 421
+weight: 10
 languages: ['lua']
 ---
 

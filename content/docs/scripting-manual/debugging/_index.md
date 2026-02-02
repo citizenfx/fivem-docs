@@ -1,4 +1,4 @@
 ---
 title: Debugging
-weight: 470
+weight: 30
 ---

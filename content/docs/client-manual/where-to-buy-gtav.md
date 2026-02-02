@@ -1,6 +1,6 @@
 ---
 title: Where to buy GTA V
-weight: 210
+weight: 10
 toc_hide: true
 ---
 

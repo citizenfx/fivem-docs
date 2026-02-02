@@ -1,6 +1,6 @@
 ---
 title: Scripting in C#
-weight: 423
+weight: 30
 languages: ['cs']
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Vehicle Flags
-weight: 780
+weight: 30
 ---
 
 | Flag Number | Flag Name | Description | Build Introduced |

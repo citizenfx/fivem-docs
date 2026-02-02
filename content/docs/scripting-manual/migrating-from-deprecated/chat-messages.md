@@ -1,6 +1,6 @@
 ---
 title: Creating chat messages
-weight: 431
+weight: 10
 ---
 
 Commonly found in tutorials and older resources, the `chatMessage` event is used to create a chat message. This method is now deprecated and people are encouraged to use the `chat:addMessage` event.

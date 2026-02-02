@@ -1,6 +1,6 @@
 ---
 title: Client manual
-weight: 200
+weight: 20
 layout: single
 ---
 

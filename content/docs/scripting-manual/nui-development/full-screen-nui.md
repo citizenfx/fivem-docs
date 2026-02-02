@@ -1,6 +1,6 @@
 ---
 title: Fullscreen NUI
-weight: 441
+weight: 10
 ---
 
 The most common use case of NUI is a full-screen 'UI page', which is overlaid on top of the game and may or may not have

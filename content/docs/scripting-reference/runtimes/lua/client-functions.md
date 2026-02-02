@@ -1,6 +1,6 @@
 ---
 title: Client-side functions in Lua
-weight: 514
+weight: 10
 ---
 
 ## Runtime-specific functions

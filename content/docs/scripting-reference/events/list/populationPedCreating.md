@@ -1,6 +1,5 @@
 ---
 title: populationPedCreating
-weight: 552
 ---
 
 This event is fired before creating a population ped and allows manipulating population from script.

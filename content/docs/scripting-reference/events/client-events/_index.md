@@ -1,6 +1,6 @@
 ---
 title: Client events
-weight: 541
+weight: 10
 layout: single
 ---
 

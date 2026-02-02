@@ -1,6 +1,5 @@
 ---
 title: PAD_DEBUGBUTTON
-weight: 716
 ---
 
 | Input Parameter | Input Description     |

@@ -1,6 +1,5 @@
 ---
 title: JOYSTICK_AXIS
-weight: 716
 ---
 
 | Input Parameter    | Input Description    |

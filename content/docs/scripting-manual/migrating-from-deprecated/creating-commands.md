@@ -1,6 +1,6 @@
 ---
 title: Creating commands
-weight: 432
+weight: 20
 ---
 
 <!--

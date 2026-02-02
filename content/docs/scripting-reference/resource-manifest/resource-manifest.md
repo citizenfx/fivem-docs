@@ -1,6 +1,6 @@
 ---
 title: Resource manifest
-weight: 505
+weight: 30
 ---
 
 The **resource manifest** is a file named `fxmanifest.lua` (or previously, `__resource.lua`), placed in a [resource folder](/docs/scripting-manual/introduction/introduction-to-resources) on the server.

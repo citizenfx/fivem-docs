@@ -1,6 +1,6 @@
 ---
 title: World Editor
-weight: 920
+weight: 20
 ---
 
 **World Editor** - is FxDK *personality* allowing you to create your own worlds by modify game's map (with some limitations, see [patches]() section), and adding new objects.

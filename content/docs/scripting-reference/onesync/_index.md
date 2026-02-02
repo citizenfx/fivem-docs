@@ -1,6 +1,6 @@
 ---
 title: OneSync
-weight: 575
+weight: 70
 ---
 
 OneSync is a custom sync system that is built on top of GTA: Online's codebase, it increases server

@@ -1,6 +1,5 @@
 ---
 title: KEYBOARD
-weight: 716
 ---
 
 | Input Parameter             | Input Description                                                      |

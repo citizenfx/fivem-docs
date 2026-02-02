@@ -1,6 +1,6 @@
 ---
 title: Server debugging
-weight: 840
+weight: 40
 ---
 
 Creating Full Dumps

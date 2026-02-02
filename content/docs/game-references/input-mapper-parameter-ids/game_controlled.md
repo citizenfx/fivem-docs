@@ -1,6 +1,5 @@
 ---
 title: GAME_CONTROLLED
-weight: 716
 ---
 
 Valid parameters for this mapper are unknown.

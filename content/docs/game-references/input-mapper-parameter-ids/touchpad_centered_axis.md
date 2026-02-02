@@ -1,6 +1,5 @@
 ---
 title: TOUCHPAD_CENTERED_AXIS
-weight: 716
 ---
 
 Valid parameters for this mapper are unknown.

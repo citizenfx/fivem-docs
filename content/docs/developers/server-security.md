@@ -1,5 +1,6 @@
 ---
 title: Secure your events
+weight: 30
 ---
 
 The anti-cheat team is always trying to improve the anti-cheat, but sometimes things slip through.

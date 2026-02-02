@@ -1,6 +1,5 @@
 ---
 title: JOYSTICK_AXIS_NEGATIVE
-weight: 716
 ---
 
 | Input Parameter    | Input Description    |

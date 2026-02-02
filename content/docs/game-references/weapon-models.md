@@ -1,6 +1,5 @@
 ---
 title: Weapon models
-weight: 770
 ---
 
 <style>

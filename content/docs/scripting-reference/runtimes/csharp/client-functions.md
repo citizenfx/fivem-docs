@@ -1,6 +1,6 @@
 ---
 title: Client-side functions in C#
-weight: 508
+weight: 10
 layout: single
 ---
 

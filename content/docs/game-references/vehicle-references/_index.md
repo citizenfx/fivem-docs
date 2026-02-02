@@ -1,6 +1,5 @@
 ---
 title: Vehicle references
-weight: 740
 layout: single
 ---
 

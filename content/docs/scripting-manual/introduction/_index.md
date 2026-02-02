@@ -1,6 +1,6 @@
 ---
 title: Scripting introduction
-weight: 410
+weight: 10
 layout: single
 ---
 

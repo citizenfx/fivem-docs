@@ -1,6 +1,6 @@
 ---
 title: Server issues
-weight: 840
+weight: 20
 ---
 
 ## Server not showing in server list or marked as private

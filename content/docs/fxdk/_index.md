@@ -1,6 +1,6 @@
 ---
 title: FxDK
-weight: 900
+weight: 100
 ---
 
 The Cfx.re Development Kit, FxDK for short, is an integrated development environment designed to provide a smooth developer experience for FiveM.

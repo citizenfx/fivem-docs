@@ -1,6 +1,6 @@
 ---
 title: Client-side functions in JavaScript
-weight: 511
+weight: 10
 ---
 
 ## Runtime-specific functions

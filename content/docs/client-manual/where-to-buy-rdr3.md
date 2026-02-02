@@ -1,6 +1,6 @@
 ---
 title: Where to buy Red Dead Redemption 2
-weight: 210
+weight: 20
 toc_hide: true
 ---
 

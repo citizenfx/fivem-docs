@@ -1,6 +1,6 @@
 ---
 title: Setting up a Tebex Store
-weight: 367
+weight: 90
 description: >
   A step-by-step guide on setting up a Tebex Store.
 ---

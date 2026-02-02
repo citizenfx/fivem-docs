@@ -1,6 +1,6 @@
 ---
 title: Server manual
-weight: 300
+weight: 30
 ---
 
 Instructions on running and maintaining a server.

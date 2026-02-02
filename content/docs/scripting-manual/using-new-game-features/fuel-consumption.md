@@ -1,6 +1,6 @@
 ---
 title: Fuel consumption
-weight: 482
+weight: 20
 ---
 
 By default in GTAV and FiveM vehicles do not consume fuel. This feature allows to turn the fuel consumption on and customize it for your needs.

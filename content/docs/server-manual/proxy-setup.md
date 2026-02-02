@@ -1,6 +1,6 @@
 ---
 title: Proxy Setup
-weight: 335
+weight: 60
 description: >
   A basic set of steps to configure a proxy frontend for the Cfx.re server.
 ---

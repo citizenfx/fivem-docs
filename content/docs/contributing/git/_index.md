@@ -1,6 +1,6 @@
 ---
 title: Git
-weight: 950
+weight: 20
 ---
 
 ### Guides

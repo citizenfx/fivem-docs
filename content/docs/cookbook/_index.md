@@ -1,6 +1,6 @@
 ---
 title: Cookbook Archive
-weight: 9999
+weight: 999
 ---
 
 {{< alert title="Cookbook Archive" color="warning" >}}

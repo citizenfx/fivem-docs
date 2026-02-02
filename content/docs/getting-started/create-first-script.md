@@ -1,6 +1,6 @@
 ---
 title: Creating Scripts
-weight: 1004
+weight: 40
 image: /getting-started/step4.jpg
 description: >
   Create your first script in FiveM.

@@ -1,6 +1,6 @@
 ---
 title: JavaScript function reference
-weight: 510
+weight: 20
 hidden: false
 layout: single
 ---

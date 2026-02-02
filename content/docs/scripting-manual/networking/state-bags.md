@@ -1,6 +1,6 @@
 ---
 title: State bags
-weight: 427
+weight: 20
 ---
 
 In state awareness mode, entities can have an associated set of arbitrary key/value pairs associated with them known as 'state bags'.

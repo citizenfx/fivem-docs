@@ -1,6 +1,6 @@
 ---
 title: Working with events
-weight: 430
+weight: 50
 ---
 
 Events are used by resources to execute code based on certain events. Events can have (optional) parameters that will be

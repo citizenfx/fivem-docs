@@ -1,6 +1,5 @@
 ---
 title: onResourceStop
-weight: 549
 ---
 
 Called while a resource stops.

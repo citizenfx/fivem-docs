@@ -1,6 +1,6 @@
 ---
 title: Network and local IDs
-weight: 426
+weight: 10
 ---
 
 There are various kinds of identifiers and handles used across FiveM. A few of them need special attention and are mentioned

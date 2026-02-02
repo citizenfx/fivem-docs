@@ -1,6 +1,6 @@
 ---
 title: Console commands
-weight: 260
+weight: 50
 ---
 
 List of clientside commands which can be useful to develop your server or debug resource issues. Additional commands

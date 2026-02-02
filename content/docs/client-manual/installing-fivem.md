@@ -1,6 +1,6 @@
 ---
 title: Installing FiveM
-weight: 240
+weight: 40
 toc_hide: true
 ---
 

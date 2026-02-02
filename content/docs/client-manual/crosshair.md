@@ -1,6 +1,6 @@
 ---
 title: Crosshair commands
-weight: 270
+weight: 60
 ---
 
 # About the crosshair

@@ -1,6 +1,6 @@
 ---
 title: Setting up a server using a game server hosting provider
-weight: 311
+weight: 20
 description: >
   A step-by-step guide on setting up a server using a game server hosting provider.
 ---

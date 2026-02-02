@@ -1,6 +1,6 @@
 ---
 title: Guides for 3D assets
-weight: 400
+weight: 40
 layout: single
 ---
 

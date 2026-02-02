@@ -1,6 +1,6 @@
 ---
 title: Alchemist
-weight: 850
+weight: 90
 description: >
   Information about Alchemist, Asset Conversion and Asset Refinement
 ---

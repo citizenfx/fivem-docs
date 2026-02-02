@@ -1,6 +1,6 @@
 ---
 title: Setting up a Vanilla FXServer
-weight: 313
+weight: 40
 description: >
   A step-by-step guide on setting up a Vanilla FXServer.
 ---

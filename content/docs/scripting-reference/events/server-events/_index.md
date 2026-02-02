@@ -1,6 +1,6 @@
 ---
 title: Server events
-weight: 542
+weight: 20
 layout: single
 ---
 

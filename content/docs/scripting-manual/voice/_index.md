@@ -1,6 +1,6 @@
 ---
 title: Voice
-weight: 450
+weight: 70
 ---
 
 FiveM has been using the [mumble](https://www.mumble.info/) client to handle in-game voice communication for a while now, below we will explain how you can use certain mumble natives, including a couple guides to handle submixes and NativeAudio.

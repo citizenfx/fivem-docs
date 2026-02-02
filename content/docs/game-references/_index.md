@@ -1,6 +1,6 @@
 ---
 title: Game references
-weight: 700
+weight: 70
 layout: single
 ---
 

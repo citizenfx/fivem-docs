@@ -1,6 +1,6 @@
 ---
 title: Client functions
-weight: 502
+weight: 10
 ---
 
 Here is a list of some of the functions that you can use specifically in **client** side scripts.

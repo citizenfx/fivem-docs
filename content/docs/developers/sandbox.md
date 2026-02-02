@@ -1,6 +1,6 @@
 ---
 title: Sandbox
-weight: 930
+weight: 10
 description: >
   Documentation about the FiveM sandbox restrictions and allowed APIs.
 ---

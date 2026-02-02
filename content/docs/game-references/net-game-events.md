@@ -1,6 +1,5 @@
 ---
 title: Net Game Events
-weight: 770
 ---
 
 List of game events used by the game to synchronize certain types of actions.

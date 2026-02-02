@@ -1,6 +1,6 @@
 ---
 title: Triggering events
-weight: 432
+weight: 30
 ---
 
 ### Triggering local events

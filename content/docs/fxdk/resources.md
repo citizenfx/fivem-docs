@@ -1,6 +1,6 @@
 ---
 title: Resources
-weight: 910
+weight: 10
 ---
 
 Resources in FxDK are no different from normal resources, you can put all your good old resources right into FxDK project, enable them and they'll work the same.

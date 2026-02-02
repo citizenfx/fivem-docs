@@ -1,6 +1,5 @@
 ---
 title: Pickup Hashes
-weight: 770
 ---
 
 List of found pickup hashes in GTA V as of September 25th, 2025.

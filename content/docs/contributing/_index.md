@@ -2,7 +2,7 @@
 title: Contributing
 description: >
   How you can help.
-weight: 950
+weight: 130
 ---
 
 There are many ways you can contribute to the development and growth of FiveM. Whether you're a developer, a writer, or a supporter, your help is invaluable!

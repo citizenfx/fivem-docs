@@ -1,6 +1,6 @@
 ---
 title: Part 2 - Initial Tools Setup 2
-weight: 402
+weight: 20
 layout: single
 ---
 

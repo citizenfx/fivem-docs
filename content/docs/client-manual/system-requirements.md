@@ -1,6 +1,6 @@
 ---
 title: System requirements
-weight: 220
+weight: 30
 toc_hide: true
 ---
 

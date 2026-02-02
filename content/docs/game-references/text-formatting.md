@@ -1,6 +1,5 @@
 ---
 title: Text formatting
-weight: 780
 ---
 
 Text labels displayed in the game UI can be formatted using classical Rockstar North-style `~` formatting tags, which are

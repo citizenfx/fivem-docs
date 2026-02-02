@@ -1,6 +1,6 @@
 ---
 title: Stock resources
-weight: 600
+weight: 80
 layout: single
 ---
 

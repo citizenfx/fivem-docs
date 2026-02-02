@@ -1,6 +1,5 @@
 ---
 title: Ped models
-weight: 760
 ---
 
 List of all working ped models in GTA V as of July 23, 2019.

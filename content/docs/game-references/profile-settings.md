@@ -1,6 +1,5 @@
 ---
 title: Profile Settings
-weight: 770
 ---
 
 

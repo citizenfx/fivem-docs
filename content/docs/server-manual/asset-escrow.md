@@ -1,6 +1,6 @@
 ---
 title: Asset Escrow
-weight: 1
+weight: 80
 description: >
   Information about the Asset Escrow system.
 ---

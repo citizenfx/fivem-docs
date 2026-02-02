@@ -1,6 +1,6 @@
 ---
 title: Direct-rendered UI
-weight: 442
+weight: 40
 ---
 
 In FiveM, you can also render NUI to a runtime texture, which is called DUI for 'direct NUI'. The following natives help

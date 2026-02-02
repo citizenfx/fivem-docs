@@ -1,6 +1,6 @@
 ---
 title: Server-side functions in JavaScript
-weight: 512
+weight: 20
 ---
 
 ## Runtime-specific functions

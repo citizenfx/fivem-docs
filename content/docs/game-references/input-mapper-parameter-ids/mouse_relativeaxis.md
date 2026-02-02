@@ -1,6 +1,5 @@
 ---
 title: MOUSE_RELATIVEAXIS
-weight: 716
 ---
 
 | Input Parameter             | Input Description |

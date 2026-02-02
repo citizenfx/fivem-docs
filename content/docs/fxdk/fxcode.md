@@ -1,6 +1,6 @@
 ---
 title: FXCode
-weight: 940
+weight: 40
 ---
 
 [FXCode](https://github.com/citizenfx/fxcode), an adaptation of [`Code - OSS`](https://github.com/microsoft/vscode), is FxDK's main *personality* responsible for providing rich code editing functionality along with our addons listed below.

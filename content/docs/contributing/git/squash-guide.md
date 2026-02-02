@@ -1,6 +1,6 @@
 ---
 title: Squash Guide
-weight: 960
+weight: 20
 ---
 
 Squashing is a way to simplify your commits and combine multiple commits into one.

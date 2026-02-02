@@ -1,6 +1,6 @@
 ---
 title: Creating your first script in JavaScript
-weight: 412
+weight: 40
 ---
 
 Getting started with scripting for FiveM might be a tad overwhelming, given the wide range of possibilities and the sparsely spread documentation. In this quick and simple guide, we'll try to show you how to get started with a quick resource in JavaScript.

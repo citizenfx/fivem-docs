@@ -1,6 +1,6 @@
 ---
 title: Understanding and Using Native Functions
-weight: 1300
+weight: 60
 ---
 
 In FiveM, you have access to what are called "native functions" or simply "natives". These functions are provided by the game itself, using them will allow you to perform a wide variety of actions within the game environment. This guide will explain what natives are, where you can find them, and how to use them in your scripts.

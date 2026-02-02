@@ -1,6 +1,6 @@
 ---
 title: Lua function reference
-weight: 513
+weight: 10
 hidden: false
 layout: single
 ---

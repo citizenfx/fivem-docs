@@ -1,6 +1,5 @@
 ---
 title: Instructional Buttons
-weight: 760
 ---
 
 **Instructional Buttons**, also known as Prompts are UI elements that are displayed at the bottom-right corner of the screen, which show what actions certain keys and controls can do. You can make them clickable with your cursor, add multiple buttons, icons and much more.

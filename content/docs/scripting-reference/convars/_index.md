@@ -1,6 +1,6 @@
 ---
 title: Convars
-weight: 570
+weight: 60
 ---
 
 Convars can be very powerful for defining configuration variables on the server. A convar is basically a configuration variable that you can _set_ and _get_ from any resource. You don't have to use a resource to get or set these values, you can also use commands in the (server) console or through a RCON client.

@@ -1,6 +1,6 @@
 ---
 title: Part 4 - Basic Asset Creation 2
-weight: 404
+weight: 40
 layout: single
 ---
 

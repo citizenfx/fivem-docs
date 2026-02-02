@@ -1,6 +1,6 @@
 ---
 title: Project building
-weight: 930
+weight: 30
 ---
 
 FxDK allows you to build a complete runnable server instance with all enabled resources from project, with runnable server artifact included.

@@ -1,6 +1,6 @@
 ---
 title: Vehicle models
-weight: 760
+weight: 10
 ---
 
 <style>

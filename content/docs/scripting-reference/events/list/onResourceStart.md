@@ -1,6 +1,5 @@
 ---
 title: onResourceStart
-weight: 547
 ---
 
 Called while a resource starts.

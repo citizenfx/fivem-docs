@@ -1,6 +1,6 @@
 ---
 title: Support
-weight: 800
+weight: 120
 layout: single
 ---
 
