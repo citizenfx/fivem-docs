@@ -1,6 +1,5 @@
 ---
 title: chat
-hidden: false
 ---
 
 

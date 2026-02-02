@@ -1,6 +1,5 @@
 ---
 title: Input mapper/parameter IDs
-hidden: false
 ---
 
 Descriptions are guessed from known names. Axis inputs have no use in FiveM currently.
