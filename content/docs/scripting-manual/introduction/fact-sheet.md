@@ -11,21 +11,21 @@ _ScRT_ means _Scripting Runtime_ or _Script Runtime_. FiveM has three different 
 # How do I get started with scripting?
 The scripting manual can be found [here](/docs/scripting-manual/) and it features the following articles:
 
-- [Introduction to resources](/docs/scripting-manual/introduction/introduction-to-resources)
-    - [Creating your first script](/docs/scripting-manual/introduction/creating-your-first-script)
-- [Scripting runtimes](/docs/scripting-manual/runtimes)
-    - [Scripting in Lua](/docs/scripting-manual/runtimes/lua)
-    - [Scripting in JavaScript](/docs/scripting-manual/runtimes/javascript)
-    - [Scripting in C#](/docs/scripting-manual/runtimes/csharp)
-- [Migrating from deprecated methods](/docs/scripting-manual/migrating-from-deprecated)
-  - [Chat Messages](/docs/scripting-manual/migrating-from-deprecated/chat-messages)
-- [Working with events](/docs/scripting-manual/working-with-events)
-  - [Listening for events](/docs/scripting-manual/working-with-events/listening-for-events)
-  - [Triggering events](/docs/scripting-manual/working-with-events/triggering-events)
-- [NUI](/docs/scripting-manual/nui-development)
-- [Using Scaleform](/docs/scripting-manual/using-scaleform)
-- [Voice](/docs/scripting-manual/voice)
-- [Using new game features](/docs/scripting-manual/using-new-game-features)
+- [Introduction to resources](/docs/scripting-manual/introduction/introduction-to-resources/)
+    - [Creating your first script](/docs/scripting-manual/introduction/creating-your-first-script/)
+- [Scripting runtimes](/docs/scripting-manual/runtimes/)
+    - [Scripting in Lua](/docs/scripting-manual/runtimes/lua/)
+    - [Scripting in JavaScript](/docs/scripting-manual/runtimes/javascript/)
+    - [Scripting in C#](/docs/scripting-manual/runtimes/csharp/)
+- [Migrating from deprecated methods](/docs/scripting-manual/migrating-from-deprecated/)
+  - [Chat Messages](/docs/scripting-manual/migrating-from-deprecated/chat-messages/)
+- [Working with events](/docs/scripting-manual/working-with-events/)
+  - [Listening for events](/docs/scripting-manual/working-with-events/listening-for-events/)
+  - [Triggering events](/docs/scripting-manual/working-with-events/triggering-events/)
+- [NUI](/docs/scripting-manual/nui-development/)
+- [Using Scaleform](/docs/scripting-manual/using-scaleform/)
+- [Voice](/docs/scripting-manual/voice/)
+- [Using new game features](/docs/scripting-manual/using-new-game-features/)
 
 You can refer to the page mentioned above to see the scripting manual in full detail.
 
@@ -39,21 +39,21 @@ GiveWeaponToPed(ped, GetHashKey("WEAPON_PISTOL"), 100, false, false) -- We got a
 ```
 
 ## Where are all the natives?
-Natives are located [here](https://docs.fivem.net/natives/).
+Natives are located [here](/natives/).
 
 # Developer Commands & Game References
 ## Where are all the developer commands?
 Developer commands can be found [here](/docs/client-manual/console-commands/#developer-commands).
 
 ## Where are all the blips, ped models and others?
-These are named _Game references_, and they can be found over [here](/docs/game-references).
+These are named _Game references_, and they can be found over [here](/docs/game-references/).
 
 # Performance
 ## What are hitch warnings?
 Hitch warnings indicate that one of your resources is not performing as it should and you should look into the affected resource to _figure out why, using the profiler can help diagnosing this._ Things such as these, can sometimes be caused by writing underperforming SQL queries that take a long time to execute, as well as unoptimized loops that end up halting the script execution.
 
 ## Profiler
-The profiler can be used to diagnose _why_ a resource is taking a long time to execute, there's a [guide](/docs/scripting-manual/debugging/using-profiler) explaining how to use it, it can be used both on the server and client.
+The profiler can be used to diagnose _why_ a resource is taking a long time to execute, there's a [guide](/docs/scripting-manual/debugging/using-profiler/) explaining how to use it, it can be used both on the server and client.
 
 ## Resource Monitor (Resmon)
 The resource monitor can be used on the client to diagnose which resource is taking a long time to execute, it shows certain things such as cpu usage (msec) and memory usage for each resource.

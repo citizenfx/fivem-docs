@@ -38,4 +38,4 @@ AddEventHandler('eventName', function(...)
 end)
 ```
 
-[AddEventHandler]: /docs/scripting-reference/runtimes/lua/functions/AddEventHandler
+[AddEventHandler]: /docs/scripting-reference/runtimes/lua/functions/AddEventHandler/

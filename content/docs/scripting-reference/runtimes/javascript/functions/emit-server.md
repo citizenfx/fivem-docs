@@ -3,7 +3,7 @@ title: Emit - server
 ---
 
 Use `emit` function when you want to trigger an event from the server to the server.\
-You need to declare the event on the server with [on](/docs/scripting-reference/runtimes/javascript/functions/on-server) or [onNet](/docs/scripting-reference/runtimes/javascript/functions/onNet-server) first.
+You need to declare the event on the server with [on](/docs/scripting-reference/runtimes/javascript/functions/on-server/) or [onNet](/docs/scripting-reference/runtimes/javascript/functions/onNet-server/) first.
 
 ## Signature
 

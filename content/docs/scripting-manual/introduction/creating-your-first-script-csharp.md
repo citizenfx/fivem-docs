@@ -9,8 +9,8 @@ Getting started with scripting for FiveM might be a tad overwhelming, given the 
 Before creating your first script with C#, there are a couple of things you will need to set up and understand.
 
 * [A basic understanding of C#](https://learn.microsoft.com/en-us/dotnet/csharp/#learn-to-program)
-* [Creating a C# project and setup your environment](/docs/scripting-manual/runtimes/csharp)
-* [Understanding of resources and manifest files](/docs/scripting-reference/resource-manifest/resource-manifest)
+* [Creating a C# project and setup your environment](/docs/scripting-manual/runtimes/csharp/)
+* [Understanding of resources and manifest files](/docs/scripting-reference/resource-manifest/resource-manifest/)
 
 ### Writing code
 Now that you have set up your C# project and environment, you will have two projects; `MyResourceNameClient` and `MyResourceNameServer`.

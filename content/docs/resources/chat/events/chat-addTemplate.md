@@ -50,4 +50,4 @@ emit('chat:addMessage', {
 ![](/chat-template.png)
 
 
-[addmessage]: /docs/resources/chat/events/chat-addMessage
+[addmessage]: /docs/resources/chat/events/chat-addMessage/

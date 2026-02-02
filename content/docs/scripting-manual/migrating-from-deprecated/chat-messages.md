@@ -25,4 +25,4 @@ TriggerEvent("chat:addMessage", {
 })
 ```
 
-For further documentation of this event, see the [`chat:addMessage` section](../../../resources/chat/events/chat-addMessage).
+For further documentation of this event, see the [`chat:addMessage` section](../../../resources/chat/events/chat-addMessage/).

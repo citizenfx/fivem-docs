@@ -19,4 +19,4 @@ setTick(() => {
 });
 ```
 
-[clearTick]: /docs/scripting-reference/runtimes/javascript/functions/clearTick
+[clearTick]: /docs/scripting-reference/runtimes/javascript/functions/clearTick/

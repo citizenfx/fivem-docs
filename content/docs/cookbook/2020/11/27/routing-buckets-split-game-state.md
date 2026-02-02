@@ -25,10 +25,10 @@ See the linked timestamp in this GTA Online trailer to see _why_ interiors shoul
 
 The natives to use are as follows:
 
-*   [GET\_ENTITY\_ROUTING\_BUCKET](https://docs.fivem.net/natives/?_0xED4B0486)
-*   [GET\_PLAYER\_ROUTING\_BUCKET](https://docs.fivem.net/natives/?_0x52441C34)
-*   [SET\_ENTITY\_ROUTING\_BUCKET](https://docs.fivem.net/natives/?_0x635E5289)
-*   [SET\_PLAYER\_ROUTING\_BUCKET](https://docs.fivem.net/natives/?_0x6504EB38)
+*   [GET\_ENTITY\_ROUTING\_BUCKET](/natives/?_0xED4B0486)
+*   [GET\_PLAYER\_ROUTING\_BUCKET](/natives/?_0x52441C34)
+*   [SET\_ENTITY\_ROUTING\_BUCKET](/natives/?_0x635E5289)
+*   [SET\_PLAYER\_ROUTING\_BUCKET](/natives/?_0x6504EB38)
 
 Note that these natives require OneSync to be 'on', _not set to 'legacy' mode_, and at this time might still route game events such as explosions and projectiles - this will be fixed in a near-future server version, as will support for sending network events to a specific routing bucket only.
 

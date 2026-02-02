@@ -38,7 +38,7 @@ on('playerDropped', () => {
 });
 ```
 
-... and then a resource that one would want to add a job check to - or a chat mode's `seObject`, or an existing resource - can just check for the `jobProbe.mechanic` privilege using native commands such as [IsPlayerAceAllowed](https://docs.fivem.net/natives/?_0xDEDAE23D), without taking a dependency on `myframework` or any of its inner workings.
+... and then a resource that one would want to add a job check to - or a chat mode's `seObject`, or an existing resource - can just check for the `jobProbe.mechanic` privilege using native commands such as [IsPlayerAceAllowed](/natives/?_0xDEDAE23D), without taking a dependency on `myframework` or any of its inner workings.
 
 ---
 

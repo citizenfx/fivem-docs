@@ -18,7 +18,7 @@ Parameters
 array suggestions
 ```
 
-- **suggestions**: an array containing multiple [suggestion](../chat-addSuggestion) objects.
+- **suggestions**: an array containing multiple [suggestion](../chat-addSuggestion/) objects.
 
 Examples
 --------

@@ -49,4 +49,4 @@ Afterwards, you can use `ensure MyResource` in your `server.cfg` or server conso
 Congratulations, you've created a resource using FiveM's C# templates!
 
 # Let's write some code
-**[It's finally time to actually start writing some code! 🎉](/docs/scripting-manual/introduction/creating-your-first-script-csharp)**
+**[It's finally time to actually start writing some code! 🎉](/docs/scripting-manual/introduction/creating-your-first-script-csharp/)**

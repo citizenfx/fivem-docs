@@ -9,7 +9,7 @@ description: >
 A framework is a foundational structure that simplifies the creation of resources for your FiveM server. It offers a basic structure for your scripts, eliminating the need to build everything from scratch. Below, we've compiled a list of commonly used frameworks for informative purposes. It's essential to note that the choice of framework ultimately depends on your specific requirements. Additionally, you can explore the [releases](https://forum.cfx.re/c/development/releases/7) section for any new frameworks that may emerge.
 
 ## Running the Frameworks
-While each framework comes with its own documentation for setup, we recommend leveraging [txAdmin](/docs/resources/txAdmin/) recipes for streamlined deployment. A detailed guide on setting up a server using txAdmin can be found [here](/docs/server-manual/setting-up-a-server-txadmin).
+While each framework comes with its own documentation for setup, we recommend leveraging [txAdmin](/docs/resources/txAdmin/) recipes for streamlined deployment. A detailed guide on setting up a server using txAdmin can be found [here](/docs/server-manual/setting-up-a-server-txadmin/).
 
 ## Open to New Framework Suggestions
 If there's a framework you believe should be included in this list, please submit a request by creating an issue in the documentation [issues section](https://github.com/citizenfx/fivem-docs/issues).

@@ -7,7 +7,7 @@ date: 2019-06-29T18:01:45.000+02:00
 **Note:** This Cookbook article was originally published on **June 29, 2019**. Newer information may exist.
 {{< /alert >}}
 
-Just a quick hint: when writing new client-side scripts in Lua/JS (C# already has the `Players` list doing exactly this), you can loop through players by using the [GET\_ACTIVE\_PLAYERS](https://docs.fivem.net/natives/?_0xCF143FB9) native. See below for an example of before/after:
+Just a quick hint: when writing new client-side scripts in Lua/JS (C# already has the `Players` list doing exactly this), you can loop through players by using the [GET\_ACTIVE\_PLAYERS](/natives/?_0xCF143FB9) native. See below for an example of before/after:
 
 ### Before...
 

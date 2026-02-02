@@ -131,6 +131,6 @@ We're happy to help.
 [discord]: https://discord.gg/fivem
 [pfsensenat]: https://docs.netgate.com/pfsense/en/latest/nat/outbound.html#static-port
 [chat-formatting]: https://forum.cfx.re/t/67641
-[setting-up-server]: /docs/server-manual/setting-up-a-server
+[setting-up-server]: /docs/server-manual/setting-up-a-server/
 [support-cfx-platform-server]: https://support.cfx.re/hc/en-us/sections/8856844172188-Cfx-re-Platform-Server-FXServer
 [add-mp-preference-docs]: https://learn.microsoft.com/en-us/powershell/module/defender/add-mppreference

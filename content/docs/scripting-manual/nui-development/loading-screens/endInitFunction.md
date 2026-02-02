@@ -3,7 +3,7 @@ title: endInitFunction
 toc_hide: true
 ---
 
-Triggered when init functions completed invoking, finalizing the [startInitFunction](../startInitFunction) event process.
+Triggered when init functions completed invoking, finalizing the [startInitFunction](../startInitFunction/) event process.
 
 Event Data
 ----------

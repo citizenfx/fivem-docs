@@ -3,6 +3,6 @@ title: Runtime-specific references
 weight: 40
 ---
 
-- [Functions in Lua](/docs/scripting-reference/runtimes/lua)
-- [Functions in JavaScript](/docs/scripting-reference/runtimes/javascript)
-- [Functions in C#](/docs/scripting-reference/runtimes/csharp)
+- [Functions in Lua](/docs/scripting-reference/runtimes/lua/)
+- [Functions in JavaScript](/docs/scripting-reference/runtimes/javascript/)
+- [Functions in C#](/docs/scripting-reference/runtimes/csharp/)

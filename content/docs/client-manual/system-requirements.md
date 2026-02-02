@@ -24,6 +24,6 @@ _Notes:_
 1. May not work with some older AMD laptop GPUs. More on that [here][client-issues-gpu].
 2. 105GB for the original game + additional FiveM cache.
 
-[installing]: /docs/client-manual/installing-fivem
-[client-issues-gpu]: /docs/support/client-issues#stuck-on-a-colored-background-but-no-menu
+[installing]: /docs/client-manual/installing-fivem/
+[client-issues-gpu]: /docs/support/client-issues/#stuck-on-a-colored-background-but-no-menu
 [gtav-system-specs]: https://support.rockstargames.com/articles/lMQXeP2Z1mN3g9oZiBZFR/grand-theft-auto-v-pc-system-requirements

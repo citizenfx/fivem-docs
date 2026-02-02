@@ -51,10 +51,10 @@ standard euler rotations, so use them whenever you can. More about there [here][
 
 For usage and examples see their respective docs:
 
-- [quat](/docs/scripting-reference/runtimes/lua/functions/quat)
-- [vector2](/docs/scripting-reference/runtimes/lua/functions/vector2)
-- [vector3](/docs/scripting-reference/runtimes/lua/functions/vector3)
-- [vector4](/docs/scripting-reference/runtimes/lua/functions/vector4)
+- [quat](/docs/scripting-reference/runtimes/lua/functions/quat/)
+- [vector2](/docs/scripting-reference/runtimes/lua/functions/vector2/)
+- [vector3](/docs/scripting-reference/runtimes/lua/functions/vector3/)
+- [vector4](/docs/scripting-reference/runtimes/lua/functions/vector4/)
 
 Using exports
 -------------
@@ -123,11 +123,11 @@ The Lua runtime exposes some libraries on the global scope which you can use.
 Lua specific functions
 ----------------------
 
-- [Client functions](/docs/scripting-reference/runtimes/lua/client-functions)
-- [Server functions](/docs/scripting-reference/runtimes/lua/server-functions)
+- [Client functions](/docs/scripting-reference/runtimes/lua/client-functions/)
+- [Server functions](/docs/scripting-reference/runtimes/lua/server-functions/)
 
-[about-natives]: /docs/scripting-manual/introduction/about-native-functions
+[about-natives]: /docs/scripting-manual/introduction/about-native-functions/
 [resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest/
 [grit]: http://gritengine.com
 [luadocs]: https://www.lua.org/manual/5.4/
-[natives-doc]: https://docs.fivem.net/natives
+[natives-doc]: /natives/

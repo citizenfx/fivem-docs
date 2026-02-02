@@ -7,9 +7,9 @@ Basics
 ------
 - [Installing FiveM](https://support.cfx.re/hc/en-us/articles/360020992639-Installing-FiveM)
 - [CFX articles](https://support.cfx.re/hc/en-us/sections/360005606960-FiveM)
-- [Console commands](/docs/client-manual/console-commands)
-- [FiveM shortcut](/docs/client-manual/shortcut)
-- [CitizenFX.ini](/docs/client-manual/citizenfx)
+- [Console commands](/docs/client-manual/console-commands/)
+- [FiveM shortcut](/docs/client-manual/shortcut/)
+- [CitizenFX.ini](/docs/client-manual/citizenfx/)
 
 FiveM singleplayer
 ------------------
@@ -40,4 +40,4 @@ The server browser allows for some neat searching tricks:
 
 Troubleshooting issues
 ----------------------
-Are you running into issues? Read the dedicated [troubleshooting manual](/docs/support/client-issues). You can also check out common errors [here](https://support.cfx.re/hc/en-us/sections/5299954457756-Common-errors).
+Are you running into issues? Read the dedicated [troubleshooting manual](/docs/support/client-issues/). You can also check out common errors [here](https://support.cfx.re/hc/en-us/sections/5299954457756-Common-errors).

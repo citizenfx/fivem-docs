@@ -592,10 +592,10 @@ net_tcpConnLimit 32
 ### `block_net_game_event [eventName]`
 Adds the hash of a net game event to the list blocked by the server.
 
-This is used to prevent exploits, for example `BLOCK_WEAPON_SELECTION` is an event used by the game when invoking [SET_CURRENT_PED_VEHICLE_WEAPON](https://docs.fivem.net/natives/?_0x75C55983C2C39DAA) native,
+This is used to prevent exploits, for example `BLOCK_WEAPON_SELECTION` is an event used by the game when invoking {{% native_link "SET_CURRENT_PED_VEHICLE_WEAPON" %}} native,
 if you are not using this native, you could block the event to prevent cheaters from blocking the selection of weapon in vehicles.
 
-A list of events can be found [here](/docs/game-references/net-game-events)
+A list of events can be found [here](/docs/game-references/net-game-events/)
 
 Example:
 ```

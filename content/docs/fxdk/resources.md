@@ -191,6 +191,6 @@ Build commands are the same as watch ones, except that they'll run only when bui
 
 ## Resource building
 
-By default, when [building project](/docs/fxdk/project-building), FxDK will run build commands (if any), copy whole resource content to respective resource folder in project build folder, this means that even source file will be copied over there.
+By default, when [building project](/docs/fxdk/project-building/), FxDK will run build commands (if any), copy whole resource content to respective resource folder in project build folder, this means that even source file will be copied over there.
 
 You can limit what exactly gets copied in the `.fxdkignore` file in resource root. It behaves the same way as `.gitignore` files and pretty much follows it's syntax. However, for a now, this file will be taken into account only in resource root, having it in any subfolder won't have any effect.

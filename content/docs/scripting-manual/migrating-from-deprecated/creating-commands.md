@@ -47,4 +47,4 @@ RegisterCommand("commandName", function(source --[[ this is the player ID (on th
 end, true) -- this true bool means that the user cannot execute the command unless they have the 'command.commandName' ACL object allowed to one of their identifiers.
 ```
 
-Further examples can be found at the respective [Lua](../../introduction/creating-your-first-script) and [C#](../../introduction/creating-your-first-script-csharp) introductions.
+Further examples can be found at the respective [Lua](../../introduction/creating-your-first-script/) and [C#](../../introduction/creating-your-first-script-csharp/) introductions.

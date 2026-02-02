@@ -65,7 +65,7 @@ When using networked events, make sure to add some checks like:
 - Player money
 - Player [state bags](/docs/scripting-manual/networking/state-bags/)
 - Player inventory items
-- Player [position](https://docs.fivem.net/natives/?_0x1647F1CB)
+- Player [position](/natives/?_0x1647F1CB)
 - Player experience and level
 - Player [permissions](https://forum.cfx.re/t/basic-aces-principals-overview-guide/90917) and roles
 

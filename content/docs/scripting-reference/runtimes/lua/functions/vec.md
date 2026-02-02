@@ -60,6 +60,6 @@ function vec_alt(...)
 end
 ```
 
-[vec2]: /docs/scripting-reference/runtimes/lua/functions/vector2
-[vec3]: /docs/scripting-reference/runtimes/lua/functions/vector3
-[vec4]: /docs/scripting-reference/runtimes/lua/functions/vector4
+[vec2]: /docs/scripting-reference/runtimes/lua/functions/vector2/
+[vec3]: /docs/scripting-reference/runtimes/lua/functions/vector3/
+[vec4]: /docs/scripting-reference/runtimes/lua/functions/vector4/

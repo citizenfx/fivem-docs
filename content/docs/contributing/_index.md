@@ -23,7 +23,7 @@ Documentation is a continual work in progress, and we always welcome improvement
 
 All text needs to be written in American English (AmE) style. Please note any variations in spelling, punctuation, or terminology compared to other English language variants.
 
-[developer-docs]: /docs/developers
+[developer-docs]: /docs/developers/
 [discord]: https://discord.gg/fivem
 [docs-rep]: https://github.com/citizenfx/fivem-docs
 [docs-issues]: https://github.com/citizenfx/fivem-docs/issues

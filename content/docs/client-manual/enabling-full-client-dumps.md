@@ -14,7 +14,7 @@ This guide explains how to enable full client memory dumps for FiveM/RedM, repro
 To enable full dumps:
 
 1. Go to your FiveM/RedM installation directory.
-2. Open the file named [CitizenFX.ini](https://docs.fivem.net/docs/client-manual/citizenfx/#how-to-find-this-file) with a text editor such as notepad.
+2. Open the file named [CitizenFX.ini](/docs/client-manual/citizenfx/#how-to-find-this-file) with a text editor such as notepad.
 3. Add the following line at the bottom of the file:
 
 ```ini

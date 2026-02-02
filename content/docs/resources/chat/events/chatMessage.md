@@ -4,7 +4,7 @@ title: chatMessage
 
 ## About
 This event is available both in the client and in the server.  
-In the client this event is **deprecated**! Use [chat:addMessage](../chat-addMessage) instead.  
+In the client this event is **deprecated**! Use [chat:addMessage](../chat-addMessage/) instead.  
 Triggering this event in the client allows you to send a chat message to this client.  
 Listening for this event in the server allows you to read/log/reply the message.  
 

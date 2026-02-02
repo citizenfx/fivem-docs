@@ -7,7 +7,7 @@ date: 2019-06-23T14:41:09.000+02:00
 **Note:** This Cookbook article was originally published on **June 23, 2019**. Newer information may exist.
 {{< /alert >}}
 
-In GTA/RAGE games, you'll often encounter native functions either taking or returning a Jenkins one-at-a-time hash, like the ones returned by [GET\_HASH\_KEY](https://docs.fivem.net/natives/?_0xD24D37CC275948CC).
+In GTA/RAGE games, you'll often encounter native functions either taking or returning a Jenkins one-at-a-time hash, like the ones returned by [GET\_HASH\_KEY](/natives/?_0xD24D37CC275948CC).
 
 Traditionally, code would have had to either hardcode hashes (like `-1044093321`), or use GET\_HASH\_KEY directly (like `GetHashKey("a_m_y_skater_01")`). This would have lead to either less readability and maintainability, or having to wait for a slow native invocation.
 

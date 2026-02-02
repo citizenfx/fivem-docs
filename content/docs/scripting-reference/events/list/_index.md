@@ -9,13 +9,13 @@ hidden: true
 Core events
 -----------
 
-- [gameEventTriggered](./gameEventTriggered)
-- [onClientResourceStart](./onClientResourceStart)
-- [onClientResourceStop](./onClientResourceStop)
-- [onResourceStart](./onResourceStart)
-- [onResourceStarting](./onResourceStarting)
-- [onResourceStop](./onResourceStop)
-- [playerConnecting](./playerConnecting)
-- [playerDropped](./playerDropped)
-- [populationPedCreating](./populationPedCreating)
-- [rconCommand](./rconCommand)
+- [gameEventTriggered](./gameEventTriggered/)
+- [onClientResourceStart](./onClientResourceStart/)
+- [onClientResourceStop](./onClientResourceStop/)
+- [onResourceStart](./onResourceStart/)
+- [onResourceStarting](./onResourceStarting/)
+- [onResourceStop](./onResourceStop/)
+- [playerConnecting](./playerConnecting/)
+- [playerDropped](./playerDropped/)
+- [populationPedCreating](./populationPedCreating/)
+- [rconCommand](./rconCommand/)

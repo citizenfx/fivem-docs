@@ -3,8 +3,8 @@ title: endDataFileEntries
 toc_hide: true
 ---
 
-Triggered when data file entries have ended, after the [startDataFileEntries](../startDataFileEntries) event
-and several [onDataFileEntry](../onDataFileEntry) events.
+Triggered when data file entries have ended, after the [startDataFileEntries](../startDataFileEntries/) event
+and several [onDataFileEntry](../onDataFileEntry/) events.
 
 Event Data
 ----------

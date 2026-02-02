@@ -19,7 +19,7 @@ string commandName
 
 Examples
 --------
-This example removes the suggestion that was created with the example of [chat:addSuggestion](../chat-addSuggestion).
+This example removes the suggestion that was created with the example of [chat:addSuggestion](../chat-addSuggestion/).
 
 ##### Lua Example:
 ```lua

@@ -9,7 +9,7 @@ Do you feel as if there's missing documentation? As of now, there are a few sect
 
 Where are these sections?
 --------------------------------
-[General documentation](https://docs.fivem.net/) has its own [GitHub issues](https://github.com/citizenfx/fivem-docs/issues) section and [natives](https://docs.fivem.net/natives/) have their own section located [here](https://github.com/citizenfx/natives/issues) as well.
+[General documentation](https://docs.fivem.net/) has its own [GitHub issues](https://github.com/citizenfx/fivem-docs/issues) section and [natives](/natives/) have their own section located [here](https://github.com/citizenfx/natives/issues) as well.
 
 How do I open an issue in any of these sections?
 --------------------------------

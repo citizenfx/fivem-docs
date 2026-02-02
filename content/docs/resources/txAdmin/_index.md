@@ -25,7 +25,7 @@ For more information, you can join the [Discord Server](https://discord.gg/AFAAX
 	- Player ban/warn/dm
 - Access control:
 	- Login via Password or CitizenFX
-	- [Admin permission system](./permissions)
+	- [Admin permission system](./permissions/)
 	- Action logging
 	- Brute-force protection
 - Discord Integration:

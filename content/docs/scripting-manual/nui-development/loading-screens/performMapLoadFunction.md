@@ -3,7 +3,7 @@ title: performMapLoadFunction
 toc_hide: true
 ---
 
-Triggered when a map load function was called, either by itself or as a result of [onDataFileEntry](../onDataFileEntry).
+Triggered when a map load function was called, either by itself or as a result of [onDataFileEntry](../onDataFileEntry/).
 
 Event Data
 ----------

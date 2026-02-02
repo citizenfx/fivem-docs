@@ -133,8 +133,8 @@ local q = quat(w, x, y, z)
 print(q)
 ```
 
-[lua-runtime]: /docs/scripting-manual/runtimes/lua
-[vec3]: /docs/scripting-reference/runtimes/lua/functions/vector3
+[lua-runtime]: /docs/scripting-manual/runtimes/lua/
+[vec3]: /docs/scripting-reference/runtimes/lua/functions/vector3/
 [wiki-euler]: https://en.wikipedia.org/wiki/Euler_angles
 [wiki-quats]: https://en.wikipedia.org/wiki/Quaternion
 [wiki-gimbal]: https://en.wikipedia.org/wiki/Gimbal_lock

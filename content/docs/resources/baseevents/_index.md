@@ -12,17 +12,17 @@ This resource does not have any export functions.
 ## Events
 
 ### Client
-- [`baseevents:onPlayerDied`](./events/onPlayerDied)
-- [`baseevents:onPlayerKilled`](./events/onPlayerKilled)
-- [`baseevents:onPlayerWasted`](./events/onPlayerWasted)
+- [`baseevents:onPlayerDied`](./events/onPlayerDied/)
+- [`baseevents:onPlayerKilled`](./events/onPlayerKilled/)
+- [`baseevents:onPlayerWasted`](./events/onPlayerWasted/)
 
 ### Server
-- [`baseevents:onPlayerDied`](./events/onPlayerDied)
-- [`baseevents:onPlayerKilled`](./events/onPlayerKilled)
-- [`baseevents:onPlayerWasted`](./events/onPlayerWasted)
-- [`baseevents:enteringVehicle`](./events/enteringVehicle)
-- [`baseevents:enteringAborted`](./events/enteringAborted)
-- [`baseevents:enteredVehicle`](./events/enteredVehicle)
-- [`baseevents:leftVehicle`](./events/leftVehicle)
+- [`baseevents:onPlayerDied`](./events/onPlayerDied/)
+- [`baseevents:onPlayerKilled`](./events/onPlayerKilled/)
+- [`baseevents:onPlayerWasted`](./events/onPlayerWasted/)
+- [`baseevents:enteringVehicle`](./events/enteringVehicle/)
+- [`baseevents:enteringAborted`](./events/enteringAborted/)
+- [`baseevents:enteredVehicle`](./events/enteredVehicle/)
+- [`baseevents:leftVehicle`](./events/leftVehicle/)
 
 **Note:** Don't forget to add `ensure baseevents` in server.cfg.

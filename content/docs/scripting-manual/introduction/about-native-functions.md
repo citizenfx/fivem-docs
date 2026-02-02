@@ -6,13 +6,13 @@ weight: 60
 In FiveM, you have access to what are called "native functions" or simply "natives". These functions are provided by the game itself, using them will allow you to perform a wide variety of actions within the game environment. This guide will explain what natives are, where you can find them, and how to use them in your scripts.
 
 ## What Are Native Functions?
-Native functions in FiveM are predefined functions that enable interaction with the game. They are essential for creating and managing game mechanics, player interactions, and various other functionalities within your server. Natives are used in both client-side and server-side. Some of them are created by Cfx like [DropPlayer](https://docs.fivem.net/natives/?_0xBA0613E1).
+Native functions in FiveM are predefined functions that enable interaction with the game. They are essential for creating and managing game mechanics, player interactions, and various other functionalities within your server. Natives are used in both client-side and server-side. Some of them are created by Cfx like {{% native_link "DROP_PLAYER" %}}.
 
 
 ## Where Can You Find Native Functions?
 FiveM provides comprehensive documentation for native functions. This documentation is essential for understanding what each native function does, how to use it, and what parameters it requires.
 
-- **FiveM Natives**: All documented natives can be found on [our official website](https://docs.fivem.net/natives/).
+- **FiveM Natives**: All documented natives can be found on [our official website](/natives/).
 
 - **Community Forums**: The [Cfx.re Forums](https://forum.cfx.re/) are another valuable resource. Here, you can find discussions, tutorials, and examples from other developers who share their experiences and solutions related to using native functions.
 
@@ -80,7 +80,7 @@ end, false)
 ```
 
 ### Create Your First Resource
-To learn how to create your first resource step-by-step, refer to the comprehensive guide in [this section](/docs/scripting-manual/introduction/creating-your-first-script). This guide will walk you through the process of setting up a new resource, writing your first script, and integrating it into your FiveM server.
+To learn how to create your first resource step-by-step, refer to the comprehensive guide in [this section](/docs/scripting-manual/introduction/creating-your-first-script/). This guide will walk you through the process of setting up a new resource, writing your first script, and integrating it into your FiveM server.
 
 ### Commonly Used Native Functions
 Here are some commonly used native functions and their descriptions:

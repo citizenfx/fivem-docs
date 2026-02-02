@@ -17,12 +17,12 @@ You can also set an event as "canceled" from within an event handler as long as 
 the network. The resource that triggered the event can check if it was canceled after being run. Canceling an event
 does **not** stop other event handlers from running.
 
-- [Listening for events](/docs/scripting-manual/working-with-events/listening-for-events)
-- [Triggering events](/docs/scripting-manual/working-with-events/triggering-events)
-- [Event cancelation](/docs/scripting-manual/working-with-events/event-cancelation)
+- [Listening for events](/docs/scripting-manual/working-with-events/listening-for-events/)
+- [Triggering events](/docs/scripting-manual/working-with-events/triggering-events/)
+- [Event cancelation](/docs/scripting-manual/working-with-events/event-cancelation/)
 
 <!-- TODO
-- [Using events](/docs/scripting-manual/working-with-events/using-events)
-- [Creating new events](/docs/scripting-manual/working-with-event/creating-new-events)
-- [Server-client communication](/docs/scripting-manual/working-with-event/server-client-communication)
+- [Using events](/docs/scripting-manual/working-with-events/using-events/)
+- [Creating new events](/docs/scripting-manual/working-with-event/creating-new-events/)
+- [Server-client communication](/docs/scripting-manual/working-with-event/server-client-communication/)
 -->

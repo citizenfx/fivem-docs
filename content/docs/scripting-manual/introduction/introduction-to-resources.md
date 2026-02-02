@@ -83,4 +83,4 @@ these resources provide useful functionality to your server.
 More information about the standard resources can be found in the [resource catalog][resource-catalog].
 
 [manifest-reference]: /docs/scripting-reference/resource-manifest/resource-manifest/
-[resource-catalog]: /docs/resources
+[resource-catalog]: /docs/resources/
