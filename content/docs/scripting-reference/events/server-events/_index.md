@@ -8,6 +8,6 @@ weight: 20
 Core events
 -----------
 
-These events are part of FiveM and don’t require any additional resources.
+These events are part of FiveM and don't require any additional resources.
 
 {{% events "server" %}}

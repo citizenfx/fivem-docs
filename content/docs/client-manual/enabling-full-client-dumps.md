@@ -31,14 +31,14 @@ Do not close the game, even if Windows prompts you to do so.
 After the dump finishes writing, the usual crash window will appear.
 2. Confirm the crash is the same one you were asked to report
 Typically, this means it has the same Legacy crash hash.
-If it’s not the same crash, return to the first step.
+If it's not the same crash, return to the first step.
 3. A Windows Explorer window should automatically open, pointing to the crashes directory in your FiveM/RedM installation folder.
 A large dump file (usually several GB) will already be selected.
 
 ### Compressing the Dump
 
 Use WinRAR, 7-Zip, or Windows "Send to → Compressed folder" to zip the dump file.
-The compressed file will usually be 1–2 GB.
+The compressed file will usually be 1-2 GB.
 
 ### Disabling Dumps
 

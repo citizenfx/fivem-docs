@@ -2,7 +2,7 @@
 title: GetPlayers
 ---
 
-Returns a table of all connected players (server ID’s).
+Returns a table of all connected players (server ID's).
 
 Syntax
 ------

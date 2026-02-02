@@ -14,9 +14,9 @@ from the [Cfx.re Portal](https://portal.cfx.re/subscriptions) starting from `Fiv
 - A mode allowing (up to) 2048 players since the recent [commit](https://github.com/citizenfx/fivem/commit/a03eb34c80571ac37cf8d74ca87fa4e646f2e499). There are servers handling 1000+ concurrent players.
 - To accomplish this, it uses the following technological changes:
     - Extension of object id length from 8192 (`1 << 13`) to 65535 (`(1 << 16) - 1`), from the following [commit](https://github.com/citizenfx/fivem/commit/e1b1d58dcb3e9147f2b95daf4518ea16593c5631).
-    - Player ped/vehicle culling. No entities will be created on clients outside a ‘focus zone’, which currently is hardcoded to 424 units around a player.
+    - Player ped/vehicle culling. No entities will be created on clients outside a 'focus zone', which currently is hardcoded to 424 units around a player.
     - Player culling. No players will be created/deleted locally outside of the focus zone too. This means that all player iteration will have to happen server-side.
-- It also has a bit better performance than ‘plain’ OneSync at this time due to player ped culling, and works around the so-called ‘head blend bug’.
+- It also has a bit better performance than 'plain' OneSync at this time due to player ped culling, and works around the so-called 'head blend bug'.
 
 # How is synchronization handled?
 Most of the sync data is handled through player `31`, game events are handled through this player as well, this is a player reserved for every individual client, and it's used to write sync data to the server to later on be analyzed through sync-nodes for parsing.
@@ -198,17 +198,17 @@ SetRoutingBucketPopulationEnabled(1, false)
 ```
 
 ## Buckets and why you should use them
-Server versions from pipeline ID 3245 and above have added a ‘routing bucket’ functionality, which is similar in concept to the ‘dimension’ or ‘virtual world’ functionality seen in prior non-Rockstar GTA network implementations.
+Server versions from pipeline ID 3245 and above have added a 'routing bucket' functionality, which is similar in concept to the 'dimension' or 'virtual world' functionality seen in prior non-Rockstar GTA network implementations.
 
-One can assign a player or entity to a routing bucket, and they will only see entities (and players) that belong to the same routing bucket. In addition to that, each routing bucket will have its own ‘world grid’ for determining population owners, so even if you have population enabled, you’ll notice nothing unusual at all when using routing buckets.
+One can assign a player or entity to a routing bucket, and they will only see entities (and players) that belong to the same routing bucket. In addition to that, each routing bucket will have its own 'world grid' for determining population owners, so even if you have population enabled, you'll notice nothing unusual at all when using routing buckets.
 
 Example use cases include:
 
 - Multi-mode servers where you want to have different games go on without affecting other games
 - Session/party systems
-- ‘Character screen’ being instanced differently from gameplay going on
+- 'Character screen' being instanced differently from gameplay going on
 
-Example use cases do explicitly not include interiors. Interiors should be using the traditional ‘conceal’ native functions, or the future support for 3D-scoped routing policy, which will also allow specifying any ‘instanced’ zone for MMO-style servers so a server can have a map area ‘dedicated’ to a player/party on a mission but still be able to see everything going on outside that zone. [[source]](https://cookbook.fivem.net/2020/11/27/routing-buckets-split-game-state/)
+Example use cases do explicitly not include interiors. Interiors should be using the traditional 'conceal' native functions, or the future support for 3D-scoped routing policy, which will also allow specifying any 'instanced' zone for MMO-style servers so a server can have a map area 'dedicated' to a player/party on a mission but still be able to see everything going on outside that zone. [[source]](https://cookbook.fivem.net/2020/11/27/routing-buckets-split-game-state/)
 
 Each bucket can have different rules, these are named 'lockdown modes' and they are described down below:
 

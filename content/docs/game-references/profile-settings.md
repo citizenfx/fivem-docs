@@ -3,7 +3,7 @@ title: Profile Settings
 ---
 
 
-GTA V profile setting values can be obtained using this native: {{% native_link "GET_PROFILE_SETTING" %}}.
+GTAV profile setting values can be obtained using this native: {{% native_link "GET_PROFILE_SETTING" %}}.
 
 
 |     ID | Settings Category | Profile Setting Description                     |

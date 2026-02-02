@@ -21,7 +21,7 @@ FiveM provides comprehensive documentation for native functions. This documentat
 ## Difference Between Client and Server-Side Natives
 
 ### Client Natives
-Client natives are functions that run on the player's game client. These functions are primarily used to handle tasks related to the player's immediate environment, rendering, input handling, and interactions that need to occur on the client side. Examples include manipulating the player’s view, handling UI elements, and interacting with client-specific data.
+Client natives are functions that run on the player's game client. These functions are primarily used to handle tasks related to the player's immediate environment, rendering, input handling, and interactions that need to occur on the client side. Examples include manipulating the player's view, handling UI elements, and interacting with client-specific data.
 <!-- Maybe found some better examples explanation -->
 
 ### Server-Side Natives
@@ -40,7 +40,7 @@ Please note that some natives can be used on client and server. You can refer to
 Using native functions in your FiveM resources involves calling the functions with the appropriate parameters. Let's go through the basic steps of using natives in both client-side and server-side resources.
 
 ### Client-Side Example
-Client-side scripts are executed on the player's game client and are used to handle tasks such as rendering, player input, and more. Here’s a basic example of how to use a native function in a client-side script:
+Client-side scripts are executed on the player's game client and are used to handle tasks such as rendering, player input, and more. Here's a basic example of how to use a native function in a client-side script:
 
 1. **Create a Client Script**: In your resource folder, create a new client script file, e.g., `main_cl.lua`.
 2. **Register and Use a Native Function**: Use the native function `AddTextEntry` to add a custom text entry that can be displayed on the game UI.
@@ -64,7 +64,7 @@ end)
 ```
 
 ### Server-Side Example
-Server-side scripts run on the game server and are responsible for handling game logic, player data, and other backend tasks. Here’s an example of using a native function in a server-side script:
+Server-side scripts run on the game server and are responsible for handling game logic, player data, and other backend tasks. Here's an example of using a native function in a server-side script:
 
 1. **Create a Server Script**: In your resource folder, create a new server script file, e.g., `main_sv.lua`.
 2. **Register a Command and Use a Native Function**: Use the native function `GetPlayerName` to get the name of a player and print it to the server console.

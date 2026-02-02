@@ -490,7 +490,7 @@ It is possible to bypass the pool size limitations for development purposes. In 
 - Add the `+set moo 31337` flag when running your client. Similarly to how it's done to turn on [the developer mode](/docs/client-manual/console-commands/#developer-commands).
 
 {{% alert color="warning" %}}
-This is for development and debugging purposes only. Never use it to bypass limitations for your production environment. If you set pool sizes outside of supported limits - you are on your own. If you believe that the limits should be adjusted - reach out to the Cfx team by opening a github issue requesting the limit increased with a reason why.
+This is for development and debugging purposes only. Never use it to bypass limitations for your production environment. If you set pool sizes outside of supported limits - you are on your own. If you believe that the limits should be adjusted - reach out to the Cfx team by opening a GitHub issue requesting the limit increased with a reason why.
 {{% /alert %}}
 
 ### sv_tebexSecret

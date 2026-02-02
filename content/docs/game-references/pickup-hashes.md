@@ -2,7 +2,7 @@
 title: Pickup Hashes
 ---
 
-List of found pickup hashes in GTA V as of September 25th, 2025.
+List of found pickup hashes in GTAV as of September 25th, 2025.
 
 ```c
 enum ePickupHashes {

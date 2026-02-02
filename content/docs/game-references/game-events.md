@@ -2,7 +2,7 @@
 title: Game events
 ---
 
-This is a list of low-level game events. That means, these are the events that come straight from GTA V's core
+This is a list of low-level game events. That means, these are the events that come straight from GTAV's core
 mechanics. Using these events can be useful when you need fine control over what happens in your scripts.
 See [gameEventTriggered][event-ref] for more information on how to use these events.
 

@@ -2,7 +2,7 @@
 title: Ped models
 ---
 
-List of all working ped models in GTA V as of July 23, 2019.
+List of all working ped models in GTAV as of July 23, 2019.
 
 - [Ambient female](#ambient-female)
 - [Ambient male](#ambient-male)

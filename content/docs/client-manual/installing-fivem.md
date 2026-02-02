@@ -14,7 +14,7 @@ Running into trouble? Make sure your system meets the [minimum requirements][sys
 read the [client issues manual][client-issues].
 
 - If you experience any issues with your antivirus upon starting FiveM, you may want to submit a [support ticket][antivirus-ticket].
-- Make sure you have installed and updated [GTA V][where-to-buy].
+- Make sure you have installed and updated [GTAV][where-to-buy].
 - [Download FiveM][home] off the website.
 - Run the FiveM.exe. If you run the installer in an empty folder, FiveM will install there. Otherwise, it will install in `%localappdata%\FiveM`.
 - Start FiveM from your Windows start menu.

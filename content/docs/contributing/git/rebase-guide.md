@@ -15,21 +15,21 @@ The original commit history of the master branch is preserved, and new commits f
 
 # Prerequisites
  - [Git][git-download]
- - [Github Desktop][github-desktop] or [Visual Studio Code][vscode-download]
+ - [GitHub Desktop][github-desktop] or [Visual Studio Code][vscode-download]
 
 # Ways to Rebase
 - [Rebasing using a GUI](#rebasing-using-a-gui)
-    - [Rebasing using Github Desktop](#rebasing-using-github-desktop)
+    - [Rebasing using GitHub Desktop](#rebasing-using-github-desktop)
     - [Rebasing using Visual Studio Code](#rebasing-using-visual-studio-code)
 - [Rebasing using Git's CLI](#rebasing-using-gits-cli)
 
 
 
 # Rebasing using a GUI
-### Rebasing using Github Desktop
+### Rebasing using GitHub Desktop
 
 1. Update your master branch to be in sync with our repository:
-    1. Via browser and GitHub: go to your fork of the fivem repository and press `Sync fork`, followed by `Update branch`.
+    1. Via browser and GitHub: go to your fork of the FiveM repository and press `Sync fork`, followed by `Update branch`.
 
     ![image](/contributing/git/rebase-guide/github-sync-fork-update-branch.png)
 
@@ -75,7 +75,7 @@ The original commit history of the master branch is preserved, and new commits f
 
 6. Test if your code still compiles and that the changes you made are working as expected, adjust otherwise.
 
-7. Now you may force-push your `my-feature` branch to github using `git push --force-with-lease`, that's because you may be working with other collaborators that also happen to be working in the same branch (so you don't overwrite their changes). You may use `git push -f` otherwise.
+7. Now you may force-push your `my-feature` branch to GitHub using `git push --force-with-lease`, that's because you may be working with other collaborators that also happen to be working in the same branch (so you don't overwrite their changes). You may use `git push -f` otherwise.
 
 
 # Rebasing using Git's CLI
@@ -88,7 +88,7 @@ To transfer all the commits from the feature branch into the master branch using
     git pull upstream/master
     ```
 
-    Your local master branch should now be up to date with our repository. Now you should push those changes back to your Github remote repository using the following command so your local changes are reflected on the remote:
+    Your local master branch should now be up to date with our repository. Now you should push those changes back to your GitHub remote repository using the following command so your local changes are reflected on the remote:
 
     ```
     git push origin master
@@ -119,7 +119,7 @@ To transfer all the commits from the feature branch into the master branch using
 
 5. Test if your code still compiles and that the changes you made are working as expected, adjust otherwise.
 
-6. Now you may force-push your `my-feature` branch to github using `git push --force-with-lease`, that's because you may be working with other collaborators that also happen to be working in the same branch (so you don't overwrite their changes). You may use `git push -f` otherwise.
+6. Now you may force-push your `my-feature` branch to GitHub using `git push --force-with-lease`, that's because you may be working with other collaborators that also happen to be working in the same branch (so you don't overwrite their changes). You may use `git push -f` otherwise.
 
 # What will the changes look like?
 
@@ -137,9 +137,9 @@ bad9820 My files and stuff.
 
 Commit `6724b52` indicates within parentheses that said commit was rebased from the `my-feature` branch.
 
-## Github Desktop
+## GitHub Desktop
 
-On Github Desktop, you can view the change history (similar to the `git log` CLI command, but with a GUI) by going to the left pane and clicking on the History tab.
+On GitHub Desktop, you can view the change history (similar to the `git log` CLI command, but with a GUI) by going to the left pane and clicking on the History tab.
 
 ![image](/contributing/git/rebase-guide/github-desktop-history-tab.png)
 

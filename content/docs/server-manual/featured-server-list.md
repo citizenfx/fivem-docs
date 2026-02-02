@@ -16,7 +16,7 @@ Certain criteria must be met for a server to be eligible for the featured server
 
 • The server does not violate the [FiveM PLA][fivem-pla].<br>
 • The server offers a non-roleplay setting.<br>
-• The server’s language is either English or offers support for multiple languages.<br>
+• The server's language is either English or offers support for multiple languages.<br>
 • The server receives regular updates and is well maintained.<br>
 • Players can connect to the server directly by pressing the "connect" button. No additional limitations should be enforced (e.g., requiring players to join a Discord server or be added to an allowlist).<br>
 

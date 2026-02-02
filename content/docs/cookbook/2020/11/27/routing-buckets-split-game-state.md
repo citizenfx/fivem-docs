@@ -21,7 +21,7 @@ Example use cases do **explicitly not include interiors.** Interiors should be u
 
 https://www.youtube.com/watch?v=U5kPy0SAXNE&feature=youtu.be&t=275
 
-See the linked timestamp in this GTA Online trailer to see _why_ interiors should not be handled using this support in GTA V, where this was fine in GTA3 series titles because they did not have any interiors looking outwards.
+See the linked timestamp in this GTA Online trailer to see _why_ interiors should not be handled using this support in GTAV, where this was fine in GTA3 series titles because they did not have any interiors looking outwards.
 
 The natives to use are as follows:
 

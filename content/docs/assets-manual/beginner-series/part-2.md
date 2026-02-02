@@ -66,6 +66,6 @@ Expand the panel in the top-right corner, then press **T** to open the toolbar.
 3. Navigate to your **3dmods RPF archive**.
 4. Drag the exported `.XML` file into it.
 
-You've successfully imported and exported your first GTA V model using CodeWalker and Sollumz!
+You've successfully imported and exported your first GTAV model using CodeWalker and Sollumz!
 
 {{% article-nav %}}

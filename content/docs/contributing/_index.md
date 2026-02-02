@@ -17,7 +17,7 @@ Do you love the GTA universe and want to explore its details? You can make a big
 
 ## Improving Documentation
 
-Documentation is a continual work in progress, and we always welcome improvements. If you spot any areas for improvement, you can submit a pull request on our [docs repository][docs-rep]. You can also create a [Github issue][docs-issues] to suggest new pages. Any contribution is welcome!
+Documentation is a continual work in progress, and we always welcome improvements. If you spot any areas for improvement, you can submit a pull request on our [docs repository][docs-rep]. You can also create a [GitHub issue][docs-issues] to suggest new pages. Any contribution is welcome!
 
 ### Method signatures
 

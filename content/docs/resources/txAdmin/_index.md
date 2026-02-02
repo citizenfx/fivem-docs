@@ -34,7 +34,7 @@ For more information, you can join the [Discord Server](https://discord.gg/AFAAX
 	- Command to display player info
 - Monitoring:
 	- Auto Restart FXServer on crash or hang
-	- Server’s CPU/RAM consumption
+	- Server's CPU/RAM consumption
 	- Live Console (with log file, command history and search)
 	- Server threads performance chart with player count
 	- Server Activity (Log connections/disconnections, kills, chat, explosions and custom commands)

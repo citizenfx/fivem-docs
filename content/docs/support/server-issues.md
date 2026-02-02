@@ -75,7 +75,7 @@ If **either** variable is missing, the server will display an error upon startup
 
 - It can take **up to 8 minutes** for a server to appear in the list after launch if no other heartbeats are sent.
 - There may be an issue with the server listing service itself. Be patient - chances are our team is already working on it.
-- If you're behind a **NAT or gateway** that **masks UDP source ports**, your server may not show up. Consult your firewall/router documentation or check [pfSense’s guide][pfsensenat] for resolving this.
+- If you're behind a **NAT or gateway** that **masks UDP source ports**, your server may not show up. Consult your firewall/router documentation or check [pfSense's guide][pfsensenat] for resolving this.
 
 ## Other Related Issues
 
@@ -95,7 +95,7 @@ Possible reasons:
 
 1. No active [Element Club subscription](https://portal.cfx.re/subscriptions) with at least **Argentum** tier.
 2. Incorrect [server name formatting][chat-formatting].
-3. Configuration changes weren’t saved or server wasn’t restarted.
+3. Configuration changes weren't saved or server wasn't restarted.
 
 ### Troubleshooting Slow Server Startups
 

@@ -20,7 +20,7 @@ Server binaries can be downloaded from our artifacts page for [Windows](https://
 
 ### What does this message mean for players?
 
-Players don’t need to take any action when this message appears while joining a server.
+Players don't need to take any action when this message appears while joining a server.
 If a grey end-of-support (EOS) warning appears, the server is still joinable.
 If a red end-of-life (EOL) warning appears and connection fails, the server owner must update their artifacts.
 In case that happens, players should contact the server owner, inform them of the issue, and share this documentation.
@@ -43,7 +43,7 @@ Example: Support Timeline for Latest Optional Release
 
 Outdated server artifacts will not stop functioning, however, we will not provide support for them. If you are experiencing issues, update to a newer server artifact before requesting support.
 
-Unsupported server artifacts older than three months will not be joinable from the server browser. Please update your server’s artifacts, and keep them up-to-date. If you are experiencing issues with newer server artifacts, always make sure to [report](https://forum.cfx.re/c/general-discussion/bug-reports/28) them.
+Unsupported server artifacts older than three months will not be joinable from the server browser. Please update your server's artifacts, and keep them up-to-date. If you are experiencing issues with newer server artifacts, always make sure to [report](https://forum.cfx.re/c/general-discussion/bug-reports/28) them.
 
 ### The Community is Here to Help
 

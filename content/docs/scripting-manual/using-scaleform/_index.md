@@ -3,7 +3,7 @@ title: Using Scaleform
 weight: 80
 ---
 
-Scaleform GFx is the native GUI for GTA V, based on Flash technology using ActionScript 2, which is a superset of ECMAScript (JavaScript) - read more on [Wikipedia](https://en.wikipedia.org/wiki/Scaleform_GFx).
+Scaleform GFx is the native GUI for GTAV, based on Flash technology using ActionScript 2, which is a superset of ECMAScript (JavaScript) - read more on [Wikipedia](https://en.wikipedia.org/wiki/Scaleform_GFx).
 
 Development environment
 ---------------
@@ -65,14 +65,14 @@ You can draw scaleform using one of these commands, **red, green, blue, alpha an
 
 -   {{% native_link "DRAW_SCALEFORM_MOVIE" %}} for drawing gfx in 2D on a specific position
 -   {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN" %}} also draws gfx in 2D, however in fullscreen
--   {{% native_link "DRAW_SCALEFORM_MOVIE_3D" %}} **do note that if you have blackout enabled this will be drawn with “solarized” and shifted to yellow colors**.
+-   {{% native_link "DRAW_SCALEFORM_MOVIE_3D" %}} **do note that if you have blackout enabled this will be drawn with "solarized" and shifted to yellow colors**.
 
 Masking
 -------
 
 Can be faked using the function {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN_MASKED" %}}, where the first gfx is what you want to render, and the second gfx is a mask for it.
 
-This masking has no anti-aliasing, it doesn't perform “smooth” masking, if a particular pixel of masking gfx is not fully transparent, then the underlying pixel will be fully shown.
+This masking has no anti-aliasing, it doesn't perform "smooth" masking, if a particular pixel of masking gfx is not fully transparent, then the underlying pixel will be fully shown.
 
 Using textures
 --------------

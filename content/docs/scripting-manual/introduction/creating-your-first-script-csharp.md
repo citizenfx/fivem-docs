@@ -179,7 +179,7 @@ MainThrd/ at Client.Services.Player.MyService+<RunTasks>d__22.MoveNext () [0x001
 ```
 
 #### Why Embedded PDBs work in FiveM
-Embedded portable PDBs are the most reliable way to ensure accurate stack traces in FiveM because [.NET Framework 4.7.1][portable-pdb-support] and up supports embedding [portable PDBs][portable-pdb-msft-learn], and Mono (the runtime used by FiveM) can natively extract this data from the DLL's metadata to provide line numbers and file paths in stack traces — even without separate `.pdb` files present.
+Embedded portable PDBs are the most reliable way to ensure accurate stack traces in FiveM because [.NET Framework 4.7.1][portable-pdb-support] and up supports embedding [portable PDBs][portable-pdb-msft-learn], and Mono (the runtime used by FiveM) can natively extract this data from the DLL's metadata to provide line numbers and file paths in stack traces - even without separate `.pdb` files present.
 
 **Follow these steps to enable embedded debug information in Visual Studio:**
 
@@ -208,13 +208,13 @@ Embedded portable PDBs are the most reliable way to ensure accurate stack traces
 
 
 #### Using Portable PDBs Instead (as separate `.pdb` files)  
-Portable PDBs can also be used in FiveM without embedding — just make sure the `.pdb` files are copied alongside your DLLs.
+Portable PDBs can also be used in FiveM without embedding - just make sure the `.pdb` files are copied alongside your DLLs.
 
 To generate separate portable PDBs instead of embedding them, follow the **same steps above**, but in step 4, select `Portable` instead of `Embedded` under **Debug Info**.
 
-The resulting `.pdb` file will be written next to the DLL on build — just be sure to deploy it with your resource.
+The resulting `.pdb` file will be written next to the DLL on build - just be sure to deploy it with your resource.
 
-You should also add the `.pdb` files to your files array (or as commonly known in Lua, table) in your [resource manifest file][resource-manifest] — here's an example (adjust as needed):
+You should also add the `.pdb` files to your files array (or as commonly known in Lua, table) in your [resource manifest file][resource-manifest] - here's an example (adjust as needed):
 
 ```
 files {

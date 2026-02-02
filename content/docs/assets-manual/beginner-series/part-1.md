@@ -5,7 +5,7 @@ weight: 10
 
 {{% youtube id="GgZ82sue3kM" %}}
 
-In this first part of the beginner tutorial series for GTA V 3D modding, we'll cover the initial setup of the required tools.
+In this first part of the beginner tutorial series for GTAV 3D modding, we'll cover the initial setup of the required tools.
 
 ## Step 1: Download CodeWalker
 
@@ -19,15 +19,15 @@ In this first part of the beginner tutorial series for GTA V 3D modding, we'll c
 
 1. Extract the downloaded ZIP somewhere on your computer.
 2. Open the folder and launch **`CodeWalker RPF Explorer.exe`**.
-3. On first launch, it may prompt you to set the directory for your GTA V installation.
+3. On first launch, it may prompt you to set the directory for your GTAV installation.
 4. Go to **Options** (top middle of the window) and **enable "Start in Edit Mode."**
 5. (Optional) Change to **Dark Mode** via: View -> Theme -> Dark
 
 ## Step 3: Create a New RPF Archive
 
-1. Inside your GTA V root directory, create a **new RPF archive** using CodeWalker RPF Explorer, Right-click, New -> RPF Archive.\
+1. Inside your GTAV root directory, create a **new RPF archive** using CodeWalker RPF Explorer, Right-click, New -> RPF Archive.\
    You can name this archive whatever you like - it will be used in future tutorials.
-2. Place the previously downloaded **nametables.rpf** file in the **root** of your GTA V folder.
+2. Place the previously downloaded **nametables.rpf** file in the **root** of your GTAV folder.
 3. Make sure you are in **Edit Mode**, then **drag and drop** the nametables RPF file into your GTA folder inside the **RPF Explorer**.
 
 ## Step 4: Install Blender
@@ -38,7 +38,7 @@ In this first part of the beginner tutorial series for GTA V 3D modding, we'll c
 
 ## Step 5: Install Sollumz Extension
 
-1. We'll now install the **Sollumz** extension (used for GTA V asset creation).
+1. We'll now install the **Sollumz** extension (used for GTAV asset creation).
 2. Go to the official Sollumz [**GitHub Repository**](https://github.com/Sollumz/Sollumz/)
 3. Select the Releases tab on the right, scroll down and download the `Sollumz.zip`.
 4. Inside Blender, go to Edit -> Preferences -> Get Extensions
@@ -49,7 +49,7 @@ In this first part of the beginner tutorial series for GTA V 3D modding, we'll c
 
 ## Summary
 
-You have now set up the **basic tools** required to start your GTA V 3D modding journey:
+You have now set up the **basic tools** required to start your GTAV 3D modding journey:
 
 - CodeWalker
 - Nametables

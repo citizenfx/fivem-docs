@@ -56,7 +56,7 @@ weight: 30
 | 48 | FLAG_IS_OFFROAD_VEHICLE | AI considers off-road paths as valid routes. |  |
 | 49 | FLAG_INCREASE_PED_COMMENTS | Increases random comments about the vehicle. |  |
 | 50 | FLAG_EXPLODE_ON_CONTACT | Explodes on contact setting. |  |
-| 51 | FLAG_USE_FAT_INTERIOR_LIGHT | Increases the size and intensity of the vehicle’s interior light. |  |
+| 51 | FLAG_USE_FAT_INTERIOR_LIGHT | Increases the size and intensity of the vehicle's interior light. |  |
 | 52 | FLAG_HEADLIGHTS_USE_ACTUAL_BONE_POS | Uses actual bone position for headlights. |  |
 | 53 | FLAG_FAKE_EXTRALIGHTS | Treats extra lights as normal headlights. |  |
 | 54 | FLAG_CANNOT_BE_MODDED | Vehicle cannot enter modification shops. |  |
