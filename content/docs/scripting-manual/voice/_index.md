@@ -94,13 +94,13 @@ if ourNewSubmixId ~= -1 then
 end
 
 SetAudioSubmixOutputVolumes(
-    ourNewSubmixId --[[ integer ]], 
-    0 --[[ outputSlot ]], 
-    1.0 --[[ frontLeftVolume ]], 
-    0.0 --[[ frontRightVolume ]], 
-    0.0 --[[ rearLeftVolume ]], 
-    0.0 --[[ rearRightVolume ]], 
-    1.0 --[[ channel5Volume ]], 
+    ourNewSubmixId --[[ integer ]],
+    0 --[[ outputSlot ]],
+    1.0 --[[ frontLeftVolume ]],
+    0.0 --[[ frontRightVolume ]],
+    0.0 --[[ rearLeftVolume ]],
+    0.0 --[[ rearRightVolume ]],
+    1.0 --[[ channel5Volume ]],
     1.0 --[[ channel6Volume ]]
 )
 
@@ -141,7 +141,7 @@ With that warning out of the way, let's write some code. We will be dividing the
 
 ### Writing the code (server-side)
 
-We will first declare a global named `clientsInChannel`, we will be using this table (array in other languages) to let the server know that we will have multiple clients connected to different channels. Each client can connect to one channel at a time. 
+We will first declare a global named `clientsInChannel`, we will be using this table (array in other languages) to let the server know that we will have multiple clients connected to different channels. Each client can connect to one channel at a time.
 
 A single channel, for example `clientsInChannel[911]` could look like the following `{1, 2, 3, 4}`, which indicates that the channel has four clients connected.
 
@@ -156,7 +156,7 @@ function broadcastVoiceChange(source, channelIdx, state)
     -- source is the client that changed channels, broadcasting to other clients
     -- Let any other clients in this channel know that we changed
     -- Also send the list of clients, passed as the second argument at onPlayerChangeVoiceChannels
-    -- to assign their volume and targets 
+    -- to assign their volume and targets
     for _, clientInChannel in pairs(clientsInChannel[channelIdx]) do
         TriggerClientEvent('onPlayerChangeVoiceChannels', clientInChannel, clientsInChannel[channelIdx], channelIdx, state)
     end

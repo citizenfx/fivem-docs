@@ -53,7 +53,7 @@ Squashing commits using [Github Desktop](https://desktop.github.com/) is a simpl
  - Basic knowledge on Git
 
 #### Squashing commits
-We can squash commits by using `git rebase -i HEAD~n` where `n` is the number of commits we want to combine from the `HEAD` commit and `-i`, which stands for interactive. 
+We can squash commits by using `git rebase -i HEAD~n` where `n` is the number of commits we want to combine from the `HEAD` commit and `-i`, which stands for interactive.
 
 So essentially, one would type the following into the console if we want to combine said commits (up to head, being the most recent commit):
 
@@ -77,7 +77,7 @@ And that's it... Your commits should now be squashed into one.
 
 #### Verifying commit history
 
-Before you push your changes to the remote branch, you should verify if your commit history is correct. What is meant by this is essentially; you are not overwriting old commit history with the commits you recently made. 
+Before you push your changes to the remote branch, you should verify if your commit history is correct. What is meant by this is essentially; you are not overwriting old commit history with the commits you recently made.
 
 You can check this by typing `git log --pretty=oneline` or simply `git log --oneline`. You can find more about the `pretty` command-line argument [here](https://git-scm.com/docs/pretty-formats).
 

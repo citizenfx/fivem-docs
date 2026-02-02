@@ -38,7 +38,7 @@ private void OnGameEventTriggered(string name, List<dynamic> args)
 {
   Debug.WriteLine($"game event {name} ({String.Join(", ", args.ToArray())})");
 }
-``` 
+```
 
 ##### JavaScript Example:
 ```js

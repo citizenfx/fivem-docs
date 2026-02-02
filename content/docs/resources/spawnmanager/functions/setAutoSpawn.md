@@ -24,7 +24,7 @@ bool enabled
 
 ### Required Arguments
 
-- **enabled** Whether to enable or disable auto-spawning. 
+- **enabled** Whether to enable or disable auto-spawning.
 
 ##### Lua Example:
 ```lua

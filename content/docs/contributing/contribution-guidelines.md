@@ -54,7 +54,7 @@ Example:
 
 #### Lists
 
-- Use bullet points (like - or *) for unordered lists, such as:<br/> 
+- Use bullet points (like - or *) for unordered lists, such as:<br/>
   - Examples
   - Notes
   - Options or unordered items
@@ -135,7 +135,7 @@ This guide aims to keep docs clear, consistent, and easy to follow for all users
 
 #### Grammar and Spelling
 
-**Spell Check**: Please ensure that your contributions are free of typos and grammatical errors. 
+**Spell Check**: Please ensure that your contributions are free of typos and grammatical errors.
 
 **Consistency in Spelling**: Choose American English spelling (e.g., "*color*" instead of "*colour*").
 

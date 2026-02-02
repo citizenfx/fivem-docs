@@ -8,7 +8,7 @@ Convars can be very powerful for defining configuration variables on the server.
 There are a couple of different convar types, we'll cover all of them on this page.
 
 ## Standard convars
-The most common of them all is just the 'standard' convar type. 
+The most common of them all is just the 'standard' convar type.
 
 #### Using commands
 You can set such convar by executing the following command:
@@ -17,7 +17,7 @@ You can set such convar by executing the following command:
 set convar_name convar_value
 ```
 
-If you want to set the value to a string that contains spaces, you can surround the _`convar_value`_ argument with quotation marks, like this: 
+If you want to set the value to a string that contains spaces, you can surround the _`convar_value`_ argument with quotation marks, like this:
 
 ```yaml
 set convar_name "This is a convar value that contains spaces!"
@@ -109,4 +109,3 @@ Here's a list of all CFX API set functions that you can use to get or set convar
 - {{% native_link "SET_CONVAR" %}}
 - {{% native_link "SET_CONVAR_REPLICATED" %}}
 - {{% native_link "SET_CONVAR_SERVER_INFO" %}}
-

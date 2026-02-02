@@ -29,4 +29,3 @@ FiveM supports C#, Lua, and JavaScript, allowing you the flexibility to create a
 - [Native Functions](https://docs.fivem.net/natives/)
 - [Client Functions](/docs/scripting-reference/client-functions)
 - [Server Functions](/docs/scripting-reference/server-functions)
-

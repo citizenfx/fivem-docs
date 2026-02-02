@@ -18,12 +18,12 @@ description: >
 2. Download the current recommended `master` branch build for Windows from the [Windows server build listing][windows-artifacts].
 3. Extract the build into the directory previously created.
     * 3b. Use any third-party archiving tool (such as [WinRAR][winrar] or [7-Zip][7zip]) to open the `.7z` file.
-4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder, for example, `C:\FXServer\server-data`. 
+4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder, for example, `C:\FXServer\server-data`.
     * 4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data` *(To type this command you need to open a command prompt, press `Win + R`, once the run dialog shows type `cmd` and hit enter, remember to switch directories to the directory you plan to clone to by typing `cd C:\FXServer`.)*
-  
+
 5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfg) file below into that file).
 6. Set the license key in your server.cfg using `sv_licenseKey "licenseKeyGoesHere"`.
-7. Run the server from the `server-data` folder. For example, in a plain Windows command prompt (cmd.exe) window: 
+7. Run the server from the `server-data` folder. For example, in a plain Windows command prompt (cmd.exe) window:
     ```dos
     cd /d C:\FXServer\server-data
     C:\FXServer\server\FXServer.exe +exec server.cfg
@@ -40,7 +40,7 @@ If you're experiencing any issues, you're more likely to see them fixed if you u
 
 #### Prerequisites
 1. [Git][git-scm] if you want to follow the recommended way of _cloning_ the base server data.
-2. `xz` or `xz-utils` package. 
+2. `xz` or `xz-utils` package.
 
 #### Installation
 1. Create a new folder (for example `mkdir -p ~/FXServer/server`), this will be used for the server binaries.
@@ -90,4 +90,3 @@ set gamename rdr3
 [7zip]: https://www.7-zip.org/download.html
 [git-scm]: https://git-scm.com/download/win
 [slow-server-startups]: /docs/support/server-issues/#troubleshooting-slow-server-startups-on-windows
-

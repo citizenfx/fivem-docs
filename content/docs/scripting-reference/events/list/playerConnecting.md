@@ -27,7 +27,7 @@ The `deferrals` object contains the following members to achieve such:
 
 #### defer(): void
 
-`deferrals.defer` will initialize deferrals for the current resource. It is required to wait for at least a tick after 
+`deferrals.defer` will initialize deferrals for the current resource. It is required to wait for at least a tick after
 calling `defer` before calling `update`, `presentCard` or `done`.
 
 #### update(message: string): void
@@ -186,4 +186,3 @@ on('playerConnecting', (name, setKickReason, deferrals) => {
     }, 0)
 })
 ```
-

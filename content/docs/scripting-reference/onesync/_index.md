@@ -4,10 +4,10 @@ weight: 575
 ---
 
 OneSync is a custom sync system that is built on top of GTA: Online's codebase, it increases server
-slot count so more players can play on a server and at the same time it introduces better development 
+slot count so more players can play on a server and at the same time it introduces better development
 standards including server-sided synchronization states for entities, which we'll cover in this article.
 
-It's worth mentioning that OneSync is free up to 48 slots, after such, you should get one of the following tiers 
+It's worth mentioning that OneSync is free up to 48 slots, after such, you should get one of the following tiers
 from the [Cfx.re Portal](https://portal.cfx.re/subscriptions) starting from `FiveM Element Club Argentum 💿`.
 
 # What is OneSync: Infinity?
@@ -22,7 +22,7 @@ from the [Cfx.re Portal](https://portal.cfx.re/subscriptions) starting from `Fiv
 Most of the sync data is handled through player `31`, game events are handled through this player as well, this is a player reserved for every individual client, and it's used to write sync data to the server to later on be analyzed through sync-nodes for parsing.
 
 # What are sync nodes and how do I interpret them?
-Sync nodes are synchronization data nodes, networked entities depend on these to transmit data to other clients/players on the server. The most simple one we can find is `CSectorPositionDataNode`. 
+Sync nodes are synchronization data nodes, networked entities depend on these to transmit data to other clients/players on the server. The most simple one we can find is `CSectorPositionDataNode`.
 
 {{% alert theme="warning" %}}We'll have to warn you that what lies ahead is a little bit technical and is just presented as is for educational purposes on how to analyze game-code and create a PR (pull request) if you would like to contribute to the [code-base][fivem-codebase]. {{% /alert %}}
 

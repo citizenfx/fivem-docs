@@ -7,4 +7,3 @@ In the past few years, FiveM has developed and advanced vastly. As a result of t
 
 - [Chat Messages](/docs/scripting-manual/migrating-from-deprecated/chat-messages)
 - [Creating Commands](/docs/scripting-manual/migrating-from-deprecated/creating-commands)
-  

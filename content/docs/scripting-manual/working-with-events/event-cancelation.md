@@ -62,7 +62,7 @@ TriggerEvent("eventName", eventParam1, eventParam2);
 
 if (WasEventCanceled())
 {
-    // Code that runs if the event was canceled. 
+    // Code that runs if the event was canceled.
 }
 ```
 
@@ -71,6 +71,6 @@ if (WasEventCanceled())
 emit("eventName", eventParam1, eventParam2);
 
 if (WasEventCanceled()) {
-    // Code that runs if the event was canceled. 
+    // Code that runs if the event was canceled.
 }
 ```

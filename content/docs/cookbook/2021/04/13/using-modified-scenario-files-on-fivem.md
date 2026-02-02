@@ -15,15 +15,15 @@ However, what _should_ work is registering a replacement scenario point manifest
 
 1.  take sp\_manifest.#mt from update:/%platform%/levels/gta5/ **from 1604 if you use it! if you use the 2189 one on 1604 you'll crash with ERR\_STR\_PACK\_2 as island scenarios don't exist!**, ~~(contents of, as XML)~~ UPDATE: this file will break some stuff if used as XML verbatim and there's "hash\_" in there. use CodeWalker's 'save' option to save an edited file as PSO instead.
 2.  specify it as data file:
-    
+
     ```lua
     file 'sp_manifest.ymt'
     -- SCENARIO_POINTS_FILE may work, too
     data_file 'SCENARIO_POINTS_OVERRIDE_FILE' 'sp_manifest.ymt'
     ```
-    
+
 3.  edit it:
-    
+
     ```xml
     <Item type="CScenarioPointRegionDef">
       <Name>compcache:/test_ymt/countryside_ne</Name> <!-- apparently VFSRagePackfile doesn't support RSC registration, so we use `compcache` instead of `resources` here -->
@@ -33,6 +33,6 @@ However, what _should_ work is registering a replacement scenario point manifest
       </AABB>
     </Item>
     ```
-    
+
 4.  make sure `file 'countryside_ne.ymt'` is in your resource's stream/ folder
 5.  yay!

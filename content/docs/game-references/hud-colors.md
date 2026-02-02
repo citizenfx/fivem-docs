@@ -1504,7 +1504,7 @@ colors.map(color => {
         <td><a href="#${otherColor.name.toLowerCase()}">${otherColor.name}</a></td>
     </tr>`;
     }
-    
+
     return `
     <tr>
         <td class="color" style="--color: rgba(${color.r}, ${color.g}, ${color.b}, ${color.a / 255})" id="${color.name.toLowerCase()}">&nbsp;</td>

@@ -13,8 +13,8 @@ Client events can only be listened for on a client script, but they can be trigg
 script. Server events can only be listened for on a server side script, but they can be triggered from a client script
 and a server side script.
 
-You can also set an event as "canceled" from within an event handler as long as the event wasn't triggered from across 
-the network. The resource that triggered the event can check if it was canceled after being run. Canceling an event 
+You can also set an event as "canceled" from within an event handler as long as the event wasn't triggered from across
+the network. The resource that triggered the event can check if it was canceled after being run. Canceling an event
 does **not** stop other event handlers from running.
 
 - [Listening for events](/docs/scripting-manual/working-with-events/listening-for-events)

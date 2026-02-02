@@ -7,7 +7,7 @@ menu:
     weight: 20
 ---
 
-Welcome to the documentation for the [FiveM][home] modification framework. Use the links below to find the information you're looking for. 
+Welcome to the documentation for the [FiveM][home] modification framework. Use the links below to find the information you're looking for.
 
 ## Server owners
 

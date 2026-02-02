@@ -46,7 +46,7 @@ This formerly was known as `nui://`, but this is no longer a secure context in n
 CEF remote debugging tools are exposed on [http://localhost:13172/](http://localhost:13172/) as long as the game is
 running. You can use any Chromium-based browser to easily access these tools.
 
-Alternately, it can be opened using the `nui_devTools` command in the game's <kbd>F8</kbd> console, assuming the 
+Alternately, it can be opened using the `nui_devTools` command in the game's <kbd>F8</kbd> console, assuming the
 developer mode is enabled.
 
 ## NUI focus

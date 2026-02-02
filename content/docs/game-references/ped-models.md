@@ -968,4 +968,3 @@ Story scenario male
 	<div class="model"><span><img src="/peds/u_m_y_gabriel.webp" loading="lazy" alt="u_m_y_gabriel"><br><strong>u_m_y_gabriel</strong><br>3 props<br>8 components</span></div>
 	<div class="model"><span><img src="/peds/u_m_y_ushi.webp" loading="lazy" alt="u_m_y_ushi"><br><strong>u_m_y_ushi</strong><br>1 prop<br>8 components</span></div>
 </div>
-

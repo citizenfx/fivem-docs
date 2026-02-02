@@ -11,7 +11,7 @@ weight: 716
 | PAUSE                       | Pause Break                                                            |
 | CAPITAL                     | Caps Lock                                                              |
 | ESCAPE                      | Escape                                                                 |
-| SPACE                       | Space bar                                                              | 
+| SPACE                       | Space bar                                                              |
 | PAGEUP                      | Page Up                                                                |
 | PRIOR                       | Page Up                                                                |
 | PAGEDOWN                    | Page Down                                                              |

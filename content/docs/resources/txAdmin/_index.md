@@ -59,14 +59,14 @@ For more information, you can join the [Discord Server](https://discord.gg/AFAAX
 - Open one of the URLs shown and configure txAdmin
 
 txAdmin requires to be launched from *inside* FXServer in monitor mode, to do that, just execute the `run.sh` or `FXServer.exe` without **any** `+exec` arguments.  
-  
+
 ### ConVars
 - **serverProfile:** The name of the server profile to start. Profiles are saved/loaded from the current directory inside the `txData` folder. The default is `default`.
 - **txAdminPort:** The TCP port to use as HTTP Server. The default is `40120`.
 - **txAdminInterface:** The interface to use as HTTP Server. The default is `0.0.0.0`.
 - **txDataPath:** The path of the data folder. The default on Windows is `<citizen_root>/../txData` and on Linux `<citizen_root>/../../../txData`.
 - **txAdminVerbose:** Set to `true` to print on the console more detailed information about errors and events. The default is `false`.
-  
+
 ConVar usage **example** for different port and profile:  
 ```bash
 # Windows

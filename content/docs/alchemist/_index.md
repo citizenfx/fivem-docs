@@ -94,7 +94,7 @@ You can add the following parameters to your command:
 | `-jN`             | Set the number of threads to N (default: 10), for example `-j8` |
 | `--fail-on-error` | Fail on the first error                                         |
 
-Example: 
+Example:
 ```powershell
 C:\AlchemistCli.exe C:\input C:\output -j5 -f --fail-on-error
 ```

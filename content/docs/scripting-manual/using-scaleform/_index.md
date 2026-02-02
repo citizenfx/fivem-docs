@@ -128,7 +128,7 @@ Citizen.CreateThread(function()
   PushScaleformMovieMethodParameterString("Smaller Text") -- msgText
   PushScaleformMovieMethodParameterInt(5) -- colId
   EndScaleformMovieMethod() -- Finish off the scaleform, it returns no data, so doesn't need "EndScaleformMovieMethodReturn"
-  
+
   while true do -- Draw the scaleform every frame
     Citizen.Wait(0)
     DrawScaleformMovieFullscreen(scaleformHandle, 255, 255, 255, 255) -- Draw the scaleform fullscreen

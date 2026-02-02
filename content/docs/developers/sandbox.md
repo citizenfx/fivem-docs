@@ -126,4 +126,3 @@ add_convar_permission resourceA read some_convar_name
 {{% alert theme="info" %}}
 By default, ConVars are readable by all resources. Once a ConVar has at least one permission configured, it becomes restricted and only explicitly permitted resources can access it.
 {{% /alert %}}
-

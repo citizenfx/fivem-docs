@@ -55,8 +55,8 @@ Once the [review][tebex-review] is completed, you can add packages, customize yo
 Learn how to set up your FiveM server and integrate it with Tebex for smooth donations and monetization in this step-by-step video guide.
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-  <iframe src="https://www.youtube.com/embed/lfSjKSFI8vg" 
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+  <iframe src="https://www.youtube.com/embed/lfSjKSFI8vg"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
           frameborder="0" allowfullscreen>
   </iframe>
 </div>

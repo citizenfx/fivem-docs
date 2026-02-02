@@ -13,4 +13,3 @@ FiveM does not condone the use of pirated software and **will not work** with il
 - [Rockstar Warehouse](https://store.rockstargames.com/en/game/buy-gta-v-premium-edition)
 - [Amazon](https://www.amazon.com/Grand-Theft-Auto-V-PC/dp/B00KVXB5YQ)
 - [Xbox Store](https://www.xbox.com/en-US/games/store/grand-theft-auto-v-enhanced-pc/9MSRG7MN6SP6)
-

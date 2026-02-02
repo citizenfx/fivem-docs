@@ -245,7 +245,7 @@ and `sv_projectDesc`.
 
 A string variable that can be used to set the server as "private", making it not possible to join by using the server browser UI (the server connect button will be disabled). In the past, this specific string variable dictated where heartbeats were sent and servers weren't listed if the address didn't point to FiveM's ingress address, this is no longer the case, the server will always post to the default server ingress on startup. In other words, this string variable **cannot be used to de-list a server from the master list.**
 
-Example: 
+Example:
 
 ```toml
 sv_master1 ""
@@ -272,9 +272,9 @@ Levels:
   - 1: Block any IPs sending requests containing a 'Via' header.
   - 2: Block any IPs sending requests containing a 'Upgrade-Insecure-Requests' header. This includes all browser-based attempts at requesting .json endpoints, so use          with care.
   - 3: Also close the socket the requests have been submitted on.
- 
+
 If set to level 2 greater, all requests made to [info.json](https://github.com/citizenfx/fivem/blob/65bf224097b1107c10f84f5dfc25ee8e4bddc95d/code/components/citizen-server-impl/src/InfoHttpHandler.cpp#L276), [dynamic.json](https://github.com/citizenfx/fivem/blob/65bf224097b1107c10f84f5dfc25ee8e4bddc95d/code/components/citizen-server-impl/src/InfoHttpHandler.cpp#L317) and [players.json](https://github.com/citizenfx/fivem/blob/65bf224097b1107c10f84f5dfc25ee8e4bddc95d/code/components/citizen-server-impl/src/InfoHttpHandler.cpp#L331) related endpoints will return "Nope."
- 
+
 A console variable as an integer from 0-3 (default 0);
 
 ### `sv_filterRequestControl [mode]`
@@ -319,7 +319,7 @@ Example output:
 ```
 
 ### `con_addChannelFilter [filter] [action]`
-The `con_addChannelFilter` command will add a channel filter which can be used to filter console channel output. 
+The `con_addChannelFilter` command will add a channel filter which can be used to filter console channel output.
 
 [Regex](https://en.wikipedia.org/wiki/Regular_expression) can be used for channel filters, this can be set through the `filter` command parameter.
 
@@ -327,7 +327,7 @@ Available actions are explained up [above](#con_channelFilters) (con_channelFilt
 
 The example down below would stop any channel output coming from script names matching the given pattern.
 
-So the following wouldn't show on the console: 
+So the following wouldn't show on the console:
 
 ```
 [script:gamemodePrefix-turfs]: Hello world!
@@ -404,7 +404,7 @@ As of July 2025, this is enabled by default.
 
 ### `sv_httpFileServerProxyOnly [true|false]`
 
-A boolean console variable introduced in server version 10543 that restricts access to the file server based on IP address ranges. When enabled, only requests from IP addresses within the ranges specified by `sv_proxyIPRanges` will be allowed to access the file server. 
+A boolean console variable introduced in server version 10543 that restricts access to the file server based on IP address ranges. When enabled, only requests from IP addresses within the ranges specified by `sv_proxyIPRanges` will be allowed to access the file server.
 
 This is particularly useful when using custom proxy servers with `fileserver_add` to ensure clients only access files through the designated proxy.
 
@@ -497,7 +497,7 @@ This is for development and debugging purposes only. Never use it to bypass limi
 
 The sv_tebexSecret is a unique secret key that is used to authenticate your FiveM server with the Tebex platform.
 
-Example: 
+Example:
 
 ```
 sv_tebexSecret c4f1300bda0ab123976449d27c160185bc31e175

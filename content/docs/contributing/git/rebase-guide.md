@@ -89,7 +89,7 @@ To transfer all the commits from the feature branch into the master branch using
     ```
 
     Your local master branch should now be up to date with our repository. Now you should push those changes back to your Github remote repository using the following command so your local changes are reflected on the remote:
-    
+
     ```
     git push origin master
     ```
@@ -100,7 +100,7 @@ To transfer all the commits from the feature branch into the master branch using
     git fetch
     git checkout my-feature
     ```
-    
+
 3. Now we will rebase our `my-feature` branch by taking the changes made in `master` and applying them into `my-feature`.
 
     ```
@@ -157,9 +157,9 @@ You may also install an extension such as [GitLens][gitlens-extension] to see th
 ![image](/contributing/git/rebase-guide/visual-studio-code-source-control-commits-gitlens.png)
 
 ### Terminal
-Last but not least, you may see the commit history by opening up the terminal and typing `git log`. You may also type `git log --oneline` to see the commits in a compact fashion. 
+Last but not least, you may see the commit history by opening up the terminal and typing `git log`. You may also type `git log --oneline` to see the commits in a compact fashion.
 
-You can open the terminal by going to the topmost menu bar, clicking on `Terminal`, proceeded by `New Terminal`. 
+You can open the terminal by going to the topmost menu bar, clicking on `Terminal`, proceeded by `New Terminal`.
 
 > Hint: You may also open the terminal by using its hotkey ````CTRL + SHIFT + ` ````. The last key is backtick for users with a different keyboard layout.
 

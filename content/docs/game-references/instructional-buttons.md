@@ -58,7 +58,7 @@ CreateThread(function()
 end)
 
 ```
-![Code Result](/instructional_buttons_result.png) 
+![Code Result](/instructional_buttons_result.png)
 
 Simple clickable buttons example
 ------------
@@ -88,9 +88,9 @@ CreateThread(function()
 	ScaleformMovieMethodAddParamPlayerNameString('~INPUT_FRONTEND_ACCEPT~')
 	-- Add the text before icon
 	ScaleformMovieMethodAddParamPlayerNameString('Select')
-	-- Note: Adding last 2 SET_DATA_SLOT parameters while TOGGLE_MOUSE_BUTTONS 
+	-- Note: Adding last 2 SET_DATA_SLOT parameters while TOGGLE_MOUSE_BUTTONS
 	-- is disabled can cause buttons to bug out
-	
+
 	-- Whether or not this button can be clicked by the mouse
 	ScaleformMovieMethodAddParamBool(true)
 	-- Which control will be triggered when this button is clicked by the mouse (INPUT_FRONTEND_ACCEPT in this case)
@@ -133,7 +133,7 @@ CreateThread(function()
 	SetScaleformMovieAsNoLongerNeeded(ButtonsHandle)
 end)
 ```
-![Code Result](/instructional_buttons_result_2.png) 
+![Code Result](/instructional_buttons_result_2.png)
 
 Simple buttons with icons example
 ------------
@@ -192,7 +192,7 @@ CreateThread(function()
 end)
 
 ```
-![Code Result](/instructional_buttons_result_3.png) 
+![Code Result](/instructional_buttons_result_3.png)
 
 Icon list
 ---------------

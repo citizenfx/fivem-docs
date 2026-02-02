@@ -91,7 +91,7 @@ The base game name collection is an empty string. Names of other collections are
 ### New natives
 
 There are three groups of new natives:
-- Natives to get general information about collections 
+- Natives to get general information about collections
 - Natives to convert between global and local indexes.
 - Natives that are analogues to the existing natives that work with drawable components and props. But instead of working with global indexes they work with collection names and local indexes.
 

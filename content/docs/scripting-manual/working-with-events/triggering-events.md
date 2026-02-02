@@ -44,7 +44,7 @@ emitNet("eventName", eventParam1, eventParam2);
 ```
 
 #### Triggering latent server events
-Latent events should be used when needing to transfer a large amount of data from client -> server, as latent events **do not** block the entire network channel, unlike `TriggerServerEvent`. 
+Latent events should be used when needing to transfer a large amount of data from client -> server, as latent events **do not** block the entire network channel, unlike `TriggerServerEvent`.
 
 Latent events take an extra paramater 'bps' which stands for 'bytes per second', this defines how fast it should send data to the server. If 'bps' is set to -1 or 0 - default bps of 25000 will be applied.
 
@@ -68,7 +68,7 @@ TriggerLatentServerEvent("eventName", bps, eventParam1, eventParam2);
 ### Triggering client events
 The same is applicable for triggering client events.
 
-Client events use `TriggerClientEvent` and `TriggerLatentClientEvent` respectively, unlike server events you have to specify which users you want to send them to, or `-1` for all connected users. 
+Client events use `TriggerClientEvent` and `TriggerLatentClientEvent` respectively, unlike server events you have to specify which users you want to send them to, or `-1` for all connected users.
 
 **Lua**
 ```lua
@@ -100,7 +100,7 @@ emitNet("eventName", targetPlayer, eventParam1, eventParam2);
 #### Triggering latent client events
 Latent events should be used when needing to transfer a large amount of data from server -> client, as latent events **do not** block the clients entire network channel, unlike `TriggerClientEvent`.
 
-This is important for timeout functionality, as sending a large amount of data blocks the network for the client, and if blocked for too long, will result in the client timing out. 
+This is important for timeout functionality, as sending a large amount of data blocks the network for the client, and if blocked for too long, will result in the client timing out.
 
 Latent events take an extra paramater 'bps' which stands for 'bytes per second', this defines how fast it should send data to the client. If 'bps' is set to -1 or 0 - default bps of 25000 will be applied.
 

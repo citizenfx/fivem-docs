@@ -66,7 +66,7 @@ Ranges from `0` to `5`, set this to `5` if you wish to use custom crosshair colo
 2. Yellow
 3. Purple-Blueish
 4. Cyan/Turquoise
-5. Custom (those applied by `cl_crosshaircolor_r`, `cl_crosshaircolor_g`, `cl_crosshaircolor_b`) 
+5. Custom (those applied by `cl_crosshaircolor_r`, `cl_crosshaircolor_g`, `cl_crosshaircolor_b`)
 
 Usage: `cl_crosshaircolor 1`
 
@@ -86,7 +86,7 @@ Controls the blue component in the crosshair's RGB color value.
 Usage: `cl_crosshaircolor_b 50`
 
 ### cl_crosshairusealpha \<bool\>
-Controls whether the crosshair should have transparency or not. Used together with `cl_crosshairalpha`. 
+Controls whether the crosshair should have transparency or not. Used together with `cl_crosshairalpha`.
 
 Setting this command to `false` will set the crosshair's alpha to `200`, making it almost opaque. Set to `true` if you want to use custom transparency values via `cl_crosshairalpha`.
 

@@ -58,7 +58,7 @@ Thanks to the asset escrow and encryption system, obfuscating code in escrowed r
 
 ## Can I sell subscription-based resources?
 
-You can create and update resources that require a subscription to access. 
+You can create and update resources that require a subscription to access.
 If the subscription expires, the asset is removed from the subscribed user's account and will no longer start on the user's server.
 
 ## What happens if an unauthorized server tries to run my resource?

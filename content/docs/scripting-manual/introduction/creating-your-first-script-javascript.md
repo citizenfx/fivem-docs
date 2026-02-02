@@ -87,7 +87,7 @@ Let's go through this bit by bit, with an annotated version.
 // Define a local variable called `spawnPos` with a coordinate somewhere on the map
 const spawnPos = [686.245, 577.950, 130.461];
 
-/* 
+/*
  * Add an event handler for the (local) event called 'onClientGameTypeStart'. It takes
  * no arguments in this case, since our resource is a game type and you can only run one
  * at once, that means this will basically run when we start ourselves on the client. Nice!
@@ -232,7 +232,7 @@ RegisterCommand('car', async (source, args, raw) => {
     emit('chat:addMessage', {
       args: [`It might have been a good thing that you tried to spawn a ${model}. Who even wants their spawning to actually ^*succeed?`]
     });
-    return;   
+    return;
   }
 
   // Request the model and wait until the game has loaded it

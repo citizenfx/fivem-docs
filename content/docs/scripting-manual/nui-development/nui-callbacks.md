@@ -59,7 +59,7 @@ EventHandlers["__cfx_nui:getItemInfo"] += new Action<IDictionary<string, object>
     // alternately you could use `dynamic` and rely on the DLR
     if (data.TryGetValue("itemId", out var itemIdObj))
     {
-        cb(new 
+        cb(new
         {
             error = "Item ID not specified!"
         });
@@ -73,7 +73,7 @@ EventHandlers["__cfx_nui:getItemInfo"] += new Action<IDictionary<string, object>
     // same as above
     if (!ItemCache.TryGetValue(itemId, out Item item))
     {
-        cb(new 
+        cb(new
         {
             error = "No such item!"
         });

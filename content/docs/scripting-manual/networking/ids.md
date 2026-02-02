@@ -59,4 +59,3 @@ An entity network ID is a 16-bit integer representing a given entity existing at
 If you need to refer to an entity across machines (clients, or the server), you should use its network ID.
 
 Note that just like with players, a network ID is not necessarily in scope on a client: verify its existence using {{% native_link "NETWORK_DOES_ENTITY_EXIST_WITH_NETWORK_ID" %}} before using it.
-

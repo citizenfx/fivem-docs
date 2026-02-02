@@ -11,7 +11,7 @@ Resource directories
 
 In the server, resources are loaded from a folder called `resources/` in the server data directory. Any folder in
 the `resources/` folder is parsed as a resource, except folders between `[brackets]` which are categories, which can
-contain multiple resource folders. 
+contain multiple resource folders.
 
 Here's an example:
 

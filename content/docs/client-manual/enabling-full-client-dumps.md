@@ -1,5 +1,5 @@
 ---
-title: Enabling Full Client Dumps 
+title: Enabling Full Client Dumps
 weight: 370
 description: >
   Information about Full Client Dumps

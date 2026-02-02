@@ -36,7 +36,7 @@ Descriptions are guessed from known names. Axis inputs have no use in FiveM curr
 | [TOUCHPAD_ABSOLUTE_AXIS][touchpad_absolute_axis] | PS4/5 controller touchpad axis input (absolute)                      |
 | [TOUCHPAD_CENTERED_AXIS][touchpad_centered_axis] | PS4/5 controller touchpad axis input (centered)                      |
 
-[digitalbutton_axis]: /docs/game-references/input-mapper-parameter-ids/digitalbutton_axis 
+[digitalbutton_axis]: /docs/game-references/input-mapper-parameter-ids/digitalbutton_axis
 [game_controlled]: /docs/game-references/input-mapper-parameter-ids/game_controlled
 [joystick_axis]: /docs/game-references/input-mapper-parameter-ids/joystick_axis
 [joystick_axis_negative]: /docs/game-references/input-mapper-parameter-ids/joystick_axis_negative
