@@ -462,7 +462,7 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | DrawableStore | - | 50000 |
 | EntityDescPool | 20480 | - |
 | fragInstGta | 2000 | - |
-| FragmentStore | 14000 | 4000 |
+| FragmentStore | 30000 | 4000 |
 | GrassBatch | - | 2000 |
 | InteriorProxy | 450 | 450 |
 | LightEntity | 1000 | - |
