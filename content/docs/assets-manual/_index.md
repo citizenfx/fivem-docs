@@ -26,3 +26,4 @@ We'll start by setting up the essential software, then gradually move into impor
 - [**Part 2 - Exploring & Exporting GTAV Assets**](./beginner-series/part-2/)
 - [**Part 3 - Creating GTAV Assets in Blender**](./beginner-series/part-3/)
 - [**Part 4 - Placing Assets & Creating Simple Map Mods**](./beginner-series/part-4/)
+- [**Part 5 - Collision Editing and Creation**](./beginner-series/part-5/)
