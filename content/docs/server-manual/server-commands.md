@@ -221,9 +221,6 @@ Example:
 
 ```bash
 sets sv_projectName "Citizen Gaming"
-
-# or if you are using a premium key, it can contain one color
-sets sv_projectName "^6Citizen Gaming"
 ```
 
 ### `sets sv_projectDesc "project description"`
@@ -295,6 +292,7 @@ In addition, any mode but 'off' will have some additional checks as well:
 - Control request events will always be blocked if the sender is in 'strict' entity lockdown mode, either by the global mode setting, or their routing bucket being set to such.
 
 ### `con_channelFilters`
+
 The `con_channelFilters` command will list any active channel filters set to the end user.
 
 A channel is the prefix of a console message, for example: `citizen-server-impl`, this channel will be displayed in brackets in the console followed by a message, i.e.

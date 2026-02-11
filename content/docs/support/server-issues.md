@@ -89,14 +89,6 @@ To raise the maximum player cap:
 2. Set `sv_maxclients` to a value higher than 48 (based on your [subscription tier](https://portal.cfx.re/subscriptions)).
 3. Restart your server.
 
-### My Server's Name Doesn't Have Colors
-
-Possible reasons:
-
-1. No active [Element Club subscription](https://portal.cfx.re/subscriptions) with at least **Argentum** tier.
-2. Incorrect [server name formatting][chat-formatting].
-3. Configuration changes weren't saved or server wasn't restarted.
-
 ### Troubleshooting Slow Server Startups
 
 **Microsoft Defender Antivirus** may slow down server startup by scanning FXServer files on Windows servers.
