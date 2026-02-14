@@ -23,8 +23,8 @@ function emitNet(eventName: string, ...args?: any ) => void
 
 ```ts
 // No arg
-emit("foo:killPatrickForMe");
+emitNet("foo:killPatrickForMe");
 
 // With args
-emit("foo:killThisGuyForMe", 2);
+emitNet("foo:killThisGuyForMe", 2);
 ```
