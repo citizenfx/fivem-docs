@@ -25,11 +25,11 @@ Note: set **serverId** to `-1` will send the event to all clients.
 
 ```ts
 // No arg
-emit("foo:pokedYou", 2);
+emitNet("foo:pokedYou", 2);
 
 // With args
-emit("foo:pokedYouAndGiveMessages", 2, ["Javascript is cool!", "But FiveM is better!"]);
+emitNet("foo:pokedYouAndGiveMessages", 2, ["Javascript is cool!", "But FiveM is better!"]);
 
 // To all clients
-emit("foo:pokedYouAll", -1);
+emitNet("foo:pokedYouAll", -1);
 ```
