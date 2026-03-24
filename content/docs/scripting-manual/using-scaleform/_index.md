@@ -27,7 +27,7 @@ Interfacing
 
 You can interface with scaleforms by performing native calls from the [GRAPHICS namespace](/natives/?n_GRAPHICS) with `scaleform` in their name.
 
-{{% alert theme="warning" %}}The game expects a .gfx to have a `TIMELINE` variable in the global scope. {{% /alert %}}
+{{% alert color="warning" %}}The game expects a .gfx to have a `TIMELINE` variable in the global scope. {{% /alert %}}
 
 This variable serves as a kind of public API of the .gfx.
 

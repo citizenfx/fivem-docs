@@ -40,7 +40,7 @@ cd /d [PATH TO THIS RESOURCE]
 mklink /d X:\cfx-server-data\resources\[local]\MyResource dist
 ```
 
-{{% alert theme="info" %}}
+{{% alert color="info" %}}
 **Make sure you provide the right paths.**
 {{% /alert %}}
 

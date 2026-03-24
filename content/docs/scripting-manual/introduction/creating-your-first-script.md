@@ -5,11 +5,11 @@ weight: 30
 
 Getting started with scripting for FiveM might be a tad overwhelming, given the wide range of possibilities and the sparsely spread documentation. In this quick and simple guide, we'll try to show you how to get started with a quick resource in Lua.
 
-{{% alert theme="info" %}}
+{{% alert color="info" %}}
 If you're not familiar with Lua, you can refer to the [Lua 5.4 reference manual](https://www.lua.org/manual/5.4/).
 {{% /alert %}}
 
-{{% alert theme="info" %}}
+{{% alert color="info" %}}
 As of June 2025, Lua 5.3 has been deprecated and all Lua scripts now use the 5.4 version. For more information, [read our announcement](https://forum.cfx.re/t/removal-of-lua-5-3-support/5335232). For older Lua versions, visit the [manual archive](https://www.lua.org/manual/).
 {{% /alert %}}
 

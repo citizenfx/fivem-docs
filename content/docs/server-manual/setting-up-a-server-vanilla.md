@@ -34,7 +34,7 @@ description: >
 ---
 
 ### Linux
-{{% alert theme="info" %}}Note that the Linux version of FXServer is only provided as a courtesy port due to issues regarding Linux distribution compatibility and availability of diagnostic tools for native C++ code.
+{{% alert color="info" %}}Note that the Linux version of FXServer is only provided as a courtesy port due to issues regarding Linux distribution compatibility and availability of diagnostic tools for native C++ code.
 If you're experiencing any issues, you're more likely to see them fixed if you use the Windows version.
 {{% /alert %}}
 

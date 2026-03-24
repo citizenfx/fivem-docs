@@ -101,7 +101,7 @@ load() -- Not blocked
 ```
 
 ## Permission System
-{{% alert theme="warning" %}}
+{{% alert color="warning" %}}
 Enabling resource modifications or filesystem permissions can be dangerous if misused. Only enable these for resources you trust completely and understand their modifications.
 {{% /alert %}}
 
@@ -123,6 +123,6 @@ To restrict ConVar access to specific resources, use the `add_convar_permission`
 add_convar_permission resourceA read some_convar_name
 ```
 
-{{% alert theme="info" %}}
+{{% alert color="info" %}}
 By default, ConVars are readable by all resources. Once a ConVar has at least one permission configured, it becomes restricted and only explicitly permitted resources can access it.
 {{% /alert %}}

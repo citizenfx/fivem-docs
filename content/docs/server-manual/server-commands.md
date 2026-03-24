@@ -87,7 +87,7 @@ Example:
 
 ### `status`
 
-{{% alert theme="info" %}}This is provided by the **rconlog** resource. {{% /alert %}}
+{{% alert color="info" %}}This is provided by the **rconlog** resource. {{% /alert %}}
 
 Shows a list of players with their primary identifier, server ID, name, endpoint, and ping.
 
@@ -97,7 +97,7 @@ Example:
 
 ### `clientkick [id] [reason]`
 
-{{% alert theme="info" %}}This is provided by the **rconlog** resource. {{% /alert %}}
+{{% alert color="info" %}}This is provided by the **rconlog** resource. {{% /alert %}}
 
 Kicks the client with the specified server ID (as seen in [status](#status "wikilink")) from the server, for the stated reason.
 
@@ -107,7 +107,7 @@ Example:
 
 ### `say [message]`
 
-{{% alert theme="info" %}}This is provided by the **chat** resource. {{% /alert %}}
+{{% alert color="info" %}}This is provided by the **chat** resource. {{% /alert %}}
 
 Sends a message in the chat as *console*.
 

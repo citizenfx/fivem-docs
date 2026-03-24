@@ -24,7 +24,7 @@ Most of the sync data is handled through player `31`, game events are handled th
 # What are sync nodes and how do I interpret them?
 Sync nodes are synchronization data nodes, networked entities depend on these to transmit data to other clients/players on the server. The most simple one we can find is `CSectorPositionDataNode`.
 
-{{% alert theme="warning" %}}We'll have to warn you that what lies ahead is a little bit technical and is just presented as is for educational purposes on how to analyze game-code and create a PR (pull request) if you would like to contribute to the [code-base][fivem-codebase]. {{% /alert %}}
+{{% alert color="warning" %}}We'll have to warn you that what lies ahead is a little bit technical and is just presented as is for educational purposes on how to analyze game-code and create a PR (pull request) if you would like to contribute to the [code-base][fivem-codebase]. {{% /alert %}}
 
 This synchronization data node is used to share sector position data to other clients about a specific entity, parsing is shown below. It's worth mentioning that the `Parse` code written down below is written by reverse-engineering game code (more or so by reading `NodeCommonDataOperations<class CSectorPositionDataNode, class IProximityMigrateableNodeDataAccessor>` first's VMT ([Virtual Method Table][vmturl]) method which is the `read` method, which would be offset 8 from the VMT).
 
@@ -99,7 +99,7 @@ This reduces server load and allows OneSync to handle a lot of clients.
 
 Culling has a range for each specific player, and entities are culled to players within this radius. You could say that in a way, it 'conceals' entities.
 
-{{% alert theme="warning" %}}Culling natives are deprecated and have known, unfixable [issues](https://forum.cfx.re/t/issue-with-culling-radius-and-server-side-entities/4900677/4). {{% /alert %}}
+{{% alert color="warning" %}}Culling natives are deprecated and have known, unfixable [issues](https://forum.cfx.re/t/issue-with-culling-radius-and-server-side-entities/4900677/4). {{% /alert %}}
 
 There's natives such as {{% native_link "SET_ENTITY_DISTANCE_CULLING_RADIUS" %}} and {{% native_link "SET_PLAYER_CULLING_RADIUS" %}} to change the default culling radius.
 
