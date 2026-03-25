@@ -1,6 +1,8 @@
 ---
-title: Event Cancelation
+title: Canceling events
 weight: 20
+aliases:
+  - /docs/scripting-manual/working-with-events/event-cancelation
 ---
 
 ### Canceling Events
@@ -34,7 +36,7 @@ on('eventName', (eventParam1, eventParam2) => {
 });
 ```
 
-### Checking for event cancelation
+### Checking for canceled events
 To check if the last event you triggered was canceled, use the {{% native_link "WAS_EVENT_CANCELED" %}} native. This only works for **local** events.
 
 #### Example

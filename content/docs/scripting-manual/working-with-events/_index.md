@@ -19,7 +19,7 @@ does **not** stop other event handlers from running.
 
 - [Listening for events](/docs/scripting-manual/working-with-events/listening-for-events/)
 - [Triggering events](/docs/scripting-manual/working-with-events/triggering-events/)
-- [Event cancelation](/docs/scripting-manual/working-with-events/event-cancelation/)
+- [Canceling events](/docs/scripting-manual/working-with-events/canceling-events/)
 
 <!-- TODO
 - [Using events](/docs/scripting-manual/working-with-events/using-events/)
