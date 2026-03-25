@@ -107,7 +107,7 @@ through functions like TriggerEvent. Event handlers run in a coroutine, so Citiz
 
 <!-- TODO:
 The scheduler
-Citzen.CreateThread, Citizen.Wait, threaded events, etc
+Citizen.CreateThread, Citizen.Wait, threaded events, etc
 -->
 
 <!-- TODO:  Perhaps tell something about lazy loading of natives? -->

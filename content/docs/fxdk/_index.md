@@ -68,7 +68,7 @@ FxDK provides system resources automatically, you just enable what you need in p
 
 
 # Limitations
-FxDK was designed as a local-only development environment for a single user. Whilst we are aware of the demand, due to technical difficulties, other users cannot join your session.
+FxDK was designed as a local-only development environment for a single user. While we are aware of the demand, due to technical difficulties, other users cannot join your session.
 
 This implies many steps need to be taken to make multi-user experience work as you'd expect. We have plans to make it easier, but it is a long-term concern and you should not expect it anytime soon.
 
@@ -76,4 +76,4 @@ This implies many steps need to be taken to make multi-user experience work as y
 # Contributing
 If you have any suggestions, bug reports or questions, please [file an issue on our GitHub](https://github.com/citizenfx/fivem/issues/new).
 
-For all existing FxDK related issues see [`fxdk` labelled issues](https://github.com/citizenfx/fivem/issues?q=is%3Aopen+is%3Aissue+label%3Afxdk).
+For all existing FxDK related issues see [`fxdk` labeled issues](https://github.com/citizenfx/fivem/issues?q=is%3Aopen+is%3Aissue+label%3Afxdk).

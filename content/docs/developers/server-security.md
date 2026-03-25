@@ -101,7 +101,7 @@ local VALID_JOB_COORD = vector3(125.0, 111.1, 35.83)
 local MAX_ITEM_COUNT = 10
 
 -- coord is randomly made up
-local VALID_TURNIN_COORD = vecor3(1888.0, 1254.1, 48.0)
+local VALID_TURNIN_COORD = vector3(1888.0, 1254.1, 48.0)
 
 local ITEM_NAME = 'log'
 
@@ -219,4 +219,4 @@ sv_disableClientReplays
 Enabling this will aim to reduce chances of cheating options. Please note that this will disable Rockstar Editor.
 
 ## Important to know
-The codes provided are not supposed to be working on a copy/paste method. This is just some tips to prevent some actions that might happen in the server. This require some knowledge, you are always free to join our [discord](https://discord.gg/fivem) to get additionnal help.
+The codes provided are not supposed to be working on a copy/paste method. This is just some tips to prevent some actions that might happen in the server. This require some knowledge, you are always free to join our [Discord](https://discord.gg/fivem) to get additional help.

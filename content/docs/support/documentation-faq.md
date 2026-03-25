@@ -27,7 +27,7 @@ What if I just want to help with documentation?
 --------------------------------
 There are several ways you can do this, the most common one is by creating a fork to the repositories (listed [above](#where-are-these-sections)) and then creating pull requests from them. These will generally be reviewed by the community and elements, once approved they will be added to the documentation.
 
-If you're not sure on how to fork a repository or create a pull request, you can check these out:
+If you're not sure how to fork a repository or create a pull request, you can check these out:
 
 - [Fork a repo](https://docs.github.com/es/get-started/quickstart/fork-a-repo)
 - [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)

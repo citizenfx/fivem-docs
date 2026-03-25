@@ -34,7 +34,7 @@ Here's a simple example demonstrating how to trigger an event:
 TriggerEvent('myCustomEvent')
 ```
 
-In this example, the event named 'myCustomEvent' is triggered. You would have an event handler somewhere in your script listening for this event. Note that you will only be able to trigger that even in the same section you are (wheter is client or server). That means if `myCustomEvent` is trigger from client, then the even handler needs to be on the client.
+In this example, the event named 'myCustomEvent' is triggered. You would have an event handler somewhere in your script listening for this event. Note that you will only be able to trigger that event in the same section you are (whether it is client or server). That means if `myCustomEvent` is trigger from client, then the even handler needs to be on the client.
 
 ### Triggering an Event with Data
 

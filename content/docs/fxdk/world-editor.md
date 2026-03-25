@@ -48,7 +48,7 @@ Do note that both kinds of events will be triggered after the fact, meaning that
 
 # Using World Editor
 
-We won't dive deep into details here because we have extensive intro tour built into World Editor itself, however, ther are a few things worth mentioning here.
+We won't dive deep into details here because we have extensive intro tour built into World Editor itself, however, there are a few things worth mentioning here.
 
 ## Play test
 You can test your creation right away without leaving World Editor by pressing `F5` hotkey or clicking on play button in UI, this will place a controllable player ped where your camera is currently.
@@ -72,6 +72,6 @@ World Editor fully supports undo/redo functionality, it behaves like you'd expec
 # Contributing
 If you have any suggestions, bug reports or questions, please [file an issue on our GitHub](https://github.com/citizenfx/fivem/issues/new).
 
-For all existing World Editor related issues see [`world-editor` labelled issues](https://github.com/citizenfx/fivem/issues?q=is%3Aopen+is%3Aissue+label%3A%22world+editor%22).
+For all existing World Editor related issues see [`world-editor` labeled issues](https://github.com/citizenfx/fivem/issues?q=is%3Aopen+is%3Aissue+label%3A%22world+editor%22).
 
 As always, pull-requests are very much welcome!

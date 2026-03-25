@@ -89,9 +89,9 @@ To set a server information convar, use the following command.
 sets convar_name "Convar value."
 ```
 
-A common example for this would be to have a server information convar named "Discord", and it's value set to the discord server related to your FiveM server.
+A common example for this would be to have a server information convar named "Discord", and it's value set to the Discord server related to your FiveM server.
 ```yaml
-sets Discord "Your discord link here"
+sets Discord "Your Discord link here"
 ```
 
 ### Using resources

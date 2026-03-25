@@ -62,4 +62,4 @@ Where `XXXX` represents the build number you wish. You can find the list [here](
 
 ---
 
-Please note that this will not affect the FiveM instalation. You can easily repeat the steps if you missed something. For any issue, join our [Discord](https://discord.gg/fivem).
+Please note that this will not affect the FiveM installation. You can easily repeat the steps if you missed something. For any issue, join our [Discord](https://discord.gg/fivem).

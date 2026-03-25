@@ -46,9 +46,9 @@ UpdateChannel can have the following values:
 - **beta**: this is the version between latest updates on canary and production which will have some of the latest features after they've been tested on canary. This version isn't guaranteed to be stable you should only use it if you're a developer or want to test new features.
 - **canary**: this channel will have the latest build of FiveM. This channel is unstable, **do not use this build unless you're fine with issues, crashes, etc.**.
 
-**Note:** `canary` and `beta` are versions that isn't guaranteed to be stable and you should only use it if you're a developer or want to test new features.
+**Note:** The `canary` and `beta` versions aren't guaranteed to be stable and you should only use it if you're a developer or want to test new features.
 
-### Enable Geforce Experience Overlay
+### Enable GeForce Experience Overlay
 
 ```
 DisableNVSP=0
@@ -66,7 +66,7 @@ EnableFullMemoryDump=0
 
 Setting this to `EnableFullMemoryDump=1` will enable Full Memory dumps which is useful for diagnosing game crashes.
 
-These dumps are typically very large (anywhere from 1-10gb), if you have these enabled make sure to clean then out from time to time.
+These dumps are typically very large (anywhere from 1-10gb). If you have these enabled make sure to clean them out from time to time.
 
 You can read more about this [here](https://forum.cfx.re/t/enabling-and-uploading-full-client-dumps/1138940).
 
@@ -76,7 +76,7 @@ You can read more about this [here](https://forum.cfx.re/t/enabling-and-uploadin
 DisableOSVersionCheck=0
 ```
 
-By default FiveM checks if you're using using an outdated version of Windows 10 as older versions don't have certain [ABIs](https://en.wikipedia.org/wiki/Application_binary_interface) that FiveM uses.
+By default FiveM checks if you're using an outdated version of Windows 10 as older versions don't have certain [ABIs](https://en.wikipedia.org/wiki/Application_binary_interface) that FiveM uses.
 The minimum supported version of Windows 10 is version 1703 (aka "Creators Update").
 Setting this to `DisableOSVersionCheck=1` will disable the popup that happens when you start FiveM on an outdated machine.
 
@@ -91,4 +91,4 @@ DisableCrashUpload=0
 Setting this to `DisableCrashUpload=1` will disable the game from automatically uploading the crash dumps to the Cfx Sentry.
 You can see more [here](https://github.com/citizenfx/fivem/blob/1b01a54ea0803c8e06ef7e15bb1ae3a3d64de085/code/client/launcher/MiniDump.cpp#L1646).
 
-***Please note that this file shouldn't be modified if you don't know what you are doing. For any issue join our [discord](https://discord.gg/fivem).***
+***Please note that this file shouldn't be modified if you don't know what you are doing. For any issue join our [Discord](https://discord.gg/fivem).***

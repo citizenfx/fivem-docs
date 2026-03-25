@@ -211,22 +211,22 @@ As a last step you have to block the 30121 port to be accessible from the outsid
 When the server host supports a custom firewall configuration inside the configuration panel use that.
 Otherwise rely on the different operating system implementations.
 
-For linux using `iptables`:
+For Linux using `iptables`:
 ```
 sudo iptables -A INPUT -p tcp --dport 30121 -j DROP
 ```
 
-For linux using `ufw`:
+For Linux using `ufw`:
 ```
 sudo ufw deny 30121/tcp
 ```
 
-For windows using `PowerShell`:
+For Windows using `PowerShell`:
 ```
 New-NetFirewallRule -DisplayName "Block TCP Port 30121" -Direction Inbound -Protocol TCP -LocalPort 30121 -Action Block
 ```
 
-For windows using `netsh`:
+For Windows using `netsh`:
 ```
 netsh advfirewall firewall add rule name="Block TCP Port 30121" dir=in action=block protocol=TCP localport=30121
 ```

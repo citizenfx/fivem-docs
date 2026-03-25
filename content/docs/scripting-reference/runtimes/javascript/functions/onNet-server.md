@@ -23,7 +23,7 @@ onNet(
   "myResource:doMassiveStuff",
   (heavyArg: Array<string>) => {
     heavyArg = heavyArg.map(val => val + ".");
-    // Note that source is accessible when the even is called from a client.
+    // Note that source is accessible when the event is called from a client.
     // Read more on emit on the dedicated emit page
     emit("myResource:returnMassiveStuff", source, heavyArg);
   }

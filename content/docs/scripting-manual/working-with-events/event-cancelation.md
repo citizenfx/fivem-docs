@@ -10,7 +10,7 @@ To cancel an event, use the {{% native_link "CANCEL_EVENT" %}} native from withi
 **Lua**
 ```lua
 AddEventHandler("eventName", function(eventParam1, eventParam2)
-    -- Cancelling this event!
+    -- Canceling this event!
     CancelEvent()
 end)
 ```

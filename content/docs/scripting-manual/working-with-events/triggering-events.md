@@ -46,7 +46,7 @@ emitNet("eventName", eventParam1, eventParam2);
 #### Triggering latent server events
 Latent events should be used when needing to transfer a large amount of data from client -> server, as latent events **do not** block the entire network channel, unlike `TriggerServerEvent`.
 
-Latent events take an extra paramater 'bps' which stands for 'bytes per second', this defines how fast it should send data to the server. If 'bps' is set to -1 or 0 - default bps of 25000 will be applied.
+Latent events take an extra parameter 'bps' which stands for 'bytes per second', this defines how fast it should send data to the server. If 'bps' is set to -1 or 0 - default bps of 25000 will be applied.
 
 **Lua**
 ```lua
@@ -102,7 +102,7 @@ Latent events should be used when needing to transfer a large amount of data fro
 
 This is important for timeout functionality, as sending a large amount of data blocks the network for the client, and if blocked for too long, will result in the client timing out.
 
-Latent events take an extra paramater 'bps' which stands for 'bytes per second', this defines how fast it should send data to the client. If 'bps' is set to -1 or 0 - default bps of 25000 will be applied.
+Latent events take an extra parameter 'bps' which stands for 'bytes per second', this defines how fast it should send data to the client. If 'bps' is set to -1 or 0 - default bps of 25000 will be applied.
 
 'bps' applies to a single target. I.e. if `targetPlayer` is set to `-1` and event is sent to all connected users - the server will be effectively sending `bps * player_count` bytes every second.
 

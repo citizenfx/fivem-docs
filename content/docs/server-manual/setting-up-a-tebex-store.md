@@ -23,7 +23,7 @@ Before starting, ensure that you successfully [setup a FiveM-Server][setting-up-
 3. Check your personal details. If correct, start and complete the [identity verification][tebex-identity-verification].
 4. Create a [project][tebex-project]:
     - Provide a project name.
-    - Provide the prefered currency
+    - Provide the preferred currency
     - Provide the type of the project. If you are running a server choose "<em>I operate a game server</em>".
 5. Open your Tebex Control Panel and click [Integrations > Game Servers][tebex-integration-game-servers].
 6. Click **Connect Game Server** > **Plugin**.
@@ -37,7 +37,7 @@ You will be redirected to the [onboarding page][tebex-get-started].
 
 ### Before you can go live
 
-Before your store can go live, you must to complete the following steps:
+Before your store can go live, you must complete the following steps:
 
 1. Provide a store description.
 2. Confirm customer support contact.

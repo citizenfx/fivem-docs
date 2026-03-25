@@ -42,7 +42,7 @@ If you are not automatically redirected, go to: [http://localhost:40120](http://
 ### 4. Link your account and register server
 
 1. Click **Link account**.
-2. Sign in and click **Continue** to authorize txAdmin to access to your Cfx.re account.
+2. Sign in and click **Continue** to authorize txAdmin to access your Cfx.re account.
 3. Set up a backup password.
 4. Review the **Creator Platform License Agreement** and the **txAdmin License**.
 5. If you agree, click the checkbox below the password.

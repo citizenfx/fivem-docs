@@ -50,7 +50,7 @@ These are named _Game references_, and they can be found over [here](/docs/game-
 
 # Performance
 ## What are hitch warnings?
-Hitch warnings indicate that one of your resources is not performing as it should and you should look into the affected resource to _figure out why, using the profiler can help diagnosing this._ Things such as these, can sometimes be caused by writing underperforming SQL queries that take a long time to execute, as well as unoptimized loops that end up halting the script execution.
+Hitch warnings indicate that one of your resources is not performing as it should and you should look into the affected resource to _figure out why, using the profiler can help diagnose this._ Things such as these, can sometimes be caused by writing underperforming SQL queries that take a long time to execute, as well as unoptimized loops that end up halting the script execution.
 
 ## Profiler
 The profiler can be used to diagnose _why_ a resource is taking a long time to execute, there's a [guide](/docs/scripting-manual/debugging/using-profiler/) explaining how to use it, it can be used both on the server and client.

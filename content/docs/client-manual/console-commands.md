@@ -20,7 +20,7 @@ Example: `connect 127.0.0.1:30120`, `connect "https://fivem.net/"`, `connect cfx
 
 
 ### disconnect
-Disconnect you from the server you are connected to and returns to the main menu.
+Disconnects you from the server you are connected to and returns to the main menu.
 
 ### bind
 Lists all configured bindings.
@@ -190,7 +190,7 @@ This command will show any incoming/outgoing event traffic. It shows the directi
 Usage: `neteventlog <true|false>`
 
 ### net_statsFile
-The `net_statsFile` is a command to store the metrics of the network usage/behaviour of the FiveM client.
+The `net_statsFile` is a command to store the metrics of the network usage/behavior of the FiveM client.
 
 It should keep track of metrics like ping, received packets and bytes, sent packets and bytes and the amount of
 routing packages. All this information will be stored in a file, using a CSV format.

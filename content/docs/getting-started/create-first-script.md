@@ -78,7 +78,7 @@ Let's explore some of the simple to use natives first and incorporate them into 
 
 ##### Disabling the minimap
 
-While the minimap helpful it is not wanted in some cases so let's disable it:
+While the minimap is helpful it is not wanted in some cases so let's disable it:
 {{% video src="https://runtime.fivem.net/edu/step-5_displayradar.mp4" %}}
 
 1. Open the [native reference](/natives/) and try finding the [**DisplayRadar**](/natives/?_0xA0EBB943C300E693) native.

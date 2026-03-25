@@ -4,7 +4,8 @@ title: populationPedCreating
 
 This event is fired before creating a population ped and allows manipulating population from script.
 You can also cancel this event with CancelEvent().
-Setters contains two function:
+
+The `setters` parameter contains two functions:
 - setPosition to set the position where the ped is going to spawn at.
 - setModel to set the model that the ped is going to spawn as.
 

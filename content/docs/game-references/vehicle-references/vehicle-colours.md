@@ -55,7 +55,7 @@ Metallic
 	<div class="colour"><span><img src="/vehicleColours/8.webp" loading="lazy" alt="8"><br><strong>Index: 8</strong><br>Stone Silver</span></div>
 	<div class="colour"><span><img src="/vehicleColours/9.webp" loading="lazy" alt="9"><br><strong>Index: 9</strong><br>Midnight Silver</span></div>
 	<div class="colour"><span><img src="/vehicleColours/10.webp" loading="lazy" alt="10"><br><strong>Index: 10</strong><br>Cast Iron Silver</span></div>
-	<div class="colour"><span><img src="/vehicleColours/11.webp" loading="lazy" alt="11"><br><strong>Index: 11</strong><br>Anhracite Black</span></div>
+	<div class="colour"><span><img src="/vehicleColours/11.webp" loading="lazy" alt="11"><br><strong>Index: 11</strong><br>Anthracite Black</span></div>
 	<div class="colour"><span><img src="/vehicleColours/27.webp" loading="lazy" alt="27"><br><strong>Index: 27</strong><br>Red</span></div>
 	<div class="colour"><span><img src="/vehicleColours/28.webp" loading="lazy" alt="28"><br><strong>Index: 28</strong><br>Torino Red</span></div>
 	<div class="colour"><span><img src="/vehicleColours/29.webp" loading="lazy" alt="29"><br><strong>Index: 29</strong><br>Formula Red</span></div>

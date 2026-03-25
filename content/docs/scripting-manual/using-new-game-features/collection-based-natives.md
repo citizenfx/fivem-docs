@@ -72,7 +72,7 @@ E.g.:
 
 <style>
 .collections-indices-example td {
-    border: 0.5px solid grey;
+    border: 0.5px solid gray;
 }
 
 .collections-indices-example td:not(:first-child) {

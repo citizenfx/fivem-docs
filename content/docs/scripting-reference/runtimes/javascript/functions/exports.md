@@ -14,7 +14,7 @@ function exports(exportedName: string, fn: Function) => void
 ### Required arguments
 
 - **exportedName**: The function name you want to export.
-- **fn**: The function to execute when the export get called.
+- **fn**: The function to execute when the export is called.
 
 ## Examples
 

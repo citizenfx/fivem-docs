@@ -39,7 +39,7 @@ print("GetEntityCoords success:", coords)
 
 ## Best Practices
 
-1. **Use Documented Natives**: Always prefer using documented natives directly with their provided names and parameters when possible. This makes your code more readable and maintainable. It is posssible that some natives haven't been discovered yet.
+1. **Use Documented Natives**: Always prefer using documented natives directly with their provided names and parameters when possible. This makes your code more readable and maintainable. It is possible that some natives haven't been discovered yet.
 
 2. **Understand the Native Function**: Before using `Citizen.InvokeNative`, ensure you understand what the native function does and what parameters it requires. This will help you avoid unexpected behavior.
 

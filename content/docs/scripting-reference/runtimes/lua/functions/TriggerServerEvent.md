@@ -55,7 +55,7 @@ In this example, the event 'myCustomServerEvent' is triggered with two pieces of
 
 To handle the event triggered by `TriggerServerEvent`, you need to define a register net event listener. Here's an example of how you can set up an event listener for the 'myCustomServerEvent' event:
 
-(Recommanded)
+(Recommended)
 ```lua
 -- In any server file of the script
 RegisterNetEvent('myCustomServerEvent', function(name, score)
@@ -97,7 +97,7 @@ In this example, the `updatePlayerScore` function is defined and used directly a
 
 ## Best Practices
 
-1. **Minimal Data Passing**: Sending data via events has msgpack serialization overhead when sending **AND** when recieving, you should try to keep your data types as simple and as small as possible so you don't send a bunch of unneeded data.
+1. **Minimal Data Passing**: Sending data via events has msgpack serialization overhead when sending **AND** when receiving, you should try to keep your data types as simple and as small as possible so you don't send a bunch of unneeded data.
 
 2. **Check your data**: ***Never, ever*** trust data from the client, you should always try to verify the data that the client sends. If at all possible you should try to do as much of your logic server-side so the client cannot manipulate it.
 
