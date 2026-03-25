@@ -4,6 +4,6 @@ title: Vehicle references
 
 Reference lists of vehicle data are in this category
 
-- [Vehicle Colors](/docs/game-references/vehicle-references/vehicle-colours/)
+- [Vehicle Colors](/docs/game-references/vehicle-references/vehicle-colors/)
 - [Vehicle Flags](/docs/game-references/vehicle-references/vehicle-flags/)
 - [Vehicle Models](/docs/game-references/vehicle-references/vehicle-models/)
