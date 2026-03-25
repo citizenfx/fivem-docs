@@ -9,7 +9,7 @@ weight: 30
 
 - Creating new assets with Sollumz
 - Adding materials
-- Adding vertex colours
+- Adding vertex colors
 - Proper UV Map naming
 - Creating a ytyp file
 - Exporting assets back to CodeWalker

@@ -6,7 +6,7 @@ title: Gamer tags
 
 **Gamer tag** (also known as **head display**) - is an UI element above player character, which can display text and various icons. The control is carried out by enabling components. Usually used to display player's name.
 
-For each component you can: show/hide, change opacity, change colour.
+For each component you can: show/hide, change opacity, change color.
 
 Components list
 ---------------
@@ -146,13 +146,13 @@ SetMpGamerTagVisibility(
 
 
 
-Changing flags colour
----------------------
+Changing flags color
+--------------------
 
 ### Lua
 
 ``` lua
--- Change component colour
+-- Change component color
 SetMpGamerTagColour(
   gamerTagId,
   component,
@@ -163,7 +163,7 @@ SetMpGamerTagColour(
 ### C\#
 
 ``` csharp
-// Change component colour
+// Change component color
 Function.Call(
   (Hash)0x613ED644950626AE,
   (int)gamerTagId,
@@ -229,14 +229,14 @@ Function.Call(
 );
 ```
 
-### Health bar colour
+### Health bar color
 
-Health bar has 0 opacity by default. Colour of health bar changes using its own native:
+Health bar has 0 opacity by default. Color of health bar changes using its own native:
 
 ### Lua
 
 ``` lua
--- Change health bar colour
+-- Change health bar color
 SetMpGamerTagHealthBarColour(
   gamerTagId,
   colour -- 0 - 255
@@ -246,7 +246,7 @@ SetMpGamerTagHealthBarColour(
 ### C\#
 
 ``` csharp
-// Change health bar colour
+// Change health bar color
 Function.Call(
   (Hash)0x3158C77A7E888AB4,
   (int)gamerTagId,
