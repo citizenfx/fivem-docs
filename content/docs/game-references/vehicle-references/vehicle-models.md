@@ -1,5 +1,5 @@
 ---
-title: Vehicle models
+title: Vehicle Models
 weight: 10
 ---
 
