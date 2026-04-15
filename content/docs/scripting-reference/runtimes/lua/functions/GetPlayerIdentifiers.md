@@ -19,8 +19,6 @@ GetPlayerIdentifiers(Player player)
 |------------|--------------------------|---------------------------------------------------------------------------|-----------|
 | `steam`    | Steam                    | [Steam Id](https://partner.steamgames.com/doc/webapi/isteamuserauth)      | hex       |
 | `discord`  | Discord                  | [User Id](https://discord.com/developers/docs/resources/user#user-object) | int       |
-| `xbl`      | Xbox Live                |                                                                           | int       |
-| `live`     | Microsoft PUID           | Passport Unique Identifier                                                | int       |
 | `license`  | Rockstar Online Services | Hash                                                                      | hex       |
 | `license2` | Rockstar Online Services | Hash                                                                      | hex       |
 | `fivem`    | Cfx.re                   | User Id                                                                   | int       |
