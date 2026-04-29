@@ -1,7 +1,6 @@
 ---
 title: System requirements
 weight: 30
-toc_hide: true
 ---
 
 To [run FiveM][installing] your system must meet the [minimum requirements of the original game][gtav-system-specs].

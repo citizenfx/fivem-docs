@@ -1,7 +1,6 @@
 ---
 title: Running two FiveM clients
 weight: 1004
-toc_hide: true
 description: >
   This guide explains how to run **two FiveM clients at the same time** on one PC.
 ---

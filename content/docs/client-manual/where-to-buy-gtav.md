@@ -1,7 +1,6 @@
 ---
 title: Where to buy GTAV
 weight: 10
-toc_hide: true
 ---
 
 FiveM requires a fully updated installation of GTAV. If you do not own a legal copy of GTAV yet, you can buy it from any of the stores below. Of course, you can also buy the game from your preferred local retailer; these are just the most common ones.

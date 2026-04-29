@@ -1,7 +1,6 @@
 ---
 title: Where to buy Red Dead Redemption 2
 weight: 20
-toc_hide: true
 ---
 
 RedM requires a fully updated installation of Red Dead Redemption 2. If you do not own a legal copy of the game yet, you can buy it from any of the stores below. Of course, you can also buy the game from your preferred local retailer; these are just the most common ones.

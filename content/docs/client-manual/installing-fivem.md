@@ -1,7 +1,6 @@
 ---
 title: Installing FiveM
 weight: 40
-toc_hide: true
 ---
 
 Installing FiveM is pretty straightforward. It's usually a matter of [downloading FiveM][home], then simply running the

@@ -1,7 +1,6 @@
 ---
 title: FiveM Shortcut
 weight: 80
-toc_hide: true
 ---
 
 ## How to Access FiveM Properties
