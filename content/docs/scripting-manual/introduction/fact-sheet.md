@@ -1,6 +1,6 @@
 ---
 title: Fact Sheet
-weight: 70
+weight: 60
 ---
 
 Here's a quick informative sheet to get you up to speed with FiveM development.

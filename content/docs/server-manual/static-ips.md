@@ -1,6 +1,6 @@
 ---
 title: Static IPs
-weight: 1004
+weight: 130
 description: >
   This guide explains how https://static.cfx.re/ips.txt is used
 ---

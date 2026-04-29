@@ -1,6 +1,6 @@
 ---
 title: Introduction to resources
-weight: 20
+weight: 10
 ---
 
 Servers run on a collection of resources. A **resource** is a collection of files - such as client scripts, server

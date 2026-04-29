@@ -1,6 +1,6 @@
 ---
 title: Finding Resources
-weight: 110
+weight: 100
 description: >
   Finding resources for your FiveM server.
 ---

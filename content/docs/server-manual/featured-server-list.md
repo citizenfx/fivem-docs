@@ -1,6 +1,6 @@
 ---
 title: Featured Server List
-weight: 100
+weight: 90
 description: >
   Information about the featured server category.
 ---

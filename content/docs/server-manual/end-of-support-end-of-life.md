@@ -1,6 +1,6 @@
 ---
 title: End of Support/End of Life Warning Message
-weight: 120
+weight: 110
 description: >
   Information about the End of Service / End of Life warning message.
 ---
