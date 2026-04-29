@@ -52,7 +52,7 @@ Example:
 
 ### `refresh`
 
-Rescans the *resources* folder and loads all resource manifests in them, also making new resources available to start using [start](#start-resourcename "wikilink").
+Rescans the *resources* folder and loads all resource manifests in them, also making new resources available to start using [start](#start-resourcename).
 
 Example:
 
@@ -99,7 +99,7 @@ Example:
 
 {{% alert color="info" %}}This is provided by the **rconlog** resource. {{% /alert %}}
 
-Kicks the client with the specified server ID (as seen in [status](#status "wikilink")) from the server, for the stated reason.
+Kicks the client with the specified server ID (as seen in [status](#status)) from the server, for the stated reason.
 
 Example:
 

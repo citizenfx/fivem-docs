@@ -91,13 +91,13 @@ Defines a script to be loaded on the client, and implicitly adds the file to the
 
 {{% alert color="success" title="Note" %}}This directive supports globbing. Reference [CitizenFX.Core.Server](https://nuget.org/packages/CitizenFX.Core.Server) for a .NET assembly.{{% /alert %}}
 
-Defines a script to be loaded on the server. The extension determines which script loader will handle the file, as with [client_script](#client-script "wikilink").
+Defines a script to be loaded on the server. The extension determines which script loader will handle the file, as with [client_script](#client-script).
 
 ### shared_script
 
 {{% alert color="success" title="Note" %}}This directive supports globbing.{{% /alert %}}
 
-Defines a script to be loaded on both sides, and adds the file to the resource packfile. The extension determines which script loader will handle the file, as with [client_script](#client-script "wikilink").
+Defines a script to be loaded on both sides, and adds the file to the resource packfile. The extension determines which script loader will handle the file, as with [client_script](#client-script).
 
 ### export
 
@@ -146,11 +146,11 @@ int widget = Exports["myresource"].getWidget();
 
 ### server_export
 
-Defines a global function to be [exported](#export "wikilink") by a server script.
+Defines a global function to be [exported](#export) by a server script.
 
 ### ui_page
 
-Sets the resource's [NUI]({{% ref "/docs/scripting-manual/nui-development/full-screen-nui.md" %}}) page to the defined file or URL. If specifying a file, the file (along with its dependencies) has to be referenced using [files](#file "wikilink").
+Sets the resource's [NUI]({{% ref "/docs/scripting-manual/nui-development/full-screen-nui.md" %}}) page to the defined file or URL. If specifying a file, the file (along with its dependencies) has to be referenced using [files](#file).
 
 ```lua
 ui_page 'html/index.html'
@@ -176,7 +176,7 @@ Loads the specified level meta in the resource after the primary level meta.
 
 ### replace_level_meta
 
-Replaces the <abbr title="CDataFileMgr__ContentsOfDataFileXml">level meta</abbr> (usually `common:/data/levels/gta5/gta5.meta`) with the specified file in the resource. This has to be referenced using [files](#file "wikilink").
+Replaces the <abbr title="CDataFileMgr__ContentsOfDataFileXml">level meta</abbr> (usually `common:/data/levels/gta5/gta5.meta`) with the specified file in the resource. This has to be referenced using [files](#file).
 
 ```lua
 replace_level_meta 'mymap'
