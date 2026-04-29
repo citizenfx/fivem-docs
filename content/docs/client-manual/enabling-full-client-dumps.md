@@ -25,15 +25,9 @@ EnableFullMemoryDump=1
 
 ### Causing the Crash & Finding the Dump
 
-1. Launch the game again and try to reproduce the original crash.
-When the crash occurs, your game may freeze for several minutes. This is normal. The dump is being written to your drive.
-Do not close the game, even if Windows prompts you to do so.
-After the dump finishes writing, the usual crash window will appear.
-2. Confirm the crash is the same one you were asked to report
-Typically, this means it has the same Legacy crash hash.
-If it's not the same crash, return to the first step.
-3. A Windows Explorer window should automatically open, pointing to the crashes directory in your FiveM/RedM installation folder.
-A large dump file (usually several GB) will already be selected.
+1. Launch the game again and try to reproduce the original crash. When the crash occurs, your game may freeze for several minutes. This is normal. The dump is being written to your drive. Do not close the game, even if Windows prompts you to do so. After the dump finishes writing, the usual crash window will appear.
+2. Confirm the crash is the same one you were asked to report. Typically, this means it has the same Legacy crash hash. If it's not the same crash, return to the first step.
+3. A Windows Explorer window should automatically open, pointing to the crashes directory in your FiveM/RedM installation folder. A large dump file (usually several GB) will already be selected.
 
 ### Compressing the Dump
 
