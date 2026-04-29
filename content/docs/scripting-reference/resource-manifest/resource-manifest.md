@@ -150,7 +150,7 @@ Defines a global function to be [exported](#export) by a server script.
 
 ### ui_page
 
-Sets the resource's [NUI]({{% ref "/docs/scripting-manual/nui-development/full-screen-nui.md" %}}) page to the defined file or URL. If specifying a file, the file (along with its dependencies) has to be referenced using [files](#file).
+Sets the resource's [NUI](/docs/scripting-manual/nui-development/full-screen-nui.md) page to the defined file or URL. If specifying a file, the file (along with its dependencies) has to be referenced using [files](#file).
 
 ```lua
 ui_page 'html/index.html'
@@ -189,7 +189,7 @@ files {
 
 {{% alert color="success" title="Note" %}}This directive supports globbing in the filename field.{{% /alert %}}
 
-Adds a [data file]({{% ref "/docs/game-references/data-files.md" %}}) of a specified type to the game extra content system.
+Adds a [data file](/docs/game-references/data-files.md) of a specified type to the game extra content system.
 
 ```lua
 files {
