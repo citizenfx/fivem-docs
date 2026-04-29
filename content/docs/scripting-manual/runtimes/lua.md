@@ -127,7 +127,7 @@ Lua specific functions
 - [Server functions](/docs/scripting-reference/runtimes/lua/server-functions/)
 
 [about-natives]: /docs/scripting-manual/introduction/about-native-functions/
-[resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest/
+[resource-manifest]: /docs/scripting-reference/resource-manifest/
 [grit]: https://github.com/grit-engine/grit-engine
 [luadocs]: https://www.lua.org/manual/5.4/
 [natives-doc]: /natives/

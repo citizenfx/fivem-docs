@@ -109,4 +109,4 @@ window.addEventListener('message', (event) => {
 
 [mdn-messages]: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage#The_dispatched_event
 [send-nui-message]: /docs/scripting-reference/runtimes/lua/functions/SendNUIMessage/
-[resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest/
+[resource-manifest]: /docs/scripting-reference/resource-manifest/

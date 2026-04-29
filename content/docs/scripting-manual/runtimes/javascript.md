@@ -156,7 +156,7 @@ Functions in JavaScript
 See [Scripting reference][scriptreflink] for example usage of these functions.
 
 [scriptreflink]: /docs/scripting-reference/runtimes/javascript/
-[deplink]: /docs/scripting-reference/resource-manifest/resource-manifest/#dependency
+[deplink]: /docs/scripting-reference/resource-manifest/#dependency
 [nodejs]: https://github.com/citizenfx/node
 [npmclient]: https://www.npmjs.com/package/@citizenfx/client
 [npmserver]: https://www.npmjs.com/package/@citizenfx/server

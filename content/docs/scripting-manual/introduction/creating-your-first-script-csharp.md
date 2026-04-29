@@ -10,7 +10,7 @@ Before creating your first script with C#, there are a couple of things you will
 
 * [A basic understanding of C#](https://learn.microsoft.com/en-us/dotnet/csharp/#learn-to-program)
 * [Creating a C# project and setup your environment](/docs/scripting-manual/runtimes/csharp/)
-* [Understanding of resources and manifest files](/docs/scripting-reference/resource-manifest/resource-manifest/)
+* [Understanding of resources and manifest files](/docs/scripting-reference/resource-manifest/)
 
 ### Writing code
 Now that you have set up your C# project and environment, you will have two projects; `MyResourceNameClient` and `MyResourceNameServer`.
@@ -228,4 +228,4 @@ You'll probably also want to write scripts that interact with the server. This s
 
 [portable-pdb-support]: https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-1/#runtime-–-support-for-portable-pdbs
 [portable-pdb-msft-learn]: https://learn.microsoft.com/en-us/dotnet/core/diagnostics/symbols#learn-about-nets-portable-pdb-format
-[resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest/
+[resource-manifest]: /docs/scripting-reference/resource-manifest/

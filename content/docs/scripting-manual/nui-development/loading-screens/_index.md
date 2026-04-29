@@ -114,4 +114,4 @@ window.addEventListener('message', (event) => {
 - [initFunctionInvoked](./initFunctionInvoked/)
 - [endInitFunction](./endInitFunction/)
 
-[resource-manifest]: /docs/scripting-reference/resource-manifest/resource-manifest/
+[resource-manifest]: /docs/scripting-reference/resource-manifest/
