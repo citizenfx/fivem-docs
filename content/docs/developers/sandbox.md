@@ -122,8 +122,6 @@ add_filesystem_permission resourceA write resourceB
 
 This override grants full write access to the target resource and bypasses the default cross-resource write restrictions.
 
-Author names must match for the permission to take effect.
-
 ### ConVar Permissions
 
 To restrict ConVar access to specific resources, use the `add_convar_permission` configuration:
