@@ -1,6 +1,5 @@
 ---
 title: vector3
-alias: vec3
 ---
 
 Creates a new vector3 value.
@@ -21,6 +20,10 @@ Syntax
 vector3 vector3(float x, float y, float z)
 ```
 
+```lua
+vector3 vec3(float x, float y, float z)
+```
+
 ### Required arguments
 - **x**: A floating point number representing the `x` value of your vector.
 - **y**: A floating point number representing the `y` value of your vector.
@@ -34,6 +37,9 @@ Basic vector3 functionality:
 ```lua
 -- Basic vector with zero length:
 vector3(0, 0, 0)
+
+-- Using the alias:
+vec3(0, 0, 0)
 
 -- Vectors are a real data type:
 local v = vector3(1, 2, 3)

@@ -1,6 +1,5 @@
 ---
 title: vector2
-alias: vec2
 ---
 
 Creates a new vector2 value.
@@ -16,6 +15,10 @@ Syntax
 vector2 vector2(float x, float y)
 ```
 
+```lua
+vector2 vec2(float x, float y)
+```
+
 ### Required arguments
 - **x**: A floating point number representing the `x` value of your vector.
 - **y**: A floating point number representing the `y` value of your vector.
@@ -27,6 +30,9 @@ Basic vector2 functionality:
 ```lua
 -- Basic vector with zero length:
 vector2(0, 0)
+
+-- Using the alias:
+vec2(0, 0)
 
 -- Vectors are a real data type:
 local v = vector2(1, 2)

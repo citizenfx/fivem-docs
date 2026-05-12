@@ -1,6 +1,5 @@
 ---
 title: vector4
-alias: vec4
 ---
 
 Creates a new vector4 value.
@@ -16,6 +15,10 @@ Syntax
 vector4 vector4(float x, float y, float z, float w)
 ```
 
+```lua
+vector4 vec4(float x, float y, float z, float w)
+```
+
 ### Required arguments
 - **x**: A floating point number representing the `x` value of your vector.
 - **y**: A floating point number representing the `y` value of your vector.
@@ -28,6 +31,9 @@ Examples
 ```lua
 -- Basic vector with zero length:
 vector4(0, 0, 0, 0)
+
+-- Using the alias:
+vec4(0, 0, 0, 0)
 
 -- Vectors are a real data type:
 local v = vector4(1, 2, 3, 4)
