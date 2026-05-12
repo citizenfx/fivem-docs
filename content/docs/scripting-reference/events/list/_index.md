@@ -1,7 +1,6 @@
 ---
 title: List of events
 weight: 30
-hidden: true
 ---
 
 **A list of all non-resource-specific events.**
