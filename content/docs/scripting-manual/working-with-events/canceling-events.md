@@ -2,7 +2,7 @@
 title: Canceling events
 weight: 20
 aliases:
-  - /docs/scripting-manual/working-with-events/event-cancelation
+  - /docs/scripting-manual/working-with-events/event-cancelation/
 ---
 
 ### Canceling Events

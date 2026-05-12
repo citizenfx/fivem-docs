@@ -2,7 +2,7 @@
 title: Vehicle Colors
 weight: 20
 aliases:
-  - /docs/game-references/vehicle-references/vehicle-colours
+  - /docs/game-references/vehicle-references/vehicle-colours/
 ---
 
 List of vehicle colors
