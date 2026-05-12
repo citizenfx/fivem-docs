@@ -5,8 +5,6 @@ description: >
   A list of commands to run in the server console.
 ---
 
-<!-- TODO: format this like client commands? -->
-
 Console commands can be executed either using an RCon tool, directly from the server console interface, a server configuration
 file, the server command line, or (if a resource is permitted by the ACL) the {{% native_link "EXECUTE_COMMAND" %}} function.
 
@@ -130,6 +128,7 @@ Example:
     FXServer.exe +set gamename rdr3
 
 #### Supported games
+
 | Name |   Marketing name    |
 | ---- | ------------------- |
 | gta5 | FiveM for GTA:Five  |
@@ -230,7 +229,7 @@ A string variable containing the description of your project. This should be wri
 Example:
 
 ```bash
-sets sv_projectDesc "Your favorite drug deal simulation community!"
+sets sv_projectDesc "My amazing community!"
 ```
 
 ### `sv_hostname [newValue]`
@@ -247,6 +246,15 @@ Example:
 ```toml
 sv_master1 ""
 ```
+
+### `sv_appearAllowlisted [true|false]`
+
+A boolean variable that, when set to true, makes the server appear allowlisted in the server browser, showing a lock icon.
+
+### `sv_allowlistInstructions [newValue]`
+
+A string variable that contains instructions for players on how to get allowlisted on the server. This is shown in the server browser when the server is set to appear allowlisted.
+For this to work, `sv_appearAllowlisted` needs to be set to `true`.
 
 ### `sv_authMaxVariance [newValue]`
 
@@ -317,6 +325,7 @@ Example output:
 ```
 
 ### `con_addChannelFilter [filter] [action]`
+
 The `con_addChannelFilter` command will add a channel filter which can be used to filter console channel output.
 
 [Regex](https://en.wikipedia.org/wiki/Regular_expression) can be used for channel filters, this can be set through the `filter` command parameter.
@@ -335,6 +344,7 @@ So the following wouldn't show on the console:
 Example: `con_addChannelFilter script:gamemodePrefix-* noprint`
 
 ### `con_removeChannelFilter [filter] [action]`
+
 The `con_removeChannelFilter` command can be used to remove a channel filter, thus removing any previously applied actions (those applied via [con_addChannelFilter](#con_addChannelFilter)).
 
 You can use [con_channelFilters](#con_channelFilters) to check for any active filters.
@@ -398,7 +408,7 @@ A boolean console variable introduced in server version 9149 that uses the new s
 
 NOTE: Using this convar also opts you into using `sv_experimentalStateBagsHandler` and `sv_experimentalOneSyncPopulation`
 
-As of July 2025, this is enabled by default.
+This is set to true by default.
 
 ### `sv_httpFileServerProxyOnly [true|false]`
 
@@ -545,11 +555,13 @@ remove_principal identifier.steam:110000112345678 group.admin
 ```
 
 ### `test_ace [principal] [object]`
+
 Tests if a principal is allowed or denied access to a given object.
 
 Example: `test_ace group.admin command.adminstuff`
 
 ### `endpoint_add_udp [endpoint]`
+
 Creates a UDP host instance, the address and port both need to be valid and not already in use in order to bind the provided endpoint.
 
 Example:
@@ -560,6 +572,7 @@ endpoint_add_udp "0.0.0.0:30120"
 A real use-case example of this can be found in the [default server.cfg example][servercfg].
 
 ### `endpoint_add_tcp [endpoint]`
+
 Adds and binds the provided endpoint. This will create a multiplexable TCP server instance and bind it, the new instance will then be added to the multiplex server instance list. If a primary port isn't set (see [`netPort`](#netport-port)), the one sent by the command parameter will be used.
 
 Example:
@@ -570,6 +583,7 @@ endpoint_add_tcp "0.0.0.0:30120"
 A real use-case example of this can be found in the [default server.cfg example][servercfg].
 
 ### `netPort [port]`
+
 The primary port, this is initialized to zero by `TcpListenManager's` default class constructor method. Used by nucleus and heartbeat methods for master list authoring.
 
 This port may also be used when registering DNS (if `sv_registerMulticastDns` isn't set to `false`) on server startup. A Windows API method named [DnsServiceConstructInstance](https://learn.microsoft.com/en-us/windows/win32/api/windns/nf-windns-dnsserviceconstructinstance) will be invoked by the server's internals (Windows Only [pre-processor macro](https://github.com/citizenfx/fivem/blob/01fb9af858badef688f93a1584fc41485c3e0e05/code/components/citizen-server-net/src/TcpListenManager.cpp#L176) compiled code, meaning this will only execute on Windows builds).
@@ -580,6 +594,7 @@ netPort 30120
 ```
 
 ### `net_tcpConnLimit [limit]`
+
 Can be used to tune the concurrent connection limit per IP, its default value is `16`.
 
 Example:
@@ -588,6 +603,7 @@ net_tcpConnLimit 32
 ```
 
 ### `block_net_game_event [eventName]`
+
 Adds the hash of a net game event to the list blocked by the server.
 
 This is used to prevent exploits, for example `BLOCK_WEAPON_SELECTION` is an event used by the game when invoking {{% native_link "SET_CURRENT_PED_VEHICLE_WEAPON" %}} native,
@@ -601,6 +617,7 @@ block_net_game_event "FIRE_EVENT"
 ```
 
 ### `unblock_net_game_event [eventName]`
+
 Do the opposite of block_net_game_event, unblocking a net game event.
 
 NOTE: This doesn't unblock net game events blocked by other means like convars.
