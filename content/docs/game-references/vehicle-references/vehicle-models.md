@@ -1326,11 +1326,11 @@ weight: 10
             </div>
         </div>
         <div class="vehicle">
-            <img src="/vehicles/driftdom9.webp" alt="Dominator GT">
+            <img src="/vehicles/driftdominator9.webp" alt="Dominator GT">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Dominator GT</span>
                 <span><strong>Hash:</strong> -855850193</span>
-                <span><strong>Model Name:</strong> driftdom9</span>
+                <span><strong>Model Name:</strong> driftdominator9</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4896,11 +4896,11 @@ weight: 10
             </div>
         </div>
         <div class="vehicle">
-            <img src="/vehicles/dkeitora.webp" alt="Keitora">
+            <img src="/vehicles/driftkeitora.webp" alt="Keitora">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Keitora</span>
                 <span><strong>Hash:</strong> -1555091703</span>
-                <span><strong>Model Name:</strong> dkeitora</span>
+                <span><strong>Model Name:</strong> driftkeitora</span>
             </div>
         </div>
         <div class="vehicle">
