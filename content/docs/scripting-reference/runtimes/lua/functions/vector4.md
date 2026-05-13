@@ -1,5 +1,7 @@
 ---
 title: vector4
+aliases:
+  - /docs/scripting-reference/runtimes/lua/functions/vec4/
 ---
 
 Creates a new vector4 value.

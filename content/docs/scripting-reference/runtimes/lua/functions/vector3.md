@@ -1,5 +1,7 @@
 ---
 title: vector3
+aliases:
+  - /docs/scripting-reference/runtimes/lua/functions/vec3/
 ---
 
 Creates a new vector3 value.

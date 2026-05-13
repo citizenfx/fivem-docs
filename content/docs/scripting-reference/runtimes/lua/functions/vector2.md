@@ -1,5 +1,7 @@
 ---
 title: vector2
+aliases:
+  - /docs/scripting-reference/runtimes/lua/functions/vec2/
 ---
 
 Creates a new vector2 value.
