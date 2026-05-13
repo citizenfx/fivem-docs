@@ -1,5 +1,7 @@
 ---
-title: vec
+title: vector
+aliases:
+  - /docs/scripting-reference/runtimes/lua/functions/vec/
 ---
 
 Creates a new vector depending on the count of arguments.
@@ -7,6 +9,13 @@ Creates a new vector depending on the count of arguments.
 Syntax
 ------
 Supports 1 to 4 arguments. Return value is depends on the input.
+
+```lua
+number  vector(float x)
+vector2 vector(float x, float y)
+vector3 vector(float x, float y, float z)
+vector4 vector(float x, float y, float z, float w)
+```
 
 ```lua
 number  vec(float x)
@@ -35,10 +44,10 @@ Examples
 The following is true:
 
 ```lua
-vec(1)          == 1
-vec(1, 2)       == vector2(1, 2)
-vec(1, 2, 3)    == vector3(1, 2, 3)
-vec(1, 2, 3, 4) == vector4(1, 2, 3, 4)
+vector(1)          == 1
+vector(1, 2)       == vector2(1, 2)
+vector(1, 2, 3)    == vector3(1, 2, 3)
+vector(1, 2, 3, 4) == vector4(1, 2, 3, 4)
 ```
 
 A basic version of this function could be implemented like so:

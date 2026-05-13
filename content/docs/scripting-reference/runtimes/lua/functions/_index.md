@@ -21,7 +21,7 @@ toc_hide: true
 - [slerp](/docs/scripting-reference/runtimes/lua/functions/slerp/)
 - [TriggerEvent](/docs/scripting-reference/runtimes/lua/functions/TriggerEvent/)
 - [TriggerServerEvent](/docs/scripting-reference/runtimes/lua/functions/TriggerServerEvent/)
-- [vec](/docs/scripting-reference/runtimes/lua/functions/vec/)
+- [vector](/docs/scripting-reference/runtimes/lua/functions/vector/)
 - [vector2](/docs/scripting-reference/runtimes/lua/functions/vector2/)
 - [vector3](/docs/scripting-reference/runtimes/lua/functions/vector3/)
 - [vector4](/docs/scripting-reference/runtimes/lua/functions/vector4/)
