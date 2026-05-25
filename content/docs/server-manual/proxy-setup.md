@@ -191,16 +191,16 @@ server {
 
 As you can see inside the configuration an `ssl_certificate` and `ssl_certificate_key` is required.
 
-The easiest way is to use an self signed certificates when you don't have a domain name associated with your server ip.
+The easiest way is to use self-signed certificates when you don't have a domain name associated with your server ip.
 When you have a domain already configured you can setup [Let's Encrypt](https://letsencrypt.org) to generate this for you.
 
-On Linux the easiest way to generate self signed certificates is using `openssl`.
+On Linux the easiest way to generate self-signed certificates is using `openssl`.
 ```
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
 ```
 
-For Windows a openssl Binary can be found at [Binaries](https://wiki.openssl.org/index.php/Binaries).
-Which works the same as the Linux Version.
+For Windows an openssl binary can be found at [Binaries](https://wiki.openssl.org/index.php/Binaries).
+Which works the same as the Linux version.
 ```
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key -out nginx-selfsigned.crt
 ```
