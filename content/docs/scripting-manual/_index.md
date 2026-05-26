@@ -13,6 +13,7 @@ weight: 50
     - [Scripting in C#](/docs/scripting-manual/runtimes/csharp/)
 - [Migrating from deprecated methods](/docs/scripting-manual/migrating-from-deprecated/)
   - [Chat Messages](/docs/scripting-manual/migrating-from-deprecated/chat-messages/)
+- [Migrating from other GTAV multiplayer platforms](/docs/scripting-manual/migrating-from-other-platforms/)
 - [Working with events](/docs/scripting-manual/working-with-events/)
   - [Listening for events](/docs/scripting-manual/working-with-events/listening-for-events/)
   - [Triggering events](/docs/scripting-manual/working-with-events/triggering-events/)
