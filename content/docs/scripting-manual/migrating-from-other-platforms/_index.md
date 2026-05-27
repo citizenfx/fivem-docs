@@ -83,7 +83,7 @@ end)
 
 FiveM does not have a "colshape" system to trigger interactions when a player enters a specific polygon, square, or sphere.
 
-You must implement similar logic yourself (for example, by checking player positions within regions) or use an existing resource like [PolyZone](https://github.com/mkafrin/PolyZone).
+You must implement similar logic yourself (for example, by checking player positions within regions) or use an existing resource like [PolyZone](https://github.com/mkafrin/PolyZone) or [ox_lib's Zones system](https://overextended.dev/ox_lib/Modules/Zones/Shared).
 
 ## No dynamic entities
 
@@ -173,7 +173,7 @@ FiveM's ACE permission system is its own permission model and does not have a di
 
 Pool sizes are controlled by the server; the client adjusts pool sizes on connect. If the client's pool sizes do not match the server's startup configuration, the client may auto-restart.
 
-Pool sizes are configured via server startup arguments and cannot be changed at runtime.
+Pool sizes are [configured via server startup arguments ](docs/server-manual/server-commands/#increase_pool_size-poolname-increase) and cannot be changed at runtime.
 
 ## Identifiers (Social Club, Cloud Auth, Hardware Serial, etc.)
 
@@ -195,7 +195,7 @@ Most entity APIs are exposed as native functions. Custom helper functions can ex
 
 ## Entity identifiers
 
-There are three common entity identifier types to keep in mind:
+There are three common [entity identifier types](docs/scripting-manual/networking/ids/) to keep in mind:
 
 - **Handles**: local identifiers that are not synchronized between client and server.
 - **PlayerIds**: unique identifiers for connected players. Players also have ped entity IDs that are synchronized between client and server.
@@ -219,9 +219,9 @@ Search the [Native Reference](https://docs.fivem.net/natives/) for `kvp` natives
 
 Entities marked as networked in their creation parameters are synchronized by the client by default.
 
-To prevent clients from creating synchronized entities, you can enable the strict entity lockdown mode.
+To prevent clients from creating synchronized entities, you can enable the strict [entity lockdown mode](https://docs.fivem.net/docs/scripting-reference/onesync/#entity-lockdown).
 
-The server can also intercept entity creation by canceling the `entityCreating` event, and if you need to prevent an entity from being deleted on the client, you can use `SetEntityOrphanMode`.
+The server can also intercept entity creation by canceling the `entityCreating` event, and if you need to prevent an entity from being deleted on the client, you can use [SET_ENTITY_ORPHAN_MODE](https://docs.fivem.net/natives/?_0x489E9162).
 
 ## disableOutgoingSync
 
