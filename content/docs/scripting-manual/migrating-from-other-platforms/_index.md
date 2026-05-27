@@ -161,7 +161,7 @@ There is no direct equivalent API in FiveM to disable outgoing synchronization o
 
 ## Voice
 
-FiveM uses the Mumble VoIP system, and the related functions are exposed as natives. Many servers use [pma-voice](https://github.com/AvarianKnight/pma-voice) as a wrapper around FiveM's built-in Mumble functionality. For very large servers, an external Mumble server like [rust-mumble](https://github.com/AvarianKnight/rumble) or a dedicated FXServer instance may be a better fit.
+FiveM uses the Mumble VoIP system, and the related functions are exposed as natives. Many servers use [pma-voice](https://github.com/AvarianKnight/pma-voice) as a wrapper around FiveM's built-in Mumble functionality. For very large servers, an external Mumble server like [Zumble](https://github.com/AvarianKnight/rust-mumble) or a dedicated FXServer instance may be a better fit.
 
 See the [Voice documentation](/docs/scripting-manual/voice/) for more details.
 
@@ -194,5 +194,5 @@ Below are useful documentation pages on the official Cfx.re / FiveM docs. Use th
 - KVP / persistent storage: [Native Reference](https://docs.fivem.net/natives/) (search for `kvp`)
 - Voice / Mumble integration: [Voice documentation](/docs/scripting-manual/voice/)
 - txAdmin (administration tool): [txAdmin documentation](/docs/resources/txAdmin/)
-- [AvarianKnight/rumble](https://github.com/AvarianKnight/rumble)
+- [AvarianKnight/Zumble](https://github.com/AvarianKnight/rust-mumble)
 - [AvarianKnight/pma-voice](https://github.com/AvarianKnight/pma-voice): An easy drag n' drop resource that gives you a wrapper to use FiveM's built-in mumble voice.
