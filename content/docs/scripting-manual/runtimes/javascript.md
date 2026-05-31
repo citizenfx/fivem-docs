@@ -108,7 +108,9 @@ Gotchas
 -------
 
 ### Thread affinity
-In the Node.js runtime, any callbacks that are triggered by Node.js will _run on a separate thread_ hosting the libuv
+The workaround in this section applies to the default Node.js 16 server runtime.
+
+In the Node.js 16 runtime, any callbacks that are triggered by Node.js will _run on a separate thread_ hosting the libuv
 event loop. Since CitizenFX server natives can only be called on the main game thread, trying to invoke any will likely
 lead to an error saying 'No current resource manager'.
 
@@ -139,6 +141,10 @@ fs.readFile(`${root}/test.txt`, { encoding: 'utf8' }, (err, data) => {
 
 Note that when nesting Node.js callbacks and _not_ using natives in between, you don't need to schedule the code back to
 the main thread, and it is recommended that you don't do so for the sake of performance.
+
+When using Node.js 22 (`node_version '22'`), this thread-affinity workaround is no longer needed for server natives or
+event functions after Node.js I/O callbacks or awaited Node.js operations. Use `setImmediate` there only when you
+intentionally want to defer work to a later tick.
 
 Functions in JavaScript
 -----------------------
