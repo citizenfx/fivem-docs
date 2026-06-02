@@ -247,11 +247,11 @@ Example:
 sv_master1 ""
 ```
 
-### `sv_appearAllowlisted [true|false]`
+### `sets sv_appearAllowlisted [true|false]`
 
 A boolean variable that, when set to true, makes the server appear allowlisted in the server browser, showing a lock icon.
 
-### `sv_allowlistInstructions [newValue]`
+### `sets sv_allowlistInstructions [newValue]`
 
 A string variable that contains instructions for players on how to get allowlisted on the server. This is shown in the server browser when the server is set to appear allowlisted.
 For this to work, `sv_appearAllowlisted` needs to be set to `true`.
