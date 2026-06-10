@@ -87,8 +87,7 @@ An example implementation method can be found in the following native documentat
 
 ## Policy
 
-Currently, the only policy limitation implemented is to filter _player_ state to be able to be written by the player and the server, _entity_ state to be written by the owning player and the server, and _global_ state to be able to be written by the server.
+By default  _player_ state can be able to be written by the player and the server, _entity_ state can be written by the owning player and the server, and _global_ state can be written by the server. 
 
-In the future, events and filter functionality may be added for further safeguarding of server-configured state.
-
+This behavior can be overriden by using the [sv_stateBagStrictMode](docs/server-manual/server-commands/#setr-sv_stateBagStrictMode-truefalse) server ConVar - with it set to `true` only the server can modify a state bag. 
 <!-- other ScRTs todo -->
