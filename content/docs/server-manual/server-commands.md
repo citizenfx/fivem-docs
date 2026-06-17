@@ -418,6 +418,15 @@ This is particularly useful when using custom proxy servers with `fileserver_add
 
 This is set to false by default.
 
+### `setr sv_stateBagStrictMode [true|false]`
+
+A console variable, introduced in server version 12739, used to enable or disable client-side modification of state bags by the network owner of a replicated entity.
+
+- false (Default): The network owner can modify the state of entities they own and the player state.
+- true: Only the server can modify the state of networked entities and the player state.
+
+Client-side (non-replicated) entities are not affected by this variable. If a client-side script attempts to modify a state bag on a replicated entity in strict mode, the following error will be displayed in the client console `StateBags can't be modified from the client, because the StateBag strict mode is enabled. Disable it using setr sv_stateBagStrictMode false`.
+
 ### `load_server_icon [fileName.png]`
 
 A console command which loads a specified icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
