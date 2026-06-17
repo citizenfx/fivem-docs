@@ -133,7 +133,7 @@ An alias for `loadlevel`, see the [loadlevel](#loadlevel) command for details.
 
 ### list_aces
 <!-- TODO: probably needs a reference to an explanation for ACL stuff -->
-Lists all the aces (access control entries) in the console. It creates a list of the relationship between an principal
+Lists all the aces (access control entries) in the console. It creates a list of the relationship between a principal
 and object and if they're allowed or not allowed to use it. Example output:
 
 ```
