@@ -106,7 +106,7 @@ forward 5 meters relative to its own axis:
 ```lua
 -- Get your vehicle's current matrix.
 local vehicle = GetVehiclePedIsIn(PlayerPedId())
-local _, forwardVector, _, position = GetEntityMatrix(vehicle)
+local forwardVector, _, _, position = GetEntityMatrix(vehicle)
 
 -- Multiply the vector by 5, and add it to the current position.
 -- Since directional vectors should usually have a length of 1, this works great.
