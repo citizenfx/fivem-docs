@@ -7,7 +7,7 @@ description: >
 
 Resources can be used to add functionality to your server. You can find many of the available resources on the [Cfx Marketplace](https://marketplace.cfx.re/) or in the [FiveM Releases](https://forum.cfx.re/c/development/releases/7) / [RedM Releases](https://forum.cfx.re/c/redm-releases/60) section.
 
-Some may be free, and others may not be. The forum and the Cfx. Marketplace have filtering functionality, so you can sort through them.
+Some may be free, and others may not be. The forum and the Cfx Marketplace have filtering functionality, so you can sort through them.
 
 ![pic](/finding-resources/resource-filtering.png)
 
