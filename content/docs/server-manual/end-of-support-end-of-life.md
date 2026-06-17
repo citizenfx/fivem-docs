@@ -14,7 +14,7 @@ You may see a message saying that the server which you are trying to join has re
 
 ### How to Resolve This as a Server Owner
 
-To resolve this, update your FiveM/RedM server artifacts by following the steps in our [installation/update guide](https://docs.cfx.re/docs/server-manual/installation/update).
+To resolve this, update your FiveM/RedM server artifacts.
 
 Server binaries can be downloaded from our artifacts page for [Windows](https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/) and [Linux](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/).
 

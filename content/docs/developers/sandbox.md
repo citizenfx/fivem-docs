@@ -10,6 +10,7 @@ FiveM implements a security sandbox for resources to ensure stability and preven
 ## File System Operations
 
 ### Path Types
+
 All file system operations support two types of paths:
 1. Resource mount paths (recommended): `@resourceName/path`
 2. Absolute paths: `/absolute/path/to/resource`
@@ -17,6 +18,7 @@ All file system operations support two types of paths:
 Resource mount paths are recommended as they're cleaner and more portable.
 
 ### Directory Listing
+
 The `io.readdir()` function returns a directory handle:
 
 ```lua
@@ -39,6 +41,7 @@ files:close() -- Not required, but best to do so
 ```
 
 ### File Operations
+
 ```lua
 -- Using mount paths (recommended)
 local file1 = io.open("@myResource/data.json", "r")
@@ -54,18 +57,16 @@ local file2 = io.open("/absolute/path/to/resource/data.json", "r")
 ```
 
 #### Write Restrictions
-Writing certain file types across resources is blocked to prevent code injection:
-- `.lua` - Lua source files
-- `.dll` - Dynamic Link Libraries
-- `.ts` - TypeScript files
-- `.js`, `.mjs`, `.cjs` - JavaScript files
-- `.cs` - C# source files
 
-Note: Writing these files is allowed within the same resource, but blocked across different resources.
+- Writing files within the same resource is allowed
+- Writing files to another resource is blocked for all file types
 
-The `SaveResourceFile` native function follows these same restrictions.
+Blocked operations return error code 13 ("Permission denied").
+
+The `SaveResourceFile` native function follows these same rules.
 
 ### System Path Restrictions
+
 - Operations in the server main folder are blocked
 - Operations outside resource folders are blocked
 - Blocked operations return error code 13 "Permission denied"
@@ -73,7 +74,9 @@ The `SaveResourceFile` native function follows these same restrictions.
 ## OS Operations
 
 ### Time Functions
+
 New time measurement functions are available:
+
 ```lua
 local nano = os.nanotime()   -- Nanosecond precision
 local micro = os.microtime() -- Microsecond precision
@@ -83,6 +86,7 @@ local tscp = os.rdtscp()     -- Read Time-Stamp Counter and Processor ID
 ```
 
 ### Restricted Operations
+
 ```lua
 -- Blocked with "Permission denied" (code 13)
 os.execute("command")  -- All commands blocked
@@ -95,27 +99,31 @@ os.setlocale()  -- Returns current locale, cannot modify
 ```
 
 ### Allowed Operations
+
 ```lua
 -- These operations remain available
 load() -- Not blocked
 ```
 
 ## Permission System
+
 {{% alert color="warning" %}}
-Enabling resource modifications or filesystem permissions can be dangerous if misused. Only enable these for resources you trust completely and understand their modifications.
+Enabling resource modifications or filesystem permissions can be dangerous if misused. Only enable these for resources you trust completely.
 {{% /alert %}}
 
 ### File System Permissions
-To allow specific resources to write to other resources regardless of file extension restrictions, use the `add_filesystem_permission` configuration:
+
+To explicitly allow a resource to write files to another resource, use the `add_filesystem_permission` configuration:
 
 ```lua
--- Allow resourceA to write any file type to resourceB
+-- Allow resourceA to write files to resourceB
 add_filesystem_permission resourceA write resourceB
 ```
 
-This override grants full write access, bypassing the default file extension restrictions. Please note that author names need to match to authorize write access.
+This override grants full write access to the target resource and bypasses the default cross-resource write restrictions.
 
 ### ConVar Permissions
+
 To restrict ConVar access to specific resources, use the `add_convar_permission` configuration:
 
 ```lua
