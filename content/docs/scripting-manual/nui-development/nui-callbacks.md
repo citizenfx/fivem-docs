@@ -3,20 +3,13 @@ title: NUI callbacks
 weight: 20
 ---
 
-NUI can also send calls back to the game using so-called 'NUI callbacks'. These are currently only fully supported in
-Lua, other languages can be used but need a bit of a [tricky workaround][workaround] as these predate function
-references in codegen.
+NUI can also send calls back to the game using NUI callbacks.
 
-<!-- #GAMETODO: actually fix that? -->
-
-Generally, you'll use the [RegisterNUICallback][registernuicallback] function in Lua, and the
-{{% native_link "REGISTER_NUI_CALLBACK_TYPE" %}} native along with an event handler in other languages.
-
-Both work very similarly, and we'll describe both below:
+You can register NUI callbacks using the {{% native_link "REGISTER_NUI_CALLBACK" %}} native.
 
 ## Registering a NUI callback in Lua
 ```lua
-RegisterNUICallback('getItemInfo', function(data, cb)
+RegisterNuiCallback('getItemInfo', function(data, cb)
     -- POST data gets parsed as JSON automatically
     local itemId = data.itemId
 
@@ -30,13 +23,10 @@ RegisterNUICallback('getItemInfo', function(data, cb)
 end)
 ```
 
-## Registering a NUI callback in C#/JS
+## Registering a NUI callback in JS
 ```js
-// JS
-RegisterNuiCallbackType('getItemInfo') // register the type
-
-// register a magic event name
-on('__cfx_nui:getItemInfo', (data, cb) => {
+RegisterNuiCallback('getItemInfo', (data, cb) => {
+    // POST data gets parsed as JSON automatically
     const itemId = data.itemId;
 
     if (!itemCache[itemId]) {
@@ -44,20 +34,19 @@ on('__cfx_nui:getItemInfo', (data, cb) => {
         return;
     }
 
+    // and so does callback response data
     cb(itemCache[itemId]);
 });
 ```
 
+## Registering a NUI callback in C#
 ```csharp
-// C#
-RegisterNuiCallbackType("getItemInfo"); // register the type
-
 // register the event handler with manual marshaling
-EventHandlers["__cfx_nui:getItemInfo"] += new Action<IDictionary<string, object>, CallbackDelegate>((data, cb) =>
+RegisterNuiCallback("getItemInfo", new Action<IDictionary<string, object>, CallbackDelegate>((data, cb) =>
 {
     // get itemId from the object
     // alternately you could use `dynamic` and rely on the DLR
-    if (data.TryGetValue("itemId", out var itemIdObj))
+    if (!data.TryGetValue("itemId", out var itemIdObj))
     {
         cb(new
         {
@@ -82,7 +71,7 @@ EventHandlers["__cfx_nui:getItemInfo"] += new Action<IDictionary<string, object>
     }
 
     cb(item);
-});
+}));
 ```
 
 ## Invoking the NUI callback
@@ -103,4 +92,3 @@ To prevent requests from stalling, you **have to** return the callback at all ti
 object, or `{"ok":true}`, or similar.
 
 [registernuicallback]: /docs/scripting-reference/runtimes/lua/functions/RegisterNUICallback/
-[workaround]: https://github.com/citizenfx/fivem/blob/d911ecf638337c7c61fc6728110c92d84a217156/data/shared/citizen/scripting/lua/scheduler.lua#L958
