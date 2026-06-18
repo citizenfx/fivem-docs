@@ -23,7 +23,7 @@ Before starting, ensure you have:
 
 ### Template Model
 
-Use the following GTA V model as your template:
+Use the following GTAV model as your template:
 
 **Template:** `v_ilev_bl_door_l.ydr`
 
