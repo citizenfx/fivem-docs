@@ -1,3 +1,7 @@
+---
+title: Permissions
+---
+
 ## Permission System
 The permission system allows you to control which admins can perform which actions.
 For instance you can allow one admin to only view the console and kick players, but not restart the server and execute arbitrary commands.
