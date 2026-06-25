@@ -11,6 +11,8 @@ Core events
 - [gameEventTriggered](./gameEventTriggered/)
 - [onClientResourceStart](./onClientResourceStart/)
 - [onClientResourceStop](./onClientResourceStop/)
+- [onEntityBucketChange](./onEntityBucketChange/)
+- [onPlayerBucketChange](./onPlayerBucketChange/)
 - [onResourceStart](./onResourceStart/)
 - [onResourceStarting](./onResourceStarting/)
 - [onResourceStop](./onResourceStop/)
