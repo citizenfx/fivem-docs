@@ -3,9 +3,15 @@ title: NUI callbacks
 weight: 20
 ---
 
-NUI can also send calls back to the game using NUI callbacks.
+NUI is the way we send data to/from the User Interface (CEF) to the Game.
 
-You can register NUI callbacks using the {{% native_link "REGISTER_NUI_CALLBACK" %}} native.
+The data sent or received here **MUST** be JSON encodable.
+
+Data returned in the `cb` will be sent back to the UI.
+
+It is expected that you always return data via the callback, if you fail to do so, the request will timeout and fail causing an error to bubble up in to the calling `fetch` code in the UI.
+
+You register NUI callbacks using {{% native_link "REGISTER_NUI_CALLBACK" %}}.
 
 ## Registering a NUI callback in Lua
 ```lua
@@ -90,5 +96,3 @@ fetch(`https://${GetParentResourceName()}/getItemInfo`, {
 
 To prevent requests from stalling, you **have to** return the callback at all times - even if containing just an empty
 object, or `{"ok":true}`, or similar.
-
-[registernuicallback]: /docs/scripting-reference/runtimes/lua/functions/RegisterNUICallback/
