@@ -5,17 +5,85 @@ weight: 95
 
 This page covers the most common topics and differences when migrating from other GTAV multiplayer modification platforms to FiveM.
 
-## Server vehicle creation ("server setters")
+## Server setter and Server RPC entity creation
 
-Server-side vehicle creation is currently not reliably supported in FiveM. As a workaround, you can use server-side RPC natives like [CreateVehicle](https://docs.fivem.net/natives/?_0xAF35D0D2583051B0).
+The easiest way to create an entity in a server script is to use server-side RPC natives like [CreateVehicle](https://docs.fivem.net/natives/?_0xAF35D0D2583051B0). Note that server RPC natives for creating entities only work if there is a nearby player within the [OneSync focus distance](/docs/scripting-reference/onesync/#what-is-onesync-infinity) and that the creation can fail for various reasons, such as the chosen player disconnecting.
 
-{{% alert theme="warning" %}}You cannot create entities in locations where no players are nearby.{{% /alert %}}
+```lua
+-- server.lua
+local vehicle = CreateVehicle(`adder`, pos.x, pos.y, pos.z, pos.heading, true)
+if vehicle == 0 then
+    print("Error: No player nearby!")
+    return
+end
+
+local timeout = GetGameTimer() + 10000
+while not DoesEntityExist(vehicle) and GetGameTimer() < timeout do
+    Wait(50)
+end
+
+if not DoesEntityExist(vehicle) then
+    print("Error: Failed to spawn vehicle after 10 seconds")
+    return
+end
+
+-- Use the server RPC native to set the vehicle's colors
+SetVehicleColours(vehicle, 4, 3)
+```
+
+If you do want to create entities server-side, or entites for which no players are nearby, you have to use a server setter native:
+- CREATE_AUTOMOBILE (deprecated)
+- [CREATE_VEHICLE_SERVER_SETTER](https://docs.fivem.net/natives/?_0x6AE51D4B)
+- [CREATE_PED](https://docs.fivem.net/natives/?_0x389EF71)
+- [CREATE_OBJECT_NO_OFFSET](https://docs.fivem.net/natives/?_0x58040420)
+
+Each of these natives immediately and guaranteed registers an entity with the server, but the entity is initially "orphaned" - it will not be simulated nor exist in the game world until a suitable client is within scope. When entities are orphaned, [NETWORK_GET_ENTITY_OWNER](https://docs.fivem.net/natives/?_0x526FEE31) will return -1. While an entity is orphaned, server RPC natives like [SET_VEHICLE_COLOURS](https://docs.fivem.net/natives/?_0x57F24253) **will not** work, but simple server-side getters like [GET_VEHICLE_COLOURS](https://docs.fivem.net/natives/?_0x40D82D88) will.
+
+A common pattern is to create the vehicle with a server setter, and set an initialization statebag, which is then handled client-side when a client takes ownership of the entity.
+
+```lua
+-- server.lua
+local heli = CreateVehicleServerSetter(`seasparrow`, 'heli', coords, 0.0)
+local state = Entity(heli).state
+
+-- You can also pass initialization date (color, licensePlate, etc) instead of just true
+state:set("initVehicle", true, true)
+
+-- client.lua
+AddStateBagChangeHandler("initVehicle", nil, function(bagName, key, value) 
+  local isDone = false
+
+  -- The owner can rapidly change if multiple clients are nearby when the entity is created. 
+  -- To combat this, loop until one owner manages to set the state bag to nil
+  while not isDone do
+    Wait(0)
+
+    local state = GetStateBagValue(bagName, key)
+    if not state then 
+      isDone = true
+      goto continue 
+    end
+
+    local entity = GetEntityFromStateBagName(bagName)
+    if entity == 0 then goto continue end
+    if NetworkGetEntityOwner(entity) ~= PlayerId() then goto continue end
+
+    -- Do whatever initialization you need here
+    SetVehicleOnGroundProperly(entity)
+
+    state:set('initVehicle', nil, true)
+    ::continue::
+  end
+end)
+```
+
+{{% alert color="warning" title="Server Setters Reliablity Issues" %} Currently, in rare cases it's possible that the ownership of the entity changes after the state bag handler is done executing but before the CVehicleAppearanceDataNode is synced to the server. In these cases, the changes made in the state bag handler will not apply. It is highly recommended that you have a mechanism to check if the changes applied server-side (for example checking [GET_VEHICLE_COLOURS](https://docs.fivem.net/natives/?_0x40D82D88)) and to recreate the vehicle if they fail to apply after a certain amount of time. {{% /alert %}}
 
 ## No colshape system
 
 FiveM does not have a "colshape" system to trigger interactions when a player enters a specific polygon, square, or sphere.
 
-You must implement similar logic yourself (for example, by checking player positions within regions) or use an existing resource like [PolyZone](https://github.com/mkafrin/PolyZone).
+You must implement similar logic yourself (for example, by checking player positions within regions) or use an existing resource like [PolyZone](https://github.com/mkafrin/PolyZone) or [ox_lib's Zones system](https://overextended.dev/ox_lib/Modules/Zones/Shared).
 
 ## No dynamic entities
 
@@ -105,7 +173,7 @@ FiveM's ACE permission system is its own permission model and does not have a di
 
 Pool sizes are controlled by the server; the client adjusts pool sizes on connect. If the client's pool sizes do not match the server's startup configuration, the client may auto-restart.
 
-Pool sizes are configured via server startup arguments and cannot be changed at runtime.
+Pool sizes are [configured via server startup arguments ](docs/server-manual/server-commands/#increase_pool_size-poolname-increase) and cannot be changed at runtime.
 
 ## Identifiers (Social Club, Cloud Auth, Hardware Serial, etc.)
 
@@ -127,7 +195,7 @@ Most entity APIs are exposed as native functions. Custom helper functions can ex
 
 ## Entity identifiers
 
-There are three common entity identifier types to keep in mind:
+There are three common [entity identifier types](docs/scripting-manual/networking/ids/) to keep in mind:
 
 - **Handles**: local identifiers that are not synchronized between client and server.
 - **PlayerIds**: unique identifiers for connected players. Players also have ped entity IDs that are synchronized between client and server.
@@ -151,9 +219,9 @@ Search the [Native Reference](https://docs.fivem.net/natives/) for `kvp` natives
 
 Entities marked as networked in their creation parameters are synchronized by the client by default.
 
-To prevent clients from creating synchronized entities, you can enable the strict entity lockdown mode.
+To prevent clients from creating synchronized entities, you can enable the strict [entity lockdown mode](https://docs.fivem.net/docs/scripting-reference/onesync/#entity-lockdown).
 
-The server can also intercept entity creation by canceling the `entityCreating` event, and if you need to prevent an entity from being deleted on the client, you can use `SetEntityOrphanMode`.
+The server can also intercept entity creation by canceling the `entityCreating` event, and if you need to prevent an entity from being deleted on the client, you can use [SET_ENTITY_ORPHAN_MODE](https://docs.fivem.net/natives/?_0x489E9162).
 
 ## disableOutgoingSync
 
