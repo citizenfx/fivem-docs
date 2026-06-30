@@ -29,3 +29,4 @@ We'll start by setting up the essential software, then gradually move into impor
 - [**Part 5 - Collision Editing and Creation**](./beginner-series/part-5/)
 - [**Part 6 - LODs (Level of Detail)**](./beginner-series/part-6/)
 - [**Part 7 - Map Animation Creation**](./beginner-series/part-7/)
+- [**Part 8 - Door Creation**](./beginner-series/part-8/)
