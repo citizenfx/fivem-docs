@@ -7,7 +7,7 @@ This page covers the most common topics and differences when migrating from othe
 
 ## Server setter and Server RPC entity creation
 
-The easiest way to create an entity in a server script is to use server-side RPC natives like [CreateVehicle](https://docs.fivem.net/natives/?_0xAF35D0D2583051B0). Note that server RPC natives for creating entities only work if there is a nearby player within the [OneSync focus distance](/docs/scripting-reference/onesync/#what-is-onesync-infinity) and that the creation can fail for various reasons, such as the chosen player disconnecting.
+The easiest way to create an entity in a server script is to use server-side RPC natives like {{% native_link "CREATE_VEHICLE" %}}. Note that server RPC natives for creating entities only work if there is a nearby player within the [OneSync focus distance](/docs/scripting-reference/onesync/#what-is-onesync-infinity) and that the creation can fail for various reasons, such as the chosen player disconnecting.
 
 ```lua
 -- server.lua
@@ -77,7 +77,7 @@ AddStateBagChangeHandler("initVehicle", nil, function(bagName, key, value)
 end)
 ```
 
-{{% alert color="warning" title="Server Setters Reliablity Issues" %} Currently, in rare cases it's possible that the ownership of the entity changes after the state bag handler is done executing but before the CVehicleAppearanceDataNode is synced to the server. In these cases, the changes made in the state bag handler will not apply. It is highly recommended that you have a mechanism to check if the changes applied server-side (for example checking [GET_VEHICLE_COLOURS](https://docs.fivem.net/natives/?_0x40D82D88)) and to recreate the vehicle if they fail to apply after a certain amount of time. {{% /alert %}}
+{{% alert color="warning" title="Server Setters Reliablity Issues" %}} Currently, in rare cases it's possible that the ownership of the entity changes after the state bag handler is done executing but before the CVehicleAppearanceDataNode is synced to the server. In these cases, the changes made in the state bag handler will not apply. It is highly recommended that you have a mechanism to check if the changes applied server-side (for example checking [GET_VEHICLE_COLOURS](https://docs.fivem.net/natives/?_0x40D82D88)) and to recreate the vehicle if they fail to apply after a certain amount of time. {{% /alert %}}
 
 ## No colshape system
 
@@ -173,7 +173,7 @@ FiveM's ACE permission system is its own permission model and does not have a di
 
 Pool sizes are controlled by the server; the client adjusts pool sizes on connect. If the client's pool sizes do not match the server's startup configuration, the client may auto-restart.
 
-Pool sizes are [configured via server startup arguments ](docs/server-manual/server-commands/#increase_pool_size-poolname-increase) and cannot be changed at runtime.
+Pool sizes are [configured via server startup arguments](/docs/server-manual/server-commands/#increase_pool_size-poolname-increase) and cannot be changed at runtime.
 
 ## Identifiers (Social Club, Cloud Auth, Hardware Serial, etc.)
 
@@ -219,7 +219,7 @@ Search the [Native Reference](https://docs.fivem.net/natives/) for `kvp` natives
 
 Entities marked as networked in their creation parameters are synchronized by the client by default.
 
-To prevent clients from creating synchronized entities, you can enable the strict [entity lockdown mode](https://docs.fivem.net/docs/scripting-reference/onesync/#entity-lockdown).
+To prevent clients from creating synchronized entities, you can enable the strict [entity lockdown mode](/docs/scripting-reference/onesync/#entity-lockdown).
 
 The server can also intercept entity creation by canceling the `entityCreating` event, and if you need to prevent an entity from being deleted on the client, you can use [SET_ENTITY_ORPHAN_MODE](https://docs.fivem.net/natives/?_0x489E9162).
 
