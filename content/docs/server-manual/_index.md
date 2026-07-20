@@ -1,4 +1,5 @@
 ---
+nav_group: Getting Started
 title: Server manual
 weight: 30
 ---

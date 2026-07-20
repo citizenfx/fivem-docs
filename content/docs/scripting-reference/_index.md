@@ -1,4 +1,5 @@
 ---
+nav_group: References
 title: Scripting reference
 weight: 60
 description: >
