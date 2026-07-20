@@ -12,7 +12,7 @@ description: >
 
 {{% alert color="info" %}}Note that if you are setting up a FiveM for GTAV Enhanced server, `server.7z` is named `cfx-server_win_x64` instead.{{% /alert %}}
 
-1. Go to the [Windows server build listing][windows-artifacts] ('artifacts' listing, as in 'build artifacts').
+1. Open the [Server Download](https://docs.fivem.net/docs/server-download) page.
 2. Download the recommended build.<br>
    ![pic](/server-setup/windows-step-2.png)
 3. Open the `server.7z` you just downloaded. Use any third-party archiving tool (such as [7-Zip][7zip] or [WinRAR][winrar]) to open the `.7z` file. <br>
@@ -57,7 +57,6 @@ description: >
 #### Troubleshooting
 If you're facing slow server startups, refer to [this][slow-server-startups].
 
-[windows-artifacts]: https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/
 [server-data]: https://github.com/citizenfx/cfx-server-data
 
 [vcredist]: https://aka.ms/vs/16/release/VC_redist.x64.exe

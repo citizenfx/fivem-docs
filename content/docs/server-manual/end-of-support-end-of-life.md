@@ -16,7 +16,7 @@ You may see a message saying that the server which you are trying to join has re
 
 To resolve this, update your FiveM/RedM server artifacts.
 
-Server binaries can be downloaded from our artifacts page for [Windows](https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/) and [Linux](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/).
+Server binaries can be downloaded [here](https://docs.fivem.net/docs/server-download).
 
 ### What does this message mean for players?
 
