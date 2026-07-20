@@ -9,8 +9,11 @@ description: >
 ![pic](/server-setup/header.png)
 ### Windows
 #### Download the server
+
+{{% alert color="info" %}}Note that if you are setting up a FiveM for GTAV Enhanced server, `server.7z` is named `cfx-server_win_x64` instead.{{% /alert %}}
+
 1. Go to the [Windows server build listing][windows-artifacts] ('artifacts' listing, as in 'build artifacts').
-2. Download the latest recommended build.<br>
+2. Download the recommended build.<br>
    ![pic](/server-setup/windows-step-2.png)
 3. Open the `server.7z` you just downloaded. Use any third-party archiving tool (such as [7-Zip][7zip] or [WinRAR][winrar]) to open the `.7z` file. <br>
    ![pic](/server-setup/windows-step-3.png)
@@ -21,6 +24,9 @@ description: >
    ![pic](/server-setup/windows-step-5.png)
 
 #### Start the server
+
+{{% alert color="info" %}}Note that if you are setting up FiveM for GTAV Enhanced server, `FXServer.exe` is named `cfx-server.exe` instead.{{% /alert %}}
+
 1. Double click `FXServer.exe`.<br>
    ![pic](/server-setup/windows-step2-1.png)
 2. This site should open in your browser. Make sure a PIN is filled, and click `Link Account`.<br>

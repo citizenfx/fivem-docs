@@ -14,6 +14,9 @@ description: >
 1. [Git][git-scm] if you want to follow the recommended way of _cloning_ the base server data.
 
 #### Installation
+
+{{% alert color="info" %}}Note that if you are setting up a FiveM for GTAV Enhanced server, `server.7z` is named `cfx-server_win_x64` instead.{{% /alert %}}
+
 1. Create a new directory (for example `C:\FXServer\server`), this will be used for the server binaries.
 2. Download the current recommended `master` branch build for Windows from the [Windows server build listing][windows-artifacts].
 3. Extract the build into the directory previously created.
@@ -43,6 +46,9 @@ If you're experiencing any issues, you're more likely to see them fixed if you u
 2. `xz` or `xz-utils` package.
 
 #### Installation
+
+{{% alert color="info" %}}Note that if you are setting up a FiveM for GTAV Enhanced server, `fx.tar.xz` is named `cfx-server-linux_x64` instead.{{% /alert %}}
+
 1. Create a new folder (for example `mkdir -p ~/FXServer/server`), this will be used for the server binaries.
 2. Download the current recommended `master` branch build for Linux from the [Linux server build listing][linux-artifacts] (copy the URL for the recommended server version and use `wget <url>` to download it).
 3. Extract the build to the directory that was previously created, using `cd ~/FXServer/server && tar xf fx.tar.xz` (you need to have `xz` installed, on Debian/Ubuntu this is in the `xz-utils` package).

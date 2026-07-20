@@ -214,6 +214,7 @@ Each bucket can have different rules, these are named 'lockdown modes' and they 
 
 | Mode       | Meaning                                                    |
 | ---------- | ---------------------------------------------------------- |
+| `full`     | Disables dummy object creation. Only usable on FiveM for GTAV Enhanced. |
 | `strict`   | No entities can be created by clients at all.              |
 | `relaxed`  | Only script-owned entities created by clients are blocked. |
 | `inactive` | Clients can create any entity they want.                   |

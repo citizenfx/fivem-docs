@@ -5,7 +5,9 @@ description: >
   This guide explains how to run **two FiveM clients at the same time** on one PC.
 ---
 
-## Running Two FiveM Clients (Using Shortcuts)
+## Running Two FiveM Clients `-cl2`
+
+{{% alert color="info" %}}If you are using FiveM for GTAV Enhanced [click here](#running-two-fivem-for-gtav-enhanced-clients) {{% /alert %}}
 
 ### Step 1: Locate the FiveM Executable
 
@@ -57,3 +59,22 @@ Example:
 3. Start **FiveM - Client 2**
 
 You’re now ready to run two FiveM clients simultaneously.
+
+## Running Two FiveM for GTAV Enhanced Clients
+
+### Step 1: Enable devmode
+
+1. Open your server.cfg file.
+2. Add the following line:
+
+```cfg
+sv_devMode true
+```
+
+3. Save the file and restart your server if it was running.
+
+### Step 2: Launch the client
+
+1. Start FiveM for GTAV Enhanced and connect to your server.
+2. Once connected hit F8 to open the devtools.
+3. Hover over "Debug" and click "Launch Additional Client".

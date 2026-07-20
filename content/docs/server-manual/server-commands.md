@@ -142,6 +142,45 @@ Defines which mode of state awareness to use.
 * **On**: Full state awareness and server-determined entity routing.
 * **Legacy**: Compatibility mode for scripts that expect all players to exist on each client. Not recommended due to performance issues and graphical glitches.
 
+### `onesync_enableInfinity [true|false]`
+
+A boolean variable (default `true`) that enables the Infinity system for large-scale entity synchronization. Required for large player counts. Can only be set at startup.
+
+### `onesync_population [true|false]`
+
+A boolean variable (default `true`) that enables population spawning and management. Required for NPCs to spawn.
+
+### `onesync_forceMigration [true|false]`
+
+A boolean variable (default `true`) that forces entity migration when the current owner becomes irrelevant or disconnects. Disabling may improve performance but can leave entities without an owner.
+
+### `onesync_distanceCulling [true|false]`
+
+A boolean variable (default `true`) that removes entities from sync if they are beyond a certain distance and outside the view matrix. Improves performance.
+
+### `onesync_distanceCullVehicles [true|false]`
+
+A boolean variable (default `false`) that applies distance and view-matrix culling to vehicles, similar to other entities. Can improve performance by reducing vehicle sync frequency.
+
+### `onesync_radiusFrequency [true|false]`
+
+A boolean variable (default `true`) that adjusts entity state update frequency based on distance. Closer entities update more frequently. Disabling may improve performance at the cost of distant entity accuracy.
+
+### `sv_useAccurateSends [true|false]`
+
+A boolean variable (default `true`) that sends entity state updates based on actual relevance and distance. Disabling may improve performance but reduces sync accuracy.
+
+### `sv_entityLockdown [mode]`
+
+A string variable (default `inactive`) controlling how strict the server is about client-created entities.
+
+| Mode | Description |
+| ---- | ----------- |
+| `full` | Disables dummy object creation. Only usable on FiveM for GTAV Enhanced. |
+| `strict` | No entities can be created by clients. |
+| `relaxed` | Only script-owned entities created by clients are blocked. |
+| `inactive` | Clients can create any entity. |
+
 ### `sv_enforceGameBuild [build]`
 
 Selects a game build for clients to use. This can only be specified at startup, and can not be changed at runtime.
@@ -208,6 +247,70 @@ Values starting at 32 will require `onesync` to be set to `on` or `legacy`, and 
 ### `sv_endpointPrivacy [newValue]`
 
 A boolean variable that, if true, hides player IP addresses from public reports output by the server.
+
+### `gametype [type]`
+
+A string variable that sets the game type of the server, displayed in the server browser.
+
+### `mapname [name]`
+
+A string variable that sets the map name of the server, displayed in the server browser.
+
+### `sv_lan [true|false]`
+
+A boolean variable (default `false`). When set to `true`, makes the server LAN-only. It will not appear in the public server list and license key checks are skipped.
+
+### `sv_licenseKey [key]`
+
+A string variable that sets the license key for this server. Get one at [portal.cfx.re](https://portal.cfx.re/login).
+
+### `sv_scriptHookAllowed [true|false]`
+
+A boolean variable (default `false`). Set to `true` to allow clients with Script Hook V to connect.
+
+{{% alert color="warning" %}}
+Not recommended — makes the server vulnerable to security issues.
+{{% /alert %}}
+
+### `sv_endpoints [endpoints]`
+
+A string variable containing a space-separated list of IP addresses clients can use to connect via UDP. When multiple are specified, the client selects randomly. If empty, the auto-detected public IP is used.
+
+### `sv_tcpConnectionTimeoutSeconds [seconds]`
+
+An integer variable (default `5`) that defines the time in seconds a TCP connection can be idle before it is closed.
+
+### `sv_proxyIPRanges [ranges]`
+
+A string variable (default `10.0.0.0/8 127.0.0.0/8 192.168.0.0/16 172.16.0.0/12`) containing a space-separated list of IP ranges in CIDR notation considered to be proxy servers.
+
+### `sv_enableNetEventReassembly [true|false]`
+
+A boolean variable (default `true`) that enables reassembly of large network events split into multiple packets.
+
+### `sv_netEventReassemblyMaxPendingEvents [count]`
+
+An integer variable (default `100`) defining the maximum pending reassembled network events per client (0–254). Increase to allow more concurrent large events, or decrease to limit memory usage.
+
+### `sv_netEventReassemblyUnlimitedPendingEvents [true|false]`
+
+A boolean variable (default `false`). Set to `true` to allow unlimited pending reassembled events per client. Overrides `sv_netEventReassemblyMaxPendingEvents`.
+
+### `sv_forceIndirectListing [true|false]`
+
+A boolean variable (default `false`) that prevents the server from being advertised using its real IP address. Uses proxy or override settings instead.
+
+### `sv_listingIpOverride [ip]`
+
+A string variable that overrides the IP address sent to the master server. Useful behind a NAT or proxy.
+
+### `sv_listingHostOverride [host]`
+
+A string variable that overrides the hostname sent to the master server. Useful behind a proxy that changes the hostname.
+
+### `sv_registerMulticastDns [true|false]`
+
+A boolean variable (default `true`) that registers the server via mDNS for LAN discovery.
 
 ### `sets sv_projectName "project name"`
 
@@ -445,6 +548,22 @@ Sets the RCon password, if unset then RCon will be disabled. FXServer RCon uses 
 
 Sets a [Steam Web API key](https://steamcommunity.com/dev/apikey), which is required to allow for Steam identifiers to be returned by the server.
 
+### `steam_webApiDomain [domain]`
+
+A string variable (default `api.steampowered.com`) defining the domain registered with the Steam Web API key. Change if `api.steampowered.com` is not reachable.
+
+### `sv_prometheusBasicAuthUser [user]`
+
+A string variable that sets the username for Prometheus basic auth on the `/perf` endpoint. Leave empty to disable. Also sent to txAdmin.
+
+### `sv_prometheusBasicAuthPassword [password]`
+
+A string variable that sets the password for Prometheus basic auth on the `/perf` endpoint. Leave empty to disable. Also sent to txAdmin.
+
+### `sv_kvsName [name]`
+
+A string variable (default `default`) defining the name of the KVP database file, stored in the `serverdata:/` folder. Can only be set at startup.
+
 ### `increase_pool_size [poolName] [increase]`
 
 Increases size of the given pool. May be used more than once to increase size of multiple pools.
@@ -635,5 +754,159 @@ Example:
 ```
 unblock_net_game_event "FIRE_EVENT"
 ```
+
+## Console commands exclusive to FiveM for GTAV Enhanced
+
+{{% alert theme="primary" %}}
+The following variables are only available in **FiveM for GTAV Enhanced**.
+{{% /alert %}}
+
+### Networking
+
+#### `sv_ioThreads [count]`
+
+An integer variable (default `0`) specifying the number of IO threads for network operations. Defaults to CPU core count, capped between 2 and 4. Can only be set at startup.
+
+#### `sv_clientConnectingTimeoutMilliseconds [ms]`
+
+An integer variable (default `60000`) that defines the time in milliseconds a client has to finish connecting before it is dropped.
+
+#### `sv_clientConnectedTimeoutMilliseconds [ms]`
+
+An integer variable (default `120000`) that defines the time in milliseconds a connected client can stop sending packets before it is dropped.
+
+#### `sv_pingIntervalMilliseconds [ms]`
+
+An integer variable (default `5000`) that defines how often (in milliseconds) the client sends a ping to keep the connection alive. Lower values detect lost connections faster but increase bandwidth.
+
+### Voice
+
+#### `sv_voiceChat [true|false]`
+
+A boolean variable (default `false`) that controls whether voice chat is enabled on the server.
+
+#### `sv_mumble [true|false]`
+
+A boolean variable (default `false`) that enables the legacy Mumble compatibility API.
+
+{{% alert color="warning" %}}
+**Deprecated** — less secure than the new server Voice API. See the [Voice Server](/docs/scripting-manual/voice/) documentation.
+{{% /alert %}}
+
+### OneSync
+
+#### `onesync_migrateDataTimeout [ms]`
+
+An integer variable (default `10000`) that defines the time in milliseconds before an entity is forcefully migrated if its owner stops sending sync updates.
+
+#### `onesync_compressionDictionarySamples [true|false]`
+
+A boolean variable (default `false`) that enables generating sample data for the compression dictionary. Internal usage only.
+
+#### `onesync_mapBoundsMinX [value]`
+
+An integer variable (default `-10000`) defining the minimum X coordinate of the map bounds. Can only be set at startup.
+
+#### `onesync_mapBoundsMinY [value]`
+
+An integer variable (default `-10000`) defining the minimum Y coordinate of the map bounds. Can only be set at startup.
+
+#### `onesync_mapBoundsMaxX [value]`
+
+An integer variable (default `65536`) defining the maximum X coordinate of the map bounds. Can only be set at startup.
+
+#### `onesync_mapBoundsMaxY [value]`
+
+An integer variable (default `65536`) defining the maximum Y coordinate of the map bounds. Can only be set at startup.
+
+#### `onesync_mapCellAreaSize [size]`
+
+An integer variable (default `100`) defining the size of each cell in the world grid. Smaller values use more RAM but less CPU. Best value depends on average entity range; `100` is usually optimal. Can only be set at startup.
+
+### Development & game build
+
+#### `sv_devMode [true|false]`
+
+A boolean variable (default `false`) that enables development mode. Automatically enables dev mode for joining clients and limits max clients to 8.
+
+{{% alert color="warning" %}}
+**Do not enable in production.**
+{{% /alert %}}
+
+### Rate limiters
+
+Rate limiters use a token bucket algorithm. Each limiter has a **rate** (tokens replenished per second) and a **burst** (maximum token count). A request consumes one token; if the bucket is empty, the request is rate-limited.
+Buckets are considered empty if no tokens are available.
+
+| Limiter | Rate (tokens/s) | Burst (max tokens) |
+| ------- | --------------- | ------------------ |
+| `challenge` | 4 | 10 |
+| `handshake` | 4 | 10 |
+| `handshakeUDP` | 1 | 5 |
+| `http_dynamic` | 4 | 10 |
+| `http_info` | 4 | 10 |
+| `http_perf` | 2 | 5 |
+| `http_players` | 4 | 10 |
+| `netCommand` | 7 | 14 |
+| `netCommandFlood` | 25 | 45 |
+| `netCommandSize` | 1024 | 8192 |
+| `netEvent` | 50 | 200 |
+| `netEventFlood` | 75 | 300 |
+| `rcon` | 2 | 5 |
+| `res_http_handler` | 10 | 25 |
+| `resourceList` | 10 | 25 |
+| `stateBag` | 75 | 125 |
+| `stateBagFlood` | 150 | 175 |
+| `stateBagSize` | 131072 | 262144 |
+
+Each limiter can be configured with two ConVars:
+
+```cfg
+set rateLimiter_<name>_rate <value>
+set rateLimiter_<name>_burst <value>
+```
+
+For example, to adjust the netEvent rate limiter:
+
+```cfg
+set rateLimiter_netEvent_rate 100
+set rateLimiter_netEvent_burst 400
+```
+
+### Recording & replay
+
+These commands record the network sync of an entity to a file and replay it back.
+
+#### `sync_start_recording [netId] [compressed]`
+
+Starts recording the network sync of the entity with the given network ID to a file. `compressed` is an optional boolean that enables compression of the recording.
+
+#### `sync_stop_recording [netId]`
+
+Stops the recording in progress for the entity with the given network ID.
+
+#### `replay_start [fileName] [mode]`
+
+Starts replaying a previously recorded file. `mode` controls playback behavior:
+
+- `0`: Once. Play the recording a single time.
+- `1`: Loop. Repeat the recording continuously.
+- `2`: Perfect loop. Repeat the recording seamlessly.
+
+Prints a replay id that can be passed to `replay_stop`.
+
+#### `replay_stop [replayId]`
+
+Stops the replay with the given replay ID (as returned by `replay_start`).
+
+### Deprecated & compatibility variables
+
+The following variables exist only for backward compatibility and have no effect:
+
+| Variable | Type | Default | Notes |
+| -------- | ---- | ------- | ----- |
+| `onesync_enableBeyond` | bool | `false` | Not necessary anymore. |
+| `sv_enhancedHostSupport` | bool | `false` | Not used anymore (P2P). |
+| `sv_protectServerEntities` | bool | `false` | Not implemented. Use `sv_entityLockdown` instead. |
 
 [servercfg]: /docs/server-manual/setting-up-a-server-vanilla/#servercfg

@@ -18,7 +18,6 @@ Connects to a server using a given IP address and port, or URL.
 
 Example: `connect 127.0.0.1:30120`, `connect "https://fivem.net/"`, `connect cfx.re/join/y4lg95`
 
-
 ### disconnect
 Disconnects you from the server you are connected to and returns to the main menu.
 
@@ -81,6 +80,54 @@ Sets the music volume for the game when in single-player modes.
 ### profile_musicVolumeInMp \<0-10+>
 Sets the music volume for the game when connected to a network game.
 
+### voice_enableNoiseSuppression
+Enable noise suppression to reduce background noise in voice chat.
+
+Usage: `voice_enableNoiseSuppression <true|false>`  
+Default: `true`
+
+### voice_inBitrate
+The bitrate at which voice data is encoded. Higher bitrates will result in better quality, but also higher bandwidth usage.
+
+Usage: `voice_inBitrate <16000-128000>`  
+Default: `48000`
+
+### cam_disableCameraShake
+Disable camera shake effects, such as from explosions.
+
+Usage: `cam_disableCameraShake <true|false>`  
+Default: `false`
+
+### cam_enableHandbrakeCamera
+Disable the handbrake camera swing effect in the follow vehicle camera.
+
+Usage: `cam_enableHandbrakeCamera <true|false>`  
+Default: `true`
+
+### cam_vehicleFirstPersonFOV
+Set the first person FOV of the vehicle.
+
+Usage: `cam_vehicleFirstPersonFOV <-1 to 130>`  
+Default: `-1`
+
+### nui_useInProcessGpu
+Whether to use in-process GPU for CEF. This might improve compatibility, but reduces NUI performance. Requires a restart when changed.
+
+Usage: `nui_useInProcessGpu <true|false>`  
+Default: `false`
+
+### str_maxVehicleTextureRes
+Limits the maximum resolution of vehicle textures. This can help reduce the incidence of physical memory running out, at the cost of visual quality.
+
+Usage: `str_maxVehicleTextureRes <int>`  
+Default: `1024`
+
+### allowEmptyHeadDrawable
+Whether it is allowed to set an empty head drawable (drawable ID of `0`).
+
+Usage: `allowEmptyHeadDrawable <true|false>`  
+Default: `false`
+
 ## Developer commands
 
 Developer commands require the client to run in a developer mode, or they'll show an error like `Access denied for command resmon` or `Command strdbg is disabled in production mode`.
@@ -95,6 +142,12 @@ This type of developer mode can be enabled in a few ways:
 ### cmdlist
 The `cmdlist` command will list all the commands that are registered on the client (or server). It will also output the
 variables that have been set by using the `set`, `sets` and `seta` commands.
+
+### con_autoScroll
+Automatically scroll the dev console to the bottom when new log entries are added.
+
+Usage: `con_autoScroll <true|false>`  
+Default: `true`
 
 ### con_miniconChannels
 You can use the `con_miniconChannels` to display console messages on screen without needing to open the client console.
@@ -112,6 +165,12 @@ Example patterns:
 - All messages: `*`
 - Messages originating from any resource: `script:*`
 - Messages originating from both `banking` and `racing` resources: `script:banking script:racing`
+
+### con_winconsole
+Show the Windowed console dev tool.
+
+Usage: `con_winconsole <true|false>`  
+Default: `false`
 
 ### developer
 Enables some additional logging for developers. Typically not of use to a regular user.
@@ -358,6 +417,13 @@ Types:
 
 Usage: `game_enableScaleformDebugLog <true|false>`
 
+### game_enableDynamicDoorCreation
+Allows the game to create dynamic doors using script natives.
+
+Usage: `game_enableDynamicDoorCreation <true|false>`  
+Default: `false`  
+Note: This variable can be replicated from the server via `setr` usage.
+
 ### game_enableFlyThroughWindscreen
 The `game_enableFlyThroughWindscreen` command will toggle a boolean variable to determine whether the ped should fly through the windscreen upon a crash.
 
@@ -376,12 +442,179 @@ The `game_enablePlayerRagdollOnCollision` command will toggle a boolean variable
 Usage: `game_enablePlayerRagdollOnCollision <true|false>`  
 Note: This variable can be replicated from the server via `setr` usage.
 
+### game_originalBikeJump
+Whether to use the original bike jump physics. Enabling this may cause bikes to fly higher and farther than with the new physics, but will also make jumps more consistent and easier to control.
+
+Usage: `game_originalBikeJump <true|false>`  
+Default: `false`  
+Note: This variable can be replicated from the server via `setr` usage.
+
+### game_sanitizeRagdollEvents
+Whether to sanitize ragdoll events to prevent exploits that force the own player into a ragdoll.
+
+Usage: `game_sanitizeRagdollEvents <true|false>`  
+Default: `true`  
+Note: This variable can be replicated from the server via `setr` usage.
+
+### onesync_population
+Enable population spawning and management. Required for NPCs to spawn.
+
+Usage: `onesync_population <true|false>`  
+Default: `true`  
+Note: This variable can be replicated from the server via `setr` usage.
+
+### sv_enableNetEventReassembly
+Enable the reassembly of large network events that are split into multiple packets.
+
+Usage: `sv_enableNetEventReassembly <true|false>`  
+Default: `true`  
+Note: This variable can be replicated from the server via `setr` usage.
+
 ### test_ace
 Tests if a principal is allowed or denied access to a given object.
 
 Usage: `test_ace <principal> <object>`
 
 Example: `test_ace group.admin command.adminstuff`
+
+## Console commands exclusive to FiveM for GTAV Enhanced
+
+{{% alert theme="primary" %}}
+The following variables are only available in **FiveM for GTAV Enhanced**.
+{{% /alert %}}
+
+### Client UI, Debug & Tools
+
+#### cl_drawResTimeGraphs
+Show the Resource Time Graphs dev tool.
+
+Usage: `cl_drawResTimeGraphs <true|false>`  
+Default: `false`
+
+#### cl_drawResTimeWarnings
+Show the Resource Time Warnings dev tool.
+
+Usage: `cl_drawResTimeWarnings <true|false>`  
+Default: `false`
+
+#### con_archetypeMonitor
+Show the Archetype Tool dev tool.
+
+Usage: `con_archetypeMonitor <true|false>`  
+Default: `false`
+
+#### con_audioTool
+Show the Audio Tool dev tool.
+
+Usage: `con_audioTool <true|false>`  
+Default: `false`
+
+#### con_discordRichPresence
+Show the Discord Rich Presence dev tool.
+
+Usage: `con_discordRichPresence <true|false>`
+Default: `false`
+
+#### con_handlingEditor
+Show the Handling Tool dev tool.
+
+Usage: `con_handlingEditor <true|false>`  
+Default: `false`
+
+#### con_inputViewer
+Show the Input Viewer dev tool.
+
+Usage: `con_inputViewer <true|false>`  
+Default: `false`
+
+#### con_minconsole
+Show the Mini console dev tool.
+
+Usage: `con_minconsole <true|false>`  
+Default: `false`
+
+#### con_poolInspector
+Show the Pool Tool dev tool.
+
+Usage: `con_poolInspector <true|false>`  
+Default: `false`
+
+#### con_smoketest
+Show the Smoketest Tool dev tool.
+
+Usage: `con_smoketest <true|false>`  
+Default: `false`
+
+#### con_streamingMonitor
+Show the Streaming Tool dev tool.
+
+Usage: `con_streamingMonitor <true|false>`  
+Default: `false`
+
+#### con_timeCycleEditor
+Show the TimeCycle Editor dev tool.
+
+Usage: `con_timeCycleEditor <true|false>`  
+Default: `false`
+
+#### netobjlabeling
+Show the Network Object Labeling dev tool.
+
+Usage: `netobjlabeling <true|false>`  
+Default: `false`
+
+### Game Behavior
+
+#### game_enableAdvancedPopulation
+Enables single-player population features like wildlife or more versatile peds.
+
+Usage: `game_enableAdvancedPopulation <true|false>`  
+Default: `false`  
+Note: This variable can be replicated from the server via `setr` usage.
+
+#### game_enableEnterVehicleFemaleClipset
+Makes female peds use the female enter animation in cars, which is slightly slower than the male one.
+
+Usage: `game_enableEnterVehicleFemaleClipset <true|false>`  
+Default: `false`  
+Note: This variable can be replicated from the server via `setr` usage.
+
+#### game_enablePetrolLeakage
+Allows petrol to leak from vehicles when their petrol tank is damaged.
+
+Usage: `game_enablePetrolLeakage <true|false>`  
+Default: `false`  
+Note: This variable can be replicated from the server via `setr` usage.
+
+#### game_setDefaultEntityCapLimitToLow
+Whether to set the default entity instance priority level cap to low. This means that, unless overridden, entities will be unloaded at a farther distance from the player, which can help with performance on lower-end hardware. This only affects entities with the default priority level cap of medium.
+
+Usage: `game_setDefaultEntityCapLimitToLow <true|false>`  
+Default: `false`  
+Note: This variable can be replicated from the server via `setr` usage.
+
+### Voice
+
+#### voice_enableEchoCancellation
+Enable echo cancellation to reduce feedback when using speakers instead of headphones.
+
+Usage: `voice_enableEchoCancellation <true|false>`  
+Default: `true`
+
+#### voice_enableVoiceNormalization
+Enable voice normalization to reduce the difference in volume between different speakers.
+
+Usage: `voice_enableVoiceNormalization <true|false>`  
+Default: `true`
+
+### Networking & Sync
+
+#### sv_pingIntervalMilliseconds
+How often (in milliseconds) the client sends a ping to keep the connection alive. Lower values detect lost connections faster but increase bandwidth.
+
+Usage: `sv_pingIntervalMilliseconds <int>`  
+Default: `5000`  
+Note: This variable can be replicated from the server via `setr` usage.
 
 [faq-data]: https://support.cfx.re/hc/en-us/articles/8016397932444-Client-FAQ#where-is-fivem-installed
 [vconsole]: https://forum.cfx.re/t/20005

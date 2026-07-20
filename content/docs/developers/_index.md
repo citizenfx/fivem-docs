@@ -10,3 +10,5 @@ This section of the documentation is specific to the core mechanics of FiveM.
 - [Script runtimes](/docs/developers/script-runtimes/)
 
 - [Sandbox](/docs/developers/sandbox/)
+
+- [What's Changed in FiveM for GTAV Enhanced](/docs/developers/legacy-vs-enhanced/)

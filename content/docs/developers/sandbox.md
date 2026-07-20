@@ -69,6 +69,8 @@ The `SaveResourceFile` native function follows these same rules.
 
 - Operations in the server main folder are blocked
 - Operations outside resource folders are blocked
+- Symlinks are disabled and cannot be followed or created
+- Path traversal using `..` is disabled and rejected
 - Blocked operations return error code 13 "Permission denied"
 
 ## OS Operations
@@ -134,3 +136,19 @@ add_convar_permission resourceA read some_convar_name
 {{% alert color="info" %}}
 By default, ConVars are readable by all resources. Once a ConVar has at least one permission configured, it becomes restricted and only explicitly permitted resources can access it.
 {{% /alert %}}
+
+### Unsafe Worker Permission
+
+Spawning workers is restricted by default. To explicitly allow a resource to spawn workers, use the `add_unsafe_worker_permission` configuration:
+
+```cfg
+add_unsafe_worker_permission "resourceName"
+```
+
+### Unsafe Child Process Permission
+
+Spawning child processes is restricted by default. To explicitly allow a resource to spawn child processes, use the `add_unsafe_child_process_permission` configuration:
+
+```cfg
+add_unsafe_child_process_permission "resourceName"
+```

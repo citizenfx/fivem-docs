@@ -47,6 +47,11 @@ Controls the gap between the crosshair's center dot and the lines.
 
 Usage: `cl_crosshairgap 1.0`
 
+### cl_crosshair_t \<bool\>
+Controls whether a vertical line is rendered on top of the crosshair. When disabled, only the left, right, and bottom lines are rendered.
+
+Usage: `cl_crosshair_t <true|false>`
+
 ### cl_crosshair_drawoutline \<bool\>
 Controls whether the crosshair should have outline or not. Used together with `cl_crosshair_outlinethickness`.
 
