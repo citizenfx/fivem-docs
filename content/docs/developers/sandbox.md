@@ -115,7 +115,7 @@ Enabling resource modifications or filesystem permissions can be dangerous if mi
 
 ### File System Permissions
 
-To explicitly allow a resource to write files to another resource, use the `add_filesystem_permission` configuration:
+To explicitly allow a resource to write files to another resource, use the `add_filesystem_permission` configuration in the `server.cfg` file:
 
 ```lua
 -- Allow resourceA to write files to resourceB
@@ -126,7 +126,7 @@ This override grants full write access to the target resource and bypasses the d
 
 ### ConVar Permissions
 
-To restrict ConVar access to specific resources, use the `add_convar_permission` configuration:
+To restrict ConVar access to specific resources, use the `add_convar_permission` configuration in the `server.cfg` file:
 
 ```lua
 -- Restrict reading of a ConVar to specific resources
