@@ -20,7 +20,7 @@ This page covers what's changed for server owners and resource developers moving
 | `sv_netHttp2`                      | HTTP/2 support removed                                                                                                                                                                                                                                                                             |
 | DevCon server ports (29200, 29300) | Removed                                                                                                                                                                                                                                                                                            |
 | Server ImGui GUI                   | Removed                                                                                                                                                                                                                                                                                            |
-| `+set moo 31337` developer command | Was used in Gen8 to enable devmode; removed. Client dev tools now only work when `sv_devMode true` is set on the server. Dev mode can also be set via the connection deferral handover.                                                                                                            |
+| `+set moo 31337` developer command | Was used in FiveM Legacy to enable devmode; removed. Use [`sv_devMode true`](#developer-mode) instead.                                                                                                                                                                                             |
 | `sv_useAccurateSends`              | Deprecated (see `sv_syncTickRate` below)                                                                                                                                                                                                                                                           |
 | `-cl2` parameter                   | Deprecated. Check the [running-two-fivem-clients](/docs/client-manual/running-two-fivem-clients/) article for more information.                                                                                                                                                                    |
 | Mumble                             | Deprecated. Check the [voice](/docs/scripting-manual/voice/) article for more information.                                                                                                                                                                                                         |
@@ -89,14 +89,6 @@ so that it appears on the client.
 #### Resource Builders
 
 Resources can no longer be builders.
-
-#### DevCon Ports
-
-DevCon server ports 29200 and 29300 were removed.
-
-#### Server ImGui
-
-Server ImGui GUI was removed.
 
 #### Mono to .NET
 
