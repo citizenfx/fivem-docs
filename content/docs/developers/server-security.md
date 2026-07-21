@@ -1,5 +1,5 @@
 ---
-title: Secure your events
+title: Secure Your Events
 weight: 30
 ---
 

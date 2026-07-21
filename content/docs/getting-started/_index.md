@@ -1,4 +1,5 @@
 ---
+nav_group: Getting Started
 title: Getting Started
 weight: 10
 description: >

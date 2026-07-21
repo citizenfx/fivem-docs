@@ -1,5 +1,6 @@
 ---
-title: Developer docs
+nav_group: Support
+title: Developer Docs
 weight: 110
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Useful snippet: getting the top left of the minimap in screen coordinates"
+title: "Useful Snippet: Getting the Top Left of the Minimap in Screen Coordinates"
 date: 2019-08-12T12:33:08.000+02:00
 ---
 

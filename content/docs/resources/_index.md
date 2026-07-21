@@ -1,5 +1,6 @@
 ---
-title: Stock resources
+nav_group: References
+title: Stock Resources
 weight: 80
 ---
 

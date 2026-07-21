@@ -1,5 +1,5 @@
 ---
-title: Fuel consumption
+title: Fuel Consumption
 weight: 20
 ---
 

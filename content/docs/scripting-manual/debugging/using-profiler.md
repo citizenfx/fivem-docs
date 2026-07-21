@@ -1,5 +1,5 @@
 ---
-title: Using the profiler
+title: Using the Profiler
 description: A guide to using the built-in resource profiler.
 ---
 

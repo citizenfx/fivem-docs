@@ -1,5 +1,5 @@
 ---
-title: System requirements
+title: System Requirements
 weight: 30
 ---
 

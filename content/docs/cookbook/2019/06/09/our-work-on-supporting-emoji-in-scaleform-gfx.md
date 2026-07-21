@@ -1,5 +1,5 @@
 ---
-title: Our work on supporting emoji in Scaleform GFx
+title: Our Work on Supporting Emoji in Scaleform GFx
 date: 2019-06-09T09:37:38.000+02:00
 ---
 

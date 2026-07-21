@@ -1,5 +1,5 @@
 ---
-title: Using the new console key bindings
+title: Using the New Console Key Bindings
 date: 2020-01-06T18:57:22.000+01:00
 ---
 

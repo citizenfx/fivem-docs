@@ -1,5 +1,5 @@
 ---
-title: Working with events
+title: Working with Events
 weight: 50
 ---
 

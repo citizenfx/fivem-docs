@@ -1,5 +1,5 @@
 ---
-title: State bags
+title: State Bags
 weight: 20
 ---
 

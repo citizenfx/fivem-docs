@@ -1,5 +1,5 @@
 ---
-title: Scripting introduction
+title: Scripting Introduction
 weight: 10
 ---
 

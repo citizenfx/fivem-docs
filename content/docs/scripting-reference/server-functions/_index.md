@@ -1,5 +1,5 @@
 ---
-title: Server functions
+title: Server Functions
 weight: 20
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Client-side functions in C#
+title: Client-Side Functions in C#
 weight: 10
 ---
 

@@ -1,4 +1,5 @@
 ---
+nav_group: Products
 title: Alchemist
 weight: 90
 description: >

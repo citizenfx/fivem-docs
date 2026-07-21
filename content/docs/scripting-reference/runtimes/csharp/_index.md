@@ -1,5 +1,5 @@
 ---
-title: C# function reference
+title: C# Function Reference
 weight: 30
 ---
 

@@ -1,4 +1,5 @@
 ---
+nav_group: Products
 title: FxDK
 weight: 100
 ---

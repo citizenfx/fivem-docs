@@ -1,5 +1,5 @@
 ---
-title: Scripting runtimes
+title: Scripting Runtimes
 weight: 20
 ---
 

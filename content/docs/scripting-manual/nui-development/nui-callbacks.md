@@ -1,5 +1,5 @@
 ---
-title: NUI callbacks
+title: NUI Callbacks
 weight: 20
 ---
 

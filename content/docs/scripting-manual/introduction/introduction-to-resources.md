@@ -1,5 +1,5 @@
 ---
-title: Introduction to resources
+title: Introduction to Resources
 weight: 10
 ---
 

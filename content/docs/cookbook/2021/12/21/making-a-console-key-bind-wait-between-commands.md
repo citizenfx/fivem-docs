@@ -1,5 +1,5 @@
 ---
-title: Making a console key bind wait between commands
+title: Making a Console Key Bind Wait Between Commands
 date: 2021-12-21T19:44:13.000+01:00
 ---
 

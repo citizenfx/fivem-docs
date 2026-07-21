@@ -1,4 +1,5 @@
 ---
+nav_group: Support
 title: Contributing
 description: >
   How you can help.

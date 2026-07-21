@@ -1,5 +1,6 @@
 ---
-title: Client manual
+nav_group: Getting Started
+title: Client Manual
 weight: 20
 ---
 

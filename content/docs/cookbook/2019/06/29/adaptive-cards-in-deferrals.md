@@ -1,5 +1,5 @@
 ---
-title: Adaptive Cards in deferrals
+title: Adaptive Cards in Deferrals
 date: 2019-06-29T08:11:09.000+02:00
 ---
 

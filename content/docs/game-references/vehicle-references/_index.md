@@ -1,5 +1,5 @@
 ---
-title: Vehicle references
+title: Vehicle References
 ---
 
 Reference lists of vehicle data are in this category

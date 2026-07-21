@@ -1,5 +1,5 @@
 ---
-title: User interfaces with NUI
+title: User Interfaces with NUI
 weight: 60
 ---
 

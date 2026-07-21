@@ -1,4 +1,5 @@
 ---
+nav_group: Support
 title: Support
 weight: 120
 ---

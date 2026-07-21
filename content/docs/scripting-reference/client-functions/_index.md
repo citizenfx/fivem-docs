@@ -1,5 +1,5 @@
 ---
-title: Client functions
+title: Client Functions
 weight: 10
 ---
 

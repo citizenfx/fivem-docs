@@ -1,5 +1,5 @@
 ---
-title: Project building
+title: Project Building
 weight: 30
 ---
 

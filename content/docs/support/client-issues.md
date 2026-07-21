@@ -1,5 +1,5 @@
 ---
-title: Client issues
+title: Client Issues
 weight: 10
 ---
 

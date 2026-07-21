@@ -1,4 +1,5 @@
 ---
+nav_group: Archive
 title: Cookbook Archive
 weight: 999
 ---

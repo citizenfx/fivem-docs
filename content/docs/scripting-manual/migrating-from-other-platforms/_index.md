@@ -1,5 +1,5 @@
 ---
-title: Migrating from other GTAV multiplayer platforms
+title: Migrating from Other GTAV Multiplayer Platforms
 weight: 95
 ---
 

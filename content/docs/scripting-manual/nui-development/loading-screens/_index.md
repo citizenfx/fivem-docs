@@ -1,5 +1,5 @@
 ---
-title: Loading screens
+title: Loading Screens
 weight: 30
 ---
 

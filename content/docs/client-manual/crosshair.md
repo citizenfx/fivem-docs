@@ -1,5 +1,5 @@
 ---
-title: Crosshair commands
+title: Crosshair Commands
 weight: 60
 ---
 

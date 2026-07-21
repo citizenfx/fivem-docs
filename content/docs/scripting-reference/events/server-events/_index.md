@@ -1,5 +1,5 @@
 ---
-title: Server events
+title: Server Events
 weight: 20
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Creating chat messages
+title: Creating Chat Messages
 weight: 10
 ---
 

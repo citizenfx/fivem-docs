@@ -1,5 +1,5 @@
 ---
-title: Weapon models
+title: Weapon Models
 ---
 
 <style>

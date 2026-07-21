@@ -1,5 +1,6 @@
 ---
-title: Game references
+nav_group: References
+title: Game References
 weight: 70
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Lua function reference
+title: Lua Function Reference
 weight: 10
 ---
 
