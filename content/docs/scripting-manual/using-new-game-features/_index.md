@@ -1,5 +1,5 @@
 ---
-title: Using new game features
+title: Using New Game Features
 weight: 100
 ---
 

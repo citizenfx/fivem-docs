@@ -1,6 +1,6 @@
 ---
 nav_group: References
-title: Scripting reference
+title: Scripting Reference
 weight: 60
 description: >
   All the things referencing scripting

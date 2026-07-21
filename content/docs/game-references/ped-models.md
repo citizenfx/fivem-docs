@@ -1,5 +1,5 @@
 ---
-title: Ped models
+title: Ped Models
 ---
 
 List of all working ped models in GTAV as of July 23, 2019.

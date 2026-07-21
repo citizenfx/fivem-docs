@@ -1,5 +1,5 @@
 ---
-title: Listening for events
+title: Listening for Events
 weight: 10
 ---
 

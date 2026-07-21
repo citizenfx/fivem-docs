@@ -1,5 +1,5 @@
 ---
-title: Gamer tags
+title: Gamer Tags
 ---
 
 ![All flags enabled](/HeadDisplayExample2.png "All flags enabled")

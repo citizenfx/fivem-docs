@@ -1,5 +1,5 @@
 ---
-title: Work with drawable components and props using collections
+title: Work with Drawable Components and Props Using Collections
 weight: 10
 ---
 

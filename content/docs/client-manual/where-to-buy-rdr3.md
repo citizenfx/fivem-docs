@@ -1,5 +1,5 @@
 ---
-title: Where to buy Red Dead Redemption 2
+title: Where to Buy Red Dead Redemption 2
 weight: 20
 ---
 

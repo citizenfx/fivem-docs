@@ -1,5 +1,5 @@
 ---
-title: Creating your first script in C#
+title: Creating Your First Script in C#
 weight: 40
 ---
 

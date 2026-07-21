@@ -1,5 +1,5 @@
 ---
-title: Triggering events
+title: Triggering Events
 weight: 30
 ---
 

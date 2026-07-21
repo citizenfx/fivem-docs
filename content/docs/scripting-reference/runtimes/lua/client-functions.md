@@ -1,5 +1,5 @@
 ---
-title: Client-side functions in Lua
+title: Client-Side Functions in Lua
 weight: 10
 ---
 

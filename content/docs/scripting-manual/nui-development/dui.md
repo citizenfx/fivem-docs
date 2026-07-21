@@ -1,5 +1,5 @@
 ---
-title: Direct-rendered UI
+title: Direct-Rendered UI
 weight: 40
 ---
 

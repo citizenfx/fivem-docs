@@ -1,5 +1,5 @@
 ---
-title: Resource manifest
+title: Resource Manifest
 weight: 30
 aliases:
   - /docs/scripting-reference/resource-manifest/resource-manifest/

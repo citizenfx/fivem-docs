@@ -1,5 +1,5 @@
 ---
-title: Where to buy GTAV
+title: Where to Buy GTAV
 weight: 10
 ---
 

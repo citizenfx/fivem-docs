@@ -1,5 +1,5 @@
 ---
-title: Server issues
+title: Server Issues
 weight: 20
 ---
 

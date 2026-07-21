@@ -1,5 +1,5 @@
 ---
-title: Migrating from deprecated methods
+title: Migrating from Deprecated Methods
 weight: 90
 ---
 

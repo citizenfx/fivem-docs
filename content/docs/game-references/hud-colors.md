@@ -1,5 +1,5 @@
 ---
-title: HUD colors
+title: HUD Colors
 ---
 
 This page lists the default HUD colors as defined in `common:/data/ui/hudcolor.dat`, which can be overridden or obtained

@@ -1,5 +1,5 @@
 ---
-title: Network and local IDs
+title: Network and Local IDs
 weight: 10
 ---
 

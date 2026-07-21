@@ -1,5 +1,5 @@
 ---
-title: "Routing buckets: split game state"
+title: "Routing Buckets: Split Game State"
 date: 2020-11-28T00:39:23.000+01:00
 ---
 

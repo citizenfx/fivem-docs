@@ -1,5 +1,5 @@
 ---
-title: Game events
+title: Game Events
 ---
 
 This is a list of low-level game events. That means, these are the events that come straight from GTAV's core

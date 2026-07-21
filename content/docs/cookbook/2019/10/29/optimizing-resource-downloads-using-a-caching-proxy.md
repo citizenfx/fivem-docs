@@ -1,5 +1,5 @@
 ---
-title: Optimizing resource downloads using a caching proxy
+title: Optimizing Resource Downloads Using a Caching Proxy
 date: 2019-10-29T07:29:41.000+01:00
 ---
 

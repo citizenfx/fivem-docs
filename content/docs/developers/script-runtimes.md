@@ -1,5 +1,5 @@
 ---
-title: Script runtimes
+title: Script Runtimes
 weight: 20
 description: >
   Describes support for the fxOM script runtimes.

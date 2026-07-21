@@ -1,6 +1,6 @@
 ---
 nav_group: Guides
-title: Guides for scripting
+title: Guides for Scripting
 weight: 50
 ---
 

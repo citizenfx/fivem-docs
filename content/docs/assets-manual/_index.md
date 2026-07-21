@@ -1,6 +1,6 @@
 ---
 nav_group: Guides
-title: Guides for 3D assets
+title: Guides for 3D Assets
 weight: 40
 ---
 

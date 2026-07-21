@@ -1,5 +1,5 @@
 ---
-title: Creating commands
+title: Creating Commands
 weight: 20
 ---
 

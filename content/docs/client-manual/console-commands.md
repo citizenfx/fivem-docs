@@ -1,5 +1,5 @@
 ---
-title: Console commands
+title: Console Commands
 weight: 50
 ---
 

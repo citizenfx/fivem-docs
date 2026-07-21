@@ -1,5 +1,5 @@
 ---
-title: Lua support for compile-time Jenkins hashes
+title: Lua Support for Compile-Time Jenkins Hashes
 date: 2019-06-23T14:41:09.000+02:00
 ---
 

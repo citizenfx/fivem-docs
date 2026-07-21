@@ -1,5 +1,5 @@
 ---
-title: List of events
+title: List of Events
 weight: 30
 ---
 

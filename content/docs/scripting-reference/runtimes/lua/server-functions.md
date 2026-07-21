@@ -1,5 +1,5 @@
 ---
-title: Server-side functions in Lua
+title: Server-Side Functions in Lua
 weight: 20
 ---
 

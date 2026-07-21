@@ -1,5 +1,5 @@
 ---
-title: Coding guidelines
+title: Coding Guidelines
 draft: true
 ---
 

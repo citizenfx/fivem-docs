@@ -1,5 +1,5 @@
 ---
-title: Client events
+title: Client Events
 weight: 10
 ---
 

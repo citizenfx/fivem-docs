@@ -1,5 +1,5 @@
 ---
-title: Server-side functions in C#
+title: Server-Side Functions in C#
 weight: 20
 ---
 

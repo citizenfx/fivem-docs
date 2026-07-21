@@ -1,5 +1,5 @@
 ---
-title: Improving script stack traces
+title: Improving Script Stack Traces
 date: 2019-07-15T09:32:30.000+02:00
 ---
 
