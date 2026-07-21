@@ -13,7 +13,8 @@ disableKinds = ["taxonomy"]
 
 # Highlighting config
 pygmentsCodeFences = true
-pygmentsUseClasses = false
+# Class-based highlighting so Docsy's light/dark Chroma styles apply.
+pygmentsUseClasses = true
 # Use the new Chroma Go highlighter in Hugo.
 pygmentsUseClassic = false
 #pygmentsOptions = "linenos=table"
@@ -79,3 +80,4 @@ weight = 60
 
 [params.ui]
 sidebar_menu_compact = true
+showLightDarkModeMenu = true
