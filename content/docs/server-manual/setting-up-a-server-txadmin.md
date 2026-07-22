@@ -12,6 +12,8 @@ description: >
 
 {{% alert color="info" %}}Note that if you are setting up a FiveM for GTAV Enhanced server, `server.7z` is named `cfx-server_win_x64` instead.{{% /alert %}}
 
+{{% alert color="warning" %}}If you are setting up a **FiveM for GTAV Enhanced** server, the [Microsoft Visual C++ 2017 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) must be installed. Download and install it before running the server.{{% /alert %}}
+
 1. Open the [Server Download](https://docs.fivem.net/docs/server-download) page.
 2. Download the recommended build.<br>
    ![pic](/server-setup/windows-step-2.png)

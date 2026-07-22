@@ -18,6 +18,10 @@ If you already have a FiveM server up & running you can skip this step.
 Server artifacts contain the software needed to run a FiveM server.
 {{% /alert %}}
 
+{{% alert color="warning" %}}
+If you are setting up a **FiveM for GTAV Enhanced** server, the [Microsoft Visual C++ 2017 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) must be installed. Download and install it before running the server.
+{{% /alert %}}
+
 1. Go to [**Server Download**](https://docs.fivem.net/docs/server-download/).
 2. Click **Latest recommended** to download the latest server build.
 The download progresses and completes.

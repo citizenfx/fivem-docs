@@ -13,6 +13,8 @@ description: >
 #### Prerequisites
 1. [Git][git-scm] if you want to follow the recommended way of _cloning_ the base server data.
 
+{{% alert color="warning" %}}If you are setting up a **FiveM for GTAV Enhanced** server, the [Microsoft Visual C++ 2017 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) must be installed. Download and install it before running the server.{{% /alert %}}
+
 #### Installation
 
 {{% alert color="info" %}}Note that if you are setting up a FiveM for GTAV Enhanced server, `server.7z` is named `cfx-server_win_x64` instead.{{% /alert %}}

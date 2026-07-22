@@ -9,6 +9,10 @@ description: >
 
 Server files for FiveM for GTAV Enhanced can be downloaded from the [Server Download](https://docs.fivem.net/docs/server-download/) page.
 
+{{% alert color="warning" %}}
+The server requires the [Microsoft Visual C++ 2017 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) to be installed. Download and install it before running the server.
+{{% /alert %}}
+
 ## Converting Assets for FiveM for GTAV Enhanced
 
 We published Alchemist, a tool to convert existing assets to work with FiveM for GTAV Enhanced.
