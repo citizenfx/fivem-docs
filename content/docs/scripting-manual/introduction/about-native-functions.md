@@ -14,7 +14,7 @@ FiveM provides comprehensive documentation for native functions. This documentat
 
 - **FiveM Natives**: All documented natives can be found on [our official website](/natives/).
 
-- **Community Forums**: The [Cfx.re Forums](https://forum.cfx.re/) are another valuable resource. Here, you can find discussions, tutorials, and examples from other developers who share their experiences and solutions related to using native functions.
+- **Community Forums**: The [Cfx Forum](https://forum.cfx.re/) is another valuable resource. Here, you can find discussions, tutorials, and examples from other developers who share their experiences and solutions related to using native functions.
 
 - **Native Docs Repo**: Users can contribute to the [repository](https://github.com/citizenfx/natives) by adding descriptions, names, and new native functions.
 

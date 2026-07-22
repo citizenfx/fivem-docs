@@ -245,13 +245,13 @@ The player's name is defined in the FiveM main menu settings and cannot be chang
 
 Below are useful community pages for FiveM. Use these to ask questions, find resources, and connect with other developers.
 
-- FiveM Forum: [Cfx.re Community](https://forum.cfx.re/)
+- FiveM Forum: [Cfx Forum](https://forum.cfx.re/)
 - FiveM Discord Community: [https://discord.com/invite/fivem](https://discord.com/invite/fivem)
 - FiveM GitHub: [citizenfx/fivem](https://github.com/citizenfx/fivem)
 
 ## References (FiveM documentation)
 
-Below are useful documentation pages on the official Cfx.re / FiveM docs. Use these to look up natives, server variables, events and feature-specific guides mentioned in this document.
+Below are useful documentation pages on the official Cfx docs. Use these to look up natives, server variables, events and feature-specific guides mentioned in this document.
 
 - State bags: [State Bags documentation](/docs/scripting-manual/networking/state-bags/)
 - Native reference (search for natives like `SetEntityOrphanMode`, `GetPlayerIdentifiers`, `SetEntityDistanceCullingRadius`, etc.): [Native Reference](https://docs.fivem.net/natives/)

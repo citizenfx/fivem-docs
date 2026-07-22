@@ -50,7 +50,7 @@ YDR, YTD, YFT, YPT and YDD.
 4. Click **Convert Assets** or **Refine Assets** and wait for the process to finish.
 
 After the process is finished, you will find your converted or refined assets in the output folder.
-Selecting your Cfx.re Platform Server resources directory as an input folder will generate a drop-in replacement resources folder, compatible with FiveM Enhanced.
+Selecting your Cfx Platform Server resources directory as an input folder will generate a drop-in replacement resources folder, compatible with FiveM Enhanced.
 
 ##### Relaxed Mode
 

@@ -31,7 +31,7 @@ description: >
    ![pic](/server-setup/windows-step2-1.png)
 2. This site should open in your browser. Make sure a PIN is filled, and click `Link Account`.<br>
    ![pic](/server-setup/windows-step2-2.png)
-3. Log in to your account on [Cfx.re](https://forum.cfx.re/) in this tab and then click `Yes, Allow`.<br>
+3. Log in to your [Cfx account](https://forum.cfx.re/) in this tab and then click `Yes, Allow`.<br>
    ![pic](/server-setup/windows-step2-3.png)
 4. Create a password to sign up to your server's admin page.<br>
    ![pic](/server-setup/windows-step2-4.png)

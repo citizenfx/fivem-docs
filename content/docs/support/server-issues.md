@@ -81,7 +81,7 @@ If **either** variable is missing, the server will display an error upon startup
 
 ### My Server Can Only Use 48 Slots
 
-Using more than 48 slots requires a [Cfx.re Element Club Argentum 💿](https://portal.cfx.re/subscriptions) subscription or higher.
+Using more than 48 slots requires a [Element Club Argentum 💿](https://portal.cfx.re/subscriptions) subscription or higher.
 
 To raise the maximum player cap:
 

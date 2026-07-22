@@ -21,7 +21,7 @@ GetPlayerIdentifiers(Player player)
 | `discord`  | Discord                  | [User Id](https://discord.com/developers/docs/resources/user#user-object) | int       |
 | `license`  | Rockstar Online Services | Hash                                                                      | hex       |
 | `license2` | Rockstar Online Services | Hash                                                                      | hex       |
-| `fivem`    | Cfx.re                   | User Id                                                                   | int       |
+| `fivem`    | Cfx                      | User Id                                                                   | int       |
 | `ip`       | IP Address               | IPv4                                                                      | string    |
 
 * `license2` - This identifier is the ROS license for people who use Steam, this identifier can be the same value as `license`

@@ -42,7 +42,7 @@ If you are not automatically redirected, go to: [http://localhost:40120](http://
 ### 4. Link your account and register server
 
 1. Click **Link account**.
-2. Sign in and click **Continue** to authorize txAdmin to access your Cfx.re account.
+2. Sign in and click **Continue** to authorize txAdmin to access your Cfx account.
 3. Set up a backup password.
 4. Review the **Creator Platform License Agreement** and the **txAdmin License**.
 5. If you agree, click the checkbox below the password.
@@ -62,7 +62,7 @@ The initial server configuration page is displayed.
 
 1. In **Step 1: Review Recipe**, click **Next**.
 2. In **Step 2: Input Parameters**, click [Portal](https://portal.cfx.re/login?return=%252Fservers%252Fregistration-keys%253Fmodal%253Dcreate) link to open a new tab.
-3. Sign in with Cfx.re.
+3. Sign in with Cfx.
 4. Click **Create a key** > enter a display name > click **GENERATE**.
 5. Go to your new key and click **copy**.
 6. Return to txAdmin, paste the key in the textbox, and click **Run Recipe**.

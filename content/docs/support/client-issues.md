@@ -88,7 +88,7 @@ Please refer to the following support [article][support-create-etw-trace] to cre
 
 Help! I can't find my issue here!
 ---------------------------------
-We're here to help! First, check the Cfx.re support [section][support-game-articles] for your issue. If you're experiencing crashes or freezes, please post your details on our [forums][forum-tech-support] to help us assist you better.
+We're here to help! First, check the Cfx support [section][support-game-articles] for your issue. If you're experiencing crashes or freezes, please post your details on our [forums][forum-tech-support] to help us assist you better.
 For all other inquiries, feel free to join our [Discord][discord] for a chat!
 
 [where-is-fivem-installed]: https://support.cfx.re/hc/en-us/articles/8016397932444-Client-FAQ#where-is-fivem-installed

@@ -29,12 +29,12 @@ If you already have FiveM downloaded and installed, you can skip this step.
 A message appears stating that local game data needs to be updated.
 Click Yes. FiveM prepares the launch of the data. This can take several minutes.
 
-### 4. Sign in with Cfx.re
+### 4. Sign in with your Cfx account
 
 1. Review the **Terms of Service**.
 2. If you agree, click **I Accept** to continue.\
-   A new window opens prompting you to sign in with Cfx.re. Don't skip this!
-3. Click **Sign in with Cfx.re**.\
+   A new window opens prompting you to sign in with your Cfx account. Don't skip this!
+3. Click **Sign in with Cfx**.\
    Your browser opens.
 4. Click **Authorize** to grant access.
 5. Go back to FiveM and a **Welcome Username** appears.

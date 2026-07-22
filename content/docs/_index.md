@@ -15,7 +15,7 @@ Welcome to the documentation for the [FiveM][home] modification framework. Use t
 
 ## Asset developers
 
-* 🧐 Get started developing assets for FiveM using our [🧰 Cfx.re Development Kit](./fxdk/),
+* 🧐 Get started developing assets for FiveM using our [🧰 Cfx Development Kit](./fxdk/),
    learn what [🎯 resources](./scripting-manual/introduction/introduction-to-resources/) are, or get started with [📟 scripting](./scripting-manual/introduction/) for FiveM.
 * 📚 Look at the [🏞 native reference](/natives/) to find functions to use.
 * 🤯 Already experienced with development? Check out the [🧾 fact sheet](./scripting-manual/introduction/fact-sheet/) to get some quick info.

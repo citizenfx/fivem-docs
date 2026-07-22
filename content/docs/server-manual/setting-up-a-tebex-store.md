@@ -7,7 +7,7 @@ description: >
 
 ## What is Tebex?
 
-[Tebex][Tebex] is our authorized monetization partner for the Cfx.re Platform, allowing you to easily monetize your FiveM or RedM server.<br>
+[Tebex][Tebex] is our authorized monetization partner for the Cfx Platform, allowing you to easily monetize your FiveM or RedM server.<br>
 
 It provides a convenient and secure way for server owners to set up and manage their stores, allowing players to purchase virtual items and other game-related content. In addition to being the exclusive monetization partner of FiveM, [Tebex][Tebex] offers a full suite of monetization features, handling all taxes, billing, and providing full insurance for transactions. This makes it easier for server owners to focus on creating a great experience for their players while leaving the complexities of payments and compliance to [Tebex][Tebex].<br>
 
@@ -44,7 +44,7 @@ Before your store can go live, you must complete the following steps:
 3. Set up wallet.
 4. Complete ID verification.
 5. Create a package.
-6. Associate your **Cfx.re** account.
+6. Associate your **Cfx** account.
 
 After that you can submit your store for [review][tebex-review] to Tebex.<br>
 

@@ -2,10 +2,10 @@
 title: Proxy Setup
 weight: 60
 description: >
-  A basic set of steps to configure a proxy frontend for the Cfx.re server.
+  A basic set of steps to configure a proxy frontend for the Cfx server.
 ---
 
-At times, it may be desirable to have a reverse proxy in front of your Cfx.re server instance. This guide will discuss the requirements for such a setup.
+At times, it may be desirable to have a reverse proxy in front of your Cfx server instance. This guide will discuss the requirements for such a setup.
 
 ## Connection process
 The client->server connection process is as follows:

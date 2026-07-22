@@ -30,7 +30,7 @@ Certain criteria must be met for a server to be eligible for the featured server
 
 ## Are you accepting featured servers applications?
 
-Right now, we are not accepting new applications for Featured Servers. All servers are handpicked by the Cfx.re team.
+Right now, we are not accepting new applications for Featured Servers. All servers are handpicked by the Cfx team.
 
 ## How can I report a Featured Server that doesn't fit the requirements anymore?
 
