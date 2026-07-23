@@ -85,6 +85,16 @@ PrintRemoteCommandLog(message)
 
 so that it appears on the client.
 
+#### NUI Callback Strict Mode
+
+All resources now have `nui_callback_strict_mode` enabled by default. See [NUI Callback Strict Mode](https://docs.fivem.net/docs/scripting-manual/nui-development/nui-callbacks/#nui-callback-strict-mode) for details.
+
+You can opt out by adding the following line to your resource manifest:
+
+```lua
+nui_callback_strict_mode 'false'
+```
+
 #### Resource Builders
 
 Resources can no longer be builders.
