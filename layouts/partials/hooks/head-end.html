@@ -1,0 +1,14 @@
+{{ if .Site.Params.ui.showLightDarkModeMenu -}}
+{{/* Apply stored/OS theme before paint to avoid a light-mode flash. */ -}}
+<script>
+  (() => {
+    const key = 'td-color-theme';
+    const stored = localStorage.getItem(key);
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = stored === 'light' || stored === 'dark'
+      ? stored
+      : (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-bs-theme', theme);
+  })();
+</script>
+{{ end -}}

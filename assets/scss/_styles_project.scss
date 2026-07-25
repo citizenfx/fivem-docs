@@ -7,9 +7,11 @@
 @import './shortcodes/steps';
 @import './shortcodes/video';
 
-// Navbar Overrides
+// Light/dark Chroma (tango / onedark)
+@import 'td/code-dark';
+
 .td-navbar {
-  background-color: hsl(226, 23%, 11%);
+  background-color: #121216;
 
   .navbar-brand,
   .navbar-logo,
@@ -41,4 +43,60 @@
 // Always scale to max width
 .td-max-width-on-larger-screens {
   max-width: 100%;
+}
+
+.td-toc #TableOfContents a {
+  &:focus,
+  &:hover,
+  &.active {
+    color: var(--bs-link-color);
+  }
+}
+
+@include color-mode(dark) {
+  color-scheme: dark;
+
+  --bs-body-bg: #121216;
+  --bs-body-bg-rgb: 18, 18, 22;
+  --bs-secondary-bg: #1a1a20;
+  --bs-tertiary-bg: #1e1e26;
+  --bs-body-color: #e8e8ea;
+  --bs-emphasis-color: #fff;
+  --bs-secondary-color: rgba(232, 232, 234, 0.78);
+  --bs-tertiary-color: rgba(232, 232, 234, 0.55);
+  --bs-heading-color: #fff;
+  --bs-border-color: #2a2a32;
+  --bs-link-color: #ff4d7a;
+  --bs-link-hover-color: #ff7aa3;
+  --td-pre-bg: #0e0e12;
+
+  .td-main {
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(80, 12, 24, 0.35), transparent 55%),
+      var(--bs-body-bg);
+  }
+
+  .td-footer {
+    background-color: #0e0e12;
+    border-top: 1px solid var(--bs-border-color);
+  }
+
+  .td-content {
+    code {
+      color: #ffb3c7;
+    }
+
+    pre code {
+      color: inherit;
+    }
+  }
+
+  .td-box--white {
+    color: var(--bs-body-color);
+    background-color: var(--bs-secondary-bg);
+  }
+
+  .step {
+    background-color: var(--bs-secondary-bg);
+  }
 }

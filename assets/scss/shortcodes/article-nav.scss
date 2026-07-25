@@ -1,6 +1,6 @@
 .article-nav {
   display: flex;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid var(--bs-border-color);
   margin-top: 3rem;
   padding-top: 2rem;
   gap: 1rem;
@@ -8,7 +8,7 @@
   .article-nav-link {
     flex: 1;
     text-decoration: none;
-    border: 1px solid $border-color;
+    border: 1px solid var(--bs-border-color);
     padding: 1rem 1.5rem;
 
     &:nth-child(1) { text-align: left; }
@@ -20,7 +20,7 @@
   }
 
   .article-nav-direction {
-    color: $body-secondary-color;
+    color: var(--bs-secondary-color);
     font-size: $font-size-sm;
     text-transform: uppercase;
     margin-bottom: .5rem;
@@ -35,7 +35,7 @@
 
   .article-nav-title {
     font-weight: $font-weight-semibold;
-    color: $body-color;
+    color: var(--bs-body-color);
   }
 
   @include media-breakpoint-down(md) {

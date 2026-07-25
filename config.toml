@@ -13,7 +13,7 @@ disableKinds = ["taxonomy"]
 
 # Highlighting config
 pygmentsCodeFences = true
-pygmentsUseClasses = false
+pygmentsUseClasses = true
 # Use the new Chroma Go highlighter in Hugo.
 pygmentsUseClassic = false
 #pygmentsOptions = "linenos=table"
@@ -43,6 +43,9 @@ nextPrevInSectionSortOrder = "asc"
 nextPrevSortOrder = "asc"
 
 [markup]
+  [markup.highlight]
+    noClasses = false
+    style = "tango"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
@@ -79,3 +82,4 @@ weight = 60
 
 [params.ui]
 sidebar_menu_compact = true
+showLightDarkModeMenu = true
