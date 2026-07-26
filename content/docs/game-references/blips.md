@@ -1035,6 +1035,14 @@ A list of all game blips as of build 3258 are shown below.
 <div class="blip"><div><div><img src="/blips/radar_mansion_ai_m.png" alt="radar_mansion_ai_m"></div></div><span><strong>955</strong><br>radar_mansion_ai_m</span></div>
 <div class="blip"><div><div><img src="/blips/radar_mansion_ai_f.png" alt="radar_mansion_ai_f"></div></div><span><strong>956</strong><br>radar_mansion_ai_f</span></div>
 <div class="blip"><div><div><img src="/blips/radar_mansion_ai_gang.png" alt="radar_mansion_ai_gang"></div></div><span><strong>957</strong><br>radar_mansion_ai_gang</span></div>
+<div class="blip"><div><div><img src="/blips/radar_heist_art_unavailable.png" alt="radar_heist_art_unavailable"></div></div><span><strong>958</strong><br>radar_heist_art_unavailable</span></div>
+<div class="blip"><div><div><img src="/blips/radar_heist_art.png" alt="radar_heist_art"></div></div><span><strong>959</strong><br>radar_heist_art</span></div>
+<div class="blip"><div><div><img src="/blips/radar_property_mansion_art_heist.png" alt="radar_property_mansion_art_heist"></div></div><span><strong>960</strong><br>radar_property_mansion_art_heist</span></div>
+<div class="blip"><div><div><img src="/blips/radar_art_heist_prep.png" alt="radar_art_heist_prep"></div></div><span><strong>961</strong><br>radar_art_heist_prep</span></div>
+<div class="blip"><div><div><img src="/blips/radar_manhole_key.png" alt="radar_manhole_key"></div></div><span><strong>962</strong><br>radar_manhole_key</span></div>
+<div class="blip"><div><div><img src="/blips/radar_buyers_request.png" alt="radar_buyers_request"></div></div><span><strong>963</strong><br>radar_buyers_request</span></div>
+<div class="blip"><div><div><img src="/blips/radar_armored_caracara.png" alt="radar_armored_caracara"></div></div><span><strong>964</strong><br>radar_armored_caracara</span></div>
+<div class="blip"><div><div><img src="/blips/radar_witness.png" alt="radar_witness"></div></div><span><strong>965</strong><br>radar_witness</span></div>
 </div>
 
 ---
