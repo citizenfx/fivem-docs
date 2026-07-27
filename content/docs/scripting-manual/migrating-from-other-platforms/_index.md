@@ -79,11 +79,13 @@ end)
 
 {{% alert color="warning" title="Server Setters Reliablity Issues" %}} Currently, in rare cases it's possible that the ownership of the entity changes after the state bag handler is done executing but before the CVehicleAppearanceDataNode is synced to the server. In these cases, the changes made in the state bag handler will not apply. It is highly recommended that you have a mechanism to check if the changes applied server-side (for example checking [GET_VEHICLE_COLOURS](https://docs.fivem.net/natives/?_0x40D82D88)) and to recreate the vehicle if they fail to apply after a certain amount of time. {{% /alert %}}
 
-## No colshape system
+## Colshape system
 
-FiveM does not have a "colshape" system to trigger interactions when a player enters a specific polygon, square, or sphere.
+A "colshape" system lets you trigger interactions when a player enters a defined region, such as a polygon, square, or sphere.
 
-You must implement similar logic yourself (for example, by checking player positions within regions) or use an existing resource like [PolyZone](https://github.com/mkafrin/PolyZone) or [ox_lib's Zones system](https://overextended.dev/ox_lib/Modules/Zones/Shared).
+FiveM for GTAV Enhanced has this built in. For details, see the [Native Reference](https://docs.fivem.net/natives/) and search for "Colshape".
+
+FiveM for GTAV Legacy does not include one, so you'll need to implement the logic yourself (for example, by checking player positions against regions) or use an existing resource like [PolyZone](https://github.com/mkafrin/PolyZone) or [ox_lib's Zones system](https://overextended.dev/ox_lib/Modules/Zones/Shared).
 
 ## No dynamic entities
 
