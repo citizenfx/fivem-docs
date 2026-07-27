@@ -43,8 +43,14 @@ as follows:
 This formerly was known as `nui://`, but this is no longer a secure context in newer browser versions.
 
 ## Developer tools
-CEF remote debugging tools are exposed on [http://localhost:13172/](http://localhost:13172/) as long as the game is
-running. You can use any Chromium-based browser to easily access these tools.
+CEF remote debugging tools are exposed as long as the game is running, on a port that depends on the client:
+
+| Client | Address |
+| --- | --- |
+| FiveM Legacy / RedM | [http://localhost:13172/](http://localhost:13172/) |
+| FiveM for GTAV Enhanced | [http://localhost:3232/](http://localhost:3232/) |
+
+You can use any Chromium-based browser to easily access these tools.
 
 Alternately, it can be opened using the `nui_devTools` command in the game's <kbd>F8</kbd> console, assuming the
 developer mode is enabled.
