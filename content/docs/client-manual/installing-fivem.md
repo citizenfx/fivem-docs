@@ -8,7 +8,7 @@ downloaded file. For those who'd like a bit more detail, read below.
 
 ## Installing
 
-Running into trouble? Make sure your system meets the [minimum requirements][system-requirements] and
+Running into trouble? Make sure your system meets the minimum requirements for [FiveM][legacy-minimum-requirements] / [FiveM for GTAV Enhanced][enhanced-minimum-requirements] and
 read the [client issues manual][client-issues].
 
 - If you experience any issues with your antivirus upon starting FiveM, you may want to submit a [support ticket][antivirus-ticket].
@@ -32,7 +32,8 @@ read the [client issues manual][client-issues].
 - Run FiveM.exe again if you want to reinstall FiveM.
 
 [home]: https://fivem.net
-[system-requirements]: /docs/client-manual/system-requirements/
 [client-issues]: /docs/support/client-issues/
 [antivirus-ticket]: https://support.cfx.re/hc/en-us/requests/new
 [where-to-buy]: /docs/client-manual/where-to-buy-gtav/
+[legacy-minimum-requirements]: https://support.cfx.re/hc/en-us/articles/8017221737244-FiveM-system-requirements
+[enhanced-minimum-requirements]: https://support.cfx.re/hc/en-us/articles/27624091206812-FiveM-for-GTAV-Enhanced-system-requirements
