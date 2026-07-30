@@ -11,6 +11,7 @@ weight: 20
 - [on](/docs/scripting-reference/runtimes/javascript/functions/on-server/)
 - [setTick](/docs/scripting-reference/runtimes/javascript/functions/setTick/)
 - [clearTick](/docs/scripting-reference/runtimes/javascript/functions/clearTick/)
+- [getPlayers](/docs/scripting-reference/runtimes/javascript/functions/getPlayers/)
 
 ## Native functions
 Refer to the [FiveM Native Reference](/natives/) for game functions.
