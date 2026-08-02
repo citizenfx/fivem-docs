@@ -31,6 +31,8 @@ local files3 = io.readdir("/absolute/path/to/resource")
 local files4 = io.readdir("/absolute/path/to/resource/assets")
 ```
 
+Because `io.readdir()` returns a handle rather than a plain table, it cannot be iterated with `ipairs` or `pairs`. Use its `lines()` iterator to read each entry:
+
 ```lua
 local files = io.readdir("@myResource/")
 for file in files:lines() do
