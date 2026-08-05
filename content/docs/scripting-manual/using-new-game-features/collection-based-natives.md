@@ -9,7 +9,7 @@ The new set of natives allows accessing drawable components and props through co
 
     Note: The new natives are currently available for GTAV and on client side only.
 
-### How drawable components and props indexing works
+## How drawable components and props indexing works
 
     Note: Drawable components and props are stored in Ped in the same way. Below we will refer to drawable components / drawables only.
 
@@ -84,11 +84,11 @@ The first collection corresponds to the base game (without any DLCs). After the 
 
 After TU is released and new official DLC collection is added - all custom collections are shifted. So, the global indexes that correspond to custom collections shift and must be updated on every TU. While the indexes that are relative to the beginning of a collection will remain stable after TU.
 
-#### Where collection name is set
+## Where collection name is set
 
 The base game name collection is an empty string. Names of other collections are set by `<CPedVariationInfo name="...">` tag of the corresponding `.ymt` file. E.g. see `Grand Theft Auto V\update\x64\dlcpacks\mp2024_01\dlc.rpf\x64\models\cdimages\mp2024_01_female.rpf\mp_f_freemode_01_mp_f_2024_01.ymt` base game file.
 
-### New natives
+## New natives
 
 There are three groups of new natives:
 
@@ -96,19 +96,19 @@ There are three groups of new natives:
 - Natives to convert between global and local indexes.
 - Natives that are analogues to the existing natives that work with drawable components and props. But instead of working with global indexes they work with collection names and local indexes.
 
-#### General info natives
+## General info natives
 
 - {{% native_link "GET_PED_COLLECTIONS_COUNT" %}} - get total number of collections available for Ped
 - {{% native_link "GET_PED_COLLECTION_NAME" %}} - get collection name by collection number
 
-#### Conversion between global and local indexing
+## Conversion between global and local indexing
 
 - {{% native_link "GET_PED_COLLECTION_NAME_FROM_DRAWABLE" %}}, {{% native_link "GET_PED_COLLECTION_LOCAL_INDEX_FROM_DRAWABLE" %}} - get collection name and local index from global drawable index
 - {{% native_link "GET_PED_COLLECTION_NAME_FROM_PROP" %}}, {{% native_link "GET_PED_COLLECTION_LOCAL_INDEX_FROM_PROP" %}} - get collection name and local index from global prop index
 - {{% native_link "GET_PED_DRAWABLE_GLOBAL_INDEX_FROM_COLLECTION" %}} - get global drawable index from collection name and local index
 - {{% native_link "GET_PED_PROP_GLOBAL_INDEX_FROM_COLLECTION" %}} - get global prop index from collection name and local index
 
-#### Analogues to existing natives
+## Analogues to existing natives
 
 | Old (global index based) native | New (collection-based) native |
 | ---------- | ---------- |
@@ -127,7 +127,7 @@ There are three groups of new natives:
 | {{% native_link "GET_PED_PROP_INDEX" %}} | {{% native_link "GET_PED_PROP_COLLECTION_LOCAL_INDEX" %}} |
 | {{% native_link "GET_PED_PROP_INDEX" %}} | {{% native_link "GET_PED_PROP_COLLECTION_NAME" %}} |
 
-### Examples
+## Examples
 
 Below are some example lua scripts that illustrate usage of the new natives.
 

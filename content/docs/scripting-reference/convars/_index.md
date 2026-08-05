@@ -11,7 +11,7 @@ There are a couple of different convar types, we'll cover all of them on this pa
 
 The most common of them all is just the 'standard' convar type.
 
-#### Using commands
+### Using commands
 
 You can set such convar by executing the following command:
 
@@ -40,7 +40,7 @@ If the convar has not been setup yet, typing `convar_name` into the console will
 No such command convar_name.
 ```
 
-#### Using resources
+### Using resources
 
 You can also set and get convars using CFX API Set natives.
 

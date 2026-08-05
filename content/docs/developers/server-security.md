@@ -82,7 +82,7 @@ This ensures the integrity and security of your game environment. Please note th
 
 All examples assume some kind of framework.
 
-##### Bad Security
+#### Bad Security
 
 {{% alert color="warning" %}}
 This is meant to show you *bad* ways of doing events, you should **never** do this.
@@ -97,7 +97,7 @@ RegisterNetEvent("job:givePlayerItem", function(item, count)
 end)
 ```
 
-##### Good Security
+#### Good Security
 
 You can also check out [this example resource](https://github.com/TheIndra55/secure-resource-examples) for a more in-depth example with client and server examples.
 
@@ -169,7 +169,7 @@ end)
 
 ## Server owner options
 
-#### Please note that the following shouldn't be touched unless you know what you are doing.
+### Please note that the following shouldn't be touched unless you know what you are doing.
 
 Adhesive team is always working really hard to prevent cheaters to be able to use them. You will have most of those features enabled by default with FXServer `8450` build version and higher.
 

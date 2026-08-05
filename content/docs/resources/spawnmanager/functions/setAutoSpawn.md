@@ -28,7 +28,7 @@ bool enabled
 
 - **enabled** Whether to enable or disable auto-spawning.
 
-##### Lua Example:
+#### Lua Example:
 
 ```lua
 exports.spawnmanager:setAutoSpawn(true)

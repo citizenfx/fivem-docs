@@ -9,7 +9,7 @@ In Lua/JS, the `source` variable (global) will contain the player ID that trigge
 
 In C#, you use the `[FromSource]` attribute, as seen in the example below.
 
-#### Example
+## Example
 
 **Lua**
 
@@ -73,7 +73,7 @@ on('eventName', (eventParam1, eventParam2) => {
 });
 ```
 
-#### Note when using Lua/JS
+## Note when using Lua/JS
 
 If you want your events to be available 'over the network' (that is, trigger a client event from a server-side script, or trigger a server event from a client-side script), you'll need to register the event first.
 

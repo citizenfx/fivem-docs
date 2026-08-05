@@ -22,7 +22,7 @@ function callback
 
 - **callback** The callback to execute when auto-spawning the player.
 
-##### Lua Example:
+#### Lua Example:
 
 ```lua
 local firstSpawn = true

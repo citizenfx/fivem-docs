@@ -11,7 +11,7 @@ World Editor follows _what you see is what you get_ paradigm of editing, providi
 
 There are two distinct primitives:
 
-### Patches
+## Patches
 
 Patches are your modifications to existing map objects, such as traffic lights, trash bins and so on.
 
@@ -19,11 +19,11 @@ Current major limitation is that you can only patch objects that have embedded c
 
 Another limitation is that you can not delete existing map objects, however, you can hide them.
 
-### Additions
+## Additions
 
 Additions are objects that you add on a map manually from the objects browser.
 
-# Map assets
+## Map assets
 
 World Editor operates on map file assets, these are single files containing your map info.
 
@@ -37,7 +37,7 @@ Why not compile them to normal map files that game uses? Reason is that while it
 
 This is **very basic** currently, but will be expanded further in the future.
 
-### Addition events
+## Addition events
 
 For map addition you can specify arbitrary event names that will be triggered when it is created and/or deleted, allowing you to use them in code.
 
@@ -47,7 +47,7 @@ Do note that both kinds of events will be triggered after the fact, meaning that
 
 > These events are emitted on client and are not available on server.
 
-# Using World Editor
+## Using World Editor
 
 We won't dive deep into details here because we have extensive intro tour built into World Editor itself, however, there are a few things worth mentioning here.
 
@@ -74,7 +74,7 @@ In addition to all normal controls like position, rotation and scale, exclusivel
 
 World Editor fully supports undo/redo functionality, it behaves like you'd expect: `Ctrl+Z` to undo, `Ctrl+Shift+Z` to redo.
 
-# Contributing
+## Contributing
 
 If you have any suggestions, bug reports or questions, please [file an issue on our GitHub](https://github.com/citizenfx/fivem/issues/new).
 

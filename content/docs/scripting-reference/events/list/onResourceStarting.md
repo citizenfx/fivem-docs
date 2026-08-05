@@ -16,7 +16,7 @@ string resourceName
 
 This example prevents any resource called 'pineapple' from starting.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 AddEventHandler('onResourceStarting', function(resourceName)
@@ -26,7 +26,7 @@ AddEventHandler('onResourceStarting', function(resourceName)
 end)
 ```
 
-##### C\# Example:
+### C\# Example:
 
 ```csharp
 // in the class constructor
@@ -42,7 +42,7 @@ private void OnResourceStarting(string resourceName)
 }
 ```
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```js
 on("onResourceStarting", (resourceName) => {

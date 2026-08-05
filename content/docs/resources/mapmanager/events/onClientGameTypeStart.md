@@ -12,7 +12,7 @@ string resourceName
 
 ## Examples
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```js
 on('onClientGameTypeStart', (name) => {

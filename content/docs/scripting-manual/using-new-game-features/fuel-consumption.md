@@ -5,13 +5,13 @@ weight: 20
 
 By default in GTAV and FiveM vehicles do not consume fuel. This feature allows you to turn the fuel consumption on and customize it for your needs.
 
-### Turn on/off
+## Turn on/off
 
 To set/check the fuel consumption use {{% native_link "SET_FUEL_CONSUMPTION_STATE" %}}/{{% native_link "GET_FUEL_CONSUMPTION_STATE" %}} natives. Set true to turn it on, false - to turn it off.
 
-### How it works
+## How it works
 
-#### Fuel consumption speed
+## Fuel consumption speed
 
 When turned on, fuel consumption is calculated by the formula:
 
@@ -25,7 +25,7 @@ Fuel is not consumed when the engine is turned off.
 
 By default, 65 liter gas tank car with average fuel consumption can stay **idle for ~16.67 hours** or run with **max RPM for ~2.5 hours**.
 
-#### Customize consumption speed
+## Customize consumption speed
 
 To customize/check global (across all vehicles) fuel consumption rate (`global_fuel_consumption_rate_multiplier` in the formula above) use {{% native_link "SET_FUEL_CONSUMPTION_RATE_MULTIPLIER" %}}/{{% native_link "GET_FUEL_CONSUMPTION_RATE_MULTIPLIER" %}} natives. By default it is set to 1. If set to negative - 0 will be used instead.
 
@@ -33,7 +33,7 @@ To customize fuel consumption per vehicle (`vehicle_fuel_consumption_rate_multip
 
 You can also use [CodeWalker](https://github.com/dexyfex/CodeWalker) tool or similar to edit vehicle `handling.meta` file and set `fPetrolConsumptionRate` value to `HandlingData`. If not set it results to the default value of 0.5.
 
-#### Petrol tank volume and current fuel level
+## Petrol tank volume and current fuel level
 
 To customize petrol tank volume use {{% native_link "SET_HANDLING_FLOAT" %}}/{{% native_link "SET_VEHICLE_HANDLING_FLOAT" %}} natives with `fieldName` equal to `fPetrolTankVolume`.
 
@@ -41,7 +41,7 @@ You can also use [CodeWalker](https://github.com/dexyfex/CodeWalker) tool or sim
 
 To update/check fuel level in a vehicle use {{% native_link "GET_VEHICLE_FUEL_LEVEL" %}}/{{% native_link "SET_VEHICLE_FUEL_LEVEL" %}} natives.
 
-#### Vehicles without fuel consumption
+## Vehicles without fuel consumption
 
 Fuel is not consumed for the following vehicles:
 
@@ -51,13 +51,13 @@ Fuel is not consumed for the following vehicles:
 
 To check if vehicle will consume fuel when player is inside (i.e. petrol tank volume above 0 and not a bicycle) use {{% native_link "DOES_VEHICLE_USE_FUEL" %}} native.
 
-### Gas stations
+## Gas stations
 
 When turning on fuel consumption you need to think about mechanisms to allow players to refuel a vehicle.
 
 We do not provide out of the box functionality for gas stations. But you can implement it on your own using provided natives.
 
-#### Example gas stations implementation
+## Example gas stations implementation
 
 ```lua
 -- List of all gas stations in the world.

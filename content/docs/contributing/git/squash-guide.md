@@ -5,15 +5,15 @@ weight: 20
 
 Squashing is a way to simplify your commits and combine multiple commits into one.
 
-### How do I squash my commits?
+## How do I squash my commits?
 
 - **[Using Github Desktop](#using-github-desktop)**: Github Desktop will provide you with a user-friendly interface, it's mainly tailored to new software developers that are not familiar with the CLI and its uses.
 
 - **[Using Git's CLI](#using-gits-cli)**: With Git's CLI (Command Line Interface), you can easily squash commits by 'rebasing', which is basically a way to re-write your commit history. It's an option tailored for users that have already been using Git for a while and are familiar with command line interfaces. It offers more flexibility and granularity, where a GUI may not.
 
-### Using Github Desktop
+## Using Github Desktop
 
-#### Squashing commits
+## Squashing commits
 
 Squashing commits using [Github Desktop](https://desktop.github.com/) is a simple task, you can do so by following these steps:
 
@@ -46,14 +46,14 @@ Squashing commits using [Github Desktop](https://desktop.github.com/) is a simpl
 
 10. Congratulations, you have squashed/combined multiple commits.
 
-### Using Git's CLI
+## Using Git's CLI
 
-#### Prerequisites
+## Prerequisites
 
 - Git
 - Basic knowledge on Git
 
-#### Squashing commits
+## Squashing commits
 
 We can squash commits by using `git rebase -i HEAD~n` where `n` is the number of commits we want to combine from the `HEAD` commit and `-i`, which stands for interactive.
 
@@ -77,7 +77,7 @@ A `vim` dialog (as shown in the image above) will show again in the console show
 
 And that's it... Your commits should now be squashed into one.
 
-#### Verifying commit history
+## Verifying commit history
 
 Before you push your changes to the remote branch, you should verify if your commit history is correct. What is meant by this is essentially; you are not overwriting old commit history with the commits you recently made.
 
@@ -87,6 +87,6 @@ You can check this by typing `git log --pretty=oneline` or simply `git log --one
 
 If the commit history looks correct (meaning commits before yours are still there) you can go ahead and push your changes.
 
-#### Pushing your changes to the remote branch
+## Pushing your changes to the remote branch
 
 You can now push your branch to the remote repository, to re-write your commit history remotely (in case you need to do so) you can do `git push --force-with-lease` which is less destructive than `git push --force` since it will prevent you from overwriting any new changes done by others, this is useful if you are working with other people.

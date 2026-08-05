@@ -10,7 +10,7 @@ standards including server-sided synchronization states for entities, which we'l
 It's worth mentioning that OneSync is free up to 48 slots, after such, you should get one of the following tiers
 from the [Cfx Portal](https://portal.cfx.re/subscriptions) starting from `FiveM Element Club Argentum 💿`.
 
-# What is OneSync: Infinity?
+## What is OneSync: Infinity?
 
 - A mode allowing (up to) 2048 players since the recent [commit](https://github.com/citizenfx/fivem/commit/a03eb34c80571ac37cf8d74ca87fa4e646f2e499). There are servers handling 1000+ concurrent players.
 - To accomplish this, it uses the following technological changes:
@@ -19,11 +19,11 @@ from the [Cfx Portal](https://portal.cfx.re/subscriptions) starting from `FiveM 
     - Player culling. No players will be created/deleted locally outside of the focus zone too. This means that all player iteration will have to happen server-side.
 - It also has a bit better performance than 'plain' OneSync at this time due to player ped culling, and works around the so-called 'head blend bug'.
 
-# How is synchronization handled?
+## How is synchronization handled?
 
 Most of the sync data is handled through player `31`, game events are handled through this player as well, this is a player reserved for every individual client, and it's used to write sync data to the server to later on be analyzed through sync-nodes for parsing.
 
-# What are sync nodes and how do I interpret them?
+## What are sync nodes and how do I interpret them?
 
 Sync nodes are synchronization data nodes, networked entities depend on these to transmit data to other clients/players on the server. The most simple one we can find is `CSectorPositionDataNode`.
 
@@ -97,7 +97,7 @@ virtual void GetPosition(float* posOut) override
 }
 ```
 
-# What's culling?
+## What's culling?
 
 Culling is used by the server to avoid sending a lot of unneeded data to and from the server, as clients will only care what is going on in their immediate area.
 
@@ -111,13 +111,13 @@ There's natives such as {{% native_link "SET_ENTITY_DISTANCE_CULLING_RADIUS" %}}
 
 When an entity goes out of range, it's no longer controlled by their original owner. This means that any entity that would be out of scope will be culled and migrated/disowned. By default, the culling radius is set to `424 units` around the entity.
 
-# Scopes
+## Scopes
 
 Players may enter/leave other players' scopes, this depends on the culling radius from each other, [server event][server-events] handlers such as `playerEnteredScope` and `playerLeftScope` can be used to track who entered/left someone else's scope.
 
 An implementation example can be found down below.
 
-## playerEnteredScope
+### playerEnteredScope
 
 {{% alert title="Performance Warning" color="warning" %}}
 Using these events is frowned upon, these events have scaling performance costs. For every person within the scope of the player on every enter/leave scope this will be called an additional time, so having 32 players within the scope of a player will lead to this being called 32 times. Whenever possible you should use state bags if you need to trigger scoped events, see {{% native_link "ADD_STATE_BAG_CHANGE_HANDLER" %}}.
@@ -132,7 +132,7 @@ AddEventHandler("playerEnteredScope", function(data)
 end)
 ```
 
-## playerLeftScope
+### playerLeftScope
 
 {{% alert title="Performance Warning" color="warning" %}}
 Using these events is frowned upon, these events have scaling performance costs. For every person within the scope of the player on every enter/leave scope this will be called an additional time, so having 32 players within the scope of a player will lead to this being called 32 times. Whenever possible you should use state bags if you need to trigger scoped events, see {{% native_link "ADD_STATE_BAG_CHANGE_HANDLER" %}}.
@@ -149,9 +149,9 @@ end)
 
 The original examples can be found in the following forum [post][original-scope-post] by PichotM.
 
-# Best practices
+## Best practices
 
-## Server-created entities, not client entities
+### Server-created entities, not client entities
 
 OneSync allows you to create entities on the server such as Peds, Vehicles and Objects among others.
 
@@ -168,12 +168,12 @@ local ped = CreatePed(4, GetHashKey("a_m_y_acult_01"), 2204.795, -887.9213, 1461
 SetEntityOrphanMode(ped, 2)
 ```
 
-## I want persistent entities, how do I do it?
+### I want persistent entities, how do I do it?
 
 If you want to guarantee an entity will not be removed by the server you should use {{% native_link "SET_ENTITY_ORPHAN_MODE" %}} with the 'KeepEntity' flag.
 This will guarantee that the server will not delete the vehicle, but the client will still be able to request the deletion of the entity.
 
-## RPC Natives
+### RPC Natives
 
 There are certain natives that are RPC (Remote Procedure call) natives, these natives will be called on client (typically on whichever client owns the entity), these calls are fallible and are not guaranteed to be called on the client.
 
@@ -188,7 +188,7 @@ TaskWarpPedIntoVehicle(ped, vehicle, 1)
 SetEntityVelocity(vehicle, 0.0, 0.0, 99.0)
 ```
 
-## Entity lockdown
+### Entity lockdown
 
 Entities can be locked down from the server so they can only be authored by it, meaning the server has full control. This allows you to keep things in check and deter users from doing things they shouldn't be doing, such as spawning stuff client side, for... oh well... malicious purposes, i.e.
 
@@ -207,7 +207,7 @@ SetEntityRoutingBucket(vehicle, 1)
 SetRoutingBucketPopulationEnabled(1, false)
 ```
 
-## Buckets and why you should use them
+### Buckets and why you should use them
 
 Server versions from pipeline ID 3245 and above have added a 'routing bucket' functionality, which is similar in concept to the 'dimension' or 'virtual world' functionality seen in prior non-Rockstar GTA network implementations.
 
@@ -249,7 +249,7 @@ SetRoutingBucketPopulationEnabled(1, false) -- Let's disable population for ever
 SetPlayerRoutingBucket(source, 1) -- Now the given player (source) won't be able to create entities client-side
 ```
 
-## Use state bags
+### Use state bags
 
 State bags allow you to set attributes to entities and allow other clients to access those, you can read more about state bags [here](/docs/scripting-manual/networking/state-bags/).
 

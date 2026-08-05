@@ -8,15 +8,15 @@ description: >
 
 {{% video src="https://runtime.fivem.net/edu/step-4_helloworld.mp4" %}}
 
-### Creating a script with Visual Studio Code
+## Creating a script with Visual Studio Code
 
-#### 1. Navigate to your server files
+## 1. Navigate to your server files
 
 1. Open File Explorer on your Desktop and navigate to the txData folder.
 2. Double-click the folder named **FiveMBasicServerCFXDefault_AB1234.base** or something similar.
 3. Double-click the **resources** folder located in the folder you opened.
 
-#### 2. Create script folder and files
+## 2. Create script folder and files
 
 1. Create a new folder in **resources** named **helloWorld**.
 2. Open helloWorld and create two new text files:
@@ -27,7 +27,7 @@ description: >
 If prompted about file extensions, click Yes to confirm.
 {{% /alert %}}
 
-#### 3. Write the manifest file
+## 3. Write the manifest file
 
 1. Open **fxmanifest.lua** in Visual Studio Code and paste the following code in the file:
 
@@ -42,7 +42,7 @@ client_script 'client.lua'
 
 2. Save the file.
 
-#### 4. Write the client script
+## 4. Write the client script
 
 1. Open **client.lua** in Visual Studio Code.
 2. Paste this code:
@@ -53,7 +53,7 @@ print('helloWorld')
 
 3. Save the file.
 
-#### 5. Run the script in FiveM
+## 5. Run the script in FiveM
 
 1. In FiveM, press **F8** to open the console.
 2. Type **tx** and press **Tab** twice to open the txAdmin sub menu.
@@ -61,7 +61,7 @@ print('helloWorld')
 4. Use the search bar to look for **helloWorld**.
 5. Click **Start** next to the helloWorld script.
 
-#### 6. Verify the script is working
+## 6. Verify the script is working
 
 Press **F8**. helloWorld prints in the console.
 
@@ -69,14 +69,14 @@ You've successfully set up your server and run your first Lua script in FiveM. W
 
 ## Next Steps
 
-### Guides
+## Guides
 
-#### Exploring the FiveM native reference
+## Exploring the FiveM native reference
 
 A crucial part of the documentation around FiveM is the [native reference](/natives/) which allows you to interact with game functions.
 Let's explore some of the simple to use natives first and incorporate them into your first script.
 
-##### Disabling the minimap
+### Disabling the minimap
 
 While the minimap is helpful it is not wanted in some cases so let's disable it:
 {{% video src="https://runtime.fivem.net/edu/step-5_displayradar.mp4" %}}
@@ -94,7 +94,7 @@ DisplayRadar(false)
 The minimap is hidden.
 On the [native reference](/natives/) you can find more interesting game functions which can be combined to create unique experiences and gameplay twists.
 
-##### Spawning a vehicle guide
+### Spawning a vehicle guide
 
 1. Open the [native reference](/natives/) and try finding the [**CreateVehicle**](/natives/?_0xAF35D0D2583051B0) native.
 2. Navigate to helloWorld and open **client.lua** and remove everything inside.

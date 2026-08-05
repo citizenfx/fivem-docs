@@ -21,7 +21,7 @@ string sender, table data
 
 ## Examples
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 -- TO DO

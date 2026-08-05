@@ -16,7 +16,7 @@ string resourceName
 
 This example prints the name of the current resource, upon start.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 AddEventHandler('onResourceStart', function(resourceName)
@@ -27,7 +27,7 @@ AddEventHandler('onResourceStart', function(resourceName)
 end)
 ```
 
-##### C\# Example:
+### C\# Example:
 
 ```csharp
 // in the class constructor
@@ -42,7 +42,7 @@ private void OnResourceStart(string resourceName)
 }
 ```
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```js
 on("onResourceStart", (resourceName) => {

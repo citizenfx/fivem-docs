@@ -28,7 +28,7 @@ spawnIdx, function callback(object spawn)
 
 ## Examples
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 -- Spawns the player at a random spawnpoint

@@ -6,7 +6,7 @@ description: >
   Got some ancient server? This is a guide on migrating.
 ---
 
-### Loading Scripts
+## Loading Scripts
 
 `require` doesn't exist anymore, any scripts/libraries should be loaded using the `server_script` directive in the resource manifest.
 
@@ -32,7 +32,7 @@ function loadLuaFile(resource, file)
 end
 ```
 
-### String Splitting
+## String Splitting
 
 `str:Split` does not exist anymore, you should use the proper Lua functions for this. For the commonly copy-pasted `stringsplit` function, this would be:
 
@@ -50,14 +50,14 @@ function stringsplit(inputstr, sep)
 end
 ```
 
-### Bitwise Operations
+## Bitwise Operations
 
 Lua 5.3 deprecated `bit32`, and the CfxLua runtime does not enable it. Bitwise operations now work using normal operators (`&`, `|`, ...) like in most other programming languages.
 
-### CLR
+## CLR
 
 NeoLua is no longer in use, so the `clr` namespace does not exist anymore. If you need to run C\# code, use the normal .NET runtime and server exports.
 
-### TempIDs
+## TempIDs
 
 If you did any specific bitwise operations assuming during `playerConnecting` the `source` value is above 0x10000, this should not be needed anymore to use functions during `playerConnecting`.

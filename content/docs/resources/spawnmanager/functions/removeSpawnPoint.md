@@ -24,7 +24,7 @@ int spawnIdx
 
 ## Examples
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 -- Add a new spawnpoint!

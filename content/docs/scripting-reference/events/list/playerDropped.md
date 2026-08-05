@@ -19,7 +19,7 @@ string reason, string resourceName, uint clientDropReason
 
 This example prints the name of the player, the reason why the player has disconnected, the resource from which the event was dispatched, and the internal client drop reason to the server console.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 -- source is global here, don't add to function
@@ -28,7 +28,7 @@ AddEventHandler('playerDropped', function (reason, resourceName, clientDropReaso
 end)
 ```
 
-##### C\# Example:
+### C\# Example:
 
 ```csharp
 // In class constructor
@@ -41,7 +41,7 @@ private void OnPlayerDropped([FromSource]Player player, string reason, string re
 }
 ```
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```js
 on("playerDropped", (reason, resourceName, clientDropReason) => {

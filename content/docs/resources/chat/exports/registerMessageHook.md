@@ -50,7 +50,7 @@ function hookFunction
 
 This example replaces all chat messages with the word slugs to snails.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 exports.chat:registerMessageHook(function(source, outMessage, hookRef)

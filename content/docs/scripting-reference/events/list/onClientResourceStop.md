@@ -16,7 +16,7 @@ string resourceName
 
 This example prints the name of the resource that was just stopped.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 AddEventHandler('onClientResourceStop', function (resourceName)
@@ -24,7 +24,7 @@ AddEventHandler('onClientResourceStop', function (resourceName)
 end)
 ```
 
-##### C\# Example:
+### C\# Example:
 
 ```csharp
 // In class constructor
@@ -37,7 +37,7 @@ private void OnClientResourceStop(string resourceName)
 }
 ```
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```js
 on("onClientResourceStop", (resourceName) => {

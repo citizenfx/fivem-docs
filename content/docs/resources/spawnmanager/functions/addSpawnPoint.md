@@ -30,7 +30,7 @@ object spawn
 
 ## Examples
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 local mySpawnPoint = exports.spawnmanager:addSpawnPoint({

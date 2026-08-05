@@ -4,17 +4,17 @@ title: GetPlayerIdentifiers
 
 Returns a table containing all of the player's identifiers.
 
-### Syntax
+## Syntax
 
 ```lua
 GetPlayerIdentifiers(Player player)
 ```
 
-#### Required arguments
+## Required arguments
 
 * **player**: The ID of the player to get the identifiers from.
 
-### Identifier Types
+## Identifier Types
 
 | Type ID    | Provider                 | Type                                                                      | Data Type |
 |------------|--------------------------|---------------------------------------------------------------------------|-----------|
@@ -27,7 +27,7 @@ GetPlayerIdentifiers(Player player)
 
 * `license2` - This identifier is the ROS license for people who use Steam, this identifier can be the same value as `license`
 
-### Examples
+## Examples
 
 Check for commonly used identifiers with this method; works well when triggered by the `playerConnecting` event.
 

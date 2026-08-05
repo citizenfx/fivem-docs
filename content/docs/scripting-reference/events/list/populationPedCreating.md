@@ -28,7 +28,7 @@ float posX, float posY, float posZ, uint model, object setters
 
 This example illustrates how you can intercept population:
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 CreateThread(function()
@@ -45,7 +45,7 @@ AddEventHandler('populationPedCreating', function(x, y, z, model, setters)
 end)
 ```
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```js
 setImmediate(() => {
@@ -59,7 +59,7 @@ on('populationPedCreating', (x, y, z, model, setters) => {
 })
 ```
 
-##### C# Example:
+### C# Example:
 
 ```cs
 const string replacement = "s_m_y_cop_01";

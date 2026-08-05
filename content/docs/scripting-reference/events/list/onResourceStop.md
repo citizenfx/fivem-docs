@@ -16,7 +16,7 @@ string resourceName
 
 This example prints the name of the current resource, when stopped.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 AddEventHandler('onResourceStop', function(resourceName)
@@ -27,7 +27,7 @@ AddEventHandler('onResourceStop', function(resourceName)
 end)
 ```
 
-##### C\# Example:
+### C\# Example:
 
 ```csharp
 // in the class constructor
@@ -42,7 +42,7 @@ private void OnResourceStop(string resourceName)
 }
 ```
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```js
 on("onResourceStop", (resourceName) => {

@@ -24,7 +24,7 @@ array suggestions
 
 This example adds a command suggestion for the `/command` and `/othercommand` commands.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 -- Note, the command has to start with `/`.

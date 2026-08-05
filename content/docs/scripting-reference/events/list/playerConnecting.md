@@ -22,23 +22,23 @@ an asynchronous task to complete beforehand, such as a database or web API query
 
 The `deferrals` object contains the following members to achieve such:
 
-#### defer(): void
+### defer(): void
 
 `deferrals.defer` will initialize deferrals for the current resource. It is required to wait for at least a tick after
 calling `defer` before calling `update`, `presentCard` or `done`.
 
-#### update(message: string): void
+### update(message: string): void
 
 `deferrals.update` will send a progress message to the connecting client.
 
-#### presentCard(card: object | string, cb?: (data: object, rawData: string) => void): void
+### presentCard(card: object | string, cb?: (data: object, rawData: string) => void): void
 
 `deferrals.presentCard` will send an [Adaptive Card](https://adaptivecards.io/) to the client.
 
 `card` can be an object containing card data, or a serialized JSON string with the card information.
 `cb`, if present, will be invoked on an `Action.Submit` event from the Adaptive Card.
 
-#### done(failureReason?: string): void
+### done(failureReason?: string): void
 
 `deferrals.done` finalizes a deferral. It is required to wait for at least a tick before calling `done` after calling a
 prior deferral method.
@@ -46,7 +46,7 @@ prior deferral method.
 If `failureReason` is specified, the connection will be refused, and the user will see the specified message as a result.
 If this is not specified, the user will be allowed to connect.
 
-#### Dynamic handover
+### Dynamic handover
 
 `deferrals.handover` will allow you to provide a set of endpoints for a specific player on connection.
 
@@ -62,7 +62,7 @@ deferrals.handover({
 
 This example checks a connecting player's license identifier against a ban list. If the player is in the ban list, they get kicked, otherwise they are allowed to connect.
 
-##### C\# example:
+### C\# example:
 
 ```csharp
 // In class constructor
@@ -96,7 +96,7 @@ private async void OnPlayerConnecting([FromSource]Player player, string playerNa
 
 These examples check (badly) if Steam is present.
 
-##### Lua example:
+### Lua example:
 
 ```lua
 local function OnPlayerConnecting(name, setKickReason, deferrals)
@@ -154,7 +154,7 @@ end
 AddEventHandler("playerConnecting", OnPlayerConnecting)
 ```
 
-##### JavaScript example:
+### JavaScript example:
 
 ```js
 on('playerConnecting', (name, setKickReason, deferrals) => {

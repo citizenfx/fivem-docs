@@ -20,7 +20,7 @@ This event has no parameters.
 
 This example registers a `/clear` command that clears the chat.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 RegisterCommand('clear', function(source, args)
@@ -28,7 +28,7 @@ RegisterCommand('clear', function(source, args)
 end, false)
 ```
 
-##### C\# Example:
+### C\# Example:
 
 ```csharp
 // In a method or the class constructor
@@ -38,7 +38,7 @@ RegisterCommand("clear", new Action<int, List<object>, string>(source, args, raw
 }, false);
 ```
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```javascript
 RegisterCommand('clear', (source, args) => {

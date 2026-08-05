@@ -22,7 +22,7 @@ string commandName, string commandDescription, object commandParameters
 
 This example adds a command suggestion for the `/command` command.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 -- Note, the command has to start with `/`.

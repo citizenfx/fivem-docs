@@ -12,7 +12,7 @@ If the auto-spawn flag is enabled, this export instantly and forcefully respawns
 forceRespawn
 ```
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 Citizen.CreateThread(function()

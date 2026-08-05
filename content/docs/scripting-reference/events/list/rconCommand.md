@@ -17,7 +17,7 @@ string command, table/array arguments
 
 ## Examples
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```js
 on('rconCommand', (command, args) => {

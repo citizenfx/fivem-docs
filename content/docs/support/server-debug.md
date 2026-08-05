@@ -9,11 +9,11 @@ This section will explain how to create useful debugging dumps (called .dmp file
 
 **NOTE**: Creating full dumps is for Windows servers only. This method is currently not supported on Linux.
 
-#### Prerequisites
+### Prerequisites
 
 1. [ProcDump v9.0][procdump] or newer.
 
-#### Usage
+### Usage
 
 1. Make sure your server is running.
 2. Open a command prompt where you extracted procdump to. **Use an ELEVATED command prompt** for this (should say "Administrator" in the title bar).

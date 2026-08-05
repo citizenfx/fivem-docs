@@ -17,7 +17,7 @@ chatMessage
 
 ## Parameters
 
-##### Client side:
+### Client side:
 
 ```
 string author, array color, string text
@@ -27,7 +27,7 @@ string author, array color, string text
 - **color**: The color array. Color syntax: `{255, 255, 255} ( {r, g, b} )`
 - **text**: The message
 
-##### Server side:
+### Server side:
 
 ```
 source, string author, string text
@@ -39,7 +39,7 @@ source, string author, string text
 
 ## Examples
 
-##### Server-side JS Example:
+### Server-side JS Example:
 
 ```javascript
 onNet('chatMessage', (src, author, text)=>{

@@ -5,11 +5,11 @@ aliases:
   - /docs/scripting-manual/working-with-events/event-cancelation/
 ---
 
-### Canceling Events
+## Canceling Events
 
 To cancel an event, use the {{% native_link "CANCEL_EVENT" %}} native from within an event handler. This does not stop other event handlers from running.
 
-#### Example
+## Example
 
 **Lua**
 
@@ -41,11 +41,11 @@ on('eventName', (eventParam1, eventParam2) => {
 });
 ```
 
-### Checking for canceled events
+## Checking for canceled events
 
 To check if the last event you triggered was canceled, use the {{% native_link "WAS_EVENT_CANCELED" %}} native. This only works for **local** events.
 
-#### Example
+## Example
 
 **Lua**
 

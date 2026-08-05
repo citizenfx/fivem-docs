@@ -23,13 +23,13 @@ player killerID, array deathData
     - **(string) killerVehName**: The display name of the vehicle the killer is in (eg: 'Adder').
     - **(array) deathCoords**: An array containing the x, y, z coordinates of where the player died.
 
-##### Ped types
+### Ped types
 
 ![](/ped_types.png)
 
 ## Examples
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```js
 on('baseevents:onPlayerKilled', (killerID, deathData) => {

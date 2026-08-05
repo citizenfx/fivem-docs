@@ -18,7 +18,7 @@ string name, int args[]
 
 This example outputs all event triggers to the console, making it easier to discover what you need:
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 AddEventHandler('gameEventTriggered', function (name, args)
@@ -26,7 +26,7 @@ AddEventHandler('gameEventTriggered', function (name, args)
 end)
 ```
 
-##### C\# Example:
+### C\# Example:
 
 ```csharp
 // In class constructor
@@ -39,7 +39,7 @@ private void OnGameEventTriggered(string name, List<dynamic> args)
 }
 ```
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```js
 on("gameEventTriggered", (name, args) => {

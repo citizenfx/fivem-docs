@@ -18,7 +18,7 @@ string player, int bucket, int oldBucket
 
 This example prints the player's name, the new routing bucket, and the old routing bucket to the server console.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 AddEventHandler('onPlayerBucketChange', function(player, bucket, oldBucket)
@@ -26,7 +26,7 @@ AddEventHandler('onPlayerBucketChange', function(player, bucket, oldBucket)
 end)
 ```
 
-##### C\# Example:
+### C\# Example:
 
 ```csharp
 // In class constructor
@@ -39,7 +39,7 @@ private void OnPlayerBucketChange([FromSource]Player player, int bucket, int old
 }
 ```
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```js
 on("onPlayerBucketChange", (player, bucket, oldBucket) => {

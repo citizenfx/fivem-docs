@@ -32,7 +32,7 @@ object/string message
 
 This example sends a chat message to a player locally from a client script (only the executing client will see it).
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 AddEventHandler('onResourceStart', function(resourceName)
@@ -46,7 +46,7 @@ AddEventHandler('onResourceStart', function(resourceName)
 end)
 ```
 
-##### C# Example:
+### C# Example:
 
 ```c#
 using Newtonsoft.Json;

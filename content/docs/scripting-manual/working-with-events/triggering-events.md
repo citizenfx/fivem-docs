@@ -3,11 +3,11 @@ title: Triggering Events
 weight: 30
 ---
 
-### Triggering local events
+## Triggering local events
 
 To trigger a server event from inside a server-side script, or trigger a client event from inside a client-side script, use the `TriggerEvent()` (or for JS, `emit()`) function.
 
-#### Example
+## Example
 
 **Lua**
 
@@ -27,13 +27,13 @@ TriggerEvent("eventName", eventParam1, eventParam2);
 emit("eventName", eventParam1, eventParam2);
 ```
 
-### Triggering server events
+## Triggering server events
 
 There are currently two different ways to trigger a server event from inside a **client** script.
 
 For smaller transactions you should use `TriggerServerEvent`, while for larger transactions (which contain more data, multiple KBs and above) `TriggerLatentServerEvent` would be more optimal.
 
-#### Example
+## Example
 
 **Lua**
 
@@ -53,7 +53,7 @@ TriggerServerEvent("eventName", eventParam1, eventParam2);
 emitNet("eventName", eventParam1, eventParam2);
 ```
 
-#### Triggering latent server events
+## Triggering latent server events
 
 Latent events should be used when needing to transfer a large amount of data from client -> server, as latent events **do not** block the entire network channel, unlike `TriggerServerEvent`.
 
@@ -79,7 +79,7 @@ TriggerLatentServerEvent("eventName", bps, eventParam1, eventParam2);
 
 ----------
 
-### Triggering client events
+## Triggering client events
 
 The same is applicable for triggering client events.
 
@@ -114,7 +114,7 @@ TriggerClientEvent(player, "eventName", eventParam1, eventParam2);
 emitNet("eventName", targetPlayer, eventParam1, eventParam2);
 ```
 
-#### Triggering latent client events
+## Triggering latent client events
 
 Latent events should be used when needing to transfer a large amount of data from server -> client, as latent events **do not** block the clients entire network channel, unlike `TriggerClientEvent`.
 

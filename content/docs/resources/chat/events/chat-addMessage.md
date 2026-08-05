@@ -32,7 +32,7 @@ object message
 
 This example sends a chat message to a player locally from a client script (only the executing client will see it).
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 TriggerEvent('chat:addMessage', {
@@ -42,7 +42,7 @@ TriggerEvent('chat:addMessage', {
 })
 ```
 
-##### C\# Example:
+### C\# Example:
 
 ```csharp
 TriggerEvent("chat:addMessage", new
@@ -53,7 +53,7 @@ TriggerEvent("chat:addMessage", new
 });
 ```
 
-##### JavaScript Example:
+### JavaScript Example:
 
 ```javascript
 emit('chat:addMessage', {

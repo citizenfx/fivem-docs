@@ -32,7 +32,7 @@ int target, object/string message
 
 This example sends a chat message to all players.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 AddEventHandler('onResourceStart', function(resourceName)

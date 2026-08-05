@@ -22,7 +22,7 @@ string commandName, string commandDescription, object commandParameters
 
 This example adds a command suggestion for the `/command` command.
 
-##### Lua Example:
+### Lua Example:
 
 ```lua
 -- Note, the command has to start with `/`.
@@ -32,7 +32,7 @@ TriggerEvent('chat:addSuggestion', '/command', 'help text', {
 })
 ```
 
-##### C\# Example:
+### C\# Example:
 
 ```csharp
 TriggerEvent("chat:addSuggestion", "/command", "help text", new[]
@@ -42,7 +42,7 @@ TriggerEvent("chat:addSuggestion", "/command", "help text", new[]
 });
 ```
 
-##### JS Example:
+### JS Example:
 
 ```js
 setImmediate(() => {
