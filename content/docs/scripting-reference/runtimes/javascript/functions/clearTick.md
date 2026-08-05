@@ -4,8 +4,7 @@ title: clearTick
 
 Removes a tick timer, stopping it from running. This is to be used in combination with a [setTick][setTick] id.
 
-Syntax
-------
+## Syntax
 
 ```ts
 clearTick(id);
@@ -15,8 +14,7 @@ clearTick(id);
 
 - **id**: The timer to be cleared.
 
-Examples
---------
+## Examples
 
 This example creates a tick timer that prints a string to the console. We then clear it 5000ms after the server/client started.
 

@@ -42,8 +42,7 @@ List of vehicle colors
     }
 </style>
 
-Metallic
------
+## Metallic
 
 <div class="colors">
     <div class="color"><span><img src="/vehicle-colors/0.webp" loading="lazy" alt="0"><br><strong>Index: 0</strong><br>Black</span></div>
@@ -122,8 +121,7 @@ Metallic
     <div class="color"><span><img src="/vehicle-colors/150.webp" loading="lazy" alt="150"><br><strong>Index: 150</strong><br>Lava Red</span></div>
 </div>
 
-Matte
------
+## Matte
 
 <div class="colors">
     <div class="color"><span><img src="/vehicle-colors/12.webp" loading="lazy" alt="12"><br><strong>Index: 12</strong><br>Black</span></div>
@@ -147,8 +145,7 @@ Matte
     <div class="color"><span><img src="/vehicle-colors/155.webp" loading="lazy" alt="155"><br><strong>Index: 155</strong><br>Dark Earth</span></div>
 </div>
 
-Metals
------
+## Metals
 
 <div class="colors">
     <div class="color"><span><img src="/vehicle-colors/117.webp" loading="lazy" alt="117"><br><strong>Index: 117</strong><br>Brushed Steel</span></div>
@@ -158,8 +155,7 @@ Metals
     <div class="color"><span><img src="/vehicle-colors/159.webp" loading="lazy" alt="159"><br><strong>Index: 159</strong><br>Brushed Gold</span></div>
 </div>
 
-Unnamed colors
------
+## Unnamed colors
 
 <div class="colors">
     <div class="color"><span><img src="/vehicle-colors/15.webp" loading="lazy" alt="15"><br><strong>Index: 15</strong><br>Unnamed</span></div>

@@ -7,8 +7,7 @@ values it returns a new vector3 perpendicular to both inputs, for two vector2 va
 positive or negative depending on whether the second vector is to the left or right of the first, and for quaternions
 it combines two rotations into one.
 
-Syntax
-------
+## Syntax
 
 ```lua
 number  cross(vector2 x, vector2 y)
@@ -30,8 +29,7 @@ quat    cross(quat x, quat y)
 - For a `vector3` and a `quat` (or vice versa): a [vector3][vec3].
 - For two `quat` values: a [quat][quat].
 
-Examples
---------
+## Examples
 
 ```lua
 -- Cross product of two vector3 values:

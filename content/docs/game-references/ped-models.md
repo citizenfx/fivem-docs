@@ -47,8 +47,7 @@ List of all working ped models in GTAV as of July 23, 2019.
     }
 </style>
 
-Ambient female
------
+## Ambient female
 
 <div class="models">
     <div class="model"><span><img src="/peds/a_f_m_beach_01.webp" loading="lazy" alt="a_f_m_beach_01"><br><strong>a_f_m_beach_01</strong><br>1 prop<br>6 components</span></div>
@@ -128,8 +127,7 @@ Ambient female
     <div class="model"><span><img src="/peds/a_f_y_yoga_01.webp" loading="lazy" alt="a_f_y_yoga_01"><br><strong>a_f_y_yoga_01</strong><br>1 prop<br>4 components</span></div>
 </div>
 
-Ambient male
------
+## Ambient male
 
 <div class="models">
     <div class="model"><span><img src="/peds/a_m_m_acult_01.webp" loading="lazy" alt="a_m_m_acult_01"><br><strong>a_m_m_acult_01</strong><br>1 prop<br>6 components</span></div>
@@ -263,8 +261,7 @@ Ambient male
     <div class="model"><span><img src="/peds/a_m_y_yoga_01.webp" loading="lazy" alt="a_m_y_yoga_01"><br><strong>a_m_y_yoga_01</strong><br>2 props<br>3 components</span></div>
 </div>
 
-Animals
------
+## Animals
 
 <div class="models">
     <div class="model"><span><img src="/peds/a_c_boar.webp" loading="lazy" alt="a_c_boar"><br><strong>a_c_boar</strong><br>0 prop<br>3 components</span></div>
@@ -303,8 +300,7 @@ Animals
     <div class="model"><span><img src="/peds/a_c_westy.webp" loading="lazy" alt="a_c_westy"><br><strong>a_c_westy</strong><br>0 prop<br>4 components</span></div>
 </div>
 
-Cutscene
------
+## Cutscene
 
 <div class="models">
     <div class="model"><span><img src="/peds/cs_amandatownley.webp" loading="lazy" alt="cs_amandatownley"><br><strong>cs_amandatownley</strong><br>1 prop<br>9 components</span></div>
@@ -466,8 +462,7 @@ Cutscene
     <div class="model"><span><img src="/peds/csb_vincent.webp" loading="lazy" alt="csb_vincent"><br><strong>csb_vincent</strong><br>0 prop<br>9 components</span></div>
 </div>
 
-Gang female
------
+## Gang female
 
 <div class="models">
     <div class="model"><span><img src="/peds/g_f_importexport_01.webp" loading="lazy" alt="g_f_importexport_01"><br><strong>g_f_importexport_01</strong><br>0 prop<br>5 components</span></div>
@@ -478,8 +473,7 @@ Gang female
     <div class="model"><span><img src="/peds/g_f_y_vagos_01.webp" loading="lazy" alt="g_f_y_vagos_01"><br><strong>g_f_y_vagos_01</strong><br>2 props<br>6 components</span></div>
 </div>
 
-Gang male
------
+## Gang male
 
 <div class="models">
     <div class="model"><span><img src="/peds/g_m_importexport_01.webp" loading="lazy" alt="g_m_importexport_01"><br><strong>g_m_importexport_01</strong><br>2 props<br>4 components</span></div>
@@ -526,8 +520,7 @@ Gang male
     <div class="model"><span><img src="/peds/g_m_y_strpunk_02.webp" loading="lazy" alt="g_m_y_strpunk_02"><br><strong>g_m_y_strpunk_02</strong><br>2 props<br>4 components</span></div>
 </div>
 
-Multiplayer
------
+## Multiplayer
 
 <div class="models">
     <div class="model"><span><img src="/peds/mp_f_bennymech_01.webp" loading="lazy" alt="mp_f_bennymech_01"><br><strong>mp_f_bennymech_01</strong><br>2 props<br>8 components</span></div>
@@ -572,8 +565,7 @@ Multiplayer
     <div class="model"><span><img src="/peds/mp_s_m_armoured_01.webp" loading="lazy" alt="mp_s_m_armoured_01"><br><strong>mp_s_m_armoured_01</strong><br>1 prop<br>5 components</span></div>
 </div>
 
-Scenario female
------
+## Scenario female
 
 <div class="models">
     <div class="model"><span><img src="/peds/s_f_m_fembarber.webp" loading="lazy" alt="s_f_m_fembarber"><br><strong>s_f_m_fembarber</strong><br>1 prop<br>5 components</span></div>
@@ -603,8 +595,7 @@ Scenario female
     <div class="model"><span><img src="/peds/s_f_y_casino_01.webp" loading="lazy" alt="s_f_y_casino_01"><br><strong>s_f_y_casino_01</strong><br>1 prop<br>9 components</span></div>
 </div>
 
-Scenario male
------
+## Scenario male
 
 <div class="models">
     <div class="model"><span><img src="/peds/s_m_m_ammucountry.webp" loading="lazy" alt="s_m_m_ammucountry"><br><strong>s_m_m_ammucountry</strong><br>2 props<br>6 components</span></div>
@@ -709,8 +700,7 @@ Scenario male
     <div class="model"><span><img src="/peds/s_m_y_xmech_02.webp" loading="lazy" alt="s_m_y_xmech_02"><br><strong>s_m_y_xmech_02</strong><br>0 prop<br>6 components</span></div>
 </div>
 
-Story
------
+## Story
 
 <div class="models">
     <div class="model"><span><img src="/peds/hc_driver.webp" loading="lazy" alt="hc_driver"><br><strong>hc_driver</strong><br>3 props<br>8 components</span></div>
@@ -876,8 +866,7 @@ Story
     <div class="model"><span><img src="/peds/ig_vincent.webp" loading="lazy" alt="ig_vincent"><br><strong>ig_vincent</strong><br>0 prop<br>9 components</span></div>
 </div>
 
-Story scenario female
------
+## Story scenario female
 
 <div class="models">
     <div class="model"><span><img src="/peds/u_f_m_corpse_01.webp" loading="lazy" alt="u_f_m_corpse_01"><br><strong>u_f_m_corpse_01</strong><br>0 prop<br>4 components</span></div>
@@ -910,8 +899,7 @@ Story scenario female
     <div class="model"><span><img src="/peds/u_f_y_taylor.webp" loading="lazy" alt="u_f_y_taylor"><br><strong>u_f_y_taylor</strong><br>2 props<br>8 components</span></div>
 </div>
 
-Story scenario male
------
+## Story scenario male
 
 <div class="models">
     <div class="model"><span><img src="/peds/u_m_m_aldinapoli.webp" loading="lazy" alt="u_m_m_aldinapoli"><br><strong>u_m_m_aldinapoli</strong><br>1 prop<br>5 components</span></div>

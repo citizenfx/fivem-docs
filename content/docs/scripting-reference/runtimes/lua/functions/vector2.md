@@ -10,8 +10,7 @@ In FiveM's Lua runtime, vectors are real data types, just like numbers, bools an
 This means that `type(vector2(1, 2))` will return `vector2`.
 More about this in the [Lua runtime manual][lua-runtime].
 
-Syntax
-------
+## Syntax
 
 ```lua
 vector2 vector2(float x, float y)
@@ -26,8 +25,7 @@ vector2 vec2(float x, float y)
 - **x**: A floating point number representing the `x` value of your vector.
 - **y**: A floating point number representing the `y` value of your vector.
 
-Examples
---------
+## Examples
 
 Basic vector2 functionality:
 

@@ -2,8 +2,7 @@
 title: Blips
 ---
 
-Blips
------
+## Blips
 
 A list of all game blips as of build 3258 are shown below.
 
@@ -1046,8 +1045,7 @@ A list of all game blips as of build 3258 are shown below.
 
 ---
 
-Blip colors
------
+## Blip colors
 
 {{% native_link "SET_BLIP_AS_FRIENDLY" %}} is the native used to toggle friendly and enemy flags.
 Used in decompiled scripts with friendly and enemy peds.

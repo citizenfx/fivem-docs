@@ -2,8 +2,7 @@
 title: onClientGameTypeStart
 ---
 
-Parameters
-----------
+## Parameters
 
 ```
 string resourceName
@@ -11,8 +10,7 @@ string resourceName
 
 - **resourceName**: The name of the resource/gametype that started.
 
-Examples
---------
+## Examples
 
 ##### JavaScript Example:
 

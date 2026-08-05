@@ -5,8 +5,7 @@ toc_hide: true
 
 Triggered when the loading progress percentage is updated.
 
-Event Data
-----------
+## Event Data
 
 This is the `data` provided to the message event:
 
@@ -20,8 +19,7 @@ interface EventData {
 - **eventName**: The event name.
 - **loadFraction**: The total loading percentage as a fraction from 0 to 1 (inclusive).
 
-Examples
---------
+## Examples
 
 ```html
 <!-- loading screen bar -->

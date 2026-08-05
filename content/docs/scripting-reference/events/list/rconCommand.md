@@ -2,8 +2,7 @@
 title: rconCommand
 ---
 
-Parameters
-----------
+## Parameters
 
 {{% alert color="warning" %}}
 This event is deprecated. Please use {{% native_link "REGISTER_COMMAND" %}} instead, and use the `restricted` flag.
@@ -16,8 +15,7 @@ string command, table/array arguments
 - **command**: A string containing the command name that was executed.
 - **arguments**: A list containing all arguments passed to the command.
 
-Examples
---------
+## Examples
 
 ##### JavaScript Example:
 

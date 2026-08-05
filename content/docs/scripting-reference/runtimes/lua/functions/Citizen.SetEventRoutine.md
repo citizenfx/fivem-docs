@@ -2,8 +2,7 @@
 title: Citizen.SetEventRoutine
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

@@ -4,8 +4,7 @@ title: onResourceStarting
 
 Called before a resource starts. This event can be canceled to prevent this resource from starting.
 
-Parameters
-----------
+## Parameters
 
 ```
 string resourceName
@@ -13,8 +12,7 @@ string resourceName
 
 - resourceName: The name of the resource that is trying to start.
 
-Examples
---------
+## Examples
 
 This example prevents any resource called 'pineapple' from starting.
 

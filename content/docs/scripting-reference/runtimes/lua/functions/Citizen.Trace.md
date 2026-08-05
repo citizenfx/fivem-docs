@@ -2,8 +2,7 @@
 title: Citizen.Trace
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 Citizen.Trace(message)
@@ -12,8 +11,7 @@ Citizen.Trace(message)
 Outputs the passed message to any trace listeners, including the console output and the log file. Does not add a newline
 by itself, therefore suffix a message with `"\n"`.
 
-Examples
---------
+## Examples
 
 This example will print "Hello, World!".
 

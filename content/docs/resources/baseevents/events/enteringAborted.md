@@ -2,19 +2,16 @@
 title: enteringAborted
 ---
 
-Name
-----------
+## Name
 
 ```
 baseevents:enteringAborted
 ```
 
-Parameters
-----------
+## Parameters
 
 _There are no parameters for this event._
 
-Examples
---------
+## Examples
 
 TODO

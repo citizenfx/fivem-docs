@@ -3,13 +3,11 @@ title: Resource FAQ
 weight: 30
 ---
 
-What does "prohibited logic" mean?
-----------------------------------
+## What does "prohibited logic" mean?
 
 The resource in question likely contains malicious code. Sometimes another resource "infects" other resources, so be sure to check the code of the mentioned resource. Prohibited logic usually includes code that can infect other resources, or that impacts your overall gameplay experience.
 
-What are disallowed resources?
-------------------------------
+## What are disallowed resources?
 
 While FiveM rarely takes action, we do want to avoid:
 
@@ -17,13 +15,11 @@ While FiveM rarely takes action, we do want to avoid:
 - Protection rackets, in other words, (former) authors of hacks extorting server owners to buy their anticheat. This is in violation of FiveM's Terms of Service.
 - Global ban lists. We have no way to verify the quality of every anticheat, and it may very well be possible for a global ban list to ban players without good reason. With global ban lists, this impacts the overall gameplay experience of FiveM, as players are unable to join a large number of servers without sufficient reason.
 
-Are anticheat resources allowed?
---------------------------------
+## Are anticheat resources allowed?
 
 Of course! FiveM allows you to run any resource within the terms, and you are free to use anticheat resources. FiveM only takes action against the aforementioned items.
 
-What can I do against cheaters?
--------------------------------
+## What can I do against cheaters?
 
 - Report cheats. If you have any form of hack or cheat (in usable form), do not hesitate to send it over to [abuse@fivem.net](mailto:abuse@fivem.net). We will immediately look into the cheat and take the necessary measures.
 - Use server-side code where possible. With OneSync's unique features, server owners are able to build secure code that prevents abuse by cheats.

@@ -2,12 +2,10 @@
 title: playerActivated
 ---
 
-Parameters
-----------
+## Parameters
 
 TODO
 
-Examples
---------
+## Examples
 
 TODO

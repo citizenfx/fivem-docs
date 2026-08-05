@@ -2,8 +2,7 @@
 title: onClientMapStop
 ---
 
-Parameters
-----------
+## Parameters
 
 ```
 string resourceName
@@ -11,7 +10,6 @@ string resourceName
 
 - **resourceName**: The name of the resource/map that stopped.
 
-Examples
---------
+## Examples
 
 TODO

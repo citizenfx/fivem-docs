@@ -4,8 +4,7 @@ title: onPlayerBucketChange
 
 Called when a player changes routing bucket on the server.
 
-Parameters
-----------
+## Parameters
 
 ```
 string player, int bucket, int oldBucket
@@ -15,8 +14,7 @@ string player, int bucket, int oldBucket
 - **bucket**: The new routing bucket the player was moved into.
 - **oldBucket**: The routing bucket the player was previously in.
 
-Examples
---------
+## Examples
 
 This example prints the player's name, the new routing bucket, and the old routing bucket to the server console.
 

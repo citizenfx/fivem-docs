@@ -5,8 +5,7 @@ toc_hide: true
 
 Triggered to log the initialization of resources.
 
-Event Data
-----------
+## Event Data
 
 This is the `data` provided to the message event:
 
@@ -20,8 +19,7 @@ interface EventData {
 - **eventName**: The event name.
 - **message**: The log message.
 
-Examples
---------
+## Examples
 
 ```html
 <!-- loading screen bar -->

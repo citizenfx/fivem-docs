@@ -2,8 +2,7 @@
 title: Citizen.PointerValueFloat
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

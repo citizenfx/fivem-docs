@@ -2,8 +2,7 @@
 title: Citizen.PointerValueVector
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

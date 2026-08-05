@@ -4,8 +4,7 @@ title: playerConnecting
 
 Called when a player is connecting to the server.
 
-Parameters
-----------
+## Parameters
 
 ```
 string playerName, function setKickReason, object deferrals
@@ -16,8 +15,7 @@ string playerName, function setKickReason, object deferrals
 - **deferrals**: An object used to 'defer' accepting connections to a later tick.
 - **source**: The source object is a _temporary_ player ID, that can be used with a limited set of functions only.
 
-Deferring connections
----------------------
+## Deferring connections
 
 Using deferrals allows you to make a connection request complete at a later time, for example when you have to wait for
 an asynchronous task to complete beforehand, such as a database or web API query.
@@ -60,8 +58,7 @@ deferrals.handover({
 })
 ```
 
-Examples
---------
+## Examples
 
 This example checks a connecting player's license identifier against a ban list. If the player is in the ban list, they get kicked, otherwise they are allowed to connect.
 

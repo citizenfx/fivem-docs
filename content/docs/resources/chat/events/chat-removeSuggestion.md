@@ -12,15 +12,13 @@ Triggering this allows you to remove any existing command suggestions for the sp
 chat:removeSuggestion
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 string commandName
 ```
 
-Examples
---------
+## Examples
 
 This example removes the suggestion that was created with the example of [chat:addSuggestion](../chat-addSuggestion/).
 

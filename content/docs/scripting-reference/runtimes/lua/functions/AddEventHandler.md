@@ -4,8 +4,7 @@ title: AddEventHandler
 
 Use this to listen for events, see the [events][listening-for-events] page for more info.
 
-Syntax
-------
+## Syntax
 
 ```lua
 AddEventHandler(string eventName, function callback)
@@ -16,8 +15,7 @@ AddEventHandler(string eventName, function callback)
 - **eventName**: The name of the event you want to listen to.
 - **callback**: The function to run when the event is called.
 
-Examples
---------
+## Examples
 
 -- SERVER
 

@@ -28,8 +28,7 @@ object spawn
     - **(Hash) model**: The ped model hash the player will spawn as.
     - **(bool) skipFade**: Whether to skip the fade in and out when spawning.
 
-Examples
---------
+## Examples
 
 ##### Lua Example:
 

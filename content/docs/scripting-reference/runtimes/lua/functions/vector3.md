@@ -15,8 +15,7 @@ values. For example, `GetEntityCoords` returns a vector3, whereas `SetEntityCoor
 individual `x, y, z` values. See the second example below for a real world use of vector3, or read more about them
 in the [Lua runtime manual][lua-runtime] and [native functions manual][natives-manual].
 
-Syntax
-------
+## Syntax
 
 ```lua
 vector3 vector3(float x, float y, float z)
@@ -32,8 +31,7 @@ vector3 vec3(float x, float y, float z)
 - **y**: A floating point number representing the `y` value of your vector.
 - **z**: A floating point number representing the `z` value of your vector.
 
-Examples
---------
+## Examples
 
 Basic vector3 functionality:
 

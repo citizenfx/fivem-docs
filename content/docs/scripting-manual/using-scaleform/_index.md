@@ -5,15 +5,13 @@ weight: 80
 
 Scaleform GFx is the native GUI for GTAV, based on Flash technology using ActionScript 2, which is a superset of ECMAScript (JavaScript) - read more on [Wikipedia](https://en.wikipedia.org/wiki/Scaleform_GFx).
 
-Development environment
----------------
+## Development environment
 
 In order to develop custom .gfx assets (optimized SWF) you need to have Adobe Flash Pro CS6, use ActionScript 2 (version 3 has a different virtual machine which is not supported by the version GFx GTA uses) and target Flash Player 8.0.
 
 To convert a .swf file produced by Adobe Flash into .gfx, you need the `gfxexport.exe` tool from the Scaleform GFx SDK (version 4.0 is fine).
 
-Limitations
------------
+## Limitations
 
 Scaleform doesn't implement some features from Flash:
 
@@ -22,8 +20,7 @@ Scaleform doesn't implement some features from Flash:
 - No masking. *Will be discussed later on this page*.
 - No embedded raster graphics. *Will be discussed later on this page*.
 
-Interfacing
------------
+## Interfacing
 
 You can interface with scaleforms by performing native calls from the [GRAPHICS namespace](/natives/?n_GRAPHICS) with `scaleform` in their name.
 
@@ -67,28 +64,24 @@ You can draw scaleform using one of these commands, **red, green, blue, alpha an
 - {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN" %}} also draws gfx in 2D, however in fullscreen
 - {{% native_link "DRAW_SCALEFORM_MOVIE_3D" %}} **do note that if you have blackout enabled this will be drawn with "solarized" and shifted to yellow colors**.
 
-Masking
--------
+## Masking
 
 Can be faked using the function {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN_MASKED" %}}, where the first gfx is what you want to render, and the second gfx is a mask for it.
 
 This masking has no anti-aliasing, it doesn't perform "smooth" masking, if a particular pixel of masking gfx is not fully transparent, then the underlying pixel will be fully shown.
 
-Using textures
---------------
+## Using textures
 
 In normal Flash you can simply load an image into MovieClip (see MovieClipLoader class in AS2 docs) using its (http\[s\]) url, however in-game you need the `img` protocol.
 
 Example of correct image url: `img://mpcarhud/albany`, where `mpcarhud` is the name of a texture dictionary and `albany` is the texture name in said TXD.
 
-Useful links
-------------
+## Useful links
 
 - [AS2 reference](http://demo.ligams.free.fr/AS2LR/)
 - [Extra Scaleform documentation](https://forum.cfx.re/t/99874)
 
-Extra Information
-------------
+## Extra Information
 
 Some scaleforms also allow the use of certain html elements, such as `<b>` and `<br>`. You can also set certain fonts for some using `<FONT FACE='$[fontName]'>` for example, `<FONT FACE='$Font2'>`. Here's a list of usable fonts (Not all work for every scaleform):
 
@@ -115,8 +108,7 @@ $Redemption
 
 Image and size can also be set, with size being `<FONT SIZE='[fontSize]'>` and image being `<img src='img://txd/tn'>`
 
-Example
-------------
+## Example
 
 ```lua
 Citizen.CreateThread(function()

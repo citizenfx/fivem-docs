@@ -2,8 +2,7 @@
 title: Citizen.ResultAsInteger
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

@@ -2,8 +2,7 @@
 title: Controls
 ---
 
-Example
--------
+## Example
 
 ### Lua
 
@@ -25,16 +24,14 @@ if(IsControlJustReleased(0, 51))
 }
 ```
 
-Control types
-------------
+## Control types
 
 | Index | Name              |
 |-------|-------------------|
 | 0     | PLAYER\_CONTROL   |
 | 2     | FRONTEND\_CONTROL |
 
-Controls
---------
+## Controls
 
 | Index |                       Name                       |            Default QWERTY             | Xbox Controller |
 | ----- | ------------------------------------------------ | ------------------------------------- | --------------- |

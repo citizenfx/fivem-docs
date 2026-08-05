@@ -2,8 +2,7 @@
 title: playerSpawned
 ---
 
-Parameters
-----------
+## Parameters
 
 ```
 object spawnInfo
@@ -18,8 +17,7 @@ object spawnInfo
     - **(Hash) model**: The ped model hash the player spawned as.
     - **(bool) skipFade**: Whether the fade was skipped when the player spawned.
 
-Examples
---------
+## Examples
 
 ```js
 {

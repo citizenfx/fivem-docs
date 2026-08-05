@@ -4,8 +4,7 @@ title: playerDropped
 
 Called when a player drops from the server.
 
-Parameters
-----------
+## Parameters
 
 ```
 string reason, string resourceName, uint clientDropReason
@@ -16,8 +15,7 @@ string reason, string resourceName, uint clientDropReason
 - **resourceName**: The resource this event was dispatched from.
 - **clientDropReason**: An unsigned integer representing the internal reason for the event dispatch (see [ClientDropReasons.h](https://github.com/citizenfx/fivem/blob/master/code/components/citizen-server-impl/include/ClientDropReasons.h) for the enum, originally declared as `uint32_t`).
 
-Examples
---------
+## Examples
 
 This example prints the name of the player, the reason why the player has disconnected, the resource from which the event was dispatched, and the internal client drop reason to the server console.
 

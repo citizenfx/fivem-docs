@@ -2,8 +2,7 @@
 title: Citizen.ReturnResultAnyway
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

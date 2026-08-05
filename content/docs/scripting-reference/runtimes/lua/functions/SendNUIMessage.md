@@ -4,8 +4,7 @@ title: SendNUIMessage
 
 Use this to send data to the NUI (NewUI)
 
-Syntax
-------
+## Syntax
 
 ```lua
 SendNUIMessage(table data)
@@ -15,8 +14,7 @@ SendNUIMessage(table data)
 
 - **data** data that will be sent and received in NUI
 
-Examples
---------
+## Examples
 
 LUA
 

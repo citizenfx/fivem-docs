@@ -5,8 +5,7 @@ weight: 30
 
 **A list of all non-resource-specific events.**
 
-Core events
------------
+## Core events
 
 - [gameEventTriggered](./gameEventTriggered/)
 - [onClientResourceStart](./onClientResourceStart/)

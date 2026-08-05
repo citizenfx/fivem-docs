@@ -2,8 +2,7 @@
 title: Citizen.SetTickRoutine
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

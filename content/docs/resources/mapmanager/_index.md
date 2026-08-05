@@ -2,13 +2,11 @@
 title: mapmanager
 ---
 
-Mapmanager
-------
+## Mapmanager
 
 Mapmanager is an included citizenfx resource that handles map changes, game types, and compatibility between gametypes and maps.
 
-Resource Structure
-------
+## Resource Structure
 
 ### Client Scripts
 
@@ -22,8 +20,7 @@ Resource Structure
 
 - mapmanager_shared.lua
 
-Exports
-------
+## Exports
 
 Exports are called using exports["mapmanger"]:exportname(args)
 

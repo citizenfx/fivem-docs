@@ -12,15 +12,13 @@ Triggering this event allows you to add a template to be used with [chat:addMess
 chat:addTemplate
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 string templateID, string htmlString
 ```
 
-Examples
---------
+## Examples
 
 This example adds a template with a twitter image.
 

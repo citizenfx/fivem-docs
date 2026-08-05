@@ -10,8 +10,7 @@ In FiveM's Lua runtime, vectors are real data types, just like numbers, bools an
 This means that `type(vector4(1, 2, 3, 4))` will return `vector4`.
 More about this in the [Lua runtime manual][lua-runtime].
 
-Syntax
-------
+## Syntax
 
 ```lua
 vector4 vector4(float x, float y, float z, float w)
@@ -28,8 +27,7 @@ vector4 vec4(float x, float y, float z, float w)
 - **z**: A floating point number representing the `z` value of your vector.
 - **w**: A floating point number representing the `w` value of your vector.
 
-Examples
---------
+## Examples
 
 ```lua
 -- Basic vector with zero length:

@@ -2,8 +2,7 @@
 title: Citizen.InvokeFunctionReference
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

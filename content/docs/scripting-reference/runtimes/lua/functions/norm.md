@@ -5,8 +5,7 @@ title: norm
 Normalizes a vector or quaternion. The result keeps the same direction but has a length of 1. This is useful when
 you only care about the direction, not the distance. For quaternions, normalizing ensures the rotation stays accurate.
 
-Syntax
-------
+## Syntax
 
 ```lua
 vector2 norm(vector2 v)
@@ -23,8 +22,7 @@ quat    norm(quat q)
 
 A value of the same type as the input, with a length of 1.
 
-Examples
---------
+## Examples
 
 ```lua
 -- Normalize a vector3:

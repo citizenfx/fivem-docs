@@ -12,15 +12,13 @@ Using this export allows you to add command suggestions to your chat.
 addSuggestion
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 string commandName, string commandDescription, object commandParameters
 ```
 
-Examples
---------
+## Examples
 
 This example adds a command suggestion for the `/command` command.
 

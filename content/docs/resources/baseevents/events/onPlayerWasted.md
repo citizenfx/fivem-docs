@@ -2,15 +2,13 @@
 title: onPlayerWasted
 ---
 
-Name
-----------
+## Name
 
 ```
 baseevents:onPlayerWasted
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 array deathCoords
@@ -18,7 +16,6 @@ array deathCoords
 
 - **deathCoords**: A table containing the x, y and z coordinates of where the (source) player died.
 
-Examples
---------
+## Examples
 
 TODO

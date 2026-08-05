@@ -7,8 +7,7 @@ title: RegisterNetEvent
 Marks the event safe for network use. Aka, allows you to trigger the eventName event on the client, from a server side
 script. If you do not provide a callback function use [AddEventHandler][] to listen for the event after registering it.
 
-Syntax
-------
+## Syntax
 
 ```lua
 RegisterNetEvent(string eventName, function callback)
@@ -22,8 +21,7 @@ RegisterNetEvent(string eventName, function callback)
 
 - **callback**: The function to run when the event is called.
 
-Examples
---------
+## Examples
 
 ```lua
 RegisterNetEvent('eventName', function(...)

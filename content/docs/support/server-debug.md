@@ -3,8 +3,7 @@ title: Server Debugging
 weight: 40
 ---
 
-Creating Full Dumps
--------
+## Creating Full Dumps
 
 This section will explain how to create useful debugging dumps (called .dmp files) in order to assist with troubleshooting. If you encounter a crash, set up your environment to capture the next time it happens.
 

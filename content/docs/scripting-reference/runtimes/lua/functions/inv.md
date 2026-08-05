@@ -5,8 +5,7 @@ title: inv
 Calculates the inverse of a quaternion. The inverse represents the opposite rotation: if a quaternion rotates 90
 degrees to the right, its inverse rotates 90 degrees to the left.
 
-Syntax
-------
+## Syntax
 
 ```lua
 quat inv(quat q)
@@ -20,8 +19,7 @@ quat inv(quat q)
 
 A [quat][quat] representing the opposite rotation.
 
-Examples
---------
+## Examples
 
 ```lua
 -- Inverting a quaternion gives the opposite rotation:

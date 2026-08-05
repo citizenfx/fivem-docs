@@ -2,8 +2,7 @@
 title: Citizen.SetDuplicateRefRoutine
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

@@ -2,8 +2,7 @@
 title: Speeches
 ---
 
-Example
--------
+## Example
 
 ### Lua
 
@@ -16,8 +15,7 @@ local ped = CreateRandomPed(coords.x, coords.y, coords.z)
 PlayPedAmbientSpeechNative(ped, "GENERIC_INSULT_HIGH"--[[speechName]], "SPEECH_PARAMS_FORCE"--[[speechParam]])
 ```
 
-Speech Params
-------------
+## Speech Params
 
 |Speech Param|Description|
 |--|--|
@@ -62,8 +60,7 @@ Speech Params
 |`0x37e09d70`||
 |`0xfc88a240`||
 
-Speech Names
---------
+## Speech Names
 
 |Speech Name|Description|
 |--|--|

@@ -2,8 +2,7 @@
 title: Citizen.CanonicalizeRef
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

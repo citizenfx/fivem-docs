@@ -20,8 +20,7 @@ If you haven't done so yet, register a free license key on the [Cfx Portal](http
 - [Windows setup guide (Vanilla)][setting-up-a-server-vanilla-windows]
 - [Linux setup guide (Vanilla)][setting-up-a-server-vanilla-linux]
 
-What's next?
-------------
+## What's next?
 
 - [Using server commands][server-commands]
 - [Start scripting][scripting-introduction]

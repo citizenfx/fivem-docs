@@ -4,8 +4,7 @@ title: RemoveEventHandler
 
 Removes the provided event handler.
 
-Syntax
-------
+## Syntax
 
 ```lua
 RemoveEventHandler(table eventHandlerData)
@@ -15,8 +14,7 @@ RemoveEventHandler(table eventHandlerData)
 
 - **eventHandlerData**: The return value of [AddEventHandler][].
 
-Examples
---------
+## Examples
 
 ```lua
 local eventA = AddEventHandler("someEvent", function()

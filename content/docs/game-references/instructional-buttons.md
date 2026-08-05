@@ -4,8 +4,7 @@ title: Instructional Buttons
 
 **Instructional Buttons**, also known as Prompts are UI elements that are displayed at the bottom-right corner of the screen, which show what actions certain keys and controls can do. You can make them clickable with your cursor, add multiple buttons, icons and much more.
 
-Simple non-clickable buttons example
-------------
+## Simple non-clickable buttons example
 
 ### Lua
 
@@ -59,8 +58,7 @@ end)
 
 ![Code Result](/instructional_buttons_result.png)
 
-Simple clickable buttons example
-------------
+## Simple clickable buttons example
 
 ### Lua
 
@@ -136,8 +134,7 @@ end)
 
 ![Code Result](/instructional_buttons_result_2.png)
 
-Simple buttons with icons example
-------------
+## Simple buttons with icons example
 
 ### Lua
 
@@ -196,8 +193,7 @@ end)
 
 ![Code Result](/instructional_buttons_result_3.png)
 
-Icon list
----------------
+## Icon list
 
 | ID  | Name                                   |
 |-----|----------------------------------------|

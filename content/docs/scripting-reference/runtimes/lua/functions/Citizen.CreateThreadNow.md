@@ -2,8 +2,7 @@
 title: Citizen.CreateThreadNow
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

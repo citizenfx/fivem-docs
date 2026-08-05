@@ -4,8 +4,7 @@ title: onEntityBucketChange
 
 Called when an entity changes routing bucket on the server.
 
-Parameters
-----------
+## Parameters
 
 ```
 int entity, int bucket, int oldBucket
@@ -15,8 +14,7 @@ int entity, int bucket, int oldBucket
 - **bucket**: The new routing bucket the entity was moved into.
 - **oldBucket**: The routing bucket the entity was previously in.
 
-Examples
---------
+## Examples
 
 This example prints the entity id, the new routing bucket, and the old routing bucket to the server console.
 

@@ -8,8 +8,7 @@ Triggered when an init function is being invoked, as a result of [startInitFunct
 Several [onDataFileEntry](../onDataFileEntry/) may be triggered after this.
 After the init function finishes invoking, [initFunctionInvoked](../initFunctionInvoked/) will be triggered.
 
-Event Data
-----------
+## Event Data
 
 This is the `data` provided to the message event:
 

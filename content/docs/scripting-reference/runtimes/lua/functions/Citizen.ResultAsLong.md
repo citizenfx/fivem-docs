@@ -2,8 +2,7 @@
 title: Citizen.ResultAsLong
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

@@ -22,15 +22,13 @@ message = {
 addMessage
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 int target, object/string message
 ```
 
-Examples
---------
+## Examples
 
 This example sends a chat message to all players.
 

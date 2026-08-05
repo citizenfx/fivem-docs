@@ -6,8 +6,7 @@ Calculates the [dot product][wiki-dot] of two values. The dot product returns a 
 much two vectors or quaternions point in the same direction. It's useful for checking angles between vectors, checking
 if vectors point in the same direction, and projecting one vector onto another.
 
-Syntax
-------
+## Syntax
 
 ```lua
 number dot(vector2 x, vector2 y)
@@ -25,8 +24,7 @@ number dot(quat x, quat y)
 
 A number representing the dot product of the two values.
 
-Examples
---------
+## Examples
 
 ```lua
 -- Dot product of two vector3 values:

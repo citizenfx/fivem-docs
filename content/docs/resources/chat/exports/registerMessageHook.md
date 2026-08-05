@@ -22,15 +22,13 @@ outMessage = {
 registerMessageHook
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 function hookFunction
 ```
 
-hookRef functions
-----------
+## hookRef functions
 
 ### updateMessage(`object messageObject`)
 
@@ -48,8 +46,7 @@ hookRef functions
 
 - Changes the routing of the current message (Who it is being sent to).
 
-Examples
---------
+## Examples
 
 This example replaces all chat messages with the word slugs to snails.
 

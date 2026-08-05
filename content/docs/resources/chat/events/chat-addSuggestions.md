@@ -12,8 +12,7 @@ Triggering this event allows you to add multiple command suggestions to your cha
 chat:addSuggestions
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 array suggestions
@@ -21,8 +20,7 @@ array suggestions
 
 - **suggestions**: an array containing multiple [suggestion](../chat-addSuggestion/) objects.
 
-Examples
---------
+## Examples
 
 This example adds a command suggestion for the `/command` and `/othercommand` commands.
 

@@ -2,8 +2,7 @@
 title: Citizen.Await
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 Citizen.Await(awaitable)

@@ -4,15 +4,13 @@ title: GetPlayers
 
 Returns a table of all connected players (server ID's).
 
-Syntax
-------
+## Syntax
 
 ```lua
 GetPlayers()
 ```
 
-Examples
---------
+## Examples
 
 ```lua
 for _, playerId in ipairs(GetPlayers()) do

@@ -4,8 +4,7 @@ title: onClientResourceStop
 
 Called after a resource stops.
 
-Parameters
-----------
+## Parameters
 
 ```
 string resourceName
@@ -13,8 +12,7 @@ string resourceName
 
 - resourceName: The name of the resource that stopped.
 
-Examples
---------
+## Examples
 
 This example prints the name of the resource that was just stopped.
 

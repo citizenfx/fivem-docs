@@ -2,8 +2,7 @@
 title: Citizen.SetDeleteRefRoutine
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

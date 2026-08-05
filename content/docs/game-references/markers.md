@@ -2,8 +2,7 @@
 title: Markers
 ---
 
-Markers
------
+## Markers
 
 <!-- _loc1_.map((name, idx) => `<div class="marker"><span><img src="/markers/${name}.png" alt="${name}"> ${idx}<br>${name}</div>`).join('\n') -->
 

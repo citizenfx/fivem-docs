@@ -22,15 +22,13 @@ message = {
 addMessage
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 object/string message
 ```
 
-Examples
---------
+## Examples
 
 This example sends a chat message to a player locally from a client script (only the executing client will see it).
 

@@ -15,13 +15,11 @@ modifications the [Grit game engine][grit] introduced:
 
 To learn more about Lua, read their [official documentation][luadocs].
 
-Using Lua
----------
+## Using Lua
 
 To use Lua in your scripts, simply use the `.lua` file extension. No additional configuration is required.
 
-Compile-time hashes
-----------------------
+## Compile-time hashes
 
 Because you might often have to deal with 'Jenkins one-at-a-time' hashes in GTA/RAGE, the Lua runtime has been extended
 to have support for compile-time generation of hash keys, similar to {{% native_link "GET_HASH_KEY" %}}, however with zero
@@ -42,8 +40,7 @@ end
 print(`a_m_y_skater_01`)
 ```
 
-Vectors & quaternions
----------------------
+## Vectors & quaternions
 
 FiveM supports first-class vectors and quaternions in Lua. Vectors and quaternions are incredibly useful to represent
 things like positions, rotations or even colors. For performance reasons, vectors and quaternions are real data types in
@@ -59,8 +56,7 @@ For usage and examples see their respective docs:
 - [vector3](/docs/scripting-reference/runtimes/lua/functions/vector3/)
 - [vector4](/docs/scripting-reference/runtimes/lua/functions/vector4/)
 
-Using exports
--------------
+## Using exports
 
 You can define exports by calling the global `exports` object:
 
@@ -119,8 +115,7 @@ Citizen.CreateThread, Citizen.Wait, threaded events, etc
 
 <!-- TODO: Perhaps tell something about lazy loading of natives? -->
 
-External libraries
-------------------
+## External libraries
 
 The Lua runtime exposes some libraries on the global scope which you can use.
 
@@ -128,8 +123,7 @@ The Lua runtime exposes some libraries on the global scope which you can use.
 - `promise`: [lua-promises](https://github.com/zserge/lua-promises/tree/02b64afdbe38de958a6a92703af8e66a9ff3e492)
 - `msgpack`: [lua-MessagePack 0.3.3](https://framagit.org/fperrad/lua-MessagePack/tree/0.3.3)
 
-Lua specific functions
-----------------------
+## Lua specific functions
 
 - [Client functions](/docs/scripting-reference/runtimes/lua/client-functions/)
 - [Server functions](/docs/scripting-reference/runtimes/lua/server-functions/)

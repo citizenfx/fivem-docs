@@ -8,8 +8,7 @@ Triggered when data file entries are incoming.
 Several [onDataFileEntry](../onDataFileEntry/) events will be triggered after this,
 and a [endDataFileEntries](../endDataFileEntries/) event will be triggered after the given data files entries are done.
 
-Event Data
-----------
+## Event Data
 
 This is the `data` provided to the message event:
 

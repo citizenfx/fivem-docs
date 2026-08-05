@@ -5,22 +5,19 @@ weight: 10
 
 **A list of client side events you can use in your scripts.**
 
-Core events
------------
+## Core events
 
 These events are part of FiveM and do not require any resource.
 
 {{% events "client" %}}
 
-spawnmanager events
--------------------
+## spawnmanager events
 
 These events are part of the [spawnmanager](/docs/resources/spawnmanager/) resource.
 
 - [playerSpawned](/docs/resources/spawnmanager/events/playerSpawned/)
 
-mapmanager events
------------------
+## mapmanager events
 
 These events are part of the [mapmanager](/docs/resources/mapmanager/) resource.
 
@@ -30,24 +27,21 @@ These events are part of the [mapmanager](/docs/resources/mapmanager/) resource.
 - [onClientGameTypeStop](/docs/resources/mapmanager/events/onClientGameTypeStop/)
 - [getMapDirectives](/docs/resources/mapmanager/events/getMapDirectives/)
 
-baseevents events
------------------
+## baseevents events
 
 These events are part of the [baseevents](/docs/resources/baseevents/) resource.
 
 - [onPlayerDied](/docs/resources/baseevents/events/onPlayerDied/)
 - [onPlayerKilled](/docs/resources/baseevents/events/onPlayerKilled/)
 
-sessionmanager events
----------------------
+## sessionmanager events
 
 These events are part of the [sessionmanager](/docs/resources/sessionmanager/) resource.
 
 - [playerActivated](/docs/resources/sessionmanager/events/playerActivated/)
 - [sessionInitialized](/docs/resources/sessionmanager/events/sessionInitialized/)
 
-chat events
------------
+## chat events
 
 These events are part of the [chat](/docs/resources/chat/) resource.
 

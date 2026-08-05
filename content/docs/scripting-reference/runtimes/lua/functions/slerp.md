@@ -6,8 +6,7 @@ Smoothly interpolates between two vectors or quaternions using [spherical linear
 Unlike regular linear interpolation, slerp follows the shortest path along a curve, which keeps the motion smooth
 and even. This makes it a good choice for blending between rotations or directions.
 
-Syntax
-------
+## Syntax
 
 ```lua
 vector2 slerp(vector2 x, vector2 y, float a)
@@ -27,8 +26,7 @@ quat    slerp(quat x, quat y, float a)
 A value of the same type as `x` and `y`. When `a` is `0.0` the result equals `x`, when `a` is `1.0` the result
 equals `y`, and values in between blend smoothly from `x` to `y`.
 
-Examples
---------
+## Examples
 
 ```lua
 -- Interpolate halfway between two vector3 directions:

@@ -2,8 +2,7 @@
 title: Citizen.SetCallRefRoutine
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

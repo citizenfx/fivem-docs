@@ -10,8 +10,7 @@ The `setters` parameter contains two functions:
 - setPosition to set the position where the ped is going to spawn at.
 - setModel to set the model that the ped is going to spawn as.
 
-Parameters
-----------
+## Parameters
 
 ```
 float posX, float posY, float posZ, uint model, object setters
@@ -25,8 +24,7 @@ float posX, float posY, float posZ, uint model, object setters
   - **setModel(string model)** - Sets the model of the ped created.
   - **setPosition(float x, float y, float z)** - Adjusts the position of the ped.
 
-Examples
---------
+## Examples
 
 This example illustrates how you can intercept population:
 

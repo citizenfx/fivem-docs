@@ -23,15 +23,13 @@ message = {
 registerMode
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 object modeData
 ```
 
-Examples
---------
+## Examples
 
 This example adds an admin chat for all players with the permission `admin.chat`.
 

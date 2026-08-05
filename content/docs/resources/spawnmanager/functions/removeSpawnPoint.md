@@ -22,8 +22,7 @@ int spawnIdx
 
 - **spawnIdx** The index of the spawnpoint to remove.
 
-Examples
---------
+## Examples
 
 ##### Lua Example:
 

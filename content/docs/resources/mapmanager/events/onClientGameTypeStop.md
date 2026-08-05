@@ -2,8 +2,7 @@
 title: onClientGameTypeStop
 ---
 
-Parameters
-----------
+## Parameters
 
 ```
 string resourceName
@@ -11,7 +10,6 @@ string resourceName
 
 - **resourceName**: The name of the resource/gametype that stopped.
 
-Examples
---------
+## Examples
 
 TODO

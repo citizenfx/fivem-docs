@@ -6,8 +6,7 @@ title: RegisterNUICallback
 **Legacy API:** This function is kept for backwards compatibility. New code should use the {{% native_link "REGISTER_NUI_CALLBACK" %}} native instead. Refer to the current [NUI callback documentation][nuicallbackinlua] for examples.
 {{% /alert %}}
 
-Syntax
-------
+## Syntax
 
 ```lua
 RegisterNUICallback(string eventName, function callback)
@@ -18,8 +17,7 @@ RegisterNUICallback(string eventName, function callback)
 - **eventName**: The name of the event you want to listen to.
 - **callback**: The function to run when the event is called from NUI.
 
-Examples
---------
+## Examples
 
 LUA
 

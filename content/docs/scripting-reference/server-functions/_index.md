@@ -5,15 +5,13 @@ weight: 20
 
 Here is a list of some of the functions that you can use specifically in **server** side scripts.
 
-Native functions
-----------------
+## Native functions
 
 Server-side native functions are provided by the Citizen framework. Refer to the [FiveM Native Reference](/natives/), where you can see syntax per language, a description, and examples for each native.
 
 These natives are usable in **all** runtimes.
 
-Runtime specific functions
---------------------------
+## Runtime specific functions
 
 Some functions are exclusive to the scripting runtime you're using, and are **not** documented
 in the [FiveM Native Reference List](/natives/). Refer to their docs for more detail.

@@ -4,8 +4,7 @@ title: TriggerClientEvent
 
 Triggers an event on the specified client(s), and passes on any additional arguments.
 
-Syntax
-------
+## Syntax
 
 ```lua
 TriggerClientEvent(string eventName, int playerId[, ...])
@@ -20,8 +19,7 @@ TriggerClientEvent(string eventName, int playerId[, ...])
 
 - **...**: Any additional data that should be passed along.
 
-Examples
---------
+## Examples
 
 -- CLIENT
 

@@ -2,8 +2,7 @@
 title: Citizen.GetFunctionReference
 ---
 
-Syntax
-------
+## Syntax
 
 ```lua
 -- todo

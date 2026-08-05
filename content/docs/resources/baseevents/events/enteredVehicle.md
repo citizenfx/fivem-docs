@@ -2,15 +2,13 @@
 title: enteredVehicle
 ---
 
-Name
-----------
+## Name
 
 ```
 baseevents:enteredVehicle
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 vehicle currentVehicle, int currentSeat, string vehicleDisplayName
@@ -20,7 +18,6 @@ vehicle currentVehicle, int currentSeat, string vehicleDisplayName
 - **currentSeat**: The seat number (-1 is drivers seat, 0 = passenger right front, etc.) in which the player is sitting.
 - **vehicleDisplayName**: A string containing the display name of the vehicle the player just entered.
 
-Examples
---------
+## Examples
 
 TODO

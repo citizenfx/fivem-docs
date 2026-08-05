@@ -4,8 +4,7 @@ title: PerformHttpRequest
 
 Performs a http request using the specified parameters and returns the http response in a callback.
 
-Syntax
-------
+## Syntax
 
 ```lua
 PerformHttpRequest(string url, function callback(number statusCode, string body, table headers, string errorData), string method = 'GET', string data = '', table headers = {}, table options = { followLocation = true })
@@ -22,8 +21,7 @@ PerformHttpRequest(string url, function callback(number statusCode, string body,
 - **data**: A string of data to send with the request.
 - **headers**: A table of request headers.
 
-Examples
---------
+## Examples
 
 ```lua
 PerformHttpRequest("http://some-cool-url.here/some-important-document.txt", function (errorCode, resultData, resultHeaders, errorData)

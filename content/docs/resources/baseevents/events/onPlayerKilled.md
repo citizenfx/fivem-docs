@@ -2,15 +2,13 @@
 title: onPlayerKilled
 ---
 
-Name
-----------
+## Name
 
 ```
 baseevents:onPlayerKilled
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 player killerID, array deathData
@@ -29,8 +27,7 @@ player killerID, array deathData
 
 ![](/ped_types.png)
 
-Examples
---------
+## Examples
 
 ##### JavaScript Example:
 

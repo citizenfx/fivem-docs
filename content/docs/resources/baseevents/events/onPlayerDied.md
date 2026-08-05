@@ -2,15 +2,13 @@
 title: onPlayerDied
 ---
 
-Name
-----------
+## Name
 
 ```
 baseevents:onPlayerDied
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 int killerType, array deathCoords
@@ -23,8 +21,7 @@ int killerType, array deathCoords
 
 ![](/ped_types.png)
 
-Examples
---------
+## Examples
 
 ##### JavaScript Example:
 

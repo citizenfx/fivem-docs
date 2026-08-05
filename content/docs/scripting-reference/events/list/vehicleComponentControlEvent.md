@@ -4,8 +4,7 @@ title: vehicleComponentControlEvent
 
 This native is a server side native which requires [OneSync](https://forum.cfx.re/t/the-onesync-eap-and-you/165931) enabled to run it. It gets triggered when a ped takes control of a vehicle's component.
 
-Parameters
-----------
+## Parameters
 
 ```
 string sender, table data
@@ -20,8 +19,7 @@ string sender, table data
   - **componentIsSeat**: *boolean* <p>Is the vehicle's component a seat.</p>
   - **pedInSeat**: *number* <p>Ped's seat ID.</p>
 
-Examples
---------
+## Examples
 
 ##### Lua Example:
 

@@ -13,8 +13,7 @@ rarely-used methods are not yet implemented).
 **Note that FiveM (on the client) doesn't include any browser or Node.js-specific API's, such
 as DOM, localStorage, IndexedDB, WebGL, etc.**
 
-Using natives
--------------
+## Using natives
 
 Native commands are mapped to global JavaScript functions with names similar to the Lua natives mapping. Definitions for
 them are located at `path\to\fivem\FiveM.app\citizen\scripting\v8\natives_universal.d.ts`.
@@ -29,8 +28,7 @@ Example:
 PlayerPedId();
 ```
 
-Using Node.js APIs
-------------------
+## Using Node.js APIs
 
 By default, FiveM includes a [customized version][nodejs] of Node.js 16.x **on the server**. You can simply use `require` in server
 scripts, and it'll resolve the package either from Node.js built-ins, or the `node_modules/` folder in your resource
@@ -41,8 +39,7 @@ NodeJS 22 is optionally available for server scripts by adding `node_version '22
 To automatically install and update a `package.json` with Yarn on launch, make sure the `yarn` resource is running
 before starting your resource, or preferably add it as a `dependency` in your [resource manifest][deplink].
 
-Using exports
--------------
+## Using exports
 
 A proxy object for handling exports. Exports can be called using `exports.resourceName.exportName` (or using bracket
 syntax: `exports['resourceName']['exportName']`), exports can be added using `exports('func', () => 42)`.
@@ -77,8 +74,7 @@ on('onClientGameTypeStart', () => {
 });
 ```
 
-TypeScript support
-------------------
+## TypeScript support
 
 Definitions for the FiveM JavaScript API are available as TypeScript definition file, which can be
 found at `path\to\fivem\FiveM.app\citizen\scripting\v8\natives_universal.d.ts`, which will allow your
@@ -106,8 +102,7 @@ declare global {
 // export {}
 ```
 
-Gotchas
--------
+## Gotchas
 
 ### Thread affinity
 
@@ -143,8 +138,7 @@ fs.readFile(`${root}/test.txt`, { encoding: 'utf8' }, (err, data) => {
 Note that when nesting Node.js callbacks and _not_ using natives in between, you don't need to schedule the code back to
 the main thread, and it is recommended that you don't do so for the sake of performance.
 
-Functions in JavaScript
------------------------
+## Functions in JavaScript
 
 - on (alias: addEventListener, AddEventHandler)
 - onNet (alias: addNetEventListener)

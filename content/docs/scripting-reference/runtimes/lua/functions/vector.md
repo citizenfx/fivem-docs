@@ -6,8 +6,7 @@ aliases:
 
 Creates a new vector depending on the count of arguments.
 
-Syntax
-------
+## Syntax
 
 Supports 1 to 4 arguments. Return value is depends on the input.
 
@@ -42,8 +41,7 @@ vector4 vec(float x, float y, float z, float w)
 - If 3 arguments are passed, returns a [vector3][vec3].
 - If 4 arguments are passed, returns a [vector4][vec4].
 
-Examples
---------
+## Examples
 
 The following is true:
 

@@ -2,8 +2,7 @@
 title: getMapDirectives
 ---
 
-Parameters
-----------
+## Parameters
 
 ```
 function add
@@ -11,7 +10,6 @@ function add
 
 - **add**: A function used to add a specific map directive.
 
-Examples
---------
+## Examples
 
 TODO

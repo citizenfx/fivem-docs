@@ -4,8 +4,7 @@ title: Zones
 
 A list of all zones in GTAV including their integer ID, string ID, short name used by natives and full name, based on `update\update.rpf\common\data\levels\gta5\popzone.ipl`. The column Zone Name ID is what is used by {{% native_link "GET_ZONE_FROM_NAME_ID" %}}, while Zone Name is what is returned by {{% native_link "GET_NAME_OF_ZONE" %}}.
 
-Zones
----------------
+## Zones
 
 | ID    | Zone Name ID  | Zone Name | Zone Description
 | ----- | ------------- |---------- | ----------------

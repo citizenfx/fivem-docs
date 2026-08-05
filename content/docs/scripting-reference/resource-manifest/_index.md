@@ -9,8 +9,7 @@ The **resource manifest** is a file named `fxmanifest.lua` (or previously, `__re
 
 It is a Lua file, ran in a separate runtime from any Lua scripts in the resource, set up with a semi-declarative syntax to be used for defining metadata.
 
-Example
--------
+## Example
 
 An example resource manifest for a hypothetical resource looks as follows:
 
@@ -37,8 +36,7 @@ Internally, this creates the following metadata entries:
 
 You can also obtain this metadata from scripts using {{% native_link "GET_NUM_RESOURCE_METADATA" %}} and {{% native_link "GET_RESOURCE_METADATA" %}}.
 
-Globbing
---------
+## Globbing
 
 Some entry types may support 'globbing' for multiple files. These take a pattern syntax as follows:
 
@@ -52,8 +50,7 @@ Some entry types may support 'globbing' for multiple files. These take a pattern
 
 Support for globbing is specified under each entry type.
 
-Resource manifest entries
--------------------------
+## Resource manifest entries
 
 A list of built-in resource manifest entries follows. A resource can also contain custom metadata entries, which can be useful for script.
 

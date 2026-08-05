@@ -4,15 +4,13 @@ title: setTick
 
 This allows you to create a timer that ticks every game frame / server tick. It can be used client-side or server-side acting like a loop that runs forever unless [cleared][clearTick].
 
-Syntax
-------
+## Syntax
 
 ```ts
 setTick(() => {});
 ```
 
-Examples
---------
+## Examples
 
 ```ts
 setTick(() => {

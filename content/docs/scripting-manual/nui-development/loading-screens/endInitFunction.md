@@ -5,8 +5,7 @@ toc_hide: true
 
 Triggered when init functions completed invoking, finalizing the [startInitFunction](../startInitFunction/) event process.
 
-Event Data
-----------
+## Event Data
 
 This is the `data` provided to the message event:
 

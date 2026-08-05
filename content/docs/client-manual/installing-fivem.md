@@ -6,8 +6,7 @@ weight: 40
 Installing FiveM is pretty straightforward. It's usually a matter of [downloading FiveM][home], then simply running the
 downloaded file. For those who'd like a bit more detail, read below.
 
-Installing
-----------
+## Installing
 
 Running into trouble? Make sure your system meets the [minimum requirements][system-requirements] and
 read the [client issues manual][client-issues].
@@ -18,8 +17,7 @@ read the [client issues manual][client-issues].
 - Run the FiveM.exe. If you run the installer in an empty folder, FiveM will install there. Otherwise, it will install in `%localappdata%\FiveM`.
 - Start FiveM from your Windows start menu.
 
-Uninstalling
-------------
+## Uninstalling
 
 - If you installed FiveM in an empty folder, just delete that folder.
 - Otherwise:

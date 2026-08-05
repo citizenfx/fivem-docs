@@ -4,8 +4,7 @@ title: onClientResourceStart
 
 Called after a resource starts.
 
-Parameters
-----------
+## Parameters
 
 ```
 string resourceName
@@ -13,8 +12,7 @@ string resourceName
 
 - resourceName: The name of the resource that started.
 
-Examples
---------
+## Examples
 
 This example prints the name of the resource it was in, upon start.
 

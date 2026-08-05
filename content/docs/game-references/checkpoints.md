@@ -4,8 +4,7 @@ title: Checkpoints
 
 {{% alert color="success" title="Note" %}}This checkpoint ID order is valid as of game build 2189. Any game build before that the order slightly differs. You can generally take 3 away from IDs to get an ID that matches older game builds, or you could check the old table on the [native reference](/natives/?_0x0134F0835AB6BFCB).{{% /alert %}}
 
-Standard Checkpoints
------
+## Standard Checkpoints
 
 <!-- _loc1_.map((name, idx) => `<div class="checkpoint"><span><img src="checkpoints/${name}.png" alt="${name}"> ${idx}<br>${name}</div>`).join('\n') -->
 
@@ -88,8 +87,7 @@ Standard Checkpoints
 <div class="checkpoint"><span><img src="/checkpoints/49.png" alt="49"><br><strong>49</strong></span></div>
 </div>
 
-Checkpoint Type 44-46
------
+## Checkpoint Type 44-46
 
 If using checkpoint type 44-46 the `reserved` parameter in the {{% native_link "CREATE_CHECKPOINT" %}} native sets the number/number and shape to display.
 

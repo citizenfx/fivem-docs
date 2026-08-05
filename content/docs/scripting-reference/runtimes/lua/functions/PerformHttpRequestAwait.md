@@ -4,8 +4,7 @@ title: PerformHttpRequestAwait
 
 This function is a synchronous wrapper around [PerformHttpRequest](/docs/scripting-reference/runtimes/lua/functions/PerformHttpRequest/) which will await the data internally, preventing the need for callbacks. **It's available on server build 9515 and newer**
 
-Syntax
-------
+## Syntax
 
 ```lua
 PerformHttpRequestAwait(string url, string method = 'GET', string data = '', table headers = {}, table options = { followLocation = true })
@@ -23,8 +22,7 @@ PerformHttpRequestAwait(string url, string method = 'GET', string data = '', tab
 - **options**: A table of options
   - **followLocation**: Makes cURL [follow the redirects](https://curl.se/libcurl/c/CURLOPT_FOLLOWLOCATION.html) of the URL
 
-Examples
---------
+## Examples
 
 ```lua
 local errorCode, resultData, resultHeaders, errorData = PerformHttpRequestAwait("http://some-cool-url.here/some-important-document.txt")

@@ -12,8 +12,7 @@ This means that `vector1(x) == x` is always true and `type(vector1(x))` returns 
 It has no practical use and exists solely for completeness within the vector type system.
 More about vectors in the [Lua runtime manual][lua-runtime].
 
-Syntax
-------
+## Syntax
 
 ```lua
 number vector1(float x)
@@ -27,8 +26,7 @@ number vec1(float x)
 
 - **x**: A floating point number representing the `x` value of your vector.
 
-Examples
---------
+## Examples
 
 Basic vector1 functionality:
 

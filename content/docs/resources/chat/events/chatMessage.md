@@ -15,8 +15,7 @@ Listening for this event in the server allows you to read/log/reply the message.
 chatMessage
 ```
 
-Parameters
-----------
+## Parameters
 
 ##### Client side:
 
@@ -38,8 +37,7 @@ source, string author, string text
 - **author**: The name of the player that sent the message.
 - **text**: The message
 
-Examples
---------
+## Examples
 
 ##### Server-side JS Example:
 

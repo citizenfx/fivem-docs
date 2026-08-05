@@ -8,8 +8,7 @@ title: Gamer Tags
 
 For each component you can: show/hide, change opacity, change color.
 
-Components list
----------------
+## Components list
 
 | ID  | Name                      |
 |-----|---------------------------|
@@ -44,8 +43,7 @@ Components list
 | 28  | MP\_TRANSMITTER           |
 | 29  | MP\_BOMB                  |
 
-Simple usage
-------------
+## Simple usage
 
 ### Lua
 
@@ -81,8 +79,7 @@ for i = 0, 255 do
 end
 ```
 
-Example
--------
+## Example
 
 ### Lua
 
@@ -119,8 +116,7 @@ int gamerTagId = CreateMpGamerTagWithCrewColor(
 );
 ```
 
-Toggling flags
---------------
+## Toggling flags
 
 ### Lua
 
@@ -144,8 +140,7 @@ SetMpGamerTagVisibility(
 );
 ```
 
-Changing flags color
---------------------
+## Changing flags color
 
 ### Lua
 
@@ -170,8 +165,7 @@ Function.Call(
 );
 ```
 
-Changing flags opacity
-----------------------
+## Changing flags opacity
 
 ### Lua
 
@@ -196,8 +190,7 @@ Function.Call(
 );
 ```
 
-Special flags controls
-----------------------
+## Special flags controls
 
 ### Wanted level
 

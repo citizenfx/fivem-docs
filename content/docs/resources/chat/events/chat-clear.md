@@ -12,13 +12,11 @@ Clears the chat messages/history and the sent messages history buffer.
 chat:clear
 ```
 
-Parameters
-----------
+## Parameters
 
 This event has no parameters.
 
-Examples
---------
+## Examples
 
 This example registers a `/clear` command that clears the chat.
 

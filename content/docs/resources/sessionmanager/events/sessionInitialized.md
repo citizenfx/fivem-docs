@@ -2,12 +2,10 @@
 title: sessionInitialized
 ---
 
-Parameters
-----------
+## Parameters
 
 TODO
 
-Examples
---------
+## Examples
 
 TODO

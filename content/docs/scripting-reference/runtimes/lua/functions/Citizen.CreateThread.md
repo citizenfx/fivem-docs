@@ -4,8 +4,7 @@ title: Citizen.CreateThread
 
 This allows you to create a new thread. All code inside the handler will be executed asynchronously.
 
-Syntax
-------
+## Syntax
 
 ```lua
 Citizen.CreateThread(function handler)
@@ -15,8 +14,7 @@ Citizen.CreateThread(function handler)
 
 - **handler**: The thread handler function.
 
-Examples
---------
+## Examples
 
 This example will first print `Hi, I get called first.` to the console, then `Hello world!` once,
 then `Can you see me?` and then once every second `Hello world!` again. `Can you see me?` gets printed to the console

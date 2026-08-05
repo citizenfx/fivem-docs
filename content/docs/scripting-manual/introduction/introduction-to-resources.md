@@ -6,8 +6,7 @@ weight: 10
 Servers run on a collection of resources. A **resource** is a collection of files - such as client scripts, server
 scripts, and streaming assets - that can be started, stopped and restarted at any time.
 
-Resource directories
---------------------
+## Resource directories
 
 In the server, resources are loaded from a folder called `resources/` in the server data directory. Any folder in
 the `resources/` folder is parsed as a resource, except folders between `[brackets]` which are categories, which can
@@ -61,8 +60,7 @@ Please note that a warning will be shown:
 
 This message can be ignored if you intentionally not have any resource manifest. Otherwise, you need to verify that the `fxmanifest.lua` is correctly named. Let's learn more about this file.
 
-The resource manifest
----------------------
+## The resource manifest
 
 Every resource is **required** to contain a resource manifest by the name of `fxmanifest.lua` defining what files/scripts
 are used by the resource. A quick example manifest follows:
@@ -73,8 +71,7 @@ See the [resource manifest reference][manifest-reference] for more details.
 
 Note that old resources can have a different name following `__resource.lua`. You can replace the name with `fxmanifest.lua` and modify the structure inside for compatibility. Otherwise you will have a warning in the server console that this file is deprecated.
 
-Standard resources
-------------------
+## Standard resources
 
 After you've installed your server, you'll notice you already have quite a few resources. These are the standard
 resources that FiveM ships. It's advised to not change them unless you know what you're doing. Many of

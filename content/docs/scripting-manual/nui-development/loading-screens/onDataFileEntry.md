@@ -6,8 +6,7 @@ toc_hide: true
 Triggered when a data file entry occurred, as either a result of
 [startDataFileEntries](../startDataFileEntries/) or [initFunctionInvoking](../initFunctionInvoking/).
 
-Event Data
-----------
+## Event Data
 
 This is the `data` provided to the message event:
 

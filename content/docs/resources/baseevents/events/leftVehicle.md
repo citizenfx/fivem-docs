@@ -2,15 +2,13 @@
 title: leftVehicle
 ---
 
-Name
-----------
+## Name
 
 ```
 baseevents:leftVehicle
 ```
 
-Parameters
-----------
+## Parameters
 
 ```
 vehicle currentVehicle, int currentSeat, string vehicleDisplayName, int vehicleNetId
@@ -21,8 +19,7 @@ vehicle currentVehicle, int currentSeat, string vehicleDisplayName, int vehicleN
 - **vehicleDisplayName**: A string containing the display name of the vehicle the player just left.
 - **vehicleNetId**: The Network ID of the vehicle. Can be used with `NetToVeh()` to get the vehicle client side.
 
-Examples
---------
+## Examples
 
 Server.lua
 

@@ -10,8 +10,7 @@ in turn triggering multiple [initFunctionInvoking](../initFunctionInvoking/) and
 After the init functions were invoked, [startInitFunctionOrder](../startInitFunctionOrder/) will be triggered again with additional functions,
 or [endInitFunction](../endInitFunction/) will be triggered, finalizing the process.
 
-Event Data
-----------
+## Event Data
 
 This is the `data` provided to the message event:
 
