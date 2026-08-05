@@ -560,6 +560,14 @@ A string variable that sets the username for Prometheus basic auth on the `/perf
 
 A string variable that sets the password for Prometheus basic auth on the `/perf` endpoint. Leave empty to disable. Also sent to txAdmin.
 
+### `sv_onesyncBasicAuthUser [user]`
+
+A string variable that sets the username for basic auth on the `/onesync` endpoints, which expose the live OneSync state of the server. Leave empty to disable. See [OneSync HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/).
+
+### `sv_onesyncBasicAuthPassword [password]`
+
+A string variable that sets the password for basic auth on the `/onesync` endpoints. Leave empty to disable. Anyone who can reach these endpoints can read the position of every player on your server, so keep this private.
+
 ### `sv_kvsName [name]`
 
 A string variable (default `default`) defining the name of the KVP database file, stored in the `serverdata:/` folder. Can only be set at startup.
@@ -784,6 +792,8 @@ An integer variable (default `5000`) that defines how often (in milliseconds) th
 #### `sv_voiceChat [true|false]`
 
 A boolean variable (default `false`) that controls whether voice chat is enabled on the server.
+
+Enabling this, along with either `voice_internal` or `voice_external_connect`, is also what makes the `/voicechannels.json` endpoint report anything. See [HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/).
 
 #### `sv_mumble [true|false]`
 
