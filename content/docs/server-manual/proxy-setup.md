@@ -133,13 +133,13 @@ stream {
         server 100.64.1.2:30120;
     }
     server {
-		listen 30120;
-		proxy_pass backend;
-	}
-	server {
-		listen 30120 udp reuseport;
-		proxy_pass backend;
-	}
+        listen 30120;
+        proxy_pass backend;
+    }
+    server {
+        listen 30120 udp reuseport;
+        proxy_pass backend;
+    }
 }
 ```
 

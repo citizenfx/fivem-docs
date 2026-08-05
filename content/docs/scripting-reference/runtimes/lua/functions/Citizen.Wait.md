@@ -56,9 +56,9 @@ CreateThread(function()
     -- define how long we want to sleep for, by default we want to run per-frame
     local sleep = 0
     while true do
-		-- check if `E` was just pressed
+        -- check if `E` was just pressed
         if IsJustControlPressed(0, 38) then
-			-- we don't want to update for another second
+            -- we don't want to update for another second
             sleep = 1000
             if IsPedRunning(PlayerPedId()) then
                 print("Player is running!")

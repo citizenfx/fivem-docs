@@ -23,6 +23,6 @@ This example prints the name of the player and his coordinates on respawn.
 
 ```lua
 AddEventHandler("respawnPlayerPedEvent", function(player, content)
-	print(GetPlayerName(player).." has spawned at "..tostring(content.posX)..", "..tostring(content.posY)..", "..tostring(content.posZ))
+    print(GetPlayerName(player).." has spawned at "..tostring(content.posX)..", "..tostring(content.posY)..", "..tostring(content.posZ))
 end)
 ```

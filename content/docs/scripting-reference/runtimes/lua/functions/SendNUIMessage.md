@@ -22,8 +22,8 @@ LUA
 
 ```lua
 SendNUIMessage({
-	hello = "world",
-	action = "showMessage"
+    hello = "world",
+    action = "showMessage"
 })
 ```
 
@@ -31,9 +31,9 @@ JS (NUI PART)
 
 ```js
 window.addEventListener('message', (event) => {
-	let data = event.data
-	if(data.action == 'showMessage') {
-		console.log(`Hello ${data.hello}!`) // will print Hello world! in the console (F8)
-	}
+    let data = event.data
+    if(data.action == 'showMessage') {
+        console.log(`Hello ${data.hello}!`) // will print Hello world! in the console (F8)
+    }
 })
 ```

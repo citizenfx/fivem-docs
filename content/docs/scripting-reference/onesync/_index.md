@@ -45,25 +45,25 @@ This synchronization data node is used to share sector position data to other cl
 ```cpp
 struct CSectorPositionDataNode
 {
-	float m_posX;
-	float m_posY;
-	float m_posZ;
+    float m_posX;
+    float m_posY;
+    float m_posZ;
 
     // Parse/deserialize incoming data
-	bool Parse(SyncParseState& state)
-	{
-		auto posX = state.buffer.ReadFloat(12, 54.0f);
-		auto posY = state.buffer.ReadFloat(12, 54.0f);
-		auto posZ = state.buffer.ReadFloat(12, 69.0f);
+    bool Parse(SyncParseState& state)
+    {
+        auto posX = state.buffer.ReadFloat(12, 54.0f);
+        auto posY = state.buffer.ReadFloat(12, 54.0f);
+        auto posZ = state.buffer.ReadFloat(12, 69.0f);
 
-		m_posX = posX;
-		m_posY = posY;
-		m_posZ = posZ;
+        m_posX = posX;
+        m_posY = posY;
+        m_posZ = posZ;
 
-		state.entity->syncTree->CalculatePosition();
+        state.entity->syncTree->CalculatePosition();
 
-		return true;
-	}
+        return true;
+    }
 
     // continues...
 };

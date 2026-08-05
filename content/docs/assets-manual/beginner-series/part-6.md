@@ -18,8 +18,8 @@ weight: 60
 ## Setting up LOD Model(s)
 
 1. Prepare two versions of the same asset:
-	- **HD model** (full-detail version)
-	- **LOD model** (simplified geometry and materials)
+    - **HD model** (full-detail version)
+    - **LOD model** (simplified geometry and materials)
 2. In Blender, rename both objects clearly so they are easy to identify in CodeWalker.
 3. Convert both objects to **Drawables** using Sollumz.
 4. Export both assets using **Export RAGE Assets**.
@@ -30,15 +30,15 @@ weight: 60
 
 1. Open the **Project Window** in CodeWalker and create a new YMAP for the **HD** object.
 2. Place the HD entity and set:
-	- **Flags**: `LOD in Parent Map`
-	- **LodLevel**: `LODTYPES_DEPTH_HD`
+    - **Flags**: `LOD in Parent Map`
+    - **LodLevel**: `LODTYPES_DEPTH_HD`
 3. Save the HD YMAP.
 4. Create a second YMAP for the **LOD** object.
 5. Place the LOD entity at the **exact same coordinates** as the HD entity.
 6. Set the LOD entity values:
-	- **ChildLodDist** = HD entity **LodDist**
-	- **LodDist** = increased value based on desired streaming distance
-	- **LodLevel** = `LODTYPES_DEPTH_LOD`
+    - **ChildLodDist** = HD entity **LodDist**
+    - **LodDist** = increased value based on desired streaming distance
+    - **LodLevel** = `LODTYPES_DEPTH_LOD`
 7. Save the LOD YMAP.
 
 ## Parenting YMAPs:

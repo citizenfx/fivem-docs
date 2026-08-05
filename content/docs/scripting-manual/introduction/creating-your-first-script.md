@@ -245,8 +245,8 @@ RegisterCommand('car', function(source, args)
 
     -- tell the player
     TriggerEvent('chat:addMessage', {
-		args = { 'Woohoo! Enjoy your new ^*' .. vehicleName .. '!' }
-	})
+        args = { 'Woohoo! Enjoy your new ^*' .. vehicleName .. '!' }
+    })
 end, false)
 ```
 
