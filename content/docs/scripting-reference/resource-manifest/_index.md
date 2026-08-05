@@ -18,22 +18,22 @@ An example resource manifest for a hypothetical resource looks as follows:
 
 Internally, this creates the following metadata entries:
 
--   **fx_version**: {{% rmv2 %}}
--   **game**: gta5
--   **game**: rdr3
--   **author**: John Doe \<j.doe@example.com\>
--   **description**: Example resource
--   **version**: 1.0.0
--   **client_script**: client.lua
--   **client_script**: client_two.lua (note the `s` table being expanded)
--   **server_script**: server.lua
--   **my_data**: one
--   **my_data**: three
--   **my_data**: nine
--   **my_data_extra**: `{"two":42}` (as JSON)
--   **my_data_extra**: `{"four":69}`
--   **my_data_extra**: `{"ninety":"nein"}`
--   **pizza_topping**: pineapple
+- **fx_version**: {{% rmv2 %}}
+- **game**: gta5
+- **game**: rdr3
+- **author**: John Doe \<j.doe@example.com\>
+- **description**: Example resource
+- **version**: 1.0.0
+- **client_script**: client.lua
+- **client_script**: client_two.lua (note the `s` table being expanded)
+- **server_script**: server.lua
+- **my_data**: one
+- **my_data**: three
+- **my_data**: nine
+- **my_data_extra**: `{"two":42}` (as JSON)
+- **my_data_extra**: `{"four":69}`
+- **my_data_extra**: `{"ninety":"nein"}`
+- **pizza_topping**: pineapple
 
 You can also obtain this metadata from scripts using {{% native_link "GET_NUM_RESOURCE_METADATA" %}} and {{% native_link "GET_RESOURCE_METADATA" %}}.
 
@@ -429,17 +429,17 @@ Each manifest version includes all features from manifest versions above, except
 
 ### FX version `cerulean` (2020-05)
 
--   Loads NUI resources in a 'secure context' to support WASM and fetch APIs, but requires callbacks to be changed to `https://` instead of `http://`.
+- Loads NUI resources in a 'secure context' to support WASM and fetch APIs, but requires callbacks to be changed to `https://` instead of `http://`.
 
 ### FX version `bodacious` (2020-02)
 
--   Implies `clr_disable_task_scheduler` being specified for server library compatibility.
--   Does not define `window` in JS contexts for library compatibility.
+- Implies `clr_disable_task_scheduler` being specified for server library compatibility.
+- Does not define `window` in JS contexts for library compatibility.
 
 ### FX version `adamant` (2019-12)
 
--   Equivalent to 44febabe-d386-4d18-afbe-5e627f4af937 in FXv1.
--   Requires a `game` to be specified, and is mandatory for RedM.
+- Equivalent to 44febabe-d386-4d18-afbe-5e627f4af937 in FXv1.
+- Requires a `game` to be specified, and is mandatory for RedM.
 
 ## Manifest versions
 
@@ -453,21 +453,21 @@ By default, no manifest version is used, which is equivalent to manifest GUID `0
 
 ### Manifest version 00000000-0000-0000-0000-000000000000 (no date)
 
--   The natives.lua file `natives_21e43a33.lua` will be used for client-side Lua.
+- The natives.lua file `natives_21e43a33.lua` will be used for client-side Lua.
 
 ### Manifest version 77731fab-63ca-442c-a67b-abc70f28dfa5 (2016-12)
 
--   No changes. This is the minimum operating level for FXServer.
+- No changes. This is the minimum operating level for FXServer.
 
 ### Manifest version f15e72ec-3972-4fe4-9c7d-afc5394ae207 (2017-04-08)
 
--   The natives.lua file `natives_0193d0af.lua` will be used for client-side Lua. This represents the state of NativeDB in early April of 2017.
+- The natives.lua file `natives_0193d0af.lua` will be used for client-side Lua. This represents the state of NativeDB in early April of 2017.
 
 ### Manifest version 44febabe-d386-4d18-afbe-5e627f4af937 (2017-06-07)
 
--   The natives.lua file `natives_universal.lua` will be used for client-side Lua. This is a universal natives.lua file, which should be able to be switched to without having to change your scripts. It also represents a more recent (2017-06-05) snapshot of NativeDB.
+- The natives.lua file `natives_universal.lua` will be used for client-side Lua. This is a universal natives.lua file, which should be able to be switched to without having to change your scripts. It also represents a more recent (2017-06-05) snapshot of NativeDB.
 
 ### Manifest version 05cfa83c-a124-4cfa-a768-c24a5811d8f9 (2017-06-04)
 
--   Scripts will now be registered as a game network script. This is required for networking entities.
--   {{% native_link "CREATE_VEHICLE" %}} and similar functions behave differently when passing `true, true` as network object flags.
+- Scripts will now be registered as a game network script. This is required for networking entities.
+- {{% native_link "CREATE_VEHICLE" %}} and similar functions behave differently when passing `true, true` as network object flags.

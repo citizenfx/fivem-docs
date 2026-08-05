@@ -377,10 +377,10 @@ A console variable as an integer from 1-5 (default 1); from least to most trustw
 This helps counter proxy-based HTTP floods.
 Levels:
 
-  - 0: Off. Default behavior.
-  - 1: Block any IPs sending requests containing a 'Via' header.
-  - 2: Block any IPs sending requests containing a 'Upgrade-Insecure-Requests' header. This includes all browser-based attempts at requesting .json endpoints, so use          with care.
-  - 3: Also close the socket the requests have been submitted on.
+- 0: Off. Default behavior.
+- 1: Block any IPs sending requests containing a 'Via' header.
+- 2: Block any IPs sending requests containing a 'Upgrade-Insecure-Requests' header. This includes all browser-based attempts at requesting .json endpoints, so use with care.
+- 3: Also close the socket the requests have been submitted on.
 
 If set to level 2 greater, all requests made to [info.json](https://github.com/citizenfx/fivem/blob/65bf224097b1107c10f84f5dfc25ee8e4bddc95d/code/components/citizen-server-impl/src/InfoHttpHandler.cpp#L276), [dynamic.json](https://github.com/citizenfx/fivem/blob/65bf224097b1107c10f84f5dfc25ee8e4bddc95d/code/components/citizen-server-impl/src/InfoHttpHandler.cpp#L317) and [players.json](https://github.com/citizenfx/fivem/blob/65bf224097b1107c10f84f5dfc25ee8e4bddc95d/code/components/citizen-server-impl/src/InfoHttpHandler.cpp#L331) related endpoints will return "Nope."
 
@@ -481,7 +481,7 @@ This is set to true by default (allow routing)
 
 ### `sv_enableNetworkedPhoneExplosions [true|false]`
 
-A boolean console variable introduced in server version 6831, that is disabled (set to `false`) by default.  
+A boolean console variable introduced in server version 6831, that is disabled (set to `false`) by default.
 
 Enabling it (by setting it to `true`), will allow users to route `REQUEST_PHONE_EXPLOSION_EVENT` through the server. The main drawback behind enabling this, is that it can also be used by malicious actors.
 
@@ -619,7 +619,7 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | CNetObjDoor | - | 20 |
 | CDoorSyncData | - | 20 |
 
-You can explore most of the current pools and their sizes using  `F8 > Tools > Streaming > Pool Monitor` tool.
+You can explore most of the current pools and their sizes using `F8 > Tools > Streaming > Pool Monitor` tool.
 
 #### Local experiments
 

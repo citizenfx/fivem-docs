@@ -65,7 +65,7 @@ We do not provide out of the box functionality for gas stations. But you can imp
 -- You can create a config file and read it from there, or just hard code as in this example.
 GasStations = {
     {
-        coords = vector3(64.55, 20.4, 68.9),  
+        coords = vector3(64.55, 20.4, 68.9),
         radius = 8
     }
 }

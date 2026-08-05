@@ -17,10 +17,10 @@ Limitations
 
 Scaleform doesn't implement some features from Flash:
 
--   No filters for shapes. **At all**.
--   No blur filter for text either. *Can be faked with a glow filter*.
--   No masking. *Will be discussed later on this page*.
--   No embedded raster graphics. *Will be discussed later on this page*.
+- No filters for shapes. **At all**.
+- No blur filter for text either. *Can be faked with a glow filter*.
+- No masking. *Will be discussed later on this page*.
+- No embedded raster graphics. *Will be discussed later on this page*.
 
 Interfacing
 -----------
@@ -35,7 +35,7 @@ This variable serves as a kind of public API of the .gfx.
 
 It'd be pretty time-consuming to explain in detail how to bootstrap your first gfx thing, so instead please use the boilerplate:
 
-Related files:  
+Related files:\
 [boilerplate.zip](/examples/using-scaleform/boilerplate.zip)
 
 ### Loading
@@ -51,11 +51,11 @@ Please note that this is a low-level API, the C\# runtime has an [easy-to-use hi
 
 **&gt;** Define arguments, using one of the following functions depending on what type of argument you want to pass:
 
--   {{% native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT" %}}
--   {{% native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT" %}}
--   {{% native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL" %}}
--   {{% native_link "_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_STRING" %}} **(only use for short strings like texture names)**
--   A pair of {{% native_link "BEGIN_TEXT_COMMAND_SCALEFORM_STRING" %}}, {{% native_link "ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME" %}}, and {{% native_link "END_TEXT_COMMAND_SCALEFORM_STRING" %}} for normal strings
+- {{% native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT" %}}
+- {{% native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_FLOAT" %}}
+- {{% native_link "SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL" %}}
+- {{% native_link "_PUSH_SCALEFORM_MOVIE_METHOD_PARAMETER_STRING" %}} **(only use for short strings like texture names)**
+- A pair of {{% native_link "BEGIN_TEXT_COMMAND_SCALEFORM_STRING" %}}, {{% native_link "ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME" %}}, and {{% native_link "END_TEXT_COMMAND_SCALEFORM_STRING" %}} for normal strings
 
 **&gt;** Call {{% native_link "END_SCALEFORM_MOVIE_METHOD" %}} to finish function call.
 
@@ -63,9 +63,9 @@ Please note that this is a low-level API, the C\# runtime has an [easy-to-use hi
 
 You can draw scaleform using one of these commands, **red, green, blue, alpha and unk parameters can be omitted as they don't affect anything**:
 
--   {{% native_link "DRAW_SCALEFORM_MOVIE" %}} for drawing gfx in 2D on a specific position
--   {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN" %}} also draws gfx in 2D, however in fullscreen
--   {{% native_link "DRAW_SCALEFORM_MOVIE_3D" %}} **do note that if you have blackout enabled this will be drawn with "solarized" and shifted to yellow colors**.
+- {{% native_link "DRAW_SCALEFORM_MOVIE" %}} for drawing gfx in 2D on a specific position
+- {{% native_link "DRAW_SCALEFORM_MOVIE_FULLSCREEN" %}} also draws gfx in 2D, however in fullscreen
+- {{% native_link "DRAW_SCALEFORM_MOVIE_3D" %}} **do note that if you have blackout enabled this will be drawn with "solarized" and shifted to yellow colors**.
 
 Masking
 -------

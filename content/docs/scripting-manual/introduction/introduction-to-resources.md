@@ -52,9 +52,9 @@ server
 
 In this tree, the following resources exist:
 
--   main
--   resource-1
--   thing
+- main
+- resource-1
+- thing
 
 Please note that a warning will be shown:
 {{% alert color="warning" title="Warning" %}}`resourcename` does not have a resource manifest (`fxmanifest.lua`) {{% /alert %}}

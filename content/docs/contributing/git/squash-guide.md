@@ -18,19 +18,19 @@ Squashing is a way to simplify your commits and combine multiple commits into on
 Squashing commits using [Github Desktop](https://desktop.github.com/) is a simple task, you can do so by following these steps:
 
 1. Start Github Desktop
-2. Once Github Desktop is open, head to View -> History on the topmost menu bar.  
+2. Once Github Desktop is open, head to View -> History on the topmost menu bar.\
     ![github-desktop-view-history](/contributing/git/squash-guide/github-desktop-view-history.png)
-3. A history dialog showing the commits you want to squash will show. Select the ones you want to squash by holding down the `CTRL` key, or `SHIFT` key if there's a lot of commits you need to squash. Followed by right clicking the selected items and clicking on `Squash 'n' commits...`  
+3. A history dialog showing the commits you want to squash will show. Select the ones you want to squash by holding down the `CTRL` key, or `SHIFT` key if there's a lot of commits you need to squash. Followed by right clicking the selected items and clicking on `Squash 'n' commits...`
 
-    ![github-desktop-commit-view](/contributing/git/squash-guide/github-desktop-squash-commits.png)  
+    ![github-desktop-commit-view](/contributing/git/squash-guide/github-desktop-squash-commits.png)
 4. A message box showing combined commit messages will show, you can modify this message if you need to. Click on `Squash 'n' Commits` to continue.
 
     ![github-desktop-squash-messagebox](/contributing/git/squash-guide/github-desktop-squash-commits-messagebox.png)
-5. If you are pushing your changes to a remote repository, therefore re-writing commit history on the remote, you will get this message. Just click on 'Begin Squash'.  
+5. If you are pushing your changes to a remote repository, therefore re-writing commit history on the remote, you will get this message. Just click on 'Begin Squash'.
 
     ![github-desktop-squash-push](/contributing/git/squash-guide/github-desktop-squash-requires-force-push.png)
 
-6. Prior to pushing our changes, we should verify if our commit history is correct. This means not overwriting old commit history with the commits we just made. On Github Desktop, we can find the History tab on the left. By clicking on it we can see the history.  
+6. Prior to pushing our changes, we should verify if our commit history is correct. This means not overwriting old commit history with the commits we just made. On Github Desktop, we can find the History tab on the left. By clicking on it we can see the history.
 
     ![github-desktop-history](/contributing/git/squash-guide/github-desktop-commit-history.png)
 
@@ -50,8 +50,8 @@ Squashing commits using [Github Desktop](https://desktop.github.com/) is a simpl
 
 #### Prerequisites
 
- - Git
- - Basic knowledge on Git
+- Git
+- Basic knowledge on Git
 
 #### Squashing commits
 

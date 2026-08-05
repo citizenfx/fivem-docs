@@ -19,7 +19,7 @@ Uses 2D Audio exclusively. This is set to false by default.
 
 ### `voice_use3dAudio [true/false]`
 
-Considered deprecated on FiveM, but available on RedM.  
+Considered deprecated on FiveM, but available on RedM.\
 Uses 3D (directional) Audio exclusively. This is set to false by default.
 Currently, directional audio's position is relative to the game camera, a solution is being worked on so directional audio is relative to the player's ped entity instead.
 

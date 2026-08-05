@@ -15,8 +15,8 @@ The original commit history of the master branch is preserved, and new commits f
 
 # Prerequisites
 
- - [Git][git-download]
- - [GitHub Desktop][github-desktop] or [Visual Studio Code][vscode-download]
+- [Git][git-download]
+- [GitHub Desktop][github-desktop] or [Visual Studio Code][vscode-download]
 
 # Ways to Rebase
 
@@ -42,16 +42,16 @@ The original commit history of the master branch is preserved, and new commits f
 
     3. Your master branch is now up-to-date with our repository and can be used as your new base.
 2. Rebase your working branch in GitHub Desktop:
-    1. Switch to the branch you want to rebase, in this example we use `my-feature` as our branch name.  
+    1. Switch to the branch you want to rebase, in this example we use `my-feature` as our branch name.\
         ![image](/contributing/git/rebase-guide/github-desktop-switch-branch.png)
 
     2. Once you're on the `my-feature` branch you want to rebase, go to `Branch` in the top menu bar and choose `Rebase current branch...`.
     3. It'll show you a window with all available branches to rebase it to, pick `master`.
-    4. The same window will show you that it will update our `my-feature` branch by applying its `x` commits on top, make sure the amount of commits is the same as the commits you applied.  
+    4. The same window will show you that it will update our `my-feature` branch by applying its `x` commits on top, make sure the amount of commits is the same as the commits you applied.\
         ![image](/contributing/git/rebase-guide/github-desktop-rebase-branch.png)
 
     5. Hit `Rebase` and it will pull in all commits of the master branch and then put your commits on top.
-        1.  If there are any conflicts, you'll be prompted and you'll need to resolve those.
+        1. If there are any conflicts, you'll be prompted and you'll need to resolve those.
     6. Test if your code still compiles and that the changes are working as expected, adjust otherwise.
     7. Now you can force-push your `my-feature` branch to GitHub
         1. If you made extra changes then the force-push option is probably gone, you can go into the CLI and type `git push --force-with-lease` or to get the button back in GitHub Desktop you can right-click on the last commit, hit `Amend Commit...` and confirm the amendment without any changes, it'll show the force push option again. `--force-with-lease` allows you to push changes safely when working with other collaborators. You may want to use `git push -f` if you're the sole contributor.

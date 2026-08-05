@@ -59,12 +59,12 @@ You can configure World Editor like so that you'll spawn in vehicle instead, see
 
 There are two options to leave play test mode:
 
- - `ESC` hotkey, camera returns where it was when you entered play test.
- - `Shift+ESC` hotkey, camera stays where you are.
+- `ESC` hotkey, camera returns where it was when you entered play test.
+- `Shift+ESC` hotkey, camera stays where you are.
 
 ## Environment
 
-You can control what time is it in game, freeze time and change weather,  these options live in environment panel in UI.
+You can control what time is it in game, freeze time and change weather, these options live in environment panel in UI.
 
 ## Positioning additions
 

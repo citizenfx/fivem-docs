@@ -8,9 +8,9 @@ The Cfx Development Kit, FxDK for short, is an integrated development environmen
 
 Detailed documentation links:
 
- - [FXCode](/docs/fxdk/fxcode/)
- - [Resources](/docs/fxdk/resources/)
- - [World Editor](/docs/fxdk/world-editor/)
+- [FXCode](/docs/fxdk/fxcode/)
+- [Resources](/docs/fxdk/resources/)
+- [World Editor](/docs/fxdk/world-editor/)
 
 # Highlights
 
@@ -66,8 +66,8 @@ FxDK operates on so called **projects**. Project, in a nutshell, is a dedicated 
 
 Currently, there are two types of assets:
 
- - [Resource](/docs/fxdk/resources/)
- - [Map](/docs/fxdk/world-editor/)
+- [Resource](/docs/fxdk/resources/)
+- [Map](/docs/fxdk/world-editor/)
 
 If you're familiar with how typical server's folder is structured, FxDK projects are a bit different in a way that there's no limitation on where exactly you put your resources.
 

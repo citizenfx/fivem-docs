@@ -117,7 +117,7 @@ The scheduler
 Citizen.CreateThread, Citizen.Wait, threaded events, etc
 -->
 
-<!-- TODO:  Perhaps tell something about lazy loading of natives? -->
+<!-- TODO: Perhaps tell something about lazy loading of natives? -->
 
 External libraries
 ------------------

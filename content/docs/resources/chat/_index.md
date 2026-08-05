@@ -11,14 +11,14 @@ It is included and maintained at the cfx-server-data repository.
 
 ### Client
 
- - [addMessage](./exports/addMessagecl/)
- - [addSuggestion](./exports/addSuggestion/)
+- [addMessage](./exports/addMessagecl/)
+- [addSuggestion](./exports/addSuggestion/)
 
 ### Server
 
- - [addMessage](./exports/addMessagesv/)
- - [registerMessageHook](./exports/registerMessageHook/)
- - [registerMode](./exports/registerMode/)
+- [addMessage](./exports/addMessagesv/)
+- [registerMessageHook](./exports/registerMessageHook/)
+- [registerMode](./exports/registerMode/)
 
 ## Events
 

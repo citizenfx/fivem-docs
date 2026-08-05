@@ -6,11 +6,11 @@ title: Exports
 
 ### Client
 
- - [addMessage](./addMessagecl/)
- - [addSuggestion](./addSuggestion/)
+- [addMessage](./addMessagecl/)
+- [addSuggestion](./addSuggestion/)
 
 ### Server
 
- - [addMessage](./addMessagesv/)
- - [registerMessageHook](./registerMessageHook/)
- - [registerMode](./registerMode/)
+- [addMessage](./addMessagesv/)
+- [registerMessageHook](./registerMessageHook/)
+- [registerMode](./registerMode/)

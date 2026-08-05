@@ -115,7 +115,7 @@ While FiveM for GTAV Enhanced is in early access, graphic mods cannot be used.
 
 #### Developer Mode
 
-The `+set moo 31337` command (used in Gen8 to enable devmode) was removed.  
+The `+set moo 31337` command (used in Gen8 to enable devmode) was removed.\
 Enabling devmode in the client now requires `sv_devMode true` to be set on the server side (in the server.cfg).
 
 #### Deprecated & Compatibility Variables

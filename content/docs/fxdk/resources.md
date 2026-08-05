@@ -92,9 +92,9 @@ General schema for convar entry:
 
 Convar of any kind can be of 3 types:
 
- - [`Server only`](/docs/scripting-reference/convars/#standard-convars)
- - [`Information`](/docs/scripting-reference/convars/#server-information-convars) - name starts with `#` symbol, `#my_resource_info` convar from example above.
- - [`Replicated`](/docs/scripting-reference/convars/#server-replicated-convars) - name starts with `$` symbol, `$my_resource_repl` convar from example above.
+- [`Server only`](/docs/scripting-reference/convars/#standard-convars)
+- [`Information`](/docs/scripting-reference/convars/#server-information-convars) - name starts with `#` symbol, `#my_resource_info` convar from example above.
+- [`Replicated`](/docs/scripting-reference/convars/#server-replicated-convars) - name starts with `$` symbol, `$my_resource_repl` convar from example above.
 
 ### Kinds
 

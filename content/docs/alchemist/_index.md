@@ -8,7 +8,7 @@ description: >
 
 ## What is Alchemist?
 
-Alchemist is a tool for players, server owners, and asset creators who want to convert assets originally made for **GTAV Legacy (Gen8)** to be compatible with **GTAV Enhanced (Gen9)**.  
+Alchemist is a tool for players, server owners, and asset creators who want to convert assets originally made for **GTAV Legacy (Gen8)** to be compatible with **GTAV Enhanced (Gen9)**.\
 It also allows you to refine existing Legacy assets to correct potential formatting or compatibility issues created by earlier tools.
 
 You can download Alchemist directly on the [Cfx Portal](https://portal.cfx.re/downloads).
@@ -39,14 +39,14 @@ YDR, YTD, YFT, YPT and YDD.
 
 ### How to Start Alchemist GUI
 
-1. Double-click **Alchemist.exe**.  
+1. Double-click **Alchemist.exe**.
 2. Choose whether you want to submit telemetry data and click **Yes** or **No** accordingly.
 
 #### How to Use Alchemist GUI
 
-1. Choose between **Asset Conversion** and **Asset Refinement** depending on what you want to do.  
-2. Click **Browse** next to *Select Input Folder* to specify the path to the input folder.  
-3. Click **Browse** next to *Select Output Folder* to specify the path to the output folder.  
+1. Choose between **Asset Conversion** and **Asset Refinement** depending on what you want to do.
+2. Click **Browse** next to *Select Input Folder* to specify the path to the input folder.
+3. Click **Browse** next to *Select Output Folder* to specify the path to the output folder.
 4. Click **Convert Assets** or **Refine Assets** and wait for the process to finish.
 
 After the process is finished, you will find your converted or refined assets in the output folder.
@@ -68,11 +68,11 @@ Selecting your Cfx Platform Server resources directory as an input folder will g
 
 ### How to Start Alchemist CLI
 
-1. Open the Command Prompt.  
-2. Drag **AlchemistCli.exe** into the Command Prompt window.  
-3. Press **Enter**.  
-4. You will be asked to accept the Terms of Service. Type **y** if you agree.  
-5. You will be asked whether to enable telemetry. Enter **y** to share this data, or **n** if you prefer not to.  
+1. Open the Command Prompt.
+2. Drag **AlchemistCli.exe** into the Command Prompt window.
+3. Press **Enter**.
+4. You will be asked to accept the Terms of Service. Type **y** if you agree.
+5. You will be asked whether to enable telemetry. Enter **y** to share this data, or **n** if you prefer not to.
 6. Alchemist CLI is now ready to use.
 
 #### How to Use Alchemist CLI

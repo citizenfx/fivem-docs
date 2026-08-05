@@ -685,7 +685,7 @@ title: Weapon Models
             <span class='hash-key'><strong>Hash:</strong> WEAPON_BULLPUPSHOTGUN</span>
             <span><strong>Model Hash Key:</strong> w_sg_bullpupshotgun</span>
             <span><strong>DLC:</strong> core</span>
-            <span class='weapon-description'><strong>Description:</strong> More than makes up for its slow, pump-action rate of fire with its range and spread.  Decimates anything in its projectile path.</span>
+            <span class='weapon-description'><strong>Description:</strong> More than makes up for its slow, pump-action rate of fire with its range and spread. Decimates anything in its projectile path.</span>
             <div class="components">
                <details>
                   <summary>Components</summary>

@@ -37,7 +37,7 @@ If this line is missing, you don't have to add it, as it is disabled by default.
 
 Ensure your server is running and accessible externally.
 
-1. In your browser, visit:  
+1. In your browser, visit:
    ```
    http://ip:port/info.json
    ```

@@ -219,7 +219,7 @@ Embedded portable PDBs are the most reliable way to ensure accurate stack traces
    - Press `Ctrl + Shift + B` to rebuild the project.
    - The resulting DLL will include embedded debug information.
 
-#### Using Portable PDBs Instead (as separate `.pdb` files)  
+#### Using Portable PDBs Instead (as separate `.pdb` files)
 
 Portable PDBs can also be used in FiveM without embedding - just make sure the `.pdb` files are copied alongside your DLLs.
 

@@ -34,19 +34,19 @@ hookRef functions
 
 ### updateMessage(`object messageObject`)
 
- - Updates the message object to the one specified in the function.
+- Updates the message object to the one specified in the function.
 
 ### cancel()
 
- - Cancels the sending of the current message.
+- Cancels the sending of the current message.
 
 ### setSeObject(`string seObject`)
 
- - Changes the current message ace requirement.
+- Changes the current message ace requirement.
 
 ### setRouting(`int/table player(s)`)
 
- - Changes the routing of the current message (Who it is being sent to).
+- Changes the routing of the current message (Who it is being sent to).
 
 Examples
 --------

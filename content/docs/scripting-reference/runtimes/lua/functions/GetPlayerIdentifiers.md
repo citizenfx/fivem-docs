@@ -29,7 +29,7 @@ GetPlayerIdentifiers(Player player)
 
 ### Examples
 
-Check for commonly used identifiers with this method;  works well when triggered by the `playerConnecting` event.
+Check for commonly used identifiers with this method; works well when triggered by the `playerConnecting` event.
 
 {{% alert color="info" %}}
 If you only need to get a single identifier you can use {{% native_link "GET_PLAYER_IDENTIFIER_BY_TYPE" %}}, if you need to get multiple you should use the below example.

@@ -4,7 +4,7 @@ title: txAdmin
 
 ## About
 
-**txAdmin** is a **full-featured** web panel to help you Manage & monitor your FiveM Server.  
+**txAdmin** is a **full-featured** web panel to help you Manage & monitor your FiveM Server.\
 Contrary to the other resources on this documentation (eg. chat, mapmanager etc), **txAdmin** already comes preinstalled with FXServer, so you do not need to download it separately.
 
 For more information, you can join the [Discord Server](https://discord.gg/AFAAXzq).
@@ -15,7 +15,7 @@ For more information, you can join the [Discord Server](https://discord.gg/AFAAX
 - Start/Stop/Restart your server instance or resources
 - Full-featured in-game admin menu:
 	- Player Mode: NoClip, God, SuperJump
-	- Teleport:  waypoint, coords and back
+	- Teleport: waypoint, coords and back
 	- Vehicle: Spawn, Fix, Delete, Boost
 	- Heal: yourself, everyone
 	- Send Announcements
@@ -62,7 +62,7 @@ For more information, you can join the [Discord Server](https://discord.gg/AFAAX
 - If Windows, run FXServer.exe | If Linux, run `screen ./run.sh`
 - Open one of the URLs shown and configure txAdmin
 
-txAdmin requires to be launched from *inside* FXServer in monitor mode, to do that, just execute the `run.sh` or `FXServer.exe` without **any** `+exec` arguments.  
+txAdmin requires to be launched from *inside* FXServer in monitor mode, to do that, just execute the `run.sh` or `FXServer.exe` without **any** `+exec` arguments.
 
 ### Convars
 

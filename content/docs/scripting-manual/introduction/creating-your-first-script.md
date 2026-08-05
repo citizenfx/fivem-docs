@@ -193,13 +193,13 @@ This is a lot of boilerplate code, and we'll want to do this the _right_ way sin
 
 Basically what we'll do is:
 
-1.  Check if the passed model is valid. It's no fun trying to spawn a 'potato' when there's no vehicle with that name.
-2.  Load the model. You'll need to explicitly manage every model you're using, these are the rules originally defined by R*.
-3.  Wait for the model to be loaded. Yes, the game will continue running asynchronously.
-4.  Figure out where the player is once it loaded.
-5.  Create the vehicle! Awesome, finally you get to be creative.
-6.  Put the player into the vehicle.
-7.  Clean up, since we are tidy people and 🚮 and all.
+1. Check if the passed model is valid. It's no fun trying to spawn a 'potato' when there's no vehicle with that name.
+2. Load the model. You'll need to explicitly manage every model you're using, these are the rules originally defined by R*.
+3. Wait for the model to be loaded. Yes, the game will continue running asynchronously.
+4. Figure out where the player is once it loaded.
+5. Create the vehicle! Awesome, finally you get to be creative.
+6. Put the player into the vehicle.
+7. Clean up, since we are tidy people and 🚮 and all.
 
 Let's get going!
 

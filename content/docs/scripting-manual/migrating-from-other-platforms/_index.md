@@ -51,18 +51,18 @@ local state = Entity(heli).state
 state:set("initVehicle", true, true)
 
 -- client.lua
-AddStateBagChangeHandler("initVehicle", nil, function(bagName, key, value) 
+AddStateBagChangeHandler("initVehicle", nil, function(bagName, key, value)
   local isDone = false
 
-  -- The owner can rapidly change if multiple clients are nearby when the entity is created. 
+  -- The owner can rapidly change if multiple clients are nearby when the entity is created.
   -- To combat this, loop until one owner manages to set the state bag to nil
   while not isDone do
     Wait(0)
 
     local state = GetStateBagValue(bagName, key)
-    if not state then 
+    if not state then
       isDone = true
-      goto continue 
+      goto continue
     end
 
     local entity = GetEntityFromStateBagName(bagName)

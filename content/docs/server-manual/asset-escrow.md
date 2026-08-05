@@ -49,7 +49,7 @@ The asset, which can be used on any server that you own, will be downloaded.
 
 ## Sell your resource on Tebex
 
-When creating a new package on [Tebex](/docs/server-manual/setting-up-a-tebex-store/), it will ask you to configure what your customers should receive upon purchasing this package. Select "FiveM Asset" and then choose the desired asset(s) from the dropdown list.  
+When creating a new package on [Tebex](/docs/server-manual/setting-up-a-tebex-store/), it will ask you to configure what your customers should receive upon purchasing this package. Select "FiveM Asset" and then choose the desired asset(s) from the dropdown list.\
 When a user buys access to the resource, they will receive an email with a download link.
 
 ## Can I still obfuscate code in escrowed resources?
@@ -63,7 +63,7 @@ If the subscription expires, the asset is removed from the subscribed user's acc
 
 ## What happens if an unauthorized server tries to run my resource?
 
-The resource will not start, and an error stating 'You lack the required entitlement' will appear in the server console.  
+The resource will not start, and an error stating 'You lack the required entitlement' will appear in the server console.\
 The server owner must purchase your content to be eligible to run your resource.
 
 ## Is NUI supported in this system?
