@@ -12,6 +12,7 @@ clearTick(id);
 ```
 
 ### Required arguments
+
 - **id**: The timer to be cleared.
 
 Examples
@@ -28,7 +29,6 @@ setTimeout(() => {
   clearTick(timer);
   console.log('I stopped running.');
 }, 5000);
-
 ```
 
 [setTick]: /docs/scripting-reference/runtimes/javascript/functions/setTick/

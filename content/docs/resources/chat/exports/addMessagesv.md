@@ -3,6 +3,7 @@ title: addMessage (server)
 ---
 
 ## About
+
 Using this export allows you to add a message to the target players chat.<br>
 Message object structure:
 
@@ -16,6 +17,7 @@ message = {
 ```
 
 ## Name
+
 ```
 addMessage
 ```
@@ -33,6 +35,7 @@ Examples
 This example sends a chat message to all players.
 
 ##### Lua Example:
+
 ```lua
 AddEventHandler('onResourceStart', function(resourceName)
   if (GetCurrentResourceName() ~= resourceName) then
@@ -44,5 +47,6 @@ AddEventHandler('onResourceStart', function(resourceName)
   })
 end)
 ```
+
 Output:<br>
 ![screenshot-1](/chat_addMessage_export.png)

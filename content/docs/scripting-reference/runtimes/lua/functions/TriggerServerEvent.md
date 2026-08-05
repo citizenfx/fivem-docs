@@ -56,14 +56,16 @@ In this example, the event 'myCustomServerEvent' is triggered with two pieces of
 To handle the event triggered by `TriggerServerEvent`, you need to define a register net event listener. Here's an example of how you can set up an event listener for the 'myCustomServerEvent' event:
 
 (Recommended)
+
 ```lua
 -- In any server file of the script
 RegisterNetEvent('myCustomServerEvent', function(name, score)
     print(string.format('Player %s has a new score of %d', name, score))
 end)
-
 ```
+
 You can also make:
+
 ```lua
 RegisterNetEvent('myCustomServerEvent')
 AddEventHandler('myCustomServerEvent', function(name, score)

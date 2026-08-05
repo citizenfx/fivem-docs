@@ -12,6 +12,7 @@ Citizen.CreateThread(function handler)
 ```
 
 ### Required arguments
+
 - **handler**: The thread handler function.
 
 Examples

@@ -17,6 +17,7 @@ Citizen.Wait(int milliseconds)
 **Note:** You can also use [`Wait` alias](https://github.com/citizenfx/fivem/blob/b998343017fc89c6b27b7011ec5be789560c7313/data/shared/citizen/scripting/lua/scheduler.lua#L135) to simplify your code and save some typing.
 
 ### Required Arguments
+
 - **milliseconds**: The amount of milliseconds to pause the current thread. This value determines how long the script will wait before continuing execution.
 
 ## Examples
@@ -84,8 +85,8 @@ If a player is running at 60 fps they will have a tick happen once every 16.6ms.
 
 If a player is running at 180 fps they will have a tick happen once every 5.5ms.
 
-
 ## Best Practices
+
 1. **Something that needs to run per frame should use `Wait(0)`**: If something is required to run on every frame, you should always use `Wait(0)` using `Wait(5)`, `Wait(10)`, etc will cause ticks to be missed on higher frame rates.
 2. **Avoid calling heavy natives per-tick**: Don't call expensive native calls like {{% native_link "START_EXPENSIVE_SYNCHRONOUS_SHAPE_TEST_LOS_PROBE" %}} per-frame if it can be avoided.
 3. **Cache frequently called natives**: Certain natives like {{% native_link "PLAYER_PED_ID" %}} and {{% native_link "GET_PLAYER_PED" %}} change infrequently, you can cache these in another `CreateThread` that runs less often to save some native calling overhead.

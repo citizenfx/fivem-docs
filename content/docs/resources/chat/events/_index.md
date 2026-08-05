@@ -5,6 +5,7 @@ title: Events
 ## Events
 
 ### Client
+
 - [chatMessage](./chatMessage/) (deprecated, use chat:addMessage instead)
 - [chat:addMessage](./chat-addMessage/)
 - [chat:addSuggestion](./chat-addSuggestion/)
@@ -14,4 +15,5 @@ title: Events
 - [chat:clear](./chat-clear/)
 
 ### Server
+
 - [chatMessage](./chatMessage/)

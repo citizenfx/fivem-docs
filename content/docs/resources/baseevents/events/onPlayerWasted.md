@@ -4,10 +4,10 @@ title: onPlayerWasted
 
 Name
 ----------
+
 ```
 baseevents:onPlayerWasted
 ```
-
 
 Parameters
 ----------

@@ -6,6 +6,7 @@ weight: 40
 Getting started with scripting for FiveM might be a tad overwhelming, given the wide range of possibilities and the sparsely spread documentation. In this quick and simple guide, we'll try to show you how to get started with a quick resource in C#. We will be implementing a car spawner through a command.
 
 ## Prerequisites
+
 Before creating your first script with C#, there are a couple of things you will need to set up and understand.
 
 * [A basic understanding of C#](https://learn.microsoft.com/en-us/dotnet/csharp/#learn-to-program)
@@ -13,9 +14,11 @@ Before creating your first script with C#, there are a couple of things you will
 * [Understanding of resources and manifest files](/docs/scripting-reference/resource-manifest/)
 
 ### Writing code
+
 Now that you have set up your C# project and environment, you will have two projects; `MyResourceNameClient` and `MyResourceNameServer`.
 
 Any C# class that handles FiveM scripting-related events must inherit from the `BaseScript` class. Let's do this by going to `Class1.cs` in your client project. At the same time, we will also define a constructor, which we will use further on. Make sure you have a using directive to `CitizenFX.Core`.
+
 ```csharp
 using CitizenFX.Core;
 
@@ -71,11 +74,13 @@ You might be overwhelmed at this point, but don't worry. We will go through ever
 ```csharp
 EventHandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart);
 ```
+
 In the constructor we've added an event handler for the [onClientResourceStart](/docs/scripting-reference/events/list/onClientResourceStart/) event. It takes one argument; a string with the name of the resource that was started. It also has a delegate method `OnClientResourceStart`, which we defined beneath the constructor. Once the resource has started, FiveM will trigger this event and invoke the method.
 
 ```csharp
 if (GetCurrentResourceName() != resourceName) return;
 ```
+
 This if statement makes use of the native `GetCurrentResourceName()`. In short, _natives_, which has nothing to do with indigenous people, is actually a R* label for 'game-defined script functions'. We can access these natives through the `CitizenFX.Core.Native.API` class. You will be using other natives later when spawning a vehicle. In this snippet, `GetCurrentResourceName()` returns the name of the resource that our script is running. We compare this to the `resourceName` argument to make sure that we only call the rest of the method once. If we don't do this check, the rest of the method will run every time any resource has started.
 
 ```csharp
@@ -89,6 +94,7 @@ RegisterCommand("car", new Action<int, List<object>, string>((source, args, raw)
     });
 }), false);
 ```
+
 To start, we see a call to a function. We did not define that function. Well, _we_ (as in, the FiveM team) did, but not when guiding you, the reader, through this wondrously written marvel of a guide. That means it must come from somewhere else!
 
 And, guess what, it's actually {{% native_link "REGISTER_COMMAND" %}}! Click that link, and you'll be led to the documentation for this native. It looks a bit like this:
@@ -112,6 +118,7 @@ At this point, you can build your client project, add/move it to your resource a
 Hey! It's complaining in the chat box that you were too lazy to implement this. We'll show them that you're _absolutely not lazy_, and actually implement this now.
 
 ### Implementing a car spawner
+
 You may have followed the Lua tutorial on creating your first script and remember that there was a lot of boilerplate code that might looked overwhelming. Fear not, FiveM provides an easy to use C# wrapper that will allow us to reduce the code.
 
 ```csharp
@@ -155,6 +162,7 @@ RegisterCommand("car", new Action<int, List<object>, string>(async (source, args
 This uses some natives and C# wrapper methods. We'll link a few of them and explain the hard parts.
 
 #### Step 1: Validation
+
 We started with checking the model. We set it to `adder`. If there are any arguments, we set the model to the first argument and cast it to a string.
 
 Then, we check if the vehicle is in the CD image using {{% native_link "IS_MODEL_IN_CDIMAGE" %}}. This basically means 'is this registered with the game'. We also check if it's a vehicle using {{% native_link "IS_MODEL_A_VEHICLE" %}}. If either check fails, we tell the player and return from the command.
@@ -162,15 +170,19 @@ Then, we check if the vehicle is in the CD image using {{% native_link "IS_MODEL
 There may be C# wrapper here, but it's important to reify the use of natives as you will use them a lot when scripting. Make sure you have the `using static CitizenFX.Core.Native.API;` directive in your class.
 
 #### Step 2: Creating the vehicle
+
 Using the client side C# wrapper class `World`, we call the `CreateVehicle` method which takes a model, `Vector3` position, and `float` heading as arguments. This is the great thing about C#. You have access to a method supplied by _us_ such that you don't have to request and load a model like you would in Lua. This method returns us a `Vehicle` object. If you have experience with *ScriptHookV.NET* you may recognize these classes. The C# wrapper of FiveM is very similar.
 
 #### Step 3: Setting the player into the vehicle
+
 Since we have our ped and a vehicle now, using the C# wrapper with the `Game.PlayerPed` object, we can set ourselves into the vehicle's driver seat.
 
 ### Running this
+
 Build your project and make sure the latest `MyResourceNameClient.net.dll` is in the folder of your resource. In your server console, type `restart mymode` (or whatever you named your resource), and try `/car voltic2` in the game client (which should by now be really bored of respawning). You'll now have your very own Rocket Voltic!
 
 ### Enabling Debug Information
+
 To ensure Mono can load debug symbols and display full debug information (e.g., line numbers and file paths) in stack traces during runtime, configure your Visual Studio project's debug build to embed debug information. If not set correctly, stack traces may show error lines as `0`, like the ones shown below, indicating missing debug information.
 
 ```
@@ -179,6 +191,7 @@ MainThrd/ at Client.Services.Player.MyService+<RunTasks>d__22.MoveNext () [0x001
 ```
 
 #### Why Embedded PDBs work in FiveM
+
 Embedded portable PDBs are the most reliable way to ensure accurate stack traces in FiveM because [.NET Framework 4.7.1][portable-pdb-support] and up supports embedding [portable PDBs][portable-pdb-msft-learn], and Mono (the runtime used by FiveM) can natively extract this data from the DLL's metadata to provide line numbers and file paths in stack traces - even without separate `.pdb` files present.
 
 **Follow these steps to enable embedded debug information in Visual Studio:**
@@ -206,8 +219,8 @@ Embedded portable PDBs are the most reliable way to ensure accurate stack traces
    - Press `Ctrl + Shift + B` to rebuild the project.
    - The resulting DLL will include embedded debug information.
 
-
 #### Using Portable PDBs Instead (as separate `.pdb` files)  
+
 Portable PDBs can also be used in FiveM without embedding - just make sure the `.pdb` files are copied alongside your DLLs.
 
 To generate separate portable PDBs instead of embedding them, follow the **same steps above**, but in step 4, select `Portable` instead of `Embedded` under **Debug Info**.
@@ -224,6 +237,7 @@ files {
 ```
 
 ## Server scripts
+
 You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
 
 [portable-pdb-support]: https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-7-1/#runtime-–-support-for-portable-pdbs

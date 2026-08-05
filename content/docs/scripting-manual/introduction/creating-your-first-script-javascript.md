@@ -6,6 +6,7 @@ weight: 30
 Getting started with scripting for FiveM might be a tad overwhelming, given the wide range of possibilities and the sparsely spread documentation. In this quick and simple guide, we'll try to show you how to get started with a quick resource in JavaScript.
 
 ## Prerequisites
+
 Before creating your first script with JavaScript, there are a couple of things you will need to set up and understand.
 
 * [Understanding the JavaScript programming language (Getting Started)][basic-understanding-js]
@@ -15,6 +16,7 @@ Before creating your first script with JavaScript, there are a couple of things 
 We will be using Visual Studio Code, hereby VSCode, a popular code editor by Microsoft. However, you can use any code editor you'd like.
 
 ## Resources
+
 A resource is, simply said, a collection of files that can be individually started, stopped and restarted. Your server-data folder (assuming you already installed a server) should have a `resources` folder already, with a few resources in them already.
 
 If you're working on your own resources, you'll probably want to make a `resources/[local]` directory - this one will be ignored by Git when updating the server-data root. In there, we'll make a `resources/[local]/mymode` folder, since we're making, well, a gametype using the `mapmanager` system.
@@ -22,6 +24,7 @@ If you're working on your own resources, you'll probably want to make a `resourc
 That means you'll need to have a folder like this by now, assuming a Windows development system: `C:\your\path\to\cfx-server-data\resources\[local]\mymode`. We'll call this folder `mymode` from now on.
 
 ### Manifest files
+
 A resource folder (you know, this `mymode` you made above) will need a manifest to be detected by FiveM. Since this is a game type, it'll need some extra information as well to teach `mapmanager` about the fact that this is a game type.
 
 Make a file called `fxmanifest.lua` (this is _always_ Lua, even though you'll be writing a JS script) in your `mymode` folder. In it, put the following text using your favorite text editor:
@@ -51,6 +54,7 @@ Finally, we should make a file called `mymode_client.js` in the `mymode` resourc
 To learn more about resource manifest files, take a look at the [resource manifest reference][manifest-reference].
 
 ### Writing code
+
 Now that you have set up your JavaScript project and environment, we can start writing some code.
 
 In your `client.js` file, let's put the following content:
@@ -157,7 +161,6 @@ const spawnPos = [-275.522, 6635.835, 7.425]
 ```
 
 Then, in your server console, execute the magical command `restart mymode`. You should (again) see 'Welcome to the party!~' mentioned in your chat box, and end up on a pier instead of the stage.
-
 
 ## Expanding on this
 
@@ -267,40 +270,49 @@ RegisterCommand('car', async (source, args, raw) => {
 This uses a LOT of natives. We'll link a few of them and explain the hard parts.
 
 #### Step 1: Validation
+
 We started with checking the vehicle name. If it's not given (this is, no arguments for the command), we'll default to the `adder`. Either way, it's stored in a variable.
 
 We want the hash key from this vehicle to work with the game engine, so we call {{% native_link "GET_HASH_KEY" %}} and store the returned `number` in the variable `hash`. Then, we check if the vehicle is in the CD image using {{% native_link "IS_MODEL_IN_CDIMAGE" %}}. This basically means 'is this registered with the game'. We also check if it's a vehicle using {{% native_link "IS_MODEL_A_VEHICLE" %}}. If either check fails, we tell the player and return from the command.
 
 #### Step 2: Loading the model
+
 Now, we call {{% native_link "REQUEST_MODEL" %}} to load the actual vehicle model using the hash we have from step 1.
 
 #### Step 3: Waiting for the model to be loaded
+
 We loop calls to {{% native_link "HAS_MODEL_LOADED" %}} to check if loading succeeded. Since this is a loop and we're cooperatively multitasked, you'll have to give the game time to run as well - otherwise it'll never even finish loading and the game will unfortunately freeze. Unlike Lua and C#, we do not have a built-in `Wait` or `Delay` call, so we need to create our own. We defined the function `Delay` in the global scope of our script. It waits for the specified amount of milliseconds, then returns a Promise right back into the script.
 
 Once the model's loaded, we'll continue.
 
 #### Step 4: Getting the player's position
+
 Players' physical incarnations are identified by their `ped`, which is short for 'pedestrian'. This is a GTA term, and it usually means 'anything that lives and has legs'. We use {{% native_link "PLAYER_PED_ID" %}} to get the local (basically, whoever is executing this command) player's ped.
 
 After we have the ped and store it in a variable, we get the position of the player ped using {{% native_link "GET_ENTITY_COORDS" %}}. Since a ped is an entity (the same goes for vehicles and a few other things), this native is used for getting their position. This native, returns an array `number[]`.
 
 #### Step 5: Creating the vehicle
+
 We use {{% native_link "CREATE_VEHICLE" %}} to, well, create a vehicle. In the meanwhile, we snuck in a call to get the player's heading using {{% native_link "GET_ENTITY_HEADING" %}}, which makes the car spawn facing the same direction as the player.
 
 The `true, false` is a convention in entity creation natives to create the vehicle with a network object (`true`), but not make it a mission object (`false`). You usually want the former, or nobody else will see the vehicle - and you won't want the latter, since you're not writing a full R* mission script.
 
 #### Step 6: Setting the player into the vehicle
+
 Since we have a ped and a vehicle now, we can use {{% native_link "SET_PED_INTO_VEHICLE" %}} to place the ped into the vehicle. As the documentation happens to say, `-1` is the driver seat of the vehicle.
 
 #### Step 7: Cleaning up
+
 The game likes it when you clean up after yourself, and as we're not doing anything with the vehicle or the model anymore in this script, we'll let the game manage it. This is what we use {{% native_link "SET_ENTITY_AS_NO_LONGER_NEEDED" %}} and {{% native_link "SET_MODEL_AS_NO_LONGER_NEEDED" %}} for.
 
 Finally, we tell the player to enjoy their new vehicle.
 
 ### Running this
+
 In your server console, `refresh; restart mymode` (yeah you can split stuff with semicolons), and try `/car voltic2` in the game client (which should by now be really bored of respawning). You'll now have your very own Rocket Voltic!
 
 ## Server scripts
+
 You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
 
 [runtime-javascript]: /docs/scripting-manual/runtimes/javascript/

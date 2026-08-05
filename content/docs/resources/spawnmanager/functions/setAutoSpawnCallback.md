@@ -3,9 +3,11 @@ title: setAutoSpawnCallback
 ---
 
 ## About
+
 This export allows you to choose your own callback for autospawning.
 
 ## Name
+
 ```
 setAutoSpawnCallback
 ```
@@ -21,6 +23,7 @@ function callback
 - **callback** The callback to execute when auto-spawning the player.
 
 ##### Lua Example:
+
 ```lua
 local firstSpawn = true
 exports.spawnmanager:setAutoSpawnCallback(function()

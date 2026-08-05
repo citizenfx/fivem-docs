@@ -186,6 +186,7 @@ end
 ```
 
 This will first broadcast who left to any connected channel clients and will then remove the given client from the table (`clientsInChannel[channelIdx]`) by its given key (`clientKey`).
+
 ```lua
 function removeClientFromChannel(source, clientKey, channelIdx)
     broadcastVoiceChange(source, channelIdx, 'left')

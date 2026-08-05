@@ -3,9 +3,11 @@ title: removeSpawnPoint
 ---
 
 ## About
+
 This export allows you to remove an existing spawnpoint from the spawnmanager.
 
 ## Name
+
 ```
 removeSpawnPoint
 ```
@@ -24,6 +26,7 @@ Examples
 --------
 
 ##### Lua Example:
+
 ```lua
 -- Add a new spawnpoint!
 local mySpawnPoint = exports.spawnmanager:addSpawnPoint({

@@ -3,9 +3,11 @@ title: forceRespawn
 ---
 
 ## About
+
 If the auto-spawn flag is enabled, this export instantly and forcefully respawns the player, disregarding the 2 second cooldown.
 
 ## Name
+
 ```
 forceRespawn
 ```

@@ -14,12 +14,12 @@ loadscreen 'load.html'
 file 'load.html'
 ```
 
-
 ```lua
 loadscreen 'https://my-server.example.com/loadscreen/'
 ```
 
 ## Cursor/input
+
 The loading screen will always be focused for both mouse and keyboard input, however the cursor is not shown by default
 for legacy reasons.
 
@@ -30,6 +30,7 @@ loadscreen_cursor 'yes'
 ```
 
 ## Busy spinner
+
 You can hide the default busy spinner in the bottom right corner of the screen by adding the following command to your `server.cfg`:
 
 ```
@@ -37,6 +38,7 @@ setr sv_showBusySpinnerOnLoadingScreen false
 ```
 
 ## Handover data
+
 Server scripts can specify data pairs to send to the client loading screen using the `handover` function in the playerConnecting
 event. This data will be passed to the loading screen in the `window.nuiHandoverData` property.
 
@@ -44,6 +46,7 @@ In addition to data specified by the server, a field named `serverAddress` is al
 the client->server connection.
 
 ### Example
+
 ```lua
 -- Server script
 AddEventHandler('playerConnecting', function(_, _, deferrals)
@@ -70,6 +73,7 @@ window.addEventListener('DOMContentLoaded', () => {
 ```
 
 ## Lifetime
+
 By default, the loading screen will show until {{% native_link "SHUTDOWN_LOADING_SCREEN" %}} is called. However, you can also
 manually control exit lifetime by setting the `loadscreen_manual_shutdown 'yes'` directive in your resource manifest.
 
@@ -82,10 +86,12 @@ This can be used to, say, add a custom fade-out effect from the loading screen t
 with early-game spawn selection UI.
 
 ## Events
+
 The loading screen will receive data about various events through the `message` event.
 You can handle these events by setting `window.onmessage` or by using `window.addEventListener` with `'message'` as the first argument, and checking the `eventName` value inside the event's `data` field.
 
 ### Example
+
 ```html
 <!-- loading screen bar -->
 <progress id="loading-bar" value="0" max="1"></progress>
@@ -102,6 +108,7 @@ window.addEventListener('message', (event) => {
 ```
 
 ### Event List
+
 - [loadProgress](./loadProgress/)
 - [onLogLine](./onLogLine/)
 - [startDataFileEntries](./startDataFileEntries/)

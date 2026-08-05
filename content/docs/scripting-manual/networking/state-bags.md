@@ -12,6 +12,7 @@ State bags are exposed to scripting runtimes using runtime-specific APIs, which 
 ### General guidelines
 
 #### Shallow limitations
+
 State getters and setters are naive: every get will return the full serialized state from the game, and only a _direct_ set operation will serialize the entire state back into the game.
 
 That means you can _not_ do the following:
@@ -48,6 +49,7 @@ Entity(vehicle).state.mollis = 'vesuvius citrate'
 ```
 
 #### Player state
+
 Players also have state.
 
 ```lua
@@ -59,6 +61,7 @@ local bullshark = Player(source).state.testosterone
 ```
 
 #### Global state
+
 State global across the entire server, server-set, client-read.
 
 ```lua
@@ -66,6 +69,7 @@ GlobalState.moneyEnabled = true
 ```
 
 #### Setting local state
+
 By default, state set from the server _is_ replicated, and state set from clients is _not_ replicated.
 
 This can be overridden on a case-by-case basis by using `set`:
@@ -79,6 +83,7 @@ Entity(enemy).state:set('taskAck', 'guard', true)
 ```
 
 #### Change handlers
+
 State bag change handlers are essentially method handlers utilized to track changes to a state bag.
 
 Once a change is detected on either side i.e. server, its counterpart implementation (the one on the client) is called with the updated data.
@@ -90,4 +95,5 @@ An example implementation method can be found in the following native documentat
 By default  _player_ state can be able to be written by the player and the server, _entity_ state can be written by the owning player and the server, and _global_ state can be written by the server. 
 
 This behavior can be overridden by using the [sv_stateBagStrictMode](docs/server-manual/server-commands/#setr-sv_stateBagStrictMode-truefalse) server ConVar - with it set to `true` only the server can modify a state bag. 
+
 <!-- other ScRTs todo -->

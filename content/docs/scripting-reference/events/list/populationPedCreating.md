@@ -6,6 +6,7 @@ This event is fired before creating a population ped and allows manipulating pop
 You can also cancel this event with CancelEvent().
 
 The `setters` parameter contains two functions:
+
 - setPosition to set the position where the ped is going to spawn at.
 - setModel to set the model that the ped is going to spawn as.
 
@@ -30,6 +31,7 @@ Examples
 This example illustrates how you can intercept population:
 
 ##### Lua Example:
+
 ```lua
 CreateThread(function()
     RequestModel('s_m_y_cop_01')
@@ -46,6 +48,7 @@ end)
 ```
 
 ##### JavaScript Example:
+
 ```js
 setImmediate(() => {
   RequestModel('s_m_y_cop_01')
@@ -56,10 +59,10 @@ on('populationPedCreating', (x, y, z, model, setters) => {
     setters.setModel('s_m_y_cop_01') // you can use a hash as well
     setters.setPosition(x, y, z + 5.5)
 })
-
 ```
 
 ##### C# Example:
+
 ```cs
 const string replacement = "s_m_y_cop_01";
 new Model(replacement).Request();
@@ -70,5 +73,4 @@ EventHandlers["populationPedCreating"] += new Action<float, float, float, uint, 
             setters.setModel( replacement );
             setters.setPosition( x, y, z + 5.5f );
         });
-
 ```

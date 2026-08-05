@@ -91,6 +91,7 @@ Extra Information
 ------------
 
 Some scaleforms also allow the use of certain html elements, such as `<b>` and `<br>`. You can also set certain fonts for some using `<FONT FACE='$[fontName]'>` for example, `<FONT FACE='$Font2'>`. Here's a list of usable fonts (Not all work for every scaleform):
+
 ```
 $Font2
 $Font2_cond
@@ -111,6 +112,7 @@ $EngraversOldEnglish
 $Bauhaus
 $Redemption
 ```
+
 Image and size can also be set, with size being `<FONT SIZE='[fontSize]'>` and image being `<img src='img://txd/tn'>`
 
 Example

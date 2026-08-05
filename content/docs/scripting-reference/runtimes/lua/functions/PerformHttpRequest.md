@@ -12,10 +12,12 @@ PerformHttpRequest(string url, function callback(number statusCode, string body,
 ```
 
 ### Required arguments
+
 - **url**: A string of the URL to request.
 - **callback**: The callback function to call after the request is finished.
 
 ### Optional arguments
+
 - **method**: The HTTP method to use.
 - **data**: A string of data to send with the request.
 - **headers**: A table of request headers.

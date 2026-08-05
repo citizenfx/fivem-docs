@@ -3,12 +3,13 @@ title: spawnPlayer
 ---
 
 ## About
+
 This export allows you to choose specifically when or where to spawn a player. You'll most likely want to use this if you've turned off the auto-spawn flag with [setAutoSpawn](../setAutoSpawn/).
 
  Once the player has spawned, the [playerSpawned](../../events/playerSpawned/) event will be triggered.
 
-
 ## Name
+
 ```
 spawnPlayer
 ```
@@ -28,6 +29,7 @@ spawnIdx, function callback(object spawn)
 ## Examples
 
 ##### Lua Example:
+
 ```lua
 -- Spawns the player at a random spawnpoint
 exports.spawnmanager:spawnPlayer()
@@ -51,4 +53,5 @@ exports.spawnmanager:spawnPlayer({
     skipFade = false
 })
 ```
+
 `model` is optional in this case. Not specifying it will preserve whatever ped model the player was using beforehand, or if it's their initial spawn it will spawn them as Michael.

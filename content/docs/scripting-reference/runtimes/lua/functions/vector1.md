@@ -24,10 +24,12 @@ number vec1(float x)
 ```
 
 ### Required arguments
+
 - **x**: A floating point number representing the `x` value of your vector.
 
 Examples
 --------
+
 Basic vector1 functionality:
 
 ```lua

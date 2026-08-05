@@ -2,7 +2,6 @@
 title: Citizen.Trace
 ---
 
-
 Syntax
 ------
 

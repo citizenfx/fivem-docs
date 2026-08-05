@@ -8,6 +8,7 @@ description: >
 At times, it may be desirable to have a reverse proxy in front of your Cfx server instance. This guide will discuss the requirements for such a setup.
 
 ## Connection process
+
 The client->server connection process is as follows:
 
 1. Client resolves the _connect endpoint_ from the join interaction. This can be any of the following:
@@ -28,6 +29,7 @@ The client->server connection process is as follows:
 10. Client potentially opens additional sideband TCP/UDP channels to the server endpoint, potentially using other protocols via the multiplex.
 
 ## Proxy types
+
 There are two different reverse proxy types that would make sense in this system, and either can be set up independently from the other.
 
 One is the **connect endpoint**, which can be replaced with any commodity HTTPS reverse proxy/load balancer on port `443`, leading to the actual server's TCP port. The other is the **server endpoint**, which needs a raw TCP/UDP proxy on matching ports leading to the actual server's TCP/UDP port.
@@ -113,6 +115,7 @@ For a connection proxy, a setup like the following could work (based on [a commu
     ```
 
 A working setup of this example would have the following URLs accessible correctly in the browser:
+
 - `https://server1.example.com/info.json`
 - `https://server1.example.com/players.json`
 - `https://server1.example.com/dynamic.json`
@@ -143,6 +146,7 @@ stream {
 When setting this up, also configure `sv_endpoints` appropriately.
 
 ## Advanced setups
+
 This setup can have a few variations as well:
 
 * One could add the load balancer to a Kubernetes cluster as a proper ingress.
@@ -158,11 +162,13 @@ This guide is using nginx as an example, but you can setup any other reverse pro
 
 First you need to change the tcp endpoint on the server to use a different port. In this sample we use 30121 as the non-public accessible port that the FXServer is using.
 Usually you will find the `endpoint_add_tcp` defined inside your `server.cfg`. After you found it change its parameter to `"0.0.0.0:30121"`.
+
 ```
 endpoint_add_tcp "0.0.0.0:30121"
 ```
 
 Make sure to specify the `endpoint_add_udp` above the `endpoint_add_tcp`, otherwise this port change will not work correctly.
+
 ```
 endpoint_add_udp "0.0.0.0:30120"
 endpoint_add_tcp "0.0.0.0:30121"
@@ -195,12 +201,14 @@ The easiest way is to use self-signed certificates when you don't have a domain 
 When you have a domain already configured you can setup [Let's Encrypt](https://letsencrypt.org) to generate this for you.
 
 On Linux the easiest way to generate self-signed certificates is using `openssl`.
+
 ```
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
 ```
 
 For Windows an openssl binary can be found at [Binaries](https://wiki.openssl.org/index.php/Binaries).
 Which works the same as the Linux version.
+
 ```
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key -out nginx-selfsigned.crt
 ```
@@ -212,21 +220,25 @@ When the server host supports a custom firewall configuration inside the configu
 Otherwise rely on the different operating system implementations.
 
 For Linux using `iptables`:
+
 ```
 sudo iptables -A INPUT -p tcp --dport 30121 -j DROP
 ```
 
 For Linux using `ufw`:
+
 ```
 sudo ufw deny 30121/tcp
 ```
 
 For Windows using `PowerShell`:
+
 ```
 New-NetFirewallRule -DisplayName "Block TCP Port 30121" -Direction Inbound -Protocol TCP -LocalPort 30121 -Action Block
 ```
 
 For Windows using `netsh`:
+
 ```
 netsh advfirewall firewall add rule name="Block TCP Port 30121" dir=in action=block protocol=TCP localport=30121
 ```

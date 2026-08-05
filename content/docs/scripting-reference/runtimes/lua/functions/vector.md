@@ -8,6 +8,7 @@ Creates a new vector depending on the count of arguments.
 
 Syntax
 ------
+
 Supports 1 to 4 arguments. Return value is depends on the input.
 
 ```lua
@@ -25,14 +26,17 @@ vector4 vec(float x, float y, float z, float w)
 ```
 
 ### Required arguments
+
 - **x**: A floating point number representing the `x` value of your vector.
 
 ### Optional arguments
+
 - **y**: A floating point number representing the `y` value of your vector.
 - **z**: A floating point number representing the `z` value of your vector.
 - **w**: A floating point number representing the `w` value of your vector.
 
 ### Returns
+
 - If 1 argument is passed, returns the number.
 - If 2 arguments are passed, returns a [vector2][vec2].
 - If 3 arguments are passed, returns a [vector3][vec3].

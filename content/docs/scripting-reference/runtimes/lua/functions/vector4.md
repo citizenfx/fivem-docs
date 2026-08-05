@@ -22,6 +22,7 @@ vector4 vec4(float x, float y, float z, float w)
 ```
 
 ### Required arguments
+
 - **x**: A floating point number representing the `x` value of your vector.
 - **y**: A floating point number representing the `y` value of your vector.
 - **z**: A floating point number representing the `z` value of your vector.

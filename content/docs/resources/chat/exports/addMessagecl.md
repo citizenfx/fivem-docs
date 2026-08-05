@@ -3,6 +3,7 @@ title: addMessage (client)
 ---
 
 ## About
+
 Using this export allows you to add a message to the local players chat.<br>
 Message object structure:
 
@@ -16,6 +17,7 @@ message = {
 ```
 
 ## Name
+
 ```
 addMessage
 ```
@@ -33,6 +35,7 @@ Examples
 This example sends a chat message to a player locally from a client script (only the executing client will see it).
 
 ##### Lua Example:
+
 ```lua
 AddEventHandler('onResourceStart', function(resourceName)
   if (GetCurrentResourceName() ~= resourceName) then
@@ -46,6 +49,7 @@ end)
 ```
 
 ##### C# Example:
+
 ```c#
 using Newtonsoft.Json;
 // ...

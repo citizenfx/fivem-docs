@@ -12,6 +12,7 @@ Citizen.SetTimeout(int milliseconds, function callback)
 ```
 
 ### Required arguments
+
 - **milliseconds**: The amount of milliseconds to pause the current thread.
 - **callback**: The function to run after the timer completes.
 

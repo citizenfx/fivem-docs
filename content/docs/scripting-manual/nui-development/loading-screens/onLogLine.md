@@ -22,6 +22,7 @@ interface EventData {
 
 Examples
 --------
+
 ```html
 <!-- loading screen bar -->
 <p id="log"></p>

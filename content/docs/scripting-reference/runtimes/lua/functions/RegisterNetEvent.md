@@ -15,9 +15,11 @@ RegisterNetEvent(string eventName, function callback)
 ```
 
 ### Required arguments
+
 - **eventName**: A string representing the event name to register.
 
 ### Optional arguments
+
 - **callback**: The function to run when the event is called.
 
 Examples

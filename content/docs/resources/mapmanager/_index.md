@@ -4,11 +4,8 @@ title: mapmanager
 
 Mapmanager
 ------
+
 Mapmanager is an included citizenfx resource that handles map changes, game types, and compatibility between gametypes and maps.
-
-
-
-
 
 Resource Structure
 ------
@@ -29,7 +26,6 @@ Exports
 ------
 
 Exports are called using exports["mapmanger"]:exportname(args)
-
 
 ### getCurrentGameType
 
@@ -52,7 +48,6 @@ Returns the current map.
 
 Arguments :
 None
-
 
 ```lua
 -- mapmanager_server.lua
@@ -94,7 +89,6 @@ map
 
 ```lua
 -- mapmanager_server.lua
-
 
 function changeMap(map)
     if currentMap then
@@ -154,7 +148,6 @@ Will end a round.
 
 Arguments :
 None
-
 
 ```lua
 -- mapmanager_server.lua

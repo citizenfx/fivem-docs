@@ -4,6 +4,7 @@ title: onPlayerKilled
 
 Name
 ----------
+
 ```
 baseevents:onPlayerKilled
 ```
@@ -25,12 +26,14 @@ player killerID, array deathData
     - **(array) deathCoords**: An array containing the x, y, z coordinates of where the player died.
 
 ##### Ped types
+
 ![](/ped_types.png)
 
 Examples
 --------
 
 ##### JavaScript Example:
+
 ```js
 on('baseevents:onPlayerKilled', (killerID, deathData) => {
    const [x, y, z] = deathData.killerpos;

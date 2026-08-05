@@ -13,8 +13,8 @@ If you're not familiar with Lua, you can refer to the [Lua 5.4 reference manual]
 As of June 2025, Lua 5.3 has been deprecated and all Lua scripts now use the 5.4 version. For more information, [read our announcement](https://forum.cfx.re/t/removal-of-lua-5-3-support/5335232). For older Lua versions, visit the [manual archive](https://www.lua.org/manual/).
 {{% /alert %}}
 
-
 ## Resources
+
 A resource is, simply said, a collection of files that can be individually started, stopped and restarted. Your server-data folder (assuming you already installed a server) should have a `resources` folder already, with a few resources in them already.
 
 If you're working on your own resources, you'll probably want to make a `resources/[local]` directory - this one will be ignored by Git when updating the server-data root. In there, we'll make a `resources/[local]/mymode` folder, since we're making, well, a gametype using the `mapmanager` system.
@@ -22,6 +22,7 @@ If you're working on your own resources, you'll probably want to make a `resourc
 That means you'll need to have a folder like this by now, assuming a Windows development system: `C:\your\path\to\cfx-server-data\resources\[local]\mymode`. We'll call this folder `mymode` from now on.
 
 ### Manifest files
+
 A resource folder (you know, this `mymode` you made above) will need a manifest to be detected by FiveM. Since this is a game type, it'll need some extra information as well to teach `mapmanager` about the fact that this is a game type.
 
 Make a file called `fxmanifest.lua` (this is _always_ Lua, even if you'll be writing scripts in C#/JS later on) in your `mymode` folder. In it, put the following text using your favorite text editor:
@@ -252,41 +253,49 @@ end, false)
 This uses a LOT of natives. We'll link a few of them and explain the hard parts.
 
 #### Step 1: Validation
+
 We started with checking the vehicle name. If it's `nil` (that is, not existent), we'll default to the `adder`. Either way, it's stored in a variable.
 
 Then, we check if the vehicle is in the CD image using {{% native_link "IS_MODEL_IN_CDIMAGE" %}}. This basically means 'is this registered with the game'. We also check if it's a vehicle using {{% native_link "IS_MODEL_A_VEHICLE" %}}. If either check fails, we tell the player and return from the command.
 
 #### Step 2: Loading the model
+
 Now, we call {{% native_link "REQUEST_MODEL" %}} to load the actual vehicle model. This native takes a `Hash` argument, but in Lua you can also just pass a string and it'll be converted to a hash. You'll often see people use `GetHashKey` ({{% native_link "GET_HASH_KEY" %}}), but if the native is _specified_ as taking a `Hash`, you actually don't need this.
 
 #### Step 3: Waiting for the model to be loaded
+
 We loop calls to {{% native_link "HAS_MODEL_LOADED" %}} to check if loading succeeded. Since this is a loop and we're cooperatively multitasked, you'll have to give the game time to run as well - otherwise it'll never even finish loading and the game will unfortunately freeze. That's what the `Wait` call is for - it waits for the specified amount of milliseconds, then returns right back into the script.
 
 Once the model's loaded, we'll continue.
 
 #### Step 4: Getting the player's position
+
 Players' physical incarnations are identified by their `ped`, which is short for 'pedestrian'. This is a GTA term, and it usually means 'anything that lives and has legs'. We use {{% native_link "PLAYER_PED_ID" %}} to get the local (basically, whoever is executing this command) player's ped.
 
 After we have the ped and store it in a variable, we get the position of the player ped using {{% native_link "GET_ENTITY_COORDS" %}}. Since a ped is an entity (the same goes for vehicles and a few other things), this native is used for getting their position. This native, again, returns a `Vector3`, similar to how the `spawnPos` was defined earlier.
 
 #### Step 5: Creating the vehicle
+
 We use {{% native_link "CREATE_VEHICLE" %}} to, well, create a vehicle. In the meanwhile, we snuck in a call to get the player's heading using {{% native_link "GET_ENTITY_HEADING" %}}, which makes the car spawn facing the same direction as the player.
 
 The `true, false` is a convention in entity creation natives to create the vehicle with a network object (`true`), but not make it a mission object (`false`). You usually want the former, or nobody else will see the vehicle - and you won't want the latter, since you're not writing a full R* mission script.
 
 #### Step 6: Setting the player into the vehicle
+
 Since we have a ped and a vehicle now, we can use {{% native_link "SET_PED_INTO_VEHICLE" %}} to place the ped into the vehicle. As the documentation happens to say, `-1` is the driver seat of the vehicle.
 
 #### Step 7: Cleaning up
+
 The game likes it when you clean up after yourself, and as we're not doing anything with the vehicle or the model anymore in this script, we'll let the game manage it. This is what we use {{% native_link "SET_ENTITY_AS_NO_LONGER_NEEDED" %}} and {{% native_link "SET_MODEL_AS_NO_LONGER_NEEDED" %}} for.
 
 Finally, we tell the player to enjoy their new vehicle.
 
 ### Running this
+
 In your server console, `refresh; restart mymode` (yeah you can split stuff with semicolons), and try `/car voltic2` in the game client (which should by now be really bored of respawning). You'll now have your very own Rocket Voltic!
 
 ## Server scripts
-You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
 
+You'll probably also want to write scripts that interact with the server. This section is still to be written. :-(
 
 [manifest-reference]: /docs/scripting-reference/resource-manifest/

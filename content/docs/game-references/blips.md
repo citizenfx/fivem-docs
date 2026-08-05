@@ -12,7 +12,6 @@ A list of all game blips as of build 3258 are shown below.
 <!-- /* paste AS snippet */ -->
 <!-- _loc1_.map((name, idx) => `<div class="blip"><div><div><img src="/blips/${name}.png" alt="${name}"></div></div><span><strong>${idx}</strong><br>${name}</span></div>`).join('\n') -->
 
-
 <style type="text/css">
 .blips {
     display: grid;

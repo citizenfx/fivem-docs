@@ -49,10 +49,12 @@ Squashing commits using [Github Desktop](https://desktop.github.com/) is a simpl
 ### Using Git's CLI
 
 #### Prerequisites
+
  - Git
  - Basic knowledge on Git
 
 #### Squashing commits
+
 We can squash commits by using `git rebase -i HEAD~n` where `n` is the number of commits we want to combine from the `HEAD` commit and `-i`, which stands for interactive.
 
 So essentially, one would type the following into the console if we want to combine said commits (up to head, being the most recent commit):

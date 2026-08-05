@@ -15,9 +15,11 @@ string resourceName
 
 Examples
 --------
+
 This example prevents any resource called 'pineapple' from starting.
 
 ##### Lua Example:
+
 ```lua
 AddEventHandler('onResourceStarting', function(resourceName)
   if resourceName == 'pineapple' then
@@ -27,6 +29,7 @@ end)
 ```
 
 ##### C\# Example:
+
 ```csharp
 // in the class constructor
 EventHandlers["onResourceStarting"] += new Action<string>(OnResourceStarting);
@@ -42,6 +45,7 @@ private void OnResourceStarting(string resourceName)
 ```
 
 ##### JavaScript Example:
+
 ```js
 on("onResourceStarting", (resourceName) => {
   if (resourceName === "pineapple") {

@@ -12,6 +12,7 @@ RemoveEventHandler(table eventHandlerData)
 ```
 
 ### Required arguments
+
 - **eventHandlerData**: The return value of [AddEventHandler][].
 
 Examples

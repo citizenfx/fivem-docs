@@ -3,9 +3,11 @@ title: addSuggestion
 ---
 
 ## About
+
 Using this export allows you to add command suggestions to your chat.
 
 ## Name
+
 ```
 addSuggestion
 ```
@@ -19,9 +21,11 @@ string commandName, string commandDescription, object commandParameters
 
 Examples
 --------
+
 This example adds a command suggestion for the `/command` command.
 
 ##### Lua Example:
+
 ```lua
 -- Note, the command has to start with `/`.
 exports.chat:addSuggestion('/command', 'help text', {
@@ -31,4 +35,5 @@ exports.chat:addSuggestion('/command', 'help text', {
 ```
 
 ## Example Result:
+
 ![screenshot-1](/chat_addSuggestion.png)

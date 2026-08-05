@@ -46,7 +46,9 @@ Components list
 
 Simple usage
 ------------
+
 ### Lua
+
 For a more complete example, see the stock `playernames` resource included in the server package, or the documentation for the resource.
 
 ``` lua
@@ -117,8 +119,6 @@ int gamerTagId = CreateMpGamerTagWithCrewColor(
 );
 ```
 
-
-
 Toggling flags
 --------------
 
@@ -143,8 +143,6 @@ SetMpGamerTagVisibility(
   toggle
 );
 ```
-
-
 
 Changing flags color
 --------------------
@@ -172,8 +170,6 @@ Function.Call(
 );
 ```
 
-
-
 Changing flags opacity
 ----------------------
 
@@ -199,7 +195,6 @@ Function.Call(
   (int)opacity // 0 - 255
 );
 ```
-
 
 Special flags controls
 ----------------------

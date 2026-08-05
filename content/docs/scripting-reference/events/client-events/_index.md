@@ -7,18 +7,21 @@ weight: 10
 
 Core events
 -----------
+
 These events are part of FiveM and do not require any resource.
 
 {{% events "client" %}}
 
 spawnmanager events
 -------------------
+
 These events are part of the [spawnmanager](/docs/resources/spawnmanager/) resource.
 
 - [playerSpawned](/docs/resources/spawnmanager/events/playerSpawned/)
 
 mapmanager events
 -----------------
+
 These events are part of the [mapmanager](/docs/resources/mapmanager/) resource.
 
 - [onClientMapStart](/docs/resources/mapmanager/events/onClientMapStart/)
@@ -29,6 +32,7 @@ These events are part of the [mapmanager](/docs/resources/mapmanager/) resource.
 
 baseevents events
 -----------------
+
 These events are part of the [baseevents](/docs/resources/baseevents/) resource.
 
 - [onPlayerDied](/docs/resources/baseevents/events/onPlayerDied/)
@@ -36,6 +40,7 @@ These events are part of the [baseevents](/docs/resources/baseevents/) resource.
 
 sessionmanager events
 ---------------------
+
 These events are part of the [sessionmanager](/docs/resources/sessionmanager/) resource.
 
 - [playerActivated](/docs/resources/sessionmanager/events/playerActivated/)
@@ -43,6 +48,7 @@ These events are part of the [sessionmanager](/docs/resources/sessionmanager/) r
 
 chat events
 -----------
+
 These events are part of the [chat](/docs/resources/chat/) resource.
 
 - [chatMessage](/docs/resources/chat/events/chatMessage/)

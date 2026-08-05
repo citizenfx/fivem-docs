@@ -96,11 +96,13 @@ You can add the following parameters to your command:
 | `--fail-on-error` | Fail on the first error                                         |
 
 Example:
+
 ```powershell
 C:\AlchemistCli.exe C:\input C:\output -j5 -f --fail-on-error
 ```
 
 At the end of the conversion, if it is successful, you will see a message similar to the following:
+
 ```powershell
 Converting C:\input\folderName\assetName.yft to C:\output\folderName\assetName.yft
 Converting C:\input\folderName\assetName.ytd to C:\output\folderName\assetName.ytd

@@ -3,9 +3,11 @@ title: loadSpawns
 ---
 
 ## About
+
 This export loads a set of spawn points into the spawnmanager from a JSON string.
 
 ## Name
+
 ```
 loadSpawns
 ```

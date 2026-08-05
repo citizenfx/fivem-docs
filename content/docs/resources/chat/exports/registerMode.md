@@ -3,6 +3,7 @@ title: registerMode
 ---
 
 ## About
+
 Using this export allows you to add modes to your chat.<br>
 Mode object structure:
 
@@ -17,6 +18,7 @@ message = {
 ```
 
 ## Name
+
 ```
 registerMode
 ```
@@ -30,9 +32,11 @@ object modeData
 
 Examples
 --------
+
 This example adds an admin chat for all players with the permission `admin.chat`.
 
 ##### Lua Example:
+
 ```lua
 exports.chat:registerMode({
   name = "adminChat",
@@ -50,4 +54,5 @@ exports.chat:registerMode({
 ```
 
 ## Example Result:
+
 ![screenshot-1](/chat_registerMode.png)

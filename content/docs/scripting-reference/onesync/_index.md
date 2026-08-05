@@ -11,6 +11,7 @@ It's worth mentioning that OneSync is free up to 48 slots, after such, you shoul
 from the [Cfx Portal](https://portal.cfx.re/subscriptions) starting from `FiveM Element Club Argentum 💿`.
 
 # What is OneSync: Infinity?
+
 - A mode allowing (up to) 2048 players since the recent [commit](https://github.com/citizenfx/fivem/commit/a03eb34c80571ac37cf8d74ca87fa4e646f2e499). There are servers handling 1000+ concurrent players.
 - To accomplish this, it uses the following technological changes:
     - Extension of object id length from 8192 (`1 << 13`) to 65535 (`(1 << 16) - 1`), from the following [commit](https://github.com/citizenfx/fivem/commit/e1b1d58dcb3e9147f2b95daf4518ea16593c5631).
@@ -19,9 +20,11 @@ from the [Cfx Portal](https://portal.cfx.re/subscriptions) starting from `FiveM 
 - It also has a bit better performance than 'plain' OneSync at this time due to player ped culling, and works around the so-called 'head blend bug'.
 
 # How is synchronization handled?
+
 Most of the sync data is handled through player `31`, game events are handled through this player as well, this is a player reserved for every individual client, and it's used to write sync data to the server to later on be analyzed through sync-nodes for parsing.
 
 # What are sync nodes and how do I interpret them?
+
 Sync nodes are synchronization data nodes, networked entities depend on these to transmit data to other clients/players on the server. The most simple one we can find is `CSectorPositionDataNode`.
 
 {{% alert color="warning" %}}We'll have to warn you that what lies ahead is a little bit technical and is just presented as is for educational purposes on how to analyze game-code and create a PR (pull request) if you would like to contribute to the [code-base][fivem-codebase]. {{% /alert %}}
@@ -84,6 +87,7 @@ fx::ScriptEngine::RegisterNativeHandler("GET_ENTITY_COORDS", makeEntityFunction(
 ```
 
 As you can see `entity->syncTree->GetPosition(position)` directly accesses `CSectorPositionDataNode` to show information about its position via a native on the server, so all that work we would have done before is clearly in effect now (from [SyncTrees_Five.h](https://github.com/citizenfx/fivem/blob/master/code/components/citizen-server-impl/include/state/SyncTrees_Five.h)):
+
 ```cpp
 virtual void GetPosition(float* posOut) override
 {
@@ -92,7 +96,9 @@ virtual void GetPosition(float* posOut) override
     // continues...
 }
 ```
+
 # What's culling?
+
 Culling is used by the server to avoid sending a lot of unneeded data to and from the server, as clients will only care what is going on in their immediate area.
 
 This reduces server load and allows OneSync to handle a lot of clients.
@@ -106,6 +112,7 @@ There's natives such as {{% native_link "SET_ENTITY_DISTANCE_CULLING_RADIUS" %}}
 When an entity goes out of range, it's no longer controlled by their original owner. This means that any entity that would be out of scope will be culled and migrated/disowned. By default, the culling radius is set to `424 units` around the entity.
 
 # Scopes
+
 Players may enter/leave other players' scopes, this depends on the culling radius from each other, [server event][server-events] handlers such as `playerEnteredScope` and `playerLeftScope` can be used to track who entered/left someone else's scope.
 
 An implementation example can be found down below.
@@ -123,8 +130,8 @@ AddEventHandler("playerEnteredScope", function(data)
     local playerEntered, player = data["player"], data["for"]
     print(("%s entered %s's scope"):format(playerEntered, player))
 end)
-
 ```
+
 ## playerLeftScope
 
 {{% alert title="Performance Warning" color="warning" %}}
@@ -145,6 +152,7 @@ The original examples can be found in the following forum [post][original-scope-
 # Best practices
 
 ## Server-created entities, not client entities
+
 OneSync allows you to create entities on the server such as Peds, Vehicles and Objects among others.
 
 ```lua
@@ -161,11 +169,12 @@ SetEntityOrphanMode(ped, 2)
 ```
 
 ## I want persistent entities, how do I do it?
+
 If you want to guarantee an entity will not be removed by the server you should use {{% native_link "SET_ENTITY_ORPHAN_MODE" %}} with the 'KeepEntity' flag.
 This will guarantee that the server will not delete the vehicle, but the client will still be able to request the deletion of the entity.
 
-
 ## RPC Natives
+
 There are certain natives that are RPC (Remote Procedure call) natives, these natives will be called on client (typically on whichever client owns the entity), these calls are fallible and are not guaranteed to be called on the client.
 
 ```lua
@@ -180,6 +189,7 @@ SetEntityVelocity(vehicle, 0.0, 0.0, 99.0)
 ```
 
 ## Entity lockdown
+
 Entities can be locked down from the server so they can only be authored by it, meaning the server has full control. This allows you to keep things in check and deter users from doing things they shouldn't be doing, such as spawning stuff client side, for... oh well... malicious purposes, i.e.
 
 ```lua
@@ -198,6 +208,7 @@ SetRoutingBucketPopulationEnabled(1, false)
 ```
 
 ## Buckets and why you should use them
+
 Server versions from pipeline ID 3245 and above have added a 'routing bucket' functionality, which is similar in concept to the 'dimension' or 'virtual world' functionality seen in prior non-Rockstar GTA network implementations.
 
 One can assign a player or entity to a routing bucket, and they will only see entities (and players) that belong to the same routing bucket. In addition to that, each routing bucket will have its own 'world grid' for determining population owners, so even if you have population enabled, you'll notice nothing unusual at all when using routing buckets.
@@ -239,8 +250,8 @@ SetPlayerRoutingBucket(source, 1) -- Now the given player (source) won't be able
 ```
 
 ## Use state bags
-State bags allow you to set attributes to entities and allow other clients to access those, you can read more about state bags [here](/docs/scripting-manual/networking/state-bags/).
 
+State bags allow you to set attributes to entities and allow other clients to access those, you can read more about state bags [here](/docs/scripting-manual/networking/state-bags/).
 
 [vmturl]: https://en.wikipedia.org/wiki/Virtual_method_table
 [fivem-codebase]: https://github.com/citizenfx/fivem

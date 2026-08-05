@@ -3,13 +3,14 @@ title: chat:addSuggestions
 ---
 
 ## About
+
 Triggering this event allows you to add multiple command suggestions to your chat using a single event.
 
 ## Name
+
 ```
 chat:addSuggestions
 ```
-
 
 Parameters
 ----------
@@ -26,6 +27,7 @@ Examples
 This example adds a command suggestion for the `/command` and `/othercommand` commands.
 
 ##### Lua Example:
+
 ```lua
 -- Note, the command has to start with `/`.
 

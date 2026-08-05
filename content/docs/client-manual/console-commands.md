@@ -14,35 +14,43 @@ tools if preferred, like [VConsole2][vconsole]. This allows you to use the clien
 User commands can be used in the client console by anyone, and don't require additional developer mode settings to be enabled or usable.
 
 ### connect \<server\>
+
 Connects to a server using a given IP address and port, or URL.
 
 Example: `connect 127.0.0.1:30120`, `connect "https://fivem.net/"`, `connect cfx.re/join/y4lg95`
 
 ### disconnect
+
 Disconnects you from the server you are connected to and returns to the main menu.
 
 ### bind
+
 Lists all configured bindings.
 
 ### bind \<mapper> \<input> \<command>
+
 Binds an [input](/docs/game-references/input-mapper-parameter-ids/) to execute the specified command when pressed in-game.
 
 Example: `bind keyboard F9 "say hi; wait 250; say bye"`
 
 ### rbind \<resource> \<mapper> \<input> \<command>
+
 Equal to `bind` above, but will only run if the specified resource is in use on a server.
 
 ### unbind \<mapper> \<input>
+
 Unbinds all commands bound to the specified input.
 
 Example: `unbind keyboard F9`
 
 ### cl_drawfps \<bool\>
+
 Enables or disables the client frames-per-second counter in the screen corner.
 
 Usage: `cl_drawfps <true|false>`
 
 ### cl_drawperf \<bool\>
+
 Enables or disables showing performance metrics in the screen corner:
 
 | Name (Units)  |                                Description                                 |
@@ -57,72 +65,88 @@ Enables or disables showing performance metrics in the screen corner:
 Usage: `cl_drawperf <true|false>`
 
 ### quit
+
 Will force the client to close immediately.
 
 ### quit [reason]
+
 Will force the client to close immediately, specifying a quit reason to the server.
 
 ### loadlevel \<level_name>
+
 <!-- TODO: Needs an reference on how to use and/or setup the loadlevel command -->
+
 Starts a local game loading a level (or commonly known as a map) from the name supplied.
 
 Example: `loadlevel gta5`, `loadlevel rdr3`, `loadlevel blank-map`.
 
 ### storymode
+
 Starts FiveM story mode.
 
 ### profile_sfxVolume \<0-10+>
+
 Sets the SFX volume for the game. This value has no upper limit, however the lower limit is 0, and 100% volume maps to 10.
 
 ### profile_musicVolume \<0-10+>
+
 Sets the music volume for the game when in single-player modes.
 
 ### profile_musicVolumeInMp \<0-10+>
+
 Sets the music volume for the game when connected to a network game.
 
 ### voice_enableNoiseSuppression
+
 Enable noise suppression to reduce background noise in voice chat.
 
 Usage: `voice_enableNoiseSuppression <true|false>`  
 Default: `true`
 
 ### voice_inBitrate
+
 The bitrate at which voice data is encoded. Higher bitrates will result in better quality, but also higher bandwidth usage.
 
 Usage: `voice_inBitrate <16000-128000>`  
 Default: `48000`
 
 ### cam_disableCameraShake
+
 Disable camera shake effects, such as from explosions.
 
 Usage: `cam_disableCameraShake <true|false>`  
 Default: `false`
 
 ### cam_enableHandbrakeCamera
+
 Disable the handbrake camera swing effect in the follow vehicle camera.
 
 Usage: `cam_enableHandbrakeCamera <true|false>`  
 Default: `true`
 
 ### cam_vehicleFirstPersonFOV
+
 Set the first person FOV of the vehicle.
 
 Usage: `cam_vehicleFirstPersonFOV <-1 to 130>`  
 Default: `-1`
 
 ### nui_useInProcessGpu
+
 Whether to use in-process GPU for CEF. This might improve compatibility, but reduces NUI performance. Requires a restart when changed.
 
 Usage: `nui_useInProcessGpu <true|false>`  
 Default: `false`
 
 ### str_maxVehicleTextureRes
+
 Limits the maximum resolution of vehicle textures. This can help reduce the incidence of physical memory running out, at the cost of visual quality.
 
 Usage: `str_maxVehicleTextureRes <int>`  
 Default: `1024`
 
 ### allowEmptyHeadDrawable
+
 Whether it is allowed to set an empty head drawable (drawable ID of `0`).
 
 Usage: `allowEmptyHeadDrawable <true|false>`  
@@ -140,16 +164,19 @@ This type of developer mode can be enabled in a few ways:
    be unstable and lead to issues including the game being unable to launch.
 
 ### cmdlist
+
 The `cmdlist` command will list all the commands that are registered on the client (or server). It will also output the
 variables that have been set by using the `set`, `sets` and `seta` commands.
 
 ### con_autoScroll
+
 Automatically scroll the dev console to the bottom when new log entries are added.
 
 Usage: `con_autoScroll <true|false>`  
 Default: `true`
 
 ### con_miniconChannels
+
 You can use the `con_miniconChannels` to display console messages on screen without needing to open the client console.
 
 A channel name is the text inside the colored box next to a console message.
@@ -162,36 +189,44 @@ Usage: `con_miniconChannels <pattern>`
 Default: `minicon:*`
 
 Example patterns:
+
 - All messages: `*`
 - Messages originating from any resource: `script:*`
 - Messages originating from both `banking` and `racing` resources: `script:banking script:racing`
 
 ### con_winconsole
+
 Show the Windowed console dev tool.
 
 Usage: `con_winconsole <true|false>`  
 Default: `false`
 
 ### developer
+
 Enables some additional logging for developers. Typically not of use to a regular user.
 
 Usage: `developer <true|false>`
 
 ### devgui_cmd \<path> \<command>
+
 Adds a command to the developer GUI shown above the console.
 
 Example: `devgui_cmd "Launch/MP/Disconnect" "disconnect"`
 
 ### devgui_convar \<path> \<variable>
+
 Adds a convar to the developer GUI shown above the console.
 
 Example: `devgui_convar "Game/SFX Volume" profile_sfxVolume`
 
 ### invoke-levelload
+
 An alias for `loadlevel`, see the [loadlevel](#loadlevel) command for details.
 
 ### list_aces
+
 <!-- TODO: probably needs a reference to an explanation for ACL stuff -->
+
 Lists all the aces (access control entries) in the console. It creates a list of the relationship between a principal
 and object and if they're allowed or not allowed to use it. Example output:
 
@@ -202,7 +237,9 @@ group.admin -> command.testbed = DENY
 ```
 
 ### list_principals
+
 <!-- TODO: probably needs a reference to an explanation for ACL stuff -->
+
 Lists all the principals in the system, it will print out a list of which principals are inherited by others. Example
 output:
 
@@ -215,6 +252,7 @@ identifier.steam:110000111111112 <- group.moderator
 On the left is the child node that belongs to the parent node on the right side.
 
 ### localGame \<name>
+
 Loads a local resource from `usermaps:/resources/[name]` in a single-player game. Running this command will stop any existing open game (including story-mode) and will start a new single player environment from the game's prologue mission.
 
 In order for this to work, you will need to create a `usermaps\resources\[resource-name]` directory from your FiveM main folder, where `[resource-name]` can be `hello-world`, i.e. `path\to\fivem\FiveM.app\usermaps\resources\hello-world`.
@@ -222,26 +260,33 @@ In order for this to work, you will need to create a `usermaps\resources\[resour
 You will also need an [fxmanifest.lua][manifest-reference] file for the resource to work.
 
 ### localRestart
+
 Restarts the localGame resource.
 
 ### modelviewer
+
 Allows you to load in TXDs and drawables via a graphical interface.
 
 Usage: `modelviewer <true|false>`
 
 ### net_printOwner \<objectID>
+
 Prints the owner of a network object ID.
 
 ### net_showCommands
+
 Internal dev tool. Not of use to a regular user unless asked to run.
 
 ### net_showDrilldown
+
 Internal dev tool. Not of use to a regular user unless asked to run.
 
 ### net_showTime
+
 Internal dev tool. Not of use to a regular user unless logging state-awareness data.
 
 ### netEventLog
+
 Enables a tool displaying all network event traffic.
 
 This command will show any incoming/outgoing event traffic. It shows the direction of the event (e.g. Server -> Client), the event name, and the size of the data sent (e.g. 2 bytes).
@@ -249,6 +294,7 @@ This command will show any incoming/outgoing event traffic. It shows the directi
 Usage: `neteventlog <true|false>`
 
 ### net_statsFile
+
 The `net_statsFile` is a command to store the metrics of the network usage/behavior of the FiveM client.
 
 It should keep track of metrics like ping, received packets and bytes, sent packets and bytes and the amount of
@@ -260,6 +306,7 @@ Example: `net_statsFile metrics.csv` - this will create a CSV file called `metri
 FiveM [application data directory][faq-data].
 
 ### netgraph
+
 The `netgraph` command will give you real time metrics about the FiveM client network usage.
 The netgraph consists of a graph and basic information about the network:
 
@@ -278,31 +325,38 @@ The graph represents how many packets have been sent or received of a certain ki
 Usage: `netgraph <true|false>`
 
 ### netobjviewer
+
 Shows a list of current objects and nodes being synchronized over the network, when game state awareness is enabled.
 
 Usage: `netobjviewer <true|false>`
 
 ### netobjviewer_syncLog
+
 Used when diagnosing discrepancies in written game state. Not of use to a regular user.
 
 ### nui_devtools
+
 Opens the NUI dev tools window from the game process.
 
 ### onesync_logFile \<filename>
+
 Used to save client-side logs from the game state awareness subsystem. These files get large, so this command should be used sparingly.
 
 Example: `onesync_logFile "1s_today.log"; wait 5000; onesync_logfile ""`
 
 ### r_disableRendering
+
 Used for supporting internal tooling. Not of use to a regular user, and can not be toggled at runtime.
 
 ### resmon
+
 The resmon command will open the resource monitor. The resource monitor monitors the CPU usage and memory usage for each
 resource and shows this in a nice overview. Comes in handy when you encounter performance issues during gameplay.
 
 Usage: `resmon <true|false>`
 
 ### save_gta_cache
+
 Saves cache data for a specified resource to the CitizenFX directory in AppData (`%AppData%\CitizenFX`). This is to be used for resources with a
 significant amount of collision or map files, to speed up initial loading for players.
 
@@ -328,22 +382,26 @@ MainThrd/ done loading your_resource_name in data file mounter class CfxCacheMou
 Usage: `save_gta_cache <resource name>`
 
 ### se_debug
+
 The `se_debug` command enables verbose logging for security features (like the ACL).
 
 Usage: `se_debug <true|false>`
 
 Useful to see why some people do or don't have access to certain commands, example output:
+
 ```
 TEST ACL [system.console -> command.resmon] ACE [system.console command] -> ALLOW
 TEST ACL [system.console -> command.resmon] -> ALLOW
 ```
 
 ### set
+
 Set a variable on the client.
 
 Usage: `set <key> <value>`
 
 Example:
+
 ```
 set animal snail
 
@@ -354,12 +412,14 @@ animal
 ```
 
 ### seta
+
 Set an archived variable on the client.  
 The variables are saved in `%AppData%\CitizenFX\fivem.cfg` and `%AppData%\CitizenFX\redm.cfg`.
 
 Usage: `seta <key> <value>`
 
 Example:
+
 ```
 seta food escargot
 
@@ -370,22 +430,26 @@ food
 ```
 
 ### strdbg
+
 `strdbg` can be used to see what is currently being loaded in the GTA streamer, to potentially spot any issues with
 streaming certain items, for example when the world stops loading.
 
 Usage: `strdbg <true|false>`
 
 ### strlist
+
 `strlist` is a graphical interface showing the entries registered in the GTA streamer, and their current status.
 
 Usage `strlist <true|false>`
 
 ### strmem
+
 Shows a listing of streaming memory used by specific streaming assets, as well as a global overview.
 
 Usage: `strmem <true|false>`
 
 ### game_enableScaleformDebugLog
+
 The `game_enableScaleformDebugLog` command will show all debug log messages related to scaleform (which is used by the game's main UI components), there's different types that are displayed, but the most commonly shown type is `HUD_TYPE`. This is a **FiveM** only command at this time, it's **not supported** on **RedM**.
 
 Below you can find an example log and all related types:
@@ -418,6 +482,7 @@ Types:
 Usage: `game_enableScaleformDebugLog <true|false>`
 
 ### game_enableDynamicDoorCreation
+
 Allows the game to create dynamic doors using script natives.
 
 Usage: `game_enableDynamicDoorCreation <true|false>`  
@@ -425,24 +490,28 @@ Default: `false`
 Note: This variable can be replicated from the server via `setr` usage.
 
 ### game_enableFlyThroughWindscreen
+
 The `game_enableFlyThroughWindscreen` command will toggle a boolean variable to determine whether the ped should fly through the windscreen upon a crash.
 
 Usage: `game_enableFlyThroughWindscreen <true|false>`  
 Note: This variable can be replicated from the server via `setr` usage.
 
 ### game_enablePlayerJumpRagdollControl
+
 The `game_enablePlayerJumpRagdollControl` command will toggle a boolean variable to determine whether the ped should activate ragdoll on jump like in single player (Jump Key + R).
 
 Usage: `game_enablePlayerJumpRagdollControl <true|false>`  
 Note: This variable can be replicated from the server via `setr` usage.
 
 ### game_enablePlayerRagdollOnCollision
+
 The `game_enablePlayerRagdollOnCollision` command will toggle a boolean variable to determine whether the ped should activate native ragdoll on collision game logic.
 
 Usage: `game_enablePlayerRagdollOnCollision <true|false>`  
 Note: This variable can be replicated from the server via `setr` usage.
 
 ### game_originalBikeJump
+
 Whether to use the original bike jump physics. Enabling this may cause bikes to fly higher and farther than with the new physics, but will also make jumps more consistent and easier to control.
 
 Usage: `game_originalBikeJump <true|false>`  
@@ -450,6 +519,7 @@ Default: `false`
 Note: This variable can be replicated from the server via `setr` usage.
 
 ### game_sanitizeRagdollEvents
+
 Whether to sanitize ragdoll events to prevent exploits that force the own player into a ragdoll.
 
 Usage: `game_sanitizeRagdollEvents <true|false>`  
@@ -457,6 +527,7 @@ Default: `true`
 Note: This variable can be replicated from the server via `setr` usage.
 
 ### onesync_population
+
 Enable population spawning and management. Required for NPCs to spawn.
 
 Usage: `onesync_population <true|false>`  
@@ -464,6 +535,7 @@ Default: `true`
 Note: This variable can be replicated from the server via `setr` usage.
 
 ### sv_enableNetEventReassembly
+
 Enable the reassembly of large network events that are split into multiple packets.
 
 Usage: `sv_enableNetEventReassembly <true|false>`  
@@ -471,6 +543,7 @@ Default: `true`
 Note: This variable can be replicated from the server via `setr` usage.
 
 ### test_ace
+
 Tests if a principal is allowed or denied access to a given object.
 
 Usage: `test_ace <principal> <object>`
@@ -486,78 +559,91 @@ The following variables are only available in **FiveM for GTAV Enhanced**.
 ### Client UI, Debug & Tools
 
 #### cl_drawResTimeGraphs
+
 Show the Resource Time Graphs dev tool.
 
 Usage: `cl_drawResTimeGraphs <true|false>`  
 Default: `false`
 
 #### cl_drawResTimeWarnings
+
 Show the Resource Time Warnings dev tool.
 
 Usage: `cl_drawResTimeWarnings <true|false>`  
 Default: `false`
 
 #### con_archetypeMonitor
+
 Show the Archetype Tool dev tool.
 
 Usage: `con_archetypeMonitor <true|false>`  
 Default: `false`
 
 #### con_audioTool
+
 Show the Audio Tool dev tool.
 
 Usage: `con_audioTool <true|false>`  
 Default: `false`
 
 #### con_discordRichPresence
+
 Show the Discord Rich Presence dev tool.
 
 Usage: `con_discordRichPresence <true|false>`
 Default: `false`
 
 #### con_handlingEditor
+
 Show the Handling Tool dev tool.
 
 Usage: `con_handlingEditor <true|false>`  
 Default: `false`
 
 #### con_inputViewer
+
 Show the Input Viewer dev tool.
 
 Usage: `con_inputViewer <true|false>`  
 Default: `false`
 
 #### con_minconsole
+
 Show the Mini console dev tool.
 
 Usage: `con_minconsole <true|false>`  
 Default: `false`
 
 #### con_poolInspector
+
 Show the Pool Tool dev tool.
 
 Usage: `con_poolInspector <true|false>`  
 Default: `false`
 
 #### con_smoketest
+
 Show the Smoketest Tool dev tool.
 
 Usage: `con_smoketest <true|false>`  
 Default: `false`
 
 #### con_streamingMonitor
+
 Show the Streaming Tool dev tool.
 
 Usage: `con_streamingMonitor <true|false>`  
 Default: `false`
 
 #### con_timeCycleEditor
+
 Show the TimeCycle Editor dev tool.
 
 Usage: `con_timeCycleEditor <true|false>`  
 Default: `false`
 
 #### netobjlabeling
+
 Show the Network Object Labeling dev tool.
 
 Usage: `netobjlabeling <true|false>`  
@@ -566,6 +652,7 @@ Default: `false`
 ### Game Behavior
 
 #### game_enableAdvancedPopulation
+
 Enables single-player population features like wildlife or more versatile peds.
 
 Usage: `game_enableAdvancedPopulation <true|false>`  
@@ -573,6 +660,7 @@ Default: `false`
 Note: This variable can be replicated from the server via `setr` usage.
 
 #### game_enableEnterVehicleFemaleClipset
+
 Makes female peds use the female enter animation in cars, which is slightly slower than the male one.
 
 Usage: `game_enableEnterVehicleFemaleClipset <true|false>`  
@@ -580,6 +668,7 @@ Default: `false`
 Note: This variable can be replicated from the server via `setr` usage.
 
 #### game_enablePetrolLeakage
+
 Allows petrol to leak from vehicles when their petrol tank is damaged.
 
 Usage: `game_enablePetrolLeakage <true|false>`  
@@ -587,6 +676,7 @@ Default: `false`
 Note: This variable can be replicated from the server via `setr` usage.
 
 #### game_setDefaultEntityCapLimitToLow
+
 Whether to set the default entity instance priority level cap to low. This means that, unless overridden, entities will be unloaded at a farther distance from the player, which can help with performance on lower-end hardware. This only affects entities with the default priority level cap of medium.
 
 Usage: `game_setDefaultEntityCapLimitToLow <true|false>`  
@@ -596,12 +686,14 @@ Note: This variable can be replicated from the server via `setr` usage.
 ### Voice
 
 #### voice_enableEchoCancellation
+
 Enable echo cancellation to reduce feedback when using speakers instead of headphones.
 
 Usage: `voice_enableEchoCancellation <true|false>`  
 Default: `true`
 
 #### voice_enableVoiceNormalization
+
 Enable voice normalization to reduce the difference in volume between different speakers.
 
 Usage: `voice_enableVoiceNormalization <true|false>`  
@@ -610,6 +702,7 @@ Default: `true`
 ### Networking & Sync
 
 #### sv_pingIntervalMilliseconds
+
 How often (in milliseconds) the client sends a ping to keep the connection alive. Lower values detect lost connections faster but increase bandwidth.
 
 Usage: `sv_pingIntervalMilliseconds <int>`  

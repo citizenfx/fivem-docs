@@ -19,10 +19,12 @@ quat    cross(quat x, quat y)
 ```
 
 ### Required arguments
+
 - **x**: A [vector2][vec2], [vector3][vec3], or [quat][quat].
 - **y**: A [vector2][vec2], [vector3][vec3], or [quat][quat]. See the syntax overview above for the supported type combinations.
 
 ### Returns
+
 - For two `vector2` values: a number (the 2D cross product).
 - For two `vector3` values: a [vector3][vec3] perpendicular to both inputs.
 - For a `vector3` and a `quat` (or vice versa): a [vector3][vec3].
@@ -57,6 +59,7 @@ local q3 = cross(q1, q2)
 ```
 
 Get the surface normal from three points in the world:
+
 ```lua
 local p1 = vector3(0, 0, 0)
 local p2 = vector3(1, 0, 0)

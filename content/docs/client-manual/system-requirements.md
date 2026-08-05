@@ -17,7 +17,6 @@ Additional details:
 | RAM             | 8GB (4 may work)                                        | 16GB                                                |
 | HDD<sup>2</sup> | 105GB + ~4GB                                            | 105GB + 8GB                                         |
 
-
 _Notes:_
 
 1. May not work with some older AMD laptop GPUs. More on that [here][client-issues-gpu].

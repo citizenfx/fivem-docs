@@ -4,6 +4,7 @@ title: enteredVehicle
 
 Name
 ----------
+
 ```
 baseevents:enteredVehicle
 ```

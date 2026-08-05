@@ -3,12 +3,14 @@ title: txAdmin
 ---
 
 ## About
+
 **txAdmin** is a **full-featured** web panel to help you Manage & monitor your FiveM Server.  
 Contrary to the other resources on this documentation (eg. chat, mapmanager etc), **txAdmin** already comes preinstalled with FXServer, so you do not need to download it separately.
 
 For more information, you can join the [Discord Server](https://discord.gg/AFAAXzq).
 
 ## Main Features
+
 - Recipe-based Server Deployer: create a server in under 60 seconds!
 - Start/Stop/Restart your server instance or resources
 - Full-featured in-game admin menu:
@@ -53,7 +55,9 @@ For more information, you can join the [Discord Server](https://discord.gg/AFAAX
 - Responsive web interface with Dark Mode 😎
 
 ## Running (Windows/Linux)
+
 **txAdmin is included in all FXServer builds** above 2524, so to run it for the first time simply do the following:
+
 - Update FXServer to the latest artifact/build (2524 or superior)
 - If Windows, run FXServer.exe | If Linux, run `screen ./run.sh`
 - Open one of the URLs shown and configure txAdmin
@@ -61,6 +65,7 @@ For more information, you can join the [Discord Server](https://discord.gg/AFAAX
 txAdmin requires to be launched from *inside* FXServer in monitor mode, to do that, just execute the `run.sh` or `FXServer.exe` without **any** `+exec` arguments.  
 
 ### Convars
+
 - **serverProfile:** The name of the server profile to start. Profiles are saved/loaded from the current directory inside the `txData` folder. The default is `default`.
 - **txAdminPort:** The TCP port to use as HTTP Server. The default is `40120`.
 - **txAdminInterface:** The interface to use as HTTP Server. The default is `0.0.0.0`.

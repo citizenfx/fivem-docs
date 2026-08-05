@@ -17,9 +17,11 @@ int entity, int bucket, int oldBucket
 
 Examples
 --------
+
 This example prints the entity id, the new routing bucket, and the old routing bucket to the server console.
 
 ##### Lua Example:
+
 ```lua
 AddEventHandler('onEntityBucketChange', function(entity, bucket, oldBucket)
     print('Entity ' .. entity .. ' changed routing bucket from ' .. oldBucket .. ' to ' .. bucket)
@@ -27,6 +29,7 @@ end)
 ```
 
 ##### C\# Example:
+
 ```csharp
 // In class constructor
 EventHandlers["onEntityBucketChange"] += new Action<int, int, int>(OnEntityBucketChange);
@@ -39,6 +42,7 @@ private void OnEntityBucketChange(int entity, int bucket, int oldBucket)
 ```
 
 ##### JavaScript Example:
+
 ```js
 on("onEntityBucketChange", (entity, bucket, oldBucket) => {
     console.log(`Entity ${entity} changed routing bucket from ${oldBucket} to ${bucket}.`);

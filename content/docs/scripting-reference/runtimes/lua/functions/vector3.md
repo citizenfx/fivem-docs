@@ -27,6 +27,7 @@ vector3 vec3(float x, float y, float z)
 ```
 
 ### Required arguments
+
 - **x**: A floating point number representing the `x` value of your vector.
 - **y**: A floating point number representing the `y` value of your vector.
 - **z**: A floating point number representing the `z` value of your vector.
@@ -103,6 +104,7 @@ print(v.zxxy) -- prints `vector4(3, 1, 1, 2)`
 
 Since many native functions already return and support vectors in Lua, you can do the following to push your vehicle
 forward 5 meters relative to its own axis:
+
 ```lua
 -- Get your vehicle's current matrix.
 local vehicle = GetVehiclePedIsIn(PlayerPedId())

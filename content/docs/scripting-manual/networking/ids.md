@@ -51,6 +51,7 @@ Entity handles do not tend to be reused for different entities, however the same
 To convert from an entity handle to a network ID and back, use {{% native_link "NETWORK_GET_NETWORK_ID_FROM_ENTITY" %}} and {{% native_link "NETWORK_GET_ENTITY_FROM_NETWORK_ID" %}} (or the equivalent aliases such as PED_TO_NET, NET_TO_VEH, etc.).
 
 ### Network ID
+
 * _Both sides: network ID_
 * _Server-side: Can be round-tripped, but with state awareness disabled is meaningless on the server._
 

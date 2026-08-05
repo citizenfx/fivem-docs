@@ -6,8 +6,11 @@ description: >
 ---
 
 ## Ultimate easy setup guide
+
 ![pic](/server-setup/header.png)
+
 ### Windows
+
 #### Download the server
 
 {{% alert color="info" %}}Note that if you are setting up a FiveM for GTAV Enhanced server, `server.7z` is named `cfx-server_win_x64` instead.{{% /alert %}}
@@ -57,6 +60,7 @@ description: >
    ![pic](/server-setup/windows-step2-14.png)
 
 #### Troubleshooting
+
 If you're facing slow server startups, refer to [this][slow-server-startups].
 
 [server-data]: https://github.com/citizenfx/cfx-server-data

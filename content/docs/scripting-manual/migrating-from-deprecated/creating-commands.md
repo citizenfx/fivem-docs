@@ -34,9 +34,11 @@ end
 -->
 
 ## RegisterCommand
+
 It is recommended to **always** use this (and not `chatMessage`!) as it allows for the use of the integrated ACL system, and other core functionality (automatic completion, console usage, ...). This native consists of 3 parameters (`commandName`[string], `handler`[func] and `restricted`[boolean]).
 
 ### Example
+
 ```lua
 RegisterCommand("commandName", function(source --[[ this is the player ID (on the server): a number ]], args --[[ this is a table of the arguments provided ]], rawCommand --[[ this is what the user entered ]])
     if source > 0 then

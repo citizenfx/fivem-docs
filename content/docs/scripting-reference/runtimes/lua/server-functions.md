@@ -4,6 +4,7 @@ weight: 20
 ---
 
 ## Runtime-specific functions
+
 - [AddEventHandler](/docs/scripting-reference/runtimes/lua/functions/AddEventHandler/)
 - [Citizen.Await](/docs/scripting-reference/runtimes/lua/functions/Citizen.Await/)
 - [Citizen.CreateThread](/docs/scripting-reference/runtimes/lua/functions/Citizen.CreateThread/)
@@ -30,4 +31,5 @@ weight: 20
 - [vector4](/docs/scripting-reference/runtimes/lua/functions/vector4/)
 
 ## Native functions
+
 Refer to the [FiveM Native Reference](/natives/) for game functions.

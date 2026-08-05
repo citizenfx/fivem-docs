@@ -18,6 +18,7 @@ The use of any other platform or payment provider is prohibited and is a violati
 Before starting, ensure that you successfully [setup a FiveM-Server][setting-up-a-server-guides].<br>
 
 ## Tebex Store Setup
+
 1. Register a new account [here][tebex-registration].
 2. Verify your email address. A link will be sent to your email address.
 3. Check your personal details. If correct, start and complete the [identity verification][tebex-identity-verification].

@@ -14,6 +14,7 @@ RegisterNUICallback(string eventName, function callback)
 ```
 
 ### Required arguments
+
 - **eventName**: The name of the event you want to listen to.
 - **callback**: The function to run when the event is called from NUI.
 
@@ -21,6 +22,7 @@ Examples
 --------
 
 LUA
+
 ```lua
 RegisterNUICallback('getItemInfo', function(data, cb)
     -- POST data gets parsed as JSON automatically
@@ -37,6 +39,7 @@ end)
 ```
 
 Browser-side JS, this calls into the NUI Callback to and will get the NUI data back as a response
+
 ```js
 fetch(`https://${GetParentResourceName()}/getItemInfo`, {
     method: 'POST',

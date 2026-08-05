@@ -4,6 +4,7 @@ weight: 10
 ---
 
 ## Runtime-specific functions
+
 - [emit](/docs/scripting-reference/runtimes/javascript/functions/emit-client/)
 - [emitNet](/docs/scripting-reference/runtimes/javascript/functions/emitNet-client/)
 - [onNet](/docs/scripting-reference/runtimes/javascript/functions/onNet-client/)
@@ -12,4 +13,5 @@ weight: 10
 - [clearTick](/docs/scripting-reference/runtimes/javascript/functions/clearTick/)
 
 ## Native functions
+
 Refer to the [FiveM Native Reference](/natives/) for game functions.

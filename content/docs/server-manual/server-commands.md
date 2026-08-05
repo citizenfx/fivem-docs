@@ -424,6 +424,7 @@ Different actions exist to alter this behavior:
 | devonly | Will apply `drop` action behavior and will only drop the output if the [developer](/docs/client-manual/console-commands/#developer) command is set to `false`. |
 
 Example output:
+
 ```
 [cmd] forward:*/*: noprint
 ```
@@ -573,6 +574,7 @@ Increases size of the given pool. May be used more than once to increase size of
 - `increase` - positive integer indicating by how much the pool size should be increased.
 
 Example:
+
 ```
 increase_pool_size "TxdStore" 6000
 increase_pool_size "CMoveObject" 15
@@ -640,7 +642,6 @@ Example:
 sv_tebexSecret c4f1300bda0ab123976449d27c160185bc31e175
 ```
 
-
 ## Access control commands
 
 ### `add_ace [principal] [object] [allow|deny]`
@@ -659,6 +660,7 @@ add_ace identifier.steam:110000112345678 command.apple deny
 Sets a principal to inherit from another principal.
 
 Example:
+
 ```toml
 # makes identifier.steam:110000112345678 inherit from group.admin
 add_principal identifier.steam:110000112345678 group.admin
@@ -679,6 +681,7 @@ remove_ace identifier.steam:110000112345678 command.apple deny
 Removes a specified principal inheritance entry.
 
 Example:
+
 ```
 remove_principal identifier.steam:110000112345678 group.admin
 ```
@@ -694,6 +697,7 @@ Example: `test_ace group.admin command.adminstuff`
 Creates a UDP host instance, the address and port both need to be valid and not already in use in order to bind the provided endpoint.
 
 Example:
+
 ```
 endpoint_add_udp "0.0.0.0:30120"
 ```
@@ -705,6 +709,7 @@ A real use-case example of this can be found in the [default server.cfg example]
 Adds and binds the provided endpoint. This will create a multiplexable TCP server instance and bind it, the new instance will then be added to the multiplex server instance list. If a primary port isn't set (see [`netPort`](#netport-port)), the one sent by the command parameter will be used.
 
 Example:
+
 ```
 endpoint_add_tcp "0.0.0.0:30120"
 ```
@@ -718,6 +723,7 @@ The primary port, this is initialized to zero by `TcpListenManager's` default cl
 This port may also be used when registering DNS (if `sv_registerMulticastDns` isn't set to `false`) on server startup. A Windows API method named [DnsServiceConstructInstance](https://learn.microsoft.com/en-us/windows/win32/api/windns/nf-windns-dnsserviceconstructinstance) will be invoked by the server's internals (Windows Only [pre-processor macro](https://github.com/citizenfx/fivem/blob/01fb9af858badef688f93a1584fc41485c3e0e05/code/components/citizen-server-net/src/TcpListenManager.cpp#L176) compiled code, meaning this will only execute on Windows builds).
 
 Example:
+
 ```
 netPort 30120
 ```
@@ -727,6 +733,7 @@ netPort 30120
 Can be used to tune the concurrent connection limit per IP, its default value is `16`.
 
 Example:
+
 ```
 net_tcpConnLimit 32
 ```
@@ -741,6 +748,7 @@ if you are not using this native, you could block the event to prevent cheaters 
 A list of events can be found [here](/docs/game-references/net-game-events/)
 
 Example:
+
 ```
 block_net_game_event "FIRE_EVENT"
 ```
@@ -752,6 +760,7 @@ Do the opposite of block_net_game_event, unblocking a net game event.
 NOTE: This doesn't unblock net game events blocked by other means like convars.
 
 Example:
+
 ```
 unblock_net_game_event "FIRE_EVENT"
 ```

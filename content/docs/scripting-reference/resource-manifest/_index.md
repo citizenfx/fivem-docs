@@ -261,6 +261,7 @@ dependencies {
 ```
 
 #### Runtime constraints
+
 The `dependency` field can also be used to specify requirements for the resource to run, such as a minimum server version,
 a server policy value, or a game build. These are specified using the following syntax:
 
@@ -283,7 +284,6 @@ The valid constraint types are as follows:
 | onesync   | State awareness not being disabled.                 | No value.                                        |
 | gameBuild | Game build being set to at least this build.        | The same values as sv_enforceGameBuild.          |
 | native    | The specified native being supported on the server. | Any server-side native hash.                     |
-
 
 ### escrow_ignore
 
@@ -313,6 +313,7 @@ lua54 'yes'
 Allows you to select a different NodeJS version for the server scripting runtime. The default version is **16**.
 
 Available versions are:
+
 - 16 (default)
 - 22
 
@@ -401,6 +402,7 @@ If your convars are server info (`sets`) you will need to prepend `#` to the con
 `{ "Discord", "#my_convar", "CV_STRING", "discord.gg/fivem" }`
 
 Example:
+
 ```lua
 convar_category 'MySQL' {
     "GHMattiMySQL Configuration Options",

@@ -17,15 +17,18 @@ To learn more about Lua, read their [official documentation][luadocs].
 
 Using Lua
 ---------
+
 To use Lua in your scripts, simply use the `.lua` file extension. No additional configuration is required.
 
 Compile-time hashes
 ----------------------
+
 Because you might often have to deal with 'Jenkins one-at-a-time' hashes in GTA/RAGE, the Lua runtime has been extended
 to have support for compile-time generation of hash keys, similar to {{% native_link "GET_HASH_KEY" %}}, however with zero
 runtime overhead.
 
 For example:
+
 ```lua
 -- getting
 RequestModel(`adder`)
@@ -62,6 +65,7 @@ Using exports
 You can define exports by calling the global `exports` object:
 
 hello.lua:
+
 ```lua
 exports('SayHello', function(str)
   print('Hello, ' .. tostring(str) .. '!')
@@ -74,6 +78,7 @@ to be global to be 'explicitly' exported. Note that these exports will only be a
 For example:
 
 Inside hello_explicit.lua:
+
 ```lua
 function SayHello(str)
   print('Hello, ' .. tostring(str) .. '!')
@@ -81,6 +86,7 @@ end
 ```
 
 Inside fxmanifest.lua:
+
 ```lua
 -- Client:
 client_script 'hello.lua'
@@ -92,6 +98,7 @@ server_export 'SayHello'
 ```
 
 In another resource:
+
 ```lua
 -- Prints 'Hello, world!'
 exports.myresource:SayHello('world')
@@ -114,6 +121,7 @@ Citizen.CreateThread, Citizen.Wait, threaded events, etc
 
 External libraries
 ------------------
+
 The Lua runtime exposes some libraries on the global scope which you can use.
 
 - `json`: [dkjson 2.5](https://github.com/LuaDist/dkjson/tree/2.5)

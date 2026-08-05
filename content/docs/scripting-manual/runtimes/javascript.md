@@ -15,6 +15,7 @@ as DOM, localStorage, IndexedDB, WebGL, etc.**
 
 Using natives
 -------------
+
 Native commands are mapped to global JavaScript functions with names similar to the Lua natives mapping. Definitions for
 them are located at `path\to\fivem\FiveM.app\citizen\scripting\v8\natives_universal.d.ts`.
 
@@ -91,6 +92,7 @@ These packages are also recommended for automatic completion.
 The FiveM JavaScript API definitions come with a generic interface for the exports called `CitizenExports`. You can extend this interface to add your own typings.
 
 From a TypeScript module file, you could do the following:
+
 ```ts
 declare global {
   interface CitizenExports {
@@ -108,6 +110,7 @@ Gotchas
 -------
 
 ### Thread affinity
+
 In the Node.js runtime, any callbacks that are triggered by Node.js will _run on a separate thread_ hosting the libuv
 event loop. Since CitizenFX server natives can only be called on the main game thread, trying to invoke any will likely
 lead to an error saying 'No current resource manager'.

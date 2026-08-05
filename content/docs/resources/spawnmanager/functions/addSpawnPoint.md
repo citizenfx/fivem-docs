@@ -3,9 +3,11 @@ title: addSpawnPoint
 ---
 
 ## About
+
 This export allows you to add a spawn point to the spawnmanager and returns an index for that spawnpoint.
 
 ## Name
+
 ```
 addSpawnPoint
 ```
@@ -30,6 +32,7 @@ Examples
 --------
 
 ##### Lua Example:
+
 ```lua
 local mySpawnPoint = exports.spawnmanager:addSpawnPoint({
     x = 466.8401,

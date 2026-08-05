@@ -11,11 +11,13 @@ title: Citizen.InvokeNative
 Every native function has a unique hash, which is a numeric identifier. You can use this hash to call the native function directly with `Citizen.InvokeNative`. This is particularly useful for undocumented natives or when you encounter issues with the documented parameters.
 
 For example:
+
 ```lua
 local nativeHash = 0x8E3222B7 -- This is the hash for the native function
 local health = Citizen.InvokeNative(nativeHash, PlayerPedId())
 print(health) -- returns the health of the entity (https://docs.fivem.net/natives/?_0xEEF059FAD016D209)
 ```
+
 In this example, `0x8E3222B7` is the hash for the native function we want to call. We pass this hash along with the required parameters to `Citizen.InvokeNative`.
 
 ### Documented Natives

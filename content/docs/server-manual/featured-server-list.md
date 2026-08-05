@@ -37,6 +37,5 @@ Right now, we are not accepting new applications for Featured Servers. All serve
 To report a Featured Server which does not meet the requirements anymore or violates the [FiveM PLA][fivem-pla], please use our [server reporting form][report-server].
 Make sure to provide us with as much information as possible in your report.
 
-
 [fivem-pla]: https://fivem.net/terms
 [report-server]: https://support.cfx.re/hc/en-us/requests/new?ticket_form_id=13998414161564

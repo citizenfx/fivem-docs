@@ -16,9 +16,11 @@ quat    norm(quat q)
 ```
 
 ### Required arguments
+
 - **v** / **q**: A [vector2][vec2], [vector3][vec3], [vector4][vec4], or [quat][quat] to normalize.
 
 ### Returns
+
 A value of the same type as the input, with a length of 1.
 
 Examples
@@ -52,6 +54,7 @@ print(norm(q))
 ```
 
 Normalize a direction vector before scaling it to a specific distance:
+
 ```lua
 local playerPed = PlayerPedId()
 local forward, _, _, position = GetEntityMatrix(playerPed)

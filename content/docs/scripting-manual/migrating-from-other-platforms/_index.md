@@ -32,6 +32,7 @@ SetVehicleColours(vehicle, 4, 3)
 ```
 
 If you do want to create entities server-side, or entites for which no players are nearby, you have to use a server setter native:
+
 - CREATE_AUTOMOBILE (deprecated)
 - [CREATE_VEHICLE_SERVER_SETTER](https://docs.fivem.net/natives/?_0x6AE51D4B)
 - [CREATE_PED](https://docs.fivem.net/natives/?_0x389EF71)

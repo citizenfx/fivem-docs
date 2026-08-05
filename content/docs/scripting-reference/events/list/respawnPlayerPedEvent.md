@@ -16,8 +16,11 @@ string player, table content
 
 Examples
 --------
+
 This example prints the name of the player and his coordinates on respawn.
+
 ##### Lua Example:
+
 ```lua
 AddEventHandler("respawnPlayerPedEvent", function(player, content)
 	print(GetPlayerName(player).." has spawned at "..tostring(content.posX)..", "..tostring(content.posY)..", "..tostring(content.posZ))

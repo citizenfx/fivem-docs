@@ -151,6 +151,7 @@ Tick rate for the sync thread. Higher values can reduce latency but increase CPU
 | Range | 1-120 |
 
 > **Note:** `sv_useAccurateSends` is deprecated. Specify the sync tick rate explicitly with `set sv_syncTickRate [1, 120]`.
+
 ---
 
 ### Lockdown Mode Changes

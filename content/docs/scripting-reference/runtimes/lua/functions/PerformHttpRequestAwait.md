@@ -12,9 +12,11 @@ PerformHttpRequestAwait(string url, string method = 'GET', string data = '', tab
 ```
 
 ### Required arguments
+
 - **url**: A string of the URL to request.
 
 ### Optional arguments
+
 - **method**: The HTTP method to use.
 - **data**: A string of data to send with the request.
 - **headers**: A table of request headers.

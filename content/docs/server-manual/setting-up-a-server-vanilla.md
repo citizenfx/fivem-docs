@@ -5,12 +5,12 @@ description: >
   A step-by-step guide on setting up a Vanilla FXServer.
 ---
 
-
 ## Vanilla Server Installation steps
 
 ### Windows
 
 #### Prerequisites
+
 1. [Git][git-scm] if you want to follow the recommended way of _cloning_ the base server data.
 
 {{% alert color="warning" %}}If you are setting up a **FiveM for GTAV Enhanced** server, the [Microsoft Visual C++ 2017 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) must be installed. Download and install it before running the server.{{% /alert %}}
@@ -39,11 +39,13 @@ description: >
 ---
 
 ### Linux
+
 {{% alert color="info" %}}Note that the Linux version of FXServer is only provided as a courtesy port due to issues regarding Linux distribution compatibility and availability of diagnostic tools for native C++ code.
 If you're experiencing any issues, you're more likely to see them fixed if you use the Windows version.
 {{% /alert %}}
 
 #### Prerequisites
+
 1. [Git][git-scm] if you want to follow the recommended way of _cloning_ the base server data.
 2. `xz` or `xz-utils` package.
 
@@ -77,7 +79,6 @@ To set the FXServer to host a RedM server, apply the following to the `server.cf
 
 ```
 set gamename rdr3
-
 ```
 
 ---

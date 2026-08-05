@@ -22,11 +22,13 @@ vector2 vec2(float x, float y)
 ```
 
 ### Required arguments
+
 - **x**: A floating point number representing the `x` value of your vector.
 - **y**: A floating point number representing the `y` value of your vector.
 
 Examples
 --------
+
 Basic vector2 functionality:
 
 ```lua

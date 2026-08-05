@@ -13,6 +13,7 @@ If you're looking for a good way to visualize quaternions, try <https://quaterni
 
 Syntax 1
 --------
+
 The basic syntax is to create a quaternion in its raw form.
 
 ```lua
@@ -20,6 +21,7 @@ quat quat(float w, float x, float y, float z)
 ```
 
 ### Required arguments
+
 - **w**: A floating point number representing the `w` value of your quaternion.
 - **x**: A floating point number representing the `x` value of your quaternion.
 - **y**: A floating point number representing the `y` value of your quaternion.
@@ -27,6 +29,7 @@ quat quat(float w, float x, float y, float z)
 
 Syntax 2
 --------
+
 It's also possible to create a quaternion based on an angle/axis using a vector.
 
 ```lua
@@ -34,11 +37,13 @@ quat quat(float w, vector3 vec)
 ```
 
 ### Required arguments
+
 - **w**: The angle of the rotation.
 - **vec**: A [vector3][vec3] representing the axis to rotate around.
 
 Syntax 3
 --------
+
 Alternatively, it's possible to create a quaternion calculated between 2 vector3 values. This would represent the
 rotation between the vectors.
 
@@ -47,6 +52,7 @@ quat quat(vector3 vec1, vector3 vec2)
 ```
 
 ### Required arguments
+
 - **vec1**: A [vector3][vec3] representing the starting point.
 - **vec2**: A [vector3][vec3] representing the ending point.
 
@@ -54,6 +60,7 @@ Examples
 --------
 
 Basic quaternion functionality:
+
 ```lua
 -- Create a basic quaternion:
 quat(1, 0, 0, 0)
@@ -122,6 +129,7 @@ print(inv(q1) == q2) -- prints `true`
 ```
 
 Create a quaternion based on your current vehicle's rotation:
+
 ```lua
 local vehicle = GetVehiclePedIsIn(PlayerPedId())
 

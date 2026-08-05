@@ -3,6 +3,7 @@ title: chat:addMessage
 ---
 
 ## About
+
 Triggering this event allows you to send a chat message to this client.
 Message object structure:
 
@@ -16,6 +17,7 @@ message = {
 ```
 
 ## Name
+
 ```
 chat:addMessage
 ```
@@ -33,6 +35,7 @@ Examples
 This example sends a chat message to a player locally from a client script (only the executing client will see it).
 
 ##### Lua Example:
+
 ```lua
 TriggerEvent('chat:addMessage', {
   color = { 255, 0, 0},
@@ -42,6 +45,7 @@ TriggerEvent('chat:addMessage', {
 ```
 
 ##### C\# Example:
+
 ```csharp
 TriggerEvent("chat:addMessage", new
 {
@@ -52,6 +56,7 @@ TriggerEvent("chat:addMessage", new
 ```
 
 ##### JavaScript Example:
+
 ```javascript
 emit('chat:addMessage', {
     color: [255, 0, 0],
@@ -61,4 +66,5 @@ emit('chat:addMessage', {
 ```
 
 ### Example Result:
+
 ![screenshot-1](/chat_addMessage.png)

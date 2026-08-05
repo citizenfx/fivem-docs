@@ -12,6 +12,7 @@ FiveM implements a security sandbox for resources to ensure stability and preven
 ### Path Types
 
 All file system operations support two types of paths:
+
 1. Resource mount paths (recommended): `@resourceName/path`
 2. Absolute paths: `/absolute/path/to/resource`
 

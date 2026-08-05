@@ -13,9 +13,11 @@ quat inv(quat q)
 ```
 
 ### Required arguments
+
 - **q**: A [quat][quat] to invert.
 
 ### Returns
+
 A [quat][quat] representing the opposite rotation.
 
 Examples

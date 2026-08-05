@@ -14,6 +14,7 @@ It is expected that you always return data via the callback, if you fail to do s
 You register NUI callbacks using {{% native_link "REGISTER_NUI_CALLBACK" %}}.
 
 ## Registering a NUI callback in Lua
+
 ```lua
 RegisterNuiCallback('getItemInfo', function(data, cb)
     -- POST data gets parsed as JSON automatically
@@ -30,6 +31,7 @@ end)
 ```
 
 ## Registering a NUI callback in JS
+
 ```js
 RegisterNuiCallback('getItemInfo', (data, cb) => {
     // POST data gets parsed as JSON automatically
@@ -46,6 +48,7 @@ RegisterNuiCallback('getItemInfo', (data, cb) => {
 ```
 
 ## Registering a NUI callback in C#
+
 ```csharp
 // register the event handler with manual marshaling
 RegisterNuiCallback("getItemInfo", new Action<IDictionary<string, object>, CallbackDelegate>((data, cb) =>
@@ -81,6 +84,7 @@ RegisterNuiCallback("getItemInfo", new Action<IDictionary<string, object>, Callb
 ```
 
 ## Invoking the NUI callback
+
 ```js
 // browser-side JS
 fetch(`https://${GetParentResourceName()}/getItemInfo`, {

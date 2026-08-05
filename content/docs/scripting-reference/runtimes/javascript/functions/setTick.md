@@ -13,6 +13,7 @@ setTick(() => {});
 
 Examples
 --------
+
 ```ts
 setTick(() => {
     console.log("I'm running every frame/tick!");

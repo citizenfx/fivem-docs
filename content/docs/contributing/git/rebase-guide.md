@@ -14,18 +14,19 @@ Rebase or 'rebasing' is great for updating your branch to be up-to-date with ano
 The original commit history of the master branch is preserved, and new commits from the feature branch are added (or replayed) on top of the tip of the master branch (also known as the most recent commit), creating a linear history.
 
 # Prerequisites
+
  - [Git][git-download]
  - [GitHub Desktop][github-desktop] or [Visual Studio Code][vscode-download]
 
 # Ways to Rebase
+
 - [Rebasing using a GUI](#rebasing-using-a-gui)
     - [Rebasing using GitHub Desktop](#rebasing-using-github-desktop)
     - [Rebasing using Visual Studio Code](#rebasing-using-visual-studio-code)
 - [Rebasing using Git's CLI](#rebasing-using-gits-cli)
 
-
-
 # Rebasing using a GUI
+
 ### Rebasing using GitHub Desktop
 
 1. Update your master branch to be in sync with our repository:
@@ -76,7 +77,6 @@ The original commit history of the master branch is preserved, and new commits f
 6. Test if your code still compiles and that the changes you made are working as expected, adjust otherwise.
 
 7. Now you may force-push your `my-feature` branch to GitHub using `git push --force-with-lease`, that's because you may be working with other collaborators that also happen to be working in the same branch (so you don't overwrite their changes). You may use `git push -f` otherwise.
-
 
 # Rebasing using Git's CLI
 
@@ -152,11 +152,13 @@ While Visual Studio code doesn't have a way to view a detailed list of changes f
 _**Note:** Image doesn't match the previous commit history, it's mainly being used for demonstration purposes only._
 
 ### Extension: GitLens
+
 You may also install an extension such as [GitLens][gitlens-extension] to see the commit history and access the commit log by going to `Source Control -> Commits`.
 
 ![image](/contributing/git/rebase-guide/visual-studio-code-source-control-commits-gitlens.png)
 
 ### Terminal
+
 Last but not least, you may see the commit history by opening up the terminal and typing `git log`. You may also type `git log --oneline` to see the commits in a compact fashion.
 
 You can open the terminal by going to the topmost menu bar, clicking on `Terminal`, proceeded by `New Terminal`.
@@ -164,8 +166,6 @@ You can open the terminal by going to the topmost menu bar, clicking on `Termina
 > Hint: You may also open the terminal by using its hotkey ````CTRL + SHIFT + ` ````. The last key is backtick for users with a different keyboard layout.
 
 ![image](/contributing/git/rebase-guide/visual-studio-code-log-terminal.png)
-
-
 
 [git-download]: https://git-scm.com/downloads
 [github-desktop]: https://desktop.github.com/

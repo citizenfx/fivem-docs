@@ -1454,7 +1454,6 @@ RGBA
     </tbody>
 </table>
 
-
 <!-- another JS snippet -->
 <!--
 const hudColors = `[PASTE HUDCOLOR.DAT HERE]`;

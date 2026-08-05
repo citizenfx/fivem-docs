@@ -17,7 +17,6 @@ While FiveM rarely takes action, we do want to avoid:
 - Protection rackets, in other words, (former) authors of hacks extorting server owners to buy their anticheat. This is in violation of FiveM's Terms of Service.
 - Global ban lists. We have no way to verify the quality of every anticheat, and it may very well be possible for a global ban list to ban players without good reason. With global ban lists, this impacts the overall gameplay experience of FiveM, as players are unable to join a large number of servers without sufficient reason.
 
-
 Are anticheat resources allowed?
 --------------------------------
 

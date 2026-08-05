@@ -2,19 +2,20 @@
 title: chat
 ---
 
-
 ## About
+
 The chat resource provides custom chat functionality for FiveM using a NUI-based interface.
 It is included and maintained at the cfx-server-data repository.
-
 
 ## Exports
 
 ### Client
+
  - [addMessage](./exports/addMessagecl/)
  - [addSuggestion](./exports/addSuggestion/)
 
 ### Server
+
  - [addMessage](./exports/addMessagesv/)
  - [registerMessageHook](./exports/registerMessageHook/)
  - [registerMode](./exports/registerMode/)
@@ -22,6 +23,7 @@ It is included and maintained at the cfx-server-data repository.
 ## Events
 
 ### Client
+
 - [chatMessage](./events/chatMessage/) (deprecated, use chat:addMessage instead)
 - [chat:addMessage](./events/chat-addMessage/)
 - [chat:addSuggestion](./events/chat-addSuggestion/)
@@ -31,4 +33,5 @@ It is included and maintained at the cfx-server-data repository.
 - [chat:clear](./events/chat-clear/)
 
 ### Server
+
 - [chatMessage](./events/chatMessage/)

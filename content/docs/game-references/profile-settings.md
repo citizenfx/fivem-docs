@@ -2,9 +2,7 @@
 title: Profile Settings
 ---
 
-
 GTAV profile setting values can be obtained using this native: {{% native_link "GET_PROFILE_SETTING" %}}.
-
 
 |     ID | Settings Category | Profile Setting Description                     |
 | -----: | :---------------- | :---------------------------------------------- |

@@ -44,6 +44,7 @@ For guidance, see [GitHub's help page on editing files](https://docs.github.com/
 #### Headings
 
 Use Markdown headers to organize your content:
+
 - Use [Frontmatter](https://dev.to/dailydevtips1/what-exactly-is-frontmatter-123g) for page titles.
 - Use `##` for section headers and `###` for subsections and so on.
 - Ensure headers are descriptive and meaningful.
@@ -70,6 +71,7 @@ Example:
 Use alert boxes to highlight important information.
 
 Examples:
+
 ```md
 {{%/* alert title="Primary alert" theme="primary" */%}}A simple primary alert{{%/* /alert */%}}
 {{%/* alert title="Secondary alert" theme="success" */%}}A simple secondary alert{{%/* /alert */%}}
@@ -106,6 +108,7 @@ Example: `` `git clone https://github.com/citizenfx/fivem.git` ``<br/>
 
 Use triple backticks (`` ``` ``) to create code blocks for larger examples and specify the appropriate language.<br/>
 Example:<br/>
+
 ````
 ```lua
 -- Client-side script

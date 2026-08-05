@@ -17,11 +17,13 @@ quat    slerp(quat x, quat y, float a)
 ```
 
 ### Required arguments
+
 - **x**: The starting [vector2][vec2], [vector3][vec3], [vector4][vec4], or [quat][quat].
 - **y**: The ending value, must be the same type as `x`.
 - **a**: A floating point number representing the interpolation factor, typically between `0.0` and `1.0`.
 
 ### Returns
+
 A value of the same type as `x` and `y`. When `a` is `0.0` the result equals `x`, when `a` is `1.0` the result
 equals `y`, and values in between blend smoothly from `x` to `y`.
 
@@ -50,6 +52,7 @@ print(slerp(v1, v2, 0.5))
 ```
 
 Smoothly rotate a vehicle towards a target rotation over time:
+
 ```lua
 local vehicle = GetVehiclePedIsIn(PlayerPedId())
 local x, y, z, w = GetEntityQuaternion(vehicle)

@@ -17,10 +17,12 @@ number dot(quat x, quat y)
 ```
 
 ### Required arguments
+
 - **x**: A [vector2][vec2], [vector3][vec3], [vector4][vec4], or [quat][quat].
 - **y**: A value of the same type as `x`.
 
 ### Returns
+
 A number representing the dot product of the two values.
 
 Examples
@@ -54,6 +56,7 @@ print(dot(q1, q2)) -- prints `1`
 ```
 
 Check if an entity is roughly in front of the player:
+
 ```lua
 local playerPed = PlayerPedId()
 local forward, _, _, playerPos = GetEntityMatrix(playerPed)

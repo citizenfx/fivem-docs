@@ -80,9 +80,8 @@ weight: 10
     }
 </style>
 
-
-
 ## Compacts
+
 <div class="category" id="compacts">
     <div class="vehicles">
         <div class="vehicle">
@@ -233,6 +232,7 @@ weight: 10
 </div>
 
 ## Sedans
+
 <div class="category" id="sedans">
     <div class="vehicles">
         <div class="vehicle">
@@ -591,6 +591,7 @@ weight: 10
 </div>
 
 ## SUVs
+
 <div class="category" id="suvs">
     <div class="vehicles">
         <div class="vehicle">
@@ -973,6 +974,7 @@ weight: 10
 </div>
 
 ## Coupes
+
 <div class="category" id="coupes">
     <div class="vehicles">
         <div class="vehicle">
@@ -1147,6 +1149,7 @@ weight: 10
 </div>
 
 ## Muscles
+
 <div class="category" id="muscle">
     <div class="vehicles">
         <div class="vehicle">
@@ -1897,6 +1900,7 @@ weight: 10
 </div>
 
 ## Sports Classic
+
 <div class="category" id="sports-classics">
     <div class="vehicles">
         <div class="vehicle">
@@ -2295,6 +2299,7 @@ weight: 10
 </div>
 
 ## Sports
+
 <div class="category" id="sports">
     <div class="vehicles">
         <div class="vehicle">
@@ -3205,6 +3210,7 @@ weight: 10
 </div>
 
 ## Super
+
 <div class="category" id="super">
     <div class="vehicles">
         <div class="vehicle">
@@ -3691,6 +3697,7 @@ weight: 10
 </div>
 
 ## Motorcycles
+
 <div class="category" id="motorcycles">
     <div class="vehicles">
         <div class="vehicle">
@@ -4161,6 +4168,7 @@ weight: 10
 </div>
 
 ## Off-Road
+
 <div class="category" id="off-road">
     <div class="vehicles">
         <div class="vehicle">
@@ -4703,6 +4711,7 @@ weight: 10
 </div>
 
 ## Industrial
+
 <div class="category" id="industrial">
     <div class="vehicles">
         <div class="vehicle">
@@ -4805,6 +4814,7 @@ weight: 10
 </div>
 
 ## Utility
+
 <div class="category" id="utility">
     <div class="vehicles">
         <div class="vehicle">
@@ -5227,6 +5237,7 @@ weight: 10
 </div>
 
 ## Vans
+
 <div class="category" id="vans">
     <div class="vehicles">
         <div class="vehicle">
@@ -5553,6 +5564,7 @@ weight: 10
 </div>
 
 ## Cycles
+
 <div class="category" id="cycles">
     <div class="vehicles">
         <div class="vehicle">
@@ -5631,6 +5643,7 @@ weight: 10
 </div>
 
 ## Boats
+
 <div class="category" id="boats">
     <div class="vehicles">
         <div class="vehicle">
@@ -5845,6 +5858,7 @@ weight: 10
 </div>
 
 ## Helicopters
+
 <div class="category" id="helicopters">
     <h2>Helicopters</h2>
     <div class="vehicles">
@@ -6092,6 +6106,7 @@ weight: 10
 </div>
 
 ## Planes
+
 <div class="category" id="planes">
     <div class="vehicles">
         <div class="vehicle">
@@ -6450,6 +6465,7 @@ weight: 10
 </div>
 
 ## Service
+
 <div class="category" id="service">
     <div class="vehicles">
         <div class="vehicle">
@@ -6568,6 +6584,7 @@ weight: 10
 </div>
 
 ## Emergency
+
 <div class="category" id="emergency">
     <div class="vehicles">
         <div class="vehicle">
@@ -6766,6 +6783,7 @@ weight: 10
 </div>
 
 ## Military
+
 <div class="category" id="military">
     <div class="vehicles">
         <div class="vehicle">
@@ -6908,6 +6926,7 @@ weight: 10
 </div>
 
 ## Commercial
+
 <div class="category" id="commercial">
     <div class="vehicles">
         <div class="vehicle">
@@ -7106,6 +7125,7 @@ weight: 10
 </div>
 
 ## Trains
+
 <div class="category" id="trains">
     <div class="vehicles">
         <div class="vehicle">
@@ -7192,6 +7212,7 @@ weight: 10
 </div>
 
 ## Open Wheels
+
 <div class="category" id="open-wheels">
     <div class="vehicles">
         <div class="vehicle">

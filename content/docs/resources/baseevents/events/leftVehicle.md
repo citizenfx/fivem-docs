@@ -25,6 +25,7 @@ Examples
 --------
 
 Server.lua
+
 ```lua
 RegisterNetEvent("baseevents:leftVehicle", function(currentVehicle, currentSeat, vehicleDisplayName, vehicleNetId)
     TriggerClientEvent("example:leftVeh", -1, vehicleNetId)
@@ -32,6 +33,7 @@ end)
 ```
 
 Client.lua
+
 ```lua
 RegisterNetEvent("example:leftVeh", function(NetId)
     local veh = NetToVeh(NetId)

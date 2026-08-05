@@ -53,6 +53,7 @@ If this is not specified, the user will be allowed to connect.
 `deferrals.handover` will allow you to provide a set of endpoints for a specific player on connection.
 
 This will look like this:
+
 ```lua
 deferrals.handover({
     endpoints = { "127.0.0.1" }
@@ -61,9 +62,11 @@ deferrals.handover({
 
 Examples
 --------
+
 This example checks a connecting player's license identifier against a ban list. If the player is in the ban list, they get kicked, otherwise they are allowed to connect.
 
 ##### C\# example:
+
 ```csharp
 // In class constructor
 EventHandlers["playerConnecting"] += new Action<Player, string, dynamic, dynamic>(OnPlayerConnecting);
@@ -97,6 +100,7 @@ private async void OnPlayerConnecting([FromSource]Player player, string playerNa
 These examples check (badly) if Steam is present.
 
 ##### Lua example:
+
 ```lua
 local function OnPlayerConnecting(name, setKickReason, deferrals)
     local player = source
@@ -154,8 +158,8 @@ AddEventHandler("playerConnecting", OnPlayerConnecting)
 ```
 
 ##### JavaScript example:
-```js
 
+```js
 on('playerConnecting', (name, setKickReason, deferrals) => {
     deferrals.defer()
 

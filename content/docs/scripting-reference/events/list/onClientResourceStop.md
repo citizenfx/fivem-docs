@@ -15,9 +15,11 @@ string resourceName
 
 Examples
 --------
+
 This example prints the name of the resource that was just stopped.
 
 ##### Lua Example:
+
 ```lua
 AddEventHandler('onClientResourceStop', function (resourceName)
   print('The resource ' .. resourceName .. ' has been stopped on the client.')
@@ -25,6 +27,7 @@ end)
 ```
 
 ##### C\# Example:
+
 ```csharp
 // In class constructor
 EventHandlers["onClientResourceStop"] += new Action<string>(OnClientResourceStop);
@@ -37,6 +40,7 @@ private void OnClientResourceStop(string resourceName)
 ```
 
 ##### JavaScript Example:
+
 ```js
 on("onClientResourceStop", (resourceName) => {
   if(GetCurrentResourceName() != resourceName) {
