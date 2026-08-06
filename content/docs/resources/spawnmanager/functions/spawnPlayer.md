@@ -23,7 +23,6 @@ spawnIdx, function callback(object spawn)
 ### Optional Arguments
 
 - `spawnIdx` this can be a spawn point from a map resource registered by [mapmanager](../../../mapmanager/), or can be added with [addSpawnPoint](../addSpawnPoint/). Instead of an integer, you can pass a table defining a spawn point. If this isn't specified, a random spawn point will be picked out of the already registered spawn points (if any).
-
 - `callback` is executed once the player has successfully spawned and passes a `spawn` object as specified in [playerSpawned](../../events/playerSpawned/).
 
 ## Examples

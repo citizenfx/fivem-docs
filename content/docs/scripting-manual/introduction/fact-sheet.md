@@ -14,11 +14,11 @@ _ScRT_ means _Scripting Runtime_ or _Script Runtime_. FiveM has three different 
 The scripting manual can be found [here](/docs/scripting-manual/) and it features the following articles:
 
 - [Introduction to resources](/docs/scripting-manual/introduction/introduction-to-resources/)
-    - [Creating your first script](/docs/scripting-manual/introduction/creating-your-first-script/)
+  - [Creating your first script](/docs/scripting-manual/introduction/creating-your-first-script/)
 - [Scripting runtimes](/docs/scripting-manual/runtimes/)
-    - [Scripting in Lua](/docs/scripting-manual/runtimes/lua/)
-    - [Scripting in JavaScript](/docs/scripting-manual/runtimes/javascript/)
-    - [Scripting in C#](/docs/scripting-manual/runtimes/csharp/)
+  - [Scripting in Lua](/docs/scripting-manual/runtimes/lua/)
+  - [Scripting in JavaScript](/docs/scripting-manual/runtimes/javascript/)
+  - [Scripting in C#](/docs/scripting-manual/runtimes/csharp/)
 - [Migrating from deprecated methods](/docs/scripting-manual/migrating-from-deprecated/)
   - [Chat Messages](/docs/scripting-manual/migrating-from-deprecated/chat-messages/)
 - [Working with events](/docs/scripting-manual/working-with-events/)

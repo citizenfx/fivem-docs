@@ -31,14 +31,14 @@ If prompted about file extensions, click Yes to confirm.
 
 1. Open **fxmanifest.lua** in Visual Studio Code and paste the following code in the file:
 
-```lua
-fx_version 'cerulean'
-game 'gta5'
-author 'YourName'
-description 'My first hello world script'
-version '1.0.0'
-client_script 'client.lua'
-```
+   ```lua
+   fx_version 'cerulean'
+   game 'gta5'
+   author 'YourName'
+   description 'My first hello world script'
+   version '1.0.0'
+   client_script 'client.lua'
+   ```
 
 2. Save the file.
 
@@ -47,9 +47,9 @@ client_script 'client.lua'
 1. Open **client.lua** in Visual Studio Code.
 2. Paste this code:
 
-```lua
-print('helloWorld')
-```
+   ```lua
+   print('helloWorld')
+   ```
 
 3. Save the file.
 
@@ -85,9 +85,9 @@ While the minimap is helpful it is not wanted in some cases so let's disable it:
 2. Go to the helloWorld folder and double-click on client.lua and remove everything inside.
 3. Type the following text:
 
-```lua
-DisplayRadar(false)
-```
+   ```lua
+   DisplayRadar(false)
+   ```
 
 4. Hit Ctrl + S or go to File > Save to save your file.
 5. Start up the game and restart the helloWorld script via the txAdmin Resource tab.

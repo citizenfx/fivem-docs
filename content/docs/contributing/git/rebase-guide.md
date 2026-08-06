@@ -21,8 +21,8 @@ The original commit history of the master branch is preserved, and new commits f
 ## Ways to Rebase
 
 - [Rebasing using a GUI](#rebasing-using-a-gui)
-    - [Rebasing using GitHub Desktop](#rebasing-using-github-desktop)
-    - [Rebasing using Visual Studio Code](#rebasing-using-visual-studio-code)
+  - [Rebasing using GitHub Desktop](#rebasing-using-github-desktop)
+  - [Rebasing using Visual Studio Code](#rebasing-using-visual-studio-code)
 - [Rebasing using Git's CLI](#rebasing-using-gits-cli)
 
 ## Rebasing using a GUI
@@ -30,49 +30,57 @@ The original commit history of the master branch is preserved, and new commits f
 ### Rebasing using GitHub Desktop
 
 1. Update your master branch to be in sync with our repository:
-    1. Via browser and GitHub: go to your fork of the FiveM repository and press `Sync fork`, followed by `Update branch`.
+   1. Via browser and GitHub: go to your fork of the FiveM repository and press `Sync fork`, followed by `Update branch`.
 
-    ![image](/contributing/git/rebase-guide/github-sync-fork-update-branch.png)
+   ![image](/contributing/git/rebase-guide/github-sync-fork-update-branch.png)
 
-    2. In GitHub Desktop press `Fetch origin` followed by `Pull origin`, if any new changes are available.
+   2. In GitHub Desktop press `Fetch origin` followed by `Pull origin`, if any new changes are available.
 
-        ![image](/contributing/git/rebase-guide/github-desktop-fetch.png)
+      ![image](/contributing/git/rebase-guide/github-desktop-fetch.png)
 
-        ![image](/contributing/git/rebase-guide/github-desktop-pull.png)
+      ![image](/contributing/git/rebase-guide/github-desktop-pull.png)
 
-    3. Your master branch is now up-to-date with our repository and can be used as your new base.
+   3. Your master branch is now up-to-date with our repository and can be used as your new base.
+
 2. Rebase your working branch in GitHub Desktop:
-    1. Switch to the branch you want to rebase, in this example we use `my-feature` as our branch name.\
-        ![image](/contributing/git/rebase-guide/github-desktop-switch-branch.png)
+   1. Switch to the branch you want to rebase, in this example we use `my-feature` as our branch name.\
+      ![image](/contributing/git/rebase-guide/github-desktop-switch-branch.png)
 
-    2. Once you're on the `my-feature` branch you want to rebase, go to `Branch` in the top menu bar and choose `Rebase current branch...`.
-    3. It'll show you a window with all available branches to rebase it to, pick `master`.
-    4. The same window will show you that it will update our `my-feature` branch by applying its `x` commits on top, make sure the amount of commits is the same as the commits you applied.\
-        ![image](/contributing/git/rebase-guide/github-desktop-rebase-branch.png)
+   2. Once you're on the `my-feature` branch you want to rebase, go to `Branch` in the top menu bar and choose `Rebase current branch...`.
 
-    5. Hit `Rebase` and it will pull in all commits of the master branch and then put your commits on top.
-        1. If there are any conflicts, you'll be prompted and you'll need to resolve those.
-    6. Test if your code still compiles and that the changes are working as expected, adjust otherwise.
-    7. Now you can force-push your `my-feature` branch to GitHub
-        1. If you made extra changes then the force-push option is probably gone, you can go into the CLI and type `git push --force-with-lease` or to get the button back in GitHub Desktop you can right-click on the last commit, hit `Amend Commit...` and confirm the amendment without any changes, it'll show the force push option again. `--force-with-lease` allows you to push changes safely when working with other collaborators. You may want to use `git push -f` if you're the sole contributor.
-        2. Any open PR will be automatically updated.
+   3. It'll show you a window with all available branches to rebase it to, pick `master`.
+
+   4. The same window will show you that it will update our `my-feature` branch by applying its `x` commits on top, make sure the amount of commits is the same as the commits you applied.\
+      ![image](/contributing/git/rebase-guide/github-desktop-rebase-branch.png)
+
+   5. Hit `Rebase` and it will pull in all commits of the master branch and then put your commits on top.
+      1. If there are any conflicts, you'll be prompted and you'll need to resolve those.
+
+   6. Test if your code still compiles and that the changes are working as expected, adjust otherwise.
+
+   7. Now you can force-push your `my-feature` branch to GitHub
+      1. If you made extra changes then the force-push option is probably gone, you can go into the CLI and type `git push --force-with-lease` or to get the button back in GitHub Desktop you can right-click on the last commit, hit `Amend Commit...` and confirm the amendment without any changes, it'll show the force push option again. `--force-with-lease` allows you to push changes safely when working with other collaborators. You may want to use `git push -f` if you're the sole contributor.
+      2. Any open PR will be automatically updated.
 
 ### Rebasing using Visual Studio Code
 
 1. Launch Visual Studio Code
+
 2. Switch to the branch you want to integrate changes to:
-    - On the bottom left corner of the Visual Studio Code window you should see a button, click on it and select the branch you want to check out to. We're going to choose `my-feature`.
+   - On the bottom left corner of the Visual Studio Code window you should see a button, click on it and select the branch you want to check out to. We're going to choose `my-feature`.
 
-        ![img](/contributing/git/rebase-guide/visual-studio-code-switch-branch-btn.png)
+     ![img](/contributing/git/rebase-guide/visual-studio-code-switch-branch-btn.png)
 
-        ![img](/contributing/git/rebase-guide/visual-studio-code-switch-branch-to-master.png)
+     ![img](/contributing/git/rebase-guide/visual-studio-code-switch-branch-to-master.png)
+
 3. Now that you're on the branch you want to integrate your changes onto, click on `Source Control` located on the left navigation bar.
+
 4. Once you're on `Source Control`, click on three dots (...) -> Branch -> Rebase Branch...
-    ![img](/contributing/git/rebase-guide/visual-studio-code-rebase-branch-btn.png)
+   ![img](/contributing/git/rebase-guide/visual-studio-code-rebase-branch-btn.png)
 
 5. Let's pick `master` by clicking on it for this tutorial.
-    ![img](/contributing/git/rebase-guide/visual-studio-code-pick-rebase-branch.png)
-    1. If there are conflicts, you will be prompted to resolve those in order to continue with the rebase process.
+   ![img](/contributing/git/rebase-guide/visual-studio-code-pick-rebase-branch.png)
+   1. If there are conflicts, you will be prompted to resolve those in order to continue with the rebase process.
 
 6. Test if your code still compiles and that the changes you made are working as expected, adjust otherwise.
 
@@ -84,38 +92,38 @@ To transfer all the commits from the feature branch into the master branch using
 
 1. Update your master branch to be in sync with our repository (switch to the master branch if you're not on it, using `git switch master`):
 
-    ```
-    git pull upstream/master
-    ```
+   ```
+   git pull upstream/master
+   ```
 
-    Your local master branch should now be up to date with our repository. Now you should push those changes back to your GitHub remote repository using the following command so your local changes are reflected on the remote:
+   Your local master branch should now be up to date with our repository. Now you should push those changes back to your GitHub remote repository using the following command so your local changes are reflected on the remote:
 
-    ```
-    git push origin master
-    ```
+   ```
+   git push origin master
+   ```
 
 2. Now switch to the branch you want to rebase, for this example we're going to use `my-feature`, fetching may be needed if you don't have the branch locally yet (for this use case, we will assume you don't):
 
-    ```
-    git fetch
-    git checkout my-feature
-    ```
+   ```
+   git fetch
+   git checkout my-feature
+   ```
 
 3. Now we will rebase our `my-feature` branch by taking the changes made in `master` and applying them into `my-feature`.
 
-    ```
-    git rebase master
-    ```
+   ```
+   git rebase master
+   ```
 
-    This will integrate the commits from `master` (which is specified as a target in the command up above) into your `my-feature` branch and put `my-feature`'s commits on top of those, while maintaining the continuity of your `my-feature` branch's history.
+   This will integrate the commits from `master` (which is specified as a target in the command up above) into your `my-feature` branch and put `my-feature`'s commits on top of those, while maintaining the continuity of your `my-feature` branch's history.
 
 4. If there are merge conflicts between the `my-feature` and `master` branches, the rebase process will be paused and you will be asked to resolve said conflicts. Once the conflicts are resolved, you may run the following `Git` command down below.
 
-    ```
-    git rebase --continue
-    ```
+   ```
+   git rebase --continue
+   ```
 
-    1. You may need to repeat the previous step multiple times depending on the amount of conflicts between branches.
+   1. You may need to repeat the previous step multiple times depending on the amount of conflicts between branches.
 
 5. Test if your code still compiles and that the changes you made are working as expected, adjust otherwise.
 

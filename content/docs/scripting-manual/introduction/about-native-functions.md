@@ -14,9 +14,7 @@ Native functions in FiveM are predefined functions that enable interaction with 
 FiveM provides comprehensive documentation for native functions. This documentation is essential for understanding what each native function does, how to use it, and what parameters it requires.
 
 - **FiveM Natives**: All documented natives can be found on [our official website](/natives/).
-
-- **Community Forums**: The [Cfx Forum](https://forum.cfx.re/) is another valuable resource. Here, you can find discussions, tutorials, and examples from other developers who share their experiences and solutions related to using native functions.
-
+- **Community Forums**: The [Cfx Forums](https://forum.cfx.re/) are another valuable resource. Here, you can find discussions, tutorials, and examples from other developers who share their experiences and solutions related to using native functions.
 - **Native Docs Repo**: Users can contribute to the [repository](https://github.com/citizenfx/natives) by adding descriptions, names, and new native functions.
 
 ## Difference Between Client and Server-Side Natives

@@ -83,9 +83,6 @@ In this example, the `updatePlayerScore` function is defined and used directly a
 ## Best Practices
 
 1. **Consistent Naming**: Use clear and consistent naming conventions for your events to avoid confusion and make your code more readable.
-
 2. **Minimal Data Passing**: Only pass the necessary data with your events to keep them lightweight and efficient.
-
 3. **Error Handling**: Ensure that your event handlers include error handling to manage any unexpected issues that may arise when processing events.
-
 4. **Documentation**: Document your custom events and their expected parameters to make your code easier to understand and maintain.

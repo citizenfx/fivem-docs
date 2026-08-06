@@ -102,9 +102,9 @@ To resolve:
 5. If prompted by **User Account Control (UAC)**, click **Yes** to confirm.
 6. Run this command (replace `C:\FXServer\` with your actual path):
 
-```powershell
-Add-MpPreference -ExclusionPath 'C:\FXServer\'
-```
+   ```powershell
+   Add-MpPreference -ExclusionPath 'C:\FXServer\'
+   ```
 
 For more details on the `Add-MpPreference` command, refer to the [official documentation][add-mp-preference-docs].
 

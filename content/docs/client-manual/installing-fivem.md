@@ -21,14 +21,14 @@ read the [client issues manual][client-issues].
 
 - If you installed FiveM in an empty folder, just delete that folder.
 - Otherwise:
-    - Press `WinKey+R` on your keyboard
-    - Type `appwiz.cpl`
-    - Find FiveM, right-click and press Uninstall
+  - Press `WinKey+R` on your keyboard
+  - Type `appwiz.cpl`
+  - Find FiveM, right-click and press Uninstall
 - Alternatively:
-    - Press `WinKey+R` on your keyboard
-    - Type `%localappdata%` in the dialog that opens
-    - Press Enter
-    - Delete the FiveM folder
+  - Press `WinKey+R` on your keyboard
+  - Type `%localappdata%` in the dialog that opens
+  - Press Enter
+  - Delete the FiveM folder
 - Run FiveM.exe again if you want to reinstall FiveM.
 
 [home]: https://fivem.net

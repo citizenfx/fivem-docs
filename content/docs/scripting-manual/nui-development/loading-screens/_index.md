@@ -79,8 +79,8 @@ manually control exit lifetime by setting the `loadscreen_manual_shutdown 'yes'`
 
 When doing so, the following natives become available once scripts start (after game load and connection to network):
 
-* {{% native_link "SEND_LOADING_SCREEN_MESSAGE" %}}
-* {{% native_link "SHUTDOWN_LOADING_SCREEN_NUI" %}}
+- {{% native_link "SEND_LOADING_SCREEN_MESSAGE" %}}
+- {{% native_link "SHUTDOWN_LOADING_SCREEN_NUI" %}}
 
 This can be used to, say, add a custom fade-out effect from the loading screen to an in-game view, or integrate NUI events
 with early-game spawn selection UI.

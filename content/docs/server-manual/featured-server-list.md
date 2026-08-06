@@ -14,19 +14,19 @@ Generally speaking, featured servers are accessible experiences for new players,
 
 Certain criteria must be met for a server to be eligible for the featured server list:
 
-• The server does not violate the [FiveM PLA][fivem-pla].<br>
-• The server offers a non-roleplay setting.<br>
-• The server's language is either English or offers support for multiple languages.<br>
-• The server receives regular updates and is well maintained.<br>
-• Players can connect to the server directly by pressing the "connect" button. No additional limitations should be enforced (e.g., requiring players to join a Discord server or be added to an allowlist).<br>
+- The server does not violate the [FiveM PLA][fivem-pla].
+- The server offers a non-roleplay setting.
+- The server's language is either English or offers support for multiple languages.
+- The server receives regular updates and is well maintained.
+- Players can connect to the server directly by pressing the "connect" button. No additional limitations should be enforced (e.g., requiring players to join a Discord server or be added to an allowlist).
 
 ## Reasons for removal from the featured server list
 
-• The server violates the [FiveM PLA][fivem-pla].<br>
-• The server has changed its core gameplay mechanics or shifted the gameplay loop.<br>
-• The server is empty and no longer provides the same gameplay experience for the community.<br>
-• The server is abandoned and no longer receives regular updates.<br>
-• The server is unreachable or players are unable to connect.<br>
+- The server violates the [FiveM PLA][fivem-pla].
+- The server has changed its core gameplay mechanics or shifted the gameplay loop.
+- The server is empty and no longer provides the same gameplay experience for the community.
+- The server is abandoned and no longer receives regular updates.
+- The server is unreachable or players are unable to connect.
 
 ## Are you accepting featured servers applications?
 

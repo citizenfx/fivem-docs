@@ -42,13 +42,13 @@ Only the **second** FiveM shortcut needs to be modified.
 1. Right-click **FiveM - Client 2**
 2. Select **Properties**
 3. In the **Target** field, append `-cl2` **after** the closing quote\
-Example:
+   Example:
 
-    ```text
-    "C:\Users\<YourUsername>\AppData\Local\FiveM\FiveM.exe" -cl2
-    ```
+   ```text
+   "C:\Users\<YourUsername>\AppData\Local\FiveM\FiveM.exe" -cl2
+   ```
 
-    Replace `<YourUsername>` with your actual Windows username.
+   Replace `<YourUsername>` with your actual Windows username.
 
 4. Click **OK**
 

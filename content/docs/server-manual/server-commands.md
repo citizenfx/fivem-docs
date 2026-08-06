@@ -138,9 +138,9 @@ Example:
 
 Defines which mode of state awareness to use.
 
-* **Off**: No state awareness at all, clients will use the standard GTA/RAGE P2P networking model, and the server will only function as a relay.
-* **On**: Full state awareness and server-determined entity routing.
-* **Legacy**: Compatibility mode for scripts that expect all players to exist on each client. Not recommended due to performance issues and graphical glitches.
+- **Off**: No state awareness at all, clients will use the standard GTA/RAGE P2P networking model, and the server will only function as a relay.
+- **On**: Full state awareness and server-determined entity routing.
+- **Legacy**: Compatibility mode for scripts that expect all players to exist on each client. Not recommended due to performance issues and graphical glitches.
 
 ### `onesync_enableInfinity [true|false]`
 
@@ -229,7 +229,7 @@ An experimental flag that determines how the client will run older game builds w
 - true: the default value for builds below 12872. This will keep the original client behavior, the client will download all the files for the specific game build and run old game build executable.
 - false: the default value for server builds above 12871. The client will run executable for the latest stable game build, regardless of which game build is enforced. Instead the client will only load the specific DLCs related to the game build specified in `sv_enforceGameBuild`. From the user perspective the game will look the same way as under `sv_replaceExeToSwitchBuilds = true`.
 
-    When using `set sv_enforceGameBuild 1` the client will run as if `sv_replaceExeToSwitchBuilds = false` regardless of whether it was set to `true` before. That's the only way how base game without DLCs behavior can be achieved.
+  When using `set sv_enforceGameBuild 1` the client will run as if `sv_replaceExeToSwitchBuilds = false` regardless of whether it was set to `true` before. That's the only way how base game without DLCs behavior can be achieved.
 
 NOTE: The difference in `sv_replaceExeToSwitchBuilds` should be **invisible** to players and server owners. If you notice a disparity please [report it as a bug](https://github.com/citizenfx/fivem/issues/new?assignees=&labels=bug%2Ctriage&projects=&template=bug_report.yml).
 

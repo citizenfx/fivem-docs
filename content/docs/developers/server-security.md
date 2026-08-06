@@ -11,7 +11,7 @@ In this guide we'll try to help cover some common-practice things you can do to 
 
 Cheats can allow the client to trigger events in any context
 
-* When we say `context` we mean they can execute `client->server` (via `TriggerServerEvent`) or `client resource->client resource` (via `TriggerEvent`)
+> When we say `context` we mean they can execute `client->server` (via `TriggerServerEvent`) or `client resource->client resource` (via `TriggerEvent`)
 
 ### Proper Use of Event Handlers in Lua
 

@@ -9,8 +9,8 @@ support.
 
 The following natives are related to using full-screen NUI:
 
-* {{% native_link "SEND_NUI_MESSAGE" %}}
-* {{% native_link "SET_NUI_FOCUS" %}}
+- {{% native_link "SEND_NUI_MESSAGE" %}}
+- {{% native_link "SET_NUI_FOCUS" %}}
 
 ## Setting up a fullscreen NUI page
 

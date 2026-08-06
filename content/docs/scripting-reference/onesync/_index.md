@@ -14,9 +14,9 @@ from the [Cfx Portal](https://portal.cfx.re/subscriptions) starting from `FiveM 
 
 - A mode allowing (up to) 2048 players since the recent [commit](https://github.com/citizenfx/fivem/commit/a03eb34c80571ac37cf8d74ca87fa4e646f2e499). There are servers handling 1000+ concurrent players.
 - To accomplish this, it uses the following technological changes:
-    - Extension of object id length from 8192 (`1 << 13`) to 65535 (`(1 << 16) - 1`), from the following [commit](https://github.com/citizenfx/fivem/commit/e1b1d58dcb3e9147f2b95daf4518ea16593c5631).
-    - Player ped/vehicle culling. No entities will be created on clients outside a 'focus zone', which currently is hardcoded to 424 units around a player.
-    - Player culling. No players will be created/deleted locally outside of the focus zone too. This means that all player iteration will have to happen server-side.
+  - Extension of object id length from 8192 (`1 << 13`) to 65535 (`(1 << 16) - 1`), from the following [commit](https://github.com/citizenfx/fivem/commit/e1b1d58dcb3e9147f2b95daf4518ea16593c5631).
+  - Player ped/vehicle culling. No entities will be created on clients outside a 'focus zone', which currently is hardcoded to 424 units around a player.
+  - Player culling. No players will be created/deleted locally outside of the focus zone too. This means that all player iteration will have to happen server-side.
 - It also has a bit better performance than 'plain' OneSync at this time due to player ped culling, and works around the so-called 'head blend bug'.
 
 ## How is synchronization handled?

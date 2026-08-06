@@ -14,40 +14,40 @@ For more information, you can join the [Discord Server](https://discord.gg/AFAAX
 - Recipe-based Server Deployer: create a server in under 60 seconds!
 - Start/Stop/Restart your server instance or resources
 - Full-featured in-game admin menu:
-    - Player Mode: NoClip, God, SuperJump
-    - Teleport: waypoint, coords and back
-    - Vehicle: Spawn, Fix, Delete, Boost
-    - Heal: yourself, everyone
-    - Send Announcements
-    - Reset World Area
-    - Show player IDs
-    - Player search/sort by distance, ID, name
-    - Player interactions: Go To, Bring, Spectate, Freeze
-    - Player troll: make drunk, set fire, wild attack
-    - Player ban/warn/dm
+  - Player Mode: NoClip, God, SuperJump
+  - Teleport: waypoint, coords and back
+  - Vehicle: Spawn, Fix, Delete, Boost
+  - Heal: yourself, everyone
+  - Send Announcements
+  - Reset World Area
+  - Show player IDs
+  - Player search/sort by distance, ID, name
+  - Player interactions: Go To, Bring, Spectate, Freeze
+  - Player troll: make drunk, set fire, wild attack
+  - Player ban/warn/dm
 - Access control:
-    - Login via Password or CitizenFX
-    - [Admin permission system](./permissions/)
-    - Action logging
-    - Brute-force protection
+  - Login via Password or CitizenFX
+  - [Admin permission system](./permissions/)
+  - Action logging
+  - Brute-force protection
 - Discord Integration:
-    - Server configurable, persistent, auto-updated status embed
-    - Command to whitelist players
-    - Command to display player info
+  - Server configurable, persistent, auto-updated status embed
+  - Command to whitelist players
+  - Command to display player info
 - Monitoring:
-    - Auto Restart FXServer on crash or hang
-    - Server's CPU/RAM consumption
-    - Live Console (with log file, command history and search)
-    - Server threads performance chart with player count
-    - Server Activity (Log connections/disconnections, kills, chat, explosions and custom commands)
+  - Auto Restart FXServer on crash or hang
+  - Server's CPU/RAM consumption
+  - Live Console (with log file, command history and search)
+  - Server threads performance chart with player count
+  - Server Activity (Log connections/disconnections, kills, chat, explosions and custom commands)
 - Player Manager:
-    - [Warning system](https://www.youtube.com/watch?v=DeE0-5vtZ4E)
-    - Ban (temporarily or permanently) system
-    - Whitelist system (Discord member, Discord Role, Approved License, Admin-only)
-    - Take notes about players
-    - Keep track of player's play and session time
-    - Self-contained player database with backup tool (no MySQL required!)
-    - Clean/Optimize the database by removing old players, or bans/warns/whitelists
+  - [Warning system](https://www.youtube.com/watch?v=DeE0-5vtZ4E)
+  - Ban (temporarily or permanently) system
+  - Whitelist system (Discord member, Discord Role, Approved License, Admin-only)
+  - Take notes about players
+  - Keep track of player's play and session time
+  - Self-contained player database with backup tool (no MySQL required!)
+  - Clean/Optimize the database by removing old players, or bans/warns/whitelists
 - Real-time playerlist
 - Scheduled restarts with warning announcements and custom events
 - Translation Support

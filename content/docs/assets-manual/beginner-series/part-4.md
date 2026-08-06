@@ -30,12 +30,12 @@ weight: 40
 3. Create a new text file and name it "fxmanifest.lua".
 4. Paste the following contents into your fxmanifest.lua file:
 
-```lua
-fx_version 'cerulean'
-game 'gta5'
-lua54 'yes'
-this_is_a_map 'yes'
-```
+   ```lua
+   fx_version 'cerulean'
+   game 'gta5'
+   lua54 'yes'
+   this_is_a_map 'yes'
+   ```
 
 5. Move any game asset files into the stream folder to ensure the files load properly.
 6. Make sure your new resource is included in your server configuration file.

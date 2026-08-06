@@ -9,9 +9,9 @@ Getting started with scripting for FiveM might be a tad overwhelming, given the 
 
 Before creating your first script with JavaScript, there are a couple of things you will need to set up and understand.
 
-* [Understanding the JavaScript programming language (Getting Started)][basic-understanding-js]
-* [Understanding the JavaScript runtime][runtime-javascript]
-* [Understanding of resources and manifest files](/docs/scripting-reference/resource-manifest/)
+- [Understanding the JavaScript programming language (Getting Started)][basic-understanding-js]
+- [Understanding the JavaScript runtime][runtime-javascript]
+- [Understanding of resources and manifest files](/docs/scripting-reference/resource-manifest/)
 
 We will be using Visual Studio Code, hereby VSCode, a popular code editor by Microsoft. However, you can use any code editor you'd like.
 

@@ -5,9 +5,9 @@ title: HUD Colors
 This page lists the default HUD colors as defined in `common:/data/ui/hudcolor.dat`, which can be overridden or obtained
 using the following native commands:
 
-* GET_HUD_COLOUR
-* REPLACE_HUD_COLOUR
-* REPLACE_HUD_COLOUR_WITH_RGBA
+- GET_HUD_COLOUR
+- REPLACE_HUD_COLOUR
+- REPLACE_HUD_COLOUR_WITH_RGBA
 
 <style type="text/css">
 td.color {

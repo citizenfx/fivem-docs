@@ -17,9 +17,9 @@ To enable full dumps:
 2. Open the file named [CitizenFX.ini](/docs/client-manual/citizenfx/#how-to-find-this-file) with a text editor such as notepad.
 3. Add the following line at the bottom of the file:
 
-```ini
-EnableFullMemoryDump=1
-```
+   ```ini
+   EnableFullMemoryDump=1
+   ```
 
 4. Save the CitizenFX.ini file.
 
@@ -41,8 +41,8 @@ Once you are finished:
 1. Reopen your CitizenFX.ini file.
 2. Remove the line:
 
-```ini
-EnableFullMemoryDump=1
-```
+   ```ini
+   EnableFullMemoryDump=1
+   ```
 
 3. Save the CitizenFX.ini file.

@@ -22,19 +22,19 @@ description: >
 1. Create a new directory (for example `C:\FXServer\server`), this will be used for the server binaries.
 2. Download the current recommended `master` branch build for Windows from the [Server Download](https://docs.fivem.net/docs/server-download/) page.
 3. Extract the build into the directory previously created.
-    * 3b. Use any third-party archiving tool (such as [WinRAR][winrar] or [7-Zip][7zip]) to open the `.7z` file.
+   - 3b. Use any third-party archiving tool (such as [WinRAR][winrar] or [7-Zip][7zip]) to open the `.7z` file.
 4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder, for example, `C:\FXServer\server-data`.
-    * 4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data` *(To type this command you need to open a command prompt, press `Win + R`, once the run dialog shows type `cmd` and hit enter, remember to switch directories to the directory you plan to clone to by typing `cd C:\FXServer`.)*
+   - 4b. `git clone https://github.com/citizenfx/cfx-server-data.git server-data` *(To type this command you need to open a command prompt, press `Win + R`, once the run dialog shows type `cmd` and hit enter, remember to switch directories to the directory you plan to clone to by typing `cd C:\FXServer`.)*
 
 5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfg) file below into that file).
 6. Set the license key in your server.cfg using `sv_licenseKey "licenseKeyGoesHere"`.
 7. Run the server from the `server-data` folder. For example, in a plain Windows command prompt (cmd.exe) window:
-    ```dos
-    cd /d C:\FXServer\server-data
-    C:\FXServer\server\FXServer.exe +exec server.cfg
-    ```
+   ```dos
+   cd /d C:\FXServer\server-data
+   C:\FXServer\server\FXServer.exe +exec server.cfg
+   ```
 
-    (the `/d` flag is only needed when changing directory to somewhere on a different drive)
+   (the `/d` flag is only needed when changing directory to somewhere on a different drive)
 
 ---
 

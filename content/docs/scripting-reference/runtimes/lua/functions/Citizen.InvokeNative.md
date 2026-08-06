@@ -42,11 +42,7 @@ print("GetEntityCoords success:", coords)
 ## Best Practices
 
 1. **Use Documented Natives**: Always prefer using documented natives directly with their provided names and parameters when possible. This makes your code more readable and maintainable. It is possible that some natives haven't been discovered yet.
-
 2. **Understand the Native Function**: Before using `Citizen.InvokeNative`, ensure you understand what the native function does and what parameters it requires. This will help you avoid unexpected behavior.
-
 3. **Validate Parameters**: When passing parameters to `Citizen.InvokeNative`, validate them to ensure they meet the expected types and ranges. This helps prevent crashes and unintended side effects.
-
 4. **Use Hashes Carefully**: When using hashes, double-check that you are using the correct one. Incorrect hashes can lead to calling the wrong functions, which might cause game instability or crashes.
-
 5. **Debugging**: When debugging issues with `Citizen.InvokeNative`, print out the parameters and return values to understand what's happening. This can help you identify and fix problems more quickly.

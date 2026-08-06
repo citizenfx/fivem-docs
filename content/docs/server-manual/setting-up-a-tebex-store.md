@@ -23,9 +23,9 @@ Before starting, ensure that you successfully [setup a FiveM-Server][setting-up-
 2. Verify your email address. A link will be sent to your email address.
 3. Check your personal details. If correct, start and complete the [identity verification][tebex-identity-verification].
 4. Create a [project][tebex-project]:
-    - Provide a project name.
-    - Provide the preferred currency
-    - Provide the type of the project. If you are running a server choose "<em>I operate a game server</em>".
+   - Provide a project name.
+   - Provide the preferred currency
+   - Provide the type of the project. If you are running a server choose "<em>I operate a game server</em>".
 5. Open your Tebex Control Panel and click [Integrations > Game Servers][tebex-integration-game-servers].
 6. Click **Connect Game Server** > **Plugin**.
 7. Name your server and click **Continue**.
