@@ -56,11 +56,11 @@ If you skip step 8 after collision edits, collision behavior may break in-game.
 
 Create a new YTYP archetype and set:
 
-| Setting | Value |
-|----------|--------|
-| Special Attribute | **Normal Door (7)** |
-| Archetype Flags | **Dynamic** |
-| Archetype Flags | **Enable Door Physics** |
+| Setting           | Value                   |
+| ----------------- | ----------------------- |
+| Special Attribute | **Normal Door (7)**     |
+| Archetype Flags   | **Dynamic**             |
+| Archetype Flags   | **Enable Door Physics** |
 
 ## Sliding Door / Gate Setup
 
@@ -74,11 +74,11 @@ Create a new YTYP archetype and set:
 2. Place the origin at the **bottom corner of the door** instead of the hinge side.
 3. Use the following YTYP values:
 
-| Setting | Value |
-|----------|--------|
-| Special Attribute | **Sliding Door (8)** |
-| Archetype Flags | **Dynamic** |
-| Archetype Flags | **Enable Door Physics** |
+| Setting           | Value                   |
+| ----------------- | ----------------------- |
+| Special Attribute | **Sliding Door (8)**    |
+| Archetype Flags   | **Dynamic**             |
+| Archetype Flags   | **Enable Door Physics** |
 
 ## Vertical Sliding Door / Garage Door Setup
 
@@ -92,18 +92,18 @@ Create a new YTYP archetype and set:
 2. Place the origin at the **bottom center of the door**.
 3. Use the following YTYP values:
 
-| Setting | Value |
-|----------|--------|
-| Special Attribute | **Garage Door (5)** |
-| Archetype Flags | **Dynamic** |
-| Archetype Flags | **Enable Door Physics** |
+| Setting           | Value                   |
+| ----------------- | ----------------------- |
+| Special Attribute | **Garage Door (5)**     |
+| Archetype Flags   | **Dynamic**             |
+| Archetype Flags   | **Enable Door Physics** |
 
 ## Origin Placement Reference
 
-| Door Type | Origin Location | Special Attribute |
-|------------|----------------|------------------|
-| Swinging Door | Hinge point (side center) | Normal Door (7) |
-| Sliding Door / Gate | Bottom corner | Sliding Door (8) |
-| Vertical Sliding Door | Bottom center | Garage Door (5) |
+| Door Type             | Origin Location           | Special Attribute |
+| --------------------- | ------------------------- | ----------------- |
+| Swinging Door         | Hinge point (side center) | Normal Door (7)   |
+| Sliding Door / Gate   | Bottom corner             | Sliding Door (8)  |
+| Vertical Sliding Door | Bottom center             | Garage Door (5)   |
 
 {{% article-nav %}}

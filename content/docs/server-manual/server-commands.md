@@ -129,10 +129,10 @@ Example:
 
 #### Supported games
 
-| Name |   Marketing name    |
-| ---- | ------------------- |
-| gta5 | FiveM for GTA:Five  |
-| rdr3 | RedM for RDR3       |
+| Name | Marketing name     |
+| ---- | ------------------ |
+| gta5 | FiveM for GTA:Five |
+| rdr3 | RedM for RDR3      |
 
 ### `onesync [on/off/legacy]`
 
@@ -174,12 +174,12 @@ A boolean variable (default `true`) that sends entity state updates based on act
 
 A string variable (default `inactive`) controlling how strict the server is about client-created entities.
 
-| Mode | Description |
-| ---- | ----------- |
-| `full` | Disables dummy object creation. Only usable on FiveM for GTAV Enhanced. |
-| `strict` | No entities can be created by clients. |
-| `relaxed` | Only script-owned entities created by clients are blocked. |
-| `inactive` | Clients can create any entity. |
+| Mode       | Description                                                             |
+| ---------- | ----------------------------------------------------------------------- |
+| `full`     | Disables dummy object creation. Only usable on FiveM for GTAV Enhanced. |
+| `strict`   | No entities can be created by clients.                                  |
+| `relaxed`  | Only script-owned entities created by clients are blocked.              |
+| `inactive` | Clients can create any entity.                                          |
 
 ### `sv_enforceGameBuild [build]`
 
@@ -195,7 +195,7 @@ Every build includes all content and changes from the builds before.
 
 **FiveM builds**
 
-| Number |               Aliases                |       Marketing name        |
+| Number | Aliases                              | Marketing name              |
 | ------ | ------------------------------------ | --------------------------- |
 | 1      |                                      | Base game without any DLCs  |
 | 1604   | xm18, christmas2018, mpchristmas2018 | Arena War                   |
@@ -218,9 +218,9 @@ Every build includes all content and changes from the builds before.
 
 **RedM builds**
 
-| Number |                               Notes                               |
-| ------ | --------------------------------------------------------------
-| 1491   | September 2022 update, limited content/changes.                   |
+| Number | Notes                                           |
+| ------ | ----------------------------------------------- |
+| 1491   | September 2022 update, limited content/changes. |
 
 ### `sv_replaceExeToSwitchBuilds [newValue]`
 
@@ -417,10 +417,10 @@ Filters can be used to alter console output behavior.
 
 Different actions exist to alter this behavior:
 
-| Action  | Description |
-| ------  | ---------------------------------------------------------- |
-| noprint | Will stop anything from being printed at the trace listener level. |
-| drop    | Will cause the output to be dropped at `Printfv`, so it won't reach any print listeners. |
+| Action  | Description                                                                                                                                                    |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| noprint | Will stop anything from being printed at the trace listener level.                                                                                             |
+| drop    | Will cause the output to be dropped at `Printfv`, so it won't reach any print listeners.                                                                       |
 | devonly | Will apply `drop` action behavior and will only drop the output if the [developer](/docs/client-manual/console-commands/#developer) command is set to `false`. |
 
 Example output:
@@ -586,38 +586,38 @@ Pool size increase requests are validated on the server and client side. On the 
 
 Set of allowed pools and the maximum size increase per pool are set in `content.cfx.re`. Both server and client fetch the limits on startup for updates. The currently allowed pools and limits are the following (this documentation may be slightly behind the actual state, if not sure - try to set the increase and see if it works):
 
-| Pool name  | FiveM max increase | RedM max increase |
-| ---------- | ------------------ | ----------------- |
-| AnimStore | 20480 | - |
-| AttachmentExtension | 430 | 430 |
-| Building | 20000 | - |
-| CAvoidanceComponent | - | 1300 |
-| CDoorExtension (also known as MaxDoorExtensions) | - | 160 |
-| CLightEntity | - | 2000 |
-| CMoveObject | 600 | 100 |
-| CompEntity | - | 50 |
-| CPropSetObjectExtension | - | 950 |
-| CWeaponComponentInfo | 2048 | - |
-| DrawableStore | - | 50000 |
-| EntityDescPool | 20480 | - |
-| fragInstGta | 2000 | - |
-| FragmentStore | 14000 | 4000 |
-| GrassBatch | - | 2000 |
-| InteriorProxy | 450 | 450 |
-| LightEntity | 1000 | - |
-| netGameEvent | 400 | 400 |
-| Object | 2000 | 2000 |
-| ObjectIntelligence | 512 | - |
-| OcclusionInteriorInfo | 20 | 10 |
-| OcclusionPathNode | 5000 | 1500 |
-| OcclusionPortalEntity | 750 | 140 |
-| OcclusionPortalInfo | 750 | 140 |
-| PortalInst | 225 | 150 |
-| ScaleformStore | 200 | 100 |
-| StaticBounds | 5000 | 6500 |
-| TxdStore | 26000 | 26000 |
-| CNetObjDoor | - | 20 |
-| CDoorSyncData | - | 20 |
+| Pool name                                        | FiveM max increase | RedM max increase |
+| ------------------------------------------------ | ------------------ | ----------------- |
+| AnimStore                                        | 20480              | -                 |
+| AttachmentExtension                              | 430                | 430               |
+| Building                                         | 20000              | -                 |
+| CAvoidanceComponent                              | -                  | 1300              |
+| CDoorExtension (also known as MaxDoorExtensions) | -                  | 160               |
+| CLightEntity                                     | -                  | 2000              |
+| CMoveObject                                      | 600                | 100               |
+| CompEntity                                       | -                  | 50                |
+| CPropSetObjectExtension                          | -                  | 950               |
+| CWeaponComponentInfo                             | 2048               | -                 |
+| DrawableStore                                    | -                  | 50000             |
+| EntityDescPool                                   | 20480              | -                 |
+| fragInstGta                                      | 2000               | -                 |
+| FragmentStore                                    | 14000              | 4000              |
+| GrassBatch                                       | -                  | 2000              |
+| InteriorProxy                                    | 450                | 450               |
+| LightEntity                                      | 1000               | -                 |
+| netGameEvent                                     | 400                | 400               |
+| Object                                           | 2000               | 2000              |
+| ObjectIntelligence                               | 512                | -                 |
+| OcclusionInteriorInfo                            | 20                 | 10                |
+| OcclusionPathNode                                | 5000               | 1500              |
+| OcclusionPortalEntity                            | 750                | 140               |
+| OcclusionPortalInfo                              | 750                | 140               |
+| PortalInst                                       | 225                | 150               |
+| ScaleformStore                                   | 200                | 100               |
+| StaticBounds                                     | 5000               | 6500              |
+| TxdStore                                         | 26000              | 26000             |
+| CNetObjDoor                                      | -                  | 20                |
+| CDoorSyncData                                    | -                  | 20                |
 
 You can explore most of the current pools and their sizes using `F8 > Tools > Streaming > Pool Monitor` tool.
 
@@ -848,26 +848,26 @@ A boolean variable (default `false`) that enables development mode. Automaticall
 Rate limiters use a token bucket algorithm. Each limiter has a **rate** (tokens replenished per second) and a **burst** (maximum token count). A request consumes one token; if the bucket is empty, the request is rate-limited.
 Buckets are considered empty if no tokens are available.
 
-| Limiter | Rate (tokens/s) | Burst (max tokens) |
-| ------- | --------------- | ------------------ |
-| `challenge` | 4 | 10 |
-| `handshake` | 4 | 10 |
-| `handshakeUDP` | 1 | 5 |
-| `http_dynamic` | 4 | 10 |
-| `http_info` | 4 | 10 |
-| `http_perf` | 2 | 5 |
-| `http_players` | 4 | 10 |
-| `netCommand` | 7 | 14 |
-| `netCommandFlood` | 25 | 45 |
-| `netCommandSize` | 1024 | 8192 |
-| `netEvent` | 50 | 200 |
-| `netEventFlood` | 75 | 300 |
-| `rcon` | 2 | 5 |
-| `res_http_handler` | 10 | 25 |
-| `resourceList` | 10 | 25 |
-| `stateBag` | 75 | 125 |
-| `stateBagFlood` | 150 | 175 |
-| `stateBagSize` | 131072 | 262144 |
+| Limiter            | Rate (tokens/s) | Burst (max tokens) |
+| ------------------ | --------------- | ------------------ |
+| `challenge`        | 4               | 10                 |
+| `handshake`        | 4               | 10                 |
+| `handshakeUDP`     | 1               | 5                  |
+| `http_dynamic`     | 4               | 10                 |
+| `http_info`        | 4               | 10                 |
+| `http_perf`        | 2               | 5                  |
+| `http_players`     | 4               | 10                 |
+| `netCommand`       | 7               | 14                 |
+| `netCommandFlood`  | 25              | 45                 |
+| `netCommandSize`   | 1024            | 8192               |
+| `netEvent`         | 50              | 200                |
+| `netEventFlood`    | 75              | 300                |
+| `rcon`             | 2               | 5                  |
+| `res_http_handler` | 10              | 25                 |
+| `resourceList`     | 10              | 25                 |
+| `stateBag`         | 75              | 125                |
+| `stateBagFlood`    | 150             | 175                |
+| `stateBagSize`     | 131072          | 262144             |
 
 Each limiter can be configured with two ConVars:
 
@@ -913,10 +913,10 @@ Stops the replay with the given replay ID (as returned by `replay_start`).
 
 The following variables exist only for backward compatibility and have no effect:
 
-| Variable | Type | Default | Notes |
-| -------- | ---- | ------- | ----- |
-| `onesync_enableBeyond` | bool | `false` | Not necessary anymore. |
-| `sv_enhancedHostSupport` | bool | `false` | Not used anymore (P2P). |
+| Variable                   | Type | Default | Notes                                             |
+| -------------------------- | ---- | ------- | ------------------------------------------------- |
+| `onesync_enableBeyond`     | bool | `false` | Not necessary anymore.                            |
+| `sv_enhancedHostSupport`   | bool | `false` | Not used anymore (P2P).                           |
 | `sv_protectServerEntities` | bool | `false` | Not implemented. Use `sv_entityLockdown` instead. |
 
 [servercfg]: /docs/server-manual/setting-up-a-server-vanilla/#servercfg

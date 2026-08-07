@@ -40,7 +40,7 @@ You can also obtain this metadata from scripts using {{% native_link "GET_NUM_RE
 
 Some entry types may support 'globbing' for multiple files. These take a pattern syntax as follows:
 
-|    Example    |                    Matches                    |
+| Example       | Matches                                       |
 | ------------- | --------------------------------------------- |
 | `*.lua`       | `a.lua`, `b.lua` (non-recursively)            |
 | `dir/*.dll`   | `dir/a.dll`, `b.dll` (non-recursively)        |
@@ -62,7 +62,7 @@ Defines the supported functionality for the resource. This has to be one of a sp
 
 Defines the supported game API sets for the resource.
 
-|  Name  |                                   Meaning                                    |
+| Name   | Meaning                                                                      |
 | ------ | ---------------------------------------------------------------------------- |
 | common | Runs on any game, but can't access game-specific APIs - only CitizenFX APIs. |
 | gta5   | Runs on FiveM.                                                               |
@@ -80,11 +80,11 @@ Defines the supported functionality for the resource. This has to be one of a sp
 
 Defines a script to be loaded on the client, and implicitly adds the file to the resource packfile. The extension determines which script loader will handle the file:
 
-|  Extension   |       File handler       |                                        Meaning                                        |
-| ------------ | ------------------------ | ------------------------------------------------------------------------------------- |
-| **.lua**     | `citizen:scripting:lua`  | Lua source code                                                                       |
+| Extension    | File handler             | Meaning                                                                                             |
+| ------------ | ------------------------ | --------------------------------------------------------------------------------------------------- |
+| **.lua**     | `citizen:scripting:lua`  | Lua source code                                                                                     |
 | **.net.dll** | `citizen:scripting:mono` | .NET assembly referencing [CitizenFX.Core.Client](https://nuget.org/packages/CitizenFX.Core.Client) |
-| **.js**      | `citizen:scripting:v8`   | JavaScript source code (client only)                                                  |
+| **.js**      | `citizen:scripting:v8`   | JavaScript source code (client only)                                                                |
 
 ### server_script
 
@@ -274,7 +274,7 @@ dependencies {
 
 The valid constraint types are as follows:
 
-|   Type    |                     Requirement                     |                      Values                      |
+| Type      | Requirement                                         | Values                                           |
 | --------- | --------------------------------------------------- | ------------------------------------------------ |
 | server    | A minimum server version (build >= [arg])           | Any number.                                      |
 | policy    | A specific policy being granted.                    | subdir_file_mapping ('clothing support'), others |

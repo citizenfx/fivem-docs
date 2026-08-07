@@ -53,7 +53,7 @@ Usage: `cl_drawfps <true|false>`
 
 Enables or disables showing performance metrics in the screen corner:
 
-| Name (Units)  |                                Description                                 |
+| Name (Units)  | Description                                                                |
 | ------------- | -------------------------------------------------------------------------- |
 | FPS           | *Frames Per Second:* How many frames are drawn on screen each second.      |
 | Ping (ms)     | How long it takes to get a response from the server (round trip time).     |
@@ -310,7 +310,7 @@ FiveM [application data directory][faq-data].
 The `netgraph` command will give you real time metrics about the FiveM client network usage.
 The netgraph consists of a graph and basic information about the network:
 
-| Field Name  |                              Description                              |
+| Field Name  | Description                                                           |
 | ----------- | --------------------------------------------------------------------- |
 | ping        | How long it takes to get a response from the server (round trip time) |
 | in          | How many packets we received per second.                              |

@@ -110,22 +110,22 @@ There are three groups of new natives:
 
 ## Analogues to existing natives
 
-| Old (global index based) native | New (collection-based) native |
-| ---------- | ---------- |
-| {{% native_link "SET_PED_COMPONENT_VARIATION" %}} | {{% native_link "SET_PED_COLLECTION_COMPONENT_VARIATION" %}} |
-| {{% native_link "SET_PED_PROP_INDEX" %}} | {{% native_link "SET_PED_COLLECTION_PROP_INDEX" %}} |
-| {{% native_link "SET_PED_PRELOAD_VARIATION_DATA" %}} | {{% native_link "SET_PED_COLLECTION_PRELOAD_VARIATION_DATA" %}} |
-| {{% native_link "SET_PED_PRELOAD_PROP_DATA" %}} | {{% native_link "SET_PED_COLLECTION_PRELOAD_PROP_DATA" %}} |
-| {{% native_link "GET_NUMBER_OF_PED_DRAWABLE_VARIATIONS" %}} | {{% native_link "GET_NUMBER_OF_PED_COLLECTION_DRAWABLE_VARIATIONS" %}} |
+| Old (global index based) native                                  | New (collection-based) native                                               |
+| ---------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| {{% native_link "SET_PED_COMPONENT_VARIATION" %}}                | {{% native_link "SET_PED_COLLECTION_COMPONENT_VARIATION" %}}                |
+| {{% native_link "SET_PED_PROP_INDEX" %}}                         | {{% native_link "SET_PED_COLLECTION_PROP_INDEX" %}}                         |
+| {{% native_link "SET_PED_PRELOAD_VARIATION_DATA" %}}             | {{% native_link "SET_PED_COLLECTION_PRELOAD_VARIATION_DATA" %}}             |
+| {{% native_link "SET_PED_PRELOAD_PROP_DATA" %}}                  | {{% native_link "SET_PED_COLLECTION_PRELOAD_PROP_DATA" %}}                  |
+| {{% native_link "GET_NUMBER_OF_PED_DRAWABLE_VARIATIONS" %}}      | {{% native_link "GET_NUMBER_OF_PED_COLLECTION_DRAWABLE_VARIATIONS" %}}      |
 | {{% native_link "GET_NUMBER_OF_PED_PROP_DRAWABLE_VARIATIONS" %}} | {{% native_link "GET_NUMBER_OF_PED_COLLECTION_PROP_DRAWABLE_VARIATIONS" %}} |
-| {{% native_link "GET_NUMBER_OF_PED_TEXTURE_VARIATIONS" %}} | {{% native_link "GET_NUMBER_OF_PED_COLLECTION_TEXTURE_VARIATIONS" %}} |
-| {{% native_link "GET_NUMBER_OF_PED_PROP_TEXTURE_VARIATIONS" %}} | {{% native_link "GET_NUMBER_OF_PED_COLLECTION_PROP_TEXTURE_VARIATIONS" %}} |
-| {{% native_link "IS_PED_COMPONENT_VARIATION_VALID" %}} | {{% native_link "IS_PED_COLLECTION_COMPONENT_VARIATION_VALID" %}} |
-| {{% native_link "IS_PED_COMPONENT_VARIATION_GEN9_EXCLUSIVE" %}} | {{% native_link "IS_PED_COLLECTION_COMPONENT_VARIATION_GEN9_EXCLUSIVE" %}} |
-| {{% native_link "GET_PED_DRAWABLE_VARIATION" %}} | {{% native_link "GET_PED_DRAWABLE_VARIATION_COLLECTION_LOCAL_INDEX" %}} |
-| {{% native_link "GET_PED_DRAWABLE_VARIATION" %}} | {{% native_link "GET_PED_DRAWABLE_VARIATION_COLLECTION_NAME" %}} |
-| {{% native_link "GET_PED_PROP_INDEX" %}} | {{% native_link "GET_PED_PROP_COLLECTION_LOCAL_INDEX" %}} |
-| {{% native_link "GET_PED_PROP_INDEX" %}} | {{% native_link "GET_PED_PROP_COLLECTION_NAME" %}} |
+| {{% native_link "GET_NUMBER_OF_PED_TEXTURE_VARIATIONS" %}}       | {{% native_link "GET_NUMBER_OF_PED_COLLECTION_TEXTURE_VARIATIONS" %}}       |
+| {{% native_link "GET_NUMBER_OF_PED_PROP_TEXTURE_VARIATIONS" %}}  | {{% native_link "GET_NUMBER_OF_PED_COLLECTION_PROP_TEXTURE_VARIATIONS" %}}  |
+| {{% native_link "IS_PED_COMPONENT_VARIATION_VALID" %}}           | {{% native_link "IS_PED_COLLECTION_COMPONENT_VARIATION_VALID" %}}           |
+| {{% native_link "IS_PED_COMPONENT_VARIATION_GEN9_EXCLUSIVE" %}}  | {{% native_link "IS_PED_COLLECTION_COMPONENT_VARIATION_GEN9_EXCLUSIVE" %}}  |
+| {{% native_link "GET_PED_DRAWABLE_VARIATION" %}}                 | {{% native_link "GET_PED_DRAWABLE_VARIATION_COLLECTION_LOCAL_INDEX" %}}     |
+| {{% native_link "GET_PED_DRAWABLE_VARIATION" %}}                 | {{% native_link "GET_PED_DRAWABLE_VARIATION_COLLECTION_NAME" %}}            |
+| {{% native_link "GET_PED_PROP_INDEX" %}}                         | {{% native_link "GET_PED_PROP_COLLECTION_LOCAL_INDEX" %}}                   |
+| {{% native_link "GET_PED_PROP_INDEX" %}}                         | {{% native_link "GET_PED_PROP_COLLECTION_NAME" %}}                          |
 
 ## Examples
 

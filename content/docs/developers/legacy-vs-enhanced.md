@@ -11,19 +11,19 @@ This page covers what's changed for server owners and resource developers moving
 
 ### Removed Features
 
-| Feature | Notes |
-|---------|-------|
-| P2P Sync | FiveM for GTAV Enhanced no longer uses P2P synchronization and has instead switched to a client-server model. This change reduces latency. |
-| OneSync non-big mode | No longer exists; OneSync big mode is now the only mode. Non-big mode was the legacy OneSync behavior. The difference is player event scoping: in big mode, player connect/disconnect events only arrive when the player is in range, whereas in non-big mode they arrived regardless of location. |
-| ARQ (`onesync_automaticResend`) | Previously defaulted to `false`; now removed entirely |
-| Asset Escrow | Not implemented yet |
-| `sv_netHttp2` | HTTP/2 support removed |
-| DevCon server ports (29200, 29300) | Removed |
-| Server ImGui GUI | Removed |
-| `+set moo 31337` developer command | Was used in Gen8 to enable devmode; removed. Client dev tools now only work when `sv_devMode true` is set on the server. Dev mode can also be set via the connection deferral handover. |
-| `sv_useAccurateSends` | Deprecated (see `sv_syncTickRate` below) |
-| `-cl2` parameter | Deprecated. Check the [running-two-fivem-clients](https://docs.fivem.net/docs/client-manual/running-two-fivem-clients/) article for more information. |
-| Mumble | Deprecated. Check the [voice](https://docs.fivem.net/docs/scripting-manual/voice/) article for more information. |
+| Feature                            | Notes                                                                                                                                                                                                                                                                                              |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| P2P Sync                           | FiveM for GTAV Enhanced no longer uses P2P synchronization and has instead switched to a client-server model. This change reduces latency.                                                                                                                                                         |
+| OneSync non-big mode               | No longer exists; OneSync big mode is now the only mode. Non-big mode was the legacy OneSync behavior. The difference is player event scoping: in big mode, player connect/disconnect events only arrive when the player is in range, whereas in non-big mode they arrived regardless of location. |
+| ARQ (`onesync_automaticResend`)    | Previously defaulted to `false`; now removed entirely                                                                                                                                                                                                                                              |
+| Asset Escrow                       | Not implemented yet                                                                                                                                                                                                                                                                                |
+| `sv_netHttp2`                      | HTTP/2 support removed                                                                                                                                                                                                                                                                             |
+| DevCon server ports (29200, 29300) | Removed                                                                                                                                                                                                                                                                                            |
+| Server ImGui GUI                   | Removed                                                                                                                                                                                                                                                                                            |
+| `+set moo 31337` developer command | Was used in Gen8 to enable devmode; removed. Client dev tools now only work when `sv_devMode true` is set on the server. Dev mode can also be set via the connection deferral handover.                                                                                                            |
+| `sv_useAccurateSends`              | Deprecated (see `sv_syncTickRate` below)                                                                                                                                                                                                                                                           |
+| `-cl2` parameter                   | Deprecated. Check the [running-two-fivem-clients](https://docs.fivem.net/docs/client-manual/running-two-fivem-clients/) article for more information.                                                                                                                                              |
+| Mumble                             | Deprecated. Check the [voice](https://docs.fivem.net/docs/scripting-manual/voice/) article for more information.                                                                                                                                                                                   |
 
 ---
 
@@ -122,10 +122,10 @@ Enabling devmode in the client now requires `sv_devMode true` to be set on the s
 
 The following variables exist only for backward compatibility and have no effect:
 
-| Variable | Type | Default | Notes |
-| -------- | ---- | ------- | ----- |
-| `onesync_enableBeyond` | bool | `false` | Does nothing. |
-| `sv_enhancedHostSupport` | bool | `false` | Not used anymore. |
+| Variable                   | Type | Default | Notes                                             |
+| -------------------------- | ---- | ------- | ------------------------------------------------- |
+| `onesync_enableBeyond`     | bool | `false` | Does nothing.                                     |
+| `sv_enhancedHostSupport`   | bool | `false` | Not used anymore.                                 |
 | `sv_protectServerEntities` | bool | `false` | Not implemented. Use `sv_entityLockdown` instead. |
 
 ---
@@ -136,19 +136,19 @@ The following variables exist only for backward compatibility and have no effect
 
 The timeout in milliseconds for downloading resource files over HTTP. If the download does not complete within this time, it will be canceled.
 
-| Property | Value |
-|----------|-------|
-| Default | 2 minutes |
-| Type | `std::chrono::milliseconds` |
+| Property | Value                       |
+| -------- | --------------------------- |
+| Default  | 2 minutes                   |
+| Type     | `std::chrono::milliseconds` |
 
 #### `sv_syncTickRate`
 
 Tick rate for the sync thread. Higher values can reduce latency but increase CPU usage.
 
 | Property | Value |
-|----------|-------|
-| Default | 60 |
-| Range | 1-120 |
+| -------- | ----- |
+| Default  | 60    |
+| Range    | 1-120 |
 
 > **Note:** `sv_useAccurateSends` is deprecated. Specify the sync tick rate explicitly with `set sv_syncTickRate [1, 120]`.
 

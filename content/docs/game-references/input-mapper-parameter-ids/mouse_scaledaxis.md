@@ -2,7 +2,7 @@
 title: MOUSE_SCALEDAXIS
 ---
 
-| Input Parameter             | Input Description |
+| Input Parameter             | Input Description                    |
 | --------------------------- | ------------------------------------ |
 | IOM\_AXIS\_X                | Mouse X Axis                         |
 | IOM\_AXIS\_Y                | Mouse Y Axis                         |

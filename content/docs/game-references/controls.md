@@ -27,13 +27,13 @@ if(IsControlJustReleased(0, 51))
 ## Control types
 
 | Index | Name              |
-|-------|-------------------|
+| ----- | ----------------- |
 | 0     | PLAYER\_CONTROL   |
 | 2     | FRONTEND\_CONTROL |
 
 ## Controls
 
-| Index |                       Name                       |            Default QWERTY             | Xbox Controller |
+| Index | Name                                             | Default QWERTY                        | Xbox Controller |
 | ----- | ------------------------------------------------ | ------------------------------------- | --------------- |
 | 0     | INPUT\_NEXT\_CAMERA                              | V                                     | BACK            |
 | 1     | INPUT\_LOOK\_LR                                  | MOUSE RIGHT                           | RIGHT STICK     |

@@ -17,7 +17,7 @@ GetPlayerIdentifiers(Player player)
 ## Identifier Types
 
 | Type ID    | Provider                 | Type                                                                      | Data Type |
-|------------|--------------------------|---------------------------------------------------------------------------|-----------|
+| ---------- | ------------------------ | ------------------------------------------------------------------------- | --------- |
 | `steam`    | Steam                    | [Steam Id](https://partner.steamgames.com/doc/webapi/isteamuserauth)      | hex       |
 | `discord`  | Discord                  | [User Id](https://discord.com/developers/docs/resources/user#user-object) | int       |
 | `license`  | Rockstar Online Services | Hash                                                                      | hex       |

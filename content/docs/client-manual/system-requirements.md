@@ -11,7 +11,7 @@ work. It is generally advised to upgrade to Windows 10 when you can as this prov
 Additional details:
 
 |                 | Minimum                                                 | Recommended                                         |
-|-----------------|---------------------------------------------------------|-----------------------------------------------------|
+| --------------- | ------------------------------------------------------- | --------------------------------------------------- |
 | CPU             | Intel Core 2 Q6600 @ 2.40GHz / AMD Phenom 9850 @ 2.5GHz | Intel Core i5 3470 @ 3.2GHz / AMD X8 FX-8350 @ 4GHz |
 | GPU<sup>1</sup> | NVIDIA 9800 GT 1GB / AMD HD 4870 1GB / Intel HD GT2     | NVIDIA GTX 660 2GB / AMD HD7870 2GB                 |
 | RAM             | 8GB (4 may work)                                        | 16GB                                                |

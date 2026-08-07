@@ -223,23 +223,23 @@ Example use cases do explicitly not include interiors. Interiors should be using
 
 Each bucket can have different rules, these are named 'lockdown modes' and they are described down below:
 
-| Mode       | Meaning                                                    |
-| ---------- | ---------------------------------------------------------- |
+| Mode       | Meaning                                                                 |
+| ---------- | ----------------------------------------------------------------------- |
 | `full`     | Disables dummy object creation. Only usable on FiveM for GTAV Enhanced. |
-| `strict`   | No entities can be created by clients at all.              |
-| `relaxed`  | Only script-owned entities created by clients are blocked. |
-| `inactive` | Clients can create any entity they want.                   |
+| `strict`   | No entities can be created by clients at all.                           |
+| `relaxed`  | Only script-owned entities created by clients are blocked.              |
+| `inactive` | Clients can create any entity they want.                                |
 
 **There are different kind of natives for routing buckets (you can click on them to read their docs):**
 
-| Native     |
-| ---------- |
-| **{{% native_link "GET_ENTITY_ROUTING_BUCKET" %}}** |
-| **{{% native_link "GET_PLAYER_ROUTING_BUCKET" %}}** |
-| **{{% native_link "SET_ENTITY_ROUTING_BUCKET" %}}** |
-| **{{% native_link "SET_PLAYER_ROUTING_BUCKET" %}}** |
+| Native                                                            |
+| ----------------------------------------------------------------- |
+| **{{% native_link "GET_ENTITY_ROUTING_BUCKET" %}}**               |
+| **{{% native_link "GET_PLAYER_ROUTING_BUCKET" %}}**               |
+| **{{% native_link "SET_ENTITY_ROUTING_BUCKET" %}}**               |
+| **{{% native_link "SET_PLAYER_ROUTING_BUCKET" %}}**               |
 | **{{% native_link "SET_ROUTING_BUCKET_ENTITY_LOCKDOWN_MODE" %}}** |
-| **{{% native_link "SET_ROUTING_BUCKET_POPULATION_ENABLED" %}}** |
+| **{{% native_link "SET_ROUTING_BUCKET_POPULATION_ENABLED" %}}**   |
 
 **A rough example:**
 

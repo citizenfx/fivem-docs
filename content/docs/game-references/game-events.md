@@ -10,7 +10,7 @@ Note that this list is largely undocumented and you probably won't need most of 
 useful information to share, please [add it to this doc][contributing]. Any help is greatly appreciated!
 
 | Event name                                         | Description |
-|----------------------------------------------------|-------------|
+| -------------------------------------------------- | ----------- |
 | CEventAcquaintancePed                              |             |
 | CEventAcquaintancePedDead                          |             |
 | CEventAcquaintancePedDislike                       |             |

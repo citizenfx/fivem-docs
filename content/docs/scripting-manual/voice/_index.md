@@ -296,9 +296,9 @@ sv_licenseKey cfx...
 voice_external_host 0.0.0.0:30123 gameServerIP:30122
 ```
 
-| Parameter | Description |
-| --------- | ----------- |
-| First (`0.0.0.0:30123`) | Bind address of the external voice server. |
+| Parameter                     | Description                                                                             |
+| ----------------------------- | --------------------------------------------------------------------------------------- |
+| First (`0.0.0.0:30123`)       | Bind address of the external voice server.                                              |
 | Second (`gameServerIP:30122`) | Address of the gateway server specified in `voice_external_connect` on the game server. |
 
 **Game server `server.cfg`:**
@@ -307,9 +307,9 @@ voice_external_host 0.0.0.0:30123 gameServerIP:30122
 voice_external_connect 0.0.0.0:30122 externalIP:30123
 ```
 
-| Parameter | Description |
-| --------- | ----------- |
-| First (`0.0.0.0:30122`) | Starts a voice gateway server on this interface. |
+| Parameter                   | Description                                         |
+| --------------------------- | --------------------------------------------------- |
+| First (`0.0.0.0:30122`)     | Starts a voice gateway server on this interface.    |
 | Second (`externalIP:30123`) | Address of the external voice server to connect to. |
 
 The license key used on both the voice server and game server **must match**.
@@ -348,14 +348,14 @@ All new voice natives are **server-side only**, which removes the security issue
 
 #### Migrating from Mumble natives
 
-| Deprecated (client-side) | Replacement (server-side) |
-| ------------------------ | ------------------------- |
-| `MumbleCreateChannel(id)` | `CreateVoiceChannel(mode, maxDistance)` |
-| `MumbleSetVoiceChannel(id)` (join) | `AddPlayerToVoiceChannel(channelID, clientID)` |
-| Leaving a channel client-side | `RemovePlayerFromVoiceChannel(channelID, clientID)` |
-| Channel cleanup (implicit) | `DeleteVoiceChannel(channelID)` |
-| Client-side mute logic | `SetPlayerMutedInVoiceChannel(channelID, clientID, muted)` |
-| Client-side deaf / listen logic | `SetPlayerDeafInVoiceChannel(channelID, clientID, deaf)` |
+| Deprecated (client-side)           | Replacement (server-side)                                  |
+| ---------------------------------- | ---------------------------------------------------------- |
+| `MumbleCreateChannel(id)`          | `CreateVoiceChannel(mode, maxDistance)`                    |
+| `MumbleSetVoiceChannel(id)` (join) | `AddPlayerToVoiceChannel(channelID, clientID)`             |
+| Leaving a channel client-side      | `RemovePlayerFromVoiceChannel(channelID, clientID)`        |
+| Channel cleanup (implicit)         | `DeleteVoiceChannel(channelID)`                            |
+| Client-side mute logic             | `SetPlayerMutedInVoiceChannel(channelID, clientID, muted)` |
+| Client-side deaf / listen logic    | `SetPlayerDeafInVoiceChannel(channelID, clientID, deaf)`   |
 
 #### `CreateVoiceChannel`
 
@@ -369,12 +369,12 @@ When a player disconnects, they are automatically removed from all channels they
 
 ##### Channel modes
 
-| Mode | Name | Description |
-| ---- | ---- | ----------- |
-| `0` | Non-spatial | 2D voice channel. 2D output positioning must be controlled with the client voice API. Receiving clients are calculated based on channel membership. |
-| `1` | Spatial | 3D voice channel. Clients are output in 3D automatically. Receiving clients are calculated based on proximity within `maxDistance`. |
-| `2` | Custom | Requires custom streaming logic. No clients are automatically calculated. There is no API yet to feed custom streaming. |
-| `3` | Temporary | Inherits all behavior from **spatial**, but the channel is automatically deleted when all players have left. |
+| Mode | Name        | Description                                                                                                                                         |
+| ---- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `0`  | Non-spatial | 2D voice channel. 2D output positioning must be controlled with the client voice API. Receiving clients are calculated based on channel membership. |
+| `1`  | Spatial     | 3D voice channel. Clients are output in 3D automatically. Receiving clients are calculated based on proximity within `maxDistance`.                 |
+| `2`  | Custom      | Requires custom streaming logic. No clients are automatically calculated. There is no API yet to feed custom streaming.                             |
+| `3`  | Temporary   | Inherits all behavior from **spatial**, but the channel is automatically deleted when all players have left.                                        |
 
 Example (server-side):
 

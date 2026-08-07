@@ -9,7 +9,7 @@ CitizenFX supports pluggable scripting runtimes. These runtimes are implemented 
 
 The specific interfaces used at the time of this writing are:
 
-|         Interface          |                                     Purpose                                      |
+| Interface                  | Purpose                                                                          |
 | -------------------------- | -------------------------------------------------------------------------------- |
 | IScriptRuntime             | Base interface for script runtimes. Exposes basic lifetime management functions. |
 | IScriptTickRuntime         | Allows exposing a Tick function for runtimes that need to run periodically.      |

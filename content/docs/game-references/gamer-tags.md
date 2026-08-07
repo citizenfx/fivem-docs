@@ -11,7 +11,7 @@ For each component you can: show/hide, change opacity, change color.
 ## Components list
 
 | ID  | Name                      |
-|-----|---------------------------|
+| --- | ------------------------- |
 | 0   | GAMER\_NAME               |
 | 1   | CREW\_TAG                 |
 | 2   | healthArmour              |
