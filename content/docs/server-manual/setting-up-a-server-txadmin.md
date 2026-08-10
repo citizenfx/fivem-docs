@@ -18,45 +18,45 @@ description: >
 {{% alert color="warning" %}}If you are setting up a **FiveM for GTAV Enhanced** server, the [Microsoft Visual C++ 2017 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) must be installed. Download and install it before running the server.{{% /alert %}}
 
 1. Open the [Server Download](https://docs.fivem.net/docs/server-download) page.
-2. Download the recommended build.<br>
+2. Download the recommended build.\
    ![pic](/server-setup/windows-step-2.png)
-3. Open the `server.7z` you just downloaded. Use any third-party archiving tool (such as [7-Zip][7zip] or [WinRAR][winrar]) to open the `.7z` file. <br>
+3. Open the `server.7z` you just downloaded. Use any third-party archiving tool (such as [7-Zip][7zip] or [WinRAR][winrar]) to open the `.7z` file. \
    ![pic](/server-setup/windows-step-3.png)
-4. Extract it somewhere you want to store it. We'll pick `C:\FXServer\server`.<br>
-   ![pic](/server-setup/windows-step-4a.png)<br>
+4. Extract it somewhere you want to store it. We'll pick `C:\FXServer\server`.\
+   ![pic](/server-setup/windows-step-4a.png)\
    ![pic](/server-setup/windows-step-4b.png)
-5. Open the folder you just extracted it to. It should look a little like this:<br>
+5. Open the folder you just extracted it to. It should look a little like this:\
    ![pic](/server-setup/windows-step-5.png)
 
 #### Start the server
 
 {{% alert color="info" %}}Note that if you are setting up FiveM for GTAV Enhanced server, `FXServer.exe` is named `cfx-server.exe` instead.{{% /alert %}}
 
-1. Double click `FXServer.exe`.<br>
+1. Double click `FXServer.exe`.\
    ![pic](/server-setup/windows-step2-1.png)
-2. This site should open in your browser. Make sure a PIN is filled, and click `Link Account`.<br>
+2. This site should open in your browser. Make sure a PIN is filled, and click `Link Account`.\
    ![pic](/server-setup/windows-step2-2.png)
-3. Log in to your [Cfx account](https://forum.cfx.re/) in this tab and then click `Yes, Allow`.<br>
+3. Log in to your [Cfx account](https://forum.cfx.re/) in this tab and then click `Yes, Allow`.\
    ![pic](/server-setup/windows-step2-3.png)
-4. Create a password to sign up to your server's admin page.<br>
+4. Create a password to sign up to your server's admin page.\
    ![pic](/server-setup/windows-step2-4.png)
-5. Click 'Next'.<br>
+5. Click 'Next'.\
    ![pic](/server-setup/windows-step2-5.png)
 6. Type a name for your server and click 'Next'.
-7. Select 'Popular Recipes'.<br>
+7. Select 'Popular Recipes'.\
    ![pic](/server-setup/windows-step2-7.png)
-8. Pick the 'CFX Default FiveM' template for now. Other templates may exist, but some will require a database server.<br>
+8. Pick the 'CFX Default FiveM' template for now. Other templates may exist, but some will require a database server.\
    ![pic](/server-setup/windows-step2-8.png)
 9. Click 'Save' or select another path.
-10. Go to the 'Recipe Deployer'.<br>
+10. Go to the 'Recipe Deployer'.\
    ![pic](/server-setup/windows-step2-10.png)
-11. Click 'Next' once you're sure the recipe looks fine. It should be fine the way it comes.<br>
+11. Click 'Next' once you're sure the recipe looks fine. It should be fine the way it comes.\
   ![pic](/server-setup/windows-step2-11.png)
-12. Enter the key you just made on the Portal in the 'Before you begin' step and click 'Run Recipe'.<br>
+12. Enter the key you just made on the Portal in the 'Before you begin' step and click 'Run Recipe'.\
    ![pic](/server-setup/windows-step2-12.png)
-13. If everything's correct, you can click 'Next' again.<br>
+13. If everything's correct, you can click 'Next' again.\
    ![pic](/server-setup/windows-step2-13.png)
-14. ... and finally, "Save & Run Server", and you're done!<br>
+14. ... and finally, "Save & Run Server", and you're done!\
    ![pic](/server-setup/windows-step2-14.png)
 
 #### Troubleshooting

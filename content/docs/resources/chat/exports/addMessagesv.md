@@ -4,7 +4,8 @@ title: addMessage (server)
 
 ## About
 
-Using this export allows you to add a message to the target players chat.<br>
+Using this export allows you to add a message to the target players chat.
+
 Message object structure:
 
 ```lua
@@ -46,5 +47,6 @@ AddEventHandler('onResourceStart', function(resourceName)
 end)
 ```
 
-Output:<br>
+Output:
+
 ![screenshot-1](/chat_addMessage_export.png)

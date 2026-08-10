@@ -12,7 +12,8 @@ This issue is usually caused by **bad port forwarding** or **firewall configurat
 To check whether others can connect directly:
 
 1. Press **F8** in FiveM to open the game client console.
-2. Enter the command: `connect IP:Port`<br/>Replace `IP:Port` with your server's actual IP and port, e.g.: `connect 127.0.0.1:30120`.
+2. Enter the command: `connect IP:Port`\
+   Replace `IP:Port` with your server's actual IP and port, e.g.: `connect 127.0.0.1:30120`.
 3. Press **Enter** to attempt the connection.
 
 If a direct connection fails, the issue is likely related to incorrect port forwarding or a firewall blocking connections.

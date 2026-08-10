@@ -7,15 +7,16 @@ description: >
 
 ## What is Tebex?
 
-[Tebex][Tebex] is our authorized monetization partner for the Cfx Platform, allowing you to easily monetize your FiveM or RedM server.<br>
+[Tebex][Tebex] is our authorized monetization partner for the Cfx Platform, allowing you to easily monetize your FiveM or RedM server.
 
-It provides a convenient and secure way for server owners to set up and manage their stores, allowing players to purchase virtual items and other game-related content. In addition to being the exclusive monetization partner of FiveM, [Tebex][Tebex] offers a full suite of monetization features, handling all taxes, billing, and providing full insurance for transactions. This makes it easier for server owners to focus on creating a great experience for their players while leaving the complexities of payments and compliance to [Tebex][Tebex].<br>
+It provides a convenient and secure way for server owners to set up and manage their stores, allowing players to purchase virtual items and other game-related content. In addition to being the exclusive monetization partner of FiveM, [Tebex][Tebex] offers a full suite of monetization features, handling all taxes, billing, and providing full insurance for transactions. This makes it easier for server owners to focus on creating a great experience for their players while leaving the complexities of payments and compliance to [Tebex][Tebex].
 
-The use of any other platform or payment provider is prohibited and is a violation of the [Platform License Agreement][fivem-pla].<br> Monetization of game servers is also subject to the policies outlined in the PLA, as well as the [Tebex][Tebex] [Acceptable Use Policy][tebex-aup] (AUP) and [Terms of Service][tebex-tos] (TOS).<br>
+The use of any other platform or payment provider is prohibited and is a violation of the [Platform License Agreement][fivem-pla].\
+Monetization of game servers is also subject to the policies outlined in the PLA, as well as the [Tebex][Tebex] [Acceptable Use Policy][tebex-aup] (AUP) and [Terms of Service][tebex-tos] (TOS).
 
 ## Prerequisites
 
-Before starting, ensure that you successfully [setup a FiveM-Server][setting-up-a-server-guides].<br>
+Before starting, ensure that you successfully [setup a FiveM-Server][setting-up-a-server-guides].
 
 ## Tebex Store Setup
 
@@ -25,11 +26,11 @@ Before starting, ensure that you successfully [setup a FiveM-Server][setting-up-
 4. Create a [project][tebex-project]:
    - Provide a project name.
    - Provide the preferred currency
-   - Provide the type of the project. If you are running a server choose "<em>I operate a game server</em>".
+   - Provide the type of the project. If you are running a server choose "_I operate a game server_".
 5. Open your Tebex Control Panel and click [Integrations > Game Servers][tebex-integration-game-servers].
 6. Click **Connect Game Server** > **Plugin**.
 7. Name your server and click **Continue**.
-8. Follow the instructions on-screen to add your unique secret-key to your **server.cfg**. We recommend adding the line at the bottom of the file like this:<code>sv_tebexSecret yourtebexsecretkey</code>
+8. Follow the instructions on-screen to add your unique secret-key to your **server.cfg**. We recommend adding the line at the bottom of the file like this: `sv_tebexSecret yourtebexsecretkey`
 9. Restart your server.
 10. Click **Continue** on the Tebex Control Panel page you have open.
 You will be redirected to the [onboarding page][tebex-get-started].
@@ -47,7 +48,7 @@ Before your store can go live, you must complete the following steps:
 5. Create a package.
 6. Associate your **Cfx** account.
 
-After that you can submit your store for [review][tebex-review] to Tebex.<br>
+After that you can submit your store for [review][tebex-review] to Tebex.
 
 Once the [review][tebex-review] is completed, you can add packages, customize your store, offer virtual goods to your community, and change the appearance of your Tebex store with one of many [templates][tebex-templates].
 
@@ -55,19 +56,14 @@ Once the [review][tebex-review] is completed, you can add packages, customize yo
 
 Learn how to set up your FiveM server and integrate it with Tebex for smooth donations and monetization in this step-by-step video guide.
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-  <iframe src="https://www.youtube.com/embed/lfSjKSFI8vg"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-          frameborder="0" allowfullscreen>
-  </iframe>
-</div>
+{{% youtube id="lfSjKSFI8vg" %}}
 
 ## Useful Links
 
-[Tebex FAQs][tebex-faq]<br>
-[Tebex Identity Verification][tebex-identity-verification]<br>
-[Tebex Store Review][tebex-review]<br>
-[Tips for getting your store application approved][tebex-tips-store-application]
+- [Tebex FAQs][tebex-faq]
+- [Tebex Identity Verification][tebex-identity-verification]
+- [Tebex Store Review][tebex-review]
+- [Tips for getting your store application approved][tebex-tips-store-application]
 
 ---
 

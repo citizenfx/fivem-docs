@@ -141,8 +141,6 @@ exports.myresource:setWidget(50)
 int widget = Exports["myresource"].getWidget();
 ```
 
-</tab> </tabs>
-
 ### server_export
 
 Defines a global function to be [exported](#export) by a server script.

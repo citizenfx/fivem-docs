@@ -10,14 +10,14 @@ This native is a server side native which requires [OneSync](https://forum.cfx.r
 string sender, table data
 ```
 
-- **sender**: *number* <p>The ID of the player that triggered the event.</p>
+- **sender**: *number* The ID of the player that triggered the event.
 - **data**: *table*
-  - **vehicleGlobalId**: *number* <p>Vehicle's ID</p>
-  - **pedGlobalId**: *number* <p>Ped's ID</p>
-  - **componentIndex**: *number* <p>Component's ID.</p>
-  - **request**: *boolean* <p>Whether the request was accepted or not (not sure...)</p>
-  - **componentIsSeat**: *boolean* <p>Is the vehicle's component a seat.</p>
-  - **pedInSeat**: *number* <p>Ped's seat ID.</p>
+  - **vehicleGlobalId**: *number* Vehicle's ID
+  - **pedGlobalId**: *number* Ped's ID
+  - **componentIndex**: *number* Component's ID.
+  - **request**: *boolean* Whether the request was accepted or not (not sure...)
+  - **componentIsSeat**: *boolean* Is the vehicle's component a seat.
+  - **pedInSeat**: *number* Ped's seat ID.
 
 ## Examples
 

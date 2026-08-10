@@ -7,8 +7,8 @@ description: >
 
 ## What are Featured Servers?
 
-Featured servers are a list of curated servers displayed on the right side of the FiveM server list.<br>
-Generally speaking, featured servers are accessible experiences for new players, offering fast paced gamemodes which can be understood within just a few minutes, either alone, or with your friends.<br>
+Featured servers are a list of curated servers displayed on the right side of the FiveM server list.\
+Generally speaking, featured servers are accessible experiences for new players, offering fast paced gamemodes which can be understood within just a few minutes, either alone, or with your friends.
 
 ## Criteria for servers to be featured
 

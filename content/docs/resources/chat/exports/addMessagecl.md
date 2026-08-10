@@ -4,7 +4,8 @@ title: addMessage (client)
 
 ## About
 
-Using this export allows you to add a message to the local players chat.<br>
+Using this export allows you to add a message to the local players chat.
+
 Message object structure:
 
 ```lua
@@ -65,5 +66,6 @@ void OnResourceStart(string resourceName)
 }
 ```
 
-Output:<br>
+Output:
+
 ![screenshot-1](/chat_addMessage_export.png)

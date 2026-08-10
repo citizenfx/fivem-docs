@@ -4,7 +4,8 @@ title: registerMode
 
 ## About
 
-Using this export allows you to add modes to your chat.<br>
+Using this export allows you to add modes to your chat.
+
 Mode object structure:
 
 ```lua

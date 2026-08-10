@@ -31,13 +31,13 @@ Sync nodes are synchronization data nodes, networked entities depend on these to
 
 This synchronization data node is used to share sector position data to other clients about a specific entity, parsing is shown below. It's worth mentioning that the `Parse` code written down below is written by reverse-engineering game code (more or so by reading `NodeCommonDataOperations<class CSectorPositionDataNode, class IProximityMigrateableNodeDataAccessor>` first's VMT ([Virtual Method Table][vmturl]) method which is the `read` method, which would be offset 8 from the VMT).
 
-*The game's VMT:*</br>
+*The game's VMT:*\
 ![Image](/scripting-reference/onesync/games-vmt.png)
 
-*The read method:*</br>
+*The read method:*\
 ![Image](/scripting-reference/onesync/asm-read-method.png)
 
-*The game reading the position:*</br>
+*The game reading the position:*\
 ![Image](/scripting-reference/onesync/position-reading.png)
 
 *The reversed code (from [SyncTrees_Five.h](https://github.com/citizenfx/fivem/blob/master/code/components/citizen-server-impl/include/state/SyncTrees_Five.h))*:

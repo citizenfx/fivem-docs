@@ -15,8 +15,8 @@ You can contribute to the documentation in one of two ways, depending on how you
 
 ### Edit directly on GitHub
 
-For small fixes or quick edits, you can use GitHub's in-browser editor.<br/>
-Simply navigate to the file you want to change and click the pencil icon.<br/>
+For small fixes or quick edits, you can use GitHub's in-browser editor.\
+Simply navigate to the file you want to change and click the pencil icon.\
 For guidance, see [GitHub's help page on editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
 
 ### Fork the repository and submit a pull request
@@ -51,12 +51,12 @@ Use Markdown headers to organize your content:
 
 Example:
 
-✅ `## Installing FiveM`<br/>
+✅ `## Installing FiveM`\
 ❌ `## Miscellaneous / First Step`
 
 #### Lists
 
-- Use bullet points (like - or *) for unordered lists, such as:<br/>
+- Use bullet points (like - or *) for unordered lists, such as:
   - Examples
   - Notes
   - Options or unordered items
@@ -81,11 +81,11 @@ Examples:
 
 #### Links
 
-Limit the use of external links whenever possible.<br/>
+Limit the use of external links whenever possible.\
 When external links are necessary, ensure they are likely to remain available long-term.
 Do not add links to images, see "Images and Diagrams" for more information on how to add them inside our documentation repository.
 
-Use `[text](URL)` for clickable links.<br/>
+Use `[text](URL)` for clickable links.\
 Example: `[FiveM Docs](https://docs.fivem.net)`
 
 Do not use shorthand links such as `<https://example.com>`.
@@ -98,16 +98,16 @@ If you a referencing a native, link to it like this:
 
 `{{%/* native_link "NAME_OF_NATIVE" */%}}`
 
-Example: `{{%/* native_link "IS_MODEL_A_VEHICLE" */%}}`<br/>
+Example: `{{%/* native_link "IS_MODEL_A_VEHICLE" */%}}`\
 Will render as: {{% native_link "IS_MODEL_A_VEHICLE" %}}
 
 #### Code Example Formatting
 
-Use backticks (` `` `) for inline code.<br/>
-Example: `` `git clone https://github.com/citizenfx/fivem.git` ``<br/>
+Use backticks (` `` `) for inline code.\
+Example: `` `git clone https://github.com/citizenfx/fivem.git` ``
 
-Use triple backticks (`` ``` ``) to create code blocks for larger examples and specify the appropriate language.<br/>
-Example:<br/>
+Use triple backticks (`` ``` ``) to create code blocks for larger examples and specify the appropriate language.\
+Example:
 
 ````
 ```lua
@@ -122,10 +122,10 @@ sayHello()
 ```
 ````
 
-Specify the language for syntax highlighting (e.g., `bash`, `lua`, `json`).<br/>
-Use proper indentation and consistent spacing (avoid mixing tabs and spaces).<br/>
-Add brief context or explanation before/after the code when needed.<br/>
-Provide consistent examples in Lua(default), JavaScript and C# if applicable.<br/>
+Specify the language for syntax highlighting (e.g., `bash`, `lua`, `json`).\
+Use proper indentation and consistent spacing (avoid mixing tabs and spaces).\
+Add brief context or explanation before/after the code when needed.\
+Provide consistent examples in Lua(default), JavaScript and C# if applicable.
 
 #### Tone and Voice
 
@@ -152,7 +152,7 @@ To include them in your documentation, use the following Markdown syntax:
 
 `![Alt Text](/static/image.png)`
 
-In `![Alt Text](/static/image.png)`, the "*Alt Text*" is the alt text.<br/>
+In `![Alt Text](/static/image.png)`, the "*Alt Text*" is the alt text.\
 This is a short description of the image that is displayed if the image can't be shown.
 Replace "*Alt Text*" with a brief description relevant to the image (e.g., "*Server Console Output*" or "*Example Vehicle Spawn Menu*").
 
@@ -174,7 +174,7 @@ For Guides and Articles:
 
 Examples:
 
-`install-guide.png`<br/>
+`install-guide.png`\
 `how-to-mod-vehicles.webp`
 
 This style is case-sensitive - **always** use lowercase with exceptions below.
@@ -187,13 +187,13 @@ For Game References (e.g., ped models, vehicles, weapons):
 
 Examples:
 
-`adder.webp`<br/>
-`WEAPON_GRENADELAUNCHER_SMOKE.png`<br/>
+`adder.webp`\
+`WEAPON_GRENADELAUNCHER_SMOKE.png`\
 `csb_trafficwarden.png`
 
 This format is also case-sensitive - match the game's naming exactly.
 
-Image Placement: Place images and diagrams within the body of the text where they are referenced.<br/>
+Image Placement: Place images and diagrams within the body of the text where they are referenced.\
 Use Markdown syntax to display images:
 
 Example:
@@ -211,9 +211,9 @@ The use of AI tools is permitted strictly for spelling, grammar, and clarity imp
 
 ## Additional Resources
 
-[FiveM Docs](https://docs.fivem.net)<br/>
-[Markdown Guide](https://www.markdownguide.org/basic-syntax/)<br/>
-[GitHub Editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)
+- [FiveM Docs](https://docs.fivem.net)
+- [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
+- [GitHub Editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)
 
 ---
 

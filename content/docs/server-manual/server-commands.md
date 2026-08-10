@@ -388,7 +388,8 @@ A console variable as an integer from 0-3 (default 0);
 
 ### `sv_filterRequestControl [mode]`
 
-A console variable used to block `REQUEST_CONTROL_EVENT` routing based on a configurable policy.<br>
+A console variable used to block `REQUEST_CONTROL_EVENT` routing based on a configurable policy.
+
 Supported modes for this variable are as follows:
 
 - -1: Equivalent to 2 at this time, but will also warn in console.
@@ -458,7 +459,7 @@ Example: `con_removeChannelFilter script:gamemodePrefix-* noprint`
 
 ### `sv_filterRequestControlSettleTimer [time]`
 
-A console variable (default `30000` milliseconds) that allows you to set after how long (based on entity creation time in milliseconds) an entity should be blocked from a `REQUEST_CONTROL_EVENT`. This will only apply to filter request control modes [1 and 3](#svfilterrequestcontrol-mode), which are detailed under `sv_filterRequestControl` in this page.<br>
+A console variable (default `30000` milliseconds) that allows you to set after how long (based on entity creation time in milliseconds) an entity should be blocked from a `REQUEST_CONTROL_EVENT`. This will only apply to filter request control modes [1 and 3](#svfilterrequestcontrol-mode), which are detailed under `sv_filterRequestControl` in this page.
 
 {{% alert color="warning" %}}
 The **time** argument must be provided in milliseconds for this to work correctly.

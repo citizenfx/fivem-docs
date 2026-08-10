@@ -4,7 +4,8 @@ title: registerMessageHook
 
 ## About
 
-Using this export allows you to add message hooks to your chat that can modify and cancel chat messages.<br>
+Using this export allows you to add message hooks to your chat that can modify and cancel chat messages.
+
 outMessage structure:
 
 ```lua
