@@ -68,7 +68,7 @@ Usage: `cl_drawperf <true|false>`
 
 Will force the client to close immediately.
 
-### quit [reason]
+### quit \[reason\]
 
 Will force the client to close immediately, specifying a quit reason to the server.
 

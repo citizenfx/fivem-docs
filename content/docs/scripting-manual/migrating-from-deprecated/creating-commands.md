@@ -35,7 +35,7 @@ end
 
 ## RegisterCommand
 
-It is recommended to **always** use this (and not `chatMessage`!) as it allows for the use of the integrated ACL system, and other core functionality (automatic completion, console usage, ...). This native consists of 3 parameters (`commandName`[string], `handler`[func] and `restricted`[boolean]).
+It is recommended to **always** use this (and not `chatMessage`!) as it allows for the use of the integrated ACL system, and other core functionality (automatic completion, console usage, ...). This native consists of 3 parameters (`commandName`\[string\], `handler`\[func\] and `restricted`\[boolean\]).
 
 ### Example
 

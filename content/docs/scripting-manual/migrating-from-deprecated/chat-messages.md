@@ -7,7 +7,7 @@ Commonly found in tutorials and older resources, the `chatMessage` event is used
 
 ## chatMessage (The deprecated method)
 
-The old `chatMessage` event had 3 parameters (`author`[string], `color`[array] and `text`[string])
+The old `chatMessage` event had 3 parameters (`author`\[string\], `color`\[array\] and `text`\[string\])
 
 ### Example
 
@@ -17,7 +17,7 @@ TriggerEvent("chatMessage", GetPlayerName(PlayerId()), {255, 255, 255}, "Hello, 
 
 ## `chat:addMessage` (The recommended method)
 
-This event has an object parameter which consists of 3 properties (`color`[array], `multiline`[boolean] and `args`[array])
+This event has an object parameter which consists of 3 properties (`color`\[array\], `multiline`\[boolean\] and `args`\[array\])
 
 ### Example
 

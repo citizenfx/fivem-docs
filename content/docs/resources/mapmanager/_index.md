@@ -22,7 +22,7 @@ Mapmanager is an included citizenfx resource that handles map changes, game type
 
 ## Exports
 
-Exports are called using exports["mapmanger"]:exportname(args)
+Exports are called using `exports["mapmanger"]:exportname(args)`
 
 ### getCurrentGameType
 

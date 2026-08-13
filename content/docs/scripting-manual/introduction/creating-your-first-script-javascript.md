@@ -51,7 +51,7 @@ Finally, the `client_script` indicates to the scripting runtime that the client 
 
 Finally, we should make a file called `mymode_client.js` in the `mymode` resource folder thing.
 
-To learn more about resource manifest files, take a look at the [resource manifest reference][manifest-reference].
+To learn more about resource manifest files, take a look at the [resource manifest reference](/docs/scripting-reference/resource-manifest/).
 
 ### Writing code
 

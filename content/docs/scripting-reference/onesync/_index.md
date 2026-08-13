@@ -219,7 +219,7 @@ Example use cases include:
 - Session/party systems
 - 'Character screen' being instanced differently from gameplay going on
 
-Example use cases do explicitly not include interiors. Interiors should be using the traditional 'conceal' native functions, or the future support for 3D-scoped routing policy, which will also allow specifying any 'instanced' zone for MMO-style servers so a server can have a map area 'dedicated' to a player/party on a mission but still be able to see everything going on outside that zone. [[source]](https://cookbook.fivem.net/2020/11/27/routing-buckets-split-game-state/)
+Example use cases do explicitly not include interiors. Interiors should be using the traditional 'conceal' native functions, or the future support for 3D-scoped routing policy, which will also allow specifying any 'instanced' zone for MMO-style servers so a server can have a map area 'dedicated' to a player/party on a mission but still be able to see everything going on outside that zone. [\[source\]](https://cookbook.fivem.net/2020/11/27/routing-buckets-split-game-state/)
 
 Each bucket can have different rules, these are named 'lockdown modes' and they are described down below:
 

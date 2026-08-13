@@ -274,7 +274,7 @@ The valid constraint types are as follows:
 
 | Type      | Requirement                                         | Values                                           |
 | --------- | --------------------------------------------------- | ------------------------------------------------ |
-| server    | A minimum server version (build >= [arg])           | Any number.                                      |
+| server    | A minimum server version (build >= \[arg\])         | Any number.                                      |
 | policy    | A specific policy being granted.                    | subdir_file_mapping ('clothing support'), others |
 | onesync   | State awareness not being disabled.                 | No value.                                        |
 | gameBuild | Game build being set to at least this build.        | The same values as sv_enforceGameBuild.          |
