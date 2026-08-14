@@ -46,6 +46,3 @@ end)
 ```lua
 TriggerClientEvent('eventName', playerId, 'Hello world!')
 ```
-
-[AddEventHandler]: /docs/scripting-reference/runtimes/lua/functions/AddEventHandler/
-[RegisterNetEvent]: /docs/scripting-reference/runtimes/lua/functions/RegisterNetEvent/

@@ -77,7 +77,7 @@ TriggerLatentServerEvent("eventName", bps, eventParam1, eventParam2);
 TriggerLatentServerEvent("eventName", bps, eventParam1, eventParam2);
 ```
 
-----------
+---
 
 ## Triggering client events
 

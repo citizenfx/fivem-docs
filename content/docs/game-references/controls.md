@@ -6,7 +6,7 @@ title: Controls
 
 ### Lua
 
-``` lua
+```lua
 -- checks if INPUT_CONTEXT has just been released
 if IsControlJustReleased(0--[[control type]],  51--[[control index]]) then
     -- run code here
@@ -15,7 +15,7 @@ end
 
 ### C#
 
-``` csharp
+```csharp
 // checks if INPUT_CONTEXT has just been released
 // assumes `using static CitizenFX.Core.API;`
 if(IsControlJustReleased(0, 51))

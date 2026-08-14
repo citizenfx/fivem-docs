@@ -19,8 +19,10 @@ Starts the resource specified in the argument, if it was stopped. It is also pos
 
 Example:
 
-    start lambda-menu
-    start [cars]
+```
+start lambda-menu
+start [cars]
+```
 
 ### `stop [resourceName]`
 
@@ -28,7 +30,9 @@ Stops the resource specified in the argument, if it was started. As with `start`
 
 Example:
 
-    stop mymode
+```
+stop mymode
+```
 
 ### `ensure [resourceName]`
 
@@ -38,7 +42,9 @@ As with `start` and `stop`, you can also specify a category name.
 
 Example:
 
-    ensure my-testing-resource
+```
+ensure my-testing-resource
+```
 
 ### `restart [resourceName]`
 
@@ -46,7 +52,9 @@ Restarts the resource specified in the argument, if it was started. Also support
 
 Example:
 
-    restart lambda-menu
+```
+restart lambda-menu
+```
 
 ### `refresh`
 
@@ -54,7 +62,9 @@ Rescans the *resources* folder and loads all resource manifests in them, also ma
 
 Example:
 
-    refresh
+```
+refresh
+```
 
 ## Global commands
 
@@ -66,8 +76,10 @@ Commonly seen as `FXServer.exe +exec server.cfg`.
 
 Example:
 
-    exec server_nested.cfg
-    exec @vMenu/config/permissions.cfg
+```
+exec server_nested.cfg
+exec @vMenu/config/permissions.cfg
+```
 
 ### `quit`
 
@@ -79,7 +91,9 @@ Exits the server, also sending the specified reason to all connected players.
 
 Example:
 
-    quit "Restarting - will be back soon!"
+```
+quit "Restarting - will be back soon!"
+```
 
 ## Management commands
 
@@ -91,7 +105,9 @@ Shows a list of players with their primary identifier, server ID, name, endpoint
 
 Example:
 
-    status
+```
+status
+```
 
 ### `clientkick [id] [reason]`
 
@@ -101,7 +117,9 @@ Kicks the client with the specified server ID (as seen in [status](#status)) fro
 
 Example:
 
-    clientkick 43 You're a superstitious idiot!
+```
+clientkick 43 You're a superstitious idiot!
+```
 
 ### `say [message]`
 
@@ -111,7 +129,9 @@ Sends a message in the chat as *console*.
 
 Example:
 
-    say Hi, everybody!
+```
+say Hi, everybody!
+```
 
 ### `svgui`
 
@@ -125,7 +145,9 @@ Defines the game to run the server for.
 
 Example:
 
-    FXServer.exe +set gamename rdr3
+```
+FXServer.exe +set gamename rdr3
+```
 
 #### Supported games
 
@@ -187,9 +209,11 @@ Selects a game build for clients to use. This can only be specified at startup, 
 
 Example:
 
-    sv_enforceGameBuild h4
-    sv_enforceGameBuild mptuner
-    sv_enforceGameBuild 3407
+```
+sv_enforceGameBuild h4
+sv_enforceGameBuild mptuner
+sv_enforceGameBuild 3407
+```
 
 Every build includes all content and changes from the builds before.
 
@@ -270,7 +294,7 @@ A string variable that sets the license key for this server. Get one at [portal.
 A boolean variable (default `false`). Set to `true` to allow clients with Script Hook V to connect.
 
 {{% alert color="warning" %}}
-Not recommended — makes the server vulnerable to security issues.
+Not recommended - makes the server vulnerable to security issues.
 {{% /alert %}}
 
 ### `sv_endpoints [endpoints]`
@@ -291,7 +315,7 @@ A boolean variable (default `true`) that enables reassembly of large network eve
 
 ### `sv_netEventReassemblyMaxPendingEvents [count]`
 
-An integer variable (default `100`) defining the maximum pending reassembled network events per client (0–254). Increase to allow more concurrent large events, or decrease to limit memory usage.
+An integer variable (default `100`) defining the maximum pending reassembled network events per client (0-254). Increase to allow more concurrent large events, or decrease to limit memory usage.
 
 ### `sv_netEventReassemblyUnlimitedPendingEvents [true|false]`
 
@@ -801,7 +825,7 @@ A boolean variable (default `false`) that controls whether voice chat is enabled
 A boolean variable (default `false`) that enables the legacy Mumble compatibility API.
 
 {{% alert color="warning" %}}
-**Deprecated** — less secure than the new server Voice API. See the [Voice Server](/docs/scripting-manual/voice/) documentation.
+**Deprecated** - less secure than the new server Voice API. See the [Voice Server](/docs/scripting-manual/voice/) documentation.
 {{% /alert %}}
 
 ### OneSync

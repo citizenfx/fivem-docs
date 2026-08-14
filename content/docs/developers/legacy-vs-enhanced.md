@@ -22,8 +22,8 @@ This page covers what's changed for server owners and resource developers moving
 | Server ImGui GUI                   | Removed                                                                                                                                                                                                                                                                                            |
 | `+set moo 31337` developer command | Was used in Gen8 to enable devmode; removed. Client dev tools now only work when `sv_devMode true` is set on the server. Dev mode can also be set via the connection deferral handover.                                                                                                            |
 | `sv_useAccurateSends`              | Deprecated (see `sv_syncTickRate` below)                                                                                                                                                                                                                                                           |
-| `-cl2` parameter                   | Deprecated. Check the [running-two-fivem-clients](https://docs.fivem.net/docs/client-manual/running-two-fivem-clients/) article for more information.                                                                                                                                              |
-| Mumble                             | Deprecated. Check the [voice](https://docs.fivem.net/docs/scripting-manual/voice/) article for more information.                                                                                                                                                                                   |
+| `-cl2` parameter                   | Deprecated. Check the [running-two-fivem-clients](/docs/client-manual/running-two-fivem-clients/) article for more information.                                                                                                                                                                    |
+| Mumble                             | Deprecated. Check the [voice](/docs/scripting-manual/voice/) article for more information.                                                                                                                                                                                                         |
 
 ---
 
@@ -160,7 +160,7 @@ Tick rate for the sync thread. Higher values can reduce latency but increase CPU
   - *Dummy objects:* objects on the map which are created dynamically from clients.
 - In **relaxed** lockdown mode, population entities can only be spawned if the world grid is owned by the player.
 
-For more information on lockdown modes, see [Entity lockdown](https://docs.fivem.net/docs/scripting-reference/onesync/#entity-lockdown) and the [SetRoutingBucketEntityLockdownMode](https://docs.fivem.net/natives/?_0xA0F2201F) native.
+For more information on lockdown modes, see [Entity lockdown](/docs/scripting-reference/onesync/#entity-lockdown) and the [SetRoutingBucketEntityLockdownMode](/natives/?_0xA0F2201F) native.
 
 ---
 
@@ -177,7 +177,7 @@ FiveM for GTAV Enhanced currently supports only the latest gamebuild (The Kortz 
 This gamebuild is loaded by default if no other gamebuild is specified.
 If you wish to load the base game without any DLCs you can do so by setting `sv_enforceGameBuild 1` in the server.cfg.
 
-For more information on gamebuilds, see [Gamebuilds](https://docs.fivem.net/docs/server-manual/server-commands/#sv_enforcegamebuild-build).
+For more information on gamebuilds, see [Gamebuilds](/docs/server-manual/server-commands/#sv_enforcegamebuild-build).
 
 ### File Name Changes
 

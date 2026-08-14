@@ -38,6 +38,5 @@ This section will explain how to create useful debugging dumps (called .dmp file
 You can now analyze the dump file (using VS2019+, click 'Debug with Native Only' and load [symbols][symbols]) or supply it to whomever requested it. If you are certain you have found a bug, report it on our [forum](https://forum.cfx.re/c/general-discussion/bug-reports) with as much detail as possible. Using OneSync? Please report OneSync bugs [here](https://forum.cfx.re/c/general-discussion/1s-reports).
 
 [procdump]: https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
-[discord]: https://discord.gg/fivem
 [dropmefiles]: https://dropmefiles.com/
 [symbols]: https://runtime.fivem.net/client/symbols/

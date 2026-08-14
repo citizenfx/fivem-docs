@@ -27,6 +27,6 @@ A Cfx account is needed in order to set up your server at a later point.
 2. Enter your **email, username, and password**, then click **Sign up**.
 3. Check your email inbox for a confirmation message and follow the link to activate your Cfx account.
 
-
 Once confirmed, you'll be automatically signed in and ready to go. Your Cfx account is created.
+
 {{% article-nav %}}

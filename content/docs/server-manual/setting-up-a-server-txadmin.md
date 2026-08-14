@@ -17,7 +17,7 @@ description: >
 
 {{% alert color="warning" %}}If you are setting up a **FiveM for GTAV Enhanced** server, the [Microsoft Visual C++ 2017 Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) must be installed. Download and install it before running the server.{{% /alert %}}
 
-1. Open the [Server Download](https://docs.fivem.net/docs/server-download) page.
+1. Open the [Server Download](/docs/server-download) page.
 2. Download the recommended build.\
    ![pic](/server-setup/windows-step-2.png)
 3. Open the `server.7z` you just downloaded. Use any third-party archiving tool (such as [7-Zip][7zip] or [WinRAR][winrar]) to open the `.7z` file. \
@@ -62,10 +62,6 @@ description: >
 #### Troubleshooting
 
 If you're facing slow server startups, refer to [this][slow-server-startups].
-
-[server-data]: https://github.com/citizenfx/cfx-server-data
-
-[vcredist]: https://aka.ms/vs/16/release/VC_redist.x64.exe
 
 [winrar]: https://www.rarlab.com/download.htm
 [7zip]: https://www.7-zip.org/download.html

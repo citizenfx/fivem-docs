@@ -58,7 +58,7 @@ Only the **second** FiveM shortcut needs to be modified.
 2. Wait until it fully loads
 3. Start **FiveM - Client 2**
 
-You’re now ready to run two FiveM clients simultaneously.
+You're now ready to run two FiveM clients simultaneously.
 
 ## Running Two FiveM for GTAV Enhanced Clients
 

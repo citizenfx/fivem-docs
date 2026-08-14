@@ -16,7 +16,7 @@ weight: 50
 
 1. Open the CodeWalker World View, navigate to the right-side panel, and in the top-left go to the 'Selection' tab to change from Entity to Collision.
 2. Find the collisions you want to edit and copy the .ybn filename when selecting the collision.
-3. Go to Tools → RPF Explorer and export the .ybn as XML.
+3. Go to Tools -> RPF Explorer and export the .ybn as XML.
 4. Import the XML into Blender.
 5. Make any edits you wish, then export the .ybn file.
 6. If you wish to add new collision objects, position them in **World Coordinates** and create a new collision material for each mesh object.

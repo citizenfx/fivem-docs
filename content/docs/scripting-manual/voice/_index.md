@@ -449,7 +449,7 @@ SetPlayerDeafInVoiceChannel(int channelID, int clientID, bool deaf)
 
 Sets the **deaf** state for a client in a channel. A deaf client **can speak but cannot hear**.
 
-`muted` and `deaf` can be combined — a client that is both is in the channel but cannot hear or speak. If the state already matches the requested value, nothing happens.
+`muted` and `deaf` can be combined - a client that is both is in the channel but cannot hear or speak. If the state already matches the requested value, nothing happens.
 
 ```lua
 SetPlayerDeafInVoiceChannel(radioChannel, source, true)

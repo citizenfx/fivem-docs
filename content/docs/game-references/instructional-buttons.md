@@ -8,7 +8,7 @@ title: Instructional Buttons
 
 ### Lua
 
-``` lua
+```lua
 CreateThread(function()
     -- Request the buttons GFX to be loaded
     local ButtonsHandle = RequestScaleformMovie('INSTRUCTIONAL_BUTTONS')
@@ -62,7 +62,7 @@ end)
 
 ### Lua
 
-``` lua
+```lua
 CreateThread(function()
     -- Request the buttons GFX to be loaded
     -- Note: RequestScaleformMovieInstance prevents the buttons being stretched on wide-screen

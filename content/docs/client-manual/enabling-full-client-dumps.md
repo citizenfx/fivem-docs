@@ -31,7 +31,7 @@ To enable full dumps:
 
 ### Compressing the Dump
 
-Use WinRAR, 7-Zip, or Windows "Send to → Compressed folder" to zip the dump file.
+Use WinRAR, 7-Zip, or Windows "Send to -> Compressed folder" to zip the dump file.
 The compressed file will usually be 1-2 GB.
 
 ### Disabling Dumps

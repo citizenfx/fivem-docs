@@ -96,8 +96,6 @@ For all other inquiries, feel free to join our [Discord][discord] for a chat!
 
 [where-is-fivem-installed]: https://support.cfx.re/hc/en-us/articles/8016397932444-Client-FAQ#where-is-fivem-installed
 [antivirus-ticket]: https://support.cfx.re/hc/en-us/requests/new
-[email]: mailto:support@fivem.net
-[forum]: https://forum.cfx.re
 [forum-tech-support]: https://forum.cfx.re/c/technical-support
 [discord]: https://discord.gg/fivem
 [testing-server]: https://cfx.re/join/y4lg95

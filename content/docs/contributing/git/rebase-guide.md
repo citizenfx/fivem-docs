@@ -171,7 +171,7 @@ Last but not least, you may see the commit history by opening up the terminal an
 
 You can open the terminal by going to the topmost menu bar, clicking on `Terminal`, proceeded by `New Terminal`.
 
-> Hint: You may also open the terminal by using its hotkey ````CTRL + SHIFT + ` ````. The last key is backtick for users with a different keyboard layout.
+> Hint: You may also open the terminal by using its hotkey ``CTRL + SHIFT + ` ``. The last key is backtick for users with a different keyboard layout.
 
 ![image](/contributing/git/rebase-guide/visual-studio-code-log-terminal.png)
 

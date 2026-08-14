@@ -7,11 +7,11 @@ Inside the GTAV Ped drawable components and props are stored in named groups cal
 
 The new set of natives allows accessing drawable components and props through collections. The collection-based indexes remain stable after TUs. **So using these natives will simplify all future TU updates for a server.**
 
-    Note: The new natives are currently available for GTAV and on client side only.
+> The new natives are currently available for GTAV and on client side only.
 
 ## How drawable components and props indexing works
 
-    Note: Drawable components and props are stored in Ped in the same way. Below we will refer to drawable components / drawables only.
+> Drawable components and props are stored in Ped in the same way. Below we will refer to drawable components / drawables only.
 
 You can think of collections in Ped as list of buckets placed one after another. Each collection is named and contains multiple drawables.
 

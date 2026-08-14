@@ -92,7 +92,7 @@ local convarValue = GetConvar("convar_name", "Default convar value.")
 
 ## Server information convars
 
-These convars will act like 'standard' convars, however their name and value will appear on the server connect details/info page, on the server list, and will be exposed in the ``http://<server_ip>:<server_port>/info.json`` server info file.
+These convars will act like 'standard' convars, however their name and value will appear on the server connect details/info page, on the server list, and will be exposed in the `http://<server_ip>:<server_port>/info.json` server info file.
 
 ### Using commands
 

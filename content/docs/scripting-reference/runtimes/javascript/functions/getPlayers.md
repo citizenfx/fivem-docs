@@ -2,7 +2,7 @@
 title: getPlayers
 ---
 
-Returns an array of all connected players (server ID's) **as strings**. Equivalent to [GetPlayers()](https://docs.fivem.net/docs/scripting-reference/runtimes/lua/functions/GetPlayers/) in Lua.
+Returns an array of all connected players (server ID's) **as strings**. Equivalent to [GetPlayers()](/docs/scripting-reference/runtimes/lua/functions/GetPlayers/) in Lua.
 
 ## Syntax
 

@@ -27,10 +27,10 @@ If your server logs show an error indicating it could not contact the FiveM serv
 
 ### Resolving the issue
 
-1. **Restart your Server** — this can resolve transient networking issues.
-2. **Verify port forwarding and firewall rules** — make sure the required ports are forwarded correctly and not blocked by your firewall.
-3. **Allow all Cfx IP addresses** — if you use DDoS protection, custom firewall rules, or any resources/anti-cheat options that whitelist Cfx IP addresses, update them to include **all** addresses listed at [https://static.cfx.re/ips.txt](https://static.cfx.re/ips.txt).
-4. **Localhost servers** — if you are running a local development server, add the following to your server configuration:
+1. **Restart your Server** - this can resolve transient networking issues.
+2. **Verify port forwarding and firewall rules** - make sure the required ports are forwarded correctly and not blocked by your firewall.
+3. **Allow all Cfx IP addresses** - if you use DDoS protection, custom firewall rules, or any resources/anti-cheat options that whitelist Cfx IP addresses, update them to include **all** addresses listed at [https://static.cfx.re/ips.txt](https://static.cfx.re/ips.txt).
+4. **Localhost servers** - if you are running a local development server, add the following to your server configuration:
    ```cfg
    sv_master1 ""
    ```

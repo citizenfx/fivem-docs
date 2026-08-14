@@ -12,7 +12,7 @@ description: >
 
 For example:
 
-``` lua
+```lua
 server_script "my_script.lua" -- load script
 server_script "my_lib.net.dll" -- load a particular assembly into the .net appdomain
 server_script "@resource_name/script.lua" -- load a script from another resource
@@ -20,13 +20,13 @@ server_script "@resource_name/script.lua" -- load a script from another resource
 
 To load files at runtime, you can use {{% native_link "LOAD_RESOURCE_FILE" %}} (`LoadResourceFile("resource_name", "file_name")`), and for example if it is a Lua file you can use
 
-``` lua
+```lua
 load(...)
 ```
 
 to load the Lua code, like in the following example:
 
-``` lua
+```lua
 function loadLuaFile(resource, file)
     return load(LoadResourceFile(resource, file), file)()
 end
@@ -36,7 +36,7 @@ end
 
 `str:Split` does not exist anymore, you should use the proper Lua functions for this. For the commonly copy-pasted `stringsplit` function, this would be:
 
-``` lua
+```lua
 function stringsplit(inputstr, sep)
     if sep == nil then
         sep = "%s"

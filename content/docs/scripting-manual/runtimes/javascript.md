@@ -23,7 +23,7 @@ For automatic completion of the FiveM API methods and mapped native functions we
 
 Example:
 
-``` js
+```js
 // The native command PLAYER_PED_ID translates to the following:
 PlayerPedId();
 ```

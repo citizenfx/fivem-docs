@@ -102,4 +102,4 @@ In this example, the `updatePlayerScore` function is defined and used directly a
 1. **Minimal Data Passing**: Sending data via events has msgpack serialization overhead when sending **AND** when receiving, you should try to keep your data types as simple and as small as possible so you don't send a bunch of unneeded data.
 2. **Check your data**: ***Never, ever*** trust data from the client, you should always try to verify the data that the client sends. If at all possible you should try to do as much of your logic server-side so the client cannot manipulate it.
 
-You can find common examples in the [security guidelines](/docs/developers/server-security)
+You can find common examples in the [security guidelines](/docs/developers/server-security/)

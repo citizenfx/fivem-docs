@@ -49,7 +49,7 @@ For each component you can: show/hide, change opacity, change color.
 
 For a more complete example, see the stock `playernames` resource included in the server package, or the documentation for the resource.
 
-``` lua
+```lua
 local mpGamerTags = {}
 
 for i = 0, 255 do
@@ -83,7 +83,7 @@ end
 
 ### Lua
 
-``` lua
+```lua
 -- Create gamer info
 local gamerTagId = CreateMpGamerTagWithCrewColor(
   ped, -- Ped to which gamer info will be assigned
@@ -100,7 +100,7 @@ local gamerTagId = CreateMpGamerTagWithCrewColor(
 
 ### C\#
 
-``` csharp
+```csharp
 // Create gamer info
 // assuming using static CitizenFX.Core.API;
 int gamerTagId = CreateMpGamerTagWithCrewColor(
@@ -120,7 +120,7 @@ int gamerTagId = CreateMpGamerTagWithCrewColor(
 
 ### Lua
 
-``` lua
+```lua
 -- Toggle components
 SetMpGamerTagVisibility(
   gamerTagId,
@@ -131,7 +131,7 @@ SetMpGamerTagVisibility(
 
 ### C\#
 
-``` csharp
+```csharp
 // Toggle flags
 SetMpGamerTagVisibility(
   gamerTagId,
@@ -144,7 +144,7 @@ SetMpGamerTagVisibility(
 
 ### Lua
 
-``` lua
+```lua
 -- Change component color
 SetMpGamerTagColour(
   gamerTagId,
@@ -155,7 +155,7 @@ SetMpGamerTagColour(
 
 ### C\#
 
-``` csharp
+```csharp
 // Change component color
 Function.Call(
   (Hash)0x613ED644950626AE,
@@ -169,7 +169,7 @@ Function.Call(
 
 ### Lua
 
-``` lua
+```lua
 -- Change component opacity
 SetMpGamerTagAlpha(
   gamerTagId,
@@ -180,7 +180,7 @@ SetMpGamerTagAlpha(
 
 ### C\#
 
-``` csharp
+```csharp
 // Changes flag opacity
 Function.Call(
   (Hash)0xD48FE545CD46F857,
@@ -198,7 +198,7 @@ For the **WantedStar** flag you can set number that will be shown inside of star
 
 ### Lua
 
-``` lua
+```lua
 -- Set the number that will be set inside the wanted star icon
 SetMpGamerTagWantedLevel(
   gamerTagId,
@@ -208,7 +208,7 @@ SetMpGamerTagWantedLevel(
 
 ### C\#
 
-``` csharp
+```csharp
 // Set the number that will be set inside the wanted star icon
 Function.Call(
   Hash._SET_HEAD_DISPLAY_WANTED,
@@ -223,7 +223,7 @@ Health bar has 0 opacity by default. Color of health bar changes using its own n
 
 ### Lua
 
-``` lua
+```lua
 -- Change health bar color
 SetMpGamerTagHealthBarColour(
   gamerTagId,
@@ -233,7 +233,7 @@ SetMpGamerTagHealthBarColour(
 
 ### C\#
 
-``` csharp
+```csharp
 // Change health bar color
 Function.Call(
   (Hash)0x3158C77A7E888AB4,

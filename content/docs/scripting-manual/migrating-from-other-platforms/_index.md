@@ -34,11 +34,11 @@ SetVehicleColours(vehicle, 4, 3)
 If you do want to create entities server-side, or entites for which no players are nearby, you have to use a server setter native:
 
 - CREATE_AUTOMOBILE (deprecated)
-- [CREATE_VEHICLE_SERVER_SETTER](https://docs.fivem.net/natives/?_0x6AE51D4B)
-- [CREATE_PED](https://docs.fivem.net/natives/?_0x389EF71)
-- [CREATE_OBJECT_NO_OFFSET](https://docs.fivem.net/natives/?_0x58040420)
+- [CREATE_VEHICLE_SERVER_SETTER](/natives/?_0x6AE51D4B)
+- [CREATE_PED](/natives/?_0x389EF71)
+- [CREATE_OBJECT_NO_OFFSET](/natives/?_0x58040420)
 
-Each of these natives immediately and guaranteed registers an entity with the server, but the entity is initially "orphaned" - it will not be simulated nor exist in the game world until a suitable client is within scope. When entities are orphaned, [NETWORK_GET_ENTITY_OWNER](https://docs.fivem.net/natives/?_0x526FEE31) will return -1. While an entity is orphaned, server RPC natives like [SET_VEHICLE_COLOURS](https://docs.fivem.net/natives/?_0x57F24253) **will not** work, but simple server-side getters like [GET_VEHICLE_COLOURS](https://docs.fivem.net/natives/?_0x40D82D88) will.
+Each of these natives immediately and guaranteed registers an entity with the server, but the entity is initially "orphaned" - it will not be simulated nor exist in the game world until a suitable client is within scope. When entities are orphaned, [NETWORK_GET_ENTITY_OWNER](/natives/?_0x526FEE31) will return -1. While an entity is orphaned, server RPC natives like [SET_VEHICLE_COLOURS](/natives/?_0x57F24253) **will not** work, but simple server-side getters like [GET_VEHICLE_COLOURS](/natives/?_0x40D82D88) will.
 
 A common pattern is to create the vehicle with a server setter, and set an initialization statebag, which is then handled client-side when a client takes ownership of the entity.
 
@@ -78,13 +78,13 @@ AddStateBagChangeHandler("initVehicle", nil, function(bagName, key, value)
 end)
 ```
 
-{{% alert color="warning" title="Server Setters Reliablity Issues" %}} Currently, in rare cases it's possible that the ownership of the entity changes after the state bag handler is done executing but before the CVehicleAppearanceDataNode is synced to the server. In these cases, the changes made in the state bag handler will not apply. It is highly recommended that you have a mechanism to check if the changes applied server-side (for example checking [GET_VEHICLE_COLOURS](https://docs.fivem.net/natives/?_0x40D82D88)) and to recreate the vehicle if they fail to apply after a certain amount of time. {{% /alert %}}
+{{% alert color="warning" title="Server Setters Reliablity Issues" %}} Currently, in rare cases it's possible that the ownership of the entity changes after the state bag handler is done executing but before the CVehicleAppearanceDataNode is synced to the server. In these cases, the changes made in the state bag handler will not apply. It is highly recommended that you have a mechanism to check if the changes applied server-side (for example checking [GET_VEHICLE_COLOURS](/natives/?_0x40D82D88)) and to recreate the vehicle if they fail to apply after a certain amount of time. {{% /alert %}}
 
 ## Colshape system
 
 A "colshape" system lets you trigger interactions when a player enters a defined region, such as a polygon, square, or sphere.
 
-FiveM for GTAV Enhanced has this built in. For details, see the [Native Reference](https://docs.fivem.net/natives/) and search for "Colshape".
+FiveM for GTAV Enhanced has this built in. For details, see the [Native Reference](/natives/) and search for "Colshape".
 
 FiveM for GTAV Legacy does not include one, so you'll need to implement the logic yourself (for example, by checking player positions against regions) or use an existing resource like [PolyZone](https://github.com/mkafrin/PolyZone) or [ox_lib's Zones system](https://overextended.dev/ox_lib/Modules/Zones/Shared).
 
@@ -198,7 +198,7 @@ Most entity APIs are exposed as native functions. Custom helper functions can ex
 
 ## Entity identifiers
 
-There are three common [entity identifier types](docs/scripting-manual/networking/ids/) to keep in mind:
+There are three common [entity identifier types](/docs/scripting-manual/networking/ids/) to keep in mind:
 
 - **Handles**: local identifiers that are not synchronized between client and server.
 - **PlayerIds**: unique identifiers for connected players. Players also have ped entity IDs that are synchronized between client and server.
@@ -216,7 +216,7 @@ txAdmin is optional but commonly used for administration and automation. See the
 
 FiveM provides persistent storage through KVP natives. This key-value store supports floats, strings, and integers, and is available on both the client and the server.
 
-Search the [Native Reference](https://docs.fivem.net/natives/) for `kvp` natives.
+Search the [Native Reference](/natives/) for `kvp` natives.
 
 ## Networked entities and lockdown mode
 
@@ -224,7 +224,7 @@ Entities marked as networked in their creation parameters are synchronized by th
 
 To prevent clients from creating synchronized entities, you can enable the strict [entity lockdown mode](/docs/scripting-reference/onesync/#entity-lockdown).
 
-The server can also intercept entity creation by canceling the `entityCreating` event, and if you need to prevent an entity from being deleted on the client, you can use [SET_ENTITY_ORPHAN_MODE](https://docs.fivem.net/natives/?_0x489E9162).
+The server can also intercept entity creation by canceling the `entityCreating` event, and if you need to prevent an entity from being deleted on the client, you can use [SET_ENTITY_ORPHAN_MODE](/natives/?_0x489E9162).
 
 ## disableOutgoingSync
 
@@ -257,12 +257,12 @@ Below are useful community pages for FiveM. Use these to ask questions, find res
 Below are useful documentation pages on the official Cfx docs. Use these to look up natives, server variables, events and feature-specific guides mentioned in this document.
 
 - State bags: [State Bags documentation](/docs/scripting-manual/networking/state-bags/)
-- Native reference (search for natives like `SetEntityOrphanMode`, `GetPlayerIdentifiers`, `SetEntityDistanceCullingRadius`, etc.): [Native Reference](https://docs.fivem.net/natives/)
+- Native reference (search for natives like `SetEntityOrphanMode`, `GetPlayerIdentifiers`, `SetEntityDistanceCullingRadius`, etc.): [Native Reference](/natives/)
 - Sandbox (resource filesystem sandboxing): [Sandbox documentation](/docs/developers/sandbox/)
 - Server commands: [Server Commands](/docs/server-manual/server-commands/)
 - Server variables (`sv_*` settings, e.g. `sv_filterRequestControl`): [Convars](/docs/scripting-reference/convars/)
 - Events and event lifecycle (includes `entityCreating`): [Events](/docs/scripting-reference/events/)
-- KVP / persistent storage: [Native Reference](https://docs.fivem.net/natives/) (search for `kvp`)
+- KVP / persistent storage: [Native Reference](/natives/) (search for `kvp`)
 - Voice / Mumble integration: [Voice documentation](/docs/scripting-manual/voice/)
 - txAdmin (administration tool): [txAdmin documentation](/docs/resources/txAdmin/)
 - [AvarianKnight/Zumble](https://github.com/AvarianKnight/rust-mumble)

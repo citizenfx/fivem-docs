@@ -28,10 +28,7 @@ If you haven't done so yet, register a free license key on the [Cfx Portal](http
 [server-issues]: /docs/support/server-issues/
 [server-commands]: /docs/server-manual/server-commands/
 [scripting-introduction]: /docs/scripting-manual/introduction/
-
-[fxserver-support]: https://discord.gg/fivem
 [fxserver-support-category]: https://forum.cfx.re/c/server-development/server-discussion
-
 [setting-up-a-server-guides]: /docs/server-manual/setting-up-a-server/#available-guides
 [game-server-hosting-providers]: /docs/server-manual/game-server-hosting-providers/
 [setting-up-a-server-txadmin]: /docs/server-manual/setting-up-a-server-txadmin/

@@ -22,6 +22,4 @@ Welcome to the documentation for the [FiveM][home] modification framework. Use t
 - 📒 There's helpful [🥑 guides](./scripting-reference/) for scripting, [🖌️ 3D asset creation](./assets-manual/) or [👽 a reference](./game-references/) of game-related information.
 
 [home]: https://fivem.net
-[forum]: https://forum.cfx.re
-[discord]: https://discord.gg/fivem
 [server-manual]: ./server-manual/setting-up-a-server
