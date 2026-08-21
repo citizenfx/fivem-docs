@@ -583,13 +583,6 @@ Show the Archetype Tool dev tool.
 Usage: `con_archetypeMonitor <true|false>`\
 Default: `false`
 
-#### con_audioTool
-
-Show the Audio Tool dev tool.
-
-Usage: `con_audioTool <true|false>`\
-Default: `false`
-
 #### con_discordRichPresence
 
 Show the Discord Rich Presence dev tool.
@@ -623,13 +616,6 @@ Default: `false`
 Show the Pool Tool dev tool.
 
 Usage: `con_poolInspector <true|false>`\
-Default: `false`
-
-#### con_smoketest
-
-Show the Smoketest Tool dev tool.
-
-Usage: `con_smoketest <true|false>`\
 Default: `false`
 
 #### con_streamingMonitor
