@@ -646,7 +646,7 @@ Default: `false`
 Enables single-player population features like wildlife or more versatile peds.
 
 Usage: `game_enableAdvancedPopulation <true|false>`\
-Default: `false`\
+Default: `true`\
 Note: This variable can be replicated from the server via `setr` usage.
 
 #### game_enableEnterVehicleFemaleClipset
@@ -662,7 +662,7 @@ Note: This variable can be replicated from the server via `setr` usage.
 Allows petrol to leak from vehicles when their petrol tank is damaged.
 
 Usage: `game_enablePetrolLeakage <true|false>`\
-Default: `false`\
+Default: `true`\
 Note: This variable can be replicated from the server via `setr` usage.
 
 #### game_setDefaultEntityCapLimitToLow
