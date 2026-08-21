@@ -10,6 +10,10 @@ standards including server-sided synchronization states for entities, which we'l
 It's worth mentioning that OneSync is free up to 48 slots, after such, you should get one of the following tiers
 from the [Cfx Portal](https://portal.cfx.re/subscriptions) starting from `FiveM Element Club Argentum 💿`.
 
+{{% alert theme="warning" %}}
+**FiveM for GTAV Enhanced** no longer uses P2P synchronization and has instead switched to a client-server model. OneSync big mode is now the only mode; non-big mode no longer exists. See [What's Changed in FiveM for GTAV Enhanced](/docs/developers/legacy-vs-enhanced/#migration--breaking-changes).
+{{% /alert %}}
+
 ## What is OneSync: Infinity?
 
 - A mode allowing (up to) 2048 players since the recent [commit](https://github.com/citizenfx/fivem/commit/a03eb34c80571ac37cf8d74ca87fa4e646f2e499). There are servers handling 1000+ concurrent players.

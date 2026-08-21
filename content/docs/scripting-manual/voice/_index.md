@@ -5,6 +5,10 @@ weight: 70
 
 FiveM has been using the [mumble](https://www.mumble.info/) client to handle in-game voice communication for a while now, below we will explain how you can use certain mumble natives, including a couple guides to handle submixes and NativeAudio.
 
+{{% alert theme="warning" %}}
+Mumble is deprecated in **FiveM for GTAV Enhanced** and will be removed in a future version. Use the [new server Voice API instead](#fivem-for-gtav-enhanced). For backwards compatibility only, Mumble can be enabled with [`sv_mumble`](/docs/server-manual/server-commands/#sv_mumble-truefalse). See [What's Changed in FiveM for GTAV Enhanced](/docs/developers/legacy-vs-enhanced/#removed-features).
+{{% /alert %}}
+
 ## Console Variables
 
 These variables can be enabled/disabled on the client by pressing `F8` while FiveM is running.

@@ -8,6 +8,10 @@ languages: ['cs']
 
 Before you can create your first C# resource, you'll need to install [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) (the community/free version will work just fine).
 
+{{% alert theme="warning" %}}
+This guide covers the Mono-based C# workflow. **FiveM for GTAV Enhanced** replaces Mono with **.NET**, where the only requirement is a .NET 10 SDK (and optionally an IDE). See [What's Changed in FiveM for GTAV Enhanced](/docs/developers/legacy-vs-enhanced/#mono-to-net).
+{{% /alert %}}
+
 ### Creating your project
 
 1. Open a command window by pressing `Win + R`, type in `cmd` and then press `Enter`. Now you should have a console like the one below:

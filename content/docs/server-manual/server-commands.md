@@ -137,6 +137,10 @@ say Hi, everybody!
 
 Opens or closes the server debug GUI.
 
+{{% alert theme="warning" %}}
+The server debug GUI was removed in **FiveM for GTAV Enhanced**. See [What's Changed in FiveM for GTAV Enhanced](/docs/developers/legacy-vs-enhanced/#server-debug-gui).
+{{% /alert %}}
+
 ## Configuration variables
 
 ### `gamename [game]`
@@ -192,6 +196,10 @@ A boolean variable (default `true`) that adjusts entity state update frequency b
 
 A boolean variable (default `true`) that sends entity state updates based on actual relevance and distance. Disabling may improve performance but reduces sync accuracy.
 
+{{% alert color="warning" %}}
+**Deprecated in FiveM for GTAV Enhanced.** Specify the sync tick rate explicitly with [`sv_syncTickRate`](#sv_synctickrate-rate) instead.
+{{% /alert %}}
+
 ### `sv_entityLockdown [mode]`
 
 A string variable (default `inactive`) controlling how strict the server is about client-created entities.
@@ -216,6 +224,10 @@ sv_enforceGameBuild 3407
 ```
 
 Every build includes all content and changes from the builds before.
+
+{{% alert theme="warning" %}}
+**FiveM for GTAV Enhanced** currently supports only the latest gamebuild (The Kortz Center Heist), which is loaded by default if no other gamebuild is specified. To load the base game without any DLCs, set `sv_enforceGameBuild 1`. The older builds listed below only apply to **FiveM Legacy**. See [What's Changed in FiveM for GTAV Enhanced](/docs/developers/legacy-vs-enhanced/#gamebuilds).
+{{% /alert %}}
 
 **FiveM builds**
 
@@ -510,6 +522,10 @@ A console variable used to prevent users from using modified client files. There
 
 If modified files are installed in the FiveM folder, they will be ignored - if users however modified base game files, they will receive an error message telling them what file is modified.
 
+{{% alert theme="warning" %}}
+In **FiveM for GTAV Enhanced**, pure mode is always enabled and can no longer be turned off. While Enhanced is in early access, graphic mods cannot be used. See [What's Changed in FiveM for GTAV Enhanced](/docs/developers/legacy-vs-enhanced/#pure-mode).
+{{% /alert %}}
+
 ### `sv_enableNetworkedSounds [true|false]`
 
 A boolean console variable that can be used to prevent users from routing `NETWORK_PLAY_SOUND_EVENT` through the server, which is commonly used by malicious actors.
@@ -606,6 +622,10 @@ A string variable that sets the password for Prometheus basic auth on the `/perf
 ### `sv_kvsName [name]`
 
 A string variable (default `default`) defining the name of the KVP database file, stored in the `serverdata:/` folder. Can only be set at startup.
+
+{{% alert theme="warning" %}}
+When moving to **FiveM for GTAV Enhanced**, existing key-value DB files must be migrated. See [What's Changed in FiveM for GTAV Enhanced](/docs/developers/legacy-vs-enhanced/#key-value-db-files).
+{{% /alert %}}
 
 ### `increase_pool_size [poolName] [increase]`
 
@@ -745,6 +765,10 @@ endpoint_add_udp "0.0.0.0:30120"
 
 A real use-case example of this can be found in the [default server.cfg example][servercfg].
 
+{{% alert theme="warning" %}}
+In **FiveM for GTAV Enhanced**, `endpoint_add_udp` supports only a single endpoint instead of multiple endpoints. See [What's Changed in FiveM for GTAV Enhanced](/docs/developers/legacy-vs-enhanced/#endpoints).
+{{% /alert %}}
+
 ### `endpoint_add_tcp [endpoint]`
 
 Adds and binds the provided endpoint. This will create a multiplexable TCP server instance and bind it, the new instance will then be added to the multiplex server instance list. If a primary port isn't set (see [`netPort`](#netport-port)), the one sent by the command parameter will be used.
@@ -756,6 +780,10 @@ endpoint_add_tcp "0.0.0.0:30120"
 ```
 
 A real use-case example of this can be found in the [default server.cfg example][servercfg].
+
+{{% alert theme="warning" %}}
+In **FiveM for GTAV Enhanced**, `endpoint_add_tcp` supports only a single endpoint instead of multiple endpoints. See [What's Changed in FiveM for GTAV Enhanced](/docs/developers/legacy-vs-enhanced/#endpoints).
+{{% /alert %}}
 
 ### `netPort [port]`
 
@@ -829,6 +857,14 @@ An integer variable (default `120000`) that defines the time in milliseconds a c
 #### `sv_pingIntervalMilliseconds [ms]`
 
 An integer variable (default `5000`) that defines how often (in milliseconds) the client sends a ping to keep the connection alive. Lower values detect lost connections faster but increase bandwidth.
+
+#### `sv_resourceFileDownloadTimeout [ms]`
+
+An integer variable (default `120000`, 2 minutes) defining the timeout in milliseconds for downloading resource files over HTTP. If the download does not complete within this time, it will be canceled.
+
+#### `sv_syncTickRate [rate]`
+
+An integer variable (default `60`, range `1-120`) defining the tick rate for the sync thread. Higher values can reduce latency but increase CPU usage. This replaces the deprecated [`sv_useAccurateSends`](#sv_useaccuratesends-truefalse) variable.
 
 ### Voice
 
@@ -949,15 +985,5 @@ Prints a replay id that can be passed to `replay_stop`.
 #### `replay_stop [replayId]`
 
 Stops the replay with the given replay ID (as returned by `replay_start`).
-
-### Deprecated & compatibility variables
-
-The following variables exist only for backward compatibility and have no effect:
-
-| Variable                   | Type | Default | Notes                                             |
-| -------------------------- | ---- | ------- | ------------------------------------------------- |
-| `onesync_enableBeyond`     | bool | `false` | Not necessary anymore.                            |
-| `sv_enhancedHostSupport`   | bool | `false` | Not used anymore (P2P).                           |
-| `sv_protectServerEntities` | bool | `false` | Not implemented. Use `sv_entityLockdown` instead. |
 
 [servercfg]: /docs/server-manual/setting-up-a-server-vanilla/#servercfg

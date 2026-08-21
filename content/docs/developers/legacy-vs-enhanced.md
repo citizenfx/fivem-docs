@@ -18,7 +18,7 @@ This page covers what's changed for server owners and resource developers moving
 | ARQ (`onesync_automaticResend`)    | Previously defaulted to `false`; now removed entirely                                                                                                                                                                                                                                              |
 | Asset Escrow                       | Not implemented yet                                                                                                                                                                                                                                                                                |
 | `sv_netHttp2`                      | HTTP/2 support removed                                                                                                                                                                                                                                                                             |
-| Server ImGui GUI                   | Removed                                                                                                                                                                                                                                                                                            |
+| Server debug GUI (`svgui`)         | Removed                                                                                                                                                                                                                                                                                            |
 | `+set moo 31337` developer command | Was used in FiveM Legacy to enable devmode; removed. Use [`sv_devMode true`](#developer-mode) instead.                                                                                                                                                                                             |
 | `sv_useAccurateSends`              | Deprecated (see `sv_syncTickRate` below)                                                                                                                                                                                                                                                           |
 | `-cl2` parameter                   | Deprecated. Check the [running-two-fivem-clients](/docs/client-manual/running-two-fivem-clients/) article for more information.                                                                                                                                                                    |
@@ -73,7 +73,7 @@ This behaviour is subject to change in the future, but for now it is a breaking 
 #### Key-Value DB Files
 
 Key-value DB files **must be migrated**.
-We will provide a migration script to assist with this process.
+The [kvdb-migrator](https://github.com/citizenfx/kvdb-migrator/) tool can be used to assist with this process.
 
 #### Remote Commands
 

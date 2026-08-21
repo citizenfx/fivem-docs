@@ -163,6 +163,10 @@ This type of developer mode can be enabled in a few ways:
 2. Running the client on a non-production update channel (such as Beta or Latest). Note that other update channels may
    be unstable and lead to issues including the game being unable to launch.
 
+{{% alert theme="warning" %}}
+The `+set moo 31337` argument was removed in **FiveM for GTAV Enhanced**; enabling developer mode on the client now requires `sv_devMode true` to be set on the server. See [What's Changed in FiveM for GTAV Enhanced](/docs/developers/legacy-vs-enhanced/#developer-mode).
+{{% /alert %}}
+
 ### cmdlist
 
 The `cmdlist` command will list all the commands that are registered on the client (or server). It will also output the
