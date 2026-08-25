@@ -899,6 +899,38 @@ An integer variable (default `120000`, 2 minutes) defining the timeout in millis
 
 An integer variable (default `60`, range `1-120`) defining the tick rate for the sync thread. Higher values can reduce latency but increase CPU usage. This replaces the deprecated [`sv_useAccurateSends`](#sv_useaccuratesends-truefalse) variable.
 
+### Security
+
+#### `generate_handshake_key [outputFilePath]`
+
+Generates a handshake key used for signing messages and writes it to the specified file path.
+
+If no key is loaded with [load_handshake_key](#load_handshake_key-filepath), a new key is randomly generated on every startup. Generating a persistent key and sharing it with a proxy allows the proxy to validate and filter challenge packets, since it can verify the signatures produced with that key. Without a persistent key, the proxy has no way to distinguish legitimate challenge packets from spoofed ones.
+
+Example:
+
+```
+generate_handshake_key handshake
+```
+
+In a specific folder:
+
+```
+generate_handshake_key /specificFolder/handshake
+```
+
+#### `load_handshake_key [filePath]`
+
+Loads a previously generated handshake key (see [generate_handshake_key](#generate_handshake_key-outputfilepath)) for message signing. This can only be set in the server configuration at startup.
+
+Loading a fixed key (instead of relying on the random one generated at each startup) is what enables a proxy to filter challenge packets on the server's behalf, as the proxy can be provisioned with the same key to verify signatures.
+
+Example:
+
+```
+load_handshake_key "handshake"
+```
+
 ### Voice
 
 #### `sv_voiceChat [true|false]`
