@@ -38,6 +38,12 @@ local commandID = RegisterCommand(...)
 UnregisterCommand(commandID)
 ```
 
+#### `stream_enhanced` Folder
+
+Resources can now include a `stream_enhanced` folder alongside the existing `stream` folder. When a `stream_enhanced` folder is present, its contents are loaded instead of the `stream` folder on FiveM for GTAV Enhanced.
+
+The `stream` folder still works when no `stream_enhanced` folder is present, but it is deprecated. This allows a single resource to remain cross-compatible between Gen8 and Gen9: place Gen8 assets in `stream` and Gen9 assets in `stream_enhanced`.
+
 ### Breaking Changes
 
 #### Key-Value DB Files
@@ -150,3 +156,4 @@ For more information on gamebuilds, see [Gamebuilds](https://docs.fivem.net/docs
 ### File Name Changes
 
 In FiveM for GTAV Enhanced, some server files are named differently. The `server.7z` / `fx.tar.xz` archive is named `cfx-server_win_x64` / `cfx-server-linux_x64`, and the `FXServer.exe` executable is named `cfx-server.exe`.
+
