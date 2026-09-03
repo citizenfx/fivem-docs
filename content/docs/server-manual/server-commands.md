@@ -588,7 +588,7 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | ---------- | ------------------ | ----------------- |
 | AnimStore | 20480 | - |
 | AttachmentExtension | 430 | 430 |
-| Building | 20000 | - |
+| Building | 500 | - |
 | CAvoidanceComponent | - | 1300 |
 | CDoorExtension (also known as MaxDoorExtensions) | - | 160 |
 | CLightEntity | - | 2000 |
