@@ -19,7 +19,7 @@ Uses 2D Audio exclusively. This is set to false by default.
 
 ### `voice_use3dAudio [true/false]`
 
-Considered deprecated on FiveM, but available on RedM.  
+Considered deprecated on FiveM, but available on RedM.
 Uses 3D (directional) Audio exclusively. This is set to false by default.
 Currently, directional audio's position is relative to the game camera, a solution is being worked on so directional audio is relative to the player's ped entity instead.
 
@@ -517,3 +517,9 @@ RegisterCommand('unlistenchannel', function(source, args)
     RemovePlayerFromVoiceChannel(radioChannels[channelIdx], source)
 end, false)
 ```
+
+### Inspecting live channels
+
+If you want to see what your channels are actually doing on a running server, FXServer can report them over HTTP at `/voicechannels.json`. It lists every channel with its mode and distance, who is in it, and whether they are muted or deaf.
+
+It needs `sv_voiceChat` enabled along with either `voice_internal` or `voice_external_connect`, plus a username and password. See [HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/) for the details.
