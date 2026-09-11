@@ -339,6 +339,10 @@ A boolean variable (default `true`) that registers the server via mDNS for LAN d
 
 ### `sets sv_projectName "project name"`
 
+{{% alert color="warning" %}}
+`sets sv_projectName` is deprecated. Use [Portal](https://portal.cfx.re/) to set your project name instead.
+{{% /alert %}}
+
 A string variable containing the name of your 'project', which would for example be the server's community. This should
 be a name, not a list, nor should it contain tags.
 
@@ -352,6 +356,10 @@ sets sv_projectName "Citizen Gaming"
 
 ### `sets sv_projectDesc "project description"`
 
+{{% alert color="warning" %}}
+`sets sv_projectDesc` is deprecated. Use [Portal](https://portal.cfx.re/) to set your project description instead.
+{{% /alert %}}
+
 A string variable containing the description of your project. This should be written as a sentence.
 
 Example:
@@ -361,6 +369,10 @@ sets sv_projectDesc "My amazing community!"
 ```
 
 ### `sv_hostname [newValue]`
+
+{{% alert color="warning" %}}
+`sv_hostname` is deprecated. Use [Portal](https://portal.cfx.re/) to set your server hostname instead.
+{{% /alert %}}
 
 A string variable that contains the server-specific host name. In addition to this, you may want to set `sv_projectName`
 and `sv_projectDesc`.
@@ -558,6 +570,10 @@ A console variable, introduced in server version 12739, used to enable or disabl
 Client-side (non-replicated) entities are not affected by this variable. If a client-side script attempts to modify a state bag on a replicated entity in strict mode, the following error will be displayed in the client console `StateBags can't be modified from the client, because the StateBag strict mode is enabled. Disable it using setr sv_stateBagStrictMode false`.
 
 ### `load_server_icon [fileName.png]`
+
+{{% alert color="warning" %}}
+`load_server_icon` is deprecated. Use [Portal](https://portal.cfx.re/) to set your server icon instead.
+{{% /alert %}}
 
 A console command which loads a specified icon and sets it as the server icon. The icon needs to be a 96x96 PNG file.
 

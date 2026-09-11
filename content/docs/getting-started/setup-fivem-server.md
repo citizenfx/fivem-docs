@@ -67,9 +67,9 @@ The initial server configuration page is displayed.
 1. In **Step 1: Review Recipe**, click **Next**.
 2. In **Step 2: Input Parameters**, click [Portal](https://portal.cfx.re/login?return=%252Fservers%252Fregistration-keys%253Fmodal%253Dcreate) link to open a new tab.
 3. Sign in with Cfx.
-4. Click **Create a key** > enter a display name > click **GENERATE**.\
+4. In Portal, click the large "**+**" button to register a new server > enter required information > click **Generate Key**.\
    ![Generate a server registration key](/getting-started/generate_server_registration_key.png)
-5. Go to your new key and click **copy**.
+5. Go to your newly registered server and click **Copy Key**.
 6. Return to txAdmin, paste the key in the textbox, and click **Run Recipe**.
 
 ## 7. Finish recipe deployment

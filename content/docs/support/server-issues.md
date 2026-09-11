@@ -58,20 +58,6 @@ Alternatively, you can use a port checking service:
 
 If the port is open, the site will confirm visibility from the outside.
 
-### Verify Required Server Variables
-
-If your server is reachable but still does not appear in the server list, confirm that the following variables are set in `server.cfg`:
-
-```yaml
-# Set your server's Project Name
-sets sv_projectName "My FXServer Project"
-
-# Set your server's Project Description
-sets sv_projectDesc "Default FXServer requiring configuration"
-```
-
-If **either** variable is missing, the server will display an error upon startup and may not appear on the list.
-
 ### Additional Troubleshooting
 
 - It can take **up to 8 minutes** for a server to appear in the list after launch if no other heartbeats are sent.
