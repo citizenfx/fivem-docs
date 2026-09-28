@@ -38,7 +38,38 @@ local commandID = RegisterCommand(...)
 UnregisterCommand(commandID)
 ```
 
+#### `stream_enhanced` Folder
+
+Resources can now include a `stream_enhanced` folder alongside the existing `stream` folder. When a `stream_enhanced` folder is present, its contents are loaded instead of the `stream` folder on FiveM for GTAV Enhanced.
+If no `stream_enhanced` folder is present, the `stream` folder is used instead.
+
+The `stream` folder still works when no `stream_enhanced` folder is present, but it is deprecated. This allows a single resource to remain cross-compatible between Gen8 and Gen9: place Gen8 assets in `stream` and Gen9 assets in `stream_enhanced`.
+
 ### Breaking Changes
+
+#### Change in Player ID Logic
+
+The way player (server) IDs are assigned has changed.
+
+In FiveM for GTAV Legacy, IDs are only ever incremented and never reused for the next player. They count up (`1, 2, 3, ..., 65535`) and wrap back around to `1` once the maximum is reached. For example:
+
+```text
+player connect    -> 1
+player connect    -> 2
+player disconnect -> 1
+player connect    -> 3
+```
+
+In FiveM for GTAV Enhanced, an ID is released when a player disconnects and can be reused by the next player who connects. For example:
+
+```text
+player connect    -> 1
+player connect    -> 2
+player disconnect -> 1
+player connect    -> 1
+```
+
+This behaviour is subject to change in the future, but for now it is a breaking change that may affect your resource logic.
 
 #### Key-Value DB Files
 
