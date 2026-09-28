@@ -56,15 +56,20 @@ Example:
 
 #### Lists
 
-- Use bullet points (like - or *) for unordered lists, such as:
+- Use dashes (`-`) for unordered lists, such as:
   - Examples
   - Notes
   - Options or unordered items
 
-- Use numbered lists (e.g., 1., 2., etc.) for ordered content, including:
+- Use incrementing numbers for ordered content, including:
   1. Step-by-step instructions
   2. Processes where order matters
   3. Ranked lists or priorities
+
+Examples:
+
+✅ `- Item` and `1.` / `2.` / `3.`\
+❌ `* Item` and `1.` / `1.` / `1.`
 
 #### Alert Boxes
 
@@ -86,11 +91,22 @@ When external links are necessary, ensure they are likely to remain available lo
 Do not add links to images, see "Images and Diagrams" for more information on how to add them inside our documentation repository.
 
 Use `[text](URL)` for clickable links.\
-Example: `[FiveM Docs](https://docs.fivem.net)`
+Example: `[FiveM Docs](https://docs.fivem.net/)`
 
 Do not use shorthand links such as `<https://example.com>`.
 
-Sibling URLs require to go to the parent path using `../` even though the corresponding files are located in the same directory.
+For links to other pages in these docs, prefer an absolute path from the site root, such as `[server commands](/docs/server-manual/server-commands/)`.
+
+Use trailing slashes for local links. When linking to an anchor, the trailing slash goes before the `#`. Do not include the `.md` file extension.
+
+Examples:
+
+✅ `[text](/docs/scripting-manual/)`\
+✅ `[text](/docs/support/server-issues/#slow)`\
+❌ `[text](/docs/scripting-manual)`\
+❌ `[text](/docs/scripting-manual.md)`
+
+Relative links such as `../sibling-page/` also work. Note that a sibling page still needs `../`, since the current page is itself served as a directory.
 
 #### Referencing Game Natives
 
@@ -123,7 +139,7 @@ sayHello()
 ````
 
 Specify the language for syntax highlighting (e.g., `bash`, `lua`, `json`).\
-Use proper indentation and consistent spacing (avoid mixing tabs and spaces).\
+Use proper indentation and consistent spacing. Indent with spaces, never tabs.\
 Add brief context or explanation before/after the code when needed.\
 Provide consistent examples in Lua(default), JavaScript and C# if applicable.
 
@@ -150,9 +166,9 @@ This guide aims to keep docs clear, consistent, and easy to follow for all users
 You can upload images and diagrams to the `/static/` directory.
 To include them in your documentation, use the following Markdown syntax:
 
-`![Alt Text](/static/image.png)`
+`![Alt Text](/image.png)`
 
-In `![Alt Text](/static/image.png)`, the "*Alt Text*" is the alt text.\
+In `![Alt Text](/image.png)`, the "*Alt Text*" is the alt text.\
 This is a short description of the image that is displayed if the image can't be shown.
 Replace "*Alt Text*" with a brief description relevant to the image (e.g., "*Server Console Output*" or "*Example Vehicle Spawn Menu*").
 
@@ -211,7 +227,7 @@ The use of AI tools is permitted strictly for spelling, grammar, and clarity imp
 
 ## Additional Resources
 
-- [FiveM Docs](https://docs.fivem.net)
+- [FiveM Docs](/docs/)
 - [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 - [GitHub Editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)
 
