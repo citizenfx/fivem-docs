@@ -20,9 +20,3 @@ does **not** stop other event handlers from running.
 - [Listening for events](/docs/scripting-manual/working-with-events/listening-for-events/)
 - [Canceling events](/docs/scripting-manual/working-with-events/canceling-events/)
 - [Triggering events](/docs/scripting-manual/working-with-events/triggering-events/)
-
-<!-- TODO
-- [Using events](/docs/scripting-manual/working-with-events/using-events/)
-- [Creating new events](/docs/scripting-manual/working-with-event/creating-new-events/)
-- [Server-client communication](/docs/scripting-manual/working-with-event/server-client-communication/)
--->
