@@ -18,7 +18,6 @@ This page covers what's changed for server owners and resource developers moving
 | ARQ (`onesync_automaticResend`)    | Previously defaulted to `false`; now removed entirely                                                                                                                                                                                                                                              |
 | Asset Escrow                       | Not implemented yet                                                                                                                                                                                                                                                                                |
 | `sv_netHttp2`                      | HTTP/2 support removed                                                                                                                                                                                                                                                                             |
-| DevCon server ports (29200, 29300) | Removed                                                                                                                                                                                                                                                                                            |
 | Server ImGui GUI                   | Removed                                                                                                                                                                                                                                                                                            |
 | `+set moo 31337` developer command | Was used in FiveM Legacy to enable devmode; removed. Use [`sv_devMode true`](#developer-mode) instead.                                                                                                                                                                                             |
 | `sv_useAccurateSends`              | Deprecated (see `sv_syncTickRate` below)                                                                                                                                                                                                                                                           |
@@ -89,6 +88,15 @@ so that it appears on the client.
 #### Resource Builders
 
 Resources can no longer be builders.
+
+#### Remote Console (DevCon)
+
+Remote Console support (formerly DevCon) is now disabled by default. You can
+enable Remote Console from within the game by opening the F8 console, then
+selecting "Remote Console" under the "Console" menu item.
+
+The remote console is exposed over port `29200`. Port `29300` was previously
+reserved for `-cl2` and is no longer used.
 
 #### Mono to .NET
 
