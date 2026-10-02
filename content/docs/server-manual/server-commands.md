@@ -380,6 +380,26 @@ Example:
 sets sv_projectDesc "My amazing community!"
 ```
 
+### `sets banner_detail "url"`
+
+A string variable containing a URL to a banner image for your server. This banner is now shown both on your server's
+details page in the server list **and** in the server's connection modal in the game client.
+
+Banners use a **73:8** aspect ratio, with a minimum size of **1825 × 200px** (2560 × 280px recommended).
+
+Example:
+
+```bash
+sets banner_detail "https://url.to/image.png"
+```
+
+### `sets banner_connecting "url"`
+
+{{% alert color="warning" %}}
+`banner_connecting` is **deprecated**. `banner_detail` is now reflected in both the server details page and the
+connection modal, so a separate connecting banner is no longer required. Use `banner_detail` instead.
+{{% /alert %}}
+
 ### `sv_hostname [newValue]`
 
 {{% alert color="warning" %}}
