@@ -31,7 +31,7 @@ end
 SetVehicleColours(vehicle, 4, 3)
 ```
 
-If you do want to create entities server-side, or entites for which no players are nearby, you have to use a server setter native:
+If you do want to create entities server-side, or entities for which no players are nearby, you have to use a server setter native:
 
 - CREATE_AUTOMOBILE (deprecated)
 - [CREATE_VEHICLE_SERVER_SETTER](/natives/?_0x6AE51D4B)
