@@ -8,6 +8,7 @@ If you are looking for community resources, take a look at the [**Forums**](http
 
 - [baseevents](/docs/resources/baseevents/)
 - [chat](/docs/resources/chat/)
+- [mapmanager](/docs/resources/mapmanager/)
 - [sessionmanager](/docs/resources/sessionmanager/)
 - [spawnmanager](/docs/resources/spawnmanager/)
 - [txAdmin](/docs/resources/txAdmin/)

@@ -18,9 +18,6 @@ weight: 50
 - [Working with events](/docs/scripting-manual/working-with-events/)
   - [Listening for events](/docs/scripting-manual/working-with-events/listening-for-events/)
   - [Triggering events](/docs/scripting-manual/working-with-events/triggering-events/)
-  <!-- - [Using events](/docs/scripting-manual/working-with-events/using-events/) -->
-  <!-- - [Creating new events](/docs/scripting-manual/working-with-event/creating-new-events/) -->
-  <!-- - [Server-client communication](/docs/scripting-manual/working-with-event/server-client-communication/) -->
 - [User interfaces with NUI](/docs/scripting-manual/nui-development/)
   - [Fullscreen NUI](/docs/scripting-manual/nui-development/full-screen-nui/)
   - [Direct-rendered UI (DUI)](/docs/scripting-manual/nui-development/dui/)
