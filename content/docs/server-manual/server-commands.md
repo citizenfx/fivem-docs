@@ -609,27 +609,39 @@ This can only be specified at startup, and cannot be changed at runtime. To join
 
 Pool size increase requests are validated on the server and client side. On the server side, if the pool is not allowed to be resized or the size increase exceeds the allowed limit - the command will have no effect and warning message will be displayed in the logs. On the client side - the client will not be able to connect to a server that requests invalid pool sizes (this should only happen if the server bypassed the server side check somehow).
 
-Set of allowed pools and the maximum size increase per pool are set in `content.cfx.re`. Both server and client fetch the limits on startup for updates. The currently allowed pools and limits are the following (this documentation may be slightly behind the actual state, if not sure - try to set the increase and see if it works):
+Set of allowed pools and the maximum size increase per pool are served by `gss.cfx-services.net`. Both server and client fetch the limits on startup for updates. The currently allowed pools and limits are the following (this documentation may be slightly behind the actual state, if not sure - try to set the increase and see if it works):
 
 | Pool name                                        | FiveM max increase | RedM max increase |
 | ------------------------------------------------ | ------------------ | ----------------- |
 | AnimStore                                        | 20480              | -                 |
 | AttachmentExtension                              | 430                | 430               |
-| Building                                         | 20000              | -                 |
+| Building                                         | 500                | -                 |
+| CAnimalGroupMember                               | -                  | 110               |
+| CAudioCollisionExtensionComponent                | -                  | 1000              |
 | CAvoidanceComponent                              | -                  | 1300              |
+| CCrimeObserver                                   | -                  | 150               |
 | CDoorExtension (also known as MaxDoorExtensions) | -                  | 160               |
+| CDoorSyncData                                    | 20                 | 20                |
 | CLightEntity                                     | -                  | 2000              |
 | CMoveObject                                      | 600                | 100               |
+| CNetObjDoor                                      | 20                 | 20                |
+| CNetObjObject                                    | -                  | 100               |
+| CNetObjPedBase                                   | -                  | 110               |
+| CNetObjVehicle                                   | -                  | 40                |
 | CompEntity                                       | -                  | 50                |
+| CPedAvoidanceComponent                           | -                  | 256               |
+| CPedSyncData                                     | -                  | 50                |
 | CPropSetObjectExtension                          | -                  | 950               |
 | CWeaponComponentInfo                             | 2048               | -                 |
 | DrawableStore                                    | -                  | 50000             |
 | EntityDescPool                                   | 20480              | -                 |
 | fragInstGta                                      | 2000               | -                 |
-| FragmentStore                                    | 14000              | 4000              |
+| FragmentStore                                    | 30000              | 4000              |
+| fwDynamicArchetypeComponent                      | 30000              | 1200              |
 | GrassBatch                                       | -                  | 2000              |
 | InteriorProxy                                    | 450                | 450               |
 | LightEntity                                      | 1000               | -                 |
+| NavMeshRoute                                     | -                  | 200               |
 | netGameEvent                                     | 400                | 400               |
 | Object                                           | 2000               | 2000              |
 | ObjectIntelligence                               | 512                | -                 |
@@ -640,9 +652,7 @@ Set of allowed pools and the maximum size increase per pool are set in `content.
 | PortalInst                                       | 225                | 150               |
 | ScaleformStore                                   | 200                | 100               |
 | StaticBounds                                     | 5000               | 6500              |
-| TxdStore                                         | 26000              | 26000             |
-| CNetObjDoor                                      | -                  | 20                |
-| CDoorSyncData                                    | -                  | 20                |
+| TxdStore                                         | 50000              | 26000             |
 
 You can explore most of the current pools and their sizes using `F8 > Tools > Streaming > Pool Monitor` tool.
 
