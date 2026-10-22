@@ -903,32 +903,28 @@ An integer variable (default `60`, range `1-120`) defining the tick rate for the
 
 #### `generate_handshake_key [outputFilePath]`
 
-Generates a handshake key used for signing messages and writes it to the specified file path.
+Generates a key used for signing handshake messages and writes it to the specified file path, relative to the server data directory. If the file already exists, it is overwritten. This command can only be run from the server console.
 
-If no key is loaded with [load_handshake_key](#load_handshake_key-filepath), a new key is randomly generated on every startup. Generating a persistent key and sharing it with a proxy allows the proxy to validate and filter challenge packets, since it can verify the signatures produced with that key. Without a persistent key, the proxy has no way to distinguish legitimate challenge packets from spoofed ones.
+If no key is loaded with [load_handshake_key](#load_handshake_key-filepath), a new key is randomly generated at every server startup. A persistent key can be shared with a proxy, allowing it to verify handshake requests before they reach the server. The proxy must use the same key file, and its IP must be listed in [sv_proxyIPRanges](#sv_proxyipranges-ranges). See [Proxy Setup](/docs/server-manual/proxy-setup/) for information on configuring a proxy.
+
+{{% alert color="warning" %}}
+Keep the key file private. Anyone with the key can create valid handshake messages and bypass the server's handshake challenge. Do not store it inside a resource folder, and only share it with proxies you trust.
+{{% /alert %}}
 
 Example:
 
 ```
-generate_handshake_key handshake
-```
-
-In a specific folder:
-
-```
-generate_handshake_key /specificFolder/handshake
+generate_handshake_key handshake.key
 ```
 
 #### `load_handshake_key [filePath]`
 
-Loads a previously generated handshake key (see [generate_handshake_key](#generate_handshake_key-outputfilepath)) for message signing. This can only be set in the server configuration at startup.
-
-Loading a fixed key (instead of relying on the random one generated at each startup) is what enables a proxy to filter challenge packets on the server's behalf, as the proxy can be provisioned with the same key to verify signatures.
+Loads a key previously created with [generate_handshake_key](#generate_handshake_key-outputfilepath) for signing handshake messages. This can only be set in the server configuration loaded at startup.
 
 Example:
 
 ```
-load_handshake_key "handshake"
+load_handshake_key handshake.key
 ```
 
 ### Voice
