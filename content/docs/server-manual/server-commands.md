@@ -868,7 +868,7 @@ unblock_net_game_event "FIRE_EVENT"
 ## Console commands exclusive to FiveM for GTAV Enhanced
 
 {{% alert theme="primary" %}}
-The following variables are only available in **FiveM for GTAV Enhanced**.
+The following commands and variables are only available in **FiveM for GTAV Enhanced**.
 {{% /alert %}}
 
 ### Networking
