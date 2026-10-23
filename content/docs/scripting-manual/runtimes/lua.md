@@ -19,6 +19,33 @@ To learn more about Lua, read their [official documentation][luadocs].
 
 To use Lua in your scripts, simply use the `.lua` file extension. No additional configuration is required.
 
+## Lua 5.3 compatibility
+
+As of October 2026, Lua 5.3 compatibility in the Lua 5.4 runtime has been removed. The only change most scripts will
+notice is that comparing tables with `<=` or `>=` now requires an `__le` metamethod, as Lua no longer falls back to
+`__lt`. If a metatable defines `__lt`, also define `__le`.
+
+For example:
+
+```lua
+local Version = {}
+Version.__index = Version
+
+Version.__lt = function(a, b)
+  return a.number < b.number
+end
+
+-- Required for <= and >=, Lua no longer derives this from __lt
+Version.__le = function(a, b)
+  return a.number <= b.number
+end
+
+local old = setmetatable({ number = 1 }, Version)
+local new = setmetatable({ number = 2 }, Version)
+
+print(old <= new) -- true
+```
+
 ## Compile-time hashes
 
 Because you might often have to deal with 'Jenkins one-at-a-time' hashes in GTA/RAGE, the Lua runtime has been extended
