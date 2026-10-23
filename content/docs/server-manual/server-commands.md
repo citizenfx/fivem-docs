@@ -571,9 +571,27 @@ load_server_icon "my-server.png"
 
 Sets the RCon password, if unset then RCon will be disabled. FXServer RCon uses UDP.
 
+### `sv_enforceSteamAuth [true|false]`
+
+A boolean variable (default `false`). When set to `true`, players need a valid Steam identifier (`steam:`) to join the server. Players who can't authenticate with Steam, for example because Steam isn't running, can't connect.
+
+When set to `false`, the client doesn't start Steam authentication, so players won't have a `steam:` identifier on your server. If your server or its resources rely on Steam identifiers, for example in ACE permissions such as `identifier.steam:...` or in ban lists, set this to `true`.
+
+This replaces [`steam_webApiKey`](#steam_webapikey-key), which is no longer needed.
+
+Example:
+
+```
+set sv_enforceSteamAuth true
+```
+
 ### `steam_webApiKey [key]`
 
-Sets a [Steam Web API key](https://steamcommunity.com/dev/apikey), which is required to allow for Steam identifiers to be returned by the server.
+{{% alert color="warning" %}}
+**Deprecated.** This variable is no longer needed. To require players to have a Steam identifier, use [`sv_enforceSteamAuth`](#sv_enforcesteamauth-truefalse) instead.
+{{% /alert %}}
+
+Sets a [Steam Web API key](https://steamcommunity.com/dev/apikey). This used to be required for the server to return Steam identifiers.
 
 ### `steam_webApiDomain [domain]`
 
