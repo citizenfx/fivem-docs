@@ -951,6 +951,10 @@ An integer variable (default `10000`) that defines the time in milliseconds befo
 
 A boolean variable (default `false`) that enables generating sample data for the compression dictionary. Internal usage only.
 
+#### `onesync_multithreadedPacketProcessing [true|false]`
+
+A boolean variable (default `true`) that processes sync updates in parallel, which lifts the main limit on how many players a server can hold. Set to `false` to turn off parallel processing.
+
 #### `onesync_mapBoundsMinX [value]`
 
 An integer variable (default `-10000`) defining the minimum X coordinate of the map bounds. Can only be set at startup.
@@ -1006,6 +1010,8 @@ Buckets are considered empty if no tokens are available.
 | `stateBag`         | 75              | 125                |
 | `stateBagFlood`    | 150             | 175                |
 | `stateBagSize`     | 131072          | 262144             |
+
+Net game events sent by clients are rate limited by the `netGameEvent` and `netGameEventFlood` limiters.
 
 Each limiter can be configured with two ConVars:
 
