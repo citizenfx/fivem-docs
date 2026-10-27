@@ -875,7 +875,9 @@ The following variables are only available in **FiveM for GTAV Enhanced**.
 
 #### `sv_ioThreads [count]`
 
-An integer variable (default `0`) specifying the number of IO threads for network operations. Defaults to CPU core count, capped between 2 and 4. Can only be set at startup.
+An integer variable (default `0`) specifying the number of IO threads used for network operations. Can only be set at startup.
+
+If left at `0`, the server defaults to the number of logical CPU threads available, clamped to a minimum of 2 and a maximum of 4. If set to a non-zero positive value, that exact number of threads is used and the 2-4 limit does not apply.
 
 #### `sv_clientConnectingTimeoutMilliseconds [ms]`
 
