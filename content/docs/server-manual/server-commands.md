@@ -573,11 +573,13 @@ Sets the RCon password, if unset then RCon will be disabled. FXServer RCon uses 
 
 ### `sv_enforceSteamAuth [true|false]`
 
-A boolean variable (default `false`). When set to `true`, players need a valid Steam identifier (`steam:`) to join the server. Players who can't authenticate with Steam, for example because Steam isn't running, can't connect.
+A boolean variable (default `false`). When set to `true`, players are required to have a Steam account linked to their Cfx account. Players who haven't linked an account are asked to link one when they connect, and can't join without linking. Players who have linked their account will have the `steam:` identifier.
 
-When set to `false`, the client doesn't start Steam authentication, so players won't have a `steam:` identifier on your server. If your server or its resources rely on Steam identifiers, for example in ACE permissions such as `identifier.steam:...` or in ban lists, set this to `true`.
+When set to `false`, a linked Steam account isn't required. Players who have linked a Steam account will still have the `steam:` identifier. If your server or its resources rely on Steam identifiers, for example in ACE permissions such as `identifier.steam:...`, set this to `true`.
 
-This replaces [`steam_webApiKey`](#steam_webapikey-key), which is no longer needed.
+Setting this to `true` requires server version 38004 or later.
+
+This replaces [`steam_webApiKey`](#steam_webapikey-key) and [`steam_webApiDomain`](#steam_webapidomain-domain), which no longer work.
 
 Example:
 
@@ -588,14 +590,18 @@ set sv_enforceSteamAuth true
 ### `steam_webApiKey [key]`
 
 {{% alert color="warning" %}}
-**Deprecated.** This variable is no longer needed. To require players to have a Steam identifier, use [`sv_enforceSteamAuth`](#sv_enforcesteamauth-truefalse) instead.
+**Deprecated.** As of 04 November 2026 this variable no longer works and has no effect. To require players to have a Steam identifier, use [`sv_enforceSteamAuth`](#sv_enforcesteamauth-truefalse) instead.
 {{% /alert %}}
 
-Sets a [Steam Web API key](https://steamcommunity.com/dev/apikey). This used to be required for the server to return Steam identifiers.
+Used to set a [Steam Web API key](https://steamcommunity.com/dev/apikey), which the server needed to return Steam identifiers.
 
 ### `steam_webApiDomain [domain]`
 
-A string variable (default `api.steampowered.com`) defining the domain registered with the Steam Web API key. Change if `api.steampowered.com` is not reachable.
+{{% alert color="warning" %}}
+**Deprecated.** As of 04 November 2026 this variable no longer works and has no effect. To require players to have a Steam identifier, use [`sv_enforceSteamAuth`](#sv_enforcesteamauth-truefalse) instead.
+{{% /alert %}}
+
+Used to set the domain for Steam Web API requests (default `api.steampowered.com`) made with [`steam_webApiKey`](#steam_webapikey-key).
 
 ### `sv_prometheusBasicAuthUser [user]`
 
