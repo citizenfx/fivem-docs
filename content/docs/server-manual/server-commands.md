@@ -634,13 +634,37 @@ load_server_icon "my-server.png"
 
 Sets the RCon password, if unset then RCon will be disabled. FXServer RCon uses UDP.
 
+### `sv_enforceSteamAuth [true|false]`
+
+A boolean variable (default `false`). When set to `true`, players are required to have a Steam account linked to their Cfx account. Players who haven't linked an account are asked to link one when they connect, and can't join without linking. Players who have linked their account will have the `steam:` identifier.
+
+When set to `false`, a linked Steam account isn't required. Players who have linked a Steam account will still have the `steam:` identifier. If your server or its resources rely on Steam identifiers, for example in ACE permissions such as `identifier.steam:...`, set this to `true`.
+
+Setting this to `true` requires server version 38004 or later.
+
+This replaces [`steam_webApiKey`](#steam_webapikey-key) and [`steam_webApiDomain`](#steam_webapidomain-domain), which no longer work.
+
+Example:
+
+```
+set sv_enforceSteamAuth true
+```
+
 ### `steam_webApiKey [key]`
 
-Sets a [Steam Web API key](https://steamcommunity.com/dev/apikey), which is required to allow for Steam identifiers to be returned by the server.
+{{% alert color="warning" %}}
+**Deprecated.** As of 04 November 2026 this variable no longer works and has no effect. To require players to have a Steam identifier, use [`sv_enforceSteamAuth`](#sv_enforcesteamauth-truefalse) instead.
+{{% /alert %}}
+
+Used to set a [Steam Web API key](https://steamcommunity.com/dev/apikey), which the server needed to return Steam identifiers.
 
 ### `steam_webApiDomain [domain]`
 
-A string variable (default `api.steampowered.com`) defining the domain registered with the Steam Web API key. Change if `api.steampowered.com` is not reachable.
+{{% alert color="warning" %}}
+**Deprecated.** As of 04 November 2026 this variable no longer works and has no effect. To require players to have a Steam identifier, use [`sv_enforceSteamAuth`](#sv_enforcesteamauth-truefalse) instead.
+{{% /alert %}}
+
+Used to set the domain for Steam Web API requests (default `api.steampowered.com`) made with [`steam_webApiKey`](#steam_webapikey-key).
 
 ### `sv_prometheusBasicAuthUser [user]`
 

@@ -28,7 +28,7 @@ If disabled, old `resources` folder will be permanently deleted and new resource
 
 ## Variables
 
-All defined variables (convars, Steam WebAPI key, Tebex secret), will be placed in `variables.cfg` file in build folder.
+All defined variables (convars, Tebex secret), will be placed in `variables.cfg` file in build folder.
 
 > This file is not supposed to be edited by user, **FxDK will overwrite it on build**.
 
