@@ -379,6 +379,7 @@ When a player disconnects, they are automatically removed from all channels they
 | `1`  | Spatial     | 3D voice channel. Clients are output in 3D automatically. Receiving clients are calculated based on proximity within `maxDistance`.                 |
 | `2`  | Custom      | Requires custom streaming logic. No clients are automatically calculated. There is no API yet to feed custom streaming.                             |
 | `3`  | Temporary   | Inherits all behavior from **spatial**, but the channel is automatically deleted when all players have left.                                        |
+| `4`  | TemporaryNoneSpatial | Inherits all behavior from **non-spatial**, but the channel is automatically deleted when all players have left.                            |
 
 Example (server-side):
 
