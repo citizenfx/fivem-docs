@@ -1013,11 +1013,11 @@ An integer variable (default `100`) defining the size of each cell in the world 
 
 #### `sv_onesyncBasicAuthUser [user]`
 
-A string variable that sets the username for basic auth on the `/onesync` endpoints, which expose the live OneSync state of the server. Leave empty to disable. See [OneSync HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/). Also sent to txAdmin.
+A string variable that sets the username for basic auth on the `/onesync/` endpoints, which expose the live OneSync state of the server. Leave empty to disable. See [OneSync HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/). Also sent to txAdmin.
 
 #### `sv_onesyncBasicAuthPassword [password]`
 
-A string variable that sets the password for basic auth on the `/onesync` endpoints. Leave empty to disable. Anyone who can reach these endpoints can read the position of every player on your server, so keep this private. Also sent to txAdmin.
+A string variable that sets the password for basic auth on the `/onesync/` endpoints. Leave empty to disable. Anyone who can reach these endpoints can read the position of every player on your server, so keep this private. Also sent to txAdmin.
 
 ### Development & game build
 
