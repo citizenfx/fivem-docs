@@ -17,14 +17,14 @@ This is meant for you, the person running the server or making development tools
 
 ## Turning them on
 
-The endpoints are switched off until you give them a username and a password. Add these two lines to your `server.cfg`, pick your own values, and restart the server.
+The endpoints are switched off until you give them a username and a password. Add these two lines to your `server.cfg` and pick your own values. The changes apply live, so no restart is needed.
 
 ```cfg
 set sv_onesyncBasicAuthUser "user"
 set sv_onesyncBasicAuthPassword "a-long-random-password"
 ```
 
-These work exactly like the credentials for the Prometheus `/perf` endpoint. If either one is left empty, every request is refused, including the voice one despite its name having nothing to do with OneSync.
+These work exactly like the credentials for the Prometheus `/perf` endpoint. If either one is left empty, every request is refused, including the voice one despite its name having nothing to do with OneSync. Empty values are replaced with random values (32 characters for the user, 256 characters for the password) and sent to txAdmin.
 
 Two of them want a little more than credentials. The `/onesync/` endpoints need OneSync itself enabled, because without it there is no state to hand out in the first place. The voice endpoint needs voice chat running, which is covered in its own section further down.
 

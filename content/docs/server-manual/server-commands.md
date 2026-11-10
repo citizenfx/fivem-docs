@@ -674,14 +674,6 @@ A string variable that sets the username for Prometheus basic auth on the `/perf
 
 A string variable that sets the password for Prometheus basic auth on the `/perf` endpoint. Leave empty to disable. Also sent to txAdmin.
 
-### `sv_onesyncBasicAuthUser [user]`
-
-A string variable that sets the username for basic auth on the `/onesync` endpoints, which expose the live OneSync state of the server. Leave empty to disable. See [OneSync HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/).
-
-### `sv_onesyncBasicAuthPassword [password]`
-
-A string variable that sets the password for basic auth on the `/onesync` endpoints. Leave empty to disable. Anyone who can reach these endpoints can read the position of every player on your server, so keep this private.
-
 ### `sv_kvsName [name]`
 
 A string variable (default `default`) defining the name of the KVP database file, stored in the `serverdata:/` folder. Can only be set at startup.
@@ -1019,6 +1011,14 @@ An integer variable (default `65536`) defining the maximum Y coordinate of the m
 
 An integer variable (default `100`) defining the size of each cell in the world grid. Smaller values use more RAM but less CPU. Best value depends on average entity range; `100` is usually optimal. Can only be set at startup.
 
+#### `sv_onesyncBasicAuthUser [user]`
+
+A string variable that sets the username for basic auth on the `/onesync` endpoints, which expose the live OneSync state of the server. Leave empty to disable. See [OneSync HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/). Also sent to txAdmin.
+
+#### `sv_onesyncBasicAuthPassword [password]`
+
+A string variable that sets the password for basic auth on the `/onesync` endpoints. Leave empty to disable. Anyone who can reach these endpoints can read the position of every player on your server, so keep this private. Also sent to txAdmin.
+
 ### Development & game build
 
 #### `sv_devMode [true|false]`
@@ -1041,6 +1041,7 @@ Buckets are considered empty if no tokens are available.
 | `handshakeUDP`     | 1               | 5                  |
 | `http_dynamic`     | 4               | 10                 |
 | `http_info`        | 4               | 10                 |
+| `http_onesync`     | 2               | 5                  |
 | `http_perf`        | 2               | 5                  |
 | `http_players`     | 4               | 10                 |
 | `netCommand`       | 7               | 14                 |
