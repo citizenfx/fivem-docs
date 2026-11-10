@@ -44,7 +44,7 @@ There are eight, and that is the whole list.
 | -------------------------------------------- | -------------------------------------------------- |
 | `/onesync/entities.json`                     | Every networked entity the server is tracking.     |
 | `/onesync/entities/{id}/stateBag.json`       | One entity's state bag.                            |
-| `/onesync/clients.json`                      | Connected clients, and the entities each one owns. |
+| `/onesync/clients.json`                      | Connected clients, and the network ids each one has been allocated. |
 | `/onesync/clients/{id}/stateBag.json`        | One client's state bag.                            |
 | `/onesync/routingBuckets.json`               | Which routing buckets are currently in use.        |
 | `/onesync/routingBuckets/{id}/worldGrid.bmp` | A picture of who owns which patch of the world.    |
@@ -109,7 +109,7 @@ The big one. You get a flat array with one object per networked entity, covering
 {{% alert color="warning" title="id and netId are not the same number" %}}
 This could be confusing, because on a freshly started server the first few entities might happen to have matching values. They drift apart quickly.
 
-The state bag endpoints take `id`. Your scripts, on the other hand, deal in `netId`. If you are matching data from this endpoint against something a script told you, `netId` is the field you want.
+The state bag endpoints take `id`. The handle your server scripts get is `id`. `netId` is what you exchange with clients. If you are matching data from this endpoint against something a script told you, `netId` is the field you want.
 {{% /alert %}}
 
 ### Fields that only turn up sometimes
@@ -122,7 +122,7 @@ The server leaves a field out entirely rather than sending it as `null`, `false`
 | `ownedByClientScript`        | A client side script created it.                                                                                                                                                                   |
 | `ownedByServerScript`        | A server side script created it.                                                                                                                                                                   |
 | `shouldServerKeepEntity`     | The server has been told to hang on to this entity, either because a server script owns it or because its orphan mode is set to keep it. See {{% native_link "SET_ENTITY_ORPHAN_MODE" %}}.         |
-| `creationToken`              | The entity was created by a server script. This is the value that separates a server created entity from a client created one, and it is stamped from the server clock, so it matches `createdAt`. |
+| `creationToken`              | The entity was created by a server script, and a non-zero value is what separates a server created entity from a client created one. It is stamped from the server clock, so it matches `createdAt`, but only for `CREATE_VEHICLE_SERVER_SETTER`, `CREATE_PED`, and `CREATE_OBJECT_NO_OFFSET`. For `CREATE_VEHICLE`, `CREATE_OBJECT`, and `CREATE_PED_INSIDE_VEHICLE`, a random token is used instead. |
 | `stateBag`                   | The entity has a state bag. The value is the bag's name, such as `entity:26`. Careful here, that number is the `netId`, not the `id`.                                                              |
 | `deleting`                   | The entity is on its way out and is being cleaned up. You will only catch this if you happen to ask at the right moment.                                                                           |
 | `vehicleID`                  | The entity is a ped or player sitting in a vehicle. The value is the vehicle's `netId`, not its `id`.                                                                                              |
@@ -187,15 +187,15 @@ For FiveM:
 
 ## clients.json
 
-One object per connected client, listing every entity that client currently owns.
+One object per connected client, listing the network ids that client has been allocated.
 
 ```json
 [{ "id": 1, "netIds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] }]
 ```
 
-The `id` is the client's server id, the same number your scripts know as `source`. The `netIds` array holds the network ids of the entities it owns, which will include its own player ped along with any traffic and pedestrians nearby that the server handed to it.
+The `id` is the client's server id, the same number your scripts know as `source`. The `netIds` array holds the network ids the server has allocated to the client, handed out in batches of six plus one for the player ped. It is not a list of the entities the client owns, and migration never adds to it. The only time an id appears here is when the server allocates a fresh batch.
 
-That list is usually longer than you expect. A single player wandering around an empty map can easily own ninety entities, because somebody has to be responsible for all the ambient traffic in view.
+To find the entities a client actually owns, filter `entities.json` by `ownerClientID`.
 
 ## State bags
 
