@@ -183,6 +183,7 @@ For FiveM:
 | `11` | Player          |
 | `12` | Trailer         |
 | `13` | Train           |
+| `14` | GlassPane       |
 
 ## clients.json
 
