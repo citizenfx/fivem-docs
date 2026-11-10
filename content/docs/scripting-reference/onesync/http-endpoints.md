@@ -46,7 +46,7 @@ There are eight, and that is the whole list.
 | `/onesync/entities/{id}/stateBag.json`       | One entity's state bag.                            |
 | `/onesync/clients.json`                      | Connected clients, and the network ids each one has been allocated. |
 | `/onesync/clients/{id}/stateBag.json`        | One client's state bag.                            |
-| `/onesync/routingBuckets.json`               | Which routing buckets are currently in use.        |
+| `/onesync/routingBuckets.json`               | Routing buckets that have an active world grid.   |
 | `/onesync/routingBuckets/{id}/worldGrid.bmp` | A picture of who owns which patch of the world.    |
 | `/onesync/time.json`                         | The server's own clock.                            |
 | `/voicechannels.json`                        | Voice channels, and who is in them.                |
@@ -230,11 +230,13 @@ So take the number from the `id` field and ignore the one in the bag's name.
 
 ## routingBuckets.json
 
-A plain array of the routing bucket ids currently in use. A server that never touches buckets only ever reports the default one.
+A plain array of the routing buckets that have a world grid. A world grid only exists while a player entity is in the bucket, so this is the list of buckets that currently contain at least one player.
 
 ```json
 [0]
 ```
+
+An empty server returns `[]` rather than reporting a default bucket. A bucket that contains only non-player entities has no world grid, so it is not listed here, and its `worldGrid.bmp` answers `404`.
 
 ## worldGrid.bmp
 
