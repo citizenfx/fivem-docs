@@ -24,7 +24,7 @@ set sv_onesyncBasicAuthUser "user"
 set sv_onesyncBasicAuthPassword "a-long-random-password"
 ```
 
-These work exactly like the credentials for the Prometheus `/perf` endpoint. If either one is left empty, every request is refused, including the voice one. Empty values are replaced with random values (32 characters for the user, 256 characters for the password) and sent to txAdmin.
+These work exactly like the credentials for the Prometheus `/perf` endpoint. If either one is left empty, every request is refused, including the voice one. The empty values are replaced with random values for txAdmin (32 characters for the user, 256 for the password).
 
 The `/onesync/` group and the voice endpoint want a little more than credentials. The `/onesync/` endpoints need OneSync itself enabled, because without it there is no state to hand out in the first place. The voice endpoint needs voice chat running, which is covered in its own section further down.
 
@@ -338,7 +338,7 @@ A channel with nobody in it reports an empty `clients` array rather than disappe
 
 ## Examples
 
-Both of these do the same thing, so you can compare them. They fetch every entity and print a count per type.
+Both fetch the same data. The curl example dumps the raw JSON, and the Node example prints a count per type.
 
 ### curl
 
