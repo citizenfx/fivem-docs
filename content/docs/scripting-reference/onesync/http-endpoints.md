@@ -338,7 +338,7 @@ A channel with nobody in it reports an empty `clients` array rather than disappe
 
 ## Examples
 
-All three of these do the same thing, so you can compare them. They fetch every entity and print a count per type.
+Both of these do the same thing, so you can compare them. They fetch every entity and print a count per type.
 
 ### curl
 
@@ -407,53 +407,6 @@ for (const [type, count] of [...counts].sort((a, b) => b[1] - a[1])) {
 ```
 
 The top-level `await` only works in an ES module, so save the file as `.mjs` or set `"type": "module"` in `package.json`. Otherwise, wrap the code in an `async function` and call it.
-
-### Python
-
-Nothing to install, `urllib` comes with Python.
-
-```python
-import base64
-import json
-import urllib.request
-from collections import Counter
-
-BASE = "http://localhost:30120"
-AUTH = base64.b64encode(b"user:pass").decode()
-
-TYPES = ["Automobile", "Bike", "Boat", "Door", "Heli", "Object", "Ped",
-         "Pickup", "PickupPlacement", "Plane", "Submarine", "Player", "Trailer", "Train"]
-
-
-def get(path):
-    request = urllib.request.Request(BASE + path, headers={
-        "Authorization": "Basic " + AUTH,
-        "Cache-Control": "no-cache",
-    })
-
-    with urllib.request.urlopen(request) as response:
-        return json.load(response)
-
-
-entities = get("/onesync/entities.json")
-counts = Counter(entity["type"] for entity in entities)
-
-print(f"{len(entities)} entities")
-
-for entity_type, count in counts.most_common():
-    name = TYPES[entity_type] if entity_type < len(TYPES) else f"type {entity_type}"
-    print(f"  {name}: {count}")
-```
-
-Running any of them against a quiet server looks about like this:
-
-```
-71 entities
-  Ped: 42
-  Automobile: 27
-  Player: 1
-  Bike: 1
-```
 
 ## A ready made browser
 
