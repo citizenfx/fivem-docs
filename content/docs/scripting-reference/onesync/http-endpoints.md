@@ -5,15 +5,15 @@ description: >
   Read the live OneSync and voice state of a running server over HTTP, for debugging and tooling.
 ---
 
+{{% alert theme="primary" %}}
+The following information is for **FiveM for GTAV Enhanced**.
+{{% /alert %}}
+
 A server running OneSync keeps track of a lot of things. For example: which entities exist, who owns them, which routing bucket they sit in, and which part of the world each player is responsible for. FXServer can hand all of that out over plain HTTP, as a small set of read only pages you can see by sending HTTP requests to it.
 
 All of these endpoints are part of the /onesync/ path, except for one that reports the state of voice chat, because it shares the same credentials it is covered here too.
 
 This is meant for you, the person running the server or making development tools, when you want to see what is actually going on.
-
-{{% alert color="info" title="Community documented" %}}
-While these endpoints are cool, this documentation only covers what they are in the basic sense. Since the source code is not public for FXServer, the actual usage of these endpoints may differ from what's documented here.
-{{% /alert %}}
 
 ## Turning them on
 
