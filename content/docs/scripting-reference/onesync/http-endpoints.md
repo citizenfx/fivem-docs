@@ -407,6 +407,8 @@ for (const [type, count] of [...counts].sort((a, b) => b[1] - a[1])) {
 }
 ```
 
+The top-level `await` only works in an ES module, so save the file as `.mjs` or set `"type": "module"` in `package.json`. Otherwise, wrap the code in an `async function` and call it.
+
 ### Python
 
 Nothing to install, `urllib` comes with Python.
