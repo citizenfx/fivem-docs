@@ -9,9 +9,9 @@ description: >
 The following information is for **FiveM for GTAV Enhanced**.
 {{% /alert %}}
 
-A server running OneSync keeps track of a lot of things. For example: which entities exist, who owns them, which routing bucket they sit in, and which part of the world each player is responsible for. FXServer can hand all of that out over plain HTTP, as a small set of read only pages you can see by sending HTTP requests to it.
+A server running OneSync keeps track of a lot of things. For example: which entities exist, who owns them, which routing bucket they sit in, and which part of the world each player is responsible for. FXServer can hand all of that out as a small set of read-only pages over plain HTTP.
 
-All of these endpoints are part of the /onesync/ path, except for one that reports the state of voice chat, because it shares the same credentials it is covered here too.
+All of these endpoints are part of the `/onesync/` path, except for one that reports the state of voice chat. Because it shares the same credentials, it is covered here too.
 
 This is meant for you, the person running the server or making development tools, when you want to see what is actually going on.
 
@@ -24,9 +24,9 @@ set sv_onesyncBasicAuthUser "user"
 set sv_onesyncBasicAuthPassword "a-long-random-password"
 ```
 
-These work exactly like the credentials for the Prometheus `/perf` endpoint. If either one is left empty, every request is refused, including the voice one despite its name having nothing to do with OneSync. Empty values are replaced with random values (32 characters for the user, 256 characters for the password) and sent to txAdmin.
+These work exactly like the credentials for the Prometheus `/perf` endpoint. If either one is left empty, every request is refused, including the voice one. Empty values are replaced with random values (32 characters for the user, 256 characters for the password) and sent to txAdmin.
 
-Two of them want a little more than credentials. The `/onesync/` endpoints need OneSync itself enabled, because without it there is no state to hand out in the first place. The voice endpoint needs voice chat running, which is covered in its own section further down.
+The `/onesync/` group and the voice endpoint want a little more than credentials. The `/onesync/` endpoints need OneSync itself enabled, because without it there is no state to hand out in the first place. The voice endpoint needs voice chat running, which is covered in its own section further down.
 
 {{% alert color="warning" title="Security and performance" %}}
 Treat these credentials with care. Anyone who can reach the endpoints gets a live list of every player and vehicle on your server, including their exact world coordinates, refreshed as fast as they care to ask. A cheater could use that for their own advantage to see where players are.
@@ -38,7 +38,7 @@ Trusted proxies configured via `sv_proxyIPRanges` are exempt, and you can tune t
 
 ## The endpoints
 
-There are eight, and that is the whole list.
+There are eight endpoints.
 
 | Endpoint                                     | What it gives you                                  |
 | -------------------------------------------- | -------------------------------------------------- |
@@ -65,7 +65,7 @@ curl -u user:pass http://localhost:30120/onesync/time.json
 
 ## entities.json
 
-The big one. You get a flat array with one object per networked entity, covering everything the server knows about across all routing buckets at once. Players, their vehicles, traffic, pedestrians walking around, props, all of it.
+This is the big one: a flat array with one object per networked entity, covering everything the server knows about across all routing buckets at once. Players, their vehicles, traffic, pedestrians walking around, props, all of it.
 
 ```json
 [
@@ -119,16 +119,16 @@ The server leaves a field out entirely rather than sending it as `null`, `false`
 | Field                        | When you get it                                                                                                                                                                                          |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `ownedByScript`              | Some script created the entity, meaning `scriptHash` is not `0`.                                                                                                                                         |
-| `ownedByClientScript`        | A client side script created it.                                                                                                                                                                         |
-| `ownedByServerScript`        | A server side script created it.                                                                                                                                                                         |
+| `ownedByClientScript`        | A client-side script created it.                                                                                                                                                                         |
+| `ownedByServerScript`        | A server-side script created it.                                                                                                                                                                         |
 | `shouldServerKeepEntity`     | The server has been told to hang on to this entity, either because a server script owns it or because its orphan mode is set to keep it. See {{% native_link "SET_ENTITY_ORPHAN_MODE" %}}.               |
-| `creationToken`              | The entity was created by a server script, and a non-zero value is what separates a server created entity from a client created one. It is stamped from the server clock, so it matches `createdAt`, but only for `CREATE_VEHICLE_SERVER_SETTER`, `CREATE_PED`, and `CREATE_OBJECT_NO_OFFSET`. For `CREATE_VEHICLE`, `CREATE_OBJECT`, and `CREATE_PED_INSIDE_VEHICLE`, a random token is used instead. |
-| `stateBag`                   | The entity has a state bag. The value is the bag's name, such as `entity:26`. Careful here, that number is the `netId`, not the `id`.                                                                    |
+| `creationToken`              | The entity was created by a server script, and a non-zero value is what separates a server-created entity from a client-created one. It is stamped from the server clock, so it matches `createdAt`, but only for `CREATE_VEHICLE_SERVER_SETTER`, `CREATE_PED`, and `CREATE_OBJECT_NO_OFFSET`. For `CREATE_VEHICLE`, `CREATE_OBJECT`, and `CREATE_PED_INSIDE_VEHICLE`, a random token is used instead. |
+| `stateBag`                   | The entity has a state bag. The value is the bag's name, such as `entity:26`. Careful here: that number is the `netId`, not the `id`.                                                                    |
 | `deleting`                   | The entity is on its way out and is being cleaned up. You will only catch this if you happen to ask at the right moment.                                                                                 |
 | `vehicleID`                  | The entity is a ped or player sitting in a vehicle. The value is the vehicle's `netId`, not its `id`.                                                                                                    |
 | `vehicleSeat`                | Comes along with `vehicleID`. It is the raw seat number out of the sync data, where a driver shows up as `1`.                                                                                            |
 | `position`                   | Where it is, as `[x, y, z]`. Only present when the entity has a sync tree.                                                                                                                               |
-| `wantsReassign`              | The owner no longer has the entity in scope, and the server is waiting to hand it to a nearby client. entity.                                                                                            |
+| `wantsReassign`              | The owner no longer has the entity in scope, and the server is waiting to hand it to a nearby client.                                                                                                    |
 | `finalizing`                 | The server is removing the entity for good. Server scripts already treat it as gone.                                                                                                                     |
 | `allowRemoteSyncedScenes`    | Set with {{% native_link "SET_ENTITY_REMOTE_SYNCED_SCENES_ALLOWED" %}}. Clients other than the owner can use it in synchronized scenes.                                                                  |
 | `ignoreRequestControlFilter` | Set with {{% native_link "SET_ENTITY_IGNORE_REQUEST_CONTROL_FILTER" %}}. Control requests for it bypass [`sv_filterRequestControl`](/docs/server-manual/server-commands/#sv_filterrequestcontrol-mode).  |
@@ -159,7 +159,7 @@ A vehicle created by a server script, with a state bag set on it and its orphan 
 }
 ```
 
-There is a fair bit to read out of that one. The `ownerClientID` of `65535` says no client owns it, which is normal for something the server made and no player has come near yet. `relevant` is `false` for the same reason, nobody needs to know about it. And `lastFrameIndex` and `timestamp` are both `0` because it has never actually been synchronised to anyone.
+There is a fair bit to read out of that one. The `ownerClientID` of `65535` says no client owns it, which is normal for something the server made and no player has come near yet. `relevant` is `false` for the same reason: nobody needs to know about it. And `lastFrameIndex` and `timestamp` are both `0` because it has never actually been synchronized to anyone.
 
 ### Entity types
 
@@ -217,7 +217,7 @@ The two behave slightly differently when there is nothing to show, which is wort
 {{% alert color="warning" title="The bag's name is not the number in the URL" %}}
 This one is a bit confusing. An entity's state bag is named after its `netId`, but the endpoint that hands you the bag wants its `id`.
 
-Take a server created vehicle with `id` 4 and `netId` 26. Its `stateBag` field reads `entity:26`, and yet:
+Take a server-created vehicle with `id` 4 and `netId` 26. Its `stateBag` field reads `entity:26`, and yet:
 
 ```bash
 curl -u user:pass http://localhost:30120/onesync/entities/4/stateBag.json   # {"docsTest":"hello"}
@@ -250,7 +250,7 @@ Asking for a bucket that is not in use gives you a `404`.
 
 ### Reading the picture
 
-What you get is an uncompressed 24 bit BMP, 512 by 512 pixels, which works out to roughly 768 KB every time you ask. Any image viewer will open it.
+What you get is an uncompressed 24-bit BMP, 512 by 512 pixels, which works out to roughly 768 KB every time you ask. Any image viewer will open it.
 
 Underneath, the world is divided into a grid of 256 by 256 sectors, and each sector is drawn as a solid block of 2 by 2 pixels. So the picture is really a 256 by 256 grid at double size.
 
@@ -263,9 +263,9 @@ sectorY = floor((y + 8192) / 150)
 
 The pixel column is `sectorX`, and the pixel row counted from the top of the image is `sectorY`. Because `sectorY` grows as the world's Y coordinate grows, and Y grows towards the north, the picture comes out upside down compared to the map you see in game. Flip it vertically if you want it to look familiar.
 
-The colours are simple. Dark grey, `#202020`, means nobody owns that sector. Any other colour means a client does, and the colour is worked out from which client it is, so two players will not look the same. That is the whole point of the picture, since it lets you see at a glance how the map is carved up between everyone online.
+The colors are simple. Dark gray, `#202020`, means nobody owns that sector. Any other color means a client does, and the color is worked out from which client it is, so two players will not look the same. That is the whole point of the picture, since it lets you see at a glance how the map is carved up between everyone online.
 
-As a sanity check on all of the above, a server with one player standing at `-1900.5, 2080.2` produced exactly 25 coloured blocks, sitting at sector X 39 through 43 and sector Y 66 through 70. That is the five by five patch of sectors around the player, which is what the server hands out, and it lines up with the formula above.
+As a sanity check on all of the above, a server with one player standing at `-1900.5, 2080.2` produced exactly 25 colored blocks, sitting at sector X 39 through 43 and sector Y 66 through 70. That is the five by five patch of sectors around the player, which is what the server hands out, and it lines up with the formula above.
 
 ## time.json
 
@@ -294,7 +294,7 @@ The odd one out in two ways. It is not under `/onesync/`, and it is only registe
 ]
 ```
 
-One object per voice channel. The fields line up exactly with `CreateVoiceChannel(mode, maxDistance)` from the server side voice API, so this endpoint is really a live view of the channels your scripts have created. Channels come back sorted by distance, not by `id`.
+One object per voice channel. The fields line up exactly with `CreateVoiceChannel(mode, maxDistance)` from the server-side voice API, so this endpoint is really a live view of the channels your scripts have created. Channels come back sorted by distance, not by `id`.
 
 | Field         | Meaning                                                                          |
 | ------------- | -------------------------------------------------------------------------------- |
@@ -315,7 +315,7 @@ The `mode` values are the same ones you pass when creating a channel:
 
 ### Client state
 
-Each entry under `clients` has a `clientID`, which is the client's server id, the same number your scripts call `source`. Alongside it is `state`, and that one needs unpacking, because it is a bitmask rather than a plain number. In other words, each bit is its own yes or no answer, and the number you see is all of them added together.
+Each entry under `clients` has a `clientID`, which is the client's server id, the same number your scripts call `source`. Alongside it is `state`, and that one needs unpacking, because it is a bitmask rather than a plain number. In other words, each bit is its own yes-or-no answer, and the number you see is all of them added together.
 
 | Bit | Value | Meaning                                                     |
 | --- | ----- | ----------------------------------------------------------- |
@@ -357,7 +357,7 @@ curl -s -u user:pass http://localhost:30120/onesync/entities.json \
 
 ### Node
 
-No dependencies, this uses the `fetch` that is built into Node 18 and up.
+No dependencies: this uses the `fetch` that is built into Node 18 and up.
 
 ```js
 const base = "http://localhost:30120";
@@ -408,7 +408,7 @@ for (const [type, count] of [...counts].sort((a, b) => b[1] - a[1])) {
 
 The top-level `await` only works in an ES module, so save the file as `.mjs` or set `"type": "module"` in `package.json`. Otherwise, wrap the code in an `async function` and call it.
 
-## A ready made browser
+## A ready-made browser
 
 If you would rather look at all of this in a browser than read raw JSON, there is a small example tool at [OneSyncBrowser](https://github.com/TomGrobbe/OneSyncBrowser). It fetches these endpoints for you and lays them out as tables and cards, with the entity list searchable and sortable, one card per connected client, and the world grid drawn as a picture you can zoom into.
 
