@@ -318,6 +318,12 @@ voice_external_connect 0.0.0.0:30122 externalIP:30123
 
 The license key used on both the voice server and game server **must match**.
 
+### Inspecting live channels
+
+If you want to see what your channels are actually doing on a running server, FXServer can report them over HTTP at `/voicechannels.json`. It lists every channel with its mode and distance, who is in it, and whether they are muted or deaf.
+
+This endpoint is only registered when either `voice_internal` or `voice_external_connect` is set. Setting `sv_voiceChat` alone does nothing here. Without one of those commands the endpoint does not exist and you get a 404. You also need a username and password. See [HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/) for the details.
+
 ### Legacy Mumble compatibility
 
 To keep the deprecated Mumble natives (everything documented above) working, set the following ConVar:
@@ -523,9 +529,3 @@ RegisterCommand('unlistenchannel', function(source, args)
     RemovePlayerFromVoiceChannel(radioChannels[channelIdx], source)
 end, false)
 ```
-
-### Inspecting live channels
-
-If you want to see what your channels are actually doing on a running server, FXServer can report them over HTTP at `/voicechannels.json`. It lists every channel with its mode and distance, who is in it, and whether they are muted or deaf.
-
-This endpoint is only registered when either `voice_internal` or `voice_external_connect` is set. Setting `sv_voiceChat` alone does nothing here. Without one of those commands the endpoint does not exist and you get a 404. You also need a username and password. See [HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/) for the details.
