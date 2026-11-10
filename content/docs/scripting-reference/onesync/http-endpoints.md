@@ -83,7 +83,6 @@ The big one. You get a flat array with one object per networked entity, covering
     "createdAt": 9101805,
     "lastFrameIndex": 519979,
     "timestamp": 9114101,
-    "lastMigratedAt": 0,
     "position": [-2349.3757, 1899.3099, 183.2535]
   }
 ]
@@ -106,8 +105,6 @@ The big one. You get a flat array with one object per networked entity, covering
 | `createdAt`           | The server clock reading from the moment the entity was created.                                                                                                            |
 | `lastFrameIndex`      | The last sync frame the entity was included in.                                                                                                                             |
 | `timestamp`           | The last sync timestamp the server got from the entity's owner.                                                                                                             |
-| `lastMigratedAt`      | The server clock reading of the last time the entity changed owner, or `0` if it never has.                                                                                 |
-| `position`            | Where it is, as `[x, y, z]`.                                                                                                                                                |
 
 {{% alert color="warning" title="id and netId are not the same number" %}}
 This could be confusing, because on a freshly started server the first few entities might happen to have matching values. They drift apart quickly.
@@ -119,17 +116,22 @@ The state bag endpoints take `id`. Your scripts, on the other hand, deal in `net
 
 The server leaves a field out entirely rather than sending it as `null`, `false` or `0`. So the set of keys differs from one entity to the next, and code that reads this needs to cope with a missing key rather than assume every object looks the same.
 
-| Field                    | When you get it                                                                                                                                                                                    |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ownedByScript`          | Some script created the entity, meaning `scriptHash` is not `0`.                                                                                                                                   |
-| `ownedByClientScript`    | A client side script created it.                                                                                                                                                                   |
-| `ownedByServerScript`    | A server side script created it.                                                                                                                                                                   |
-| `shouldServerKeepEntity` | The server has been told to hang on to this entity, either because a server script owns it or because its orphan mode is set to keep it. See {{% native_link "SET_ENTITY_ORPHAN_MODE" %}}.         |
-| `creationToken`          | The entity was created by a server script. This is the value that separates a server created entity from a client created one, and it is stamped from the server clock, so it matches `createdAt`. |
-| `stateBag`               | The entity has a state bag. The value is the bag's name, such as `entity:26`. Careful here, that number is the `netId`, not the `id`.                                                              |
-| `deleting`               | The entity is on its way out and is being cleaned up. You will only catch this if you happen to ask at the right moment.                                                                           |
-| `vehicleID`              | The entity is a ped or player sitting in a vehicle. The value is the vehicle's `netId`, not its `id`.                                                                                              |
-| `vehicleSeat`            | Comes along with `vehicleID`. It is the raw seat number out of the sync data, where a driver shows up as `1`.                                                                                      |
+| Field                        | When you get it                                                                                                                                                                                    |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ownedByScript`              | Some script created the entity, meaning `scriptHash` is not `0`.                                                                                                                                   |
+| `ownedByClientScript`        | A client side script created it.                                                                                                                                                                   |
+| `ownedByServerScript`        | A server side script created it.                                                                                                                                                                   |
+| `shouldServerKeepEntity`     | The server has been told to hang on to this entity, either because a server script owns it or because its orphan mode is set to keep it. See {{% native_link "SET_ENTITY_ORPHAN_MODE" %}}.         |
+| `creationToken`              | The entity was created by a server script. This is the value that separates a server created entity from a client created one, and it is stamped from the server clock, so it matches `createdAt`. |
+| `stateBag`                   | The entity has a state bag. The value is the bag's name, such as `entity:26`. Careful here, that number is the `netId`, not the `id`.                                                              |
+| `deleting`                   | The entity is on its way out and is being cleaned up. You will only catch this if you happen to ask at the right moment.                                                                           |
+| `vehicleID`                  | The entity is a ped or player sitting in a vehicle. The value is the vehicle's `netId`, not its `id`.                                                                                              |
+| `vehicleSeat`                | Comes along with `vehicleID`. It is the raw seat number out of the sync data, where a driver shows up as `1`.                                                                                      |
+| `position`                   | Where it is, as `[x, y, z]`. Only present when the entity has a sync tree.                                                                                                                         |
+| `wantsReassign`              | The `wantsReassign` value for the entity.                                                                                                                                                          |
+| `finalizing`                 | The `finalizing` value for the entity.                                                                                                                                                             |
+| `allowRemoteSyncedScenes`    | The `allowRemoteSyncedScenes` value for the entity.                                                                                                                                                |
+| `ignoreRequestControlFilter` | The `ignoreRequestControlFilter` value for the entity.                                                                                                                                             |
 
 A vehicle created by a server script, with a state bag set on it and its orphan mode set to keep, collects most of them at once. Compare this against the plain traffic vehicle further up to see the difference:
 
@@ -152,7 +154,6 @@ A vehicle created by a server script, with a state bag set on it and its orphan 
   "lastFrameIndex": 0,
   "timestamp": 0,
   "creationToken": 401568,
-  "lastMigratedAt": 0,
   "stateBag": "entity:26",
   "position": [-1900.0, 2080.0, 150.0]
 }
@@ -274,7 +275,7 @@ The server's clock, in milliseconds.
 
 This is not a date. It counts up from the moment the server started, so the value above means the server had been up for a little over two and a half hours.
 
-It matters because `createdAt`, `timestamp` and `lastMigratedAt` over in `entities.json` are all on this same clock. Subtract one from the other and you get an age. An entity with `createdAt` of `9101805` was created about 28 seconds before the reading above.
+It matters because `createdAt` and `timestamp` over in `entities.json` are on this same clock. Subtract one from the other and you get an age. An entity with `createdAt` of `9101805` was created about 28 seconds before the reading above.
 
 ## voicechannels.json
 
