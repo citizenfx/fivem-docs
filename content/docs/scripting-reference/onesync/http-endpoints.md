@@ -282,7 +282,7 @@ It matters because `createdAt` and `timestamp` over in `entities.json` are on th
 
 ## voicechannels.json
 
-The odd one out in two ways. It is not under `/onesync/`, and it needs voice chat switched on before it has anything to say. You want `sv_voiceChat` enabled, plus either `voice_internal` or `voice_external_connect`, all of which are covered on the [voice page](/docs/scripting-manual/voice/). Without a voice server running there are simply no channels to list.
+The odd one out in two ways. It is not under `/onesync/`, and it is only registered when the voice server is started with `voice_internal` or `voice_external_connect`, both of which are covered on the [voice page](/docs/scripting-manual/voice/). Setting `sv_voiceChat` on its own does nothing for this endpoint. Without `voice_internal` or `voice_external_connect` it does not exist and you get a 404.
 
 ```json
 [
@@ -295,13 +295,13 @@ The odd one out in two ways. It is not under `/onesync/`, and it needs voice cha
 ]
 ```
 
-One object per voice channel. The fields line up exactly with `CreateVoiceChannel(mode, maxDistance)` from the server side voice API, so this endpoint is really a live view of the channels your scripts have created.
+One object per voice channel. The fields line up exactly with `CreateVoiceChannel(mode, maxDistance)` from the server side voice API, so this endpoint is really a live view of the channels your scripts have created. Channels come back sorted by distance, not by `id`.
 
 | Field         | Meaning                                                                          |
 | ------------- | -------------------------------------------------------------------------------- |
 | `id`          | The channel id, the number `CreateVoiceChannel` handed back. These start at `0`. |
 | `mode`        | How the channel carries voice. See the table below.                              |
-| `maxDistance` | For a spatial channel, how far away someone can still be heard, in game units.   |
+| `maxDistance` | For a spatial channel, how far away someone can still be heard, in game units. Non-spatial and custom channels store infinity, reported here as `0.0`. |
 | `clients`     | Who is currently in the channel.                                                 |
 
 The `mode` values are the same ones you pass when creating a channel:
@@ -312,6 +312,7 @@ The `mode` values are the same ones you pass when creating a channel:
 | `1`  | Spatial     | 3D voice. You hear people within `maxDistance` of you, positioned around you.               |
 | `2`  | Custom      | Neither of the above. The channel does nothing on its own and expects a script to drive it. |
 | `3`  | Temporary   | Behaves like spatial, but the server throws the channel away once the last person leaves.   |
+| `4`  | TemporaryNoneSpatial | Behaves like non-spatial, but the server throws the channel away once the last person leaves. |
 
 ### Client state
 

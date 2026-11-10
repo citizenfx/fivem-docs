@@ -527,4 +527,4 @@ end, false)
 
 If you want to see what your channels are actually doing on a running server, FXServer can report them over HTTP at `/voicechannels.json`. It lists every channel with its mode and distance, who is in it, and whether they are muted or deaf.
 
-It needs `sv_voiceChat` enabled along with either `voice_internal` or `voice_external_connect`, plus a username and password. See [HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/) for the details.
+This endpoint is only registered when either `voice_internal` or `voice_external_connect` is set. Setting `sv_voiceChat` alone does nothing here. Without one of those commands the endpoint does not exist and you get a 404. You also need a username and password. See [HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/) for the details.

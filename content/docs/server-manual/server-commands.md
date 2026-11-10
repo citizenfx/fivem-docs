@@ -967,7 +967,7 @@ load_handshake_key handshake.key
 
 A boolean variable (default `false`) that controls whether voice chat is enabled on the server.
 
-Enabling this, along with either `voice_internal` or `voice_external_connect`, is also what makes the `/voicechannels.json` endpoint report anything. See [HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/).
+The `/voicechannels.json` endpoint is registered only by `voice_internal` or `voice_external_connect`, both of which also set `sv_voiceChat` to true themselves. Setting `sv_voiceChat` on its own does nothing for the endpoint. Without one of those commands it does not exist and you get a 404, not an empty list. See [HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/).
 
 #### `sv_mumble [true|false]`
 
