@@ -17,10 +17,10 @@ FiveM reserves specific extension types for internal use. Support differs by run
 | 21 | Vector3 | Lua, C# |
 | 22 | Vector4 | Lua, C# |
 | 23 | Quaternion | Lua, C# |
-| 41 | Entity | Lua, JavaScript |
-| 42 | Player | Lua, JavaScript |
+| 41 | Entity | Lua |
+| 42 | Player | Lua |
 
-JavaScript cannot unpack vectors or quaternions (20-23); they arrive as raw extension buffers.
+JavaScript cannot unpack vectors, quaternions, entities, or players (20-23 and 41-42); they arrive as raw extension buffers.
 
 Lua reserves only 20-23. Calling `msgpack.extend` on 10, 11, 41, or 42 is allowed, but it silently replaces function references or `Entity()`/`Player()` handling. Do not use those IDs for custom types.
 
