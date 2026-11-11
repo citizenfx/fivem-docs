@@ -49,6 +49,8 @@ CfxLua, just like booleans, numbers and strings are.
 Many [native functions][natives-doc] return and accept vectors too. They're commonly used for world positions and
 standard euler rotations, so use them whenever you can. More about there [here][about-natives].
 
+Vectors and quaternions are serialized as MessagePack extension types when passed through events or exports. See [MessagePack](/docs/scripting-reference/msgpack/) for details.
+
 For usage and examples see their respective docs:
 
 - [quat](/docs/scripting-reference/runtimes/lua/functions/quat/)
@@ -121,7 +123,7 @@ The Lua runtime exposes some libraries on the global scope which you can use.
 
 - `json`: [dkjson 2.5](https://github.com/LuaDist/dkjson/tree/2.5)
 - `promise`: [lua-promises](https://github.com/zserge/lua-promises/tree/02b64afdbe38de958a6a92703af8e66a9ff3e492)
-- `msgpack`: [lua-MessagePack 0.3.3](https://framagit.org/fperrad/lua-MessagePack/tree/0.3.3)
+- `msgpack`: [lua-cmsgpack](https://github.com/citizenfx/lua-cmsgpack)
 
 ## Lua specific functions
 
