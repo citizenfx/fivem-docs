@@ -1,5 +1,6 @@
 ---
-title: msgpack
+title: MessagePack
+weight: 55
 ---
 
 FiveM includes embedded support for [MessagePack](https://github.com/thers/msgpack-lite/), a highly efficient binary serialization format. This functionality is available across Lua, JavaScript, and C# runtimes, enabling compact and optimized data transmission between clients and servers.
