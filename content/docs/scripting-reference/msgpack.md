@@ -138,25 +138,11 @@ print(metatable == getmetatable(myCustomType)) -- Output: true
 
 ### Encoding and Decoding
 
-The JavaScript runtime includes embedded `msgpack.encode`, `msgpack.decode`, `msgpack_pack` and `msgpack_unpack` functions.
-These methods allow you to serialize JavaScript objects into binary format for network transmission and deserialize binary data back into usable objects.
-The API seamlessly integrates with other FiveM JavaScript utilities, making it straightforward to handle structured data.
-
-### Internal [codec](https://github.com/thers/msgpack-lite/blob/master/lib/codec-base.js)
-
-The JavaScript runtime includes a built-in codec for encoding and decoding data.
-This codec powers functions like **[emit](/docs/scripting-reference/runtimes/javascript/functions/emit-server)**, **[emitNet](/docs/scripting-reference/runtimes/javascript/functions/emitNet-server)**, **[on](/docs/scripting-reference/runtimes/javascript/functions/on-server)**, **[onNet](/docs/scripting-reference/runtimes/javascript/functions/onNet-server)**.
-To utilize this functionality directly, you can use the global functions `msgpack_pack` and `msgpack_unpack`.
-
-### Structures
-```ts
-function msgpack_pack(data: any): string // Internal codec serialization function
-function msgpack_unpack(data: string): any // Internal codec deserialization function
-```
+The JavaScript runtime exposes `msgpack_pack` and `msgpack_unpack`, which use the same internal codec that powers events and state bags. `msgpack_pack` serializes a value into a `Uint8Array`, and `msgpack_unpack` deserializes a `Uint8Array` back into a value.
 
 ### Examples
 
-Using internal codec
+Using `msgpack_pack` and `msgpack_unpack`
 ```ts
 // Define a player object
 const player = {
@@ -164,65 +150,14 @@ const player = {
     name: 'JohnDoe'
 };
 
-// Serialize the player object into a binary string using the internal codec
+// Serialize the player object into a Uint8Array
 const serialized = msgpack_pack(player);
 
-// Deserialize the binary string back into the original JavaScript object
+// Deserialize the Uint8Array back into the original object
 const deserialized = msgpack_unpack(serialized);
 
-// Access and log the 'source' property from the deserialized object
+// Log the player's source
 console.log(deserialized.source); // Output: 1
-```
-
-Using `msgpack.encode` and `msgpack.decode`
-```ts
-// Create a custom MessagePack codec
-const codec = msgpack.createCodec();
-
-// Serialize the player object into a binary string using the custom codec
-const serialized = msgpack.encode(player, { codec });
-
-// Deserialize the binary string back into the original JavaScript object
-const deserialized = msgpack.decode(serialized, { codec });
-
-// Log the 'source' property from the deserialized object
-console.log(deserialized.source); // Output: 1
-```
-
-Adding custom types
-```ts
-// Use msgpack_codec for serializing and deserializing data (e.g., StateBag, events), or opt for a custom codec if needed
-const codec = msgpack_codec;
-
-// Define a custom type with name and value
-class MyCustomType {
-    constructor(name, value) {
-        this.name = name;
-        this.value = value;
-    }
-}
-
-// Set up the serialization behavior for MyCustomType using the identifier (96)
-msgpack_codec.addExtPacker(96, MyCustomType, (instance) => {
-    // Serialize the MyCustomType instance to a binary string, including the name and value
-    return msgpack.encode({ name: instance.name, value: instance.value });
-});
-
-// Set up the deserialization behavior for MyCustomType using the same identifier (96)
-msgpack_codec.addExtUnpacker(96, (data) => {
-    // Deserialize the binary string and reconstruct the MyCustomType instance
-    const { name, value } = msgpack.decode(data);
-    return new MyCustomType(name, value);
-});
-
-// Serialize an instance of MyCustomType to a binary string
-const serialized = msgpack_pack(new MyCustomType('SomeRandomName', 'SomeRandomValue'));
-
-// Deserialize the binary string back into a MyCustomType instance
-const deserialized = msgpack_unpack(serialized);
-
-// Output the deserialized object and check if it's an instance of MyCustomType
-console.log(deserialized, deserialized instanceof MyCustomType); // Output: true, MyCustomType instance
 ```
 
 ## C# API
