@@ -3,7 +3,7 @@ title: MessagePack
 weight: 55
 ---
 
-FiveM includes embedded support for [MessagePack](https://github.com/thers/msgpack-lite/), a highly efficient binary serialization format. This functionality is available across Lua, JavaScript, and C# runtimes, enabling compact and optimized data transmission between clients and servers.
+FiveM includes embedded support for MessagePack, a highly efficient binary serialization format, across Lua, JavaScript, and C# runtimes. The Lua runtime uses the [msgpack](https://github.com/citizenfx/lua-cmsgpack) library to serialize and deserialize data, enabling compact and optimized data transmission between clients and servers.
 
 ## Reserved Extension Types
 
