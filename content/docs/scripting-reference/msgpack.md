@@ -7,22 +7,22 @@ FiveM includes embedded support for MessagePack, a highly efficient binary seria
 
 ## Reserved Extension Types
 
-FiveM reserves specific extension types for internal use, ensuring compatibility across different runtimes.
+FiveM reserves specific extension types for internal use. Support differs by runtime.
 
-Some of the reserved extension types such as `Vector2`, `Vector3`, `Vector4`, `Quaternion` where added to CFXLua and need conversion to be used in JavaScript or C#.
+| ID | Name | Runtimes |
+|----|------|----------|
+| 10 | FuncRef | Lua, JavaScript, C# |
+| 11 | LocalFuncRef | Lua, JavaScript, C# |
+| 20 | Vector2 | Lua, C# |
+| 21 | Vector3 | Lua, C# |
+| 22 | Vector4 | Lua, C# |
+| 23 | Quaternion | Lua, C# |
+| 41 | Entity | Lua, JavaScript |
+| 42 | Player | Lua, JavaScript |
 
-```ts
-enum ReservedExtensionTypes {
-    FunRef = 10,
-    LocalFuncRef = 11,
-    Vector2 = 20,
-    Vector3 = 21,
-    Vector4 = 22,
-    Quaternion = 23,
-    EntityState = 41,
-    PlayerState = 42
-}
-```
+JavaScript cannot unpack vectors or quaternions (20-23); they arrive as raw extension buffers.
+
+Lua reserves only 20-23. Calling `msgpack.extend` on 10, 11, 41, or 42 is allowed, but it silently replaces function references or `Entity()`/`Player()` handling. Do not use those IDs for custom types.
 
 ## Lua API
 
