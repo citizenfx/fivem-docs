@@ -96,7 +96,7 @@ setmetatable(myCustomType, {
     end,
 
     -- Extension type used for serialization and deserialization reference
-    -- A number between 0 and 127 not in ReservedExtensionTypes enum
+    -- A number between 0 and 127 other than the reserved IDs 20-23
     __ext = 90, --[[number]]
 
     -- Pack function for serialization
@@ -138,7 +138,7 @@ print(metatable == getmetatable(myCustomType)) -- Output: true
 
 ### Encoding and Decoding
 
-The JavaScript runtime exposes `msgpack_pack` and `msgpack_unpack`, which use the same internal codec that powers events and state bags. `msgpack_pack` serializes a value into a `Uint8Array`, and `msgpack_unpack` deserializes a `Uint8Array` back into a value.
+The JavaScript runtime exposes `msgpack_pack` and `msgpack_unpack`. `msgpack_pack` serializes a value into a `Uint8Array`, and `msgpack_unpack` deserializes a `Uint8Array` back into a value.
 
 ### Examples
 
