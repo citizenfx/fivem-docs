@@ -83,6 +83,7 @@ Adding custom types
 ```lua
 -- Define a custom type
 local myCustomType = {}
+
 -- Set the custom type metatable
 setmetatable(myCustomType, {
     -- Constructor function
@@ -93,15 +94,17 @@ setmetatable(myCustomType, {
             value3 = arg3
         }, getmetatable(self))
     end,
+
     -- Extension type used for serialization and deserialization reference
-    -- A number between 0 and 127 not in ReserverExtensionTypes enum
+    -- A number between 0 and 127 not in ReservedExtensionTypes enum
     __ext = 90, --[[number]]
+
     -- Pack function for serialization
     __pack = function(instance --[[myCustomType]], extensionType --[[number]])
         return json.encode({
-            value1 = arg1,
-            value2 = arg2,
-            value3 = arg3
+            value1 = instance.value1,
+            value2 = instance.value2,
+            value3 = instance.value3
         })
     end,
 
