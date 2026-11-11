@@ -161,4 +161,5 @@ console.log(deserialized.source); // Output: 1
 ```
 
 ## C# API
-TODO
+
+C# has no public MessagePack API. Vectors and quaternions are serialized automatically as extension types 20-23 when passed through events or exports.
