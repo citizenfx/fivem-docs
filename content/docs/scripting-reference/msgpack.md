@@ -5,15 +5,6 @@ weight: 55
 
 FiveM includes embedded support for [MessagePack](https://github.com/thers/msgpack-lite/), a highly efficient binary serialization format. This functionality is available across Lua, JavaScript, and C# runtimes, enabling compact and optimized data transmission between clients and servers.
 
-## Key Features
-
-| Feature                     | Description                                                                                 |
-|-----------------------------|---------------------------------------------------------------------------------------------|
-| Compact Serialization       | Converts structured data into a compact binary format for efficient transmission.           |
-| Cross-Language Support      | Ensures seamless compatibility between Lua, JavaScript, and C# MessagePack implementations. |
-| Built-In Functions          | No external libraries are required; FiveM provides native MessagePack support.              |
-
-
 ## Reserved Extension Types
 
 FiveM reserves specific extension types for internal use, ensuring compatibility across different runtimes.
@@ -233,9 +224,3 @@ console.log(deserialized, deserialized instanceof MyCustomType); // Output: true
 
 ## C# API
 TODO
-
-## Example Scenarios
-
-- **Lua to JavaScript**: A Lua client serializes a player's state and sends it to a JavaScript server, where it is deserialized and processed.
-- **JavaScript to C#**: A JavaScript client sends serialized configuration data to a C# server for persistent storage or advanced processing.
-- **C# to Lua**: A C# server encodes and sends a player's inventory to a Lua client, which unpacks it for display or interaction.
