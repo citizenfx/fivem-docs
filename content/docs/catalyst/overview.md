@@ -140,7 +140,7 @@ Mouse controls for each panel are listed with the [node graph](#1-node-graph), [
 Every part of Catalyst makes more sense once you understand the five layers an effect is made of and how they stack:
 
 | Layer | Answers |
-|---|---|---|
+|---|---|
 | **Particle Effect Rule** | What is this effect, overall? |
 | **Event Emitter** | What happens *when* during playback? |
 | **Emitter Rule** | Where, when and how many particles are born? |
