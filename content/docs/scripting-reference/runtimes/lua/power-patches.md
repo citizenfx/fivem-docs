@@ -240,12 +240,3 @@ nt = os.nanotime()
 print("dt: " .. dt .. " mt: " .. mt .. " nt: " .. nt)
 -- dt: 1000 mt: 263860441973 nt: 72001719953
 ```
-
-## Better signal handling in the interpreter on POSIX systems (5.4.2, 5.3.5, 5.2.3, 5.1.5)
-
-Use `sigaction` instead of `signal` for consistent behaviour so that, for example, pressing `Ctrl-C` always quits a Lua script blocked on I/O (otherwise, this behaviour is system-dependent).
-
----
-Sources:
-<br>https://github.com/gottfriedleibniz/lua
-<br>http://lua-users.org/wiki/LuaPowerPatches
