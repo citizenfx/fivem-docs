@@ -13,7 +13,7 @@ modifications the [Grit game engine][grit] introduced:
 - [Support for relative path literals](#relative-path-literals)
 - [Support for vectors & quaternions](#vectors-quaternions)
 
-[Lua 5.4][luadocs54] is also supported as of June 30, 2020, when it was introduced in the following [commit][lua54commit]. This new version of Lua also introduces a few power patches that can be found at the bottom of this page.
+For CfxLua's language-level power patches, see [CfxLua language extensions](/docs/scripting-reference/runtimes/lua/power-patches/).
 
 To learn more about Lua, read their [official documentation][luadocs].
 
