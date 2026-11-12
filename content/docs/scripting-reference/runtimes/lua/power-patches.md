@@ -11,9 +11,31 @@ documents the language extensions CfxLua adds on top of standard Lua.
 
 ## Compound Operators
 
-Add ``+=, -=, *=, /=, <<=, >>=, &=, |=, and ^=`` to the language. The increment
-and decrement operators (``++, --``) have not been implemented due to one of
-those operators being reserved.
+CfxLua adds these compound assignment operators. Each one applies an operation
+to a variable and assigns the result back:
+
+| Operator | Equivalent |
+| --- | --- |
+| `+=` | `x = x + y` |
+| `-=` | `x = x - y` |
+| `*=` | `x = x * y` |
+| `/=` | `x = x / y` |
+| `<<=` | `x = x << y` |
+| `>>=` | `x = x >> y` |
+| `&=` | `x = x & y` |
+| <code>&#124;=</code> | <code>x = x &#124; y</code> |
+| `^=` | `x = x ~ y` |
+
+{{% alert color="warning" title="^= is bitwise XOR" %}}
+Unlike `^`, which is exponentiation, `^=` is bitwise XOR. So `x ^= 2` is the
+same as `x = x ~ 2`.
+{{% /alert %}}
+
+A compound assignment targets one variable only. `x += 1` is valid, but
+`x, y += 1, 2` is not.
+
+The increment and decrement operators (`++`, `--`) have not been implemented
+because `--` is reserved for comments.
 
 ## Safe Navigation
 
