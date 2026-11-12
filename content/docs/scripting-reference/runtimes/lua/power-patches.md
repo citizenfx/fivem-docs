@@ -1,12 +1,13 @@
 ---
-title: Lua power patches
+title: CfxLua language extensions
 weight: 516
 ---
 
-# Lua Power Patches
-
-# Lua 5.4
-
+CfxLua is FiveM's fork of Lua 5.4.8, with its source in the
+[citizenfx/lua](https://github.com/citizenfx/lua) repository. It replaced Lua 5.3
+after that version was deprecated and then
+[removed](https://github.com/citizenfx/fivem/commit/a2a71bd1ba). This page
+documents the language extensions CfxLua adds on top of standard Lua.
 
 ## Compound Operators
 
