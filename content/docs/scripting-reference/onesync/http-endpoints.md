@@ -163,7 +163,7 @@ There is a fair bit to read out of that one. The `ownerClientID` of `65535` says
 
 ### Entity types
 
-The `type` number comes from the game's own list of network object types. Be careful here, because FiveM and RedM could number them differently.
+The `type` number comes from the game's own list of network object types.
 
 For FiveM:
 
