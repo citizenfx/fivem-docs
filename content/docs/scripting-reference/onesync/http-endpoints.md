@@ -311,7 +311,7 @@ The `mode` values are the same ones you pass when creating a channel:
 | `1`  | Spatial     | 3D voice. You hear people within `maxDistance` of you, positioned around you.               |
 | `2`  | Custom      | Neither of the above. The channel does nothing on its own and expects a script to drive it. |
 | `3`  | Temporary   | Behaves like spatial, but the server throws the channel away once the last person leaves.   |
-| `4`  | TemporaryNoneSpatial | Behaves like non-spatial, but the server throws the channel away once the last person leaves. |
+| `4`  | Temporary Non-spatial | Behaves like non-spatial, but the server throws the channel away once the last person leaves. |
 
 ### Client state
 
