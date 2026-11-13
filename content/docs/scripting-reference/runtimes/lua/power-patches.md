@@ -121,11 +121,6 @@ with `0xFFFFFFFF`:
 2491553369
 ```
 
-## \_\_ipairs
-
-Reintroduce compatibility for the ``__ipairs`` metamethod that was deprecated
-in 5.3 and removed in 5.4.
-
 ## Defer
 
 `defer` takes a function and returns a to-be-closed value. Assign the result to
@@ -166,58 +161,10 @@ variable (to-be-closed) when no `__iter` metamethod exists. This patch is
 inspired by the *Self-iterating Objects patch*; see [commit logs](https://github.com/gottfriedleibniz/lua/commits/luaglm) for reasoning
 behind deviation.
 
+## \_\_ipairs
 
-## String Blobs
-
-Introduce a `LUA_TSTRING` variant that is effectively a `LUA_VLNGSTR` but
-without the hash caching mechanism. Values of this variant are stored in tables
-by reference.
-
-```lua
--- Create a string blob of the given length. Raises an error if n <= 0.
-blob = string.blob(512)
-
--- Create a blob variant of another string
-blob = string.blob(string.rep('\0', 80))
-
--- Returns whether the value is a string blob
-is_blob = string.isblob(value)
-
--- Returns a string blob containing the values v1, v2, etc. serialized in binary
--- form (packed at an optional offset) according to the format string fmt.
---
--- Unlike string.pack, this function attempts to write the resulting
--- serialization onto the provided blob (at an optional offset). If the blob is
--- not of sufficient size, a (byte-)copy of the blob is made and returned.
-_blob = string.blob_pack(blob, pos --[[ optional ]], fmt, v1, v2, ···)
-
--- string.unpack where the "fmt" and "s" parameters have swapped order. It is
--- possible to still use string.unpack on blobs. This function exists for
--- API consistency.
-... = string.blob_unpack(blob, pos --[[ optional ]], fmt)
-```
-
-With included C API functions:
-
-```c
-/*
-** Creates a string blob of at least "len" bytes, pushing the zero-terminated
-** blob onto the stack. Returning a pointer to that blob inside the Lua state.
-*/
-char *lua_pushblob(lua_State *L, size_t len);
-
-/*
-** Converts the (explicit) string at the given index to a blob. If the string
-** value is not already a blob, then lua_tostringblob changes the actual value
-** in the stack to a blob (same lua_tolstring caveats apply).
-*/
-char *lua_tostringblob(lua_State *L, int idx, size_t *len);
-```
-
-A [DataView](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) API that interfaces with Lua's built in facilities, e.g., `string.pack`, `string.unpack`, and `table.concat`, is located [here](https://github.com/citizenfx/lua/blob/luaglm-548/libs/scripts/examples/dataview.lua).
-
-The intent is to allow byte data to still be beholden to the garbage collector while not requiring the allocation of intermediate data when going to and from the Lua API (unsafe caveats apply).
-
+Reintroduce compatibility for the ``__ipairs`` metamethod that was deprecated
+in 5.3 and removed in 5.4.
 
 ## Extended API
 
@@ -281,27 +228,6 @@ The following functions are added on top of the standard Lua libraries.
 : Returns all arguments, changing any value that is not a number, boolean,
   string, or vector to `nil`.
 
-## Nanosecond resolution timers
-
-The `os` library exposes high-resolution timing functions, including nanosecond
-clocks and the CPU's time-stamp counter. It is server-only, so these functions
-are not available on the client.
-
-`os.deltatime(end, start)`
-: Returns the absolute difference between the two timestamps.
-
-`os.microtime()`
-: Returns the current time in microseconds since epoch.
-
-`os.nanotime()`
-: Returns the current time in nanoseconds since epoch.
-
-`os.rdtsc()`
-: Samples the CPU's time-stamp counter.
-
-`os.rdtscp()`
-: Samples the time-stamp counter with serialization.
-
 ## Math functions
 
 ### C99 functions
@@ -328,6 +254,78 @@ The Lua 5.3 functions removed in Lua 5.4 are restored: `atan2`, `cosh`, `sinh`,
 : Returns `value` clamped to the range `[min, max]`. Numbers and
   `vec2`/`vec3`/`vec4` are supported, with clamping applied component-wise to
   vectors. All three arguments must be the same type.
+
+## String Blobs
+
+Introduce a `LUA_TSTRING` variant that is effectively a `LUA_VLNGSTR` but
+without the hash caching mechanism. Values of this variant are stored in tables
+by reference.
+
+```lua
+-- Create a string blob of the given length. Raises an error if n <= 0.
+blob = string.blob(512)
+
+-- Create a blob variant of another string
+blob = string.blob(string.rep('\0', 80))
+
+-- Returns whether the value is a string blob
+is_blob = string.isblob(value)
+
+-- Returns a string blob containing the values v1, v2, etc. serialized in binary
+-- form (packed at an optional offset) according to the format string fmt.
+--
+-- Unlike string.pack, this function attempts to write the resulting
+-- serialization onto the provided blob (at an optional offset). If the blob is
+-- not of sufficient size, a (byte-)copy of the blob is made and returned.
+_blob = string.blob_pack(blob, pos --[[ optional ]], fmt, v1, v2, ···)
+
+-- string.unpack where the "fmt" and "s" parameters have swapped order. It is
+-- possible to still use string.unpack on blobs. This function exists for
+-- API consistency.
+... = string.blob_unpack(blob, pos --[[ optional ]], fmt)
+```
+
+With included C API functions:
+
+```c
+/*
+** Creates a string blob of at least "len" bytes, pushing the zero-terminated
+** blob onto the stack. Returning a pointer to that blob inside the Lua state.
+*/
+char *lua_pushblob(lua_State *L, size_t len);
+
+/*
+** Converts the (explicit) string at the given index to a blob. If the string
+** value is not already a blob, then lua_tostringblob changes the actual value
+** in the stack to a blob (same lua_tolstring caveats apply).
+*/
+char *lua_tostringblob(lua_State *L, int idx, size_t *len);
+```
+
+A [DataView](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) API that interfaces with Lua's built in facilities, e.g., `string.pack`, `string.unpack`, and `table.concat`, is located [here](https://github.com/citizenfx/lua/blob/luaglm-548/libs/scripts/examples/dataview.lua).
+
+The intent is to allow byte data to still be beholden to the garbage collector while not requiring the allocation of intermediate data when going to and from the Lua API (unsafe caveats apply).
+
+## Nanosecond resolution timers
+
+The `os` library exposes high-resolution timing functions, including nanosecond
+clocks and the CPU's time-stamp counter. It is server-only, so these functions
+are not available on the client.
+
+`os.deltatime(end, start)`
+: Returns the absolute difference between the two timestamps.
+
+`os.microtime()`
+: Returns the current time in microseconds since epoch.
+
+`os.nanotime()`
+: Returns the current time in nanoseconds since epoch.
+
+`os.rdtsc()`
+: Samples the CPU's time-stamp counter.
+
+`os.rdtscp()`
+: Samples the time-stamp counter with serialization.
 
 ## Sandboxed debug library
 
