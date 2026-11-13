@@ -85,7 +85,7 @@ print("Hello, World!") /* Comment */
 ## Compile Time Jenkins' Hashes
 
 String literals wrapped in back-ticks are Jenkins' one-at-a-time hashed when
-parsed.
+parsed, and they are always lowercased first.
 
 ```lua
 > `Hello, World!`
@@ -95,15 +95,21 @@ parsed.
 For runtime hashing, the `joaat` function is included in the base library:
 
 ```lua
--- joaat(input [, ignore_casing]): Compute the Jenkins hash of the input string.
--- If 'ignore_casing' is true, the byte data is hashed as is. Otherwise, each
--- ASCII character is tolower'd prior to hashing.
+-- joaat(input [, ignore_casing])
+-- By default, ASCII characters are lowercased before hashing. Pass true to
+-- hash the input as-is, which makes the hash case-sensitive.
 > joaat("Hello, World!")
 1395890823
 ```
 
+Hashes are signed 32-bit integers. To get an unsigned value, mask the result
+with `0xFFFFFFFF`:
+
 ```lua
 > joaat("CPed")
+-1803413927
+
+> joaat("CPed") & 0xFFFFFFFF
 2491553369
 ```
 
