@@ -120,15 +120,21 @@ in 5.3 and removed in 5.4.
 
 ## Defer
 
-Import the defer statement from
-[Ravi](https://github.com/dibyendumajumdar/ravi/tree/master/patches) into the
-runtime. In addition `func2close` from ltests.h has been imported into the base
-library.
+`defer` takes a function and returns a to-be-closed value. Assign the result to
+a `<close>` variable and the function runs when that variable goes out of
+scope:
 
 ```lua
--- closing function. Could also be used to supply a to-be-closed variable to a
--- generic for loop
-defer numopen = numopen - 1 end
+local function scope()
+    local _ <close> = defer(function()
+        print("leaving scope")
+    end)
+    print("inside scope")
+end
+
+scope()
+-- inside scope
+-- leaving scope
 ```
 
 ## Each Iteration
