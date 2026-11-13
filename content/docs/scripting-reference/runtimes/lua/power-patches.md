@@ -39,16 +39,22 @@ because `--` is reserved for comments.
 
 ## Safe Navigation
 
-An indexing operation that suppresses errors on accesses into undefined tables
-(similar to the safe-navigation operators in C#, Kotlin, etc.), e.g.,
+The `?` operator suppresses errors when indexing into undefined tables, like
+the safe-navigation operators in C#, Kotlin, and similar languages.
 
 ```lua
 t?.x?.y == nil
 ```
 
+`?` works on tables (`t?.x`), indexes (`t?[k]`), method calls (`t?:m()`), and
+function calls (`f?()`). The chain stops at the first falsy value and evaluates
+to that value, so `false?.x` is `false`. It can also be an assignment target:
+`t?.x = 1` is skipped when `t` is nil. Indexing a truthy non-table value still
+raises an error.
+
 ## In Unpacking
 
-Support for unpacking named values from tables using the ``in`` keyword, e.g,
+Unpacks named values from a table using the `in` keyword.
 
 ```lua
 local a,b,c in t
@@ -59,6 +65,8 @@ is functionally equivalent to:
 ```lua
 local a,b,c = t.a,t.b,t.c
 ```
+
+`local` is optional, so `a, b in t` also works.
 
 ## Set Constructors
 
