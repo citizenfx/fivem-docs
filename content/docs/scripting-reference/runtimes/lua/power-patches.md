@@ -149,7 +149,7 @@ scope()
 
 In Lua 5.4, a generic 'for' loop starts by evaluating its explist (expression list) to produce
 four values: an iterator function, a state, an initial value for the control
-variable, and a closing (to-be-closed) value. However, the ``\_\_pairs`` metamethod
+variable, and a closing (to-be-closed) value. However, the ``__pairs`` metamethod
 does not support the optional to-be-closed variable.
 
 This extension introduces a ``__iter`` metamethod to allow ``next, t, nil,
@@ -162,7 +162,7 @@ for k,v in each(t) do print(k, v) end
 ```
 
 which defaults to a ``pairs`` implementation that supports a fourth return
-variable (to-be-closed) when no `__iter` metamethod exists. ... This patch is
+variable (to-be-closed) when no `__iter` metamethod exists. This patch is
 inspired by the *Self-iterating Objects patch*; see [commit logs](https://github.com/gottfriedleibniz/lua/commits/luaglm) for reasoning
 behind deviation.
 
