@@ -9,7 +9,7 @@ description: >
 The following information is for **FiveM for GTAV Enhanced**.
 {{% /alert %}}
 
-A server running OneSync keeps track of a lot of things. For example: which entities exist, who owns them, which routing bucket they sit in, and which part of the world each player is responsible for. FXServer can hand all of that out as a small set of read-only pages over plain HTTP.
+A server running OneSync keeps track of a lot of things. For example: which entities exist, who owns them, which routing bucket they sit in, and which part of the world each player is responsible for. The server can hand all of that out as a small set of read-only pages over plain HTTP.
 
 All of these endpoints are part of the `/onesync/` path, except for one that reports the state of voice chat. Because it shares the same credentials, it is covered here too.
 
