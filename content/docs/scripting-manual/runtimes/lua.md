@@ -13,6 +13,8 @@ modifications the [Grit game engine][grit] introduced:
 - [Support for relative path literals](#relative-path-literals)
 - [Support for vectors & quaternions](#vectors-quaternions)
 
+For CfxLua's language-level power patches, see [CfxLua language extensions](/docs/scripting-reference/runtimes/lua/power-patches/).
+
 To learn more about Lua, read their [official documentation][luadocs].
 
 ## Using Lua
