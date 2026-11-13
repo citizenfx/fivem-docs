@@ -301,3 +301,8 @@ are not available on the client.
 
 `os.rdtscp()`
 : Samples the time-stamp counter with serialization.
+
+## Sandboxed debug library
+
+The `debug` library is sandboxed and only exposes `getinfo`, `getmetatable`,
+`setmetatable`, `getupvalue`, and `traceback`.
