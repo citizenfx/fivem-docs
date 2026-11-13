@@ -26,7 +26,7 @@ set sv_onesyncBasicAuthPassword "a-long-random-password"
 
 These work exactly like the credentials for the Prometheus `/perf` endpoint. If either one is left empty, every request is refused, including the voice one. The empty values are replaced with random values for txAdmin (32 characters for the user, 256 for the password).
 
-The `/onesync/` group and the voice endpoint want a little more than credentials. The `/onesync/` endpoints need OneSync itself enabled, because without it there is no state to hand out in the first place. The voice endpoint needs voice chat running, which is covered in its own section further down.
+The voice endpoint needs voice chat running, which is covered in its own section further down.
 
 {{% alert color="warning" title="Security and performance" %}}
 Treat these credentials with care. Anyone who can reach the endpoints gets a live list of every player and vehicle on your server, including their exact world coordinates, refreshed as fast as they care to ask. A cheater could use that for their own advantage to see where players are.
