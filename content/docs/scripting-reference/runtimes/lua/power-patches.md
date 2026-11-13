@@ -274,15 +274,22 @@ The following functions are added on top of the standard Lua libraries.
   string, or vector to `nil`.
 
 ## Nanosecond resolution timers
-Enable nanosecond resolution timers (high resolution timers) and x86 rdtsc (Read Time-Stamp Counter) sampling in `loslib.c`.
 
-This enables lua functions such as:
+The `os` library exposes high-resolution timing functions, including nanosecond
+clocks and the CPU's time-stamp counter. It is server-only, so these functions
+are not available on the client.
 
-```lua
-end_time, start_time = 2000, 1000
-dt = os.deltatime(end_time, start_time)
-mt = os.microtime()
-nt = os.nanotime()
-print("dt: " .. dt .. " mt: " .. mt .. " nt: " .. nt)
--- dt: 1000 mt: 263860441973 nt: 72001719953
-```
+`os.deltatime(end, start)`
+: Returns the absolute difference between the two timestamps.
+
+`os.microtime()`
+: Returns the current time in microseconds since epoch.
+
+`os.nanotime()`
+: Returns the current time in nanoseconds since epoch.
+
+`os.rdtsc()`
+: Samples the CPU's time-stamp counter.
+
+`os.rdtscp()`
+: Samples the time-stamp counter with serialization.
