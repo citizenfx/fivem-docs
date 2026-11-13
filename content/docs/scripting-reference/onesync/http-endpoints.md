@@ -31,7 +31,7 @@ The voice endpoint needs voice chat running, which is covered in its own section
 {{% alert color="warning" title="Security and performance" %}}
 Treat these credentials with care. Anyone who can reach the endpoints gets a live list of every player and vehicle on your server, including their exact world coordinates, refreshed as fast as they care to ask. A cheater could use that for their own advantage to see where players are.
 
-The `/onesync/` endpoints are rate limited per IP address using the `http_onesync` limiter (rate 2, burst 5). When the limit is hit, the server returns HTTP `429` or closes the connection during the cooldown, so spamming them still costs your server's performance.
+The `/onesync/` endpoints are rate limited per IP address using the `http_onesync` limiter (rate 2, burst 5). When the limit is hit, the server returns HTTP `429` or closes the connection during the cooldown.
 
 Trusted proxies configured via `sv_proxyIPRanges` are exempt, and you can tune the limits with `rateLimiter_http_onesync_rate` and `rateLimiter_http_onesync_burst`. The `/voicechannels.json` endpoint is not rate limited.
 {{% /alert %}}
