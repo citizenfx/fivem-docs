@@ -213,57 +213,65 @@ The intent is to allow byte data to still be beholden to the garbage collector w
 
 ## Extended API
 
-Expose ``lua_createtable`` and API functions common to other custom Lua runtimes.
+The following functions are added on top of the standard Lua libraries.
 
-```lua
--- Creates a new empty table
--- narr: a hint for how many elements the table will have as a sequence.
--- nrec: a hint for how many other elements the table will have.
-t = table.create(narr[, nrec])
+### Table functions
 
--- Restore the table to its initial value (removing its contents) while
--- retaining its internal pointer;
-t = table.wipe(t)
+`table.create(narr, nrec)`
+: Creates a new empty table. Both arguments are required. `narr` is a hint for
+  the number of array elements, `nrec` for the number of other entries.
 
--- Request the removal of unused capacity in the given table (shrink_to_fit).
-t = table.compact(t)
+`table.new(narr, nrec)`
+: Alias for `table.create`.
 
--- An efficient (implemented using memcpy) table shallow-copy implementation;
-t2 = table.clone(t[, t2]) -- t2 is a preallocated destination table
+`table.wipe(t)`
+: Removes all entries from the table while keeping its internal storage.
 
--- Return the type of table being used. Note, this function only measures the
--- size of the "array part" of a Lua table and the "root" node of its
--- "hash part". Once an "array" becomes "mixed", or if a table has all of
--- values nil'd out, the table.type will remain "mixed" or "hash".
-label = table.type(t) -- "empty", "array", "hash", or "mixed"
+`table.clear(t)`
+: Alias for `table.wipe`.
 
--- Joins strings together with a delimiter;
-str = string.strjoin(delimiter [, string, ...])
+`table.clone(t [, t2])`
+: Returns a shallow copy of the table. `t2` is an optional preallocated
+  destination table.
 
--- Trim characters off the beginning and end of a string;
-str = string.strtrim(input [, chars])
+`table.type(t)`
+: Returns the table's storage type: `"empty"`, `"array"`, `"hash"`, or
+  `"mixed"`. It only inspects the array part and the root of the hash part, so
+  the result can stay `"mixed"` or `"hash"` after entries are removed.
 
--- Returns a concatenation of all number/string arguments passed;
-str = string.strconcat(...)
+### String functions
 
--- Splits a string using a delimiter (optionally: into a specified number of pieces);
-... = string.strsplit(delimiter [, string [, pieces]])
+`string.strjoin(delimiter [, string, ...])`
+: Joins the given strings with the delimiter between them.
 
--- Converts all arguments to strings;
-... = string.tostringall(...)
+`string.strtrim(input [, chars])`
+: Trims characters off the beginning and end of a string. `chars` optionally
+  specifies the characters to trim.
 
--- Alias: Returns the number of UTF-8 characters in string s;
-utf8.strlenutf8 = utf8.len
+`string.strconcat(...)`
+: Returns the concatenation of all number and string arguments.
 
--- String comparison accounting for UTF-8 chars. Returning a negative integer,
--- zero, or a positive integer if the first string is less than, equal to, or
--- greater than the second string;
-result = utf8.strcmputf8i(stringLH, stringRH)
+`string.strsplit(delimiter [, string [, pieces]])`
+: Splits a string on any of the delimiter characters. `pieces` optionally
+  limits the number of results.
 
---- Return all arguments with non-number/boolean/string values changed to nil;
-... = scrub(...)
+`string.tostringall(...)`
+: Converts all arguments to strings.
 
-```
+### UTF-8 functions
+
+`utf8.strlenutf8(s)`
+: Alias for `utf8.len`. Returns the number of UTF-8 characters in the string.
+
+`utf8.len16(s [, i [, j]])`
+: Returns the number of UTF-16 code units in a byte range of the string, or
+  `-1` if the range is malformed UTF-8.
+
+### Other
+
+`scrub(...)`
+: Returns all arguments, changing any value that is not a number, boolean,
+  string, or vector to `nil`.
 
 ## Nanosecond resolution timers
 Enable nanosecond resolution timers (high resolution timers) and x86 rdtsc (Read Time-Stamp Counter) sampling in `loslib.c`.
