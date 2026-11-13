@@ -166,11 +166,14 @@ without the hash caching mechanism. Values of this variant are stored in tables
 by reference.
 
 ```lua
--- Create a string blob of specified length
+-- Create a string blob of the given length. Raises an error if n <= 0.
 blob = string.blob(512)
 
 -- Create a blob variant of another string
 blob = string.blob(string.rep('\0', 80))
+
+-- Returns whether the value is a string blob
+is_blob = string.isblob(value)
 
 -- Returns a string blob containing the values v1, v2, etc. serialized in binary
 -- form (packed at an optional offset) according to the format string fmt.
@@ -193,17 +196,17 @@ With included C API functions:
 ** Creates a string blob of at least "len" bytes, pushing the zero-terminated
 ** blob onto the stack. Returning a pointer to that blob inside the Lua state.
 */
-const char *lua_pushblob(lua_State *L, size_t len);
+char *lua_pushblob(lua_State *L, size_t len);
 
 /*
 ** Converts the (explicit) string at the given index to a blob. If the string
 ** value is not already a blob, then lua_tostringblob changes the actual value
 ** in the stack to a blob (same lua_tolstring caveats apply).
 */
-const char *lua_tostringblob(lua_State *L, int idx, size_t *len);
+char *lua_tostringblob(lua_State *L, int idx, size_t *len);
 ```
 
-A [DataView](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) API that interfaces with Lua's built in facilities, e.g., `string.pack`, `string.unpack`, and `table.concat`, is located [here](https://github.com/citizenfx/lua/blob/2927a4be425e85b911764c90636c4c67fed9e640/libs/scripts/examples/dataview.lua).
+A [DataView](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) API that interfaces with Lua's built in facilities, e.g., `string.pack`, `string.unpack`, and `table.concat`, is located [here](https://github.com/citizenfx/lua/blob/luaglm-548/libs/scripts/examples/dataview.lua).
 
 The intent is to allow byte data to still be beholden to the garbage collector while not requiring the allocation of intermediate data when going to and from the Lua API (unsafe caveats apply).
 
