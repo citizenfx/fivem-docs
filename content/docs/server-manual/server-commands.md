@@ -967,6 +967,8 @@ load_handshake_key handshake.key
 
 A boolean variable (default `false`) that controls whether voice chat is enabled on the server.
 
+The `/voicechannels.json` endpoint is registered only by `voice_internal` or `voice_external_connect`, both of which also set `sv_voiceChat` to true themselves. Setting `sv_voiceChat` on its own does nothing for the endpoint. Without one of those commands it does not exist and you get a 404, not an empty list. See [HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/).
+
 #### `sv_mumble [true|false]`
 
 A boolean variable (default `false`) that enables the legacy Mumble compatibility API.
@@ -1009,6 +1011,14 @@ An integer variable (default `65536`) defining the maximum Y coordinate of the m
 
 An integer variable (default `100`) defining the size of each cell in the world grid. Smaller values use more RAM but less CPU. Best value depends on average entity range; `100` is usually optimal. Can only be set at startup.
 
+#### `sv_onesyncBasicAuthUser [user]`
+
+A string variable that sets the username for basic auth on the `/onesync/` endpoints, which expose the live OneSync state of the server. Leave empty to disable. See [OneSync HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/). Also sent to txAdmin.
+
+#### `sv_onesyncBasicAuthPassword [password]`
+
+A string variable that sets the password for basic auth on the `/onesync/` endpoints. Leave empty to disable. Anyone who can reach these endpoints can read the position of every player on your server, so keep this private. Also sent to txAdmin.
+
 ### Development & game build
 
 #### `sv_devMode [true|false]`
@@ -1031,6 +1041,7 @@ Buckets are considered empty if no tokens are available.
 | `handshakeUDP`     | 1               | 5                  |
 | `http_dynamic`     | 4               | 10                 |
 | `http_info`        | 4               | 10                 |
+| `http_onesync`     | 2               | 5                  |
 | `http_perf`        | 2               | 5                  |
 | `http_players`     | 4               | 10                 |
 | `netCommand`       | 7               | 14                 |
