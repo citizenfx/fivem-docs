@@ -302,6 +302,33 @@ are not available on the client.
 `os.rdtscp()`
 : Samples the time-stamp counter with serialization.
 
+## Math functions
+
+### C99 functions
+
+These standard C99 functions are added to `math`: `asinh`, `acosh`, `atanh`,
+`cbrt`, `copysign`, `erf`, `erfc`, `exp2`, `expm1`, `fdim`, `gamma`, `hypot`,
+`isfinite`, `isinf`, `isnan`, `isnormal`, `lgamma`, `log1p`, `logb`, `nearbyint`,
+`nextafter`, `remainder`, `round`, `scalbn`, `trunc`.
+
+### Lua 5.3 functions
+
+The Lua 5.3 functions removed in Lua 5.4 are restored: `atan2`, `cosh`, `sinh`,
+`tanh`, `pow`, `frexp`, `ldexp`, `log10`.
+
+### Other additions
+
+`math.eps`
+: The machine epsilon for `double` (about `2.220446049250313e-16`).
+
+`math.feps`
+: The machine epsilon for `float` (about `1.1920928955078125e-7`).
+
+`math.clamp(value, min, max)`
+: Returns `value` clamped to the range `[min, max]`. Numbers and
+  `vec2`/`vec3`/`vec4` are supported, with clamping applied component-wise to
+  vectors. All three arguments must be the same type.
+
 ## Sandboxed debug library
 
 The `debug` library is sandboxed and only exposes `getinfo`, `getmetatable`,
