@@ -5860,7 +5860,6 @@ weight: 10
 ## Helicopters
 
 <div class="category" id="helicopters">
-    <h2>Helicopters</h2>
     <div class="vehicles">
         <div class="vehicle">
             <img src="/vehicles/akula.webp" alt="Akula">
