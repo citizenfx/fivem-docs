@@ -90,6 +90,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Asbo</span>
                 <span><strong>Hash:</strong> 1118611807</span>
                 <span><strong>Model Name:</strong> asbo</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -98,6 +99,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Blista</span>
                 <span><strong>Hash:</strong> 3950024287</span>
                 <span><strong>Model Name:</strong> blista</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -106,6 +108,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Brioso R/A</span>
                 <span><strong>Hash:</strong> 1549126457</span>
                 <span><strong>Model Name:</strong> brioso</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -114,6 +117,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Brioso 300</span>
                 <span><strong>Hash:</strong> 1429622905</span>
                 <span><strong>Model Name:</strong> brioso2</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -122,6 +126,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Brioso 300 Widebody</span>
                 <span><strong>Hash:</strong> 15214558</span>
                 <span><strong>Model Name:</strong> brioso3</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -130,6 +135,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Club</span>
                 <span><strong>Hash:</strong> 2196012677</span>
                 <span><strong>Model Name:</strong> club</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -138,6 +144,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dilettante</span>
                 <span><strong>Hash:</strong> 3164157193</span>
                 <span><strong>Model Name:</strong> dilettante</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -146,6 +153,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dilettante</span>
                 <span><strong>Hash:</strong> 1682114128</span>
                 <span><strong>Model Name:</strong> dilettante2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -154,6 +162,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Issi</span>
                 <span><strong>Hash:</strong> 3117103977</span>
                 <span><strong>Model Name:</strong> issi2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -162,6 +171,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Issi Classic</span>
                 <span><strong>Hash:</strong> 931280609</span>
                 <span><strong>Model Name:</strong> issi3</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -170,6 +180,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse Issi</span>
                 <span><strong>Hash:</strong> 628003514</span>
                 <span><strong>Model Name:</strong> issi4</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -178,6 +189,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock Issi</span>
                 <span><strong>Hash:</strong> 1537277726</span>
                 <span><strong>Model Name:</strong> issi5</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -186,6 +198,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare Issi</span>
                 <span><strong>Hash:</strong> 1239571361</span>
                 <span><strong>Model Name:</strong> issi6</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -194,6 +207,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Blista Kanjo</span>
                 <span><strong>Hash:</strong> 409049982</span>
                 <span><strong>Model Name:</strong> kanjo</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -202,6 +216,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Panto</span>
                 <span><strong>Hash:</strong> 3863274624</span>
                 <span><strong>Model Name:</strong> panto</span>
+                <span><strong>DLC:</strong> I'm Not a Hipster</span>
             </div>
         </div>
         <div class="vehicle">
@@ -210,6 +225,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Prairie</span>
                 <span><strong>Hash:</strong> 2844316578</span>
                 <span><strong>Model Name:</strong> prairie</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -218,6 +234,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rhapsody</span>
                 <span><strong>Hash:</strong> 841808271</span>
                 <span><strong>Model Name:</strong> rhapsody</span>
+                <span><strong>DLC:</strong> I'm Not a Hipster</span>
             </div>
         </div>
         <div class="vehicle">
@@ -226,6 +243,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Weevil</span>
                 <span><strong>Hash:</strong> 1644055914</span>
                 <span><strong>Model Name:</strong> weevil</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
     </div>
@@ -241,6 +259,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Asea</span>
                 <span><strong>Hash:</strong> 2485144969</span>
                 <span><strong>Model Name:</strong> asea</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -249,6 +268,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Asea</span>
                 <span><strong>Hash:</strong> 2487343317</span>
                 <span><strong>Model Name:</strong> asea2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -257,6 +277,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Asterope</span>
                 <span><strong>Hash:</strong> 2391954683</span>
                 <span><strong>Model Name:</strong> asterope</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -265,6 +286,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Asterope GZ</span>
                 <span><strong>Hash:</strong> 3553846961</span>
                 <span><strong>Model Name:</strong> asterope2</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/chavosv6.webp" alt="Chavos V6">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Chavos V6</span>
+                <span><strong>Hash:</strong> 1992041063</span>
+                <span><strong>Model Name:</strong> chavosv6</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -273,6 +304,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cinquemila</span>
                 <span><strong>Hash:</strong> 2767531027</span>
                 <span><strong>Model Name:</strong> cinquemila</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -281,6 +313,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cognoscenti 55</span>
                 <span><strong>Hash:</strong> 906642318</span>
                 <span><strong>Model Name:</strong> cog55</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -289,6 +322,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cognoscenti 55 (Armored)</span>
                 <span><strong>Hash:</strong> 704435172</span>
                 <span><strong>Model Name:</strong> cog552</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -297,6 +331,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cognoscenti</span>
                 <span><strong>Hash:</strong> 2264796000</span>
                 <span><strong>Model Name:</strong> cognoscenti</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -305,6 +340,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cognoscenti (Armored)</span>
                 <span><strong>Hash:</strong> 3690124666</span>
                 <span><strong>Model Name:</strong> cognoscenti2</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -313,6 +349,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Deity</span>
                 <span><strong>Hash:</strong> 1532171089</span>
                 <span><strong>Model Name:</strong> deity</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -321,6 +358,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Chavos V6</span>
                 <span><strong>Hash:</strong> 457814204</span>
                 <span><strong>Model Name:</strong> driftchavosv6</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -329,6 +367,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Hardy</span>
                 <span><strong>Hash:</strong> 3893408850</span>
                 <span><strong>Model Name:</strong> drifthardy</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/driftvorschlag.webp" alt="Vorschlaghammer">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Vorschlaghammer</span>
+                <span><strong>Hash:</strong> 4151380270</span>
+                <span><strong>Model Name:</strong> driftvorschlag</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -337,6 +385,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Emperor</span>
                 <span><strong>Hash:</strong> 3609690755</span>
                 <span><strong>Model Name:</strong> emperor</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -345,6 +394,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Emperor</span>
                 <span><strong>Hash:</strong> 2411965148</span>
                 <span><strong>Model Name:</strong> emperor2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -353,6 +403,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Emperor</span>
                 <span><strong>Hash:</strong> 3053254478</span>
                 <span><strong>Model Name:</strong> emperor3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -361,6 +412,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Fugitive</span>
                 <span><strong>Hash:</strong> 1909141499</span>
                 <span><strong>Model Name:</strong> fugitive</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -369,6 +421,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Glendale</span>
                 <span><strong>Hash:</strong> 75131841</span>
                 <span><strong>Model Name:</strong> glendale</span>
+                <span><strong>DLC:</strong> I'm Not a Hipster</span>
             </div>
         </div>
         <div class="vehicle">
@@ -377,6 +430,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Glendale Custom</span>
                 <span><strong>Hash:</strong> 3381377750</span>
                 <span><strong>Model Name:</strong> glendale2</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -385,6 +439,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hardy</span>
                 <span><strong>Hash:</strong> 1580292663</span>
                 <span><strong>Model Name:</strong> hardy</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -393,6 +448,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Impaler SZ</span>
                 <span><strong>Hash:</strong> 3816328113</span>
                 <span><strong>Model Name:</strong> impaler5</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -401,6 +457,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ingot</span>
                 <span><strong>Hash:</strong> 3005245074</span>
                 <span><strong>Model Name:</strong> ingot</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -409,6 +466,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Intruder</span>
                 <span><strong>Hash:</strong> 886934177</span>
                 <span><strong>Model Name:</strong> intruder</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -417,6 +475,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Turreted Limo</span>
                 <span><strong>Hash:</strong> 4180339789</span>
                 <span><strong>Model Name:</strong> limo2</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -425,6 +484,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Minimus</span>
                 <span><strong>Hash:</strong> 3193860278</span>
                 <span><strong>Model Name:</strong> minimus</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -433,6 +493,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Premier</span>
                 <span><strong>Hash:</strong> 2411098011</span>
                 <span><strong>Model Name:</strong> premier</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -441,6 +502,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Primo</span>
                 <span><strong>Hash:</strong> 3144368207</span>
                 <span><strong>Model Name:</strong> primo</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -449,6 +511,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Primo Custom</span>
                 <span><strong>Hash:</strong> 2254540506</span>
                 <span><strong>Model Name:</strong> primo2</span>
+                <span><strong>DLC:</strong> Lowriders</span>
             </div>
         </div>
         <div class="vehicle">
@@ -457,6 +520,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Regina</span>
                 <span><strong>Hash:</strong> 4280472072</span>
                 <span><strong>Model Name:</strong> regina</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -465,6 +529,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rhinehart</span>
                 <span><strong>Hash:</strong> 2439462158</span>
                 <span><strong>Model Name:</strong> rhinehart</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -473,6 +538,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Romero Hearse</span>
                 <span><strong>Hash:</strong> 627094268</span>
                 <span><strong>Model Name:</strong> romero</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -481,6 +547,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Schafter</span>
                 <span><strong>Hash:</strong> 3039514899</span>
                 <span><strong>Model Name:</strong> schafter2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -489,6 +556,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Schafter V12 (Armored)</span>
                 <span><strong>Hash:</strong> 3406724313</span>
                 <span><strong>Model Name:</strong> schafter5</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -497,6 +565,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Schafter LWB (Armored)</span>
                 <span><strong>Hash:</strong> 1922255844</span>
                 <span><strong>Model Name:</strong> schafter6</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -505,6 +574,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stafford</span>
                 <span><strong>Hash:</strong> 321186144</span>
                 <span><strong>Model Name:</strong> stafford</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -513,6 +583,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stanier</span>
                 <span><strong>Hash:</strong> 2817386317</span>
                 <span><strong>Model Name:</strong> stanier</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -521,6 +592,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stratum</span>
                 <span><strong>Hash:</strong> 1723137093</span>
                 <span><strong>Model Name:</strong> stratum</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -529,6 +601,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stretch</span>
                 <span><strong>Hash:</strong> 2333339779</span>
                 <span><strong>Model Name:</strong> stretch</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -537,6 +610,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Super Diamond</span>
                 <span><strong>Hash:</strong> 1123216662</span>
                 <span><strong>Model Name:</strong> superd</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -545,6 +619,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Surge</span>
                 <span><strong>Hash:</strong> 2400073108</span>
                 <span><strong>Model Name:</strong> surge</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -553,6 +628,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tailgater</span>
                 <span><strong>Hash:</strong> 3286105550</span>
                 <span><strong>Model Name:</strong> tailgater</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -561,6 +637,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Tailgater S</span>
                 <span><strong>Hash:</strong> 3050505892</span>
                 <span><strong>Model Name:</strong> tailgater2</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/vorschlaghammer.webp" alt="Vorschlaghammer">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Vorschlaghammer</span>
+                <span><strong>Hash:</strong> 3054795149</span>
+                <span><strong>Model Name:</strong> vorschlaghammer</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -569,6 +655,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Warrener</span>
                 <span><strong>Hash:</strong> 1373123368</span>
                 <span><strong>Model Name:</strong> warrener</span>
+                <span><strong>DLC:</strong> I'm Not a Hipster</span>
             </div>
         </div>
         <div class="vehicle">
@@ -577,6 +664,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Warrener HKR</span>
                 <span><strong>Hash:</strong> 579912970</span>
                 <span><strong>Model Name:</strong> warrener2</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -585,6 +673,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Washington</span>
                 <span><strong>Hash:</strong> 1777363799</span>
                 <span><strong>Model Name:</strong> washington</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
     </div>
@@ -600,6 +689,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Aleutian</span>
                 <span><strong>Hash:</strong> 4256087847</span>
                 <span><strong>Model Name:</strong> aleutian</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -608,6 +698,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Astron</span>
                 <span><strong>Hash:</strong> 629969764</span>
                 <span><strong>Model Name:</strong> astron</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -616,6 +707,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Baller</span>
                 <span><strong>Hash:</strong> 3486135912</span>
                 <span><strong>Model Name:</strong> baller</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -624,6 +716,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Baller</span>
                 <span><strong>Hash:</strong> 142944341</span>
                 <span><strong>Model Name:</strong> baller2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -632,6 +725,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Baller LE</span>
                 <span><strong>Hash:</strong> 1878062887</span>
                 <span><strong>Model Name:</strong> baller3</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -640,6 +734,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Baller LE LWB</span>
                 <span><strong>Hash:</strong> 634118882</span>
                 <span><strong>Model Name:</strong> baller4</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -648,6 +743,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Baller LE (Armored)</span>
                 <span><strong>Hash:</strong> 470404958</span>
                 <span><strong>Model Name:</strong> baller5</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -656,6 +752,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Baller LE LWB (Armored)</span>
                 <span><strong>Hash:</strong> 666166960</span>
                 <span><strong>Model Name:</strong> baller6</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -664,6 +761,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Baller ST</span>
                 <span><strong>Hash:</strong> 359875117</span>
                 <span><strong>Model Name:</strong> baller7</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -672,6 +770,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Baller ST-D</span>
                 <span><strong>Hash:</strong> 3431608412</span>
                 <span><strong>Model Name:</strong> baller8</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -680,6 +779,16 @@ weight: 10
                 <span><strong>Display Name:</strong> BeeJay XL</span>
                 <span><strong>Hash:</strong> 850565707</span>
                 <span><strong>Model Name:</strong> bjxl</span>
+                <span><strong>DLC:</strong> Base game</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/castigator.webp" alt="Castigator">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Castigator</span>
+                <span><strong>Hash:</strong> 1307736079</span>
+                <span><strong>Model Name:</strong> castigator</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -688,6 +797,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cavalcade</span>
                 <span><strong>Hash:</strong> 2006918058</span>
                 <span><strong>Model Name:</strong> cavalcade</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -696,6 +806,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cavalcade</span>
                 <span><strong>Hash:</strong> 3505073125</span>
                 <span><strong>Model Name:</strong> cavalcade2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -704,6 +815,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cavalcade XL</span>
                 <span><strong>Hash:</strong> 3265236814</span>
                 <span><strong>Model Name:</strong> cavalcade3</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -712,6 +824,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Contender</span>
                 <span><strong>Hash:</strong> 683047626</span>
                 <span><strong>Model Name:</strong> contender</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -720,6 +833,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dorado</span>
                 <span><strong>Hash:</strong> 3526923154</span>
                 <span><strong>Model Name:</strong> dorado</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -728,6 +842,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dubsta</span>
                 <span><strong>Hash:</strong> 1177543287</span>
                 <span><strong>Model Name:</strong> dubsta</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -736,6 +851,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dubsta</span>
                 <span><strong>Hash:</strong> 3900892662</span>
                 <span><strong>Model Name:</strong> dubsta2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -744,6 +860,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Everon RS</span>
                 <span><strong>Hash:</strong> 554408685</span>
                 <span><strong>Model Name:</strong> everon3</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -752,6 +869,7 @@ weight: 10
                 <span><strong>Display Name:</strong> FQ 2</span>
                 <span><strong>Hash:</strong> 3157435195</span>
                 <span><strong>Model Name:</strong> fq2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -760,6 +878,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Granger</span>
                 <span><strong>Hash:</strong> 2519238556</span>
                 <span><strong>Model Name:</strong> granger</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -768,6 +887,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Granger 3600LX</span>
                 <span><strong>Hash:</strong> 4033620423</span>
                 <span><strong>Model Name:</strong> granger2</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -776,6 +896,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Gresley</span>
                 <span><strong>Hash:</strong> 2751205197</span>
                 <span><strong>Model Name:</strong> gresley</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -784,6 +905,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Habanero</span>
                 <span><strong>Hash:</strong> 884422927</span>
                 <span><strong>Model Name:</strong> habanero</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -792,6 +914,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Huntley S</span>
                 <span><strong>Hash:</strong> 486987393</span>
                 <span><strong>Model Name:</strong> huntley</span>
+                <span><strong>DLC:</strong> The High Life</span>
             </div>
         </div>
         <div class="vehicle">
@@ -800,6 +923,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Issi Rally</span>
                 <span><strong>Hash:</strong> 1550581940</span>
                 <span><strong>Model Name:</strong> issi8</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -808,6 +932,7 @@ weight: 10
                 <span><strong>Display Name:</strong> I-Wagen</span>
                 <span><strong>Hash:</strong> 662793086</span>
                 <span><strong>Model Name:</strong> iwagen</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -816,6 +941,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Jubilee</span>
                 <span><strong>Hash:</strong> 461465043</span>
                 <span><strong>Model Name:</strong> jubilee</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -824,6 +950,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Landstalker</span>
                 <span><strong>Hash:</strong> 1269098716</span>
                 <span><strong>Model Name:</strong> landstalker</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -832,6 +959,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Landstalker XL</span>
                 <span><strong>Hash:</strong> 3456868130</span>
                 <span><strong>Model Name:</strong> landstalker2</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -840,6 +968,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mesa</span>
                 <span><strong>Hash:</strong> 914654722</span>
                 <span><strong>Model Name:</strong> mesa</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -848,6 +977,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mesa</span>
                 <span><strong>Hash:</strong> 3546958660</span>
                 <span><strong>Model Name:</strong> mesa2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -856,6 +986,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Novak</span>
                 <span><strong>Hash:</strong> 2465530446</span>
                 <span><strong>Model Name:</strong> novak</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -864,6 +995,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Patriot</span>
                 <span><strong>Hash:</strong> 3486509883</span>
                 <span><strong>Model Name:</strong> patriot</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -872,6 +1004,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Patriot Stretch</span>
                 <span><strong>Hash:</strong> 3874056184</span>
                 <span><strong>Model Name:</strong> patriot2</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -880,6 +1013,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Radius</span>
                 <span><strong>Hash:</strong> 2643899483</span>
                 <span><strong>Model Name:</strong> radi</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -888,6 +1022,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rebla GTS</span>
                 <span><strong>Hash:</strong> 83136452</span>
                 <span><strong>Model Name:</strong> rebla</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -896,6 +1031,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rocoto</span>
                 <span><strong>Hash:</strong> 2136773105</span>
                 <span><strong>Model Name:</strong> rocoto</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -904,6 +1040,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Seminole</span>
                 <span><strong>Hash:</strong> 1221512915</span>
                 <span><strong>Model Name:</strong> seminole</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -912,6 +1049,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Seminole Frontier</span>
                 <span><strong>Hash:</strong> 2484160806</span>
                 <span><strong>Model Name:</strong> seminole2</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -920,6 +1058,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Serrano</span>
                 <span><strong>Hash:</strong> 1337041428</span>
                 <span><strong>Model Name:</strong> serrano</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -928,6 +1067,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Squaddie</span>
                 <span><strong>Hash:</strong> 4192631813</span>
                 <span><strong>Model Name:</strong> squaddie</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -936,6 +1076,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Toros</span>
                 <span><strong>Hash:</strong> 3126015148</span>
                 <span><strong>Model Name:</strong> toros</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -944,6 +1085,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vivanite</span>
                 <span><strong>Hash:</strong> 2922168362</span>
                 <span><strong>Model Name:</strong> vivanite</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -952,6 +1094,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Woodlander</span>
                 <span><strong>Hash:</strong> 1966698497</span>
                 <span><strong>Model Name:</strong> woodlander</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -960,6 +1103,7 @@ weight: 10
                 <span><strong>Display Name:</strong> XLS</span>
                 <span><strong>Hash:</strong> 1203490606</span>
                 <span><strong>Model Name:</strong> xls</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
         <div class="vehicle">
@@ -968,6 +1112,7 @@ weight: 10
                 <span><strong>Display Name:</strong> XLS (Armored)</span>
                 <span><strong>Hash:</strong> 3862958888</span>
                 <span><strong>Model Name:</strong> xls2</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
     </div>
@@ -983,6 +1128,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cognoscenti Cabrio</span>
                 <span><strong>Hash:</strong> 330661258</span>
                 <span><strong>Model Name:</strong> cogcabrio</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -991,6 +1137,7 @@ weight: 10
                 <span><strong>Display Name:</strong> FR36</span>
                 <span><strong>Hash:</strong> 2815031719</span>
                 <span><strong>Model Name:</strong> driftfr36</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -999,6 +1146,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Sentinel XS</span>
                 <span><strong>Hash:</strong> 3288768346</span>
                 <span><strong>Model Name:</strong> driftsentinel2</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/eurosx32.webp" alt="Euros X32">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Euros X32</span>
+                <span><strong>Hash:</strong> 3295372994</span>
+                <span><strong>Model Name:</strong> eurosx32</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1007,6 +1164,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Exemplar</span>
                 <span><strong>Hash:</strong> 4289813342</span>
                 <span><strong>Model Name:</strong> exemplar</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1015,6 +1173,7 @@ weight: 10
                 <span><strong>Display Name:</strong> F620</span>
                 <span><strong>Hash:</strong> 3703357000</span>
                 <span><strong>Model Name:</strong> f620</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1023,6 +1182,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Felon</span>
                 <span><strong>Hash:</strong> 3903372712</span>
                 <span><strong>Model Name:</strong> felon</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1031,6 +1191,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Felon GT</span>
                 <span><strong>Hash:</strong> 4205676014</span>
                 <span><strong>Model Name:</strong> felon2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1039,6 +1200,7 @@ weight: 10
                 <span><strong>Display Name:</strong> FR36</span>
                 <span><strong>Hash:</strong> 3829141989</span>
                 <span><strong>Model Name:</strong> fr36</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1047,6 +1209,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Jackal</span>
                 <span><strong>Hash:</strong> 3670438162</span>
                 <span><strong>Model Name:</strong> jackal</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1055,6 +1218,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Kanjo SJ</span>
                 <span><strong>Hash:</strong> 4230891418</span>
                 <span><strong>Model Name:</strong> kanjosj</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1063,6 +1227,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Oracle XS</span>
                 <span><strong>Hash:</strong> 1348744438</span>
                 <span><strong>Model Name:</strong> oracle</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1071,6 +1236,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Oracle</span>
                 <span><strong>Hash:</strong> 3783366066</span>
                 <span><strong>Model Name:</strong> oracle2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1079,6 +1245,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Postlude</span>
                 <span><strong>Hash:</strong> 4000288633</span>
                 <span><strong>Model Name:</strong> postlude</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1087,6 +1254,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Previon</span>
                 <span><strong>Hash:</strong> 1416471345</span>
                 <span><strong>Model Name:</strong> previon</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1095,6 +1263,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sentinel XS</span>
                 <span><strong>Hash:</strong> 1349725314</span>
                 <span><strong>Model Name:</strong> sentinel</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1103,6 +1272,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sentinel</span>
                 <span><strong>Hash:</strong> 873639469</span>
                 <span><strong>Model Name:</strong> sentinel2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1111,6 +1281,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sentinel XS4</span>
                 <span><strong>Hash:</strong> 3936328504</span>
                 <span><strong>Model Name:</strong> sentinel6</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1119,6 +1290,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Windsor</span>
                 <span><strong>Hash:</strong> 1581459400</span>
                 <span><strong>Model Name:</strong> windsor</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 1</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1127,6 +1299,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Windsor Drop</span>
                 <span><strong>Hash:</strong> 2364918497</span>
                 <span><strong>Model Name:</strong> windsor2</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1135,6 +1308,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Zion</span>
                 <span><strong>Hash:</strong> 3172678083</span>
                 <span><strong>Model Name:</strong> zion</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1143,6 +1317,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Zion Cabrio</span>
                 <span><strong>Hash:</strong> 3101863448</span>
                 <span><strong>Model Name:</strong> zion2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
     </div>
@@ -1158,6 +1333,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Blade</span>
                 <span><strong>Hash:</strong> 3089165662</span>
                 <span><strong>Model Name:</strong> blade</span>
+                <span><strong>DLC:</strong> I'm Not a Hipster</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1166,6 +1342,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Brigham</span>
                 <span><strong>Hash:</strong> 3640468689</span>
                 <span><strong>Model Name:</strong> brigham</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1174,6 +1351,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Broadway</span>
                 <span><strong>Hash:</strong> 2361724968</span>
                 <span><strong>Model Name:</strong> broadway</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1182,6 +1360,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Buccaneer</span>
                 <span><strong>Hash:</strong> 3612755468</span>
                 <span><strong>Model Name:</strong> buccaneer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1190,6 +1369,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Buccaneer Custom</span>
                 <span><strong>Hash:</strong> 3281516360</span>
                 <span><strong>Model Name:</strong> buccaneer2</span>
+                <span><strong>DLC:</strong> Lowriders</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1198,6 +1378,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Buffalo STX</span>
                 <span><strong>Hash:</strong> 3675036420</span>
                 <span><strong>Model Name:</strong> buffalo4</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1206,6 +1387,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Buffalo EVX</span>
                 <span><strong>Hash:</strong> 165968051</span>
                 <span><strong>Model Name:</strong> buffalo5</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1214,6 +1396,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Chino</span>
                 <span><strong>Hash:</strong> 349605904</span>
                 <span><strong>Model Name:</strong> chino</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 2</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1222,6 +1405,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Chino Custom</span>
                 <span><strong>Hash:</strong> 2933279331</span>
                 <span><strong>Model Name:</strong> chino2</span>
+                <span><strong>DLC:</strong> Lowriders</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1230,6 +1414,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Clique</span>
                 <span><strong>Hash:</strong> 2728360112</span>
                 <span><strong>Model Name:</strong> clique</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1238,6 +1423,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Clique Wagon</span>
                 <span><strong>Hash:</strong> 3315674721</span>
                 <span><strong>Model Name:</strong> clique2</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1246,6 +1432,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Coquette BlackFin</span>
                 <span><strong>Hash:</strong> 784565758</span>
                 <span><strong>Model Name:</strong> coquette3</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 2</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1254,6 +1441,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Deviant</span>
                 <span><strong>Hash:</strong> 1279262537</span>
                 <span><strong>Model Name:</strong> deviant</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1262,6 +1450,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Dominator</span>
                 <span><strong>Hash:</strong> 80636076</span>
                 <span><strong>Model Name:</strong> dominator</span>
+                <span><strong>DLC:</strong> Base game</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/dominator10.webp" alt="Dominator FX">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Dominator FX</span>
+                <span><strong>Hash:</strong> 1579902654</span>
+                <span><strong>Model Name:</strong> dominator10</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1270,6 +1468,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Pisswasser Dominator</span>
                 <span><strong>Hash:</strong> 3379262425</span>
                 <span><strong>Model Name:</strong> dominator2</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1278,6 +1477,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dominator GTX</span>
                 <span><strong>Hash:</strong> 3308022675</span>
                 <span><strong>Model Name:</strong> dominator3</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1286,6 +1486,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse Dominator</span>
                 <span><strong>Hash:</strong> 3606777648</span>
                 <span><strong>Model Name:</strong> dominator4</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1294,6 +1495,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock Dominator</span>
                 <span><strong>Hash:</strong> 2919906639</span>
                 <span><strong>Model Name:</strong> dominator5</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1302,6 +1504,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare Dominator</span>
                 <span><strong>Hash:</strong> 3001042683</span>
                 <span><strong>Model Name:</strong> dominator6</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1310,6 +1513,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dominator ASP</span>
                 <span><strong>Hash:</strong> 426742808</span>
                 <span><strong>Model Name:</strong> dominator7</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1318,6 +1522,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dominator GTT</span>
                 <span><strong>Hash:</strong> 736672010</span>
                 <span><strong>Model Name:</strong> dominator8</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1326,6 +1531,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dominator GT</span>
                 <span><strong>Hash:</strong> 3853757601</span>
                 <span><strong>Model Name:</strong> dominator9</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1334,6 +1540,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dominator GT</span>
                 <span><strong>Hash:</strong> 3439117103</span>
                 <span><strong>Model Name:</strong> driftdominator9</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1342,6 +1549,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dominator FX</span>
                 <span><strong>Hash:</strong> 3355365473</span>
                 <span><strong>Model Name:</strong> driftdominator10</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1350,6 +1558,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Gauntlet Hellfire</span>
                 <span><strong>Hash:</strong> 3933619103</span>
                 <span><strong>Model Name:</strong> driftgauntlet4</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1358,6 +1567,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Drift Yosemite</span>
                 <span><strong>Hash:</strong> 2613313775</span>
                 <span><strong>Model Name:</strong> driftyosemite</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1366,6 +1576,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dukes</span>
                 <span><strong>Hash:</strong> 723973206</span>
                 <span><strong>Model Name:</strong> dukes</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1374,6 +1585,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Duke O'Death</span>
                 <span><strong>Hash:</strong> 3968823444</span>
                 <span><strong>Model Name:</strong> dukes2</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1382,6 +1594,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Beater Dukes</span>
                 <span><strong>Hash:</strong> 2134119907</span>
                 <span><strong>Model Name:</strong> dukes3</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1390,6 +1603,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ellie</span>
                 <span><strong>Hash:</strong> 3027423925</span>
                 <span><strong>Model Name:</strong> ellie</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1398,6 +1612,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Eudora</span>
                 <span><strong>Hash:</strong> 3045179290</span>
                 <span><strong>Model Name:</strong> eudora</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1406,6 +1621,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Faction</span>
                 <span><strong>Hash:</strong> 2175389151</span>
                 <span><strong>Model Name:</strong> faction</span>
+                <span><strong>DLC:</strong> Lowriders</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1414,6 +1630,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Faction Custom 1</span>
                 <span><strong>Hash:</strong> 2504420315</span>
                 <span><strong>Model Name:</strong> faction2</span>
+                <span><strong>DLC:</strong> Lowriders</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1422,6 +1639,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Faction Custom Donk</span>
                 <span><strong>Hash:</strong> 2255212070</span>
                 <span><strong>Model Name:</strong> faction3</span>
+                <span><strong>DLC:</strong> Lowriders: Custom Classics</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1430,6 +1648,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Gauntlet</span>
                 <span><strong>Hash:</strong> 2494797253</span>
                 <span><strong>Model Name:</strong> gauntlet</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1438,6 +1657,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Redwood Gauntlet</span>
                 <span><strong>Hash:</strong> 349315417</span>
                 <span><strong>Model Name:</strong> gauntlet2</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1446,6 +1666,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Gauntlet Classic</span>
                 <span><strong>Hash:</strong> 722226637</span>
                 <span><strong>Model Name:</strong> gauntlet3</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1454,6 +1675,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Gauntlet Hellfire</span>
                 <span><strong>Hash:</strong> 1934384720</span>
                 <span><strong>Model Name:</strong> gauntlet4</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1462,6 +1684,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Gauntlet Classic Custom</span>
                 <span><strong>Hash:</strong> 2172320429</span>
                 <span><strong>Model Name:</strong> gauntlet5</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1470,6 +1693,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Greenwood</span>
                 <span><strong>Hash:</strong> 40817712</span>
                 <span><strong>Model Name:</strong> greenwood</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1478,6 +1702,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hermes</span>
                 <span><strong>Hash:</strong> 15219735</span>
                 <span><strong>Model Name:</strong> hermes</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1486,6 +1711,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hotknife</span>
                 <span><strong>Hash:</strong> 37348240</span>
                 <span><strong>Model Name:</strong> hotknife</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1494,6 +1720,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hustler</span>
                 <span><strong>Hash:</strong> 600450546</span>
                 <span><strong>Model Name:</strong> hustler</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1502,6 +1729,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Impaler</span>
                 <span><strong>Hash:</strong> 2198276962</span>
                 <span><strong>Model Name:</strong> impaler</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1510,6 +1738,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse Impaler</span>
                 <span><strong>Hash:</strong> 1009171724</span>
                 <span><strong>Model Name:</strong> impaler2</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1518,6 +1747,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock Impaler</span>
                 <span><strong>Hash:</strong> 2370166601</span>
                 <span><strong>Model Name:</strong> impaler3</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1526,6 +1756,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare Impaler</span>
                 <span><strong>Hash:</strong> 2550461639</span>
                 <span><strong>Model Name:</strong> impaler4</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1534,6 +1765,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Impaler LX</span>
                 <span><strong>Hash:</strong> 4116524922</span>
                 <span><strong>Model Name:</strong> impaler6</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1542,6 +1774,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse Imperator</span>
                 <span><strong>Hash:</strong> 444994115</span>
                 <span><strong>Model Name:</strong> imperator</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1550,6 +1783,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock Imperator</span>
                 <span><strong>Hash:</strong> 1637620610</span>
                 <span><strong>Model Name:</strong> imperator2</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1558,6 +1792,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare Imperator</span>
                 <span><strong>Hash:</strong> 3539435063</span>
                 <span><strong>Model Name:</strong> imperator3</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1566,6 +1801,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Lurcher</span>
                 <span><strong>Hash:</strong> 2068293287</span>
                 <span><strong>Model Name:</strong> lurcher</span>
+                <span><strong>DLC:</strong> Halloween Surprise</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1574,6 +1810,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Manana Custom</span>
                 <span><strong>Hash:</strong> 1717532765</span>
                 <span><strong>Model Name:</strong> manana2</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1582,6 +1819,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Moonbeam</span>
                 <span><strong>Hash:</strong> 525509695</span>
                 <span><strong>Model Name:</strong> moonbeam</span>
+                <span><strong>DLC:</strong> Lowriders</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1590,6 +1828,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Moonbeam Custom</span>
                 <span><strong>Hash:</strong> 1896491931</span>
                 <span><strong>Model Name:</strong> moonbeam2</span>
+                <span><strong>DLC:</strong> Lowriders</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1598,6 +1837,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightshade</span>
                 <span><strong>Hash:</strong> 2351681756</span>
                 <span><strong>Model Name:</strong> nightshade</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1606,6 +1846,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Peyote Gasser</span>
                 <span><strong>Hash:</strong> 2490551588</span>
                 <span><strong>Model Name:</strong> peyote2</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1614,6 +1855,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Phoenix</span>
                 <span><strong>Hash:</strong> 2199527893</span>
                 <span><strong>Model Name:</strong> phoenix</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1622,6 +1864,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Picador</span>
                 <span><strong>Hash:</strong> 1507916787</span>
                 <span><strong>Model Name:</strong> picador</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1630,6 +1873,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rat-Loader</span>
                 <span><strong>Hash:</strong> 3627815886</span>
                 <span><strong>Model Name:</strong> ratloader</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1638,6 +1882,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rat-Truck</span>
                 <span><strong>Hash:</strong> 3705788919</span>
                 <span><strong>Model Name:</strong> ratloader2</span>
+                <span><strong>DLC:</strong> Festive Surprise 2014</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1646,6 +1891,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ruiner</span>
                 <span><strong>Hash:</strong> 4067225593</span>
                 <span><strong>Model Name:</strong> ruiner</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1654,6 +1900,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ruiner 2000</span>
                 <span><strong>Hash:</strong> 941494461</span>
                 <span><strong>Model Name:</strong> ruiner2</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1662,6 +1909,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ruiner</span>
                 <span><strong>Hash:</strong> 777714999</span>
                 <span><strong>Model Name:</strong> ruiner3</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1670,6 +1918,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ruiner ZZ-8</span>
                 <span><strong>Hash:</strong> 1706945532</span>
                 <span><strong>Model Name:</strong> ruiner4</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1678,6 +1927,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sabre Turbo</span>
                 <span><strong>Hash:</strong> 2609945748</span>
                 <span><strong>Model Name:</strong> sabregt</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1686,6 +1936,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sabre Turbo Custom</span>
                 <span><strong>Hash:</strong> 223258115</span>
                 <span><strong>Model Name:</strong> sabregt2</span>
+                <span><strong>DLC:</strong> Lowriders: Custom Classics</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1694,6 +1945,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Slamvan</span>
                 <span><strong>Hash:</strong> 729783779</span>
                 <span><strong>Model Name:</strong> slamvan</span>
+                <span><strong>DLC:</strong> Festive Surprise 2014</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1702,6 +1954,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Lost Slamvan</span>
                 <span><strong>Hash:</strong> 833469436</span>
                 <span><strong>Model Name:</strong> slamvan2</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1710,6 +1963,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Slamvan Custom</span>
                 <span><strong>Hash:</strong> 1119641113</span>
                 <span><strong>Model Name:</strong> slamvan3</span>
+                <span><strong>DLC:</strong> Lowriders: Custom Classics</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1718,6 +1972,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse Slamvan</span>
                 <span><strong>Hash:</strong> 2233918197</span>
                 <span><strong>Model Name:</strong> slamvan4</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1726,6 +1981,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock Slamvan</span>
                 <span><strong>Hash:</strong> 373261600</span>
                 <span><strong>Model Name:</strong> slamvan5</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1734,6 +1990,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare Slamvan</span>
                 <span><strong>Hash:</strong> 1742022738</span>
                 <span><strong>Model Name:</strong> slamvan6</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1742,6 +1999,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stallion</span>
                 <span><strong>Hash:</strong> 1923400478</span>
                 <span><strong>Model Name:</strong> stalion</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1750,6 +2008,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Burger Shot Stallion</span>
                 <span><strong>Hash:</strong> 3893323758</span>
                 <span><strong>Model Name:</strong> stalion2</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1758,6 +2017,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tahoma Coupe</span>
                 <span><strong>Hash:</strong> 3833117047</span>
                 <span><strong>Model Name:</strong> tahoma</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1766,6 +2026,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tampa</span>
                 <span><strong>Hash:</strong> 972671128</span>
                 <span><strong>Model Name:</strong> tampa</span>
+                <span><strong>DLC:</strong> Festive Surprise 2015</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1774,6 +2035,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Weaponized Tampa</span>
                 <span><strong>Hash:</strong> 3084515313</span>
                 <span><strong>Model Name:</strong> tampa3</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1782,6 +2044,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tampa GT</span>
                 <span><strong>Hash:</strong> 2786546796</span>
                 <span><strong>Model Name:</strong> tampa4</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1790,6 +2053,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tulip</span>
                 <span><strong>Hash:</strong> 1456744817</span>
                 <span><strong>Model Name:</strong> tulip</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1798,6 +2062,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tulip M-100</span>
                 <span><strong>Hash:</strong> 268758436</span>
                 <span><strong>Model Name:</strong> tulip2</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1806,6 +2071,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vamos</span>
                 <span><strong>Hash:</strong> 4245851645</span>
                 <span><strong>Model Name:</strong> vamos</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1814,6 +2080,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vigero</span>
                 <span><strong>Hash:</strong> 3469130167</span>
                 <span><strong>Model Name:</strong> vigero</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1822,6 +2089,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vigero ZX</span>
                 <span><strong>Hash:</strong> 2536587772</span>
                 <span><strong>Model Name:</strong> vigero2</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1830,6 +2098,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vigero ZX Convertible</span>
                 <span><strong>Hash:</strong> 372621319</span>
                 <span><strong>Model Name:</strong> vigero3</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1838,6 +2107,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Virgo</span>
                 <span><strong>Hash:</strong> 3796912450</span>
                 <span><strong>Model Name:</strong> virgo</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 1</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1846,6 +2116,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Virgo Classic Custom</span>
                 <span><strong>Hash:</strong> 3395457658</span>
                 <span><strong>Model Name:</strong> virgo2</span>
+                <span><strong>DLC:</strong> Lowriders: Custom Classics</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1854,6 +2125,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Virgo Classic</span>
                 <span><strong>Hash:</strong> 16646064</span>
                 <span><strong>Model Name:</strong> virgo3</span>
+                <span><strong>DLC:</strong> Lowriders: Custom Classics</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1862,6 +2134,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Voodoo Custom</span>
                 <span><strong>Hash:</strong> 2006667053</span>
                 <span><strong>Model Name:</strong> voodoo</span>
+                <span><strong>DLC:</strong> Lowriders</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1870,6 +2143,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Voodoo</span>
                 <span><strong>Hash:</strong> 523724515</span>
                 <span><strong>Model Name:</strong> voodoo2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1878,6 +2152,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Weevil Custom</span>
                 <span><strong>Hash:</strong> 3300595976</span>
                 <span><strong>Model Name:</strong> weevil2</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1886,6 +2161,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Yosemite</span>
                 <span><strong>Hash:</strong> 1871995513</span>
                 <span><strong>Model Name:</strong> yosemite</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1894,6 +2170,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Drift Yosemite</span>
                 <span><strong>Hash:</strong> 1693751655</span>
                 <span><strong>Model Name:</strong> yosemite2</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
     </div>
@@ -1909,6 +2186,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ardent</span>
                 <span><strong>Hash:</strong> 159274291</span>
                 <span><strong>Model Name:</strong> ardent</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1917,6 +2195,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Astrale</span>
                 <span><strong>Hash:</strong> 1596736441</span>
                 <span><strong>Model Name:</strong> astrale</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1925,6 +2204,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Roosevelt</span>
                 <span><strong>Hash:</strong> 117401876</span>
                 <span><strong>Model Name:</strong> btype</span>
+                <span><strong>DLC:</strong> Valentine's Day Massacre</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1933,6 +2213,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Fränken Stange</span>
                 <span><strong>Hash:</strong> 3463132580</span>
                 <span><strong>Model Name:</strong> btype2</span>
+                <span><strong>DLC:</strong> Halloween Surprise</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1941,6 +2222,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Roosevelt Valor</span>
                 <span><strong>Hash:</strong> 3692679425</span>
                 <span><strong>Model Name:</strong> btype3</span>
+                <span><strong>DLC:</strong> Be My Valentine</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1949,6 +2231,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Casco</span>
                 <span><strong>Hash:</strong> 941800958</span>
                 <span><strong>Model Name:</strong> casco</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1957,6 +2240,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cheburek</span>
                 <span><strong>Hash:</strong> 3306466016</span>
                 <span><strong>Model Name:</strong> cheburek</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1965,6 +2249,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cheetah Classic</span>
                 <span><strong>Hash:</strong> 223240013</span>
                 <span><strong>Model Name:</strong> cheetah2</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1973,6 +2258,7 @@ weight: 10
                 <span><strong>Display Name:</strong> LSCM Cheetah Classic</span>
                 <span><strong>Hash:</strong> 471399650</span>
                 <span><strong>Model Name:</strong> cheetah3</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1981,6 +2267,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Coquette Classic</span>
                 <span><strong>Hash:</strong> 1011753235</span>
                 <span><strong>Model Name:</strong> coquette2</span>
+                <span><strong>DLC:</strong> San Andreas Flight School</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/coquette5.webp" alt="Coquette D1">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Coquette D1</span>
+                <span><strong>Hash:</strong> 2336538363</span>
+                <span><strong>Model Name:</strong> coquette5</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1989,6 +2285,34 @@ weight: 10
                 <span><strong>Display Name:</strong> Deluxo</span>
                 <span><strong>Hash:</strong> 1483171323</span>
                 <span><strong>Model Name:</strong> deluxo</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/driftcheburek.webp" alt="Cheburek">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Cheburek</span>
+                <span><strong>Hash:</strong> 2828274931</span>
+                <span><strong>Model Name:</strong> driftcheburek</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/driftjester3.webp" alt="Jester Classic">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Jester Classic</span>
+                <span><strong>Hash:</strong> 3932276298</span>
+                <span><strong>Model Name:</strong> driftjester3</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/driftnebula.webp" alt="Nebula Turbo">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Nebula Turbo</span>
+                <span><strong>Hash:</strong> 1690421418</span>
+                <span><strong>Model Name:</strong> driftnebula</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1997,6 +2321,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dynasty</span>
                 <span><strong>Hash:</strong> 310284501</span>
                 <span><strong>Model Name:</strong> dynasty</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2005,6 +2330,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Fagaloa</span>
                 <span><strong>Hash:</strong> 1617472902</span>
                 <span><strong>Model Name:</strong> fagaloa</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2013,6 +2339,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Feltzer Classic</span>
                 <span><strong>Hash:</strong> 2728226064</span>
                 <span><strong>Model Name:</strong> feltzer3</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 1</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2021,6 +2348,7 @@ weight: 10
                 <span><strong>Display Name:</strong> GT500</span>
                 <span><strong>Hash:</strong> 2215179066</span>
                 <span><strong>Model Name:</strong> gt500</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2029,6 +2357,7 @@ weight: 10
                 <span><strong>Display Name:</strong> GT750</span>
                 <span><strong>Hash:</strong> 1380582820</span>
                 <span><strong>Model Name:</strong> gt750</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2037,6 +2366,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Infernus Classic</span>
                 <span><strong>Hash:</strong> 2889029532</span>
                 <span><strong>Model Name:</strong> infernus2</span>
+                <span><strong>DLC:</strong> Cunning Stunts: Special Vehicle Circuit</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2045,6 +2375,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Itali Classic</span>
                 <span><strong>Hash:</strong> 893780296</span>
                 <span><strong>Model Name:</strong> itali2</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2053,6 +2384,7 @@ weight: 10
                 <span><strong>Display Name:</strong> JB 700</span>
                 <span><strong>Hash:</strong> 1051415893</span>
                 <span><strong>Model Name:</strong> jb700</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2061,6 +2393,7 @@ weight: 10
                 <span><strong>Display Name:</strong> JB 700W</span>
                 <span><strong>Hash:</strong> 394110044</span>
                 <span><strong>Model Name:</strong> jb7002</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2069,6 +2402,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mamba</span>
                 <span><strong>Hash:</strong> 2634021974</span>
                 <span><strong>Model Name:</strong> mamba</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2077,6 +2411,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Manana</span>
                 <span><strong>Hash:</strong> 2170765704</span>
                 <span><strong>Model Name:</strong> manana</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2085,6 +2420,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Michelli GT</span>
                 <span><strong>Hash:</strong> 1046206681</span>
                 <span><strong>Model Name:</strong> michelli</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2093,6 +2429,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Monroe</span>
                 <span><strong>Hash:</strong> 3861591579</span>
                 <span><strong>Model Name:</strong> monroe</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2101,6 +2438,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nebula Turbo</span>
                 <span><strong>Hash:</strong> 3412338231</span>
                 <span><strong>Model Name:</strong> nebula</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2109,6 +2447,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Peyote</span>
                 <span><strong>Hash:</strong> 1830407356</span>
                 <span><strong>Model Name:</strong> peyote</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2117,6 +2456,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Peyote Custom</span>
                 <span><strong>Hash:</strong> 1107404867</span>
                 <span><strong>Model Name:</strong> peyote3</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2125,6 +2465,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Pigalle</span>
                 <span><strong>Hash:</strong> 1078682497</span>
                 <span><strong>Model Name:</strong> pigalle</span>
+                <span><strong>DLC:</strong> I'm Not a Hipster</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2133,6 +2474,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rapid GT Classic</span>
                 <span><strong>Hash:</strong> 2049897956</span>
                 <span><strong>Model Name:</strong> rapidgt3</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2141,6 +2483,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Retinue</span>
                 <span><strong>Hash:</strong> 1841130506</span>
                 <span><strong>Model Name:</strong> retinue</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2149,6 +2492,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Retinue Mk II</span>
                 <span><strong>Hash:</strong> 2031587082</span>
                 <span><strong>Model Name:</strong> retinue2</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2157,6 +2501,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Savestra</span>
                 <span><strong>Hash:</strong> 903794909</span>
                 <span><strong>Model Name:</strong> savestra</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2165,6 +2510,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stinger</span>
                 <span><strong>Hash:</strong> 1545842587</span>
                 <span><strong>Model Name:</strong> stinger</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2173,6 +2519,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stinger GT</span>
                 <span><strong>Hash:</strong> 2196019706</span>
                 <span><strong>Model Name:</strong> stingergt</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2181,6 +2528,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stromberg</span>
                 <span><strong>Hash:</strong> 886810209</span>
                 <span><strong>Model Name:</strong> stromberg</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2189,6 +2537,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Swinger</span>
                 <span><strong>Hash:</strong> 500482303</span>
                 <span><strong>Model Name:</strong> swinger</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2197,6 +2546,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Toreador</span>
                 <span><strong>Hash:</strong> 1455990255</span>
                 <span><strong>Model Name:</strong> toreador</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2205,6 +2555,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Torero</span>
                 <span><strong>Hash:</strong> 1504306544</span>
                 <span><strong>Model Name:</strong> torero</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2213,6 +2564,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tornado</span>
                 <span><strong>Hash:</strong> 464687292</span>
                 <span><strong>Model Name:</strong> tornado</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2221,6 +2573,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tornado</span>
                 <span><strong>Hash:</strong> 1531094468</span>
                 <span><strong>Model Name:</strong> tornado2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2229,6 +2582,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tornado</span>
                 <span><strong>Hash:</strong> 1762279763</span>
                 <span><strong>Model Name:</strong> tornado3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2237,6 +2591,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tornado</span>
                 <span><strong>Hash:</strong> 2261744861</span>
                 <span><strong>Model Name:</strong> tornado4</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2245,6 +2600,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tornado Custom</span>
                 <span><strong>Hash:</strong> 2497353967</span>
                 <span><strong>Model Name:</strong> tornado5</span>
+                <span><strong>DLC:</strong> Lowriders: Custom Classics</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2253,6 +2609,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tornado Rat Rod</span>
                 <span><strong>Hash:</strong> 2736567667</span>
                 <span><strong>Model Name:</strong> tornado6</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2261,6 +2618,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Turismo Classic</span>
                 <span><strong>Hash:</strong> 3312836369</span>
                 <span><strong>Model Name:</strong> turismo2</span>
+                <span><strong>DLC:</strong> Cunning Stunts: Special Vehicle Circuit</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/uranus.webp" alt="Uranus LozSpeed">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Uranus LozSpeed</span>
+                <span><strong>Hash:</strong> 1534326199</span>
+                <span><strong>Model Name:</strong> uranus</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2269,6 +2636,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Viseris</span>
                 <span><strong>Hash:</strong> 3903371924</span>
                 <span><strong>Model Name:</strong> viseris</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2277,6 +2645,7 @@ weight: 10
                 <span><strong>Display Name:</strong> 190z</span>
                 <span><strong>Hash:</strong> 838982985</span>
                 <span><strong>Model Name:</strong> z190</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2285,6 +2654,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Zion Classic</span>
                 <span><strong>Hash:</strong> 1862507111</span>
                 <span><strong>Model Name:</strong> zion3</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2293,6 +2663,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Z-Type</span>
                 <span><strong>Hash:</strong> 758895617</span>
                 <span><strong>Model Name:</strong> ztype</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
     </div>
@@ -2308,6 +2679,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Alpha</span>
                 <span><strong>Hash:</strong> 767087018</span>
                 <span><strong>Model Name:</strong> alpha</span>
+                <span><strong>DLC:</strong> The Business Update</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2316,6 +2688,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Banshee</span>
                 <span><strong>Hash:</strong> 3253274834</span>
                 <span><strong>Model Name:</strong> banshee</span>
+                <span><strong>DLC:</strong> Base game</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/banshee3.webp" alt="Banshee GTS">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Banshee GTS</span>
+                <span><strong>Hash:</strong> 3634959571</span>
+                <span><strong>Model Name:</strong> banshee3</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2324,6 +2706,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bestia GTS</span>
                 <span><strong>Hash:</strong> 1274868363</span>
                 <span><strong>Model Name:</strong> bestiagts</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2332,6 +2715,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Blista Compact</span>
                 <span><strong>Hash:</strong> 1039032026</span>
                 <span><strong>Model Name:</strong> blista2</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2340,6 +2724,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Go Go Monkey Blista</span>
                 <span><strong>Hash:</strong> 3703315515</span>
                 <span><strong>Model Name:</strong> blista3</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2348,6 +2733,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Buffalo</span>
                 <span><strong>Hash:</strong> 3990165190</span>
                 <span><strong>Model Name:</strong> buffalo</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2356,6 +2742,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Buffalo S</span>
                 <span><strong>Hash:</strong> 736902334</span>
                 <span><strong>Model Name:</strong> buffalo2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2364,6 +2751,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sprunk Buffalo</span>
                 <span><strong>Hash:</strong> 237764926</span>
                 <span><strong>Model Name:</strong> buffalo3</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2372,6 +2760,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Calico GTF</span>
                 <span><strong>Hash:</strong> 3101054893</span>
                 <span><strong>Model Name:</strong> calico</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2380,6 +2769,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Carbonizzare</span>
                 <span><strong>Hash:</strong> 2072687711</span>
                 <span><strong>Model Name:</strong> carbonizzare</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2388,6 +2778,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Comet</span>
                 <span><strong>Hash:</strong> 3249425686</span>
                 <span><strong>Model Name:</strong> comet2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2396,6 +2787,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Comet Retro Custom</span>
                 <span><strong>Hash:</strong> 2272483501</span>
                 <span><strong>Model Name:</strong> comet3</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2404,6 +2796,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Comet Safari</span>
                 <span><strong>Hash:</strong> 1561920505</span>
                 <span><strong>Model Name:</strong> comet4</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2412,6 +2805,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Comet SR</span>
                 <span><strong>Hash:</strong> 661493923</span>
                 <span><strong>Model Name:</strong> comet5</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2420,6 +2814,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Comet S2</span>
                 <span><strong>Hash:</strong> 2568944644</span>
                 <span><strong>Model Name:</strong> comet6</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2428,6 +2823,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Comet S2 Cabrio</span>
                 <span><strong>Hash:</strong> 1141395928</span>
                 <span><strong>Model Name:</strong> comet7</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2436,6 +2832,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Coquette</span>
                 <span><strong>Hash:</strong> 108773431</span>
                 <span><strong>Model Name:</strong> coquette</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2444,6 +2841,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Coquette D10</span>
                 <span><strong>Hash:</strong> 2566281822</span>
                 <span><strong>Model Name:</strong> coquette4</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/coquette6.webp" alt="Coquette D5">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Coquette D5</span>
+                <span><strong>Hash:</strong> 127317925</span>
+                <span><strong>Model Name:</strong> coquette6</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2452,6 +2859,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Corsita</span>
                 <span><strong>Hash:</strong> 3540279623</span>
                 <span><strong>Model Name:</strong> corsita</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2460,6 +2868,7 @@ weight: 10
                 <span><strong>Display Name:</strong> La Coureuse</span>
                 <span><strong>Hash:</strong> 610429990</span>
                 <span><strong>Model Name:</strong> coureur</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2468,6 +2877,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cypher</span>
                 <span><strong>Hash:</strong> 1755697647</span>
                 <span><strong>Model Name:</strong> cypher</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2476,6 +2886,16 @@ weight: 10
                 <span><strong>Display Name:</strong> 8F Drafter</span>
                 <span><strong>Hash:</strong> 686471183</span>
                 <span><strong>Model Name:</strong> drafter</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/driftcypher.webp" alt="Cypher">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Cypher</span>
+                <span><strong>Hash:</strong> 258105345</span>
+                <span><strong>Model Name:</strong> driftcypher</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2484,6 +2904,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Euros</span>
                 <span><strong>Hash:</strong> 821121576</span>
                 <span><strong>Model Name:</strong> drifteuros</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2492,6 +2913,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Futo GTX</span>
                 <span><strong>Hash:</strong> 4113404654</span>
                 <span><strong>Model Name:</strong> driftfuto</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/driftfuto2.webp" alt="Futo">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Futo</span>
+                <span><strong>Hash:</strong> 3005741670</span>
+                <span><strong>Model Name:</strong> driftfuto2</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2500,6 +2931,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Jester RR</span>
                 <span><strong>Hash:</strong> 2531693357</span>
                 <span><strong>Model Name:</strong> driftjester</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2508,6 +2940,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Remus</span>
                 <span><strong>Hash:</strong> 2670883828</span>
                 <span><strong>Model Name:</strong> driftremus</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2516,6 +2949,16 @@ weight: 10
                 <span><strong>Display Name:</strong> RT3000</span>
                 <span><strong>Hash:</strong> 1730644782</span>
                 <span><strong>Model Name:</strong> driftrt3000</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/driftsentinel.webp" alt="Sentinel Classic Widebody">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Sentinel Classic Widebody</span>
+                <span><strong>Hash:</strong> 3308310822</span>
+                <span><strong>Model Name:</strong> driftsentinel</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2524,6 +2967,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Drift Tampa</span>
                 <span><strong>Hash:</strong> 2598648200</span>
                 <span><strong>Model Name:</strong> drifttampa</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2532,6 +2976,7 @@ weight: 10
                 <span><strong>Display Name:</strong> ZR350</span>
                 <span><strong>Hash:</strong> 1923534526</span>
                 <span><strong>Model Name:</strong> driftzr350</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2540,6 +2985,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Elegy Retro Custom</span>
                 <span><strong>Hash:</strong> 196747873</span>
                 <span><strong>Model Name:</strong> elegy</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2548,6 +2994,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Elegy RH8</span>
                 <span><strong>Hash:</strong> 3728579874</span>
                 <span><strong>Model Name:</strong> elegy2</span>
+                <span><strong>DLC:</strong> Base game</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/envisage.webp" alt="Envisage">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Envisage</span>
+                <span><strong>Hash:</strong> 1121330119</span>
+                <span><strong>Model Name:</strong> envisage</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2556,6 +3012,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Euros</span>
                 <span><strong>Hash:</strong> 2038480341</span>
                 <span><strong>Model Name:</strong> euros</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2564,6 +3021,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hotring Everon</span>
                 <span><strong>Hash:</strong> 4163619118</span>
                 <span><strong>Model Name:</strong> everon2</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2572,6 +3030,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Feltzer</span>
                 <span><strong>Hash:</strong> 2299640309</span>
                 <span><strong>Model Name:</strong> feltzer2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2580,6 +3039,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Flash GT</span>
                 <span><strong>Hash:</strong> 3035832600</span>
                 <span><strong>Model Name:</strong> flashgt</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2588,6 +3048,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Furore GT</span>
                 <span><strong>Hash:</strong> 3205927392</span>
                 <span><strong>Model Name:</strong> furoregt</span>
+                <span><strong>DLC:</strong> Last Team Standing</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2596,6 +3057,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Fusilade</span>
                 <span><strong>Hash:</strong> 499169875</span>
                 <span><strong>Model Name:</strong> fusilade</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2604,6 +3066,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Futo</span>
                 <span><strong>Hash:</strong> 2016857647</span>
                 <span><strong>Model Name:</strong> futo</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2612,6 +3075,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Futo GTX</span>
                 <span><strong>Hash:</strong> 2787736776</span>
                 <span><strong>Model Name:</strong> futo2</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2620,6 +3084,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hotring Hellfire</span>
                 <span><strong>Hash:</strong> 1336514315</span>
                 <span><strong>Model Name:</strong> gauntlet6</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2628,6 +3093,7 @@ weight: 10
                 <span><strong>Display Name:</strong> GB200</span>
                 <span><strong>Hash:</strong> 1909189272</span>
                 <span><strong>Model Name:</strong> gb200</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2636,6 +3102,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Growler</span>
                 <span><strong>Hash:</strong> 1304459735</span>
                 <span><strong>Model Name:</strong> growler</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2644,6 +3111,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hotring Sabre</span>
                 <span><strong>Hash:</strong> 1115909093</span>
                 <span><strong>Model Name:</strong> hotring</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2652,6 +3120,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Imorgon</span>
                 <span><strong>Hash:</strong> 3162245632</span>
                 <span><strong>Model Name:</strong> imorgon</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2660,6 +3129,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Issi Sport</span>
                 <span><strong>Hash:</strong> 1854776567</span>
                 <span><strong>Model Name:</strong> issi7</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2668,6 +3138,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Itali GTO</span>
                 <span><strong>Hash:</strong> 3963499524</span>
                 <span><strong>Model Name:</strong> italigto</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2676,6 +3147,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Itali RSX</span>
                 <span><strong>Hash:</strong> 3145241962</span>
                 <span><strong>Model Name:</strong> italirsx</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2684,6 +3156,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Jester</span>
                 <span><strong>Hash:</strong> 2997294755</span>
                 <span><strong>Model Name:</strong> jester</span>
+                <span><strong>DLC:</strong> The Business Update</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2692,6 +3165,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Jester (Racecar)</span>
                 <span><strong>Hash:</strong> 3188613414</span>
                 <span><strong>Model Name:</strong> jester2</span>
+                <span><strong>DLC:</strong> Festive Surprise 2014</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2700,6 +3174,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Jester Classic</span>
                 <span><strong>Hash:</strong> 4080061290</span>
                 <span><strong>Model Name:</strong> jester3</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2708,6 +3183,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Jester RR</span>
                 <span><strong>Hash:</strong> 2712905841</span>
                 <span><strong>Model Name:</strong> jester4</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/jester5.webp" alt="Jester RR Widebody">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Jester RR Widebody</span>
+                <span><strong>Hash:</strong> 1484920335</span>
+                <span><strong>Model Name:</strong> jester5</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2716,6 +3201,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Jugular</span>
                 <span><strong>Hash:</strong> 4086055493</span>
                 <span><strong>Model Name:</strong> jugular</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2724,6 +3210,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Khamelion</span>
                 <span><strong>Hash:</strong> 544021352</span>
                 <span><strong>Model Name:</strong> khamelion</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2732,6 +3219,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Komoda</span>
                 <span><strong>Hash:</strong> 3460613305</span>
                 <span><strong>Model Name:</strong> komoda</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2740,6 +3228,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Kuruma</span>
                 <span><strong>Hash:</strong> 2922118804</span>
                 <span><strong>Model Name:</strong> kuruma</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2748,6 +3237,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Kuruma (Armored)</span>
                 <span><strong>Hash:</strong> 410882957</span>
                 <span><strong>Model Name:</strong> kuruma2</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2756,6 +3246,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Locust</span>
                 <span><strong>Hash:</strong> 3353694737</span>
                 <span><strong>Model Name:</strong> locust</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2764,6 +3255,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Lynx</span>
                 <span><strong>Hash:</strong> 482197771</span>
                 <span><strong>Model Name:</strong> lynx</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2772,6 +3264,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Massacro</span>
                 <span><strong>Hash:</strong> 4152024626</span>
                 <span><strong>Model Name:</strong> massacro</span>
+                <span><strong>DLC:</strong> The High Life</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2780,6 +3273,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Massacro (Racecar)</span>
                 <span><strong>Hash:</strong> 3663206819</span>
                 <span><strong>Model Name:</strong> massacro2</span>
+                <span><strong>DLC:</strong> Festive Surprise 2014</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2788,6 +3282,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Neo</span>
                 <span><strong>Hash:</strong> 2674840994</span>
                 <span><strong>Model Name:</strong> neo</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2796,6 +3291,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Neon</span>
                 <span><strong>Hash:</strong> 2445973230</span>
                 <span><strong>Model Name:</strong> neon</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2804,6 +3300,7 @@ weight: 10
                 <span><strong>Display Name:</strong> 9F</span>
                 <span><strong>Hash:</strong> 1032823388</span>
                 <span><strong>Model Name:</strong> ninef</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2812,6 +3309,16 @@ weight: 10
                 <span><strong>Display Name:</strong> 9F Cabrio</span>
                 <span><strong>Hash:</strong> 2833484545</span>
                 <span><strong>Model Name:</strong> ninef2</span>
+                <span><strong>DLC:</strong> Base game</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/niobe.webp" alt="Niobe">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Niobe</span>
+                <span><strong>Hash:</strong> 1881415402</span>
+                <span><strong>Model Name:</strong> niobe</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2820,6 +3327,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Omnis</span>
                 <span><strong>Hash:</strong> 3517794615</span>
                 <span><strong>Model Name:</strong> omnis</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2828,6 +3336,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Omnis e-GT</span>
                 <span><strong>Hash:</strong> 3789743831</span>
                 <span><strong>Model Name:</strong> omnisegt</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2836,6 +3345,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Panthere</span>
                 <span><strong>Hash:</strong> 2100457220</span>
                 <span><strong>Model Name:</strong> panthere</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2844,6 +3354,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Paragon R</span>
                 <span><strong>Hash:</strong> 3847255899</span>
                 <span><strong>Model Name:</strong> paragon</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2852,6 +3363,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Paragon R (Armored)</span>
                 <span><strong>Hash:</strong> 1416466158</span>
                 <span><strong>Model Name:</strong> paragon2</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/paragon3.webp" alt="Paragon S">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Paragon S</span>
+                <span><strong>Hash:</strong> 3348919626</span>
+                <span><strong>Model Name:</strong> paragon3</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2860,6 +3381,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Pariah</span>
                 <span><strong>Hash:</strong> 867799010</span>
                 <span><strong>Model Name:</strong> pariah</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2868,6 +3390,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Penumbra</span>
                 <span><strong>Hash:</strong> 3917501776</span>
                 <span><strong>Model Name:</strong> penumbra</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2876,6 +3399,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Penumbra FF</span>
                 <span><strong>Hash:</strong> 3663644634</span>
                 <span><strong>Model Name:</strong> penumbra2</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2884,6 +3408,7 @@ weight: 10
                 <span><strong>Display Name:</strong> 300R</span>
                 <span><strong>Hash:</strong> 1076201208</span>
                 <span><strong>Model Name:</strong> r300</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2892,6 +3417,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Raiden</span>
                 <span><strong>Hash:</strong> 2765724541</span>
                 <span><strong>Model Name:</strong> raiden</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2900,6 +3426,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rapid GT</span>
                 <span><strong>Hash:</strong> 2360515092</span>
                 <span><strong>Model Name:</strong> rapidgt</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2908,6 +3435,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rapid GT</span>
                 <span><strong>Hash:</strong> 1737773231</span>
                 <span><strong>Model Name:</strong> rapidgt2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2916,6 +3444,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rapid GT X</span>
                 <span><strong>Hash:</strong> 1761301369</span>
                 <span><strong>Model Name:</strong> rapidgt4</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2924,6 +3453,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Raptor</span>
                 <span><strong>Hash:</strong> 3620039993</span>
                 <span><strong>Model Name:</strong> raptor</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2932,6 +3462,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Remus</span>
                 <span><strong>Hash:</strong> 1377217886</span>
                 <span><strong>Model Name:</strong> remus</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2940,6 +3471,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Revolter</span>
                 <span><strong>Hash:</strong> 3884762073</span>
                 <span><strong>Model Name:</strong> revolter</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2948,6 +3480,7 @@ weight: 10
                 <span><strong>Display Name:</strong> RT3000</span>
                 <span><strong>Hash:</strong> 3842363289</span>
                 <span><strong>Model Name:</strong> rt3000</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2956,6 +3489,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ruston</span>
                 <span><strong>Hash:</strong> 719660200</span>
                 <span><strong>Model Name:</strong> ruston</span>
+                <span><strong>DLC:</strong> Cunning Stunts: Special Vehicle Circuit</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2964,6 +3498,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Schafter V12</span>
                 <span><strong>Hash:</strong> 2809443750</span>
                 <span><strong>Model Name:</strong> schafter3</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2972,6 +3507,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Schafter LWB</span>
                 <span><strong>Hash:</strong> 1489967196</span>
                 <span><strong>Model Name:</strong> schafter4</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2980,6 +3516,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Schlagen GT</span>
                 <span><strong>Hash:</strong> 3787471536</span>
                 <span><strong>Model Name:</strong> schlagen</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2988,6 +3525,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Schwartzer</span>
                 <span><strong>Hash:</strong> 3548084598</span>
                 <span><strong>Model Name:</strong> schwarzer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2996,6 +3534,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sentinel</span>
                 <span><strong>Hash:</strong> 1104234922</span>
                 <span><strong>Model Name:</strong> sentinel3</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3004,6 +3543,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sentinel Classic Widebody</span>
                 <span><strong>Hash:</strong> 2938086457</span>
                 <span><strong>Model Name:</strong> sentinel4</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3012,6 +3552,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sentinel GTS</span>
                 <span><strong>Hash:</strong> 2709293299</span>
                 <span><strong>Model Name:</strong> sentinel5</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3020,6 +3561,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Seven-70</span>
                 <span><strong>Hash:</strong> 2537130571</span>
                 <span><strong>Model Name:</strong> seven70</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3028,6 +3570,7 @@ weight: 10
                 <span><strong>Display Name:</strong> SM722</span>
                 <span><strong>Hash:</strong> 775514032</span>
                 <span><strong>Model Name:</strong> sm722</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3036,6 +3579,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Specter</span>
                 <span><strong>Hash:</strong> 1886268224</span>
                 <span><strong>Model Name:</strong> specter</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3044,6 +3588,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Specter Custom</span>
                 <span><strong>Hash:</strong> 1074745671</span>
                 <span><strong>Model Name:</strong> specter2</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3052,6 +3597,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Itali GTO Stinger TT</span>
                 <span><strong>Hash:</strong> 1447690049</span>
                 <span><strong>Model Name:</strong> stingertt</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3060,6 +3606,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Streiter</span>
                 <span><strong>Hash:</strong> 1741861769</span>
                 <span><strong>Model Name:</strong> streiter</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3068,6 +3615,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sugoi</span>
                 <span><strong>Hash:</strong> 987469656</span>
                 <span><strong>Model Name:</strong> sugoi</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3076,6 +3624,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sultan</span>
                 <span><strong>Hash:</strong> 970598228</span>
                 <span><strong>Model Name:</strong> sultan</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3084,6 +3633,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sultan Classic</span>
                 <span><strong>Hash:</strong> 872704284</span>
                 <span><strong>Model Name:</strong> sultan2</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3092,6 +3642,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sultan RS Classic</span>
                 <span><strong>Hash:</strong> 4003946083</span>
                 <span><strong>Model Name:</strong> sultan3</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3100,6 +3651,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Surano</span>
                 <span><strong>Hash:</strong> 384071873</span>
                 <span><strong>Model Name:</strong> surano</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3108,6 +3660,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Drift Tampa</span>
                 <span><strong>Hash:</strong> 3223586949</span>
                 <span><strong>Model Name:</strong> tampa2</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3116,6 +3669,7 @@ weight: 10
                 <span><strong>Display Name:</strong> 10F</span>
                 <span><strong>Hash:</strong> 3400983137</span>
                 <span><strong>Model Name:</strong> tenf</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3124,6 +3678,7 @@ weight: 10
                 <span><strong>Display Name:</strong> 10F Widebody</span>
                 <span><strong>Hash:</strong> 274946574</span>
                 <span><strong>Model Name:</strong> tenf2</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3132,6 +3687,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tropos Rallye</span>
                 <span><strong>Hash:</strong> 1887331236</span>
                 <span><strong>Model Name:</strong> tropos</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3140,6 +3696,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vectre</span>
                 <span><strong>Hash:</strong> 2754593701</span>
                 <span><strong>Model Name:</strong> vectre</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3148,6 +3705,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Verlierer</span>
                 <span><strong>Hash:</strong> 1102544804</span>
                 <span><strong>Model Name:</strong> verlierer2</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3156,6 +3714,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Veto Classic</span>
                 <span><strong>Hash:</strong> 3437611258</span>
                 <span><strong>Model Name:</strong> veto</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3164,6 +3723,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Veto Modern</span>
                 <span><strong>Hash:</strong> 2802050217</span>
                 <span><strong>Model Name:</strong> veto2</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3172,6 +3732,7 @@ weight: 10
                 <span><strong>Display Name:</strong> V-STR</span>
                 <span><strong>Hash:</strong> 1456336509</span>
                 <span><strong>Model Name:</strong> vstr</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3180,6 +3741,7 @@ weight: 10
                 <span><strong>Display Name:</strong> ZR350</span>
                 <span><strong>Hash:</strong> 2436313176</span>
                 <span><strong>Model Name:</strong> zr350</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3188,6 +3750,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse ZR380</span>
                 <span><strong>Hash:</strong> 540101442</span>
                 <span><strong>Model Name:</strong> zr380</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3196,6 +3759,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock ZR380</span>
                 <span><strong>Hash:</strong> 3188846534</span>
                 <span><strong>Model Name:</strong> zr3802</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3204,6 +3768,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare ZR380</span>
                 <span><strong>Hash:</strong> 2816263004</span>
                 <span><strong>Model Name:</strong> zr3803</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
     </div>
@@ -3219,6 +3784,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Adder</span>
                 <span><strong>Hash:</strong> 3078201489</span>
                 <span><strong>Model Name:</strong> adder</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3227,6 +3793,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Autarch</span>
                 <span><strong>Hash:</strong> 3981782132</span>
                 <span><strong>Model Name:</strong> autarch</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3235,6 +3802,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Banshee 900R</span>
                 <span><strong>Hash:</strong> 633712403</span>
                 <span><strong>Model Name:</strong> banshee2</span>
+                <span><strong>DLC:</strong> January 2016 Update</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3243,6 +3811,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bullet</span>
                 <span><strong>Hash:</strong> 2598821281</span>
                 <span><strong>Model Name:</strong> bullet</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3251,6 +3820,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Champion</span>
                 <span><strong>Hash:</strong> 3379732821</span>
                 <span><strong>Model Name:</strong> champion</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3259,6 +3829,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cheetah</span>
                 <span><strong>Hash:</strong> 2983812512</span>
                 <span><strong>Model Name:</strong> cheetah</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3267,6 +3838,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cyclone</span>
                 <span><strong>Hash:</strong> 1392481335</span>
                 <span><strong>Model Name:</strong> cyclone</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3275,6 +3847,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Deveste Eight</span>
                 <span><strong>Hash:</strong> 1591739866</span>
                 <span><strong>Model Name:</strong> deveste</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3283,6 +3856,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Emerus</span>
                 <span><strong>Hash:</strong> 1323778901</span>
                 <span><strong>Model Name:</strong> emerus</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3291,6 +3865,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Entity XXR</span>
                 <span><strong>Hash:</strong> 2174267100</span>
                 <span><strong>Model Name:</strong> entity2</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3299,6 +3874,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Entity MT</span>
                 <span><strong>Hash:</strong> 1748565021</span>
                 <span><strong>Model Name:</strong> entity3</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3307,6 +3883,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Entity XF</span>
                 <span><strong>Hash:</strong> 3003014393</span>
                 <span><strong>Model Name:</strong> entityxf</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3315,6 +3892,7 @@ weight: 10
                 <span><strong>Display Name:</strong> FMJ</span>
                 <span><strong>Hash:</strong> 1426219628</span>
                 <span><strong>Model Name:</strong> fmj</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3323,6 +3901,7 @@ weight: 10
                 <span><strong>Display Name:</strong> FMJ MK V</span>
                 <span><strong>Hash:</strong> 3287642921</span>
                 <span><strong>Model Name:</strong> fmj2</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3331,6 +3910,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Furia</span>
                 <span><strong>Hash:</strong> 960812448</span>
                 <span><strong>Model Name:</strong> furia</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3339,6 +3919,7 @@ weight: 10
                 <span><strong>Display Name:</strong> GP1</span>
                 <span><strong>Hash:</strong> 1234311532</span>
                 <span><strong>Model Name:</strong> gp1</span>
+                <span><strong>DLC:</strong> Cunning Stunts: Special Vehicle Circuit</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3347,6 +3928,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ignus</span>
                 <span><strong>Hash:</strong> 2850852987</span>
                 <span><strong>Model Name:</strong> ignus</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3355,6 +3937,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Infernus</span>
                 <span><strong>Hash:</strong> 418536135</span>
                 <span><strong>Model Name:</strong> infernus</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3363,6 +3946,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Itali GTB</span>
                 <span><strong>Hash:</strong> 2246633323</span>
                 <span><strong>Model Name:</strong> italigtb</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3371,6 +3955,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Itali GTB Custom</span>
                 <span><strong>Hash:</strong> 3812247419</span>
                 <span><strong>Model Name:</strong> italigtb2</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3379,6 +3964,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Krieger</span>
                 <span><strong>Hash:</strong> 3630826055</span>
                 <span><strong>Model Name:</strong> krieger</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3387,6 +3973,7 @@ weight: 10
                 <span><strong>Display Name:</strong> RE-7B</span>
                 <span><strong>Hash:</strong> 3062131285</span>
                 <span><strong>Model Name:</strong> le7b</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3395,6 +3982,7 @@ weight: 10
                 <span><strong>Display Name:</strong> LM87</span>
                 <span><strong>Hash:</strong> 4284049613</span>
                 <span><strong>Model Name:</strong> lm87</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3403,6 +3991,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Luiva</span>
                 <span><strong>Hash:</strong> 3356898886</span>
                 <span><strong>Model Name:</strong> luiva</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3411,6 +4000,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nero</span>
                 <span><strong>Hash:</strong> 1034187331</span>
                 <span><strong>Model Name:</strong> nero</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3419,6 +4009,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nero Custom</span>
                 <span><strong>Hash:</strong> 1093792632</span>
                 <span><strong>Model Name:</strong> nero2</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3427,6 +4018,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Osiris</span>
                 <span><strong>Hash:</strong> 1987142870</span>
                 <span><strong>Model Name:</strong> osiris</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 1</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3435,6 +4027,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Penetrator</span>
                 <span><strong>Hash:</strong> 2536829930</span>
                 <span><strong>Model Name:</strong> penetrator</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3443,6 +4036,16 @@ weight: 10
                 <span><strong>Display Name:</strong> 811</span>
                 <span><strong>Hash:</strong> 2465164804</span>
                 <span><strong>Model Name:</strong> pfister811</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/pipistrello.webp" alt="Pipistrello">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Pipistrello</span>
+                <span><strong>Hash:</strong> 4071505793</span>
+                <span><strong>Model Name:</strong> pipistrello</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3451,6 +4054,7 @@ weight: 10
                 <span><strong>Display Name:</strong> X80 Proto</span>
                 <span><strong>Hash:</strong> 2123327359</span>
                 <span><strong>Model Name:</strong> prototipo</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3459,6 +4063,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Reaper</span>
                 <span><strong>Hash:</strong> 234062309</span>
                 <span><strong>Model Name:</strong> reaper</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3467,6 +4072,7 @@ weight: 10
                 <span><strong>Display Name:</strong> S80RR</span>
                 <span><strong>Hash:</strong> 3970348707</span>
                 <span><strong>Model Name:</strong> s80</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3475,6 +4081,7 @@ weight: 10
                 <span><strong>Display Name:</strong> SC1</span>
                 <span><strong>Hash:</strong> 1352136073</span>
                 <span><strong>Model Name:</strong> sc1</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3483,6 +4090,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Scramjet</span>
                 <span><strong>Hash:</strong> 3656405053</span>
                 <span><strong>Model Name:</strong> scramjet</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3491,6 +4099,7 @@ weight: 10
                 <span><strong>Display Name:</strong> ETR1</span>
                 <span><strong>Hash:</strong> 819197656</span>
                 <span><strong>Model Name:</strong> sheava</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3499,6 +4108,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sultan RS</span>
                 <span><strong>Hash:</strong> 3999278268</span>
                 <span><strong>Model Name:</strong> sultanrs</span>
+                <span><strong>DLC:</strong> January 2016 Update</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3507,6 +4117,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Suzume</span>
                 <span><strong>Hash:</strong> 687627128</span>
                 <span><strong>Model Name:</strong> suzume</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3515,6 +4126,7 @@ weight: 10
                 <span><strong>Display Name:</strong> T20</span>
                 <span><strong>Hash:</strong> 1663218586</span>
                 <span><strong>Model Name:</strong> t20</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 2</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3523,6 +4135,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Taipan</span>
                 <span><strong>Hash:</strong> 3160260734</span>
                 <span><strong>Model Name:</strong> taipan</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3531,6 +4144,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tempesta</span>
                 <span><strong>Hash:</strong> 272929391</span>
                 <span><strong>Model Name:</strong> tempesta</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3539,6 +4153,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tezeract</span>
                 <span><strong>Hash:</strong> 1031562256</span>
                 <span><strong>Model Name:</strong> tezeract</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3547,6 +4162,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Thrax</span>
                 <span><strong>Hash:</strong> 1044193113</span>
                 <span><strong>Model Name:</strong> thrax</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3555,6 +4171,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tigon</span>
                 <span><strong>Hash:</strong> 2936769864</span>
                 <span><strong>Model Name:</strong> tigon</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3563,6 +4180,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Torero XO</span>
                 <span><strong>Hash:</strong> 4129572538</span>
                 <span><strong>Model Name:</strong> torero2</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3571,6 +4189,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Turismo Omaggio</span>
                 <span><strong>Hash:</strong> 4171974011</span>
                 <span><strong>Model Name:</strong> turismo3</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3579,6 +4198,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Turismo R</span>
                 <span><strong>Hash:</strong> 408192225</span>
                 <span><strong>Model Name:</strong> turismor</span>
+                <span><strong>DLC:</strong> The Business Update</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3587,6 +4207,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tyrant</span>
                 <span><strong>Hash:</strong> 3918533058</span>
                 <span><strong>Model Name:</strong> tyrant</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3595,6 +4216,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tyrus</span>
                 <span><strong>Hash:</strong> 2067820283</span>
                 <span><strong>Model Name:</strong> tyrus</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3603,6 +4225,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vacca</span>
                 <span><strong>Hash:</strong> 338562499</span>
                 <span><strong>Model Name:</strong> vacca</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3611,6 +4234,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vagner</span>
                 <span><strong>Hash:</strong> 1939284556</span>
                 <span><strong>Model Name:</strong> vagner</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3619,6 +4243,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vigilante</span>
                 <span><strong>Hash:</strong> 3052358707</span>
                 <span><strong>Model Name:</strong> vigilante</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3627,6 +4252,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Virtue</span>
                 <span><strong>Hash:</strong> 669204833</span>
                 <span><strong>Model Name:</strong> virtue</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3635,6 +4261,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Visione</span>
                 <span><strong>Hash:</strong> 3296789504</span>
                 <span><strong>Model Name:</strong> visione</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3643,6 +4270,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Voltic</span>
                 <span><strong>Hash:</strong> 2672523198</span>
                 <span><strong>Model Name:</strong> voltic</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3651,6 +4279,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rocket Voltic</span>
                 <span><strong>Hash:</strong> 989294410</span>
                 <span><strong>Model Name:</strong> voltic2</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3659,6 +4288,7 @@ weight: 10
                 <span><strong>Display Name:</strong> XA-21</span>
                 <span><strong>Hash:</strong> 917809321</span>
                 <span><strong>Model Name:</strong> xa21</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3667,6 +4297,7 @@ weight: 10
                 <span><strong>Display Name:</strong> X-treme</span>
                 <span><strong>Hash:</strong> 2515968713</span>
                 <span><strong>Model Name:</strong> xtreme</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3675,6 +4306,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Zeno</span>
                 <span><strong>Hash:</strong> 655665811</span>
                 <span><strong>Model Name:</strong> zeno</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3683,6 +4315,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Zentorno</span>
                 <span><strong>Hash:</strong> 2891838741</span>
                 <span><strong>Model Name:</strong> zentorno</span>
+                <span><strong>DLC:</strong> The High Life</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3691,6 +4324,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Zorrusso</span>
                 <span><strong>Hash:</strong> 3612858749</span>
                 <span><strong>Model Name:</strong> zorrusso</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
     </div>
@@ -3706,6 +4340,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Akuma</span>
                 <span><strong>Hash:</strong> 1672195559</span>
                 <span><strong>Model Name:</strong> akuma</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3714,6 +4349,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Avarus</span>
                 <span><strong>Hash:</strong> 2179174271</span>
                 <span><strong>Model Name:</strong> avarus</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3722,6 +4358,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bagger</span>
                 <span><strong>Hash:</strong> 2154536131</span>
                 <span><strong>Model Name:</strong> bagger</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3730,6 +4367,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bati 801</span>
                 <span><strong>Hash:</strong> 4180675781</span>
                 <span><strong>Model Name:</strong> bati</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3738,6 +4376,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bati 801RR</span>
                 <span><strong>Hash:</strong> 3403504941</span>
                 <span><strong>Model Name:</strong> bati2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3746,6 +4385,7 @@ weight: 10
                 <span><strong>Display Name:</strong> BF400</span>
                 <span><strong>Hash:</strong> 86520421</span>
                 <span><strong>Model Name:</strong> bf400</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3754,6 +4394,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Carbon RS</span>
                 <span><strong>Hash:</strong> 11251904</span>
                 <span><strong>Model Name:</strong> carbonrs</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3762,6 +4403,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Chimera</span>
                 <span><strong>Hash:</strong> 6774487</span>
                 <span><strong>Model Name:</strong> chimera</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3770,6 +4412,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cliffhanger</span>
                 <span><strong>Hash:</strong> 390201602</span>
                 <span><strong>Model Name:</strong> cliffhanger</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3778,6 +4421,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Daemon</span>
                 <span><strong>Hash:</strong> 2006142190</span>
                 <span><strong>Model Name:</strong> daemon</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3786,6 +4430,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Daemon Custom</span>
                 <span><strong>Hash:</strong> 2890830793</span>
                 <span><strong>Model Name:</strong> daemon2</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3794,6 +4439,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse Deathbike</span>
                 <span><strong>Hash:</strong> 4267640610</span>
                 <span><strong>Model Name:</strong> deathbike</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3802,6 +4448,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock Deathbike</span>
                 <span><strong>Hash:</strong> 2482017624</span>
                 <span><strong>Model Name:</strong> deathbike2</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3810,6 +4457,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare Deathbike</span>
                 <span><strong>Hash:</strong> 2920466844</span>
                 <span><strong>Model Name:</strong> deathbike3</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3818,6 +4466,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Defiler</span>
                 <span><strong>Hash:</strong> 822018448</span>
                 <span><strong>Model Name:</strong> defiler</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3826,6 +4475,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Diabolus</span>
                 <span><strong>Hash:</strong> 4055125828</span>
                 <span><strong>Model Name:</strong> diablous</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3834,6 +4484,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Diabolus Custom</span>
                 <span><strong>Hash:</strong> 1790834270</span>
                 <span><strong>Model Name:</strong> diablous2</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3842,6 +4493,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Double-T</span>
                 <span><strong>Hash:</strong> 2623969160</span>
                 <span><strong>Model Name:</strong> double</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3850,6 +4502,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Enduro</span>
                 <span><strong>Hash:</strong> 1753414259</span>
                 <span><strong>Model Name:</strong> enduro</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3858,6 +4511,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Esskey</span>
                 <span><strong>Hash:</strong> 2035069708</span>
                 <span><strong>Model Name:</strong> esskey</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3866,6 +4520,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Faggio Sport</span>
                 <span><strong>Hash:</strong> 2452219115</span>
                 <span><strong>Model Name:</strong> faggio</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3874,6 +4529,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Faggio</span>
                 <span><strong>Hash:</strong> 55628203</span>
                 <span><strong>Model Name:</strong> faggio2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3882,6 +4538,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Faggio Mod</span>
                 <span><strong>Hash:</strong> 3005788552</span>
                 <span><strong>Model Name:</strong> faggio3</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3890,6 +4547,7 @@ weight: 10
                 <span><strong>Display Name:</strong> FCR 1000</span>
                 <span><strong>Hash:</strong> 627535535</span>
                 <span><strong>Model Name:</strong> fcr</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3898,6 +4556,7 @@ weight: 10
                 <span><strong>Display Name:</strong> FCR 1000 Custom</span>
                 <span><strong>Hash:</strong> 3537231886</span>
                 <span><strong>Model Name:</strong> fcr2</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3906,6 +4565,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Gargoyle</span>
                 <span><strong>Hash:</strong> 741090084</span>
                 <span><strong>Model Name:</strong> gargoyle</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3914,6 +4574,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hakuchou</span>
                 <span><strong>Hash:</strong> 1265391242</span>
                 <span><strong>Model Name:</strong> hakuchou</span>
+                <span><strong>DLC:</strong> Last Team Standing</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3922,6 +4583,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hakuchou Drag</span>
                 <span><strong>Hash:</strong> 4039289119</span>
                 <span><strong>Model Name:</strong> hakuchou2</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3930,6 +4592,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hexer</span>
                 <span><strong>Hash:</strong> 301427732</span>
                 <span><strong>Model Name:</strong> hexer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3938,6 +4601,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Innovation</span>
                 <span><strong>Hash:</strong> 4135840458</span>
                 <span><strong>Model Name:</strong> innovation</span>
+                <span><strong>DLC:</strong> Last Team Standing</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3946,6 +4610,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Lectro</span>
                 <span><strong>Hash:</strong> 640818791</span>
                 <span><strong>Model Name:</strong> lectro</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3954,6 +4619,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Manchez</span>
                 <span><strong>Hash:</strong> 2771538552</span>
                 <span><strong>Model Name:</strong> manchez</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3962,6 +4628,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Manchez Scout</span>
                 <span><strong>Hash:</strong> 1086534307</span>
                 <span><strong>Model Name:</strong> manchez2</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3970,6 +4637,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Manchez Scout C</span>
                 <span><strong>Hash:</strong> 1384502824</span>
                 <span><strong>Model Name:</strong> manchez3</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3978,6 +4646,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nemesis</span>
                 <span><strong>Hash:</strong> 3660088182</span>
                 <span><strong>Model Name:</strong> nemesis</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3986,6 +4655,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightblade</span>
                 <span><strong>Hash:</strong> 2688780135</span>
                 <span><strong>Model Name:</strong> nightblade</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3994,6 +4664,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Oppressor</span>
                 <span><strong>Hash:</strong> 884483972</span>
                 <span><strong>Model Name:</strong> oppressor</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4002,6 +4673,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Oppressor Mk II</span>
                 <span><strong>Hash:</strong> 2069146067</span>
                 <span><strong>Model Name:</strong> oppressor2</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4010,6 +4682,16 @@ weight: 10
                 <span><strong>Display Name:</strong> PCJ 600</span>
                 <span><strong>Hash:</strong> 3385765638</span>
                 <span><strong>Model Name:</strong> pcj</span>
+                <span><strong>DLC:</strong> Base game</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/pizzaboy.webp" alt="Pizza Boy">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Pizza Boy</span>
+                <span><strong>Hash:</strong> 1968807591</span>
+                <span><strong>Model Name:</strong> pizzaboy</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4018,6 +4700,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Powersurge</span>
                 <span><strong>Hash:</strong> 2908631255</span>
                 <span><strong>Model Name:</strong> powersurge</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4026,6 +4709,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rat Bike</span>
                 <span><strong>Hash:</strong> 1873600305</span>
                 <span><strong>Model Name:</strong> ratbike</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4034,6 +4718,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Reever</span>
                 <span><strong>Hash:</strong> 1993851908</span>
                 <span><strong>Model Name:</strong> reever</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4042,6 +4727,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rampant Rocket</span>
                 <span><strong>Hash:</strong> 916547552</span>
                 <span><strong>Model Name:</strong> rrocket</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4050,6 +4736,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ruffian</span>
                 <span><strong>Hash:</strong> 3401388520</span>
                 <span><strong>Model Name:</strong> ruffian</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4058,6 +4745,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sanchez (livery)</span>
                 <span><strong>Hash:</strong> 788045382</span>
                 <span><strong>Model Name:</strong> sanchez</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4066,6 +4754,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sanchez</span>
                 <span><strong>Hash:</strong> 2841686334</span>
                 <span><strong>Model Name:</strong> sanchez2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4074,6 +4763,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sanctus</span>
                 <span><strong>Hash:</strong> 1491277511</span>
                 <span><strong>Model Name:</strong> sanctus</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4082,6 +4772,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Shinobi</span>
                 <span><strong>Hash:</strong> 1353120668</span>
                 <span><strong>Model Name:</strong> shinobi</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4090,6 +4781,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Shotaro</span>
                 <span><strong>Hash:</strong> 3889340782</span>
                 <span><strong>Model Name:</strong> shotaro</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4098,6 +4790,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sovereign</span>
                 <span><strong>Hash:</strong> 743478836</span>
                 <span><strong>Model Name:</strong> sovereign</span>
+                <span><strong>DLC:</strong> Independence Day Special</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4106,6 +4799,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stryder</span>
                 <span><strong>Hash:</strong> 301304410</span>
                 <span><strong>Model Name:</strong> stryder</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4114,6 +4808,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Thrust</span>
                 <span><strong>Hash:</strong> 1836027715</span>
                 <span><strong>Model Name:</strong> thrust</span>
+                <span><strong>DLC:</strong> The High Life</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4122,6 +4817,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vader</span>
                 <span><strong>Hash:</strong> 4154065143</span>
                 <span><strong>Model Name:</strong> vader</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4130,6 +4826,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vindicator</span>
                 <span><strong>Hash:</strong> 2941886209</span>
                 <span><strong>Model Name:</strong> vindicator</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 2</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4138,6 +4835,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vortex</span>
                 <span><strong>Hash:</strong> 3685342204</span>
                 <span><strong>Model Name:</strong> vortex</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4146,6 +4844,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Wolfsbane</span>
                 <span><strong>Hash:</strong> 3676349299</span>
                 <span><strong>Model Name:</strong> wolfsbane</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4154,6 +4853,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Zombie Bobber</span>
                 <span><strong>Hash:</strong> 3285698347</span>
                 <span><strong>Model Name:</strong> zombiea</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4162,6 +4862,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Zombie Chopper</span>
                 <span><strong>Hash:</strong> 3724934023</span>
                 <span><strong>Model Name:</strong> zombieb</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
     </div>
@@ -4177,6 +4878,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Injection</span>
                 <span><strong>Hash:</strong> 1126868326</span>
                 <span><strong>Model Name:</strong> bfinjection</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4185,6 +4887,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bifta</span>
                 <span><strong>Hash:</strong> 3945366167</span>
                 <span><strong>Model Name:</strong> bifta</span>
+                <span><strong>DLC:</strong> Beach Bum</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4193,6 +4896,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Blazer</span>
                 <span><strong>Hash:</strong> 2166734073</span>
                 <span><strong>Model Name:</strong> blazer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4201,6 +4905,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Blazer Lifeguard</span>
                 <span><strong>Hash:</strong> 4246935337</span>
                 <span><strong>Model Name:</strong> blazer2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4209,6 +4914,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hot Rod Blazer</span>
                 <span><strong>Hash:</strong> 3025077634</span>
                 <span><strong>Model Name:</strong> blazer3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4217,6 +4923,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Street Blazer</span>
                 <span><strong>Hash:</strong> 3854198872</span>
                 <span><strong>Model Name:</strong> blazer4</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4225,6 +4932,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Blazer Aqua</span>
                 <span><strong>Hash:</strong> 2704629607</span>
                 <span><strong>Model Name:</strong> blazer5</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4233,6 +4941,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bodhi</span>
                 <span><strong>Hash:</strong> 2859047862</span>
                 <span><strong>Model Name:</strong> bodhi2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4241,6 +4950,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Boor</span>
                 <span><strong>Hash:</strong> 996383885</span>
                 <span><strong>Model Name:</strong> boor</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4249,6 +4959,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Brawler</span>
                 <span><strong>Hash:</strong> 2815302597</span>
                 <span><strong>Model Name:</strong> brawler</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 2</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4257,6 +4968,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse Bruiser</span>
                 <span><strong>Hash:</strong> 668439077</span>
                 <span><strong>Model Name:</strong> bruiser</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4265,6 +4977,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock Bruiser</span>
                 <span><strong>Hash:</strong> 2600885406</span>
                 <span><strong>Model Name:</strong> bruiser2</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4273,6 +4986,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare Bruiser</span>
                 <span><strong>Hash:</strong> 2252616474</span>
                 <span><strong>Model Name:</strong> bruiser3</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4281,6 +4995,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse Brutus</span>
                 <span><strong>Hash:</strong> 2139203625</span>
                 <span><strong>Model Name:</strong> brutus</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4289,6 +5004,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock Brutus</span>
                 <span><strong>Hash:</strong> 2403970600</span>
                 <span><strong>Model Name:</strong> brutus2</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4297,6 +5013,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare Brutus</span>
                 <span><strong>Hash:</strong> 2038858402</span>
                 <span><strong>Model Name:</strong> brutus3</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4305,6 +5022,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Caracara</span>
                 <span><strong>Hash:</strong> 1254014755</span>
                 <span><strong>Model Name:</strong> caracara</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4313,6 +5031,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Caracara 4x4</span>
                 <span><strong>Hash:</strong> 2945871676</span>
                 <span><strong>Model Name:</strong> caracara2</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4321,6 +5040,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Duneloader</span>
                 <span><strong>Hash:</strong> 1770332643</span>
                 <span><strong>Model Name:</strong> dloader</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4329,6 +5049,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Draugur</span>
                 <span><strong>Hash:</strong> 3526730918</span>
                 <span><strong>Model Name:</strong> draugur</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4337,6 +5058,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Drift Walton L35</span>
                 <span><strong>Hash:</strong> 2312533665</span>
                 <span><strong>Model Name:</strong> driftl352</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4345,6 +5067,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dubsta 6x6</span>
                 <span><strong>Hash:</strong> 3057713523</span>
                 <span><strong>Model Name:</strong> dubsta3</span>
+                <span><strong>DLC:</strong> I'm Not a Hipster</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4353,6 +5076,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dune Buggy</span>
                 <span><strong>Hash:</strong> 2633113103</span>
                 <span><strong>Model Name:</strong> dune</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4361,6 +5085,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Space Docker</span>
                 <span><strong>Hash:</strong> 534258863</span>
                 <span><strong>Model Name:</strong> dune2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4369,6 +5094,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dune FAV</span>
                 <span><strong>Hash:</strong> 1897744184</span>
                 <span><strong>Model Name:</strong> dune3</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4377,6 +5103,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ramp Buggy</span>
                 <span><strong>Hash:</strong> 3467805257</span>
                 <span><strong>Model Name:</strong> dune4</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4385,6 +5112,25 @@ weight: 10
                 <span><strong>Display Name:</strong> Ramp Buggy</span>
                 <span><strong>Hash:</strong> 3982671785</span>
                 <span><strong>Model Name:</strong> dune5</span>
+                <span><strong>DLC:</strong> Import/Export</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/everon.webp" alt="Everon">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Everon</span>
+                <span><strong>Hash:</strong> 2538945576</span>
+                <span><strong>Model Name:</strong> everon</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/firebolt.webp" alt="Firebolt ASP">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Firebolt ASP</span>
+                <span><strong>Hash:</strong> 3321950518</span>
+                <span><strong>Model Name:</strong> firebolt</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4393,6 +5139,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Freecrawler</span>
                 <span><strong>Hash:</strong> 4240635011</span>
                 <span><strong>Model Name:</strong> freecrawler</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4401,6 +5148,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hellion</span>
                 <span><strong>Hash:</strong> 3932816511</span>
                 <span><strong>Model Name:</strong> hellion</span>
+                <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4409,6 +5157,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Insurgent Pick-Up</span>
                 <span><strong>Hash:</strong> 2434067162</span>
                 <span><strong>Model Name:</strong> insurgent</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4417,6 +5166,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Insurgent</span>
                 <span><strong>Hash:</strong> 2071877360</span>
                 <span><strong>Model Name:</strong> insurgent2</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4425,6 +5175,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Insurgent Pick-Up Custom</span>
                 <span><strong>Hash:</strong> 2370534026</span>
                 <span><strong>Model Name:</strong> insurgent3</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4433,6 +5184,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Kalahari</span>
                 <span><strong>Hash:</strong> 92612664</span>
                 <span><strong>Model Name:</strong> kalahari</span>
+                <span><strong>DLC:</strong> Beach Bum</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4441,6 +5193,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Kamacho</span>
                 <span><strong>Hash:</strong> 4173521127</span>
                 <span><strong>Model Name:</strong> kamacho</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4449,6 +5202,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Walton L35</span>
                 <span><strong>Hash:</strong> 2531292011</span>
                 <span><strong>Model Name:</strong> l35</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4457,6 +5211,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Walton L35 Stock</span>
                 <span><strong>Hash:</strong> 691148275</span>
                 <span><strong>Model Name:</strong> l352</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4465,6 +5220,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Marshall</span>
                 <span><strong>Hash:</strong> 1233534620</span>
                 <span><strong>Model Name:</strong> marshall</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4473,6 +5229,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Menacer</span>
                 <span><strong>Hash:</strong> 2044532910</span>
                 <span><strong>Model Name:</strong> menacer</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4481,6 +5238,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mesa</span>
                 <span><strong>Hash:</strong> 2230595153</span>
                 <span><strong>Model Name:</strong> mesa3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4489,6 +5247,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Monster</span>
                 <span><strong>Hash:</strong> 3449006043</span>
                 <span><strong>Model Name:</strong> monster</span>
+                <span><strong>DLC:</strong> Independence Day Special</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4497,6 +5256,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse Sasquatch</span>
                 <span><strong>Hash:</strong> 1721676810</span>
                 <span><strong>Model Name:</strong> monster3</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4505,6 +5265,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock Sasquatch</span>
                 <span><strong>Hash:</strong> 840387324</span>
                 <span><strong>Model Name:</strong> monster4</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4513,6 +5274,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare Sasquatch</span>
                 <span><strong>Hash:</strong> 3579220348</span>
                 <span><strong>Model Name:</strong> monster5</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4521,6 +5283,7 @@ weight: 10
                 <span><strong>Display Name:</strong> MonstroCiti</span>
                 <span><strong>Hash:</strong> 802856453</span>
                 <span><strong>Model Name:</strong> monstrociti</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4529,6 +5292,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightshark</span>
                 <span><strong>Hash:</strong> 433954513</span>
                 <span><strong>Model Name:</strong> nightshark</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4537,6 +5301,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Outlaw</span>
                 <span><strong>Hash:</strong> 408825843</span>
                 <span><strong>Model Name:</strong> outlaw</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4545,6 +5310,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Patriot Mil-Spec</span>
                 <span><strong>Hash:</strong> 3624880708</span>
                 <span><strong>Model Name:</strong> patriot3</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4553,6 +5319,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rancher XL</span>
                 <span><strong>Hash:</strong> 1645267888</span>
                 <span><strong>Model Name:</strong> rancherxl</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4561,6 +5328,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rancher XL</span>
                 <span><strong>Hash:</strong> 1933662059</span>
                 <span><strong>Model Name:</strong> rancherxl2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4569,6 +5337,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ratel</span>
                 <span><strong>Hash:</strong> 3758861739</span>
                 <span><strong>Model Name:</strong> ratel</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4577,6 +5346,7 @@ weight: 10
                 <span><strong>Display Name:</strong> RC Bandito</span>
                 <span><strong>Hash:</strong> 4008920556</span>
                 <span><strong>Model Name:</strong> rcbandito</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4585,6 +5355,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rusty Rebel</span>
                 <span><strong>Hash:</strong> 3087195462</span>
                 <span><strong>Model Name:</strong> rebel</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4593,6 +5364,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rebel</span>
                 <span><strong>Hash:</strong> 2249373259</span>
                 <span><strong>Model Name:</strong> rebel2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4601,6 +5373,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Riata</span>
                 <span><strong>Hash:</strong> 2762269779</span>
                 <span><strong>Model Name:</strong> riata</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4609,6 +5382,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sandking XL</span>
                 <span><strong>Hash:</strong> 3105951696</span>
                 <span><strong>Model Name:</strong> sandking</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4617,6 +5391,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sandking SWB</span>
                 <span><strong>Hash:</strong> 989381445</span>
                 <span><strong>Model Name:</strong> sandking2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4625,6 +5400,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Technical</span>
                 <span><strong>Hash:</strong> 2198148358</span>
                 <span><strong>Model Name:</strong> technical</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4633,6 +5409,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Technical Aqua</span>
                 <span><strong>Hash:</strong> 1180875963</span>
                 <span><strong>Model Name:</strong> technical2</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4641,6 +5418,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Technical Custom</span>
                 <span><strong>Hash:</strong> 1356124575</span>
                 <span><strong>Model Name:</strong> technical3</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4649,6 +5427,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Terminus</span>
                 <span><strong>Hash:</strong> 167522317</span>
                 <span><strong>Model Name:</strong> terminus</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4657,6 +5436,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trophy Truck</span>
                 <span><strong>Hash:</strong> 101905590</span>
                 <span><strong>Model Name:</strong> trophytruck</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4665,6 +5445,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Desert Raid</span>
                 <span><strong>Hash:</strong> 3631668194</span>
                 <span><strong>Model Name:</strong> trophytruck2</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4673,6 +5454,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vagrant</span>
                 <span><strong>Hash:</strong> 740289177</span>
                 <span><strong>Model Name:</strong> vagrant</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4681,6 +5463,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Verus</span>
                 <span><strong>Hash:</strong> 298565713</span>
                 <span><strong>Model Name:</strong> verus</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4689,6 +5472,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Winky</span>
                 <span><strong>Hash:</strong> 4084658662</span>
                 <span><strong>Model Name:</strong> winky</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/yosemite1500.webp" alt="Yosemite 1500">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Yosemite 1500</span>
+                <span><strong>Hash:</strong> 2398479240</span>
+                <span><strong>Model Name:</strong> yosemite1500</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4697,6 +5490,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Yosemite Rancher</span>
                 <span><strong>Hash:</strong> 67753863</span>
                 <span><strong>Model Name:</strong> yosemite3</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4705,6 +5499,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Zhaba</span>
                 <span><strong>Hash:</strong> 1284356689</span>
                 <span><strong>Model Name:</strong> zhaba</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
     </div>
@@ -4720,6 +5515,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dozer</span>
                 <span><strong>Hash:</strong> 1886712733</span>
                 <span><strong>Model Name:</strong> bulldozer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4728,6 +5524,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cutter</span>
                 <span><strong>Hash:</strong> 3288047904</span>
                 <span><strong>Model Name:</strong> cutter</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4736,6 +5533,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dump</span>
                 <span><strong>Hash:</strong> 2164484578</span>
                 <span><strong>Model Name:</strong> dump</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4744,6 +5542,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Flatbed</span>
                 <span><strong>Hash:</strong> 1353720154</span>
                 <span><strong>Model Name:</strong> flatbed</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4752,6 +5551,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Custom Flatbed</span>
                 <span><strong>Hash:</strong> 2412056353</span>
                 <span><strong>Model Name:</strong> flatbed2</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4760,6 +5560,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Guardian</span>
                 <span><strong>Hash:</strong> 2186977100</span>
                 <span><strong>Model Name:</strong> guardian</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4768,6 +5569,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dock Handler</span>
                 <span><strong>Hash:</strong> 444583674</span>
                 <span><strong>Model Name:</strong> handler</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4776,6 +5578,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mixer</span>
                 <span><strong>Hash:</strong> 3510150843</span>
                 <span><strong>Model Name:</strong> mixer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4784,6 +5587,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mixer</span>
                 <span><strong>Hash:</strong> 475220373</span>
                 <span><strong>Model Name:</strong> mixer2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4792,6 +5596,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rubble</span>
                 <span><strong>Hash:</strong> 2589662668</span>
                 <span><strong>Model Name:</strong> rubble</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4800,6 +5605,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tipper</span>
                 <span><strong>Hash:</strong> 48339065</span>
                 <span><strong>Model Name:</strong> tiptruck</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4808,6 +5614,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tipper</span>
                 <span><strong>Hash:</strong> 3347205726</span>
                 <span><strong>Model Name:</strong> tiptruck2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
     </div>
@@ -4823,6 +5630,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Airtug</span>
                 <span><strong>Hash:</strong> 1560980623</span>
                 <span><strong>Model Name:</strong> airtug</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4831,6 +5639,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Army Trailer</span>
                 <span><strong>Hash:</strong> 3087536137</span>
                 <span><strong>Model Name:</strong> armytanker</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4839,6 +5648,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Army Trailer</span>
                 <span><strong>Hash:</strong> 2818520053</span>
                 <span><strong>Model Name:</strong> armytrailer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4847,6 +5657,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Army Trailer</span>
                 <span><strong>Hash:</strong> 2657817814</span>
                 <span><strong>Model Name:</strong> armytrailer2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4855,6 +5666,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Baletrailer</span>
                 <span><strong>Hash:</strong> 3895125590</span>
                 <span><strong>Model Name:</strong> baletrailer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4863,6 +5675,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Boat Trailer</span>
                 <span><strong>Hash:</strong> 524108981</span>
                 <span><strong>Model Name:</strong> boattrailer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4871,6 +5684,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Boat Trailer</span>
                 <span><strong>Hash:</strong> 1835260592</span>
                 <span><strong>Model Name:</strong> boattrailer2</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4879,6 +5693,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Boat Trailer</span>
                 <span><strong>Hash:</strong> 1539159908</span>
                 <span><strong>Model Name:</strong> boattrailer3</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4887,6 +5702,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Caddy</span>
                 <span><strong>Hash:</strong> 1147287684</span>
                 <span><strong>Model Name:</strong> caddy</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4895,6 +5711,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Caddy</span>
                 <span><strong>Hash:</strong> 3757070668</span>
                 <span><strong>Model Name:</strong> caddy2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4903,6 +5720,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Caddy</span>
                 <span><strong>Hash:</strong> 3525819835</span>
                 <span><strong>Model Name:</strong> caddy3</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4911,6 +5729,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Keitora</span>
                 <span><strong>Hash:</strong> 2739875593</span>
                 <span><strong>Model Name:</strong> driftkeitora</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4919,6 +5738,7 @@ weight: 10
                 <span><strong>Display Name:</strong> null</span>
                 <span><strong>Hash:</strong> 2154757102</span>
                 <span><strong>Model Name:</strong> docktrailer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4927,6 +5747,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Docktug</span>
                 <span><strong>Hash:</strong> 3410276810</span>
                 <span><strong>Model Name:</strong> docktug</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4935,6 +5756,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Forklift</span>
                 <span><strong>Hash:</strong> 1491375716</span>
                 <span><strong>Model Name:</strong> forklift</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4943,6 +5765,7 @@ weight: 10
                 <span><strong>Display Name:</strong> null</span>
                 <span><strong>Hash:</strong> 3517691494</span>
                 <span><strong>Model Name:</strong> freighttrailer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4951,6 +5774,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Graintrailer</span>
                 <span><strong>Hash:</strong> 1019737494</span>
                 <span><strong>Model Name:</strong> graintrailer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4959,6 +5783,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Keitora</span>
                 <span><strong>Hash:</strong> 3892551591</span>
                 <span><strong>Model Name:</strong> keitora</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4967,6 +5792,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Lawn Mower</span>
                 <span><strong>Hash:</strong> 1783355638</span>
                 <span><strong>Model Name:</strong> mower</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4975,6 +5801,7 @@ weight: 10
                 <span><strong>Display Name:</strong> null</span>
                 <span><strong>Hash:</strong> 356391690</span>
                 <span><strong>Model Name:</strong> proptrailer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4983,6 +5810,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 390902130</span>
                 <span><strong>Model Name:</strong> raketrailer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4991,6 +5819,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ripley</span>
                 <span><strong>Hash:</strong> 3448987385</span>
                 <span><strong>Model Name:</strong> ripley</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4999,6 +5828,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sadler</span>
                 <span><strong>Hash:</strong> 3695398481</span>
                 <span><strong>Model Name:</strong> sadler</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5007,6 +5837,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sadler</span>
                 <span><strong>Hash:</strong> 734217681</span>
                 <span><strong>Model Name:</strong> sadler2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5015,6 +5846,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Scrap Truck</span>
                 <span><strong>Hash:</strong> 2594165727</span>
                 <span><strong>Model Name:</strong> scrap</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5023,6 +5855,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Slamtruck</span>
                 <span><strong>Hash:</strong> 3249056020</span>
                 <span><strong>Model Name:</strong> slamtruck</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5031,6 +5864,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 3564062519</span>
                 <span><strong>Model Name:</strong> tanker</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5039,6 +5873,7 @@ weight: 10
                 <span><strong>Display Name:</strong> null</span>
                 <span><strong>Hash:</strong> 1956216962</span>
                 <span><strong>Model Name:</strong> tanker2</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5047,6 +5882,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tow Truck</span>
                 <span><strong>Hash:</strong> 2971866336</span>
                 <span><strong>Model Name:</strong> towtruck</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5055,6 +5891,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tow Truck</span>
                 <span><strong>Hash:</strong> 3852654278</span>
                 <span><strong>Model Name:</strong> towtruck2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5063,6 +5900,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tow Truck</span>
                 <span><strong>Hash:</strong> 3623402354</span>
                 <span><strong>Model Name:</strong> towtruck3</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5071,6 +5909,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tow Truck</span>
                 <span><strong>Hash:</strong> 3392937977</span>
                 <span><strong>Model Name:</strong> towtruck4</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5079,6 +5918,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 2078290630</span>
                 <span><strong>Model Name:</strong> tr2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5087,6 +5927,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 1784254509</span>
                 <span><strong>Model Name:</strong> tr3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5095,6 +5936,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 2091594960</span>
                 <span><strong>Model Name:</strong> tr4</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5103,6 +5945,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tractor</span>
                 <span><strong>Hash:</strong> 1641462412</span>
                 <span><strong>Model Name:</strong> tractor</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5111,6 +5954,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Fieldmaster</span>
                 <span><strong>Hash:</strong> 2218488798</span>
                 <span><strong>Model Name:</strong> tractor2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5119,6 +5963,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Fieldmaster</span>
                 <span><strong>Hash:</strong> 1445631933</span>
                 <span><strong>Model Name:</strong> tractor3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5127,6 +5972,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mobile Operations Center</span>
                 <span><strong>Hash:</strong> 1502869817</span>
                 <span><strong>Model Name:</strong> trailerlarge</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5135,6 +5981,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 2016027501</span>
                 <span><strong>Model Name:</strong> trailerlogs</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5143,6 +5990,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 3417488910</span>
                 <span><strong>Model Name:</strong> trailers</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5151,6 +5999,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 2715434129</span>
                 <span><strong>Model Name:</strong> trailers2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5159,6 +6008,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 2236089197</span>
                 <span><strong>Model Name:</strong> trailers3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5167,6 +6017,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 3194418602</span>
                 <span><strong>Model Name:</strong> trailers4</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5175,6 +6026,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 2960513480</span>
                 <span><strong>Model Name:</strong> trailers5</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5183,6 +6035,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 712162987</span>
                 <span><strong>Model Name:</strong> trailersmall</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5191,6 +6044,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 2942498482</span>
                 <span><strong>Model Name:</strong> trflat</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5199,6 +6053,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 2524324030</span>
                 <span><strong>Model Name:</strong> tvtrailer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5207,6 +6062,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trailer</span>
                 <span><strong>Hash:</strong> 471034616</span>
                 <span><strong>Model Name:</strong> tvtrailer2</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5215,6 +6071,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Utility Truck</span>
                 <span><strong>Hash:</strong> 516990260</span>
                 <span><strong>Model Name:</strong> utillitruck</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5223,6 +6080,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Utility Truck</span>
                 <span><strong>Hash:</strong> 887537515</span>
                 <span><strong>Model Name:</strong> utillitruck2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5231,6 +6089,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Utility Truck</span>
                 <span><strong>Hash:</strong> 2132890591</span>
                 <span><strong>Model Name:</strong> utillitruck3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
     </div>
@@ -5246,6 +6105,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bison</span>
                 <span><strong>Hash:</strong> 4278019151</span>
                 <span><strong>Model Name:</strong> bison</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5254,6 +6114,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bison</span>
                 <span><strong>Hash:</strong> 2072156101</span>
                 <span><strong>Model Name:</strong> bison2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5262,6 +6123,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bison</span>
                 <span><strong>Hash:</strong> 1739845664</span>
                 <span><strong>Model Name:</strong> bison3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5270,6 +6132,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bobcat XL</span>
                 <span><strong>Hash:</strong> 1069929536</span>
                 <span><strong>Model Name:</strong> bobcatxl</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5278,6 +6141,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Boxville</span>
                 <span><strong>Hash:</strong> 2307837162</span>
                 <span><strong>Model Name:</strong> boxville</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5286,6 +6150,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Boxville</span>
                 <span><strong>Hash:</strong> 4061868990</span>
                 <span><strong>Model Name:</strong> boxville2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5294,6 +6159,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Boxville</span>
                 <span><strong>Hash:</strong> 121658888</span>
                 <span><strong>Model Name:</strong> boxville3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5302,6 +6168,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Boxville</span>
                 <span><strong>Hash:</strong> 444171386</span>
                 <span><strong>Model Name:</strong> boxville4</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5310,6 +6177,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Armored Boxville</span>
                 <span><strong>Hash:</strong> 682434785</span>
                 <span><strong>Model Name:</strong> boxville5</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5318,6 +6186,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Boxville (LSDS)</span>
                 <span><strong>Hash:</strong> 3452201761</span>
                 <span><strong>Model Name:</strong> boxville6</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5326,6 +6195,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Burrito</span>
                 <span><strong>Hash:</strong> 2948279460</span>
                 <span><strong>Model Name:</strong> burrito</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5334,6 +6204,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bugstars Burrito</span>
                 <span><strong>Hash:</strong> 3387490166</span>
                 <span><strong>Model Name:</strong> burrito2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5342,6 +6213,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Burrito</span>
                 <span><strong>Hash:</strong> 2551651283</span>
                 <span><strong>Model Name:</strong> burrito3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5350,6 +6222,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Burrito</span>
                 <span><strong>Hash:</strong> 893081117</span>
                 <span><strong>Model Name:</strong> burrito4</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5358,6 +6231,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Burrito</span>
                 <span><strong>Hash:</strong> 1132262048</span>
                 <span><strong>Model Name:</strong> burrito5</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5366,6 +6240,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Camper</span>
                 <span><strong>Hash:</strong> 1876516712</span>
                 <span><strong>Model Name:</strong> camper</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5374,6 +6249,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Gang Burrito</span>
                 <span><strong>Hash:</strong> 2549763894</span>
                 <span><strong>Model Name:</strong> gburrito</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5382,6 +6258,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Gang Burrito</span>
                 <span><strong>Hash:</strong> 296357396</span>
                 <span><strong>Model Name:</strong> gburrito2</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5390,6 +6267,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Journey</span>
                 <span><strong>Hash:</strong> 4174679674</span>
                 <span><strong>Model Name:</strong> journey</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5398,6 +6276,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Journey II</span>
                 <span><strong>Hash:</strong> 2667889793</span>
                 <span><strong>Model Name:</strong> journey2</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5406,6 +6285,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Minivan</span>
                 <span><strong>Hash:</strong> 3984502180</span>
                 <span><strong>Model Name:</strong> minivan</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5414,6 +6294,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Minivan Custom</span>
                 <span><strong>Hash:</strong> 3168702960</span>
                 <span><strong>Model Name:</strong> minivan2</span>
+                <span><strong>DLC:</strong> Lowriders: Custom Classics</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5422,6 +6303,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Paradise</span>
                 <span><strong>Hash:</strong> 1488164764</span>
                 <span><strong>Model Name:</strong> paradise</span>
+                <span><strong>DLC:</strong> Beach Bum</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5430,6 +6312,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Pony</span>
                 <span><strong>Hash:</strong> 4175309224</span>
                 <span><strong>Model Name:</strong> pony</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5438,6 +6321,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Pony</span>
                 <span><strong>Hash:</strong> 943752001</span>
                 <span><strong>Model Name:</strong> pony2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5446,6 +6330,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rumpo</span>
                 <span><strong>Hash:</strong> 1162065741</span>
                 <span><strong>Model Name:</strong> rumpo</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5454,6 +6339,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rumpo</span>
                 <span><strong>Hash:</strong> 2518351607</span>
                 <span><strong>Model Name:</strong> rumpo2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5462,6 +6348,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rumpo Custom</span>
                 <span><strong>Hash:</strong> 1475773103</span>
                 <span><strong>Model Name:</strong> rumpo3</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5470,6 +6357,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Speedo</span>
                 <span><strong>Hash:</strong> 3484649228</span>
                 <span><strong>Model Name:</strong> speedo</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5478,6 +6366,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Clown Van</span>
                 <span><strong>Hash:</strong> 728614474</span>
                 <span><strong>Model Name:</strong> speedo2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5486,6 +6375,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Speedo Custom</span>
                 <span><strong>Hash:</strong> 219613597</span>
                 <span><strong>Model Name:</strong> speedo4</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5494,6 +6384,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Speedo Custom</span>
                 <span><strong>Hash:</strong> 4250167832</span>
                 <span><strong>Model Name:</strong> speedo5</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5502,6 +6393,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Surfer</span>
                 <span><strong>Hash:</strong> 699456151</span>
                 <span><strong>Model Name:</strong> surfer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5510,6 +6402,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Surfer</span>
                 <span><strong>Hash:</strong> 2983726598</span>
                 <span><strong>Model Name:</strong> surfer2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5518,6 +6411,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Surfer Custom</span>
                 <span><strong>Hash:</strong> 3259477733</span>
                 <span><strong>Model Name:</strong> surfer3</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5526,6 +6420,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Taco Van</span>
                 <span><strong>Hash:</strong> 1951180813</span>
                 <span><strong>Model Name:</strong> taco</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5534,6 +6429,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Youga</span>
                 <span><strong>Hash:</strong> 65402552</span>
                 <span><strong>Model Name:</strong> youga</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5542,6 +6438,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Youga Classic</span>
                 <span><strong>Hash:</strong> 1026149675</span>
                 <span><strong>Model Name:</strong> youga2</span>
+                <span><strong>DLC:</strong> Bikers</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5550,6 +6447,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Youga Classic 4x4</span>
                 <span><strong>Hash:</strong> 1802742206</span>
                 <span><strong>Model Name:</strong> youga3</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5558,6 +6456,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Youga Custom</span>
                 <span><strong>Hash:</strong> 1486521356</span>
                 <span><strong>Model Name:</strong> youga4</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/youga5.webp" alt="Youga Custom">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Youga Custom</span>
+                <span><strong>Hash:</strong> 2266063097</span>
+                <span><strong>Model Name:</strong> youga5</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
     </div>
@@ -5573,6 +6481,7 @@ weight: 10
                 <span><strong>Display Name:</strong> BMX</span>
                 <span><strong>Hash:</strong> 1131912276</span>
                 <span><strong>Model Name:</strong> bmx</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5581,6 +6490,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cruiser</span>
                 <span><strong>Hash:</strong> 448402357</span>
                 <span><strong>Model Name:</strong> cruiser</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5589,6 +6499,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Fixter</span>
                 <span><strong>Hash:</strong> 3458454463</span>
                 <span><strong>Model Name:</strong> fixter</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5597,6 +6508,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Inductor</span>
                 <span><strong>Hash:</strong> 3397143273</span>
                 <span><strong>Model Name:</strong> inductor</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5605,6 +6517,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Junk Energy Inductor</span>
                 <span><strong>Hash:</strong> 2311345272</span>
                 <span><strong>Model Name:</strong> inductor2</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5613,6 +6526,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Scorcher</span>
                 <span><strong>Hash:</strong> 4108429845</span>
                 <span><strong>Model Name:</strong> scorcher</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5621,6 +6535,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Whippet Race Bike</span>
                 <span><strong>Hash:</strong> 1127861609</span>
                 <span><strong>Model Name:</strong> tribike</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5629,6 +6544,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Endurex Race Bike</span>
                 <span><strong>Hash:</strong> 3061159916</span>
                 <span><strong>Model Name:</strong> tribike2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5637,6 +6553,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tri-Cycles Race Bike</span>
                 <span><strong>Hash:</strong> 3894672200</span>
                 <span><strong>Model Name:</strong> tribike3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
     </div>
@@ -5652,6 +6569,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Avisa</span>
                 <span><strong>Hash:</strong> 2588363614</span>
                 <span><strong>Model Name:</strong> avisa</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5660,6 +6578,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dinghy</span>
                 <span><strong>Hash:</strong> 1033245328</span>
                 <span><strong>Model Name:</strong> dinghy</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5668,6 +6587,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dinghy</span>
                 <span><strong>Hash:</strong> 276773164</span>
                 <span><strong>Model Name:</strong> dinghy2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5676,6 +6596,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dinghy</span>
                 <span><strong>Hash:</strong> 509498602</span>
                 <span><strong>Model Name:</strong> dinghy3</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5684,6 +6605,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dinghy</span>
                 <span><strong>Hash:</strong> 867467158</span>
                 <span><strong>Model Name:</strong> dinghy4</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5692,6 +6614,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Weaponized Dinghy</span>
                 <span><strong>Hash:</strong> 3314393930</span>
                 <span><strong>Model Name:</strong> dinghy5</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5700,6 +6623,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Jetmax</span>
                 <span><strong>Hash:</strong> 861409633</span>
                 <span><strong>Model Name:</strong> jetmax</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5708,6 +6632,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Kosatka</span>
                 <span><strong>Hash:</strong> 1336872304</span>
                 <span><strong>Model Name:</strong> kosatka</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5716,6 +6641,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Longfin</span>
                 <span><strong>Hash:</strong> 1861786828</span>
                 <span><strong>Model Name:</strong> longfin</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5724,6 +6650,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Marquis</span>
                 <span><strong>Hash:</strong> 3251507587</span>
                 <span><strong>Model Name:</strong> marquis</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5732,6 +6659,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Kurtz 31 Patrol Boat</span>
                 <span><strong>Hash:</strong> 4018222598</span>
                 <span><strong>Model Name:</strong> patrolboat</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5740,6 +6668,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Predator</span>
                 <span><strong>Hash:</strong> 3806844075</span>
                 <span><strong>Model Name:</strong> predator</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5748,6 +6677,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Seashark</span>
                 <span><strong>Hash:</strong> 3264692260</span>
                 <span><strong>Model Name:</strong> seashark</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5756,6 +6686,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Seashark</span>
                 <span><strong>Hash:</strong> 3678636260</span>
                 <span><strong>Model Name:</strong> seashark2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5764,6 +6695,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Seashark</span>
                 <span><strong>Hash:</strong> 3983945033</span>
                 <span><strong>Model Name:</strong> seashark3</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5772,6 +6704,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Speeder</span>
                 <span><strong>Hash:</strong> 231083307</span>
                 <span><strong>Model Name:</strong> speeder</span>
+                <span><strong>DLC:</strong> Beach Bum</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5780,6 +6713,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Speeder</span>
                 <span><strong>Hash:</strong> 437538602</span>
                 <span><strong>Model Name:</strong> speeder2</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5788,6 +6722,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Squalo</span>
                 <span><strong>Hash:</strong> 400514754</span>
                 <span><strong>Model Name:</strong> squalo</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5796,6 +6731,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Submersible</span>
                 <span><strong>Hash:</strong> 771711535</span>
                 <span><strong>Model Name:</strong> submersible</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5804,6 +6740,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Kraken</span>
                 <span><strong>Hash:</strong> 3228633070</span>
                 <span><strong>Model Name:</strong> submersible2</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5812,6 +6749,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Suntrap</span>
                 <span><strong>Hash:</strong> 4012021193</span>
                 <span><strong>Model Name:</strong> suntrap</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5820,6 +6758,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Toro</span>
                 <span><strong>Hash:</strong> 1070967343</span>
                 <span><strong>Model Name:</strong> toro</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 2</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5828,6 +6767,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Toro</span>
                 <span><strong>Hash:</strong> 908897389</span>
                 <span><strong>Model Name:</strong> toro2</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5836,6 +6776,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tropic</span>
                 <span><strong>Hash:</strong> 290013743</span>
                 <span><strong>Model Name:</strong> tropic</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5844,6 +6785,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tropic</span>
                 <span><strong>Hash:</strong> 1448677353</span>
                 <span><strong>Model Name:</strong> tropic2</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5852,6 +6794,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tug</span>
                 <span><strong>Hash:</strong> 2194326579</span>
                 <span><strong>Model Name:</strong> tug</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
     </div>
@@ -5867,6 +6810,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Akula</span>
                 <span><strong>Hash:</strong> 1181327175</span>
                 <span><strong>Model Name:</strong> akula</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5875,6 +6819,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Annihilator</span>
                 <span><strong>Hash:</strong> 837858166</span>
                 <span><strong>Model Name:</strong> annihilator</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5883,6 +6828,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Annihilator Stealth</span>
                 <span><strong>Hash:</strong> 295054921</span>
                 <span><strong>Model Name:</strong> annihilator2</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5891,6 +6837,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Buzzard Attack Chopper</span>
                 <span><strong>Hash:</strong> 788747387</span>
                 <span><strong>Model Name:</strong> buzzard</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5899,6 +6846,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Buzzard</span>
                 <span><strong>Hash:</strong> 745926877</span>
                 <span><strong>Model Name:</strong> buzzard2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5907,6 +6855,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cargobob</span>
                 <span><strong>Hash:</strong> 4244420235</span>
                 <span><strong>Model Name:</strong> cargobob</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5915,6 +6864,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cargobob</span>
                 <span><strong>Hash:</strong> 1621617168</span>
                 <span><strong>Model Name:</strong> cargobob2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5923,6 +6873,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cargobob</span>
                 <span><strong>Hash:</strong> 1394036463</span>
                 <span><strong>Model Name:</strong> cargobob3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5931,6 +6882,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Cargobob</span>
                 <span><strong>Hash:</strong> 2025593404</span>
                 <span><strong>Model Name:</strong> cargobob4</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/cargobob5.webp" alt="DH-7 Iron Mule">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> DH-7 Iron Mule</span>
+                <span><strong>Hash:</strong> 3942284983</span>
+                <span><strong>Model Name:</strong> cargobob5</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5939,6 +6900,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Conada</span>
                 <span><strong>Hash:</strong> 3817135397</span>
                 <span><strong>Model Name:</strong> conada</span>
+                <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5947,6 +6909,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Weaponized Conada</span>
                 <span><strong>Hash:</strong> 2635962482</span>
                 <span><strong>Model Name:</strong> conada2</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5955,6 +6918,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Frogger</span>
                 <span><strong>Hash:</strong> 744705981</span>
                 <span><strong>Model Name:</strong> frogger</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5963,6 +6927,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Frogger</span>
                 <span><strong>Hash:</strong> 1949211328</span>
                 <span><strong>Model Name:</strong> frogger2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5971,6 +6936,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Havok</span>
                 <span><strong>Hash:</strong> 2310691317</span>
                 <span><strong>Model Name:</strong> havok</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5979,6 +6945,7 @@ weight: 10
                 <span><strong>Display Name:</strong> FH-1 Hunter</span>
                 <span><strong>Hash:</strong> 4252008158</span>
                 <span><strong>Model Name:</strong> hunter</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5987,6 +6954,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Maverick</span>
                 <span><strong>Hash:</strong> 2634305738</span>
                 <span><strong>Model Name:</strong> maverick</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5995,6 +6963,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Higgins Helitours Maverick</span>
                 <span><strong>Hash:</strong> 347619240</span>
                 <span><strong>Model Name:</strong> maverick2</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6003,6 +6972,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Maverick</span>
                 <span><strong>Hash:</strong> 353883353</span>
                 <span><strong>Model Name:</strong> polmav</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6011,6 +6981,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Savage</span>
                 <span><strong>Hash:</strong> 4212341271</span>
                 <span><strong>Model Name:</strong> savage</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6019,6 +6990,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sea Sparrow</span>
                 <span><strong>Hash:</strong> 3568198617</span>
                 <span><strong>Model Name:</strong> seasparrow</span>
+                <span><strong>DLC:</strong> Southern San Andreas Super Sport Series</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6027,6 +6999,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sparrow</span>
                 <span><strong>Hash:</strong> 1229411063</span>
                 <span><strong>Model Name:</strong> seasparrow2</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6035,6 +7008,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sparrow</span>
                 <span><strong>Hash:</strong> 1593933419</span>
                 <span><strong>Model Name:</strong> seasparrow3</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6043,6 +7017,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Skylift</span>
                 <span><strong>Hash:</strong> 1044954915</span>
                 <span><strong>Model Name:</strong> skylift</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6051,6 +7026,7 @@ weight: 10
                 <span><strong>Display Name:</strong> SuperVolito</span>
                 <span><strong>Hash:</strong> 710198397</span>
                 <span><strong>Model Name:</strong> supervolito</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6059,6 +7035,7 @@ weight: 10
                 <span><strong>Display Name:</strong> SuperVolito Carbon</span>
                 <span><strong>Hash:</strong> 2623428164</span>
                 <span><strong>Model Name:</strong> supervolito2</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6067,6 +7044,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Swift</span>
                 <span><strong>Hash:</strong> 3955379698</span>
                 <span><strong>Model Name:</strong> swift</span>
+                <span><strong>DLC:</strong> San Andreas Flight School</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6075,6 +7053,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Swift Deluxe</span>
                 <span><strong>Hash:</strong> 1075432268</span>
                 <span><strong>Model Name:</strong> swift2</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 1</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6083,6 +7062,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Valkyrie</span>
                 <span><strong>Hash:</strong> 2694714877</span>
                 <span><strong>Model Name:</strong> valkyrie</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6091,6 +7071,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Valkyrie MOD.0</span>
                 <span><strong>Hash:</strong> 1543134283</span>
                 <span><strong>Model Name:</strong> valkyrie2</span>
+                <span><strong>DLC:</strong> Executives and Other Criminals</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6099,6 +7080,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Volatus</span>
                 <span><strong>Hash:</strong> 2449479409</span>
                 <span><strong>Model Name:</strong> volatus</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
     </div>
@@ -6114,6 +7096,7 @@ weight: 10
                 <span><strong>Display Name:</strong> RO-86 Alkonost</span>
                 <span><strong>Hash:</strong> 3929093893</span>
                 <span><strong>Model Name:</strong> alkonost</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6122,6 +7105,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Alpha-Z1</span>
                 <span><strong>Hash:</strong> 2771347558</span>
                 <span><strong>Model Name:</strong> alphaz1</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6130,6 +7114,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Avenger</span>
                 <span><strong>Hash:</strong> 2176659152</span>
                 <span><strong>Model Name:</strong> avenger</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6138,6 +7123,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Avenger</span>
                 <span><strong>Hash:</strong> 408970549</span>
                 <span><strong>Model Name:</strong> avenger2</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6146,6 +7132,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Avenger</span>
                 <span><strong>Hash:</strong> 3868033424</span>
                 <span><strong>Model Name:</strong> avenger3</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6154,6 +7141,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Avenger</span>
                 <span><strong>Hash:</strong> 4225674290</span>
                 <span><strong>Model Name:</strong> avenger4</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6162,6 +7150,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Besra</span>
                 <span><strong>Hash:</strong> 1824333165</span>
                 <span><strong>Model Name:</strong> besra</span>
+                <span><strong>DLC:</strong> San Andreas Flight School</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6170,6 +7159,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Atomic Blimp</span>
                 <span><strong>Hash:</strong> 4143991942</span>
                 <span><strong>Model Name:</strong> blimp</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6178,6 +7168,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Xero Blimp</span>
                 <span><strong>Hash:</strong> 3681241380</span>
                 <span><strong>Model Name:</strong> blimp2</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6186,6 +7177,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Blimp</span>
                 <span><strong>Hash:</strong> 3987008919</span>
                 <span><strong>Model Name:</strong> blimp3</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6194,6 +7186,7 @@ weight: 10
                 <span><strong>Display Name:</strong> RM-10 Bombushka</span>
                 <span><strong>Hash:</strong> 4262088844</span>
                 <span><strong>Model Name:</strong> bombushka</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6202,6 +7195,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cargo Plane</span>
                 <span><strong>Hash:</strong> 368211810</span>
                 <span><strong>Model Name:</strong> cargoplane</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6210,6 +7204,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cargo Plane</span>
                 <span><strong>Hash:</strong> 2336777441</span>
                 <span><strong>Model Name:</strong> cargoplane2</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6218,6 +7213,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cuban 800</span>
                 <span><strong>Hash:</strong> 3650256867</span>
                 <span><strong>Model Name:</strong> cuban800</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6226,6 +7222,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dodo</span>
                 <span><strong>Hash:</strong> 3393804037</span>
                 <span><strong>Model Name:</strong> dodo</span>
+                <span><strong>DLC:</strong> Base game (2014 re-release)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6234,6 +7231,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Duster</span>
                 <span><strong>Hash:</strong> 970356638</span>
                 <span><strong>Model Name:</strong> duster</span>
+                <span><strong>DLC:</strong> Base game</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/duster2.webp" alt="Duster 300-H">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Duster 300-H</span>
+                <span><strong>Hash:</strong> 84351789</span>
+                <span><strong>Model Name:</strong> duster2</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6242,6 +7249,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Howard NX-25</span>
                 <span><strong>Hash:</strong> 3287439187</span>
                 <span><strong>Model Name:</strong> howard</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6250,6 +7258,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hydra</span>
                 <span><strong>Hash:</strong> 970385471</span>
                 <span><strong>Model Name:</strong> hydra</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6258,6 +7267,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Jet</span>
                 <span><strong>Hash:</strong> 1058115860</span>
                 <span><strong>Model Name:</strong> jet</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6266,6 +7276,7 @@ weight: 10
                 <span><strong>Display Name:</strong> P-996 LAZER</span>
                 <span><strong>Hash:</strong> 3013282534</span>
                 <span><strong>Model Name:</strong> lazer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6274,6 +7285,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Luxor</span>
                 <span><strong>Hash:</strong> 621481054</span>
                 <span><strong>Model Name:</strong> luxor</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6282,6 +7294,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Luxor Deluxe</span>
                 <span><strong>Hash:</strong> 3080673438</span>
                 <span><strong>Model Name:</strong> luxor2</span>
+                <span><strong>DLC:</strong> Ill-Gotten Gains Part 1</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6290,6 +7303,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mammatus</span>
                 <span><strong>Hash:</strong> 2548391185</span>
                 <span><strong>Model Name:</strong> mammatus</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6298,6 +7312,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ultralight</span>
                 <span><strong>Hash:</strong> 2531412055</span>
                 <span><strong>Model Name:</strong> microlight</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6306,6 +7321,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Miljet</span>
                 <span><strong>Hash:</strong> 165154707</span>
                 <span><strong>Model Name:</strong> miljet</span>
+                <span><strong>DLC:</strong> San Andreas Flight School</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6314,6 +7330,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mogul</span>
                 <span><strong>Hash:</strong> 3545667823</span>
                 <span><strong>Model Name:</strong> mogul</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6322,6 +7339,7 @@ weight: 10
                 <span><strong>Display Name:</strong> V-65 Molotok</span>
                 <span><strong>Hash:</strong> 1565978651</span>
                 <span><strong>Model Name:</strong> molotok</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6330,6 +7348,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nimbus</span>
                 <span><strong>Hash:</strong> 2999939664</span>
                 <span><strong>Model Name:</strong> nimbus</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6338,6 +7357,7 @@ weight: 10
                 <span><strong>Display Name:</strong> P-45 Nokota</span>
                 <span><strong>Hash:</strong> 1036591958</span>
                 <span><strong>Model Name:</strong> nokota</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6346,6 +7366,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Pyro</span>
                 <span><strong>Hash:</strong> 2908775872</span>
                 <span><strong>Model Name:</strong> pyro</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6354,6 +7375,7 @@ weight: 10
                 <span><strong>Display Name:</strong> F-160 Raiju</span>
                 <span><strong>Hash:</strong> 239897677</span>
                 <span><strong>Model Name:</strong> raiju</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6362,6 +7384,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rogue</span>
                 <span><strong>Hash:</strong> 3319621991</span>
                 <span><strong>Model Name:</strong> rogue</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6370,6 +7393,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Seabreeze</span>
                 <span><strong>Hash:</strong> 3902291871</span>
                 <span><strong>Model Name:</strong> seabreeze</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6378,6 +7402,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Shamal</span>
                 <span><strong>Hash:</strong> 3080461301</span>
                 <span><strong>Model Name:</strong> shamal</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6386,6 +7411,7 @@ weight: 10
                 <span><strong>Display Name:</strong> LF-22 Starling</span>
                 <span><strong>Hash:</strong> 2594093022</span>
                 <span><strong>Model Name:</strong> starling</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6394,6 +7420,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Streamer216</span>
                 <span><strong>Hash:</strong> 191916658</span>
                 <span><strong>Model Name:</strong> streamer216</span>
+                <span><strong>DLC:</strong> San Andreas Mercenaries (build 2944)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6402,6 +7429,7 @@ weight: 10
                 <span><strong>Display Name:</strong> B-11 Strikeforce</span>
                 <span><strong>Hash:</strong> 1692272545</span>
                 <span><strong>Model Name:</strong> strikeforce</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6410,6 +7438,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mallard</span>
                 <span><strong>Hash:</strong> 2172210288</span>
                 <span><strong>Model Name:</strong> stunt</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6418,6 +7447,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Titan</span>
                 <span><strong>Hash:</strong> 1981688531</span>
                 <span><strong>Model Name:</strong> titan</span>
+                <span><strong>DLC:</strong> Base game</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/titan2.webp" alt="Titan 250 D">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Titan 250 D</span>
+                <span><strong>Hash:</strong> 858355070</span>
+                <span><strong>Model Name:</strong> titan2</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6426,6 +7465,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tula</span>
                 <span><strong>Hash:</strong> 1043222410</span>
                 <span><strong>Model Name:</strong> tula</span>
+                <span><strong>DLC:</strong> Smuggler's Run</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6434,6 +7474,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Velum</span>
                 <span><strong>Hash:</strong> 2621610858</span>
                 <span><strong>Model Name:</strong> velum</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6442,6 +7483,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Velum 5-Seater</span>
                 <span><strong>Hash:</strong> 1077420264</span>
                 <span><strong>Model Name:</strong> velum2</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6450,6 +7492,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vestra</span>
                 <span><strong>Hash:</strong> 1341619767</span>
                 <span><strong>Model Name:</strong> vestra</span>
+                <span><strong>DLC:</strong> The Business Update</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6458,6 +7501,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Volatol</span>
                 <span><strong>Hash:</strong> 447548909</span>
                 <span><strong>Model Name:</strong> volatol</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
     </div>
@@ -6473,6 +7517,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Airport Bus</span>
                 <span><strong>Hash:</strong> 1283517198</span>
                 <span><strong>Model Name:</strong> airbus</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6481,6 +7526,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Brickade</span>
                 <span><strong>Hash:</strong> 3989239879</span>
                 <span><strong>Model Name:</strong> brickade</span>
+                <span><strong>DLC:</strong> Further Adventures in Finance and Felony</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6489,6 +7535,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Brickade 6x6</span>
                 <span><strong>Hash:</strong> 2718380883</span>
                 <span><strong>Model Name:</strong> brickade2</span>
+                <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6497,6 +7544,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bus</span>
                 <span><strong>Hash:</strong> 3581397346</span>
                 <span><strong>Model Name:</strong> bus</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6505,6 +7553,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dashound</span>
                 <span><strong>Hash:</strong> 2222034228</span>
                 <span><strong>Model Name:</strong> coach</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6513,6 +7562,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Festival Bus</span>
                 <span><strong>Hash:</strong> 345756458</span>
                 <span><strong>Model Name:</strong> pbus2</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6521,6 +7571,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Dune</span>
                 <span><strong>Hash:</strong> 2191146052</span>
                 <span><strong>Model Name:</strong> rallytruck</span>
+                <span><strong>DLC:</strong> Cunning Stunts</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6529,6 +7580,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rental Shuttle Bus</span>
                 <span><strong>Hash:</strong> 3196165219</span>
                 <span><strong>Model Name:</strong> rentalbus</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6537,6 +7589,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Taxi</span>
                 <span><strong>Hash:</strong> 3338918751</span>
                 <span><strong>Model Name:</strong> taxi</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6545,6 +7598,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Tour Bus</span>
                 <span><strong>Hash:</strong> 1941029835</span>
                 <span><strong>Model Name:</strong> tourbus</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6553,6 +7607,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trashmaster</span>
                 <span><strong>Hash:</strong> 1917016601</span>
                 <span><strong>Model Name:</strong> trash</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6561,6 +7616,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Trashmaster</span>
                 <span><strong>Hash:</strong> 3039269212</span>
                 <span><strong>Model Name:</strong> trash2</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6569,6 +7625,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vivanite</span>
                 <span><strong>Hash:</strong> 507621923</span>
                 <span><strong>Model Name:</strong> vivanite2</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6577,6 +7634,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Wastelander</span>
                 <span><strong>Hash:</strong> 2382949506</span>
                 <span><strong>Model Name:</strong> wastelander</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
     </div>
@@ -6592,6 +7650,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Ambulance</span>
                 <span><strong>Hash:</strong> 1171614426</span>
                 <span><strong>Model Name:</strong> ambulance</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6600,6 +7659,7 @@ weight: 10
                 <span><strong>Display Name:</strong> FIB</span>
                 <span><strong>Hash:</strong> 1127131465</span>
                 <span><strong>Model Name:</strong> fbi</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6608,6 +7668,7 @@ weight: 10
                 <span><strong>Display Name:</strong> FIB</span>
                 <span><strong>Hash:</strong> 2647026068</span>
                 <span><strong>Model Name:</strong> fbi2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6616,6 +7677,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Fire Truck</span>
                 <span><strong>Hash:</strong> 1938952078</span>
                 <span><strong>Model Name:</strong> firetruk</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6624,6 +7686,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Lifeguard</span>
                 <span><strong>Hash:</strong> 469291905</span>
                 <span><strong>Model Name:</strong> lguard</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6632,6 +7695,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Prison Bus</span>
                 <span><strong>Hash:</strong> 2287941233</span>
                 <span><strong>Model Name:</strong> pbus</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6640,6 +7704,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Buffalo Cruiser</span>
                 <span><strong>Hash:</strong> 287906327</span>
                 <span><strong>Model Name:</strong> polbuffalo</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6648,6 +7713,52 @@ weight: 10
                 <span><strong>Display Name:</strong> Buffalo STX Pursuit</span>
                 <span><strong>Hash:</strong> 617517171</span>
                 <span><strong>Model Name:</strong> polbuffalo6</span>
+                <span><strong>DLC:</strong> A Safehouse in the Hills (build 3751)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/polcaracara.webp" alt="Caracara Pursuit">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Caracara Pursuit</span>
+                <span><strong>Hash:</strong> 2346018232</span>
+                <span><strong>Model Name:</strong> polcaracara</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/polcoquette4.webp" alt="Coquette D10 Pursuit">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Coquette D10 Pursuit</span>
+                <span><strong>Hash:</strong> 2042703219</span>
+                <span><strong>Model Name:</strong> polcoquette4</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/poldominator10.webp" alt="Dominator FX Interceptor">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Dominator FX Interceptor</span>
+                <span><strong>Hash:</strong> 3521165271</span>
+                <span><strong>Model Name:</strong> poldominator10</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/poldorado.webp" alt="Dorado Cruiser">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Dorado Cruiser</span>
+                <span><strong>Hash:</strong> 2666966727</span>
+                <span><strong>Model Name:</strong> poldorado</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/polfaction2.webp" alt="Outreach Faction">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Outreach Faction</span>
+                <span><strong>Hash:</strong> 1891140410</span>
+                <span><strong>Model Name:</strong> polfaction2</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6656,6 +7767,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Gauntlet Interceptor</span>
                 <span><strong>Hash:</strong> 3061199846</span>
                 <span><strong>Model Name:</strong> polgauntlet</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/polgreenwood.webp" alt="Greenwood Cruiser">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Greenwood Cruiser</span>
+                <span><strong>Hash:</strong> 1737348074</span>
+                <span><strong>Model Name:</strong> polgreenwood</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6664,6 +7785,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Cruiser</span>
                 <span><strong>Hash:</strong> 2046537925</span>
                 <span><strong>Model Name:</strong> police</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6672,6 +7794,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Cruiser</span>
                 <span><strong>Hash:</strong> 2667966721</span>
                 <span><strong>Model Name:</strong> police2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6680,6 +7803,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Cruiser</span>
                 <span><strong>Hash:</strong> 1912215274</span>
                 <span><strong>Model Name:</strong> police3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6688,6 +7812,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Unmarked Cruiser</span>
                 <span><strong>Hash:</strong> 2321795001</span>
                 <span><strong>Model Name:</strong> police4</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6696,6 +7821,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stanier LE Cruiser</span>
                 <span><strong>Hash:</strong> 2620582743</span>
                 <span><strong>Model Name:</strong> police5</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6704,6 +7830,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Bike</span>
                 <span><strong>Hash:</strong> 4260343491</span>
                 <span><strong>Model Name:</strong> policeb</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6712,6 +7839,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Bike</span>
                 <span><strong>Hash:</strong> 2373455159</span>
                 <span><strong>Model Name:</strong> policeb2</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6720,6 +7848,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Rancher</span>
                 <span><strong>Hash:</strong> 2758042359</span>
                 <span><strong>Model Name:</strong> policeold1</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6728,6 +7857,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Roadcruiser</span>
                 <span><strong>Hash:</strong> 2515846680</span>
                 <span><strong>Model Name:</strong> policeold2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6736,6 +7866,43 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Transporter</span>
                 <span><strong>Hash:</strong> 456714581</span>
                 <span><strong>Model Name:</strong> policet</span>
+                <span><strong>DLC:</strong> Base game</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/policet3.webp" alt="Burrito (Bail Enforcement)">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Burrito (Bail Enforcement)</span>
+                <span><strong>Hash:</strong> 2850111293</span>
+                <span><strong>Model Name:</strong> policet3</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/polimpaler5.webp" alt="Impaler SZ Cruiser">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Impaler SZ Cruiser</span>
+                <span><strong>Hash:</strong> 1249425552</span>
+                <span><strong>Model Name:</strong> polimpaler5</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/polimpaler6.webp" alt="Impaler LX Cruiser">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Impaler LX Cruiser</span>
+                <span><strong>Hash:</strong> 1452003510</span>
+                <span><strong>Model Name:</strong> polimpaler6</span>
+                <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/polterminus.webp" alt="Terminus Patrol">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Terminus Patrol</span>
+                <span><strong>Hash:</strong> 2973836112</span>
+                <span><strong>Model Name:</strong> polterminus</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6744,6 +7911,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Park Ranger</span>
                 <span><strong>Hash:</strong> 741586030</span>
                 <span><strong>Model Name:</strong> pranger</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6752,6 +7920,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Police Riot</span>
                 <span><strong>Hash:</strong> 3089277354</span>
                 <span><strong>Model Name:</strong> riot</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6760,6 +7929,7 @@ weight: 10
                 <span><strong>Display Name:</strong> RCV</span>
                 <span><strong>Hash:</strong> 2601952180</span>
                 <span><strong>Model Name:</strong> riot2</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6768,6 +7938,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sheriff Cruiser</span>
                 <span><strong>Hash:</strong> 2611638396</span>
                 <span><strong>Model Name:</strong> sheriff</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6776,6 +7947,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Sheriff SUV</span>
                 <span><strong>Hash:</strong> 1922257928</span>
                 <span><strong>Model Name:</strong> sheriff2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
     </div>
@@ -6791,6 +7963,7 @@ weight: 10
                 <span><strong>Display Name:</strong> APC</span>
                 <span><strong>Hash:</strong> 562680400</span>
                 <span><strong>Model Name:</strong> apc</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6799,6 +7972,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Barracks</span>
                 <span><strong>Hash:</strong> 3471458123</span>
                 <span><strong>Model Name:</strong> barracks</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6807,6 +7981,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Barracks Semi</span>
                 <span><strong>Hash:</strong> 1074326203</span>
                 <span><strong>Model Name:</strong> barracks2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6815,6 +7990,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Barracks</span>
                 <span><strong>Hash:</strong> 630371791</span>
                 <span><strong>Model Name:</strong> barracks3</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6823,6 +7999,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Barrage</span>
                 <span><strong>Hash:</strong> 4081974053</span>
                 <span><strong>Model Name:</strong> barrage</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6831,6 +8008,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Chernobog</span>
                 <span><strong>Hash:</strong> 3602674979</span>
                 <span><strong>Model Name:</strong> chernobog</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6839,6 +8017,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Crusader</span>
                 <span><strong>Hash:</strong> 321739290</span>
                 <span><strong>Model Name:</strong> crusader</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6847,6 +8026,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Half-track</span>
                 <span><strong>Hash:</strong> 4262731174</span>
                 <span><strong>Model Name:</strong> halftrack</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6855,6 +8035,7 @@ weight: 10
                 <span><strong>Display Name:</strong> TM-02 Khanjali</span>
                 <span><strong>Hash:</strong> 2859440138</span>
                 <span><strong>Model Name:</strong> khanjali</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6863,6 +8044,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Invade and Persuade Tank</span>
                 <span><strong>Hash:</strong> 3040635986</span>
                 <span><strong>Model Name:</strong> minitank</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6871,6 +8053,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Rhino Tank</span>
                 <span><strong>Hash:</strong> 782665360</span>
                 <span><strong>Model Name:</strong> rhino</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6879,6 +8062,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse Scarab</span>
                 <span><strong>Hash:</strong> 3147997943</span>
                 <span><strong>Model Name:</strong> scarab</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6887,6 +8071,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock Scarab</span>
                 <span><strong>Hash:</strong> 1542143200</span>
                 <span><strong>Model Name:</strong> scarab2</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6895,6 +8080,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare Scarab</span>
                 <span><strong>Hash:</strong> 3715219435</span>
                 <span><strong>Model Name:</strong> scarab3</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6903,6 +8089,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Thruster</span>
                 <span><strong>Hash:</strong> 1489874736</span>
                 <span><strong>Model Name:</strong> thruster</span>
+                <span><strong>DLC:</strong> The Doomsday Heist</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6911,6 +8098,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Anti-Aircraft Trailer</span>
                 <span><strong>Hash:</strong> 2413121211</span>
                 <span><strong>Model Name:</strong> trailersmall2</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6919,6 +8107,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Vetir</span>
                 <span><strong>Hash:</strong> 2014313426</span>
                 <span><strong>Model Name:</strong> vetir</span>
+                <span><strong>DLC:</strong> Cayo Perico Heist (build 2189)</span>
             </div>
         </div>
     </div>
@@ -6934,6 +8123,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Benson</span>
                 <span><strong>Hash:</strong> 2053223216</span>
                 <span><strong>Model Name:</strong> benson</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6942,6 +8132,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Benson (Cluckin' Bell)</span>
                 <span><strong>Hash:</strong> 728350375</span>
                 <span><strong>Model Name:</strong> benson2</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6950,6 +8141,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Biff</span>
                 <span><strong>Hash:</strong> 850991848</span>
                 <span><strong>Model Name:</strong> biff</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6958,6 +8150,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Apocalypse Cerberus</span>
                 <span><strong>Hash:</strong> 3493417227</span>
                 <span><strong>Model Name:</strong> cerberus</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6966,6 +8159,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Future Shock Cerberus</span>
                 <span><strong>Hash:</strong> 679453769</span>
                 <span><strong>Model Name:</strong> cerberus2</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6974,6 +8168,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Nightmare Cerberus</span>
                 <span><strong>Hash:</strong> 1909700336</span>
                 <span><strong>Model Name:</strong> cerberus3</span>
+                <span><strong>DLC:</strong> Arena War (build 1604)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6982,6 +8177,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hauler</span>
                 <span><strong>Hash:</strong> 1518533038</span>
                 <span><strong>Model Name:</strong> hauler</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6990,6 +8186,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Hauler Custom</span>
                 <span><strong>Hash:</strong> 387748548</span>
                 <span><strong>Model Name:</strong> hauler2</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6998,6 +8195,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mule</span>
                 <span><strong>Hash:</strong> 904750859</span>
                 <span><strong>Model Name:</strong> mule</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7006,6 +8204,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mule</span>
                 <span><strong>Hash:</strong> 3244501995</span>
                 <span><strong>Model Name:</strong> mule2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7014,6 +8213,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mule</span>
                 <span><strong>Hash:</strong> 2242229361</span>
                 <span><strong>Model Name:</strong> mule3</span>
+                <span><strong>DLC:</strong> Heists</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7022,6 +8222,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mule Custom</span>
                 <span><strong>Hash:</strong> 1945374990</span>
                 <span><strong>Model Name:</strong> mule4</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7030,6 +8231,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Mule</span>
                 <span><strong>Hash:</strong> 1343932732</span>
                 <span><strong>Model Name:</strong> mule5</span>
+                <span><strong>DLC:</strong> The Contract (build 2545)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7038,6 +8240,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Packer</span>
                 <span><strong>Hash:</strong> 569305213</span>
                 <span><strong>Model Name:</strong> packer</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7046,6 +8249,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Phantom</span>
                 <span><strong>Hash:</strong> 2157618379</span>
                 <span><strong>Model Name:</strong> phantom</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7054,6 +8258,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Phantom Wedge</span>
                 <span><strong>Hash:</strong> 2645431192</span>
                 <span><strong>Model Name:</strong> phantom2</span>
+                <span><strong>DLC:</strong> Import/Export</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7062,6 +8267,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Phantom Custom</span>
                 <span><strong>Hash:</strong> 177270108</span>
                 <span><strong>Model Name:</strong> phantom3</span>
+                <span><strong>DLC:</strong> Gunrunning</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7070,6 +8276,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Phantom</span>
                 <span><strong>Hash:</strong> 4165683409</span>
                 <span><strong>Model Name:</strong> phantom4</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7078,6 +8285,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Pounder</span>
                 <span><strong>Hash:</strong> 2112052861</span>
                 <span><strong>Model Name:</strong> pounder</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7086,6 +8294,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Pounder Custom</span>
                 <span><strong>Hash:</strong> 1653666139</span>
                 <span><strong>Model Name:</strong> pounder2</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7094,6 +8303,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stockade</span>
                 <span><strong>Hash:</strong> 1747439474</span>
                 <span><strong>Model Name:</strong> stockade</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7102,6 +8312,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Stockade</span>
                 <span><strong>Hash:</strong> 4080511798</span>
                 <span><strong>Model Name:</strong> stockade3</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7110,6 +8321,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Bobcat Security Stockade</span>
                 <span><strong>Hash:</strong> 1089816240</span>
                 <span><strong>Model Name:</strong> stockade4</span>
+                <span><strong>DLC:</strong> Money Fronts (build 3570)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7118,6 +8330,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Terrorbyte</span>
                 <span><strong>Hash:</strong> 2306538597</span>
                 <span><strong>Model Name:</strong> terbyte</span>
+                <span><strong>DLC:</strong> After Hours</span>
             </div>
         </div>
     </div>
@@ -7133,6 +8346,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Cable Car</span>
                 <span><strong>Hash:</strong> 3334677549</span>
                 <span><strong>Model Name:</strong> cablecar</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7141,6 +8355,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Freight Train</span>
                 <span><strong>Hash:</strong> 1030400667</span>
                 <span><strong>Model Name:</strong> freight</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7149,6 +8364,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Freight Train</span>
                 <span><strong>Hash:</strong> 3852738056</span>
                 <span><strong>Model Name:</strong> freight2</span>
+                <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7157,6 +8373,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Freight Train</span>
                 <span><strong>Hash:</strong> 184361638</span>
                 <span><strong>Model Name:</strong> freightcar</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7165,6 +8382,16 @@ weight: 10
                 <span><strong>Display Name:</strong> Freight Train</span>
                 <span><strong>Hash:</strong> 3186376089</span>
                 <span><strong>Model Name:</strong> freightcar2</span>
+                <span><strong>DLC:</strong> Los Santos Tuners (build 2372)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/freightcar3.webp" alt="Freight Train">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Freight Train</span>
+                <span><strong>Hash:</strong> 2420957787</span>
+                <span><strong>Model Name:</strong> freightcar3</span>
+                <span><strong>DLC:</strong> Agents of Sabotage (build 3407)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7173,6 +8400,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Freight Train</span>
                 <span><strong>Hash:</strong> 920453016</span>
                 <span><strong>Model Name:</strong> freightcont1</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7181,6 +8409,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Freight Train</span>
                 <span><strong>Hash:</strong> 240201337</span>
                 <span><strong>Model Name:</strong> freightcont2</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7189,6 +8418,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Freight Train</span>
                 <span><strong>Hash:</strong> 642617954</span>
                 <span><strong>Model Name:</strong> freightgrain</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7197,6 +8427,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Freight Train</span>
                 <span><strong>Hash:</strong> 868868440</span>
                 <span><strong>Model Name:</strong> metrotrain</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7205,6 +8436,7 @@ weight: 10
                 <span><strong>Display Name:</strong> Freight Train</span>
                 <span><strong>Hash:</strong> 586013744</span>
                 <span><strong>Model Name:</strong> tankercar</span>
+                <span><strong>DLC:</strong> Base game</span>
             </div>
         </div>
     </div>
@@ -7220,6 +8452,7 @@ weight: 10
                 <span><strong>Display Name:</strong> PR4</span>
                 <span><strong>Hash:</strong> 340154634</span>
                 <span><strong>Model Name:</strong> formula</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7228,6 +8461,7 @@ weight: 10
                 <span><strong>Display Name:</strong> R88</span>
                 <span><strong>Hash:</strong> 2334210311</span>
                 <span><strong>Model Name:</strong> formula2</span>
+                <span><strong>DLC:</strong> The Diamond Casino Heist (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7236,6 +8470,7 @@ weight: 10
                 <span><strong>Display Name:</strong> BR8</span>
                 <span><strong>Hash:</strong> 1492612435</span>
                 <span><strong>Model Name:</strong> openwheel1</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7244,6 +8479,7 @@ weight: 10
                 <span><strong>Display Name:</strong> DR1</span>
                 <span><strong>Hash:</strong> 1181339704</span>
                 <span><strong>Model Name:</strong> openwheel2</span>
+                <span><strong>DLC:</strong> Los Santos Summer Special (build 2060)</span>
             </div>
         </div>
     </div>
