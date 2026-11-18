@@ -479,6 +479,15 @@ weight: 10
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/merula.webp" alt="Merula">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Merula</span>
+                <span><strong>Hash:</strong> 679458690</span>
+                <span><strong>Model Name:</strong> merula</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/minimus.webp" alt="Minimus">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Minimus</span>
@@ -702,6 +711,15 @@ weight: 10
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/astron2.webp" alt="Astron Custom">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Astron Custom</span>
+                <span><strong>Hash:</strong> 2803699023</span>
+                <span><strong>Model Name:</strong> astron2</span>
+                <span><strong>DLC:</strong> Expanded &amp; Enhanced (build 2612)</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/baller.webp" alt="Baller">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Baller</span>
@@ -852,6 +870,15 @@ weight: 10
                 <span><strong>Hash:</strong> 3900892662</span>
                 <span><strong>Model Name:</strong> dubsta2</span>
                 <span><strong>DLC:</strong> Base game</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/estride.webp" alt="E-Stride">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> E-Stride</span>
+                <span><strong>Hash:</strong> 2875836634</span>
+                <span><strong>Model Name:</strong> estride</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1086,6 +1113,15 @@ weight: 10
                 <span><strong>Hash:</strong> 2922168362</span>
                 <span><strong>Model Name:</strong> vivanite</span>
                 <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/warden.webp" alt="Warden">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Warden</span>
+                <span><strong>Hash:</strong> 2362851406</span>
+                <span><strong>Model Name:</strong> warden</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -1328,6 +1364,15 @@ weight: 10
 <div class="category" id="muscle">
     <div class="vehicles">
         <div class="vehicle">
+            <img src="/vehicles/arbitergt.webp" alt="Arbiter GT">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Arbiter GT</span>
+                <span><strong>Hash:</strong> 1549009676</span>
+                <span><strong>Model Name:</strong> arbitergt</span>
+                <span><strong>DLC:</strong> Expanded &amp; Enhanced (build 2612)</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/blade.webp" alt="Blade">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Blade</span>
@@ -1532,6 +1577,15 @@ weight: 10
                 <span><strong>Hash:</strong> 3853757601</span>
                 <span><strong>Model Name:</strong> dominator9</span>
                 <span><strong>DLC:</strong> The Chop Shop (build 3095)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/driftdominator8.webp" alt="Dominator GTT">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Dominator GTT</span>
+                <span><strong>Hash:</strong> 3736495778</span>
+                <span><strong>Model Name:</strong> driftdominator8</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -2773,6 +2827,15 @@ weight: 10
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/cartuccia.webp" alt="Cartuccia GT">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Cartuccia GT</span>
+                <span><strong>Hash:</strong> 2271995207</span>
+                <span><strong>Model Name:</strong> cartuccia</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/comet2.webp" alt="Comet">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Comet</span>
@@ -2890,12 +2953,30 @@ weight: 10
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/driftcoquette.webp" alt="Coquette">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Coquette</span>
+                <span><strong>Hash:</strong> 621456687</span>
+                <span><strong>Model Name:</strong> driftcoquette</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/driftcypher.webp" alt="Cypher">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Cypher</span>
                 <span><strong>Hash:</strong> 258105345</span>
                 <span><strong>Model Name:</strong> driftcypher</span>
                 <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/driftelegy.webp" alt="Elegy Retro Custom">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Elegy Retro Custom</span>
+                <span><strong>Hash:</strong> 707880171</span>
+                <span><strong>Model Name:</strong> driftelegy</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3493,6 +3574,15 @@ weight: 10
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/s95.webp" alt="S95">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> S95</span>
+                <span><strong>Hash:</strong> 1133471123</span>
+                <span><strong>Model Name:</strong> s95</span>
+                <span><strong>DLC:</strong> Expanded &amp; Enhanced (build 2612)</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/schafter3.webp" alt="Schafter V12">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Schafter V12</span>
@@ -3842,6 +3932,15 @@ weight: 10
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/cyclone2.webp" alt="Cyclone II">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Cyclone II</span>
+                <span><strong>Hash:</strong> 386089410</span>
+                <span><strong>Model Name:</strong> cyclone2</span>
+                <span><strong>DLC:</strong> Expanded &amp; Enhanced (build 2612)</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/deveste.webp" alt="Deveste Eight">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Deveste Eight</span>
@@ -3923,12 +4022,30 @@ weight: 10
             </div>
         </div>
         <div class="vehicle">
+            <img src="/vehicles/horus.webp" alt="Horus">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Horus</span>
+                <span><strong>Hash:</strong> 4017955470</span>
+                <span><strong>Model Name:</strong> horus</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
+            </div>
+        </div>
+        <div class="vehicle">
             <img src="/vehicles/ignus.webp" alt="Ignus">
             <div class="vehicle-info">
                 <span><strong>Display Name:</strong> Ignus</span>
                 <span><strong>Hash:</strong> 2850852987</span>
                 <span><strong>Model Name:</strong> ignus</span>
                 <span><strong>DLC:</strong> The Contract (build 2545)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/ignus2.webp" alt="Weaponized Ignus">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Weaponized Ignus</span>
+                <span><strong>Hash:</strong> 956849991</span>
+                <span><strong>Model Name:</strong> ignus2</span>
+                <span><strong>DLC:</strong> Expanded &amp; Enhanced (build 2612)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -3983,6 +4100,15 @@ weight: 10
                 <span><strong>Hash:</strong> 4284049613</span>
                 <span><strong>Model Name:</strong> lm87</span>
                 <span><strong>DLC:</strong> The Criminal Enterprises (build 2699)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/lrcgt.webp" alt="LRC GT">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> LRC GT</span>
+                <span><strong>Hash:</strong> 1494708164</span>
+                <span><strong>Model Name:</strong> lrcgt</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -4235,6 +4361,15 @@ weight: 10
                 <span><strong>Hash:</strong> 1939284556</span>
                 <span><strong>Model Name:</strong> vagner</span>
                 <span><strong>DLC:</strong> Gunrunning</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/velenogt.webp" alt="Veleno GT">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Veleno GT</span>
+                <span><strong>Hash:</strong> 3316510914</span>
+                <span><strong>Model Name:</strong> velenogt</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -5032,6 +5167,15 @@ weight: 10
                 <span><strong>Hash:</strong> 2945871676</span>
                 <span><strong>Model Name:</strong> caracara2</span>
                 <span><strong>DLC:</strong> The Diamond Casino &amp; Resort (build 2060)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/caracara3.webp" alt="Caracara (Armored)">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Caracara (Armored)</span>
+                <span><strong>Hash:</strong> 2647706545</span>
+                <span><strong>Model Name:</strong> caracara3</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -6277,6 +6421,15 @@ weight: 10
                 <span><strong>Hash:</strong> 2667889793</span>
                 <span><strong>Model Name:</strong> journey2</span>
                 <span><strong>DLC:</strong> Los Santos Drug Wars (build 2802)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/laufer.webp" alt="Läufer">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Läufer</span>
+                <span><strong>Hash:</strong> 2234547542</span>
+                <span><strong>Model Name:</strong> laufer</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
             </div>
         </div>
         <div class="vehicle">
@@ -7876,6 +8029,15 @@ weight: 10
                 <span><strong>Hash:</strong> 2850111293</span>
                 <span><strong>Model Name:</strong> policet3</span>
                 <span><strong>DLC:</strong> Bottom Dollar Bounties (build 3258)</span>
+            </div>
+        </div>
+        <div class="vehicle">
+            <img src="/vehicles/polignus.webp" alt="Ignus Pursuit">
+            <div class="vehicle-info">
+                <span><strong>Display Name:</strong> Ignus Pursuit</span>
+                <span><strong>Hash:</strong> 4255883207</span>
+                <span><strong>Model Name:</strong> polignus</span>
+                <span><strong>DLC:</strong> The Kortz Center Heist (build 3889)</span>
             </div>
         </div>
         <div class="vehicle">
