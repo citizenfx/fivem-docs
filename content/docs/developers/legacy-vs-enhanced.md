@@ -44,6 +44,10 @@ If no `stream_enhanced` folder is present, the `stream` folder is used instead.
 
 The `stream` folder still works when no `stream_enhanced` folder is present, but it is deprecated. This allows a single resource to remain cross-compatible between Gen8 and Gen9: place Gen8 assets in `stream` and Gen9 assets in `stream_enhanced`.
 
+#### OneSync HTTP Endpoints
+
+FiveM for GTAV Enhanced exposes the live OneSync and voice state over HTTP. See [OneSync HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/) for details.
+
 ### Breaking Changes
 
 #### Change in Player ID Logic

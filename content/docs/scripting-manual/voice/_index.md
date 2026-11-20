@@ -23,7 +23,7 @@ Uses 2D Audio exclusively. This is set to false by default.
 
 ### `voice_use3dAudio [true/false]`
 
-Considered deprecated on FiveM, but available on RedM.\
+Considered deprecated on FiveM, but available on RedM.
 Uses 3D (directional) Audio exclusively. This is set to false by default.
 Currently, directional audio's position is relative to the game camera, a solution is being worked on so directional audio is relative to the player's ped entity instead.
 
@@ -291,7 +291,7 @@ voice_internal
 The external voice server feature is very experimental.
 {{% /alert %}}
 
-An external voice server offloads voice processing to a separate FXServer instance. The game server synchronizes channel state (creations, deletions, and other changes) to the voice server automatically.
+An external voice server offloads voice processing to a separate server instance. The game server synchronizes channel state (creations, deletions, and other changes) to the voice server automatically.
 
 **Voice server `server.cfg`:**
 
@@ -317,6 +317,12 @@ voice_external_connect 0.0.0.0:30122 externalIP:30123
 | Second (`externalIP:30123`) | Address of the external voice server to connect to. |
 
 The license key used on both the voice server and game server **must match**.
+
+### Inspecting live channels
+
+If you want to see what your channels are actually doing on a running server, the server can report them over HTTP at `/voicechannels.json`. It lists every channel with its mode and distance, who is in it, and whether they are muted or deaf.
+
+This endpoint is only registered when either `voice_internal` or `voice_external_connect` is set. Setting `sv_voiceChat` alone does nothing here. Without one of those commands the endpoint does not exist and you get a 404. You also need a username and password. See [HTTP endpoints](/docs/scripting-reference/onesync/http-endpoints/) for the details.
 
 ### Legacy Mumble compatibility
 
@@ -379,6 +385,7 @@ When a player disconnects, they are automatically removed from all channels they
 | `1`  | Spatial     | 3D voice channel. Clients are output in 3D automatically. Receiving clients are calculated based on proximity within `maxDistance`.                 |
 | `2`  | Custom      | Requires custom streaming logic. No clients are automatically calculated. There is no API yet to feed custom streaming.                             |
 | `3`  | Temporary   | Inherits all behavior from **spatial**, but the channel is automatically deleted when all players have left.                                        |
+| `4`  | Temporary Non-spatial | Inherits all behavior from **non-spatial**, but the channel is automatically deleted when all players have left.                          |
 
 Example (server-side):
 
